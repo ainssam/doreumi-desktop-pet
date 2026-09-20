@@ -1,0 +1,119 @@
+{
+  "version": "V84",
+  "count": 2,
+  "totalConsumedCredits": 45,
+  "finalCandidateSourceCredits": 30,
+  "paidRetryCount": 1,
+  "attempts": [
+    {
+      "directory": "candidates\\oo",
+      "taskId": "01a0bc26-4938-74ac-8cd5-2786535165dd",
+      "consumedCredits": 15,
+      "result": "RAW_REJECTED",
+      "adopted": false
+    },
+    {
+      "directory": "candidates\\oo-retry-1",
+      "taskId": "01a0bc2a-2460-7596-ac3d-99edbdcdaafc",
+      "consumedCredits": 15,
+      "result": "CANDIDATE_USER_APPROVAL_PENDING",
+      "adopted": false
+    },
+    {
+      "directory": "candidates\\thinking",
+      "taskId": "01a0bc26-4932-779d-b8c3-4a50f80e95c4",
+      "consumedCredits": 15,
+      "result": "CANDIDATE_USER_APPROVAL_PENDING",
+      "adopted": false
+    }
+  ],
+  "baselineLocks": {
+    "dorms-v34-pet/models/doreumi-pet.glb": true,
+    "dorms-v67-meshy-neutral-retexture/face-only/doreumi-basic-face-only.glb": true,
+    "dorms-v68-meshy-gentle-smile/face-only-aligned/doreumi-gentle-smile.glb": true
+  },
+  "runtimeConnected": false,
+  "animationImplemented": false,
+  "candidates": [
+    {
+      "expression": "thinking",
+      "label": "생각 · 왼눈 축소 후보",
+      "taskId": "01a0bc26-4932-779d-b8c3-4a50f80e95c4",
+      "consumedCredits": 15,
+      "model": "candidates/thinking/face-only-v2/doreumi-thinking.glb",
+      "sha256": "58e5aba0d89c91f95026e92fffe422b2cb1881df2eac78731d2a7301fbe1da6b",
+      "preservationChecks": 14,
+      "maxFeatureCenterErrorPixels": 0.14981584871332826,
+      "visualReview": {
+        "reviewedAngles": [
+          "front",
+          "quarter",
+          "side"
+        ],
+        "overlapPass": true,
+        "note": "도름이 자신의 왼쪽 눈(정면 화면 오른쪽)만 작아짐. V69 64×75→V84 43×51px, 중심오차0.15px. 반대 눈과 입은 V69 기존 측정치와 동일하며 교체 영역 밖 텍스처 정확히 보존. 기존 반쯤 감긴 눈 인상 유지. 최종 외형은 사용자 재승인 전."
+      },
+      "status": "STATIC_REVIEW_CANDIDATE_USER_APPROVAL_PENDING",
+      "userApproved": false,
+      "adopted": false,
+      "runtimeConnected": false,
+      "additionalMeshyCreditsForLocalRevisions": 0,
+      "qa": {
+        "front": {
+          "path": "candidates/thinking/qa-v2/front.png",
+          "sha256": "9e4eec1280527e12e24b779e4fc652476d1e8c75ec99f5898cf2945b4ced1456"
+        },
+        "quarter": {
+          "path": "candidates/thinking/qa-v2/quarter.png",
+          "sha256": "33bcec7d8a2812d199691ea96861a1325a1e61348980ccdd017ec1fd2fe6bd33"
+        },
+        "side": {
+          "path": "candidates/thinking/qa-v2/side.png",
+          "sha256": "05ce54ce2dc3f4bfc566426d6f28e0413fd4ab4780a136894af93088d0d38fc7"
+        }
+      },
+      "texture": "candidates/thinking/face-only-v2/face-only-color.png",
+      "textureSHA256": "7469c44bcb206b9068694801aa2f64f00e50cac583d6803fb81e8dede2e62bfe"
+    },
+    {
+      "expression": "oo",
+      "label": "말하기 우 · 새 후보",
+      "taskId": "01a0bc2a-2460-7596-ac3d-99edbdcdaafc",
+      "consumedCredits": 15,
+      "model": "candidates/oo-retry-1/face-only-v2/doreumi-oo-retry-1.glb",
+      "sha256": "f56ee70b8bf090826217865b85941674a3ade5e1e3ee4a14b464a651330bffdc",
+      "preservationChecks": 14,
+      "maxFeatureCenterErrorPixels": 0.1928196989707145,
+      "visualReview": {
+        "reviewedAngles": [
+          "front",
+          "quarter",
+          "side"
+        ],
+        "overlapPass": true,
+        "note": "V67 눈 유지, 입만 30×29px의 작은 단일 둥근 모양으로 교체. 이전 V69 이중 물방울/모래시계 모양 재사용 없음. 갈라짐·중간 허리 잘록함 없음. 오보다 훨씬 작은 입이며 축소된 실제 펫 표시에서 읽힘과 우 발음으로서 적절함은 사용자 판단 필요. 첫 text-only 원본은 생성 지시 실패로 미채택 보존. 이미지 가이드 Meshy 재시도1 결과만 최종 후보. 정적 키 포즈이며 립싱크/입체 움직임 아님."
+      },
+      "status": "STATIC_REVIEW_CANDIDATE_USER_APPROVAL_PENDING",
+      "userApproved": false,
+      "adopted": false,
+      "runtimeConnected": false,
+      "additionalMeshyCreditsForLocalRevisions": 0,
+      "qa": {
+        "front": {
+          "path": "candidates/oo-retry-1/qa-v2/front.png",
+          "sha256": "f687341d8860a18d180d3c3d786c961031306843225d89d1cc48db534d0d0879"
+        },
+        "quarter": {
+          "path": "candidates/oo-retry-1/qa-v2/quarter.png",
+          "sha256": "a186d68d1b34df4985bfa98a650267396cd2fe4553913fe3bab005ba62ab1a10"
+        },
+        "side": {
+          "path": "candidates/oo-retry-1/qa-v2/side.png",
+          "sha256": "0e2f7534df07d1129caf597b717201b51ba19f186701bb632e64ce315460aa01"
+        }
+      },
+      "texture": "candidates/oo-retry-1/face-only-v2/face-only-color.png",
+      "textureSHA256": "67d2360277a395d2e0d1a447e13860db4277380e8aeb82307ac138855756bbab"
+    }
+  ]
+}

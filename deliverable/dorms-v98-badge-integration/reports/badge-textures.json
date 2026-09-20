@@ -1,0 +1,302 @@
+{
+  "hello": {
+    "source": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v97-badge-collection\\models\\hello.glb",
+    "sourceSHA256": "773f76526b059406f7bb1fc2bb4bc7e906e9e57ce6ca1557e38247370826e9de",
+    "originalSize": [
+      4096,
+      4096
+    ],
+    "runtimeSize": [
+      2048,
+      2048
+    ],
+    "runtime": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v98-badge-integration\\data\\badge-textures\\hello.png",
+    "runtimeSHA256": "d43a02540aaee507f84a42947c7fda20c1be0fa231f57afe50bfb16f4792e9eb",
+    "operation": "embedded original RGB, Lanczos resize only; no repaint or geometry edit"
+  },
+  "rocket": {
+    "source": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v97-badge-collection\\models\\rocket.glb",
+    "sourceSHA256": "d7cb67e66c30702f7556631176109933d6a67e02625316cca1c43baf74e6bb30",
+    "originalSize": [
+      4096,
+      4096
+    ],
+    "runtimeSize": [
+      2048,
+      2048
+    ],
+    "runtime": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v98-badge-integration\\data\\badge-textures\\rocket.png",
+    "runtimeSHA256": "8611d6178ebc1410bab0b9ba471a589e5f335d2690b8d0b96830b183b3a7d663",
+    "operation": "embedded original RGB, Lanczos resize only; no repaint or geometry edit"
+  },
+  "classroom": {
+    "source": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v97-badge-collection\\models\\classroom.glb",
+    "sourceSHA256": "819bf41aa506958340aa766c6eb29970e6201b53055592bea1e2318b7a01a1d6",
+    "originalSize": [
+      4096,
+      4096
+    ],
+    "runtimeSize": [
+      2048,
+      2048
+    ],
+    "runtime": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v98-badge-integration\\data\\badge-textures\\classroom.png",
+    "runtimeSHA256": "7a16df04757149578d15d9d9c9cf8262b7e5e38d233e70b27c26eb3c56203b8b",
+    "operation": "embedded original RGB, Lanczos resize only; no repaint or geometry edit"
+  },
+  "code": {
+    "source": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v97-badge-collection\\models\\code.glb",
+    "sourceSHA256": "9192af17c756a2c7b6b3686c3bb5ad970266a70f39061aa66ceb4afb97509119",
+    "originalSize": [
+      4096,
+      4096
+    ],
+    "runtimeSize": [
+      2048,
+      2048
+    ],
+    "runtime": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v98-badge-integration\\data\\badge-textures\\code.png",
+    "runtimeSHA256": "77c48ab7903d642188c90898599e91e9e773902b7247ffab7d8192bf972868d4",
+    "operation": "embedded original RGB, Lanczos resize only; no repaint or geometry edit"
+  },
+  "maker": {
+    "source": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v97-badge-collection\\models\\maker.glb",
+    "sourceSHA256": "343782bf33085cf2ca1feb48b064deae4b5da96d852f4caa15e96f737259f04b",
+    "originalSize": [
+      4096,
+      4096
+    ],
+    "runtimeSize": [
+      2048,
+      2048
+    ],
+    "runtime": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v98-badge-integration\\data\\badge-textures\\maker.png",
+    "runtimeSHA256": "c6bbcc61cfaa2ec5d228ec45b408adcddc7921780548a6f43ceec91764b4ab40",
+    "operation": "embedded original RGB, Lanczos resize only; no repaint or geometry edit"
+  },
+  "update": {
+    "source": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v97-badge-collection\\models\\update.glb",
+    "sourceSHA256": "e8cd9fac3ac0e9d6de0b2cd65ae31a0fad084b15d5386827e788d117f98138df",
+    "originalSize": [
+      4096,
+      4096
+    ],
+    "runtimeSize": [
+      2048,
+      2048
+    ],
+    "runtime": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v98-badge-integration\\data\\badge-textures\\update.png",
+    "runtimeSHA256": "dad71c8f2555615ce9793c3a5039775bea0a740815c6361ea60098c0a113fcf5",
+    "operation": "embedded original RGB, Lanczos resize only; no repaint or geometry edit"
+  },
+  "question": {
+    "source": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v97-badge-collection\\models\\question.glb",
+    "sourceSHA256": "f5cb423f62cffe67a4e5a088feeb2cc4ec516a21854d847955276a15d733d7fc",
+    "originalSize": [
+      4096,
+      4096
+    ],
+    "runtimeSize": [
+      2048,
+      2048
+    ],
+    "runtime": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v98-badge-integration\\data\\badge-textures\\question.png",
+    "runtimeSHA256": "a413b73c50734384bc3615d46404ab7c321811ae6d2542428bf0346a44d303e7",
+    "operation": "embedded original RGB, Lanczos resize only; no repaint or geometry edit"
+  },
+  "solution": {
+    "source": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v97-badge-collection\\models\\solution.glb",
+    "sourceSHA256": "a08b96eb28e85bbe68f95e90be4fedd1e9cded699bcccdc661e365f7dbc6ec2e",
+    "originalSize": [
+      4096,
+      4096
+    ],
+    "runtimeSize": [
+      2048,
+      2048
+    ],
+    "runtime": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v98-badge-integration\\data\\badge-textures\\solution.png",
+    "runtimeSHA256": "d254d4a776509296832e420750d205ed32d327d1e9f7a86ddc98906c5c4d5516",
+    "operation": "embedded original RGB, Lanczos resize only; no repaint or geometry edit"
+  },
+  "magnifier": {
+    "source": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v97-badge-collection\\models\\magnifier.glb",
+    "sourceSHA256": "cb2be005adf8b7fbbfd70a885d6d22be2ef6d45eadac07688d7b2dc4fa028618",
+    "originalSize": [
+      4096,
+      4096
+    ],
+    "runtimeSize": [
+      2048,
+      2048
+    ],
+    "runtime": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v98-badge-integration\\data\\badge-textures\\magnifier.png",
+    "runtimeSHA256": "e518e0c9966d72a3f45a74b65192792f551ea3c246958a3279cecdfc6a98e45c",
+    "operation": "embedded original RGB, Lanczos resize only; no repaint or geometry edit"
+  },
+  "tester": {
+    "source": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v97-badge-collection\\models\\tester.glb",
+    "sourceSHA256": "5ef7000abee12dcd0ed93c993d259c6423b66edee1413e2eabb25a8c6c94c6b0",
+    "originalSize": [
+      4096,
+      4096
+    ],
+    "runtimeSize": [
+      2048,
+      2048
+    ],
+    "runtime": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v98-badge-integration\\data\\badge-textures\\tester.png",
+    "runtimeSHA256": "bc3d27f9c09171464da8deb8fc3cce2feb4969f41698f4c858a5bab47ce28f82",
+    "operation": "embedded original RGB, Lanczos resize only; no repaint or geometry edit"
+  },
+  "lighthouse": {
+    "source": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v97-badge-collection\\models\\lighthouse.glb",
+    "sourceSHA256": "d4b740867dc78539f7056565db4cc58f443f2ac05de6b1a2a4a48cc53720907f",
+    "originalSize": [
+      4096,
+      4096
+    ],
+    "runtimeSize": [
+      2048,
+      2048
+    ],
+    "runtime": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v98-badge-integration\\data\\badge-textures\\lighthouse.png",
+    "runtimeSHA256": "491a14d81b40ee6a1cdf2c220cf82870786be2e35b066b98d42b2377741dc01f",
+    "operation": "embedded original RGB, Lanczos resize only; no repaint or geometry edit"
+  },
+  "team": {
+    "source": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v97-badge-collection\\models\\team.glb",
+    "sourceSHA256": "2334f7131865ae0daabc6965cb46844515394f901237b07dd7831dcfdcd05a9e",
+    "originalSize": [
+      4096,
+      4096
+    ],
+    "runtimeSize": [
+      2048,
+      2048
+    ],
+    "runtime": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v98-badge-integration\\data\\badge-textures\\team.png",
+    "runtimeSHA256": "90b40ca481fdf9b299806650d8a0f207602691c9ae20fc4d22e855445d74c02a",
+    "operation": "embedded original RGB, Lanczos resize only; no repaint or geometry edit"
+  },
+  "opensource": {
+    "source": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v97-badge-collection\\models\\opensource.glb",
+    "sourceSHA256": "f1a031a390db37bdce4ff886a8834d8ce3a3c5584e7c73063e03c1185f49dfee",
+    "originalSize": [
+      4096,
+      4096
+    ],
+    "runtimeSize": [
+      2048,
+      2048
+    ],
+    "runtime": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v98-badge-integration\\data\\badge-textures\\opensource.png",
+    "runtimeSHA256": "a44cd52c0353914a3280d63895ec8a921e24024205c15d1ba56fc675e5d3f124",
+    "operation": "embedded original RGB, Lanczos resize only; no repaint or geometry edit"
+  },
+  "remix": {
+    "source": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v97-badge-collection\\models\\remix.glb",
+    "sourceSHA256": "3174812c3b6a7f4e7769020d8e9df998aa347aba2c5f66f0859d06c0610b2d8e",
+    "originalSize": [
+      4096,
+      4096
+    ],
+    "runtimeSize": [
+      2048,
+      2048
+    ],
+    "runtime": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v98-badge-integration\\data\\badge-textures\\remix.png",
+    "runtimeSHA256": "ef0966c1e203bc884d37574f5c2f6e785811c16e6cb43ebcc654435af1dd52ee",
+    "operation": "embedded original RGB, Lanczos resize only; no repaint or geometry edit"
+  },
+  "recommended": {
+    "source": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v97-badge-collection\\models\\recommended.glb",
+    "sourceSHA256": "852a5f1c057e5065a9421ed0b57b3e699f7e8639193745c4765d35edd47aab73",
+    "originalSize": [
+      4096,
+      4096
+    ],
+    "runtimeSize": [
+      2048,
+      2048
+    ],
+    "runtime": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v98-badge-integration\\data\\badge-textures\\recommended.png",
+    "runtimeSHA256": "10ca0e0b7a426cb358890b6861ad8c73ebd4a1e08960cb7f3004f76ed5e667f4",
+    "operation": "embedded original RGB, Lanczos resize only; no repaint or geometry edit"
+  },
+  "steady": {
+    "source": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v97-badge-collection\\models\\steady.glb",
+    "sourceSHA256": "e9e49107ae55685ae4c67b7d61cf08208b87deb541405f7152f47835217206f8",
+    "originalSize": [
+      4096,
+      4096
+    ],
+    "runtimeSize": [
+      2048,
+      2048
+    ],
+    "runtime": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v98-badge-integration\\data\\badge-textures\\steady.png",
+    "runtimeSHA256": "6fbe3bad3c9256a86d894dc1b3bd1715ddeeedefe1bc1a391c4154068f372814",
+    "operation": "embedded original RGB, Lanczos resize only; no repaint or geometry edit"
+  },
+  "monthly": {
+    "source": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v97-badge-collection\\models\\monthly.glb",
+    "sourceSHA256": "c98520760f6cdc800d5481e1061221b105eb757def8ede8b91eb1bdd78d09839",
+    "originalSize": [
+      4096,
+      4096
+    ],
+    "runtimeSize": [
+      2048,
+      2048
+    ],
+    "runtime": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v98-badge-integration\\data\\badge-textures\\monthly.png",
+    "runtimeSHA256": "6170c9931d0a1c592ba25659d53db6b122494acf4803aa1613d15e70e9ac56ed",
+    "operation": "embedded original RGB, Lanczos resize only; no repaint or geometry edit"
+  },
+  "challenge": {
+    "source": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v97-badge-collection\\models\\challenge.glb",
+    "sourceSHA256": "3871d664f42cc21119a4ce7fbe32dbe312afca965bdc33db535e245a4ac926c9",
+    "originalSize": [
+      4096,
+      4096
+    ],
+    "runtimeSize": [
+      2048,
+      2048
+    ],
+    "runtime": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v98-badge-integration\\data\\badge-textures\\challenge.png",
+    "runtimeSHA256": "924b10b19631bafff293ebb35032d86eef54cef93ca2727861572c90aa31dec0",
+    "operation": "embedded original RGB, Lanczos resize only; no repaint or geometry edit"
+  },
+  "automation": {
+    "source": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v97-badge-collection\\models\\automation.glb",
+    "sourceSHA256": "b24fecf1f78a46854428ee931d95b38887be0b1fc7155c559eeab66a1ca06b77",
+    "originalSize": [
+      4096,
+      4096
+    ],
+    "runtimeSize": [
+      2048,
+      2048
+    ],
+    "runtime": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v98-badge-integration\\data\\badge-textures\\automation.png",
+    "runtimeSHA256": "a8e496c99502a88e36d0423f5e8bf88a94281095b36644d216ba81f3ec2b5159",
+    "operation": "embedded original RGB, Lanczos resize only; no repaint or geometry edit"
+  },
+  "safe": {
+    "source": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v97-badge-collection\\models\\safe.glb",
+    "sourceSHA256": "656ddc4f5c06aa186ebf6c13954fa90f0d1954e7fa5f325b75241f94057013d3",
+    "originalSize": [
+      4096,
+      4096
+    ],
+    "runtimeSize": [
+      2048,
+      2048
+    ],
+    "runtime": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v98-badge-integration\\data\\badge-textures\\safe.png",
+    "runtimeSHA256": "13ece1d41c48b6988045acd4a58dcffcc1c54963b3b7f44dcb8234543dd75ba9",
+    "operation": "embedded original RGB, Lanczos resize only; no repaint or geometry edit"
+  }
+}

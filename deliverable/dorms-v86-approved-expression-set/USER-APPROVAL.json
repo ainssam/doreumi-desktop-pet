@@ -1,0 +1,24 @@
+{
+  "scope": "All 34 static expression appearances only. Not runtime integration or animation approval.",
+  "sourceThreadId": "01a0ba5f-4a43-7ef2-95c9-edb72f7c514e",
+  "sourceType": "User approval relayed by existing application review task",
+  "userQuote": "새로 만든 2개도 검수 통과야~",
+  "newlyApproved": [
+    "thinking",
+    "oo"
+  ],
+  "newAssetManifest": "source-approval-records/V84-FINAL-REVIEW.json",
+  "newAssetManifestSHA256": "dfed03cc6fbaf3a3758ef907998a672039edc98b7ebc7c95282a2b8dc9ea75e7",
+  "previousUserReview": "source-approval-records/V83-USER-REVIEW.json",
+  "previousUserReviewSHA256": "1a74c9484f7ea5a037272a45427ce0a12440f4993f7bef94e205cd62d20eb34b",
+  "approvedLabelOnlyChanges": {
+    "relieved": "기쁨",
+    "shy": "부끄러움"
+  },
+  "approvedStaticCount": 34,
+  "newMeshyRequestsAuthorized": false,
+  "runtimeIntegrationApproved": false,
+  "naturalBlinkApproved": false,
+  "lipSyncApproved": false,
+  "modelModificationAuthorized": false
+}

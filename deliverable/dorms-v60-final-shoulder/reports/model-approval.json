@@ -1,0 +1,16 @@
+{
+  "version": "V60",
+  "status": "USER_APPROVED_FINAL_MODEL",
+  "approvedAt": "2026-09-17",
+  "userApproval": "응 마음에 들어 이 모델로 확정할게",
+  "model": "models/basic.glb",
+  "modelSha256": "00969b87595ee949d44fbe3f738ad028ee466c215cd64c825268bc01a2ec17d2",
+  "animationClips": 21,
+  "reviewUrl": "http://127.0.0.1:43139/motion-review",
+  "lockedAs": [
+    "appearance baseline",
+    "rig baseline",
+    "desktop pet production baseline"
+  ],
+  "replacementPolicy": "Requires a new explicit user instruction and a separately versioned candidate."
+}

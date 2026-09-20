@@ -1,0 +1,2 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {needsRender} from '../src/render-policy.mjs';
+test('paused unchanged scene does not continuously consume GPU',()=>{assert.equal(needsRender({paused:true,dirty:false,cameraChanged:false,effectsActive:false}),false);for(const flag of ['dirty','cameraChanged','effectsActive'])assert.equal(needsRender({paused:true,dirty:false,cameraChanged:false,effectsActive:false,[flag]:true}),true);assert.equal(needsRender({paused:false}),true);});

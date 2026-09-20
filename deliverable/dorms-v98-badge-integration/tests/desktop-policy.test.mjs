@@ -1,0 +1,2 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {isTrustedUrl} from '../src/desktop-policy.cjs';
+test('only local desktop page can navigate',()=>{const origin='http://127.0.0.1:43191';assert.equal(isTrustedUrl(origin+'/desktop',origin),true);for(const u of ['http://127.0.0.1:43191.evil.test/desktop','file:///C:/secret.txt',origin+'/src/app.mjs','https://example.com'])assert.equal(isTrustedUrl(u,origin),false);});

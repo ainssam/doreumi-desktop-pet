@@ -1,0 +1,89 @@
+{
+  "clips": [
+    {
+      "name": "Idle",
+      "channels": 30
+    },
+    {
+      "name": "Walk",
+      "channels": 30
+    },
+    {
+      "name": "Run",
+      "channels": 30
+    },
+    {
+      "name": "Wave",
+      "channels": 30
+    },
+    {
+      "name": "Showcase",
+      "channels": 30
+    },
+    {
+      "name": "HeadTilt",
+      "channels": 30
+    },
+    {
+      "name": "Sit",
+      "channels": 30
+    },
+    {
+      "name": "Think",
+      "channels": 30
+    },
+    {
+      "name": "Bow",
+      "channels": 30
+    },
+    {
+      "name": "Stretch",
+      "channels": 30
+    },
+    {
+      "name": "Lie",
+      "channels": 30
+    },
+    {
+      "name": "Roll",
+      "channels": 30
+    },
+    {
+      "name": "Jump",
+      "channels": 30
+    },
+    {
+      "name": "Joy",
+      "channels": 30
+    },
+    {
+      "name": "Code",
+      "channels": 30
+    },
+    {
+      "name": "Read",
+      "channels": 30
+    },
+    {
+      "name": "Cheer",
+      "channels": 30
+    },
+    {
+      "name": "PeekLeft",
+      "channels": 30
+    },
+    {
+      "name": "PeekRight",
+      "channels": 30
+    },
+    {
+      "name": "NewYearBow",
+      "channels": 30
+    },
+    {
+      "name": "Snowman",
+      "channels": 30
+    }
+  ],
+  "byteLength": 17363164
+}

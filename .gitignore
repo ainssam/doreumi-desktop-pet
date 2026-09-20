@@ -1,0 +1,11 @@
+node_modules/
+dist/
+release/
+out/
+.env
+.env.*
+!.env.example
+*.log
+playwright-report/
+test-results/
+deliverable/dorms-v98-badge-integration/evidence/motion-frames/

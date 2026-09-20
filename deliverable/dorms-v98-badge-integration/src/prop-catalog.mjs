@@ -1,0 +1,2 @@
+export const PROP_SLOTS=Object.freeze({'santa-hat':'head','seollal-hairpin':'head','chuseok-hairpin':'head','magic-wand':'hand','megaphone':'hand','heart':'hand','art-palette':'hand','basketball':'hand','christmas-gift-sack':'hand','podium-microphone':'scene',globe:'scene',guitar:'scene',microscope:'scene',chalkboard:'scene','puzzle-stack':'scene',laptop:'scene','book-v3':'scene'});
+export function propIdFromUrl(url){const id=/^\/props\/([a-z0-9-]+)\.glb$/.exec(url)?.[1];if(!Object.hasOwn(PROP_SLOTS,id))throw new Error('허용되지 않은 소품');return id;}

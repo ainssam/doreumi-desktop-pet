@@ -1,0 +1,407 @@
+{
+  "version": "V90",
+  "approvedOn": "2026-09-20",
+  "approvedBy": "user",
+  "userStatement": "전부 통과시켜도 될듯",
+  "scope": "V90에서 V89 고정 얼굴 보정을 사용해 실제 V60에 적용한 정적 표정 34종의 외형 검수",
+  "decision": "pass",
+  "approvedCount": 34,
+  "model": {
+    "path": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v60-final-shoulder\\models\\basic.glb",
+    "sha256": "00969b87595ee949d44fbe3f738ad028ee466c215cd64c825268bc01a2ec17d2"
+  },
+  "corrections": {
+    "neutral-position-delta": {
+      "path": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v89-v60-neutral-face\\data\\neutral-position-delta.bin",
+      "sha256": "20e8b80c7f5f3d2c62db8aa41b60511c4a52190a6d93b0f65af177c8d739f540"
+    },
+    "neutral-normal-delta": {
+      "path": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v89-v60-neutral-face\\data\\neutral-normal-delta.bin",
+      "sha256": "48dcad24ead205fd43194efa9897d7a1fcc91261ba93da91eebf11c832670799"
+    }
+  },
+  "assets": [
+    {
+      "id": "neutral",
+      "label": "기본",
+      "version": "V67",
+      "model": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v67-meshy-neutral-retexture\\face-only\\doreumi-basic-face-only.glb",
+      "modelSHA256": "e98d03f97351830416fc6eaa791f014bbe8a5248035f4b03951c98f8fb629e3b",
+      "texture": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v67-meshy-neutral-retexture\\face-only\\face-only-color.png",
+      "textureSHA256": "30844d4a18d503463f5137cb8838d3a755ed0c755daf652dc8555658af6ac49f",
+      "decision": "pass",
+      "integrationStatus": "USER_APPROVED"
+    },
+    {
+      "id": "smile",
+      "label": "미소",
+      "version": "V68",
+      "model": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v68-meshy-gentle-smile\\face-only-aligned\\doreumi-gentle-smile.glb",
+      "modelSHA256": "074d903b22d156a353253ab5288a918ec852bc6fbcb31d64b92035d23b598a17",
+      "texture": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v68-meshy-gentle-smile\\face-only-aligned\\face-only-color.png",
+      "textureSHA256": "3e45390b0bf4191c96c36e458a310a1be3d57b4c06511212e7b43a798a04d44b",
+      "decision": "pass",
+      "integrationStatus": "USER_APPROVED"
+    },
+    {
+      "id": "wink",
+      "label": "윙크",
+      "version": "V69",
+      "model": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v69-expression-set\\candidates\\wink\\face-only-v2\\doreumi-wink.glb",
+      "modelSHA256": "42d20bbd5abaef647e657b621d3b842f339c6bbe4520098d71c7ffc758822122",
+      "texture": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v69-expression-set\\candidates\\wink\\face-only-v2\\face-only-color.png",
+      "textureSHA256": "db6b2fc1fbc86bd0a01a355dc461766b37727bc8f708129bae2566187f20c50b",
+      "decision": "pass",
+      "integrationStatus": "USER_APPROVED"
+    },
+    {
+      "id": "laugh",
+      "label": "활짝 웃음",
+      "version": "V69",
+      "model": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v69-expression-set\\candidates\\laugh\\face-only-v2\\doreumi-laugh.glb",
+      "modelSHA256": "0df4c03866dfa6d3ed0c5e0df851bdc6d38e8bd469aeebe528426e00837cc167",
+      "texture": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v69-expression-set\\candidates\\laugh\\face-only-v2\\face-only-color.png",
+      "textureSHA256": "50a1df90dab56f9d4ab2968053d2af809761381a551006c980fe7edbc253ee68",
+      "decision": "pass",
+      "integrationStatus": "USER_APPROVED"
+    },
+    {
+      "id": "surprise",
+      "label": "놀람",
+      "version": "V69",
+      "model": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v69-expression-set\\candidates\\surprise\\face-only-v2\\doreumi-surprise.glb",
+      "modelSHA256": "cb2f73f2c0e524292b0f599a873f181ce816357c4afdbe974faa0d7810feac9f",
+      "texture": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v69-expression-set\\candidates\\surprise\\face-only-v2\\face-only-color.png",
+      "textureSHA256": "631ca84121b7cc65b579ab159c0e43d1e883328f8765940f774a66f3fe6728f9",
+      "decision": "pass",
+      "integrationStatus": "USER_APPROVED"
+    },
+    {
+      "id": "thinking",
+      "label": "생각",
+      "version": "V84",
+      "model": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v84-expression-revisions\\candidates\\thinking\\face-only-v2\\doreumi-thinking.glb",
+      "modelSHA256": "58e5aba0d89c91f95026e92fffe422b2cb1881df2eac78731d2a7301fbe1da6b",
+      "texture": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v84-expression-revisions\\candidates\\thinking\\face-only-v2\\face-only-color.png",
+      "textureSHA256": "7469c44bcb206b9068694801aa2f64f00e50cac583d6803fb81e8dede2e62bfe",
+      "decision": "pass",
+      "integrationStatus": "USER_APPROVED"
+    },
+    {
+      "id": "sleepy",
+      "label": "졸림",
+      "version": "V69",
+      "model": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v69-expression-set\\candidates\\sleepy\\face-only-v2\\doreumi-sleepy.glb",
+      "modelSHA256": "d4cd327d6eb67a5f9418422b7a747f927744bf6e1aeb31eab1f627b06a7774cc",
+      "texture": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v69-expression-set\\candidates\\sleepy\\face-only-v2\\face-only-color.png",
+      "textureSHA256": "7b719193aac7fb6773a1555a21986faa8113ff173b5d8849d77595b4ee0fd226",
+      "decision": "pass",
+      "integrationStatus": "USER_APPROVED"
+    },
+    {
+      "id": "aa",
+      "label": "말하기 아",
+      "version": "V69",
+      "model": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v69-expression-set\\candidates\\aa\\face-only-v2\\doreumi-aa.glb",
+      "modelSHA256": "c6ca9cb9c3b94778a5b80ab19caf9e0b3ab7546363cbba2994e38d303ca74903",
+      "texture": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v69-expression-set\\candidates\\aa\\face-only-v2\\face-only-color.png",
+      "textureSHA256": "d21372f05dc8a81a877bb411f0e2e4da837f718ed7fe99003018c6040788b603",
+      "decision": "pass",
+      "integrationStatus": "USER_APPROVED"
+    },
+    {
+      "id": "oh",
+      "label": "말하기 오",
+      "version": "V69",
+      "model": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v69-expression-set\\candidates\\oh\\face-only-v2\\doreumi-oh.glb",
+      "modelSHA256": "9439ddd5511764cae46454c935d13e2c5b7d6bd33c1e3a3c4a18b3ae918ee896",
+      "texture": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v69-expression-set\\candidates\\oh\\face-only-v2\\face-only-color.png",
+      "textureSHA256": "7b3dc1deb28d39738b5c9428f49191510d91be5c3fa98b29a3505310b899f46e",
+      "decision": "pass",
+      "integrationStatus": "USER_APPROVED"
+    },
+    {
+      "id": "oo",
+      "label": "말하기 우",
+      "version": "V84",
+      "model": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v84-expression-revisions\\candidates\\oo-retry-1\\face-only-v2\\doreumi-oo-retry-1.glb",
+      "modelSHA256": "f56ee70b8bf090826217865b85941674a3ade5e1e3ee4a14b464a651330bffdc",
+      "texture": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v84-expression-revisions\\candidates\\oo-retry-1\\face-only-v2\\face-only-color.png",
+      "textureSHA256": "67d2360277a395d2e0d1a447e13860db4277380e8aeb82307ac138855756bbab",
+      "decision": "pass",
+      "integrationStatus": "USER_APPROVED"
+    },
+    {
+      "id": "blink_closed",
+      "label": "깜빡임용 감은 눈",
+      "version": "V71",
+      "model": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v71-expression-batch-01\\candidates\\blink_closed\\face-only-v2\\doreumi-blink_closed.glb",
+      "modelSHA256": "d3a887b3410066f3486781865b58adae5403bcfaae10c64391902213b5ed7c09",
+      "texture": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v71-expression-batch-01\\candidates\\blink_closed\\face-only-v2\\face-only-color.png",
+      "textureSHA256": "3ec9f93ff2e666ee390715e7680f017f8e277ceb064afad096e9d6ca4ab027c4",
+      "decision": "pass",
+      "integrationStatus": "USER_APPROVED"
+    },
+    {
+      "id": "relieved",
+      "label": "기쁨",
+      "version": "V71",
+      "model": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v71-expression-batch-01\\candidates\\relieved\\face-only-v2\\doreumi-relieved.glb",
+      "modelSHA256": "9c8ba3da66fca0757c9d4a994216d6c7782bdfbd8c110c495c933d3efffd04e2",
+      "texture": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v71-expression-batch-01\\candidates\\relieved\\face-only-v2\\face-only-color.png",
+      "textureSHA256": "c2841ce535812610c7eba0c722c896f8c7b29b99cacf7fcb8ede7ad40eb48436",
+      "decision": "pass",
+      "integrationStatus": "USER_APPROVED"
+    },
+    {
+      "id": "half_sleepy",
+      "label": "반쯤 졸림",
+      "version": "V71",
+      "model": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v71-expression-batch-01\\candidates\\half_sleepy\\face-only-v2\\doreumi-half_sleepy.glb",
+      "modelSHA256": "aae1b882b0bb833843d7248fb2611df719813766cd9e2bdc161f0b303367e814",
+      "texture": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v71-expression-batch-01\\candidates\\half_sleepy\\face-only-v2\\face-only-color.png",
+      "textureSHA256": "9509e40e79d24e6bc008a48bfb9b7bddea671c645efe14acfd3b90ce3d1add56",
+      "decision": "pass",
+      "integrationStatus": "USER_APPROVED"
+    },
+    {
+      "id": "soft_sad",
+      "label": "살짝 슬픔",
+      "version": "V71",
+      "model": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v71-expression-batch-01\\candidates\\soft_sad\\face-only-v2\\doreumi-soft_sad.glb",
+      "modelSHA256": "77213e21ac5dbad9236a4f8496c54910ce2cacbb81fdecdfe2b6048b735b70fa",
+      "texture": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v71-expression-batch-01\\candidates\\soft_sad\\face-only-v2\\face-only-color.png",
+      "textureSHA256": "11f07c5975b6d9df06485fee6dc5d56ec167fdf3c154559885d3da0e3aebe6f4",
+      "decision": "pass",
+      "integrationStatus": "USER_APPROVED"
+    },
+    {
+      "id": "curious",
+      "label": "호기심",
+      "version": "V73",
+      "model": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v73-expression-batch-02\\candidates\\curious\\face-only-v2\\doreumi-curious.glb",
+      "modelSHA256": "27b19e85d6b3a06a4d3dcbb080fdc0678159b6b91c79d60ced91ac6a4a64fd7e",
+      "texture": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v73-expression-batch-02\\candidates\\curious\\face-only-v2\\face-only-color.png",
+      "textureSHA256": "889fd7f8eef1c9748f326adbbddd3ff3dde8ed828b49e5b1f154b549b4770bb2",
+      "decision": "pass",
+      "integrationStatus": "USER_APPROVED"
+    },
+    {
+      "id": "shy",
+      "label": "부끄러움",
+      "version": "V73",
+      "model": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v73-expression-batch-02\\candidates\\shy\\face-only-v4\\doreumi-shy.glb",
+      "modelSHA256": "c73200e19425cbbed3941d4dee38acd688851ba74af2591f1aba21cb3af48da8",
+      "texture": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v73-expression-batch-02\\candidates\\shy\\face-only-v4\\face-only-color.png",
+      "textureSHA256": "1df714bcf7431ecf1c06b9b8cdfeb0145c6088d511b92893d5198c712b14d1e3",
+      "decision": "pass",
+      "integrationStatus": "USER_APPROVED"
+    },
+    {
+      "id": "proud",
+      "label": "뿌듯함",
+      "version": "V73",
+      "model": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v73-expression-batch-02\\candidates\\proud\\face-only-v2\\doreumi-proud.glb",
+      "modelSHA256": "78fc84df710c23b62b062e31999547ab6ea8464b85c25430d59de9c780a5f854",
+      "texture": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v73-expression-batch-02\\candidates\\proud\\face-only-v2\\face-only-color.png",
+      "textureSHA256": "596e4cde06fd48f14b38c8a878843803018219d270e16189073c7e6f09dbfbca",
+      "decision": "pass",
+      "integrationStatus": "USER_APPROVED"
+    },
+    {
+      "id": "teary",
+      "label": "울먹임",
+      "version": "V73",
+      "model": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v73-expression-batch-02\\candidates\\teary\\face-only-v2\\doreumi-teary.glb",
+      "modelSHA256": "156bf04e17cc1707f28e1ea4470b16fcfbcb10ed4eb7d597d7241c0c31d882eb",
+      "texture": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v73-expression-batch-02\\candidates\\teary\\face-only-v2\\face-only-color.png",
+      "textureSHA256": "c5fb107d37f194fcd02624b4c87cd956080bdff3fd1bcdc9951855b992ee7d83",
+      "decision": "pass",
+      "integrationStatus": "USER_APPROVED"
+    },
+    {
+      "id": "annoyed",
+      "label": "살짝 짜증",
+      "version": "V75",
+      "model": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v75-expression-batch-03\\candidates\\annoyed\\face-only-v2\\doreumi-annoyed.glb",
+      "modelSHA256": "8ae3fa6f2952fb67b4b5d91185ae1a28c2a5a359e04399a97627709bb9c4c869",
+      "texture": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v75-expression-batch-03\\candidates\\annoyed\\face-only-v2\\face-only-color.png",
+      "textureSHA256": "42fa94e12d84809e32b7ea95c32e3c555176c554b28cf1d379da8113c5ef706f",
+      "decision": "pass",
+      "integrationStatus": "USER_APPROVED"
+    },
+    {
+      "id": "determined",
+      "label": "결의",
+      "version": "V75",
+      "model": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v75-expression-batch-03\\candidates\\determined\\face-only-v2\\doreumi-determined.glb",
+      "modelSHA256": "67fa05a7ff735cbc388c6b68df9688f84bcb99c666b4ec1303eab6c14a30be13",
+      "texture": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v75-expression-batch-03\\candidates\\determined\\face-only-v2\\face-only-color.png",
+      "textureSHA256": "598e6f1ecf85298054e9007a277ee9081b6545d4cbcc1ed36cdb51fe3d9d009f",
+      "decision": "pass",
+      "integrationStatus": "USER_APPROVED"
+    },
+    {
+      "id": "confused",
+      "label": "갸우뚱/혼란",
+      "version": "V75",
+      "model": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v75-expression-batch-03\\candidates\\confused\\face-only-v2\\doreumi-confused.glb",
+      "modelSHA256": "ed9a60ff2d4e6f2e1978810315f3198141012e9070787b373a24a491543a9e40",
+      "texture": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v75-expression-batch-03\\candidates\\confused\\face-only-v2\\face-only-color.png",
+      "textureSHA256": "ab324706b9c4e687daf20cfb09b3da52c7a7b1360b3c2438f18f1cc798e280fb",
+      "decision": "pass",
+      "integrationStatus": "USER_APPROVED"
+    },
+    {
+      "id": "worried",
+      "label": "걱정",
+      "version": "V75",
+      "model": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v75-expression-batch-03\\candidates\\worried\\face-only-v2\\doreumi-worried.glb",
+      "modelSHA256": "1ab08f8e947aea1a7c9d60365f4a6c766a8b6f5030e9e6292aab09e8b114cc37",
+      "texture": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v75-expression-batch-03\\candidates\\worried\\face-only-v2\\face-only-color.png",
+      "textureSHA256": "ebab781bc89461849e00e4aaee6a5effb964f867a029f8d692b2eea1c122de61",
+      "decision": "pass",
+      "integrationStatus": "USER_APPROVED"
+    },
+    {
+      "id": "love",
+      "label": "반함",
+      "version": "V77",
+      "model": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v77-expression-batch-04\\candidates\\love\\face-only-v2\\doreumi-love.glb",
+      "modelSHA256": "e267c2dfc1bc2427b597d33ac547661d3bb03ec27b19d8d924f731534afbdb5c",
+      "texture": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v77-expression-batch-04\\candidates\\love\\face-only-v2\\face-only-color.png",
+      "textureSHA256": "c18bfe4f5b9fddbbb61c940ece205c5b005cc0019597d458f0836072877c8a29",
+      "decision": "pass",
+      "integrationStatus": "USER_APPROVED"
+    },
+    {
+      "id": "sparkly",
+      "label": "초롱초롱",
+      "version": "V77",
+      "model": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v77-expression-batch-04\\candidates\\sparkly\\face-only-v2\\doreumi-sparkly.glb",
+      "modelSHA256": "703f6589c6865a65917d3bc814b9c2ac5f540872d8ac8198d8c8c793d6cabe80",
+      "texture": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v77-expression-batch-04\\candidates\\sparkly\\face-only-v2\\face-only-color.png",
+      "textureSHA256": "09e109a97d80215fbe3dbb88170555b24b5860f20c53591c7e81087ae113e4d2",
+      "decision": "pass",
+      "integrationStatus": "USER_APPROVED"
+    },
+    {
+      "id": "listening",
+      "label": "경청",
+      "version": "V77",
+      "model": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v77-expression-batch-04\\candidates\\listening\\face-only-v2\\doreumi-listening.glb",
+      "modelSHA256": "639d4685a1dc00e8eb6aaa0946cea22581e6e5ffaafb84dd53cb138cb823d5a1",
+      "texture": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v77-expression-batch-04\\candidates\\listening\\face-only-v2\\face-only-color.png",
+      "textureSHA256": "76bfcdd2576302c1dd0bca39ee624faece0695ea1fc756f78c69f19999adc601",
+      "decision": "pass",
+      "integrationStatus": "USER_APPROVED"
+    },
+    {
+      "id": "focused",
+      "label": "집중",
+      "version": "V77",
+      "model": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v77-expression-batch-04\\candidates\\focused\\face-only-v2\\doreumi-focused.glb",
+      "modelSHA256": "da806a91f99fa60d14bf37a3155319fab13b306c793820f8cf479ce275438942",
+      "texture": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v77-expression-batch-04\\candidates\\focused\\face-only-v2\\face-only-color.png",
+      "textureSHA256": "afca0f5520699cabbe67a8e60d2249e10dacb82a21c3c6d987414ae65f32dc5b",
+      "decision": "pass",
+      "integrationStatus": "USER_APPROVED"
+    },
+    {
+      "id": "aha",
+      "label": "아하",
+      "version": "V79",
+      "model": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v79-expression-batch-05\\candidates\\aha\\face-only-v2\\doreumi-aha.glb",
+      "modelSHA256": "74d8fc96e86184b6b8bf8a0c604bbad90966057c5093ac6865220da079db114e",
+      "texture": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v79-expression-batch-05\\candidates\\aha\\face-only-v2\\face-only-color.png",
+      "textureSHA256": "0e31e6f4582e8e7848b52ff0c5ebd57ea11297a520200802bbc3fdef88a990b4",
+      "decision": "pass",
+      "integrationStatus": "USER_APPROVED"
+    },
+    {
+      "id": "skeptical",
+      "label": "의심",
+      "version": "V79",
+      "model": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v79-expression-batch-05\\candidates\\skeptical\\face-only-v2\\doreumi-skeptical.glb",
+      "modelSHA256": "e78bc2a398961275c36f6ce3a807acea7cce9c5b838074fcab4ae79a66abbed9",
+      "texture": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v79-expression-batch-05\\candidates\\skeptical\\face-only-v2\\face-only-color.png",
+      "textureSHA256": "e4dece706c4538c854e955fac2a01e3b57c22a67a3640fe3400170b51aa26fca",
+      "decision": "pass",
+      "integrationStatus": "USER_APPROVED"
+    },
+    {
+      "id": "apologetic",
+      "label": "미안함",
+      "version": "V79",
+      "model": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v79-expression-batch-05\\candidates\\apologetic\\face-only-v2\\doreumi-apologetic.glb",
+      "modelSHA256": "45d98991b87771521fa1b7b60e12b321f36cddef9eba1acf4a3b2e5e9a5fdac4",
+      "texture": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v79-expression-batch-05\\candidates\\apologetic\\face-only-v2\\face-only-color.png",
+      "textureSHA256": "95c13cd255c625a824945e1e105628a75915ca709a4153182a29c73de1fd763d",
+      "decision": "pass",
+      "integrationStatus": "USER_APPROVED"
+    },
+    {
+      "id": "cheering",
+      "label": "응원",
+      "version": "V79",
+      "model": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v79-expression-batch-05\\candidates\\cheering\\face-only-v2\\doreumi-cheering.glb",
+      "modelSHA256": "8a11e8a64bd567066f98a09557a7bac0a7118d0f86b2222a8bca19ceb2611a79",
+      "texture": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v79-expression-batch-05\\candidates\\cheering\\face-only-v2\\face-only-color.png",
+      "textureSHA256": "3aa6aaf46f88f93fe197c9fd308e511d25f23b2232386245a452ab6a3f285db3",
+      "decision": "pass",
+      "integrationStatus": "USER_APPROVED"
+    },
+    {
+      "id": "greeting_smile",
+      "label": "인사 미소",
+      "version": "V81",
+      "model": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v81-expression-batch-06\\candidates\\greeting_smile\\face-only-v2\\doreumi-greeting_smile.glb",
+      "modelSHA256": "df6ba0820d8142e7e6679b55fd7305a3991798b1626f3964d0fc34414073bd0e",
+      "texture": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v81-expression-batch-06\\candidates\\greeting_smile\\face-only-v2\\face-only-color.png",
+      "textureSHA256": "a89b94ceccb31e64a8f444cfab9089b59d5597c64b6ad6fcaa3e50b09bf4e9b8",
+      "decision": "pass",
+      "integrationStatus": "USER_APPROVED"
+    },
+    {
+      "id": "yawning",
+      "label": "하품",
+      "version": "V81",
+      "model": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v81-expression-batch-06\\candidates\\yawning\\face-only-v3\\doreumi-yawning.glb",
+      "modelSHA256": "ca20e0e5c08bb3856f95520c875b472db2be06c0e4edfab39b09aaab496f8116",
+      "texture": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v81-expression-batch-06\\candidates\\yawning\\face-only-v3\\face-only-color.png",
+      "textureSHA256": "dce0e3afc28a6422ac18046d935527fc88e4bb73ab4fbef1eda54644ee32ee9d",
+      "decision": "pass",
+      "integrationStatus": "USER_APPROVED"
+    },
+    {
+      "id": "ee",
+      "label": "말하기 이",
+      "version": "V81",
+      "model": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v81-expression-batch-06\\candidates\\ee\\face-only-v2\\doreumi-ee.glb",
+      "modelSHA256": "81a18747a209c06b612ea1e5422065dd72e95f0815a2d4116f5f6c377f20d7b6",
+      "texture": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v81-expression-batch-06\\candidates\\ee\\face-only-v2\\face-only-color.png",
+      "textureSHA256": "06ac6dd029805357e72da0c0f931cdf2c2c178fca81fc075e8df0e645361483e",
+      "decision": "pass",
+      "integrationStatus": "USER_APPROVED"
+    },
+    {
+      "id": "mm",
+      "label": "말하기 음",
+      "version": "V81",
+      "model": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v81-expression-batch-06\\candidates\\mm\\face-only-v2\\doreumi-mm.glb",
+      "modelSHA256": "504bd44f62c211a37f54f10db19486a3f8cf226736e046cf3c1f116223eb6e13",
+      "texture": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v81-expression-batch-06\\candidates\\mm\\face-only-v2\\face-only-color.png",
+      "textureSHA256": "1f5c6d5c1be5188faca30e3881ee6b15f81bafea82db2320e9c3e6c596a78fdc",
+      "decision": "pass",
+      "integrationStatus": "USER_APPROVED"
+    }
+  ],
+  "exclusions": [
+    "행동 클립 전체 승인",
+    "소품·계절·효과 승인",
+    "표정 보간·자연 깜빡임·립싱크",
+    "출시 실행기 연결 및 배포"
+  ],
+  "releaseConnected": false,
+  "notes": "이 기록은 사용자 일괄 승인이다. 이전 자동화 검수 보고서와 브라우저별 메모는 당시 기록으로 보존한다."
+}

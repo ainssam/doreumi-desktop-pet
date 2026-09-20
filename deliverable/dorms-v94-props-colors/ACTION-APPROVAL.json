@@ -1,0 +1,145 @@
+{
+  "version": "V91",
+  "approvedOn": "2026-09-20",
+  "approvedBy": "user",
+  "userStatement": "행동 다 승인해도 될 것 같은데? 그리고 도구 더 늘려주고!",
+  "scope": "V60 basic.glb의 기존 행동 클립 21종 사용자 일괄 승인",
+  "model": "deliverable/dorms-v60-final-shoulder/models/basic.glb",
+  "modelSHA256": "00969b87595ee949d44fbe3f738ad028ee466c215cd64c825268bc01a2ec17d2",
+  "approvedCount": 21,
+  "clips": [
+    {
+      "name": "Idle",
+      "channels": 30,
+      "decision": "pass",
+      "userApproved": true
+    },
+    {
+      "name": "Walk",
+      "channels": 30,
+      "decision": "pass",
+      "userApproved": true
+    },
+    {
+      "name": "Run",
+      "channels": 30,
+      "decision": "pass",
+      "userApproved": true
+    },
+    {
+      "name": "Wave",
+      "channels": 30,
+      "decision": "pass",
+      "userApproved": true
+    },
+    {
+      "name": "Showcase",
+      "channels": 30,
+      "decision": "pass",
+      "userApproved": true
+    },
+    {
+      "name": "HeadTilt",
+      "channels": 30,
+      "decision": "pass",
+      "userApproved": true
+    },
+    {
+      "name": "Sit",
+      "channels": 30,
+      "decision": "pass",
+      "userApproved": true
+    },
+    {
+      "name": "Think",
+      "channels": 30,
+      "decision": "pass",
+      "userApproved": true
+    },
+    {
+      "name": "Bow",
+      "channels": 30,
+      "decision": "pass",
+      "userApproved": true
+    },
+    {
+      "name": "Stretch",
+      "channels": 30,
+      "decision": "pass",
+      "userApproved": true
+    },
+    {
+      "name": "Lie",
+      "channels": 30,
+      "decision": "pass",
+      "userApproved": true
+    },
+    {
+      "name": "Roll",
+      "channels": 30,
+      "decision": "pass",
+      "userApproved": true
+    },
+    {
+      "name": "Jump",
+      "channels": 30,
+      "decision": "pass",
+      "userApproved": true
+    },
+    {
+      "name": "Joy",
+      "channels": 30,
+      "decision": "pass",
+      "userApproved": true
+    },
+    {
+      "name": "Code",
+      "channels": 30,
+      "decision": "pass",
+      "userApproved": true
+    },
+    {
+      "name": "Read",
+      "channels": 30,
+      "decision": "pass",
+      "userApproved": true
+    },
+    {
+      "name": "Cheer",
+      "channels": 30,
+      "decision": "pass",
+      "userApproved": true
+    },
+    {
+      "name": "PeekLeft",
+      "channels": 30,
+      "decision": "pass",
+      "userApproved": true
+    },
+    {
+      "name": "PeekRight",
+      "channels": 30,
+      "decision": "pass",
+      "userApproved": true
+    },
+    {
+      "name": "NewYearBow",
+      "channels": 30,
+      "decision": "pass",
+      "userApproved": true
+    },
+    {
+      "name": "Snowman",
+      "channels": 30,
+      "decision": "pass",
+      "userApproved": true
+    }
+  ],
+  "exclusions": [
+    "소품을 착용한 모든 행동 조합의 승인",
+    "신규 행동 생성",
+    "전체 Windows 데스크톱펫 출시 승인"
+  ],
+  "runtimeLabelsUpdated": true,
+  "runtimeLabelsAppliedIn": "V94"
+}

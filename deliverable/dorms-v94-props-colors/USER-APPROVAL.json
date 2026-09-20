@@ -1,0 +1,211 @@
+{
+  "version": "V94",
+  "date": "2026-09-20",
+  "userStatement": "칠판 뚫고 나오는 것 빼면 다 합격해도 될 것 같은데?",
+  "approvedBy": "user",
+  "scope": "현재 V94에서 제시한 소품·지원 조합·나선 색상·책 페이지 보정. 임의 조합 및 전체 출시 제외.",
+  "modelSHA256": "00969b87595ee949d44fbe3f738ad028ee466c215cd64c825268bc01a2ec17d2",
+  "assets": [
+    {
+      "id": "magic-wand",
+      "label": "요술봉",
+      "sha256": "2aa557407993443e7eebf6ffd591eef4a540e37e0be9ef16b7ab24c43cfe2694",
+      "decision": "pass"
+    },
+    {
+      "id": "megaphone",
+      "label": "확성기",
+      "sha256": "70271b2c5244bc5148874a868cbe156d7d0ac2cdc81d7de4bf50a1cfec84b25a",
+      "decision": "pass"
+    },
+    {
+      "id": "heart",
+      "label": "응원 하트",
+      "sha256": "0ddca3d3d15387b26b30b75f8397cb062e6d124cf1dbbf7fa9112a10239ba784",
+      "decision": "pass"
+    },
+    {
+      "id": "podium-microphone",
+      "label": "발표 마이크 연단",
+      "sha256": "238606493d111382166e03de02ed29abfc0e0d2d9d19d66dc1c1ba26465c2e73",
+      "decision": "pass"
+    },
+    {
+      "id": "art-palette",
+      "label": "미술 팔레트와 붓",
+      "sha256": "5e3445f4b2133628fe3419af4c2423460c723b5c7dc42b7ac083ead65a34fb9a",
+      "decision": "pass"
+    },
+    {
+      "id": "basketball",
+      "label": "농구공",
+      "sha256": "7d0df8c9ec2a00224650d9c243a32ea201b0d2a9113c6e9dadab98fdef8ca74d",
+      "decision": "pass"
+    },
+    {
+      "id": "globe",
+      "label": "지구본",
+      "sha256": "f2a03379553f75b687b95241f8494e8820ddaf2c88582b06ebe23c0c3cb743d2",
+      "decision": "pass"
+    },
+    {
+      "id": "guitar",
+      "label": "기타",
+      "sha256": "ccbe5791578af8533a9207e44b2f349a5e5701360b42571554c893110733b913",
+      "decision": "pass"
+    },
+    {
+      "id": "microscope",
+      "label": "현미경",
+      "sha256": "62f8db18406e1bfc24d103ce7f71530ef45ca467730c8c16f8eb8149c71add04",
+      "decision": "pass"
+    },
+    {
+      "id": "chalkboard",
+      "label": "분필 낙서 칠판",
+      "sha256": "e0e5d68ab01b05c1d3a87be7148a92261f76d4309e08023fc9e7880960ffdbcd",
+      "decision": "fix"
+    },
+    {
+      "id": "puzzle-stack",
+      "label": "쌓인 퍼즐 조각",
+      "sha256": "94b08b846341f4ea918c198db585f628563fa2cc44fdcb4120a209107d3c8d4e",
+      "decision": "pass"
+    },
+    {
+      "id": "santa-hat",
+      "label": "크리스마스 산타 모자",
+      "sha256": "09dec2fca8e0cb1c566ff2f2a7d8328271d2d07c17cc5b6bcfdab99c4694a8ac",
+      "decision": "pass"
+    },
+    {
+      "id": "seollal-hairpin",
+      "label": "설날 매화 머리장식",
+      "sha256": "9b1107c6f14eea79eff4d9d47edc368a292e93f1dfaf1ae861a3b01f7e1553a4",
+      "decision": "pass"
+    },
+    {
+      "id": "chuseok-hairpin",
+      "label": "추석 보름달 머리장식",
+      "sha256": "2182db98660e4db58ffa5bdd7a353dc9650475d75ebe062d23e1cf5bf6454bb6",
+      "decision": "pass"
+    },
+    {
+      "id": "christmas-gift-sack",
+      "label": "크리스마스 선물 주머니",
+      "sha256": "805c7d475c9fc3d5bb0d6fbbb713eca0959bdf6d1727e371af81c2252f07c03e",
+      "decision": "pass"
+    },
+    {
+      "id": "laptop",
+      "label": "코딩 컴퓨터",
+      "sha256": "ca3639d26c42dd237b148e537935684ed9b701721bf5cb16c715fcfccc866244",
+      "decision": "pass"
+    },
+    {
+      "id": "book-v3",
+      "label": "책 · 수정 V3",
+      "sha256": "6a934baeed2f5ab9cf93e76c802c6c27480e798161780045677d48770ab26cce",
+      "decision": "pass"
+    }
+  ],
+  "combinations": [
+    {
+      "id": "podium-microphone",
+      "decision": "pass"
+    },
+    {
+      "id": "globe",
+      "decision": "pass"
+    },
+    {
+      "id": "guitar",
+      "decision": "pass"
+    },
+    {
+      "id": "microscope",
+      "decision": "pass"
+    },
+    {
+      "id": "chalkboard",
+      "decision": "fix"
+    },
+    {
+      "id": "puzzle-stack",
+      "decision": "pass"
+    },
+    {
+      "id": "laptop",
+      "decision": "pass"
+    },
+    {
+      "id": "book-v3",
+      "decision": "pass"
+    },
+    {
+      "id": "heart-cheer",
+      "decision": "pass"
+    },
+    {
+      "id": "palette-cheer",
+      "decision": "pass"
+    },
+    {
+      "id": "basketball-hold",
+      "decision": "pass"
+    },
+    {
+      "id": "wand-cheer",
+      "decision": "pass"
+    },
+    {
+      "id": "megaphone-use",
+      "decision": "pass"
+    },
+    {
+      "id": "bag-use",
+      "decision": "pass"
+    },
+    {
+      "id": "plum-wave",
+      "decision": "pass"
+    },
+    {
+      "id": "moon-wave",
+      "decision": "pass"
+    },
+    {
+      "id": "christmas-red",
+      "decision": "pass"
+    }
+  ],
+  "spiralColors": "pass",
+  "bookWhitePages": "pass",
+  "releaseComplete": false,
+  "configuration": [
+    {
+      "path": "data/attachments.json",
+      "sha256": "49d5bf38fce5f683219e79e85e5526378dd8679b77f2380c184ea049ecf80ed6"
+    },
+    {
+      "path": "src/scene-placement.mjs",
+      "sha256": "8bdcb15c4c49a5b5d9fcaee1aca832b51f28fedf3285a744618a74d844263bbc"
+    },
+    {
+      "path": "src/tool-motion.mjs",
+      "sha256": "da958f1bdd336c57709dab2d1c5e2b98d175a6a50c914a3d721d065a4d34ea13"
+    },
+    {
+      "path": "src/book-pages.mjs",
+      "sha256": "93297fb54dde0e914725691a09234ed668fd18663948a0b5e46d9f65fca8bf3b"
+    },
+    {
+      "path": "src/spiral-colors.mjs",
+      "sha256": "2ba08985a9ab298dc49fa63e3461d635477c241ea9423ee988121851b2e1a20f"
+    },
+    {
+      "path": "src/spiral-effects.mjs",
+      "sha256": "66b7e2b3617cc5b6e08629ebf7c9f38af869227d622f26ccb6a8057cf4a36cb1"
+    }
+  ]
+}

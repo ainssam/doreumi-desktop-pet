@@ -1,0 +1,1052 @@
+{
+  "version": "V86",
+  "generatedAt": "2026-09-20T00:32:55.305Z",
+  "count": 34,
+  "status": "ALL_34_STATIC_EXPRESSIONS_USER_APPROVED",
+  "approvalRecord": "USER-APPROVAL.json",
+  "newMeshyRequests": 0,
+  "creditsConsumedThisApprovalOperation": 0,
+  "sourceAssetsCopiedOrModified": false,
+  "runtimeConnected": false,
+  "runtimeIntegrationApproved": false,
+  "naturalBlinkImplemented": false,
+  "lipSyncImplemented": false,
+  "approvalBreakdown": {
+    "previousApproved": 30,
+    "labelOnlyAccepted": 2,
+    "newRevisionsApproved": 2
+  },
+  "assets": [
+    {
+      "id": "neutral",
+      "label": "기본",
+      "version": "V67",
+      "model": "assets/neutral/model.glb",
+      "modelSHA256": "e98d03f97351830416fc6eaa791f014bbe8a5248035f4b03951c98f8fb629e3b",
+      "texture": "assets/neutral/texture.png",
+      "textureSHA256": "30844d4a18d503463f5137cb8838d3a755ed0c755daf652dc8555658af6ac49f",
+      "taskId": "01a0ba1f-da37-7218-99ba-dcfb8ae32baf",
+      "sourceConsumedCredits": 15,
+      "qa": {
+        "front": {
+          "path": "assets/neutral/front.png",
+          "sha256": "5777f6e31d78630c0f2d140a893764d8f62c7d4c9b5d8b5f0a81d958abe87451"
+        },
+        "quarter": {
+          "path": "assets/neutral/quarter.png",
+          "sha256": "fee7a93c1ca96d95f05b3ef145d3de5757e00293b959f3c191f643b4d7f1a132"
+        },
+        "side": {
+          "path": "assets/neutral/side.png",
+          "sha256": "b04f1cb4c3d3303d7623173bee336594c54d4f2783a7ad81226e5aed321f707b"
+        }
+      },
+      "userApproved": true,
+      "status": "USER_APPROVED_STATIC_EXPRESSION",
+      "approvalBasis": "V83_USER_APPROVED",
+      "runtimeConnected": false,
+      "runtimeAdopted": false
+    },
+    {
+      "id": "smile",
+      "label": "미소",
+      "version": "V68",
+      "model": "assets/smile/model.glb",
+      "modelSHA256": "074d903b22d156a353253ab5288a918ec852bc6fbcb31d64b92035d23b598a17",
+      "texture": "assets/smile/texture.png",
+      "textureSHA256": "3e45390b0bf4191c96c36e458a310a1be3d57b4c06511212e7b43a798a04d44b",
+      "taskId": "01a0ba40-b5d9-741e-af5d-6b9e5d6d22a7",
+      "sourceConsumedCredits": 15,
+      "qa": {
+        "front": {
+          "path": "assets/smile/front.png",
+          "sha256": "3083fa7004a2fc0255fc83510867633b45948f9413413e689411afd784ee878d"
+        },
+        "quarter": {
+          "path": "assets/smile/quarter.png",
+          "sha256": "7e3f9b602721c0665d90ab1d78520e82a0991116d6482439c1815340a166024b"
+        },
+        "side": {
+          "path": "assets/smile/side.png",
+          "sha256": "5295b0c520ef30f406b94bfc7d6cadde96cef4d81f188b488829f6a111461e45"
+        }
+      },
+      "userApproved": true,
+      "status": "USER_APPROVED_STATIC_EXPRESSION",
+      "approvalBasis": "V83_USER_APPROVED",
+      "runtimeConnected": false,
+      "runtimeAdopted": false
+    },
+    {
+      "id": "wink",
+      "label": "윙크",
+      "version": "V69",
+      "model": "assets/wink/model.glb",
+      "modelSHA256": "42d20bbd5abaef647e657b621d3b842f339c6bbe4520098d71c7ffc758822122",
+      "texture": "assets/wink/texture.png",
+      "textureSHA256": "db6b2fc1fbc86bd0a01a355dc461766b37727bc8f708129bae2566187f20c50b",
+      "taskId": "01a0ba4e-6b43-7573-883f-d0cb7f81c96e",
+      "sourceConsumedCredits": 15,
+      "qa": {
+        "front": {
+          "path": "assets/wink/front.png",
+          "sha256": "bfe09dfb7fd0c43cef944e01155d539c25a2d62c862a6acdf90f85ae54e94a3a"
+        },
+        "quarter": {
+          "path": "assets/wink/quarter.png",
+          "sha256": "469a23fcb538ea7c732e002bf3fc31e49cc1b45771a0203fed1147dec41f7186"
+        },
+        "side": {
+          "path": "assets/wink/side.png",
+          "sha256": "5ebb43270d3b84566964cffd9e1830f973c2bced442cab1146b0e86fb6688f00"
+        }
+      },
+      "userApproved": true,
+      "status": "USER_APPROVED_STATIC_EXPRESSION",
+      "approvalBasis": "V83_USER_APPROVED",
+      "runtimeConnected": false,
+      "runtimeAdopted": false
+    },
+    {
+      "id": "laugh",
+      "label": "활짝 웃음",
+      "version": "V69",
+      "model": "assets/laugh/model.glb",
+      "modelSHA256": "0df4c03866dfa6d3ed0c5e0df851bdc6d38e8bd469aeebe528426e00837cc167",
+      "texture": "assets/laugh/texture.png",
+      "textureSHA256": "50a1df90dab56f9d4ab2968053d2af809761381a551006c980fe7edbc253ee68",
+      "taskId": "01a0ba4e-6b41-75d6-9380-1ec19a5303d3",
+      "sourceConsumedCredits": 15,
+      "qa": {
+        "front": {
+          "path": "assets/laugh/front.png",
+          "sha256": "10d14fa7c8d26580eb29cf8b8b5293beec8f8bcbba0e6d64e5ce411333024629"
+        },
+        "quarter": {
+          "path": "assets/laugh/quarter.png",
+          "sha256": "59fb4e1e73b9232f645bc84d1e17eb44efe90a37536b8da7444946ae2cfc9f30"
+        },
+        "side": {
+          "path": "assets/laugh/side.png",
+          "sha256": "902eae5c49798bd0d5284fa6d279ad39c6eb5dee2531d2ba7e678952fa3a9f47"
+        }
+      },
+      "userApproved": true,
+      "status": "USER_APPROVED_STATIC_EXPRESSION",
+      "approvalBasis": "V83_USER_APPROVED",
+      "runtimeConnected": false,
+      "runtimeAdopted": false
+    },
+    {
+      "id": "surprise",
+      "label": "놀람",
+      "version": "V69",
+      "model": "assets/surprise/model.glb",
+      "modelSHA256": "cb2f73f2c0e524292b0f599a873f181ce816357c4afdbe974faa0d7810feac9f",
+      "texture": "assets/surprise/texture.png",
+      "textureSHA256": "631ca84121b7cc65b579ab159c0e43d1e883328f8765940f774a66f3fe6728f9",
+      "taskId": "01a0ba50-13a8-71f9-8a51-147b3f041527",
+      "sourceConsumedCredits": 15,
+      "qa": {
+        "front": {
+          "path": "assets/surprise/front.png",
+          "sha256": "785b939c0b2caccc49e1af7c8f3140a097c178a97e8c1719dd3c775d2782085f"
+        },
+        "quarter": {
+          "path": "assets/surprise/quarter.png",
+          "sha256": "dbcad4aa3d876424762531e7ec94c3aa96fda8015602a66aae17922708f096e9"
+        },
+        "side": {
+          "path": "assets/surprise/side.png",
+          "sha256": "edfb20d3daf77b54788ccce82383db314fa9e7fbe9a0c69353dcce8500ced968"
+        }
+      },
+      "userApproved": true,
+      "status": "USER_APPROVED_STATIC_EXPRESSION",
+      "approvalBasis": "V83_USER_APPROVED",
+      "runtimeConnected": false,
+      "runtimeAdopted": false
+    },
+    {
+      "id": "thinking",
+      "label": "생각",
+      "version": "V84",
+      "model": "assets/thinking/model.glb",
+      "modelSHA256": "58e5aba0d89c91f95026e92fffe422b2cb1881df2eac78731d2a7301fbe1da6b",
+      "texture": "assets/thinking/texture.png",
+      "textureSHA256": "7469c44bcb206b9068694801aa2f64f00e50cac583d6803fb81e8dede2e62bfe",
+      "taskId": "01a0bc26-4932-779d-b8c3-4a50f80e95c4",
+      "sourceConsumedCredits": 15,
+      "qa": {
+        "front": {
+          "path": "assets/thinking/front.png",
+          "sha256": "9e4eec1280527e12e24b779e4fc652476d1e8c75ec99f5898cf2945b4ced1456"
+        },
+        "quarter": {
+          "path": "assets/thinking/quarter.png",
+          "sha256": "33bcec7d8a2812d199691ea96861a1325a1e61348980ccdd017ec1fd2fe6bd33"
+        },
+        "side": {
+          "path": "assets/thinking/side.png",
+          "sha256": "05ce54ce2dc3f4bfc566426d6f28e0413fd4ab4780a136894af93088d0d38fc7"
+        }
+      },
+      "userApproved": true,
+      "status": "USER_APPROVED_STATIC_EXPRESSION",
+      "approvalBasis": "V85_RELAYED_USER_APPROVAL",
+      "runtimeConnected": false,
+      "runtimeAdopted": false,
+      "supersededCandidate": {
+        "model": "not-packaged/original-workspace-only",
+        "modelSHA256": "e47b4fb071b227fa6bacf288b2d601c32d86e1a43f9e6ef4cae8eb275984bb91",
+        "status": "PRESERVED_OUTSIDE_HANDOFF_NOT_IN_APPROVED_SET"
+      }
+    },
+    {
+      "id": "sleepy",
+      "label": "졸림",
+      "version": "V69",
+      "model": "assets/sleepy/model.glb",
+      "modelSHA256": "d4cd327d6eb67a5f9418422b7a747f927744bf6e1aeb31eab1f627b06a7774cc",
+      "texture": "assets/sleepy/texture.png",
+      "textureSHA256": "7b719193aac7fb6773a1555a21986faa8113ff173b5d8849d77595b4ee0fd226",
+      "taskId": "01a0ba52-3655-75f5-8ae7-b7a25d06127d",
+      "sourceConsumedCredits": 15,
+      "qa": {
+        "front": {
+          "path": "assets/sleepy/front.png",
+          "sha256": "e5229f267f7b806119eb5cf8dc1bc1ba10bfd381dc54eef8e50d39f75a7e1780"
+        },
+        "quarter": {
+          "path": "assets/sleepy/quarter.png",
+          "sha256": "e815fc345e257f748e959f698eb1e6a1a7afe827b5a2525889e6d339749050c6"
+        },
+        "side": {
+          "path": "assets/sleepy/side.png",
+          "sha256": "e74b636e9eabb8a81b07575274ddd0027830007fee1a1858ddacb4159b2b442a"
+        }
+      },
+      "userApproved": true,
+      "status": "USER_APPROVED_STATIC_EXPRESSION",
+      "approvalBasis": "V83_USER_APPROVED",
+      "runtimeConnected": false,
+      "runtimeAdopted": false
+    },
+    {
+      "id": "aa",
+      "label": "말하기 아",
+      "version": "V69",
+      "model": "assets/aa/model.glb",
+      "modelSHA256": "c6ca9cb9c3b94778a5b80ab19caf9e0b3ab7546363cbba2994e38d303ca74903",
+      "texture": "assets/aa/texture.png",
+      "textureSHA256": "d21372f05dc8a81a877bb411f0e2e4da837f718ed7fe99003018c6040788b603",
+      "taskId": "01a0ba52-b126-73e5-b83f-090a82ca6a36",
+      "sourceConsumedCredits": 15,
+      "qa": {
+        "front": {
+          "path": "assets/aa/front.png",
+          "sha256": "16ff1b73d0ce14f896625ab331c3fbf540794513eacd970247d473e9abc0067e"
+        },
+        "quarter": {
+          "path": "assets/aa/quarter.png",
+          "sha256": "15176f181690c587521d3a1e3a5511741794423f45991a7d05a2d6a4a47fdd69"
+        },
+        "side": {
+          "path": "assets/aa/side.png",
+          "sha256": "19eb6f46914b7268ef81a053f51aa253aa6aedd07e24e108925cbf64dfbcd7eb"
+        }
+      },
+      "userApproved": true,
+      "status": "USER_APPROVED_STATIC_EXPRESSION",
+      "approvalBasis": "V83_USER_APPROVED",
+      "runtimeConnected": false,
+      "runtimeAdopted": false
+    },
+    {
+      "id": "oh",
+      "label": "말하기 오",
+      "version": "V69",
+      "model": "assets/oh/model.glb",
+      "modelSHA256": "9439ddd5511764cae46454c935d13e2c5b7d6bd33c1e3a3c4a18b3ae918ee896",
+      "texture": "assets/oh/texture.png",
+      "textureSHA256": "7b3dc1deb28d39738b5c9428f49191510d91be5c3fa98b29a3505310b899f46e",
+      "taskId": "01a0ba54-83d1-7088-9229-626cfa32b0b2",
+      "sourceConsumedCredits": 15,
+      "qa": {
+        "front": {
+          "path": "assets/oh/front.png",
+          "sha256": "477fad07b593dbbd8302af9d44fedb1966dde479bbe88d2d19e39766a2617362"
+        },
+        "quarter": {
+          "path": "assets/oh/quarter.png",
+          "sha256": "0ceab0625a93f1f27d6a64589c193aba43db9b690e95a6bc3f4658ab023b9c21"
+        },
+        "side": {
+          "path": "assets/oh/side.png",
+          "sha256": "04068d141af5ae43be0aeb3d51a9d7e62e83d496e83a381966b9d4bf6e221d1d"
+        }
+      },
+      "userApproved": true,
+      "status": "USER_APPROVED_STATIC_EXPRESSION",
+      "approvalBasis": "V83_USER_APPROVED",
+      "runtimeConnected": false,
+      "runtimeAdopted": false
+    },
+    {
+      "id": "oo",
+      "label": "말하기 우",
+      "version": "V84",
+      "model": "assets/oo/model.glb",
+      "modelSHA256": "f56ee70b8bf090826217865b85941674a3ade5e1e3ee4a14b464a651330bffdc",
+      "texture": "assets/oo/texture.png",
+      "textureSHA256": "67d2360277a395d2e0d1a447e13860db4277380e8aeb82307ac138855756bbab",
+      "taskId": "01a0bc2a-2460-7596-ac3d-99edbdcdaafc",
+      "sourceConsumedCredits": 15,
+      "qa": {
+        "front": {
+          "path": "assets/oo/front.png",
+          "sha256": "f687341d8860a18d180d3c3d786c961031306843225d89d1cc48db534d0d0879"
+        },
+        "quarter": {
+          "path": "assets/oo/quarter.png",
+          "sha256": "a186d68d1b34df4985bfa98a650267396cd2fe4553913fe3bab005ba62ab1a10"
+        },
+        "side": {
+          "path": "assets/oo/side.png",
+          "sha256": "0e2f7534df07d1129caf597b717201b51ba19f186701bb632e64ce315460aa01"
+        }
+      },
+      "userApproved": true,
+      "status": "USER_APPROVED_STATIC_EXPRESSION",
+      "approvalBasis": "V85_RELAYED_USER_APPROVAL",
+      "runtimeConnected": false,
+      "runtimeAdopted": false,
+      "supersededCandidate": {
+        "model": "not-packaged/original-workspace-only",
+        "modelSHA256": "b73f596a2541e53c7f13f35db4b852e64b4957bd26b7b98da233b36ca5c04b7e",
+        "status": "PRESERVED_OUTSIDE_HANDOFF_NOT_IN_APPROVED_SET"
+      }
+    },
+    {
+      "id": "blink_closed",
+      "label": "깜빡임용 감은 눈",
+      "version": "V71",
+      "model": "assets/blink_closed/model.glb",
+      "modelSHA256": "d3a887b3410066f3486781865b58adae5403bcfaae10c64391902213b5ed7c09",
+      "texture": "assets/blink_closed/texture.png",
+      "textureSHA256": "3ec9f93ff2e666ee390715e7680f017f8e277ceb064afad096e9d6ca4ab027c4",
+      "taskId": "01a0ba87-4b37-72fe-98ab-3a943d3dde8c",
+      "sourceConsumedCredits": 15,
+      "qa": {
+        "front": {
+          "path": "assets/blink_closed/front.png",
+          "sha256": "7ebf6bca74984accda28c2c2c5becdd8ef17208993e3c7422e251dc6522723b0"
+        },
+        "quarter": {
+          "path": "assets/blink_closed/quarter.png",
+          "sha256": "51af7ed48545bdb774c24c40ed9cfeeccd6e0417d37532bf755416e6b55135df"
+        },
+        "side": {
+          "path": "assets/blink_closed/side.png",
+          "sha256": "e158b1d4ffe01c268931db3a38ec435cbb16c78878de56f8f999f5c60780f155"
+        }
+      },
+      "userApproved": true,
+      "status": "USER_APPROVED_STATIC_EXPRESSION",
+      "approvalBasis": "V83_USER_APPROVED",
+      "runtimeConnected": false,
+      "runtimeAdopted": false
+    },
+    {
+      "id": "relieved",
+      "label": "기쁨",
+      "version": "V71",
+      "model": "assets/relieved/model.glb",
+      "modelSHA256": "9c8ba3da66fca0757c9d4a994216d6c7782bdfbd8c110c495c933d3efffd04e2",
+      "texture": "assets/relieved/texture.png",
+      "textureSHA256": "c2841ce535812610c7eba0c722c896f8c7b29b99cacf7fcb8ede7ad40eb48436",
+      "taskId": "01a0ba87-4b6c-70a4-8eb6-94f1c495248e",
+      "sourceConsumedCredits": 15,
+      "qa": {
+        "front": {
+          "path": "assets/relieved/front.png",
+          "sha256": "bcc390d3e02a5e03bc856af87525beb736a5091f73e59d5098417e0ea4cf1c2c"
+        },
+        "quarter": {
+          "path": "assets/relieved/quarter.png",
+          "sha256": "6bcabbacbba91f6936477894150609b9743f42d7db0693eea7e2f1c0dd23baaf"
+        },
+        "side": {
+          "path": "assets/relieved/side.png",
+          "sha256": "db97a329aa4c3f9cb223042de26da2025c49157d66dab7230e6b7480807d95cb"
+        }
+      },
+      "userApproved": true,
+      "status": "USER_APPROVED_STATIC_EXPRESSION",
+      "approvalBasis": "V83_USER_ACCEPTED_WITH_APPROVED_LABEL_CHANGE",
+      "runtimeConnected": false,
+      "runtimeAdopted": false
+    },
+    {
+      "id": "half_sleepy",
+      "label": "반쯤 졸림",
+      "version": "V71",
+      "model": "assets/half_sleepy/model.glb",
+      "modelSHA256": "aae1b882b0bb833843d7248fb2611df719813766cd9e2bdc161f0b303367e814",
+      "texture": "assets/half_sleepy/texture.png",
+      "textureSHA256": "9509e40e79d24e6bc008a48bfb9b7bddea671c645efe14acfd3b90ce3d1add56",
+      "taskId": "01a0ba88-d3f0-74b0-a691-af8eee30f77b",
+      "sourceConsumedCredits": 15,
+      "qa": {
+        "front": {
+          "path": "assets/half_sleepy/front.png",
+          "sha256": "2e2738d375e1ee1d1d5820b287d7d9eef241fab7c67a609ad40861411a8df7bf"
+        },
+        "quarter": {
+          "path": "assets/half_sleepy/quarter.png",
+          "sha256": "34e57226ad476b3cbb3a7bb94a5cedb892a9de11f28dbc4c76d7ae30ec37b426"
+        },
+        "side": {
+          "path": "assets/half_sleepy/side.png",
+          "sha256": "1167b619f4e1f0329718741514ceeb67343945ade11e0b73cf6ea87441ab5904"
+        }
+      },
+      "userApproved": true,
+      "status": "USER_APPROVED_STATIC_EXPRESSION",
+      "approvalBasis": "V83_USER_APPROVED",
+      "runtimeConnected": false,
+      "runtimeAdopted": false
+    },
+    {
+      "id": "soft_sad",
+      "label": "살짝 슬픔",
+      "version": "V71",
+      "model": "assets/soft_sad/model.glb",
+      "modelSHA256": "77213e21ac5dbad9236a4f8496c54910ce2cacbb81fdecdfe2b6048b735b70fa",
+      "texture": "assets/soft_sad/texture.png",
+      "textureSHA256": "11f07c5975b6d9df06485fee6dc5d56ec167fdf3c154559885d3da0e3aebe6f4",
+      "taskId": "01a0ba89-01e4-7450-8ad5-a1d266114f27",
+      "sourceConsumedCredits": 15,
+      "qa": {
+        "front": {
+          "path": "assets/soft_sad/front.png",
+          "sha256": "f840c537286d32b0465c47a5588d04f271301c1c8b0a77dca647082c602f6ccd"
+        },
+        "quarter": {
+          "path": "assets/soft_sad/quarter.png",
+          "sha256": "163ccb2609355364fc344523c01689c243259fc5357ccc5ccca9ee994d462175"
+        },
+        "side": {
+          "path": "assets/soft_sad/side.png",
+          "sha256": "5b64574ea6c8e5d7b395eae75a8ea6ab19ad1b1f587146d3fde62402c6869eb8"
+        }
+      },
+      "userApproved": true,
+      "status": "USER_APPROVED_STATIC_EXPRESSION",
+      "approvalBasis": "V83_USER_APPROVED",
+      "runtimeConnected": false,
+      "runtimeAdopted": false
+    },
+    {
+      "id": "curious",
+      "label": "호기심",
+      "version": "V73",
+      "model": "assets/curious/model.glb",
+      "modelSHA256": "27b19e85d6b3a06a4d3dcbb080fdc0678159b6b91c79d60ced91ac6a4a64fd7e",
+      "texture": "assets/curious/texture.png",
+      "textureSHA256": "889fd7f8eef1c9748f326adbbddd3ff3dde8ed828b49e5b1f154b549b4770bb2",
+      "taskId": "01a0ba96-3404-7099-9dba-3cdb338ec47b",
+      "sourceConsumedCredits": 15,
+      "qa": {
+        "front": {
+          "path": "assets/curious/front.png",
+          "sha256": "8300d4b7f061c9ff4c2dca3b9d12826765e330da6154e08e1759041aacc8eb5a"
+        },
+        "quarter": {
+          "path": "assets/curious/quarter.png",
+          "sha256": "ae575b2a8efda063e059485ce5346a94839b49c883973ac49c01aa0a0e7ccacd"
+        },
+        "side": {
+          "path": "assets/curious/side.png",
+          "sha256": "51e0fac50e9cecb5ff1bb5878a1f028292b0aca98a66d4f33849a9139842c7de"
+        }
+      },
+      "userApproved": true,
+      "status": "USER_APPROVED_STATIC_EXPRESSION",
+      "approvalBasis": "V83_USER_APPROVED",
+      "runtimeConnected": false,
+      "runtimeAdopted": false
+    },
+    {
+      "id": "shy",
+      "label": "부끄러움",
+      "version": "V73",
+      "model": "assets/shy/model.glb",
+      "modelSHA256": "c73200e19425cbbed3941d4dee38acd688851ba74af2591f1aba21cb3af48da8",
+      "texture": "assets/shy/texture.png",
+      "textureSHA256": "1df714bcf7431ecf1c06b9b8cdfeb0145c6088d511b92893d5198c712b14d1e3",
+      "taskId": "01a0ba96-3405-7521-8434-8393f0834bf2",
+      "sourceConsumedCredits": 15,
+      "qa": {
+        "front": {
+          "path": "assets/shy/front.png",
+          "sha256": "4cc9798a170c2b31ed86e9f57e33b654bfd77c311deebc3789621f566d94d760"
+        },
+        "quarter": {
+          "path": "assets/shy/quarter.png",
+          "sha256": "a569d7d9864b85dc3220af3755eaacd1f93f710f9b289040f656c774ea024444"
+        },
+        "side": {
+          "path": "assets/shy/side.png",
+          "sha256": "136dc382c008a3814a16816216f2db49d06cffb9dcc6f3bf29a1b3fed825ff3c"
+        }
+      },
+      "userApproved": true,
+      "status": "USER_APPROVED_STATIC_EXPRESSION",
+      "approvalBasis": "V83_USER_ACCEPTED_WITH_APPROVED_LABEL_CHANGE",
+      "runtimeConnected": false,
+      "runtimeAdopted": false
+    },
+    {
+      "id": "proud",
+      "label": "뿌듯함",
+      "version": "V73",
+      "model": "assets/proud/model.glb",
+      "modelSHA256": "78fc84df710c23b62b062e31999547ab6ea8464b85c25430d59de9c780a5f854",
+      "texture": "assets/proud/texture.png",
+      "textureSHA256": "596e4cde06fd48f14b38c8a878843803018219d270e16189073c7e6f09dbfbca",
+      "taskId": "01a0ba97-d9bb-7760-847a-262d06c1b3ad",
+      "sourceConsumedCredits": 15,
+      "qa": {
+        "front": {
+          "path": "assets/proud/front.png",
+          "sha256": "5c212c09cab8dd4cf657c4cdc51c010417df00ef5701728c5989de6ddd18e850"
+        },
+        "quarter": {
+          "path": "assets/proud/quarter.png",
+          "sha256": "ec920073563d456cd162b172741ef886d158fefe2f93e499914094b72f46900c"
+        },
+        "side": {
+          "path": "assets/proud/side.png",
+          "sha256": "6a4f590dd182be2cc3ee82baf75bcf0fa350fb18da5d7276927fa5c8ee60bb51"
+        }
+      },
+      "userApproved": true,
+      "status": "USER_APPROVED_STATIC_EXPRESSION",
+      "approvalBasis": "V83_USER_APPROVED",
+      "runtimeConnected": false,
+      "runtimeAdopted": false
+    },
+    {
+      "id": "teary",
+      "label": "울먹임",
+      "version": "V73",
+      "model": "assets/teary/model.glb",
+      "modelSHA256": "156bf04e17cc1707f28e1ea4470b16fcfbcb10ed4eb7d597d7241c0c31d882eb",
+      "texture": "assets/teary/texture.png",
+      "textureSHA256": "c5fb107d37f194fcd02624b4c87cd956080bdff3fd1bcdc9951855b992ee7d83",
+      "taskId": "01a0ba98-0281-710e-a543-76fee872473f",
+      "sourceConsumedCredits": 15,
+      "qa": {
+        "front": {
+          "path": "assets/teary/front.png",
+          "sha256": "f8f900d545afd924591059d1451fd8a7b82c2c86fb155195c22241b2f5acb812"
+        },
+        "quarter": {
+          "path": "assets/teary/quarter.png",
+          "sha256": "ec0ac97897cbb7adae3707b7b2ba3b415f06b8e5da8296c6924389129a3a594d"
+        },
+        "side": {
+          "path": "assets/teary/side.png",
+          "sha256": "5f53935be24aa1586f09c034c390d3f9a10feb88923675fc09503b7f8c672a33"
+        }
+      },
+      "userApproved": true,
+      "status": "USER_APPROVED_STATIC_EXPRESSION",
+      "approvalBasis": "V83_USER_APPROVED",
+      "runtimeConnected": false,
+      "runtimeAdopted": false
+    },
+    {
+      "id": "annoyed",
+      "label": "살짝 짜증",
+      "version": "V75",
+      "model": "assets/annoyed/model.glb",
+      "modelSHA256": "8ae3fa6f2952fb67b4b5d91185ae1a28c2a5a359e04399a97627709bb9c4c869",
+      "texture": "assets/annoyed/texture.png",
+      "textureSHA256": "42fa94e12d84809e32b7ea95c32e3c555176c554b28cf1d379da8113c5ef706f",
+      "taskId": "01a0bab7-4389-7250-946f-ca00b8ae93a8",
+      "sourceConsumedCredits": 15,
+      "qa": {
+        "front": {
+          "path": "assets/annoyed/front.png",
+          "sha256": "8d4abd3962bc2be15e16886df90cbb688cd7dfe20de1e3917fc8b21e443dd692"
+        },
+        "quarter": {
+          "path": "assets/annoyed/quarter.png",
+          "sha256": "c5bd0f04acbd3c6d928abdfc3f918ae812d2c08556410904b7384166ebe586ca"
+        },
+        "side": {
+          "path": "assets/annoyed/side.png",
+          "sha256": "c9d236bea3af1391f609d92ddb8bf89f0bbabefb2d8e9aec6a8304226948f79d"
+        }
+      },
+      "userApproved": true,
+      "status": "USER_APPROVED_STATIC_EXPRESSION",
+      "approvalBasis": "V83_USER_APPROVED",
+      "runtimeConnected": false,
+      "runtimeAdopted": false
+    },
+    {
+      "id": "determined",
+      "label": "결의",
+      "version": "V75",
+      "model": "assets/determined/model.glb",
+      "modelSHA256": "67fa05a7ff735cbc388c6b68df9688f84bcb99c666b4ec1303eab6c14a30be13",
+      "texture": "assets/determined/texture.png",
+      "textureSHA256": "598e6f1ecf85298054e9007a277ee9081b6545d4cbcc1ed36cdb51fe3d9d009f",
+      "taskId": "01a0bab7-43e7-7409-8dde-68867de6caed",
+      "sourceConsumedCredits": 15,
+      "qa": {
+        "front": {
+          "path": "assets/determined/front.png",
+          "sha256": "0665d7975b3d7f4350bd754ebe78932b4ca408503d2650d67a3ca5d51559aeb1"
+        },
+        "quarter": {
+          "path": "assets/determined/quarter.png",
+          "sha256": "4701235b8a6bafd91c39c0666f083c7fdb185adaa9233b487dbac4b5abbd96d0"
+        },
+        "side": {
+          "path": "assets/determined/side.png",
+          "sha256": "448dc5688d7002a2e204575a7fc532db36e28d6ee2828fe68105644d8eea15ea"
+        }
+      },
+      "userApproved": true,
+      "status": "USER_APPROVED_STATIC_EXPRESSION",
+      "approvalBasis": "V83_USER_APPROVED",
+      "runtimeConnected": false,
+      "runtimeAdopted": false
+    },
+    {
+      "id": "confused",
+      "label": "갸우뚱/혼란",
+      "version": "V75",
+      "model": "assets/confused/model.glb",
+      "modelSHA256": "ed9a60ff2d4e6f2e1978810315f3198141012e9070787b373a24a491543a9e40",
+      "texture": "assets/confused/texture.png",
+      "textureSHA256": "ab324706b9c4e687daf20cfb09b3da52c7a7b1360b3c2438f18f1cc798e280fb",
+      "taskId": "01a0bab8-bf0f-70b0-b948-db324d2db342",
+      "sourceConsumedCredits": 15,
+      "qa": {
+        "front": {
+          "path": "assets/confused/front.png",
+          "sha256": "c2bce643007faf9da89a8b2990bee2c24a815e8efd5b57803830326fbeb94d7b"
+        },
+        "quarter": {
+          "path": "assets/confused/quarter.png",
+          "sha256": "afe273e3e103c3744524e1ead63be3c8bf590509cf91596b0ed4da1b83274051"
+        },
+        "side": {
+          "path": "assets/confused/side.png",
+          "sha256": "6f4211d939b852f4e43c866372dd37ecaf430d62f037669e8d17e2d40bc3bf4b"
+        }
+      },
+      "userApproved": true,
+      "status": "USER_APPROVED_STATIC_EXPRESSION",
+      "approvalBasis": "V83_USER_APPROVED",
+      "runtimeConnected": false,
+      "runtimeAdopted": false
+    },
+    {
+      "id": "worried",
+      "label": "걱정",
+      "version": "V75",
+      "model": "assets/worried/model.glb",
+      "modelSHA256": "1ab08f8e947aea1a7c9d60365f4a6c766a8b6f5030e9e6292aab09e8b114cc37",
+      "texture": "assets/worried/texture.png",
+      "textureSHA256": "ebab781bc89461849e00e4aaee6a5effb964f867a029f8d692b2eea1c122de61",
+      "taskId": "01a0bab8-bfd4-775e-b8a9-7aa5f6d23fa5",
+      "sourceConsumedCredits": 15,
+      "qa": {
+        "front": {
+          "path": "assets/worried/front.png",
+          "sha256": "20446ab63939594bca9604dd4cf4d8c596b0fd7dfd9315e8a4300d61d333ef2e"
+        },
+        "quarter": {
+          "path": "assets/worried/quarter.png",
+          "sha256": "3fca0d6026f6c61491c72d2835ae1fd8599fbee01f3a77810a5035f44610b194"
+        },
+        "side": {
+          "path": "assets/worried/side.png",
+          "sha256": "b245321b5f637dad464273a5cd33116472bbd6fa5f0787265d580853e7d266bd"
+        }
+      },
+      "userApproved": true,
+      "status": "USER_APPROVED_STATIC_EXPRESSION",
+      "approvalBasis": "V83_USER_APPROVED",
+      "runtimeConnected": false,
+      "runtimeAdopted": false
+    },
+    {
+      "id": "love",
+      "label": "반함",
+      "version": "V77",
+      "model": "assets/love/model.glb",
+      "modelSHA256": "e267c2dfc1bc2427b597d33ac547661d3bb03ec27b19d8d924f731534afbdb5c",
+      "texture": "assets/love/texture.png",
+      "textureSHA256": "c18bfe4f5b9fddbbb61c940ece205c5b005cc0019597d458f0836072877c8a29",
+      "taskId": "01a0bace-0e06-71e1-b259-173d1fdaeafe",
+      "sourceConsumedCredits": 15,
+      "qa": {
+        "front": {
+          "path": "assets/love/front.png",
+          "sha256": "01bd2648feceaf23511ce0648749a70a89b5a533124557962324df033abada3b"
+        },
+        "quarter": {
+          "path": "assets/love/quarter.png",
+          "sha256": "ae814af5cb0d30b5f5a190547ab96807cad182e9413abc074494c54f1ff0b56a"
+        },
+        "side": {
+          "path": "assets/love/side.png",
+          "sha256": "6a95fbbbc928de6912557a20a6ede7a0bfb7bdc9f7a1ce5be561afdc38419112"
+        }
+      },
+      "userApproved": true,
+      "status": "USER_APPROVED_STATIC_EXPRESSION",
+      "approvalBasis": "V83_USER_APPROVED",
+      "runtimeConnected": false,
+      "runtimeAdopted": false
+    },
+    {
+      "id": "sparkly",
+      "label": "초롱초롱",
+      "version": "V77",
+      "model": "assets/sparkly/model.glb",
+      "modelSHA256": "703f6589c6865a65917d3bc814b9c2ac5f540872d8ac8198d8c8c793d6cabe80",
+      "texture": "assets/sparkly/texture.png",
+      "textureSHA256": "09e109a97d80215fbe3dbb88170555b24b5860f20c53591c7e81087ae113e4d2",
+      "taskId": "01a0bace-0e06-71e2-aa4f-a0d8c964a625",
+      "sourceConsumedCredits": 15,
+      "qa": {
+        "front": {
+          "path": "assets/sparkly/front.png",
+          "sha256": "2020da5071f51da6c2d16f7318b7a5ad5ffbbb668c752df9c3a8e40d652e5f41"
+        },
+        "quarter": {
+          "path": "assets/sparkly/quarter.png",
+          "sha256": "3666ebafc5f261d504c609cc96f956b14650d234fbef2232fd857e09f9472816"
+        },
+        "side": {
+          "path": "assets/sparkly/side.png",
+          "sha256": "8a437bf621fe1e48978f75a94d85e50db37b50323b669cf8df89caae277932f6"
+        }
+      },
+      "userApproved": true,
+      "status": "USER_APPROVED_STATIC_EXPRESSION",
+      "approvalBasis": "V83_USER_APPROVED",
+      "runtimeConnected": false,
+      "runtimeAdopted": false
+    },
+    {
+      "id": "listening",
+      "label": "경청",
+      "version": "V77",
+      "model": "assets/listening/model.glb",
+      "modelSHA256": "639d4685a1dc00e8eb6aaa0946cea22581e6e5ffaafb84dd53cb138cb823d5a1",
+      "texture": "assets/listening/texture.png",
+      "textureSHA256": "76bfcdd2576302c1dd0bca39ee624faece0695ea1fc756f78c69f19999adc601",
+      "taskId": "01a0bad0-d053-76b7-a7f8-04d0f1affd87",
+      "sourceConsumedCredits": 15,
+      "qa": {
+        "front": {
+          "path": "assets/listening/front.png",
+          "sha256": "eef9ac4c0c86bbce2814cdddce37077915a6c4520a96bbdde361e8140ec4f211"
+        },
+        "quarter": {
+          "path": "assets/listening/quarter.png",
+          "sha256": "8f4a1a85e2ae5a6ac3f35fddfca85569294605b7703b850fa43b8fbd09ab4895"
+        },
+        "side": {
+          "path": "assets/listening/side.png",
+          "sha256": "ae7f3891b67ca42a170b405e236fa76ab9f7776a360db27894417193a8366fcb"
+        }
+      },
+      "userApproved": true,
+      "status": "USER_APPROVED_STATIC_EXPRESSION",
+      "approvalBasis": "V83_USER_APPROVED",
+      "runtimeConnected": false,
+      "runtimeAdopted": false
+    },
+    {
+      "id": "focused",
+      "label": "집중",
+      "version": "V77",
+      "model": "assets/focused/model.glb",
+      "modelSHA256": "da806a91f99fa60d14bf37a3155319fab13b306c793820f8cf479ce275438942",
+      "texture": "assets/focused/texture.png",
+      "textureSHA256": "afca0f5520699cabbe67a8e60d2249e10dacb82a21c3c6d987414ae65f32dc5b",
+      "taskId": "01a0bad0-d0d8-741e-8ea8-d930dd3d55e5",
+      "sourceConsumedCredits": 15,
+      "qa": {
+        "front": {
+          "path": "assets/focused/front.png",
+          "sha256": "77ff4dcbfb112e95d83b198036a7213575cfab9f4b84b508c2429e17fcd8636a"
+        },
+        "quarter": {
+          "path": "assets/focused/quarter.png",
+          "sha256": "ea7604e31f3c4ae1a95c9c048bcdde5f4ec65ab4c7187addceac0f529f6aa4c4"
+        },
+        "side": {
+          "path": "assets/focused/side.png",
+          "sha256": "41245c2678592365c2e29078d158bb2d8c3e1cc734865166a528a6f729b1a11b"
+        }
+      },
+      "userApproved": true,
+      "status": "USER_APPROVED_STATIC_EXPRESSION",
+      "approvalBasis": "V83_USER_APPROVED",
+      "runtimeConnected": false,
+      "runtimeAdopted": false
+    },
+    {
+      "id": "aha",
+      "label": "아하",
+      "version": "V79",
+      "model": "assets/aha/model.glb",
+      "modelSHA256": "74d8fc96e86184b6b8bf8a0c604bbad90966057c5093ac6865220da079db114e",
+      "texture": "assets/aha/texture.png",
+      "textureSHA256": "0e31e6f4582e8e7848b52ff0c5ebd57ea11297a520200802bbc3fdef88a990b4",
+      "taskId": "01a0badc-536d-7443-8068-bc5f76289991",
+      "sourceConsumedCredits": 15,
+      "qa": {
+        "front": {
+          "path": "assets/aha/front.png",
+          "sha256": "82b894fb189207c257b4cddb6270242cc73ade92c91bf6b5313ac3e2039fcf04"
+        },
+        "quarter": {
+          "path": "assets/aha/quarter.png",
+          "sha256": "a19598d51c44417be6cc3ff98397f97d5649a8111adf13adec36c5459f709043"
+        },
+        "side": {
+          "path": "assets/aha/side.png",
+          "sha256": "9a9ce8304100376bce0707930945c41466eebfe3264e73f5127169ab2e645f27"
+        }
+      },
+      "userApproved": true,
+      "status": "USER_APPROVED_STATIC_EXPRESSION",
+      "approvalBasis": "V83_USER_APPROVED",
+      "runtimeConnected": false,
+      "runtimeAdopted": false
+    },
+    {
+      "id": "skeptical",
+      "label": "의심",
+      "version": "V79",
+      "model": "assets/skeptical/model.glb",
+      "modelSHA256": "e78bc2a398961275c36f6ce3a807acea7cce9c5b838074fcab4ae79a66abbed9",
+      "texture": "assets/skeptical/texture.png",
+      "textureSHA256": "e4dece706c4538c854e955fac2a01e3b57c22a67a3640fe3400170b51aa26fca",
+      "taskId": "01a0badc-536c-766e-9786-4e3f95635d48",
+      "sourceConsumedCredits": 15,
+      "qa": {
+        "front": {
+          "path": "assets/skeptical/front.png",
+          "sha256": "e019adbd24009deff263b5d023d9775b3d5368481f723cdc231b6839e3b03915"
+        },
+        "quarter": {
+          "path": "assets/skeptical/quarter.png",
+          "sha256": "e4341de3becf7e7871e67d478f57ffd0f0b10c7a4d0d30dca256cb6490aea5cb"
+        },
+        "side": {
+          "path": "assets/skeptical/side.png",
+          "sha256": "cd0da66589ad795b918e2c5fbddd2b1689789b5f518abdf5ef4776a0f326d4b7"
+        }
+      },
+      "userApproved": true,
+      "status": "USER_APPROVED_STATIC_EXPRESSION",
+      "approvalBasis": "V83_USER_APPROVED",
+      "runtimeConnected": false,
+      "runtimeAdopted": false
+    },
+    {
+      "id": "apologetic",
+      "label": "미안함",
+      "version": "V79",
+      "model": "assets/apologetic/model.glb",
+      "modelSHA256": "45d98991b87771521fa1b7b60e12b321f36cddef9eba1acf4a3b2e5e9a5fdac4",
+      "texture": "assets/apologetic/texture.png",
+      "textureSHA256": "95c13cd255c625a824945e1e105628a75915ca709a4153182a29c73de1fd763d",
+      "taskId": "01a0badd-cf67-7793-9735-38ad58016953",
+      "sourceConsumedCredits": 15,
+      "qa": {
+        "front": {
+          "path": "assets/apologetic/front.png",
+          "sha256": "cbfc877058869b5c8ac4670ffbd5f9051478ca48b8144c238ac593fef8bfa512"
+        },
+        "quarter": {
+          "path": "assets/apologetic/quarter.png",
+          "sha256": "1b0a3a7c4684c0b4cff4a211e056816df5c21d2e5475cfea31a052ce6f899bdc"
+        },
+        "side": {
+          "path": "assets/apologetic/side.png",
+          "sha256": "127219800a15927d8d65cc30eff21f0ecb8ebad02315e0d26183ac6098a5a185"
+        }
+      },
+      "userApproved": true,
+      "status": "USER_APPROVED_STATIC_EXPRESSION",
+      "approvalBasis": "V83_USER_APPROVED",
+      "runtimeConnected": false,
+      "runtimeAdopted": false
+    },
+    {
+      "id": "cheering",
+      "label": "응원",
+      "version": "V79",
+      "model": "assets/cheering/model.glb",
+      "modelSHA256": "8a11e8a64bd567066f98a09557a7bac0a7118d0f86b2222a8bca19ceb2611a79",
+      "texture": "assets/cheering/texture.png",
+      "textureSHA256": "3aa6aaf46f88f93fe197c9fd308e511d25f23b2232386245a452ab6a3f285db3",
+      "taskId": "01a0badd-cf8a-77ca-a9d5-c959db69cc88",
+      "sourceConsumedCredits": 15,
+      "qa": {
+        "front": {
+          "path": "assets/cheering/front.png",
+          "sha256": "f3ff7a362941c32a5b8938f9bd9a9970efc076607685be32a9fa13ab4e822d6b"
+        },
+        "quarter": {
+          "path": "assets/cheering/quarter.png",
+          "sha256": "ad5093308489b6fc370c627da0badf2b8c8a186c4b2c5de3fdc005f8e532c73d"
+        },
+        "side": {
+          "path": "assets/cheering/side.png",
+          "sha256": "d986ad501bc8526bc4974af1e557391171724ef795cd85a3f662c11c85512f15"
+        }
+      },
+      "userApproved": true,
+      "status": "USER_APPROVED_STATIC_EXPRESSION",
+      "approvalBasis": "V83_USER_APPROVED",
+      "runtimeConnected": false,
+      "runtimeAdopted": false
+    },
+    {
+      "id": "greeting_smile",
+      "label": "인사 미소",
+      "version": "V81",
+      "model": "assets/greeting_smile/model.glb",
+      "modelSHA256": "df6ba0820d8142e7e6679b55fd7305a3991798b1626f3964d0fc34414073bd0e",
+      "texture": "assets/greeting_smile/texture.png",
+      "textureSHA256": "a89b94ceccb31e64a8f444cfab9089b59d5597c64b6ad6fcaa3e50b09bf4e9b8",
+      "taskId": "01a0baeb-3431-7200-afd1-f9b8021d0980",
+      "sourceConsumedCredits": 15,
+      "qa": {
+        "front": {
+          "path": "assets/greeting_smile/front.png",
+          "sha256": "12eb98193d2e30523cde01bbf15f15421ddec2aeb6b3c0c1b2119733d3a989da"
+        },
+        "quarter": {
+          "path": "assets/greeting_smile/quarter.png",
+          "sha256": "8170b3057364d42c5c4170f47dde71356f0b8145539117118619c07180976f8a"
+        },
+        "side": {
+          "path": "assets/greeting_smile/side.png",
+          "sha256": "a4bbb98c5ac63b5baa14296e89846ed34b7d2f1cca6b0fe559b0ca240298524f"
+        }
+      },
+      "userApproved": true,
+      "status": "USER_APPROVED_STATIC_EXPRESSION",
+      "approvalBasis": "V83_USER_APPROVED",
+      "runtimeConnected": false,
+      "runtimeAdopted": false
+    },
+    {
+      "id": "yawning",
+      "label": "하품",
+      "version": "V81",
+      "model": "assets/yawning/model.glb",
+      "modelSHA256": "ca20e0e5c08bb3856f95520c875b472db2be06c0e4edfab39b09aaab496f8116",
+      "texture": "assets/yawning/texture.png",
+      "textureSHA256": "dce0e3afc28a6422ac18046d935527fc88e4bb73ab4fbef1eda54644ee32ee9d",
+      "taskId": "01a0baeb-3430-72dc-aa38-dec79b705081",
+      "sourceConsumedCredits": 15,
+      "qa": {
+        "front": {
+          "path": "assets/yawning/front.png",
+          "sha256": "c01d3549dd4ec572d17e8c5ff780376b9222c455681097b0ea3d3eff466a9e12"
+        },
+        "quarter": {
+          "path": "assets/yawning/quarter.png",
+          "sha256": "2a1074da0a13276aedbd80165881c7b24948ba02d5174a62e21f002a9b36cd79"
+        },
+        "side": {
+          "path": "assets/yawning/side.png",
+          "sha256": "a5601e0e58d23505ded6b1965c5105b1643ad6d8ea2e6b6044bcedb58af87546"
+        }
+      },
+      "userApproved": true,
+      "status": "USER_APPROVED_STATIC_EXPRESSION",
+      "approvalBasis": "V83_USER_APPROVED",
+      "runtimeConnected": false,
+      "runtimeAdopted": false
+    },
+    {
+      "id": "ee",
+      "label": "말하기 이",
+      "version": "V81",
+      "model": "assets/ee/model.glb",
+      "modelSHA256": "81a18747a209c06b612ea1e5422065dd72e95f0815a2d4116f5f6c377f20d7b6",
+      "texture": "assets/ee/texture.png",
+      "textureSHA256": "06ac6dd029805357e72da0c0f931cdf2c2c178fca81fc075e8df0e645361483e",
+      "taskId": "01a0baed-a427-7799-a514-dfb5759d1aca",
+      "sourceConsumedCredits": 15,
+      "qa": {
+        "front": {
+          "path": "assets/ee/front.png",
+          "sha256": "5930c0cc9ab2f8414762b086ff56274ad1dbcfa2f24938d124db25fdc42d4c9f"
+        },
+        "quarter": {
+          "path": "assets/ee/quarter.png",
+          "sha256": "ac546ee718b1176a168fb4c783f081d0a793ebcdfadcc9091924460d8f732dbb"
+        },
+        "side": {
+          "path": "assets/ee/side.png",
+          "sha256": "d39f9fcc850d48801f082a03ab95088d0c2bc77c0aadd7fd6fb92cc5733c3b87"
+        }
+      },
+      "userApproved": true,
+      "status": "USER_APPROVED_STATIC_EXPRESSION",
+      "approvalBasis": "V83_USER_APPROVED",
+      "runtimeConnected": false,
+      "runtimeAdopted": false
+    },
+    {
+      "id": "mm",
+      "label": "말하기 음",
+      "version": "V81",
+      "model": "assets/mm/model.glb",
+      "modelSHA256": "504bd44f62c211a37f54f10db19486a3f8cf226736e046cf3c1f116223eb6e13",
+      "texture": "assets/mm/texture.png",
+      "textureSHA256": "1f5c6d5c1be5188faca30e3881ee6b15f81bafea82db2320e9c3e6c596a78fdc",
+      "taskId": "01a0baed-a460-716f-960a-25a2b4d52a84",
+      "sourceConsumedCredits": 15,
+      "qa": {
+        "front": {
+          "path": "assets/mm/front.png",
+          "sha256": "50069112c52103eabc865d3c00a407b2d22868693dae3ec82b8ee0bfd8f091a8"
+        },
+        "quarter": {
+          "path": "assets/mm/quarter.png",
+          "sha256": "e9492544c3ac265dcfef4a8e07bbf19df0cc77daa15078f86ead1fd73e5261c0"
+        },
+        "side": {
+          "path": "assets/mm/side.png",
+          "sha256": "dbdc8e525c24e64a4099cf50aeaccd6c96484b9a8664029c6fc42ba8acf3d78b"
+        }
+      },
+      "userApproved": true,
+      "status": "USER_APPROVED_STATIC_EXPRESSION",
+      "approvalBasis": "V83_USER_APPROVED",
+      "runtimeConnected": false,
+      "runtimeAdopted": false
+    }
+  ],
+  "handoffAssetsPackaged": true
+}

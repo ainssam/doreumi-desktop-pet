@@ -1,0 +1,1 @@
+const {contextBridge,ipcRenderer}=require('electron');contextBridge.exposeInMainWorld('doreumiDesktop',{close:()=>ipcRenderer.send('pet-close'),ready:v=>ipcRenderer.send('pet-ready',{loaded:v?.loaded===true,version:typeof v?.version==='string'?v.version:'',modelSha256:typeof v?.modelSha256==='string'?v.modelSha256:''})});

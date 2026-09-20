@@ -1,0 +1,3 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {Matrix4,Vector3} from 'three';
+const m=await import('../src/upright.mjs').catch(()=>({}));
+test('upright prop keeps grip fixed while an arm turns',()=>{assert.equal(typeof m.uprightPlacement,'function');const c={rotation:[0,0,0],scale:.28,propContact:[-.3,.28,.1]},anchor=new Vector3(1,2,3),out=m.uprightPlacement(anchor,c);assert.ok(new Vector3(...c.propContact).applyMatrix4(out).distanceTo(anchor)<1e-10);const up=new Vector3(0,1,0).transformDirection(out);assert.ok(up.distanceTo(new Vector3(0,1,0))<1e-10);assert.ok(out instanceof Matrix4);});

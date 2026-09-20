@@ -1,0 +1,2 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {Vector3} from 'three';import {hatQuaternion} from '../src/hat-fitting.mjs';
+test('hat underside normal follows the crown slope while yaw changes curl direction',()=>{const normal=new Vector3(-.54,.84,-.016).normalize();const q=hatQuaternion(normal,1.2);assert.ok(new Vector3(0,1,0).applyQuaternion(q).dot(normal)>.99999);assert.throws(()=>hatQuaternion(new Vector3(),1.2));});

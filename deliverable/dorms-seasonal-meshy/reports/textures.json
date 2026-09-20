@@ -1,0 +1,42 @@
+{
+  "appliedToPet": false,
+  "purpose": "Meshy-authored master textures for lightweight instanced seasonal effects.",
+  "tasks": {
+    "spring": {
+      "prompt": "Use the reference only for Doreumi soft pastel material and lighting. Create ONE tiny refined five-petal cherry blossom viewed straight-on: five distinct rounded pale-pink petals, subtle translucent gradient, warm cream center, delicate clean edge, charming premium desktop-pet effect asset. No star shape, no stem, no leaves, no extra petals, no character, no text. Center the single blossom on a transparent background.",
+      "id": "01a0a31c-6780-778d-a945-037f2699e77b",
+      "status": "SUCCEEDED",
+      "createdAt": "2026-09-15T03:29:05.018Z",
+      "credits": 12,
+      "downloaded": true,
+      "finishedAt": "2026-09-15T03:29:53.011Z"
+    },
+    "summer": {
+      "prompt": "Use the reference only for Doreumi soft pastel material and lighting. Create ONE slender refined summer raindrop streak: translucent sky-blue water, long narrow tapered form, a tiny rounded droplet at the lower tip, delicate highlight, premium desktop-pet effect asset. No splash, no cloud, no character, no text. Center the single streak on a transparent background.",
+      "id": "01a0a31c-6fe4-7629-bb16-a904551e94e6",
+      "status": "SUCCEEDED",
+      "createdAt": "2026-09-15T03:29:07.174Z",
+      "credits": 12,
+      "downloaded": true,
+      "finishedAt": "2026-09-15T03:29:53.333Z"
+    },
+    "autumn": {
+      "prompt": "Use the reference only for Doreumi soft pastel material and lighting. Create ONE elegant small autumn leaf: warm amber-orange with a tapered tip, softly curved silhouette, fine central vein and subtle side veins, delicate translucent edge, premium desktop-pet effect asset. No branch, no pile, no extra leaves, no character, no text. Center the single leaf on a transparent background.",
+      "id": "01a0a31c-784a-728c-8832-330b9e4df2d2",
+      "status": "SUCCEEDED",
+      "createdAt": "2026-09-15T03:29:09.081Z",
+      "credits": 12,
+      "downloaded": true,
+      "finishedAt": "2026-09-15T03:29:53.666Z"
+    },
+    "winter": {
+      "prompt": "Use the reference only for Doreumi soft pastel material and lighting. Create ONE delicate six-branch snowflake viewed straight-on: thin symmetrical icy-white branches, tiny crystalline sub-branches, soft pale-blue translucent highlight, premium desktop-pet effect asset. No snowball, no cloud, no extra flakes, no character, no text. Center the single snowflake on a transparent background.",
+      "id": "01a0a31c-7fbc-71b4-9681-63ddb99df549",
+      "status": "SUCCEEDED",
+      "createdAt": "2026-09-15T03:29:10.988Z",
+      "credits": 12,
+      "downloaded": true,
+      "finishedAt": "2026-09-15T03:29:54.007Z"
+    }
+  }
+}

@@ -1,0 +1,1 @@
+{"name":"doreumi-v90-v60-expressions","private":true,"type":"module","scripts":{"start":"node serve.mjs","test":"node --test pigment.test.mjs","verify":"node manifest.mjs --audit","qa":"node browser-qa.mjs"}}

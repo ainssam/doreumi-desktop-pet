@@ -1,0 +1,685 @@
+{
+  "version": "V83",
+  "generatedAt": "2026-09-20T00:02:35.364Z",
+  "scope": "34종 검수용 뷰어의 사용자 외형 판정. 출시 연결 또는 수정 제작 승인 아님.",
+  "summary": {
+    "total": 34,
+    "approved": 30,
+    "revise": 3,
+    "hold": 1,
+    "pending": 0
+  },
+  "expressions": [
+    {
+      "id": "neutral",
+      "label": "기본",
+      "sourceVersion": "V67",
+      "modelPath": "../dorms-v67-meshy-neutral-retexture/face-only/doreumi-basic-face-only.glb",
+      "decision": "approved",
+      "note": "",
+      "viewed": [
+        "independent:front",
+        "independent:quarter",
+        "independent:side",
+        "texture-swap:front",
+        "texture-swap:quarter",
+        "texture-swap:side"
+      ],
+      "checks": {
+        "meaningAccepted": true,
+        "identityAccepted": true
+      }
+    },
+    {
+      "id": "smile",
+      "label": "미소",
+      "sourceVersion": "V68",
+      "modelPath": "../dorms-v68-meshy-gentle-smile/face-only-aligned/doreumi-gentle-smile.glb",
+      "decision": "approved",
+      "note": "",
+      "viewed": [
+        "independent:front",
+        "independent:quarter",
+        "independent:side",
+        "texture-swap:front",
+        "texture-swap:quarter",
+        "texture-swap:side"
+      ],
+      "checks": {
+        "meaningAccepted": true,
+        "identityAccepted": true
+      }
+    },
+    {
+      "id": "wink",
+      "label": "윙크",
+      "sourceVersion": "V69",
+      "modelPath": "../dorms-v69-expression-set/candidates/wink/face-only-v2/doreumi-wink.glb",
+      "decision": "approved",
+      "note": "",
+      "viewed": [
+        "independent:front",
+        "independent:quarter",
+        "texture-swap:front",
+        "texture-swap:quarter",
+        "texture-swap:side",
+        "independent:side"
+      ],
+      "checks": {
+        "meaningAccepted": true,
+        "identityAccepted": true
+      }
+    },
+    {
+      "id": "laugh",
+      "label": "활짝 웃음",
+      "sourceVersion": "V69",
+      "modelPath": "../dorms-v69-expression-set/candidates/laugh/face-only-v2/doreumi-laugh.glb",
+      "decision": "approved",
+      "note": "",
+      "viewed": [
+        "independent:side",
+        "independent:front",
+        "independent:quarter",
+        "texture-swap:front",
+        "texture-swap:quarter",
+        "texture-swap:side"
+      ],
+      "checks": {
+        "meaningAccepted": true,
+        "identityAccepted": true
+      }
+    },
+    {
+      "id": "surprise",
+      "label": "놀람",
+      "sourceVersion": "V69",
+      "modelPath": "../dorms-v69-expression-set/candidates/surprise/face-only-v2/doreumi-surprise.glb",
+      "decision": "approved",
+      "note": "",
+      "viewed": [
+        "texture-swap:side",
+        "independent:front",
+        "texture-swap:front",
+        "texture-swap:quarter",
+        "independent:quarter",
+        "independent:side"
+      ],
+      "checks": {
+        "meaningAccepted": true,
+        "identityAccepted": true
+      }
+    },
+    {
+      "id": "thinking",
+      "label": "생각",
+      "sourceVersion": "V69",
+      "modelPath": "../dorms-v69-expression-set/candidates/thinking/face-only-v2/doreumi-thinking.glb",
+      "decision": "revise",
+      "note": "도름이 기준 왼쪽 눈을 좀 더 작게",
+      "viewed": [
+        "independent:side"
+      ],
+      "checks": {
+        "meaningAccepted": false,
+        "identityAccepted": false
+      }
+    },
+    {
+      "id": "sleepy",
+      "label": "졸림",
+      "sourceVersion": "V69",
+      "modelPath": "../dorms-v69-expression-set/candidates/sleepy/face-only-v2/doreumi-sleepy.glb",
+      "decision": "approved",
+      "note": "",
+      "viewed": [
+        "independent:side",
+        "independent:front",
+        "texture-swap:front",
+        "texture-swap:quarter",
+        "independent:quarter",
+        "texture-swap:side"
+      ],
+      "checks": {
+        "meaningAccepted": true,
+        "identityAccepted": true
+      }
+    },
+    {
+      "id": "aa",
+      "label": "말하기 아",
+      "sourceVersion": "V69",
+      "modelPath": "../dorms-v69-expression-set/candidates/aa/face-only-v2/doreumi-aa.glb",
+      "decision": "approved",
+      "note": "",
+      "viewed": [
+        "texture-swap:side",
+        "texture-swap:quarter",
+        "texture-swap:front",
+        "independent:front",
+        "independent:side",
+        "independent:quarter"
+      ],
+      "checks": {
+        "meaningAccepted": true,
+        "identityAccepted": true
+      }
+    },
+    {
+      "id": "oh",
+      "label": "말하기 오",
+      "sourceVersion": "V69",
+      "modelPath": "../dorms-v69-expression-set/candidates/oh/face-only-v2/doreumi-oh.glb",
+      "decision": "approved",
+      "note": "",
+      "viewed": [
+        "independent:quarter",
+        "independent:front",
+        "texture-swap:front",
+        "texture-swap:quarter",
+        "texture-swap:side",
+        "independent:side"
+      ],
+      "checks": {
+        "meaningAccepted": true,
+        "identityAccepted": true
+      }
+    },
+    {
+      "id": "oo",
+      "label": "말하기 우",
+      "sourceVersion": "V69",
+      "modelPath": "../dorms-v69-expression-set/candidates/oo/face-only-v2/doreumi-oo.glb",
+      "decision": "hold",
+      "note": "",
+      "viewed": [
+        "independent:front",
+        "independent:side"
+      ],
+      "checks": {
+        "meaningAccepted": false,
+        "identityAccepted": false
+      }
+    },
+    {
+      "id": "blink_closed",
+      "label": "깜빡임용 감은 눈",
+      "sourceVersion": "V71",
+      "modelPath": "../dorms-v71-expression-batch-01/candidates/blink_closed/face-only-v2/doreumi-blink_closed.glb",
+      "decision": "approved",
+      "note": "",
+      "viewed": [
+        "independent:side",
+        "independent:front",
+        "texture-swap:front",
+        "texture-swap:quarter",
+        "independent:quarter",
+        "texture-swap:side"
+      ],
+      "checks": {
+        "meaningAccepted": true,
+        "identityAccepted": true
+      }
+    },
+    {
+      "id": "relieved",
+      "label": "안도",
+      "sourceVersion": "V71",
+      "modelPath": "../dorms-v71-expression-batch-01/candidates/relieved/face-only-v2/doreumi-relieved.glb",
+      "decision": "revise",
+      "note": "안도 보다는 기쁨 이라는 이름으로 바꾸면 될듯",
+      "viewed": [
+        "texture-swap:side",
+        "texture-swap:quarter",
+        "texture-swap:front",
+        "independent:front",
+        "independent:quarter",
+        "independent:side"
+      ],
+      "checks": {
+        "meaningAccepted": true,
+        "identityAccepted": true
+      }
+    },
+    {
+      "id": "half_sleepy",
+      "label": "반쯤 졸림",
+      "sourceVersion": "V71",
+      "modelPath": "../dorms-v71-expression-batch-01/candidates/half_sleepy/face-only-v2/doreumi-half_sleepy.glb",
+      "decision": "approved",
+      "note": "",
+      "viewed": [
+        "independent:side",
+        "independent:quarter",
+        "independent:front",
+        "texture-swap:front",
+        "texture-swap:quarter",
+        "texture-swap:side"
+      ],
+      "checks": {
+        "meaningAccepted": true,
+        "identityAccepted": true
+      }
+    },
+    {
+      "id": "soft_sad",
+      "label": "살짝 슬픔",
+      "sourceVersion": "V71",
+      "modelPath": "../dorms-v71-expression-batch-01/candidates/soft_sad/face-only-v2/doreumi-soft_sad.glb",
+      "decision": "approved",
+      "note": "",
+      "viewed": [
+        "texture-swap:side",
+        "texture-swap:front",
+        "texture-swap:quarter",
+        "independent:front",
+        "independent:quarter",
+        "independent:side"
+      ],
+      "checks": {
+        "meaningAccepted": true,
+        "identityAccepted": true
+      }
+    },
+    {
+      "id": "curious",
+      "label": "호기심",
+      "sourceVersion": "V73",
+      "modelPath": "../dorms-v73-expression-batch-02/candidates/curious/face-only-v2/doreumi-curious.glb",
+      "decision": "approved",
+      "note": "",
+      "viewed": [
+        "independent:side",
+        "texture-swap:front",
+        "texture-swap:quarter",
+        "texture-swap:side",
+        "independent:quarter",
+        "independent:front"
+      ],
+      "checks": {
+        "meaningAccepted": true,
+        "identityAccepted": true
+      }
+    },
+    {
+      "id": "shy",
+      "label": "수줍음",
+      "sourceVersion": "V73",
+      "modelPath": "../dorms-v73-expression-batch-02/candidates/shy/face-only-v4/doreumi-shy.glb",
+      "decision": "revise",
+      "note": "수줍음보다 부끄러움으로 이름을 바꾸면 됨",
+      "viewed": [
+        "independent:front",
+        "independent:quarter",
+        "texture-swap:front",
+        "texture-swap:quarter",
+        "texture-swap:side",
+        "independent:side"
+      ],
+      "checks": {
+        "meaningAccepted": true,
+        "identityAccepted": true
+      }
+    },
+    {
+      "id": "proud",
+      "label": "뿌듯함",
+      "sourceVersion": "V73",
+      "modelPath": "../dorms-v73-expression-batch-02/candidates/proud/face-only-v2/doreumi-proud.glb",
+      "decision": "approved",
+      "note": "",
+      "viewed": [
+        "independent:side",
+        "independent:front",
+        "texture-swap:front",
+        "texture-swap:quarter",
+        "independent:quarter",
+        "texture-swap:side"
+      ],
+      "checks": {
+        "meaningAccepted": true,
+        "identityAccepted": true
+      }
+    },
+    {
+      "id": "teary",
+      "label": "울먹임",
+      "sourceVersion": "V73",
+      "modelPath": "../dorms-v73-expression-batch-02/candidates/teary/face-only-v2/doreumi-teary.glb",
+      "decision": "approved",
+      "note": "",
+      "viewed": [
+        "texture-swap:side",
+        "texture-swap:front",
+        "texture-swap:quarter",
+        "independent:front",
+        "independent:quarter",
+        "independent:side"
+      ],
+      "checks": {
+        "meaningAccepted": true,
+        "identityAccepted": true
+      }
+    },
+    {
+      "id": "annoyed",
+      "label": "살짝 짜증",
+      "sourceVersion": "V75",
+      "modelPath": "../dorms-v75-expression-batch-03/candidates/annoyed/face-only-v2/doreumi-annoyed.glb",
+      "decision": "approved",
+      "note": "",
+      "viewed": [
+        "texture-swap:side",
+        "texture-swap:front",
+        "texture-swap:quarter",
+        "independent:front",
+        "independent:quarter",
+        "independent:side"
+      ],
+      "checks": {
+        "meaningAccepted": true,
+        "identityAccepted": true
+      }
+    },
+    {
+      "id": "determined",
+      "label": "결의",
+      "sourceVersion": "V75",
+      "modelPath": "../dorms-v75-expression-batch-03/candidates/determined/face-only-v2/doreumi-determined.glb",
+      "decision": "approved",
+      "note": "",
+      "viewed": [
+        "independent:side",
+        "texture-swap:side",
+        "texture-swap:quarter",
+        "texture-swap:front",
+        "independent:front",
+        "independent:quarter"
+      ],
+      "checks": {
+        "meaningAccepted": true,
+        "identityAccepted": true
+      }
+    },
+    {
+      "id": "confused",
+      "label": "갸우뚱/혼란",
+      "sourceVersion": "V75",
+      "modelPath": "../dorms-v75-expression-batch-03/candidates/confused/face-only-v2/doreumi-confused.glb",
+      "decision": "approved",
+      "note": "",
+      "viewed": [
+        "independent:quarter",
+        "independent:front",
+        "texture-swap:front",
+        "texture-swap:quarter",
+        "texture-swap:side",
+        "independent:side"
+      ],
+      "checks": {
+        "meaningAccepted": true,
+        "identityAccepted": true
+      }
+    },
+    {
+      "id": "worried",
+      "label": "걱정",
+      "sourceVersion": "V75",
+      "modelPath": "../dorms-v75-expression-batch-03/candidates/worried/face-only-v2/doreumi-worried.glb",
+      "decision": "approved",
+      "note": "",
+      "viewed": [
+        "independent:side",
+        "texture-swap:side",
+        "texture-swap:quarter",
+        "independent:quarter",
+        "independent:front",
+        "texture-swap:front"
+      ],
+      "checks": {
+        "meaningAccepted": true,
+        "identityAccepted": true
+      }
+    },
+    {
+      "id": "love",
+      "label": "반함",
+      "sourceVersion": "V77",
+      "modelPath": "../dorms-v77-expression-batch-04/candidates/love/face-only-v2/doreumi-love.glb",
+      "decision": "approved",
+      "note": "",
+      "viewed": [
+        "texture-swap:front",
+        "texture-swap:quarter",
+        "texture-swap:side",
+        "independent:side",
+        "independent:quarter",
+        "independent:front"
+      ],
+      "checks": {
+        "meaningAccepted": true,
+        "identityAccepted": true
+      }
+    },
+    {
+      "id": "sparkly",
+      "label": "초롱초롱",
+      "sourceVersion": "V77",
+      "modelPath": "../dorms-v77-expression-batch-04/candidates/sparkly/face-only-v2/doreumi-sparkly.glb",
+      "decision": "approved",
+      "note": "",
+      "viewed": [
+        "independent:front",
+        "texture-swap:front",
+        "texture-swap:quarter",
+        "independent:quarter",
+        "independent:side",
+        "texture-swap:side"
+      ],
+      "checks": {
+        "meaningAccepted": true,
+        "identityAccepted": true
+      }
+    },
+    {
+      "id": "listening",
+      "label": "경청",
+      "sourceVersion": "V77",
+      "modelPath": "../dorms-v77-expression-batch-04/candidates/listening/face-only-v2/doreumi-listening.glb",
+      "decision": "approved",
+      "note": "",
+      "viewed": [
+        "texture-swap:side",
+        "independent:side",
+        "texture-swap:quarter",
+        "texture-swap:front",
+        "independent:front",
+        "independent:quarter"
+      ],
+      "checks": {
+        "meaningAccepted": true,
+        "identityAccepted": true
+      }
+    },
+    {
+      "id": "focused",
+      "label": "집중",
+      "sourceVersion": "V77",
+      "modelPath": "../dorms-v77-expression-batch-04/candidates/focused/face-only-v2/doreumi-focused.glb",
+      "decision": "approved",
+      "note": "",
+      "viewed": [
+        "independent:quarter",
+        "independent:front",
+        "texture-swap:front",
+        "texture-swap:quarter",
+        "texture-swap:side",
+        "independent:side"
+      ],
+      "checks": {
+        "meaningAccepted": true,
+        "identityAccepted": true
+      }
+    },
+    {
+      "id": "aha",
+      "label": "아하",
+      "sourceVersion": "V79",
+      "modelPath": "../dorms-v79-expression-batch-05/candidates/aha/face-only-v2/doreumi-aha.glb",
+      "decision": "approved",
+      "note": "",
+      "viewed": [
+        "independent:side",
+        "texture-swap:quarter",
+        "texture-swap:front",
+        "independent:front",
+        "independent:quarter",
+        "texture-swap:side"
+      ],
+      "checks": {
+        "meaningAccepted": true,
+        "identityAccepted": true
+      }
+    },
+    {
+      "id": "skeptical",
+      "label": "의심",
+      "sourceVersion": "V79",
+      "modelPath": "../dorms-v79-expression-batch-05/candidates/skeptical/face-only-v2/doreumi-skeptical.glb",
+      "decision": "approved",
+      "note": "",
+      "viewed": [
+        "texture-swap:side",
+        "texture-swap:front",
+        "texture-swap:quarter",
+        "independent:front",
+        "independent:quarter",
+        "independent:side"
+      ],
+      "checks": {
+        "meaningAccepted": true,
+        "identityAccepted": true
+      }
+    },
+    {
+      "id": "apologetic",
+      "label": "미안함",
+      "sourceVersion": "V79",
+      "modelPath": "../dorms-v79-expression-batch-05/candidates/apologetic/face-only-v2/doreumi-apologetic.glb",
+      "decision": "approved",
+      "note": "",
+      "viewed": [
+        "independent:side",
+        "texture-swap:front",
+        "texture-swap:quarter",
+        "texture-swap:side",
+        "independent:quarter",
+        "independent:front"
+      ],
+      "checks": {
+        "meaningAccepted": true,
+        "identityAccepted": true
+      }
+    },
+    {
+      "id": "cheering",
+      "label": "응원",
+      "sourceVersion": "V79",
+      "modelPath": "../dorms-v79-expression-batch-05/candidates/cheering/face-only-v2/doreumi-cheering.glb",
+      "decision": "approved",
+      "note": "",
+      "viewed": [
+        "independent:front",
+        "texture-swap:front",
+        "texture-swap:quarter",
+        "independent:quarter",
+        "independent:side",
+        "texture-swap:side"
+      ],
+      "checks": {
+        "meaningAccepted": true,
+        "identityAccepted": true
+      }
+    },
+    {
+      "id": "greeting_smile",
+      "label": "인사 미소",
+      "sourceVersion": "V81",
+      "modelPath": "../dorms-v81-expression-batch-06/candidates/greeting_smile/face-only-v2/doreumi-greeting_smile.glb",
+      "decision": "approved",
+      "note": "",
+      "viewed": [
+        "texture-swap:side",
+        "texture-swap:quarter",
+        "texture-swap:front",
+        "independent:front",
+        "independent:quarter",
+        "independent:side"
+      ],
+      "checks": {
+        "meaningAccepted": true,
+        "identityAccepted": true
+      }
+    },
+    {
+      "id": "yawning",
+      "label": "하품",
+      "sourceVersion": "V81",
+      "modelPath": "../dorms-v81-expression-batch-06/candidates/yawning/face-only-v3/doreumi-yawning.glb",
+      "decision": "approved",
+      "note": "",
+      "viewed": [
+        "independent:side",
+        "texture-swap:front",
+        "independent:front",
+        "independent:quarter",
+        "texture-swap:quarter",
+        "texture-swap:side"
+      ],
+      "checks": {
+        "meaningAccepted": true,
+        "identityAccepted": true
+      }
+    },
+    {
+      "id": "ee",
+      "label": "말하기 이",
+      "sourceVersion": "V81",
+      "modelPath": "../dorms-v81-expression-batch-06/candidates/ee/face-only-v2/doreumi-ee.glb",
+      "decision": "approved",
+      "note": "",
+      "viewed": [
+        "texture-swap:side",
+        "texture-swap:front",
+        "texture-swap:quarter",
+        "independent:front",
+        "independent:quarter",
+        "independent:side"
+      ],
+      "checks": {
+        "meaningAccepted": true,
+        "identityAccepted": true
+      }
+    },
+    {
+      "id": "mm",
+      "label": "말하기 음",
+      "sourceVersion": "V81",
+      "modelPath": "../dorms-v81-expression-batch-06/candidates/mm/face-only-v2/doreumi-mm.glb",
+      "decision": "approved",
+      "note": "",
+      "viewed": [
+        "texture-swap:front",
+        "independent:side",
+        "independent:front",
+        "independent:quarter",
+        "texture-swap:quarter",
+        "texture-swap:side"
+      ],
+      "checks": {
+        "meaningAccepted": true,
+        "identityAccepted": true
+      }
+    }
+  ]
+}

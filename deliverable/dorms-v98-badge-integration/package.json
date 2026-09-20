@@ -1,0 +1,1 @@
+{"name":"doreumi-v98-release-integration","private":true,"type":"module","main":"desktop.cjs","scripts":{"start":"node serve.mjs","test":"node --test --test-isolation=none tests/*.test.mjs","qa":"node scripts/deep-integration-qa.mjs","qa:motion":"node scripts/motion-evidence.mjs","qa:desktop":"node scripts/desktop-qa.mjs"}}

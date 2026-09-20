@@ -1,0 +1,1 @@
+export function approvedActions(record,modelSHA256){if(!record||record.modelSHA256!==modelSHA256||record.clips.length!==21||record.clips.some(a=>a.decision!=='pass'||a.userApproved!==true)||new Set(record.clips.map(a=>a.name)).size!==21)throw new Error('행동 승인/모델 불일치');return record.clips.map(a=>a.name);}

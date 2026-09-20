@@ -1,0 +1,1 @@
+exports.isTrustedUrl=(candidate,origin)=>{try{const u=new URL(candidate),o=new URL(origin);return u.origin===o.origin&&u.protocol==='http:'&&['/desktop','/'].includes(u.pathname);}catch{return false;}};

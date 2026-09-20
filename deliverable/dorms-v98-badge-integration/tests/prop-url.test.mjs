@@ -1,0 +1,2 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {propIdFromUrl} from '../src/prop-catalog.mjs';
+test('restored numbered book asset loads while traversal and unknown files stay blocked',()=>{assert.equal(propIdFromUrl('/props/book-v3.glb'),'book-v3');assert.equal(propIdFromUrl('/props/laptop.glb'),'laptop');assert.throws(()=>propIdFromUrl('/props/../book-v3.glb'));assert.throws(()=>propIdFromUrl('/props/unlisted-3.glb'));});

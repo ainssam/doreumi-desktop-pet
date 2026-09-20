@@ -1,0 +1,22 @@
+[
+ {"id":"hello","name":"첫 인사","color":"#FF6584","colorName":"vivid coral pink","icon":"one white rounded speech bubble with three coral dots","mission":"자기소개 작성"},
+ {"id":"rocket","name":"첫 작품","color":"#FF781B","colorName":"vivid tangerine orange","icon":"one white upright toy rocket with one tiny dark blue window","mission":"직접 만든 교육 도구 첫 공유"},
+ {"id":"classroom","name":"교실에 도착!","color":"#5DCA38","colorName":"bright spring green","icon":"one white simple school building with orange roof and one doorway","mission":"수업·업무 활용 후기 공유"},
+ {"id":"code","name":"코드 한 조각","color":"#338BFF","colorName":"bright electric sky blue","icon":"white coding brackets and slash forming the single symbol </>","mission":"재사용 가능한 코드·팁 공유"},
+ {"id":"maker","name":"과정도 자산","color":"#FFB521","colorName":"bright mango yellow orange","icon":"one chunky white wrench angled diagonally","mission":"시행착오와 해결 과정을 담은 제작기 공유"},
+ {"id":"update","name":"다시 고쳤어요","color":"#A0D936","colorName":"bright lime green","icon":"one white circular refresh arrow with a thick rounded arrowhead","mission":"도구 개선 및 업데이트 기록"},
+ {"id":"question","name":"질문의 시작","color":"#39BCEB","colorName":"bright cyan blue","icon":"one large white rounded question mark","mission":"시도한 내용을 담은 질문 작성"},
+ {"id":"solution","name":"해결의 실마리","color":"#FFD52B","colorName":"bright lemon yellow","icon":"one chunky raspberry pink key with a round head","mission":"답변이 질문자에게 도움으로 인정됨"},
+ {"id":"magnifier","name":"함께 디버깅","color":"#00CDB7","colorName":"bright saturated turquoise","icon":"one white and dark teal magnifying glass with a chunky handle","mission":"동료의 오류 해결에 기여"},
+ {"id":"tester","name":"꼼꼼한 테스터","color":"#28D696","colorName":"bright emerald mint","icon":"one big white rounded checkmark inside a simple white square outline","mission":"구체적인 사용·테스트 피드백 공유"},
+ {"id":"lighthouse","name":"친절한 길잡이","color":"#FFE12B","colorName":"bright sunflower yellow","icon":"one hot pink lighthouse with two short pink light rays and a white stripe","mission":"초보 교사용 따라 하기 자료 공유"},
+ {"id":"team","name":"함께 만든 도구","color":"#9F6CFF","colorName":"bright violet purple","icon":"two chunky interlocking puzzle pieces, one white and one lemon yellow","mission":"동료와 공동 제작 결과물 공유"},
+ {"id":"opensource","name":"열린 코드","color":"#F257C7","colorName":"bright fuchsia pink","icon":"one simple open white gift box with a small yellow sparkle above","mission":"소스·사용 방법·라이선스 함께 공개"},
+ {"id":"remix","name":"한 번 더 나눔","color":"#FF83AA","colorName":"bright rose pink","icon":"one simple white branching stem with two mint green leaves","mission":"출처를 밝힌 개선 자료 공유"},
+ {"id":"recommended","name":"동료의 추천","color":"#FF5964","colorName":"bright watermelon coral red","icon":"one bold white heart with one small golden star in its center","mission":"동료에게 유용한 자료로 추천받음"},
+ {"id":"steady","name":"꾸준한 발자국","color":"#31C8DC","colorName":"bright aqua blue","icon":"two small rounded white footprint silhouettes","mission":"여러 주에 걸쳐 의미 있는 활동 참여"},
+ {"id":"monthly","name":"이달의 도름","color":"#FFB72E","colorName":"bright golden honey yellow","icon":"one white rounded three-point crown with three raspberry pink dots","mission":"운영진이 이달의 기여자로 선정"},
+ {"id":"challenge","name":"같이 완주!","color":"#617DF5","colorName":"bright periwinkle blue","icon":"one waving white finish flag with four navy checker squares on a white pole","mission":"도름스 공식 제작 챌린지 완료"},
+ {"id":"automation","name":"업무를 가볍게","color":"#FF8759","colorName":"bright apricot orange","icon":"one bold white lightning bolt with one small yellow sparkle","mission":"학교 업무 자동화 도구·사례 공유"},
+ {"id":"safe","name":"교실 안심 설계","color":"#B085EF","colorName":"bright lavender purple","icon":"one white rounded shield with a small purple padlock at its center","mission":"개인정보·접근성을 고려한 개선 사례 공유"}
+]

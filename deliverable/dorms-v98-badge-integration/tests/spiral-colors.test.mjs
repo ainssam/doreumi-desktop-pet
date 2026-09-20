@@ -1,0 +1,3 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+const m=await import('../src/spiral-colors.mjs').catch(()=>({}));
+test('vivid spiral palette and custom hex validate without changing default',()=>{assert.equal(typeof m.resolveSpiralColor,'function');assert.equal(m.resolveSpiralColor('red'),'#ff0000');assert.equal(m.resolveSpiralColor('black'),'#000000');assert.equal(m.resolveSpiralColor('#A01BFF'),'#a01bff');assert.equal(m.resolveSpiralColor('navy'),'#16335f');assert.throws(()=>m.resolveSpiralColor('url(foo)'));assert.throws(()=>m.resolveSpiralColor('#nope'));for(const id of ['red','orange','yellow','emerald','blue','indigo','violet','black'])assert.match(m.resolveSpiralColor(id),/^#[0-9a-f]{6}$/);});

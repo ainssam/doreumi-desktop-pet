@@ -1,0 +1,3665 @@
+{
+  "startedAt": "2026-09-20T05:44:53.217Z",
+  "success": true,
+  "smoke": false,
+  "loaded": [
+    {
+      "id": "neutral",
+      "label": "기본",
+      "version": "V67",
+      "sourceSHA256": "e98d03f97351830416fc6eaa791f014bbe8a5248035f4b03951c98f8fb629e3b",
+      "material": {
+        "expressionId": "neutral",
+        "fit": {
+          "a": 1.1336687940009855,
+          "b": -0.05707398255534164,
+          "tx": 0.007376048730272799,
+          "ty": -0.08152998810793306,
+          "scale": 1.135104565216957,
+          "rotation": -0.050302025383723845
+        },
+        "sourceCheeks": {
+          "left": [
+            -0.22720938563942955,
+            0.07832660680324972
+          ],
+          "right": [
+            0.26532990378837557,
+            0.034171585221375665
+          ],
+          "samples": [
+            3133,
+            3051
+          ]
+        },
+        "targetCheeks": {
+          "left": [
+            -0.2134837962962962,
+            0.13026046516138953
+          ],
+          "right": [
+            0.22183859767025096,
+            0.11322776657706121
+          ],
+          "samples": [
+            1611,
+            1488
+          ]
+        },
+        "pigmentComponents": [
+          {
+            "pixels": 4366,
+            "bounds": [
+              250,
+              272,
+              297,
+              384
+            ]
+          },
+          {
+            "pixels": 4386,
+            "bounds": [
+              506,
+              277,
+              554,
+              388
+            ]
+          },
+          {
+            "pixels": 1196,
+            "bounds": [
+              362,
+              398,
+              439,
+              425
+            ]
+          }
+        ],
+        "discardedIsolatedMarks": 0,
+        "coloredPixels": 0,
+        "holePixels": 0,
+        "skinBoundarySamples": [
+          407,
+          374,
+          352
+        ],
+        "erasedPixels": 81868,
+        "inkPixels": 7970,
+        "resolution": [
+          768,
+          768
+        ],
+        "newEyeOrMouthDrawn": false,
+        "sourceBodyTransferred": false
+      },
+      "captures": [
+        "expressions/neutral-front.png",
+        "expressions/neutral-quarter.png",
+        "expressions/neutral-side.png"
+      ]
+    },
+    {
+      "id": "smile",
+      "label": "미소",
+      "version": "V68",
+      "sourceSHA256": "074d903b22d156a353253ab5288a918ec852bc6fbcb31d64b92035d23b598a17",
+      "material": {
+        "expressionId": "smile",
+        "fit": {
+          "a": 1.1336687940009855,
+          "b": -0.05707398255534164,
+          "tx": 0.007376048730272799,
+          "ty": -0.08152998810793306,
+          "scale": 1.135104565216957,
+          "rotation": -0.050302025383723845
+        },
+        "sourceCheeks": {
+          "left": [
+            -0.22720938563942955,
+            0.07832660680324972
+          ],
+          "right": [
+            0.26532990378837557,
+            0.034171585221375665
+          ],
+          "samples": [
+            3133,
+            3051
+          ]
+        },
+        "targetCheeks": {
+          "left": [
+            -0.2134837962962962,
+            0.13026046516138953
+          ],
+          "right": [
+            0.22183859767025096,
+            0.11322776657706121
+          ],
+          "samples": [
+            1611,
+            1488
+          ]
+        },
+        "pigmentComponents": [
+          {
+            "pixels": 4366,
+            "bounds": [
+              250,
+              272,
+              297,
+              384
+            ]
+          },
+          {
+            "pixels": 4386,
+            "bounds": [
+              506,
+              277,
+              554,
+              388
+            ]
+          },
+          {
+            "pixels": 2577,
+            "bounds": [
+              354,
+              384,
+              450,
+              436
+            ]
+          }
+        ],
+        "discardedIsolatedMarks": 4,
+        "coloredPixels": 19,
+        "holePixels": 0,
+        "skinBoundarySamples": [
+          407,
+          374,
+          352
+        ],
+        "erasedPixels": 81868,
+        "inkPixels": 9271,
+        "resolution": [
+          768,
+          768
+        ],
+        "newEyeOrMouthDrawn": false,
+        "sourceBodyTransferred": false
+      },
+      "captures": [
+        "expressions/smile-front.png",
+        "expressions/smile-quarter.png",
+        "expressions/smile-side.png"
+      ]
+    },
+    {
+      "id": "wink",
+      "label": "윙크",
+      "version": "V69",
+      "sourceSHA256": "42d20bbd5abaef647e657b621d3b842f339c6bbe4520098d71c7ffc758822122",
+      "material": {
+        "expressionId": "wink",
+        "fit": {
+          "a": 1.1336687940009855,
+          "b": -0.05707398255534164,
+          "tx": 0.007376048730272799,
+          "ty": -0.08152998810793306,
+          "scale": 1.135104565216957,
+          "rotation": -0.050302025383723845
+        },
+        "sourceCheeks": {
+          "left": [
+            -0.22720938563942955,
+            0.07832660680324972
+          ],
+          "right": [
+            0.26532990378837557,
+            0.034171585221375665
+          ],
+          "samples": [
+            3133,
+            3051
+          ]
+        },
+        "targetCheeks": {
+          "left": [
+            -0.2134837962962962,
+            0.13026046516138953
+          ],
+          "right": [
+            0.22183859767025096,
+            0.11322776657706121
+          ],
+          "samples": [
+            1611,
+            1488
+          ]
+        },
+        "pigmentComponents": [
+          {
+            "pixels": 4366,
+            "bounds": [
+              250,
+              272,
+              297,
+              384
+            ]
+          },
+          {
+            "pixels": 5080,
+            "bounds": [
+              496,
+              276,
+              563,
+              390
+            ]
+          },
+          {
+            "pixels": 8133,
+            "bounds": [
+              354,
+              361,
+              453,
+              466
+            ]
+          }
+        ],
+        "discardedIsolatedMarks": 0,
+        "coloredPixels": 10300,
+        "holePixels": 140,
+        "skinBoundarySamples": [
+          407,
+          374,
+          352
+        ],
+        "erasedPixels": 81868,
+        "inkPixels": 14162,
+        "resolution": [
+          768,
+          768
+        ],
+        "newEyeOrMouthDrawn": false,
+        "sourceBodyTransferred": false
+      },
+      "captures": [
+        "expressions/wink-front.png",
+        "expressions/wink-quarter.png",
+        "expressions/wink-side.png"
+      ]
+    },
+    {
+      "id": "laugh",
+      "label": "활짝 웃음",
+      "version": "V69",
+      "sourceSHA256": "0df4c03866dfa6d3ed0c5e0df851bdc6d38e8bd469aeebe528426e00837cc167",
+      "material": {
+        "expressionId": "laugh",
+        "fit": {
+          "a": 1.1336687940009855,
+          "b": -0.05707398255534164,
+          "tx": 0.007376048730272799,
+          "ty": -0.08152998810793306,
+          "scale": 1.135104565216957,
+          "rotation": -0.050302025383723845
+        },
+        "sourceCheeks": {
+          "left": [
+            -0.22720938563942955,
+            0.07832660680324972
+          ],
+          "right": [
+            0.26532990378837557,
+            0.034171585221375665
+          ],
+          "samples": [
+            3133,
+            3051
+          ]
+        },
+        "targetCheeks": {
+          "left": [
+            -0.2134837962962962,
+            0.13026046516138953
+          ],
+          "right": [
+            0.22183859767025096,
+            0.11322776657706121
+          ],
+          "samples": [
+            1611,
+            1488
+          ]
+        },
+        "pigmentComponents": [
+          {
+            "pixels": 4967,
+            "bounds": [
+              239,
+              271,
+              306,
+              386
+            ]
+          },
+          {
+            "pixels": 5009,
+            "bounds": [
+              496,
+              276,
+              565,
+              390
+            ]
+          },
+          {
+            "pixels": 8294,
+            "bounds": [
+              354,
+              364,
+              451,
+              469
+            ]
+          }
+        ],
+        "discardedIsolatedMarks": 0,
+        "coloredPixels": 13209,
+        "holePixels": 265,
+        "skinBoundarySamples": [
+          407,
+          374,
+          352
+        ],
+        "erasedPixels": 81868,
+        "inkPixels": 14798,
+        "resolution": [
+          768,
+          768
+        ],
+        "newEyeOrMouthDrawn": false,
+        "sourceBodyTransferred": false
+      },
+      "captures": [
+        "expressions/laugh-front.png",
+        "expressions/laugh-quarter.png",
+        "expressions/laugh-side.png"
+      ]
+    },
+    {
+      "id": "surprise",
+      "label": "놀람",
+      "version": "V69",
+      "sourceSHA256": "cb2f73f2c0e524292b0f599a873f181ce816357c4afdbe974faa0d7810feac9f",
+      "material": {
+        "expressionId": "surprise",
+        "fit": {
+          "a": 1.1336687940009855,
+          "b": -0.05707398255534164,
+          "tx": 0.007376048730272799,
+          "ty": -0.08152998810793306,
+          "scale": 1.135104565216957,
+          "rotation": -0.050302025383723845
+        },
+        "sourceCheeks": {
+          "left": [
+            -0.22720938563942955,
+            0.07832660680324972
+          ],
+          "right": [
+            0.26532990378837557,
+            0.034171585221375665
+          ],
+          "samples": [
+            3133,
+            3051
+          ]
+        },
+        "targetCheeks": {
+          "left": [
+            -0.2134837962962962,
+            0.13026046516138953
+          ],
+          "right": [
+            0.22183859767025096,
+            0.11322776657706121
+          ],
+          "samples": [
+            1611,
+            1488
+          ]
+        },
+        "pigmentComponents": [
+          {
+            "pixels": 4366,
+            "bounds": [
+              250,
+              272,
+              297,
+              384
+            ]
+          },
+          {
+            "pixels": 4386,
+            "bounds": [
+              506,
+              277,
+              554,
+              388
+            ]
+          },
+          {
+            "pixels": 5699,
+            "bounds": [
+              362,
+              361,
+              440,
+              464
+            ]
+          }
+        ],
+        "discardedIsolatedMarks": 0,
+        "coloredPixels": 5685,
+        "holePixels": 0,
+        "skinBoundarySamples": [
+          407,
+          374,
+          352
+        ],
+        "erasedPixels": 81868,
+        "inkPixels": 11482,
+        "resolution": [
+          768,
+          768
+        ],
+        "newEyeOrMouthDrawn": false,
+        "sourceBodyTransferred": false
+      },
+      "captures": [
+        "expressions/surprise-front.png",
+        "expressions/surprise-quarter.png",
+        "expressions/surprise-side.png"
+      ]
+    },
+    {
+      "id": "thinking",
+      "label": "생각",
+      "version": "V84",
+      "sourceSHA256": "58e5aba0d89c91f95026e92fffe422b2cb1881df2eac78731d2a7301fbe1da6b",
+      "material": {
+        "expressionId": "thinking",
+        "fit": {
+          "a": 1.1336687940009855,
+          "b": -0.05707398255534164,
+          "tx": 0.007376048730272799,
+          "ty": -0.08152998810793306,
+          "scale": 1.135104565216957,
+          "rotation": -0.050302025383723845
+        },
+        "sourceCheeks": {
+          "left": [
+            -0.22720938563942955,
+            0.07832660680324972
+          ],
+          "right": [
+            0.26532990378837557,
+            0.034171585221375665
+          ],
+          "samples": [
+            3133,
+            3051
+          ]
+        },
+        "targetCheeks": {
+          "left": [
+            -0.2134837962962962,
+            0.13026046516138953
+          ],
+          "right": [
+            0.22183859767025096,
+            0.11322776657706121
+          ],
+          "samples": [
+            1611,
+            1488
+          ]
+        },
+        "pigmentComponents": [
+          {
+            "pixels": 4298,
+            "bounds": [
+              250,
+              273,
+              297,
+              384
+            ]
+          },
+          {
+            "pixels": 2914,
+            "bounds": [
+              508,
+              297,
+              553,
+              373
+            ]
+          },
+          {
+            "pixels": 1747,
+            "bounds": [
+              360,
+              391,
+              438,
+              442
+            ]
+          }
+        ],
+        "discardedIsolatedMarks": 0,
+        "coloredPixels": 0,
+        "holePixels": 0,
+        "skinBoundarySamples": [
+          407,
+          374,
+          352
+        ],
+        "erasedPixels": 81868,
+        "inkPixels": 7360,
+        "resolution": [
+          768,
+          768
+        ],
+        "newEyeOrMouthDrawn": false,
+        "sourceBodyTransferred": false
+      },
+      "captures": [
+        "expressions/thinking-front.png",
+        "expressions/thinking-quarter.png",
+        "expressions/thinking-side.png"
+      ]
+    },
+    {
+      "id": "sleepy",
+      "label": "졸림",
+      "version": "V69",
+      "sourceSHA256": "d4cd327d6eb67a5f9418422b7a747f927744bf6e1aeb31eab1f627b06a7774cc",
+      "material": {
+        "expressionId": "sleepy",
+        "fit": {
+          "a": 1.1336687940009855,
+          "b": -0.05707398255534164,
+          "tx": 0.007376048730272799,
+          "ty": -0.08152998810793306,
+          "scale": 1.135104565216957,
+          "rotation": -0.050302025383723845
+        },
+        "sourceCheeks": {
+          "left": [
+            -0.22720938563942955,
+            0.07832660680324972
+          ],
+          "right": [
+            0.26532990378837557,
+            0.034171585221375665
+          ],
+          "samples": [
+            3133,
+            3051
+          ]
+        },
+        "targetCheeks": {
+          "left": [
+            -0.2134837962962962,
+            0.13026046516138953
+          ],
+          "right": [
+            0.22183859767025096,
+            0.11322776657706121
+          ],
+          "samples": [
+            1611,
+            1488
+          ]
+        },
+        "pigmentComponents": [
+          {
+            "pixels": 4925,
+            "bounds": [
+              239,
+              271,
+              307,
+              386
+            ]
+          },
+          {
+            "pixels": 4937,
+            "bounds": [
+              496,
+              276,
+              563,
+              390
+            ]
+          },
+          {
+            "pixels": 5738,
+            "bounds": [
+              362,
+              364,
+              440,
+              460
+            ]
+          }
+        ],
+        "discardedIsolatedMarks": 0,
+        "coloredPixels": 12785,
+        "holePixels": 155,
+        "skinBoundarySamples": [
+          407,
+          374,
+          352
+        ],
+        "erasedPixels": 81868,
+        "inkPixels": 12609,
+        "resolution": [
+          768,
+          768
+        ],
+        "newEyeOrMouthDrawn": false,
+        "sourceBodyTransferred": false
+      },
+      "captures": [
+        "expressions/sleepy-front.png",
+        "expressions/sleepy-quarter.png",
+        "expressions/sleepy-side.png"
+      ]
+    },
+    {
+      "id": "aa",
+      "label": "말하기 아",
+      "version": "V69",
+      "sourceSHA256": "c6ca9cb9c3b94778a5b80ab19caf9e0b3ab7546363cbba2994e38d303ca74903",
+      "material": {
+        "expressionId": "aa",
+        "fit": {
+          "a": 1.1336687940009855,
+          "b": -0.05707398255534164,
+          "tx": 0.007376048730272799,
+          "ty": -0.08152998810793306,
+          "scale": 1.135104565216957,
+          "rotation": -0.050302025383723845
+        },
+        "sourceCheeks": {
+          "left": [
+            -0.22720938563942955,
+            0.07832660680324972
+          ],
+          "right": [
+            0.26532990378837557,
+            0.034171585221375665
+          ],
+          "samples": [
+            3133,
+            3051
+          ]
+        },
+        "targetCheeks": {
+          "left": [
+            -0.2134837962962962,
+            0.13026046516138953
+          ],
+          "right": [
+            0.22183859767025096,
+            0.11322776657706121
+          ],
+          "samples": [
+            1611,
+            1488
+          ]
+        },
+        "pigmentComponents": [
+          {
+            "pixels": 4366,
+            "bounds": [
+              250,
+              272,
+              297,
+              384
+            ]
+          },
+          {
+            "pixels": 4386,
+            "bounds": [
+              506,
+              277,
+              554,
+              388
+            ]
+          },
+          {
+            "pixels": 8604,
+            "bounds": [
+              351,
+              363,
+              454,
+              467
+            ]
+          }
+        ],
+        "discardedIsolatedMarks": 0,
+        "coloredPixels": 8585,
+        "holePixels": 0,
+        "skinBoundarySamples": [
+          407,
+          374,
+          352
+        ],
+        "erasedPixels": 81868,
+        "inkPixels": 13745,
+        "resolution": [
+          768,
+          768
+        ],
+        "newEyeOrMouthDrawn": false,
+        "sourceBodyTransferred": false
+      },
+      "captures": [
+        "expressions/aa-front.png",
+        "expressions/aa-quarter.png",
+        "expressions/aa-side.png"
+      ]
+    },
+    {
+      "id": "oh",
+      "label": "말하기 오",
+      "version": "V69",
+      "sourceSHA256": "9439ddd5511764cae46454c935d13e2c5b7d6bd33c1e3a3c4a18b3ae918ee896",
+      "material": {
+        "expressionId": "oh",
+        "fit": {
+          "a": 1.1336687940009855,
+          "b": -0.05707398255534164,
+          "tx": 0.007376048730272799,
+          "ty": -0.08152998810793306,
+          "scale": 1.135104565216957,
+          "rotation": -0.050302025383723845
+        },
+        "sourceCheeks": {
+          "left": [
+            -0.22720938563942955,
+            0.07832660680324972
+          ],
+          "right": [
+            0.26532990378837557,
+            0.034171585221375665
+          ],
+          "samples": [
+            3133,
+            3051
+          ]
+        },
+        "targetCheeks": {
+          "left": [
+            -0.2134837962962962,
+            0.13026046516138953
+          ],
+          "right": [
+            0.22183859767025096,
+            0.11322776657706121
+          ],
+          "samples": [
+            1611,
+            1488
+          ]
+        },
+        "pigmentComponents": [
+          {
+            "pixels": 4366,
+            "bounds": [
+              250,
+              272,
+              297,
+              384
+            ]
+          },
+          {
+            "pixels": 4386,
+            "bounds": [
+              506,
+              277,
+              554,
+              388
+            ]
+          },
+          {
+            "pixels": 5803,
+            "bounds": [
+              362,
+              363,
+              440,
+              463
+            ]
+          }
+        ],
+        "discardedIsolatedMarks": 0,
+        "coloredPixels": 5785,
+        "holePixels": 0,
+        "skinBoundarySamples": [
+          407,
+          374,
+          352
+        ],
+        "erasedPixels": 81868,
+        "inkPixels": 11564,
+        "resolution": [
+          768,
+          768
+        ],
+        "newEyeOrMouthDrawn": false,
+        "sourceBodyTransferred": false
+      },
+      "captures": [
+        "expressions/oh-front.png",
+        "expressions/oh-quarter.png",
+        "expressions/oh-side.png"
+      ]
+    },
+    {
+      "id": "oo",
+      "label": "말하기 우",
+      "version": "V84",
+      "sourceSHA256": "f56ee70b8bf090826217865b85941674a3ade5e1e3ee4a14b464a651330bffdc",
+      "material": {
+        "expressionId": "oo",
+        "fit": {
+          "a": 1.1336687940009855,
+          "b": -0.05707398255534164,
+          "tx": 0.007376048730272799,
+          "ty": -0.08152998810793306,
+          "scale": 1.135104565216957,
+          "rotation": -0.050302025383723845
+        },
+        "sourceCheeks": {
+          "left": [
+            -0.22720938563942955,
+            0.07832660680324972
+          ],
+          "right": [
+            0.26532990378837557,
+            0.034171585221375665
+          ],
+          "samples": [
+            3133,
+            3051
+          ]
+        },
+        "targetCheeks": {
+          "left": [
+            -0.2134837962962962,
+            0.13026046516138953
+          ],
+          "right": [
+            0.22183859767025096,
+            0.11322776657706121
+          ],
+          "samples": [
+            1611,
+            1488
+          ]
+        },
+        "pigmentComponents": [
+          {
+            "pixels": 4366,
+            "bounds": [
+              250,
+              272,
+              297,
+              384
+            ]
+          },
+          {
+            "pixels": 4386,
+            "bounds": [
+              506,
+              277,
+              554,
+              388
+            ]
+          },
+          {
+            "pixels": 2035,
+            "bounds": [
+              362,
+              389,
+              440,
+              435
+            ]
+          }
+        ],
+        "discardedIsolatedMarks": 0,
+        "coloredPixels": 2010,
+        "holePixels": 0,
+        "skinBoundarySamples": [
+          407,
+          374,
+          352
+        ],
+        "erasedPixels": 81868,
+        "inkPixels": 8654,
+        "resolution": [
+          768,
+          768
+        ],
+        "newEyeOrMouthDrawn": false,
+        "sourceBodyTransferred": false
+      },
+      "captures": [
+        "expressions/oo-front.png",
+        "expressions/oo-quarter.png",
+        "expressions/oo-side.png"
+      ]
+    },
+    {
+      "id": "blink_closed",
+      "label": "깜빡임용 감은 눈",
+      "version": "V71",
+      "sourceSHA256": "d3a887b3410066f3486781865b58adae5403bcfaae10c64391902213b5ed7c09",
+      "material": {
+        "expressionId": "blink_closed",
+        "fit": {
+          "a": 1.1336687940009855,
+          "b": -0.05707398255534164,
+          "tx": 0.007376048730272799,
+          "ty": -0.08152998810793306,
+          "scale": 1.135104565216957,
+          "rotation": -0.050302025383723845
+        },
+        "sourceCheeks": {
+          "left": [
+            -0.22720938563942955,
+            0.07832660680324972
+          ],
+          "right": [
+            0.26532990378837557,
+            0.034171585221375665
+          ],
+          "samples": [
+            3133,
+            3051
+          ]
+        },
+        "targetCheeks": {
+          "left": [
+            -0.2134837962962962,
+            0.13026046516138953
+          ],
+          "right": [
+            0.22183859767025096,
+            0.11322776657706121
+          ],
+          "samples": [
+            1611,
+            1488
+          ]
+        },
+        "pigmentComponents": [
+          {
+            "pixels": 4888,
+            "bounds": [
+              240,
+              271,
+              308,
+              386
+            ]
+          },
+          {
+            "pixels": 4927,
+            "bounds": [
+              496,
+              276,
+              564,
+              390
+            ]
+          },
+          {
+            "pixels": 1196,
+            "bounds": [
+              362,
+              398,
+              439,
+              425
+            ]
+          }
+        ],
+        "discardedIsolatedMarks": 0,
+        "coloredPixels": 6658,
+        "holePixels": 220,
+        "skinBoundarySamples": [
+          407,
+          374,
+          352
+        ],
+        "erasedPixels": 81868,
+        "inkPixels": 9147,
+        "resolution": [
+          768,
+          768
+        ],
+        "newEyeOrMouthDrawn": false,
+        "sourceBodyTransferred": false
+      },
+      "captures": [
+        "expressions/blink_closed-front.png",
+        "expressions/blink_closed-quarter.png",
+        "expressions/blink_closed-side.png"
+      ]
+    },
+    {
+      "id": "relieved",
+      "label": "기쁨",
+      "version": "V71",
+      "sourceSHA256": "9c8ba3da66fca0757c9d4a994216d6c7782bdfbd8c110c495c933d3efffd04e2",
+      "material": {
+        "expressionId": "relieved",
+        "fit": {
+          "a": 1.1336687940009855,
+          "b": -0.05707398255534164,
+          "tx": 0.007376048730272799,
+          "ty": -0.08152998810793306,
+          "scale": 1.135104565216957,
+          "rotation": -0.050302025383723845
+        },
+        "sourceCheeks": {
+          "left": [
+            -0.22720938563942955,
+            0.07832660680324972
+          ],
+          "right": [
+            0.26532990378837557,
+            0.034171585221375665
+          ],
+          "samples": [
+            3133,
+            3051
+          ]
+        },
+        "targetCheeks": {
+          "left": [
+            -0.2134837962962962,
+            0.13026046516138953
+          ],
+          "right": [
+            0.22183859767025096,
+            0.11322776657706121
+          ],
+          "samples": [
+            1611,
+            1488
+          ]
+        },
+        "pigmentComponents": [
+          {
+            "pixels": 4906,
+            "bounds": [
+              239,
+              271,
+              306,
+              386
+            ]
+          },
+          {
+            "pixels": 4946,
+            "bounds": [
+              496,
+              276,
+              564,
+              390
+            ]
+          },
+          {
+            "pixels": 8511,
+            "bounds": [
+              352,
+              361,
+              454,
+              467
+            ]
+          }
+        ],
+        "discardedIsolatedMarks": 0,
+        "coloredPixels": 15371,
+        "holePixels": 141,
+        "skinBoundarySamples": [
+          407,
+          374,
+          352
+        ],
+        "erasedPixels": 81868,
+        "inkPixels": 14718,
+        "resolution": [
+          768,
+          768
+        ],
+        "newEyeOrMouthDrawn": false,
+        "sourceBodyTransferred": false
+      },
+      "captures": [
+        "expressions/relieved-front.png",
+        "expressions/relieved-quarter.png",
+        "expressions/relieved-side.png"
+      ]
+    },
+    {
+      "id": "half_sleepy",
+      "label": "반쯤 졸림",
+      "version": "V71",
+      "sourceSHA256": "aae1b882b0bb833843d7248fb2611df719813766cd9e2bdc161f0b303367e814",
+      "material": {
+        "expressionId": "half_sleepy",
+        "fit": {
+          "a": 1.1336687940009855,
+          "b": -0.05707398255534164,
+          "tx": 0.007376048730272799,
+          "ty": -0.08152998810793306,
+          "scale": 1.135104565216957,
+          "rotation": -0.050302025383723845
+        },
+        "sourceCheeks": {
+          "left": [
+            -0.22720938563942955,
+            0.07832660680324972
+          ],
+          "right": [
+            0.26532990378837557,
+            0.034171585221375665
+          ],
+          "samples": [
+            3133,
+            3051
+          ]
+        },
+        "targetCheeks": {
+          "left": [
+            -0.2134837962962962,
+            0.13026046516138953
+          ],
+          "right": [
+            0.22183859767025096,
+            0.11322776657706121
+          ],
+          "samples": [
+            1611,
+            1488
+          ]
+        },
+        "pigmentComponents": [
+          {
+            "pixels": 4837,
+            "bounds": [
+              236,
+              271,
+              302,
+              386
+            ]
+          },
+          {
+            "pixels": 4887,
+            "bounds": [
+              501,
+              276,
+              568,
+              390
+            ]
+          },
+          {
+            "pixels": 2592,
+            "bounds": [
+              362,
+              385,
+              440,
+              439
+            ]
+          }
+        ],
+        "discardedIsolatedMarks": 1,
+        "coloredPixels": 7076,
+        "holePixels": 156,
+        "skinBoundarySamples": [
+          407,
+          374,
+          352
+        ],
+        "erasedPixels": 81868,
+        "inkPixels": 10114,
+        "resolution": [
+          768,
+          768
+        ],
+        "newEyeOrMouthDrawn": false,
+        "sourceBodyTransferred": false
+      },
+      "captures": [
+        "expressions/half_sleepy-front.png",
+        "expressions/half_sleepy-quarter.png",
+        "expressions/half_sleepy-side.png"
+      ]
+    },
+    {
+      "id": "soft_sad",
+      "label": "살짝 슬픔",
+      "version": "V71",
+      "sourceSHA256": "77213e21ac5dbad9236a4f8496c54910ce2cacbb81fdecdfe2b6048b735b70fa",
+      "material": {
+        "expressionId": "soft_sad",
+        "fit": {
+          "a": 1.1336687940009855,
+          "b": -0.05707398255534164,
+          "tx": 0.007376048730272799,
+          "ty": -0.08152998810793306,
+          "scale": 1.135104565216957,
+          "rotation": -0.050302025383723845
+        },
+        "sourceCheeks": {
+          "left": [
+            -0.22720938563942955,
+            0.07832660680324972
+          ],
+          "right": [
+            0.26532990378837557,
+            0.034171585221375665
+          ],
+          "samples": [
+            3133,
+            3051
+          ]
+        },
+        "targetCheeks": {
+          "left": [
+            -0.2134837962962962,
+            0.13026046516138953
+          ],
+          "right": [
+            0.22183859767025096,
+            0.11322776657706121
+          ],
+          "samples": [
+            1611,
+            1488
+          ]
+        },
+        "pigmentComponents": [
+          {
+            "pixels": 6056,
+            "bounds": [
+              242,
+              267,
+              303,
+              390
+            ]
+          },
+          {
+            "pixels": 6117,
+            "bounds": [
+              500,
+              271,
+              561,
+              395
+            ]
+          },
+          {
+            "pixels": 1986,
+            "bounds": [
+              362,
+              393,
+              440,
+              436
+            ]
+          },
+          {
+            "pixels": 246,
+            "bounds": [
+              386,
+              415,
+              415,
+              426
+            ]
+          }
+        ],
+        "discardedIsolatedMarks": 6,
+        "coloredPixels": 580,
+        "holePixels": 22,
+        "skinBoundarySamples": [
+          407,
+          374,
+          352
+        ],
+        "erasedPixels": 81868,
+        "inkPixels": 12032,
+        "resolution": [
+          768,
+          768
+        ],
+        "newEyeOrMouthDrawn": false,
+        "sourceBodyTransferred": false
+      },
+      "captures": [
+        "expressions/soft_sad-front.png",
+        "expressions/soft_sad-quarter.png",
+        "expressions/soft_sad-side.png"
+      ]
+    },
+    {
+      "id": "curious",
+      "label": "호기심",
+      "version": "V73",
+      "sourceSHA256": "27b19e85d6b3a06a4d3dcbb080fdc0678159b6b91c79d60ced91ac6a4a64fd7e",
+      "material": {
+        "expressionId": "curious",
+        "fit": {
+          "a": 1.1336687940009855,
+          "b": -0.05707398255534164,
+          "tx": 0.007376048730272799,
+          "ty": -0.08152998810793306,
+          "scale": 1.135104565216957,
+          "rotation": -0.050302025383723845
+        },
+        "sourceCheeks": {
+          "left": [
+            -0.22720938563942955,
+            0.07832660680324972
+          ],
+          "right": [
+            0.26532990378837557,
+            0.034171585221375665
+          ],
+          "samples": [
+            3133,
+            3051
+          ]
+        },
+        "targetCheeks": {
+          "left": [
+            -0.2134837962962962,
+            0.13026046516138953
+          ],
+          "right": [
+            0.22183859767025096,
+            0.11322776657706121
+          ],
+          "samples": [
+            1611,
+            1488
+          ]
+        },
+        "pigmentComponents": [
+          {
+            "pixels": 518,
+            "bounds": [
+              257,
+              220,
+              300,
+              242
+            ]
+          },
+          {
+            "pixels": 4439,
+            "bounds": [
+              249,
+              271,
+              298,
+              386
+            ]
+          },
+          {
+            "pixels": 4526,
+            "bounds": [
+              506,
+              276,
+              555,
+              390
+            ]
+          },
+          {
+            "pixels": 5607,
+            "bounds": [
+              362,
+              363,
+              440,
+              462
+            ]
+          }
+        ],
+        "discardedIsolatedMarks": 2,
+        "coloredPixels": 6859,
+        "holePixels": 249,
+        "skinBoundarySamples": [
+          407,
+          374,
+          352
+        ],
+        "erasedPixels": 81868,
+        "inkPixels": 12390,
+        "resolution": [
+          768,
+          768
+        ],
+        "newEyeOrMouthDrawn": false,
+        "sourceBodyTransferred": false
+      },
+      "captures": [
+        "expressions/curious-front.png",
+        "expressions/curious-quarter.png",
+        "expressions/curious-side.png"
+      ]
+    },
+    {
+      "id": "shy",
+      "label": "부끄러움",
+      "version": "V73",
+      "sourceSHA256": "c73200e19425cbbed3941d4dee38acd688851ba74af2591f1aba21cb3af48da8",
+      "material": {
+        "expressionId": "shy",
+        "fit": {
+          "a": 1.1336687940009855,
+          "b": -0.05707398255534164,
+          "tx": 0.007376048730272799,
+          "ty": -0.08152998810793306,
+          "scale": 1.135104565216957,
+          "rotation": -0.050302025383723845
+        },
+        "sourceCheeks": {
+          "left": [
+            -0.22720938563942955,
+            0.07832660680324972
+          ],
+          "right": [
+            0.26532990378837557,
+            0.034171585221375665
+          ],
+          "samples": [
+            3133,
+            3051
+          ]
+        },
+        "targetCheeks": {
+          "left": [
+            -0.2134837962962962,
+            0.13026046516138953
+          ],
+          "right": [
+            0.22183859767025096,
+            0.11322776657706121
+          ],
+          "samples": [
+            1611,
+            1488
+          ]
+        },
+        "pigmentComponents": [
+          {
+            "pixels": 5758,
+            "bounds": [
+              206,
+              271,
+              298,
+              401
+            ]
+          },
+          {
+            "pixels": 5984,
+            "bounds": [
+              506,
+              276,
+              587,
+              407
+            ]
+          },
+          {
+            "pixels": 4571,
+            "bounds": [
+              346,
+              372,
+              454,
+              448
+            ]
+          }
+        ],
+        "discardedIsolatedMarks": 3,
+        "coloredPixels": 9078,
+        "holePixels": 357,
+        "skinBoundarySamples": [
+          407,
+          374,
+          352
+        ],
+        "erasedPixels": 81868,
+        "inkPixels": 13778,
+        "resolution": [
+          768,
+          768
+        ],
+        "newEyeOrMouthDrawn": false,
+        "sourceBodyTransferred": false
+      },
+      "captures": [
+        "expressions/shy-front.png",
+        "expressions/shy-quarter.png",
+        "expressions/shy-side.png"
+      ]
+    },
+    {
+      "id": "proud",
+      "label": "뿌듯함",
+      "version": "V73",
+      "sourceSHA256": "78fc84df710c23b62b062e31999547ab6ea8464b85c25430d59de9c780a5f854",
+      "material": {
+        "expressionId": "proud",
+        "fit": {
+          "a": 1.1336687940009855,
+          "b": -0.05707398255534164,
+          "tx": 0.007376048730272799,
+          "ty": -0.08152998810793306,
+          "scale": 1.135104565216957,
+          "rotation": -0.050302025383723845
+        },
+        "sourceCheeks": {
+          "left": [
+            -0.22720938563942955,
+            0.07832660680324972
+          ],
+          "right": [
+            0.26532990378837557,
+            0.034171585221375665
+          ],
+          "samples": [
+            3133,
+            3051
+          ]
+        },
+        "targetCheeks": {
+          "left": [
+            -0.2134837962962962,
+            0.13026046516138953
+          ],
+          "right": [
+            0.22183859767025096,
+            0.11322776657706121
+          ],
+          "samples": [
+            1611,
+            1488
+          ]
+        },
+        "pigmentComponents": [
+          {
+            "pixels": 5496,
+            "bounds": [
+              249,
+              226,
+              305,
+              386
+            ]
+          },
+          {
+            "pixels": 5675,
+            "bounds": [
+              499,
+              233,
+              555,
+              390
+            ]
+          },
+          {
+            "pixels": 7932,
+            "bounds": [
+              355,
+              363,
+              450,
+              466
+            ]
+          }
+        ],
+        "discardedIsolatedMarks": 0,
+        "coloredPixels": 8625,
+        "holePixels": 241,
+        "skinBoundarySamples": [
+          407,
+          374,
+          352
+        ],
+        "erasedPixels": 81868,
+        "inkPixels": 15569,
+        "resolution": [
+          768,
+          768
+        ],
+        "newEyeOrMouthDrawn": false,
+        "sourceBodyTransferred": false
+      },
+      "captures": [
+        "expressions/proud-front.png",
+        "expressions/proud-quarter.png",
+        "expressions/proud-side.png"
+      ]
+    },
+    {
+      "id": "teary",
+      "label": "울먹임",
+      "version": "V73",
+      "sourceSHA256": "156bf04e17cc1707f28e1ea4470b16fcfbcb10ed4eb7d597d7241c0c31d882eb",
+      "material": {
+        "expressionId": "teary",
+        "fit": {
+          "a": 1.1336687940009855,
+          "b": -0.05707398255534164,
+          "tx": 0.007376048730272799,
+          "ty": -0.08152998810793306,
+          "scale": 1.135104565216957,
+          "rotation": -0.050302025383723845
+        },
+        "sourceCheeks": {
+          "left": [
+            -0.22720938563942955,
+            0.07832660680324972
+          ],
+          "right": [
+            0.26532990378837557,
+            0.034171585221375665
+          ],
+          "samples": [
+            3133,
+            3051
+          ]
+        },
+        "targetCheeks": {
+          "left": [
+            -0.2134837962962962,
+            0.13026046516138953
+          ],
+          "right": [
+            0.22183859767025096,
+            0.11322776657706121
+          ],
+          "samples": [
+            1611,
+            1488
+          ]
+        },
+        "pigmentComponents": [
+          {
+            "pixels": 5030,
+            "bounds": [
+              246,
+              269,
+              298,
+              401
+            ]
+          },
+          {
+            "pixels": 4967,
+            "bounds": [
+              505,
+              275,
+              555,
+              405
+            ]
+          },
+          {
+            "pixels": 8645,
+            "bounds": [
+              346,
+              363,
+              455,
+              464
+            ]
+          }
+        ],
+        "discardedIsolatedMarks": 0,
+        "coloredPixels": 15715,
+        "holePixels": 288,
+        "skinBoundarySamples": [
+          407,
+          374,
+          352
+        ],
+        "erasedPixels": 81868,
+        "inkPixels": 15082,
+        "resolution": [
+          768,
+          768
+        ],
+        "newEyeOrMouthDrawn": false,
+        "sourceBodyTransferred": false
+      },
+      "captures": [
+        "expressions/teary-front.png",
+        "expressions/teary-quarter.png",
+        "expressions/teary-side.png"
+      ]
+    },
+    {
+      "id": "annoyed",
+      "label": "살짝 짜증",
+      "version": "V75",
+      "sourceSHA256": "8ae3fa6f2952fb67b4b5d91185ae1a28c2a5a359e04399a97627709bb9c4c869",
+      "material": {
+        "expressionId": "annoyed",
+        "fit": {
+          "a": 1.1336687940009855,
+          "b": -0.05707398255534164,
+          "tx": 0.007376048730272799,
+          "ty": -0.08152998810793306,
+          "scale": 1.135104565216957,
+          "rotation": -0.050302025383723845
+        },
+        "sourceCheeks": {
+          "left": [
+            -0.22720938563942955,
+            0.07832660680324972
+          ],
+          "right": [
+            0.26532990378837557,
+            0.034171585221375665
+          ],
+          "samples": [
+            3133,
+            3051
+          ]
+        },
+        "targetCheeks": {
+          "left": [
+            -0.2134837962962962,
+            0.13026046516138953
+          ],
+          "right": [
+            0.22183859767025096,
+            0.11322776657706121
+          ],
+          "samples": [
+            1611,
+            1488
+          ]
+        },
+        "pigmentComponents": [
+          {
+            "pixels": 320,
+            "bounds": [
+              507,
+              255,
+              538,
+              279
+            ]
+          },
+          {
+            "pixels": 4545,
+            "bounds": [
+              249,
+              271,
+              298,
+              386
+            ]
+          },
+          {
+            "pixels": 4581,
+            "bounds": [
+              506,
+              276,
+              555,
+              390
+            ]
+          },
+          {
+            "pixels": 2138,
+            "bounds": [
+              362,
+              392,
+              440,
+              437
+            ]
+          }
+        ],
+        "discardedIsolatedMarks": 2,
+        "coloredPixels": 6107,
+        "holePixels": 218,
+        "skinBoundarySamples": [
+          407,
+          374,
+          352
+        ],
+        "erasedPixels": 81868,
+        "inkPixels": 9646,
+        "resolution": [
+          768,
+          768
+        ],
+        "newEyeOrMouthDrawn": false,
+        "sourceBodyTransferred": false
+      },
+      "captures": [
+        "expressions/annoyed-front.png",
+        "expressions/annoyed-quarter.png",
+        "expressions/annoyed-side.png"
+      ]
+    },
+    {
+      "id": "determined",
+      "label": "결의",
+      "version": "V75",
+      "sourceSHA256": "67fa05a7ff735cbc388c6b68df9688f84bcb99c666b4ec1303eab6c14a30be13",
+      "material": {
+        "expressionId": "determined",
+        "fit": {
+          "a": 1.1336687940009855,
+          "b": -0.05707398255534164,
+          "tx": 0.007376048730272799,
+          "ty": -0.08152998810793306,
+          "scale": 1.135104565216957,
+          "rotation": -0.050302025383723845
+        },
+        "sourceCheeks": {
+          "left": [
+            -0.22720938563942955,
+            0.07832660680324972
+          ],
+          "right": [
+            0.26532990378837557,
+            0.034171585221375665
+          ],
+          "samples": [
+            3133,
+            3051
+          ]
+        },
+        "targetCheeks": {
+          "left": [
+            -0.2134837962962962,
+            0.13026046516138953
+          ],
+          "right": [
+            0.22183859767025096,
+            0.11322776657706121
+          ],
+          "samples": [
+            1611,
+            1488
+          ]
+        },
+        "pigmentComponents": [
+          {
+            "pixels": 1084,
+            "bounds": [
+              256,
+              222,
+              307,
+              284
+            ]
+          },
+          {
+            "pixels": 1136,
+            "bounds": [
+              498,
+              229,
+              551,
+              286
+            ]
+          },
+          {
+            "pixels": 4515,
+            "bounds": [
+              249,
+              271,
+              298,
+              386
+            ]
+          },
+          {
+            "pixels": 4546,
+            "bounds": [
+              506,
+              276,
+              555,
+              390
+            ]
+          },
+          {
+            "pixels": 2158,
+            "bounds": [
+              355,
+              397,
+              449,
+              428
+            ]
+          }
+        ],
+        "discardedIsolatedMarks": 1,
+        "coloredPixels": 829,
+        "holePixels": 193,
+        "skinBoundarySamples": [
+          407,
+          374,
+          352
+        ],
+        "erasedPixels": 81868,
+        "inkPixels": 11244,
+        "resolution": [
+          768,
+          768
+        ],
+        "newEyeOrMouthDrawn": false,
+        "sourceBodyTransferred": false
+      },
+      "captures": [
+        "expressions/determined-front.png",
+        "expressions/determined-quarter.png",
+        "expressions/determined-side.png"
+      ]
+    },
+    {
+      "id": "confused",
+      "label": "갸우뚱/혼란",
+      "version": "V75",
+      "sourceSHA256": "ed9a60ff2d4e6f2e1978810315f3198141012e9070787b373a24a491543a9e40",
+      "material": {
+        "expressionId": "confused",
+        "fit": {
+          "a": 1.1336687940009855,
+          "b": -0.05707398255534164,
+          "tx": 0.007376048730272799,
+          "ty": -0.08152998810793306,
+          "scale": 1.135104565216957,
+          "rotation": -0.050302025383723845
+        },
+        "sourceCheeks": {
+          "left": [
+            -0.22720938563942955,
+            0.07832660680324972
+          ],
+          "right": [
+            0.26532990378837557,
+            0.034171585221375665
+          ],
+          "samples": [
+            3133,
+            3051
+          ]
+        },
+        "targetCheeks": {
+          "left": [
+            -0.2134837962962962,
+            0.13026046516138953
+          ],
+          "right": [
+            0.22183859767025096,
+            0.11322776657706121
+          ],
+          "samples": [
+            1611,
+            1488
+          ]
+        },
+        "pigmentComponents": [
+          {
+            "pixels": 534,
+            "bounds": [
+              261,
+              205,
+              304,
+              230
+            ]
+          },
+          {
+            "pixels": 597,
+            "bounds": [
+              515,
+              221,
+              560,
+              267
+            ]
+          },
+          {
+            "pixels": 4476,
+            "bounds": [
+              249,
+              271,
+              298,
+              386
+            ]
+          },
+          {
+            "pixels": 4491,
+            "bounds": [
+              506,
+              276,
+              555,
+              390
+            ]
+          },
+          {
+            "pixels": 5420,
+            "bounds": [
+              362,
+              363,
+              440,
+              461
+            ]
+          }
+        ],
+        "discardedIsolatedMarks": 2,
+        "coloredPixels": 6446,
+        "holePixels": 245,
+        "skinBoundarySamples": [
+          407,
+          374,
+          352
+        ],
+        "erasedPixels": 81868,
+        "inkPixels": 12909,
+        "resolution": [
+          768,
+          768
+        ],
+        "newEyeOrMouthDrawn": false,
+        "sourceBodyTransferred": false
+      },
+      "captures": [
+        "expressions/confused-front.png",
+        "expressions/confused-quarter.png",
+        "expressions/confused-side.png"
+      ]
+    },
+    {
+      "id": "worried",
+      "label": "걱정",
+      "version": "V75",
+      "sourceSHA256": "1ab08f8e947aea1a7c9d60365f4a6c766a8b6f5030e9e6292aab09e8b114cc37",
+      "material": {
+        "expressionId": "worried",
+        "fit": {
+          "a": 1.1336687940009855,
+          "b": -0.05707398255534164,
+          "tx": 0.007376048730272799,
+          "ty": -0.08152998810793306,
+          "scale": 1.135104565216957,
+          "rotation": -0.050302025383723845
+        },
+        "sourceCheeks": {
+          "left": [
+            -0.22720938563942955,
+            0.07832660680324972
+          ],
+          "right": [
+            0.26532990378837557,
+            0.034171585221375665
+          ],
+          "samples": [
+            3133,
+            3051
+          ]
+        },
+        "targetCheeks": {
+          "left": [
+            -0.2134837962962962,
+            0.13026046516138953
+          ],
+          "right": [
+            0.22183859767025096,
+            0.11322776657706121
+          ],
+          "samples": [
+            1611,
+            1488
+          ]
+        },
+        "pigmentComponents": [
+          {
+            "pixels": 764,
+            "bounds": [
+              253,
+              205,
+              300,
+              246
+            ]
+          },
+          {
+            "pixels": 758,
+            "bounds": [
+              507,
+              208,
+              554,
+              252
+            ]
+          },
+          {
+            "pixels": 4411,
+            "bounds": [
+              249,
+              271,
+              298,
+              386
+            ]
+          },
+          {
+            "pixels": 4437,
+            "bounds": [
+              506,
+              276,
+              555,
+              390
+            ]
+          },
+          {
+            "pixels": 5056,
+            "bounds": [
+              355,
+              374,
+              448,
+              446
+            ]
+          }
+        ],
+        "discardedIsolatedMarks": 0,
+        "coloredPixels": 5982,
+        "holePixels": 393,
+        "skinBoundarySamples": [
+          407,
+          374,
+          352
+        ],
+        "erasedPixels": 81868,
+        "inkPixels": 12905,
+        "resolution": [
+          768,
+          768
+        ],
+        "newEyeOrMouthDrawn": false,
+        "sourceBodyTransferred": false
+      },
+      "captures": [
+        "expressions/worried-front.png",
+        "expressions/worried-quarter.png",
+        "expressions/worried-side.png"
+      ]
+    },
+    {
+      "id": "love",
+      "label": "반함",
+      "version": "V77",
+      "sourceSHA256": "e267c2dfc1bc2427b597d33ac547661d3bb03ec27b19d8d924f731534afbdb5c",
+      "material": {
+        "expressionId": "love",
+        "fit": {
+          "a": 1.1336687940009855,
+          "b": -0.05707398255534164,
+          "tx": 0.007376048730272799,
+          "ty": -0.08152998810793306,
+          "scale": 1.135104565216957,
+          "rotation": -0.050302025383723845
+        },
+        "sourceCheeks": {
+          "left": [
+            -0.22720938563942955,
+            0.07832660680324972
+          ],
+          "right": [
+            0.26532990378837557,
+            0.034171585221375665
+          ],
+          "samples": [
+            3133,
+            3051
+          ]
+        },
+        "targetCheeks": {
+          "left": [
+            -0.2134837962962962,
+            0.13026046516138953
+          ],
+          "right": [
+            0.22183859767025096,
+            0.11322776657706121
+          ],
+          "samples": [
+            1611,
+            1488
+          ]
+        },
+        "pigmentComponents": [
+          {
+            "pixels": 4528,
+            "bounds": [
+              249,
+              271,
+              298,
+              386
+            ]
+          },
+          {
+            "pixels": 4575,
+            "bounds": [
+              506,
+              276,
+              555,
+              390
+            ]
+          },
+          {
+            "pixels": 7972,
+            "bounds": [
+              355,
+              362,
+              450,
+              467
+            ]
+          }
+        ],
+        "discardedIsolatedMarks": 0,
+        "coloredPixels": 12369,
+        "holePixels": 159,
+        "skinBoundarySamples": [
+          407,
+          374,
+          352
+        ],
+        "erasedPixels": 81868,
+        "inkPixels": 13676,
+        "resolution": [
+          768,
+          768
+        ],
+        "newEyeOrMouthDrawn": false,
+        "sourceBodyTransferred": false
+      },
+      "captures": [
+        "expressions/love-front.png",
+        "expressions/love-quarter.png",
+        "expressions/love-side.png"
+      ]
+    },
+    {
+      "id": "sparkly",
+      "label": "초롱초롱",
+      "version": "V77",
+      "sourceSHA256": "703f6589c6865a65917d3bc814b9c2ac5f540872d8ac8198d8c8c793d6cabe80",
+      "material": {
+        "expressionId": "sparkly",
+        "fit": {
+          "a": 1.1336687940009855,
+          "b": -0.05707398255534164,
+          "tx": 0.007376048730272799,
+          "ty": -0.08152998810793306,
+          "scale": 1.135104565216957,
+          "rotation": -0.050302025383723845
+        },
+        "sourceCheeks": {
+          "left": [
+            -0.22720938563942955,
+            0.07832660680324972
+          ],
+          "right": [
+            0.26532990378837557,
+            0.034171585221375665
+          ],
+          "samples": [
+            3133,
+            3051
+          ]
+        },
+        "targetCheeks": {
+          "left": [
+            -0.2134837962962962,
+            0.13026046516138953
+          ],
+          "right": [
+            0.22183859767025096,
+            0.11322776657706121
+          ],
+          "samples": [
+            1611,
+            1488
+          ]
+        },
+        "pigmentComponents": [
+          {
+            "pixels": 3924,
+            "bounds": [
+              249,
+              271,
+              298,
+              386
+            ]
+          },
+          {
+            "pixels": 3995,
+            "bounds": [
+              506,
+              276,
+              555,
+              390
+            ]
+          },
+          {
+            "pixels": 7100,
+            "bounds": [
+              359,
+              363,
+              449,
+              466
+            ]
+          }
+        ],
+        "discardedIsolatedMarks": 0,
+        "coloredPixels": 7956,
+        "holePixels": 1339,
+        "skinBoundarySamples": [
+          407,
+          374,
+          352
+        ],
+        "erasedPixels": 81868,
+        "inkPixels": 13007,
+        "resolution": [
+          768,
+          768
+        ],
+        "newEyeOrMouthDrawn": false,
+        "sourceBodyTransferred": false
+      },
+      "captures": [
+        "expressions/sparkly-front.png",
+        "expressions/sparkly-quarter.png",
+        "expressions/sparkly-side.png"
+      ]
+    },
+    {
+      "id": "listening",
+      "label": "경청",
+      "version": "V77",
+      "sourceSHA256": "639d4685a1dc00e8eb6aaa0946cea22581e6e5ffaafb84dd53cb138cb823d5a1",
+      "material": {
+        "expressionId": "listening",
+        "fit": {
+          "a": 1.1336687940009855,
+          "b": -0.05707398255534164,
+          "tx": 0.007376048730272799,
+          "ty": -0.08152998810793306,
+          "scale": 1.135104565216957,
+          "rotation": -0.050302025383723845
+        },
+        "sourceCheeks": {
+          "left": [
+            -0.22720938563942955,
+            0.07832660680324972
+          ],
+          "right": [
+            0.26532990378837557,
+            0.034171585221375665
+          ],
+          "samples": [
+            3133,
+            3051
+          ]
+        },
+        "targetCheeks": {
+          "left": [
+            -0.2134837962962962,
+            0.13026046516138953
+          ],
+          "right": [
+            0.22183859767025096,
+            0.11322776657706121
+          ],
+          "samples": [
+            1611,
+            1488
+          ]
+        },
+        "pigmentComponents": [
+          {
+            "pixels": 4457,
+            "bounds": [
+              249,
+              271,
+              298,
+              386
+            ]
+          },
+          {
+            "pixels": 4484,
+            "bounds": [
+              506,
+              276,
+              555,
+              390
+            ]
+          },
+          {
+            "pixels": 8082,
+            "bounds": [
+              356,
+              361,
+              450,
+              466
+            ]
+          }
+        ],
+        "discardedIsolatedMarks": 0,
+        "coloredPixels": 8880,
+        "holePixels": 303,
+        "skinBoundarySamples": [
+          407,
+          374,
+          352
+        ],
+        "erasedPixels": 81868,
+        "inkPixels": 13738,
+        "resolution": [
+          768,
+          768
+        ],
+        "newEyeOrMouthDrawn": false,
+        "sourceBodyTransferred": false
+      },
+      "captures": [
+        "expressions/listening-front.png",
+        "expressions/listening-quarter.png",
+        "expressions/listening-side.png"
+      ]
+    },
+    {
+      "id": "focused",
+      "label": "집중",
+      "version": "V77",
+      "sourceSHA256": "da806a91f99fa60d14bf37a3155319fab13b306c793820f8cf479ce275438942",
+      "material": {
+        "expressionId": "focused",
+        "fit": {
+          "a": 1.1336687940009855,
+          "b": -0.05707398255534164,
+          "tx": 0.007376048730272799,
+          "ty": -0.08152998810793306,
+          "scale": 1.135104565216957,
+          "rotation": -0.050302025383723845
+        },
+        "sourceCheeks": {
+          "left": [
+            -0.22720938563942955,
+            0.07832660680324972
+          ],
+          "right": [
+            0.26532990378837557,
+            0.034171585221375665
+          ],
+          "samples": [
+            3133,
+            3051
+          ]
+        },
+        "targetCheeks": {
+          "left": [
+            -0.2134837962962962,
+            0.13026046516138953
+          ],
+          "right": [
+            0.22183859767025096,
+            0.11322776657706121
+          ],
+          "samples": [
+            1611,
+            1488
+          ]
+        },
+        "pigmentComponents": [
+          {
+            "pixels": 647,
+            "bounds": [
+              260,
+              242,
+              306,
+              279
+            ]
+          },
+          {
+            "pixels": 5143,
+            "bounds": [
+              498,
+              250,
+              555,
+              390
+            ]
+          },
+          {
+            "pixels": 4475,
+            "bounds": [
+              249,
+              271,
+              298,
+              386
+            ]
+          },
+          {
+            "pixels": 1626,
+            "bounds": [
+              354,
+              397,
+              447,
+              426
+            ]
+          },
+          {
+            "pixels": 68,
+            "bounds": [
+              362,
+              398,
+              377,
+              404
+            ]
+          }
+        ],
+        "discardedIsolatedMarks": 0,
+        "coloredPixels": 1510,
+        "holePixels": 331,
+        "skinBoundarySamples": [
+          407,
+          374,
+          352
+        ],
+        "erasedPixels": 81868,
+        "inkPixels": 10120,
+        "resolution": [
+          768,
+          768
+        ],
+        "newEyeOrMouthDrawn": false,
+        "sourceBodyTransferred": false
+      },
+      "captures": [
+        "expressions/focused-front.png",
+        "expressions/focused-quarter.png",
+        "expressions/focused-side.png"
+      ]
+    },
+    {
+      "id": "aha",
+      "label": "아하",
+      "version": "V79",
+      "sourceSHA256": "74d8fc96e86184b6b8bf8a0c604bbad90966057c5093ac6865220da079db114e",
+      "material": {
+        "expressionId": "aha",
+        "fit": {
+          "a": 1.1336687940009855,
+          "b": -0.05707398255534164,
+          "tx": 0.007376048730272799,
+          "ty": -0.08152998810793306,
+          "scale": 1.135104565216957,
+          "rotation": -0.050302025383723845
+        },
+        "sourceCheeks": {
+          "left": [
+            -0.22720938563942955,
+            0.07832660680324972
+          ],
+          "right": [
+            0.26532990378837557,
+            0.034171585221375665
+          ],
+          "samples": [
+            3133,
+            3051
+          ]
+        },
+        "targetCheeks": {
+          "left": [
+            -0.2134837962962962,
+            0.13026046516138953
+          ],
+          "right": [
+            0.22183859767025096,
+            0.11322776657706121
+          ],
+          "samples": [
+            1611,
+            1488
+          ]
+        },
+        "pigmentComponents": [
+          {
+            "pixels": 892,
+            "bounds": [
+              233,
+              225,
+              279,
+              265
+            ]
+          },
+          {
+            "pixels": 4420,
+            "bounds": [
+              249,
+              272,
+              298,
+              386
+            ]
+          },
+          {
+            "pixels": 4521,
+            "bounds": [
+              505,
+              276,
+              555,
+              390
+            ]
+          },
+          {
+            "pixels": 8389,
+            "bounds": [
+              354,
+              361,
+              452,
+              468
+            ]
+          }
+        ],
+        "discardedIsolatedMarks": 2,
+        "coloredPixels": 11858,
+        "holePixels": 306,
+        "skinBoundarySamples": [
+          407,
+          374,
+          352
+        ],
+        "erasedPixels": 81868,
+        "inkPixels": 14851,
+        "resolution": [
+          768,
+          768
+        ],
+        "newEyeOrMouthDrawn": false,
+        "sourceBodyTransferred": false
+      },
+      "captures": [
+        "expressions/aha-front.png",
+        "expressions/aha-quarter.png",
+        "expressions/aha-side.png"
+      ]
+    },
+    {
+      "id": "skeptical",
+      "label": "의심",
+      "version": "V79",
+      "sourceSHA256": "e78bc2a398961275c36f6ce3a807acea7cce9c5b838074fcab4ae79a66abbed9",
+      "material": {
+        "expressionId": "skeptical",
+        "fit": {
+          "a": 1.1336687940009855,
+          "b": -0.05707398255534164,
+          "tx": 0.007376048730272799,
+          "ty": -0.08152998810793306,
+          "scale": 1.135104565216957,
+          "rotation": -0.050302025383723845
+        },
+        "sourceCheeks": {
+          "left": [
+            -0.22720938563942955,
+            0.07832660680324972
+          ],
+          "right": [
+            0.26532990378837557,
+            0.034171585221375665
+          ],
+          "samples": [
+            3133,
+            3051
+          ]
+        },
+        "targetCheeks": {
+          "left": [
+            -0.2134837962962962,
+            0.13026046516138953
+          ],
+          "right": [
+            0.22183859767025096,
+            0.11322776657706121
+          ],
+          "samples": [
+            1611,
+            1488
+          ]
+        },
+        "pigmentComponents": [
+          {
+            "pixels": 4590,
+            "bounds": [
+              246,
+              271,
+              298,
+              386
+            ]
+          },
+          {
+            "pixels": 4717,
+            "bounds": [
+              504,
+              272,
+              555,
+              390
+            ]
+          },
+          {
+            "pixels": 2044,
+            "bounds": [
+              362,
+              394,
+              440,
+              439
+            ]
+          }
+        ],
+        "discardedIsolatedMarks": 3,
+        "coloredPixels": 7806,
+        "holePixels": 174,
+        "skinBoundarySamples": [
+          407,
+          374,
+          352
+        ],
+        "erasedPixels": 81868,
+        "inkPixels": 9423,
+        "resolution": [
+          768,
+          768
+        ],
+        "newEyeOrMouthDrawn": false,
+        "sourceBodyTransferred": false
+      },
+      "captures": [
+        "expressions/skeptical-front.png",
+        "expressions/skeptical-quarter.png",
+        "expressions/skeptical-side.png"
+      ]
+    },
+    {
+      "id": "apologetic",
+      "label": "미안함",
+      "version": "V79",
+      "sourceSHA256": "45d98991b87771521fa1b7b60e12b321f36cddef9eba1acf4a3b2e5e9a5fdac4",
+      "material": {
+        "expressionId": "apologetic",
+        "fit": {
+          "a": 1.1336687940009855,
+          "b": -0.05707398255534164,
+          "tx": 0.007376048730272799,
+          "ty": -0.08152998810793306,
+          "scale": 1.135104565216957,
+          "rotation": -0.050302025383723845
+        },
+        "sourceCheeks": {
+          "left": [
+            -0.22720938563942955,
+            0.07832660680324972
+          ],
+          "right": [
+            0.26532990378837557,
+            0.034171585221375665
+          ],
+          "samples": [
+            3133,
+            3051
+          ]
+        },
+        "targetCheeks": {
+          "left": [
+            -0.2134837962962962,
+            0.13026046516138953
+          ],
+          "right": [
+            0.22183859767025096,
+            0.11322776657706121
+          ],
+          "samples": [
+            1611,
+            1488
+          ]
+        },
+        "pigmentComponents": [
+          {
+            "pixels": 4754,
+            "bounds": [
+              249,
+              245,
+              298,
+              386
+            ]
+          },
+          {
+            "pixels": 4745,
+            "bounds": [
+              506,
+              251,
+              555,
+              390
+            ]
+          },
+          {
+            "pixels": 2288,
+            "bounds": [
+              362,
+              393,
+              440,
+              440
+            ]
+          }
+        ],
+        "discardedIsolatedMarks": 4,
+        "coloredPixels": 2641,
+        "holePixels": 952,
+        "skinBoundarySamples": [
+          407,
+          374,
+          352
+        ],
+        "erasedPixels": 81868,
+        "inkPixels": 10471,
+        "resolution": [
+          768,
+          768
+        ],
+        "newEyeOrMouthDrawn": false,
+        "sourceBodyTransferred": false
+      },
+      "captures": [
+        "expressions/apologetic-front.png",
+        "expressions/apologetic-quarter.png",
+        "expressions/apologetic-side.png"
+      ]
+    },
+    {
+      "id": "cheering",
+      "label": "응원",
+      "version": "V79",
+      "sourceSHA256": "8a11e8a64bd567066f98a09557a7bac0a7118d0f86b2222a8bca19ceb2611a79",
+      "material": {
+        "expressionId": "cheering",
+        "fit": {
+          "a": 1.1336687940009855,
+          "b": -0.05707398255534164,
+          "tx": 0.007376048730272799,
+          "ty": -0.08152998810793306,
+          "scale": 1.135104565216957,
+          "rotation": -0.050302025383723845
+        },
+        "sourceCheeks": {
+          "left": [
+            -0.22720938563942955,
+            0.07832660680324972
+          ],
+          "right": [
+            0.26532990378837557,
+            0.034171585221375665
+          ],
+          "samples": [
+            3133,
+            3051
+          ]
+        },
+        "targetCheeks": {
+          "left": [
+            -0.2134837962962962,
+            0.13026046516138953
+          ],
+          "right": [
+            0.22183859767025096,
+            0.11322776657706121
+          ],
+          "samples": [
+            1611,
+            1488
+          ]
+        },
+        "pigmentComponents": [
+          {
+            "pixels": 4482,
+            "bounds": [
+              249,
+              271,
+              298,
+              386
+            ]
+          },
+          {
+            "pixels": 4538,
+            "bounds": [
+              506,
+              276,
+              555,
+              390
+            ]
+          },
+          {
+            "pixels": 8820,
+            "bounds": [
+              352,
+              363,
+              452,
+              469
+            ]
+          }
+        ],
+        "discardedIsolatedMarks": 0,
+        "coloredPixels": 16351,
+        "holePixels": 240,
+        "skinBoundarySamples": [
+          407,
+          374,
+          352
+        ],
+        "erasedPixels": 81868,
+        "inkPixels": 14324,
+        "resolution": [
+          768,
+          768
+        ],
+        "newEyeOrMouthDrawn": false,
+        "sourceBodyTransferred": false
+      },
+      "captures": [
+        "expressions/cheering-front.png",
+        "expressions/cheering-quarter.png",
+        "expressions/cheering-side.png"
+      ]
+    },
+    {
+      "id": "greeting_smile",
+      "label": "인사 미소",
+      "version": "V81",
+      "sourceSHA256": "df6ba0820d8142e7e6679b55fd7305a3991798b1626f3964d0fc34414073bd0e",
+      "material": {
+        "expressionId": "greeting_smile",
+        "fit": {
+          "a": 1.1336687940009855,
+          "b": -0.05707398255534164,
+          "tx": 0.007376048730272799,
+          "ty": -0.08152998810793306,
+          "scale": 1.135104565216957,
+          "rotation": -0.050302025383723845
+        },
+        "sourceCheeks": {
+          "left": [
+            -0.22720938563942955,
+            0.07832660680324972
+          ],
+          "right": [
+            0.26532990378837557,
+            0.034171585221375665
+          ],
+          "samples": [
+            3133,
+            3051
+          ]
+        },
+        "targetCheeks": {
+          "left": [
+            -0.2134837962962962,
+            0.13026046516138953
+          ],
+          "right": [
+            0.22183859767025096,
+            0.11322776657706121
+          ],
+          "samples": [
+            1611,
+            1488
+          ]
+        },
+        "pigmentComponents": [
+          {
+            "pixels": 4366,
+            "bounds": [
+              250,
+              272,
+              297,
+              384
+            ]
+          },
+          {
+            "pixels": 4386,
+            "bounds": [
+              506,
+              277,
+              554,
+              388
+            ]
+          },
+          {
+            "pixels": 9042,
+            "bounds": [
+              351,
+              363,
+              453,
+              469
+            ]
+          }
+        ],
+        "discardedIsolatedMarks": 0,
+        "coloredPixels": 9025,
+        "holePixels": 0,
+        "skinBoundarySamples": [
+          407,
+          374,
+          352
+        ],
+        "erasedPixels": 81868,
+        "inkPixels": 14081,
+        "resolution": [
+          768,
+          768
+        ],
+        "newEyeOrMouthDrawn": false,
+        "sourceBodyTransferred": false
+      },
+      "captures": [
+        "expressions/greeting_smile-front.png",
+        "expressions/greeting_smile-quarter.png",
+        "expressions/greeting_smile-side.png"
+      ]
+    },
+    {
+      "id": "yawning",
+      "label": "하품",
+      "version": "V81",
+      "sourceSHA256": "ca20e0e5c08bb3856f95520c875b472db2be06c0e4edfab39b09aaab496f8116",
+      "material": {
+        "expressionId": "yawning",
+        "fit": {
+          "a": 1.1336687940009855,
+          "b": -0.05707398255534164,
+          "tx": 0.007376048730272799,
+          "ty": -0.08152998810793306,
+          "scale": 1.135104565216957,
+          "rotation": -0.050302025383723845
+        },
+        "sourceCheeks": {
+          "left": [
+            -0.22720938563942955,
+            0.07832660680324972
+          ],
+          "right": [
+            0.26532990378837557,
+            0.034171585221375665
+          ],
+          "samples": [
+            3133,
+            3051
+          ]
+        },
+        "targetCheeks": {
+          "left": [
+            -0.2134837962962962,
+            0.13026046516138953
+          ],
+          "right": [
+            0.22183859767025096,
+            0.11322776657706121
+          ],
+          "samples": [
+            1611,
+            1488
+          ]
+        },
+        "pigmentComponents": [
+          {
+            "pixels": 5234,
+            "bounds": [
+              234,
+              271,
+              298,
+              399
+            ]
+          },
+          {
+            "pixels": 5200,
+            "bounds": [
+              505,
+              276,
+              567,
+              402
+            ]
+          },
+          {
+            "pixels": 5463,
+            "bounds": [
+              362,
+              359,
+              440,
+              463
+            ]
+          }
+        ],
+        "discardedIsolatedMarks": 0,
+        "coloredPixels": 13507,
+        "holePixels": 262,
+        "skinBoundarySamples": [
+          407,
+          374,
+          352
+        ],
+        "erasedPixels": 81868,
+        "inkPixels": 12882,
+        "resolution": [
+          768,
+          768
+        ],
+        "newEyeOrMouthDrawn": false,
+        "sourceBodyTransferred": false
+      },
+      "captures": [
+        "expressions/yawning-front.png",
+        "expressions/yawning-quarter.png",
+        "expressions/yawning-side.png"
+      ]
+    },
+    {
+      "id": "ee",
+      "label": "말하기 이",
+      "version": "V81",
+      "sourceSHA256": "81a18747a209c06b612ea1e5422065dd72e95f0815a2d4116f5f6c377f20d7b6",
+      "material": {
+        "expressionId": "ee",
+        "fit": {
+          "a": 1.1336687940009855,
+          "b": -0.05707398255534164,
+          "tx": 0.007376048730272799,
+          "ty": -0.08152998810793306,
+          "scale": 1.135104565216957,
+          "rotation": -0.050302025383723845
+        },
+        "sourceCheeks": {
+          "left": [
+            -0.22720938563942955,
+            0.07832660680324972
+          ],
+          "right": [
+            0.26532990378837557,
+            0.034171585221375665
+          ],
+          "samples": [
+            3133,
+            3051
+          ]
+        },
+        "targetCheeks": {
+          "left": [
+            -0.2134837962962962,
+            0.13026046516138953
+          ],
+          "right": [
+            0.22183859767025096,
+            0.11322776657706121
+          ],
+          "samples": [
+            1611,
+            1488
+          ]
+        },
+        "pigmentComponents": [
+          {
+            "pixels": 4366,
+            "bounds": [
+              250,
+              272,
+              297,
+              384
+            ]
+          },
+          {
+            "pixels": 4386,
+            "bounds": [
+              506,
+              277,
+              554,
+              388
+            ]
+          },
+          {
+            "pixels": 6291,
+            "bounds": [
+              347,
+              362,
+              457,
+              449
+            ]
+          }
+        ],
+        "discardedIsolatedMarks": 0,
+        "coloredPixels": 6270,
+        "holePixels": 2013,
+        "skinBoundarySamples": [
+          407,
+          374,
+          352
+        ],
+        "erasedPixels": 81868,
+        "inkPixels": 13489,
+        "resolution": [
+          768,
+          768
+        ],
+        "newEyeOrMouthDrawn": false,
+        "sourceBodyTransferred": false
+      },
+      "captures": [
+        "expressions/ee-front.png",
+        "expressions/ee-quarter.png",
+        "expressions/ee-side.png"
+      ]
+    },
+    {
+      "id": "mm",
+      "label": "말하기 음",
+      "version": "V81",
+      "sourceSHA256": "504bd44f62c211a37f54f10db19486a3f8cf226736e046cf3c1f116223eb6e13",
+      "material": {
+        "expressionId": "mm",
+        "fit": {
+          "a": 1.1336687940009855,
+          "b": -0.05707398255534164,
+          "tx": 0.007376048730272799,
+          "ty": -0.08152998810793306,
+          "scale": 1.135104565216957,
+          "rotation": -0.050302025383723845
+        },
+        "sourceCheeks": {
+          "left": [
+            -0.22720938563942955,
+            0.07832660680324972
+          ],
+          "right": [
+            0.26532990378837557,
+            0.034171585221375665
+          ],
+          "samples": [
+            3133,
+            3051
+          ]
+        },
+        "targetCheeks": {
+          "left": [
+            -0.2134837962962962,
+            0.13026046516138953
+          ],
+          "right": [
+            0.22183859767025096,
+            0.11322776657706121
+          ],
+          "samples": [
+            1611,
+            1488
+          ]
+        },
+        "pigmentComponents": [
+          {
+            "pixels": 4366,
+            "bounds": [
+              250,
+              272,
+              297,
+              384
+            ]
+          },
+          {
+            "pixels": 4386,
+            "bounds": [
+              506,
+              277,
+              554,
+              388
+            ]
+          },
+          {
+            "pixels": 2199,
+            "bounds": [
+              346,
+              390,
+              455,
+              429
+            ]
+          }
+        ],
+        "discardedIsolatedMarks": 9,
+        "coloredPixels": 100,
+        "holePixels": 30,
+        "skinBoundarySamples": [
+          407,
+          374,
+          352
+        ],
+        "erasedPixels": 81868,
+        "inkPixels": 9018,
+        "resolution": [
+          768,
+          768
+        ],
+        "newEyeOrMouthDrawn": false,
+        "sourceBodyTransferred": false
+      },
+      "captures": [
+        "expressions/mm-front.png",
+        "expressions/mm-quarter.png",
+        "expressions/mm-side.png"
+      ]
+    }
+  ],
+  "consoleErrors": [],
+  "pageErrors": [],
+  "failedRequests": [],
+  "badResponses": [],
+  "checks": {
+    "originalRestoreExact": true,
+    "backUnchanged": true,
+    "baseBuffersSkinAndClipsUnchanged": true,
+    "perExpressionReviewExport": true,
+    "reviewPersistence": true,
+    "mobileNoOverflow": true
+  },
+  "releaseConnected": false,
+  "initial": {
+    "ready": true,
+    "busy": false,
+    "selected": "thinking",
+    "mode": "trial",
+    "view": "front",
+    "focus": "face",
+    "zoom": 1,
+    "decision": null,
+    "releaseConnected": false,
+    "model": {
+      "ready": true,
+      "modelVersion": "V60",
+      "modelSha256": "00969b87595ee949d44fbe3f738ad028ee466c215cd64c825268bc01a2ec17d2",
+      "animationCount": 21,
+      "animationNames": [
+        "Idle",
+        "Walk",
+        "Run",
+        "Wave",
+        "Showcase",
+        "HeadTilt",
+        "Sit",
+        "Think",
+        "Bow",
+        "Stretch",
+        "Lie",
+        "Roll",
+        "Jump",
+        "Joy",
+        "Code",
+        "Read",
+        "Cheer",
+        "PeekLeft",
+        "PeekRight",
+        "NewYearBow",
+        "Snowman"
+      ],
+      "active": "Idle",
+      "paused": true,
+      "transition": "hard-cut",
+      "view": "front",
+      "zoom": 1,
+      "time": 0,
+      "duration": 4,
+      "progress": 0,
+      "bounds": {
+        "center": [
+          -6.172978794793949e-11,
+          1.0699999592613834,
+          0
+        ],
+        "size": [
+          1.7309839226989636,
+          2.1399999185227667,
+          0.8204931816338359
+        ],
+        "min": [
+          -0.8654919614112115,
+          0,
+          -0.41024659081691794
+        ],
+        "max": [
+          0.865491961287752,
+          2.1399999185227667,
+          0.41024659081691794
+        ]
+      }
+    },
+    "source": "V60",
+    "expression": "thinking",
+    "expressionVersion": "V84",
+    "asset": {
+      "id": "thinking",
+      "label": "생각",
+      "version": "V84",
+      "model": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v84-expression-revisions\\candidates\\thinking\\face-only-v2\\doreumi-thinking.glb",
+      "modelSHA256": "58e5aba0d89c91f95026e92fffe422b2cb1881df2eac78731d2a7301fbe1da6b",
+      "texture": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v84-expression-revisions\\candidates\\thinking\\face-only-v2\\face-only-color.png",
+      "textureSHA256": "7469c44bcb206b9068694801aa2f64f00e50cac583d6803fb81e8dede2e62bfe",
+      "taskId": "01a0bc26-4932-779d-b8c3-4a50f80e95c4",
+      "sourceConsumedCredits": 15,
+      "qa": {
+        "front": {
+          "path": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v84-expression-revisions\\candidates\\thinking\\qa-v2\\front.png",
+          "sha256": "9e4eec1280527e12e24b779e4fc652476d1e8c75ec99f5898cf2945b4ced1456"
+        },
+        "quarter": {
+          "path": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v84-expression-revisions\\candidates\\thinking\\qa-v2\\quarter.png",
+          "sha256": "33bcec7d8a2812d199691ea96861a1325a1e61348980ccdd017ec1fd2fe6bd33"
+        },
+        "side": {
+          "path": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v84-expression-revisions\\candidates\\thinking\\qa-v2\\side.png",
+          "sha256": "05ce54ce2dc3f4bfc566426d6f28e0413fd4ab4780a136894af93088d0d38fc7"
+        }
+      },
+      "userApproved": true,
+      "status": "USER_APPROVED_STATIC_EXPRESSION",
+      "approvalBasis": "V85_RELAYED_USER_APPROVAL",
+      "runtimeConnected": false,
+      "runtimeAdopted": false,
+      "supersededCandidate": {
+        "model": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v69-expression-set\\candidates\\thinking\\face-only-v2\\doreumi-thinking.glb",
+        "modelSHA256": "e47b4fb071b227fa6bacf288b2d601c32d86e1a43f9e6ef4cae8eb275984bb91",
+        "status": "PRESERVED_NOT_IN_APPROVED_SET"
+      },
+      "modelUrl": "/assets/thinking/model.glb",
+      "textureUrl": "/assets/thinking/texture.png",
+      "referenceUrl": "/assets/thinking/reference.png",
+      "topologyVerified": true,
+      "integrationStatus": "REVIEW_REQUIRED"
+    },
+    "expressionIds": [
+      "neutral",
+      "smile",
+      "wink",
+      "laugh",
+      "surprise",
+      "thinking",
+      "sleepy",
+      "aa",
+      "oh",
+      "oo",
+      "blink_closed",
+      "relieved",
+      "half_sleepy",
+      "soft_sad",
+      "curious",
+      "shy",
+      "proud",
+      "teary",
+      "annoyed",
+      "determined",
+      "confused",
+      "worried",
+      "love",
+      "sparkly",
+      "listening",
+      "focused",
+      "aha",
+      "skeptical",
+      "apologetic",
+      "cheering",
+      "greeting_smile",
+      "yawning",
+      "ee",
+      "mm"
+    ],
+    "geometry": {
+      "source": "C:\\Users\\User\\Desktop\\코딩\\도름이\\deliverable\\dorms-v60-final-shoulder\\models\\basic.glb",
+      "sourceSHA256": "00969b87595ee949d44fbe3f738ad028ee466c215cd64c825268bc01a2ec17d2",
+      "scope": "User-authorized V60 inner-face correction only",
+      "regionsXY": [
+        [
+          -0.132,
+          0.209,
+          0.084,
+          0.11
+        ],
+        [
+          0.158,
+          0.174,
+          0.086,
+          0.08
+        ],
+        [
+          0.008,
+          0.108,
+          0.12,
+          0.108
+        ]
+      ],
+      "vertices": 78799,
+      "triangles": 142278,
+      "changedVertices": 6264,
+      "changedBounds": {
+        "min": [
+          -0.21130700409412384,
+          0.0004670000053010881,
+          0.2858250141143799
+        ],
+        "max": [
+          0.24275800585746765,
+          0.31220701336860657,
+          0.34077900648117065
+        ]
+      },
+      "maxDisplacement": 0.0685543492436409,
+      "newFoldovers": 0,
+      "coreBackfaces": 0,
+      "checks": {
+        "outside_face_exact": true,
+        "zero_weight_exact": true,
+        "cheeks_exact": true,
+        "outside_normals_exact": true,
+        "finite": true,
+        "no_new_foldovers": true,
+        "no_core_backfaces": true,
+        "source_sha_unchanged": true
+      },
+      "pass": true,
+      "newMeshyRequests": 0,
+      "creditsUsed": 0,
+      "releaseConnected": false,
+      "userAppearanceApproved": false
+    },
+    "material": {
+      "expressionId": "thinking",
+      "fit": {
+        "a": 1.1336687940009855,
+        "b": -0.05707398255534164,
+        "tx": 0.007376048730272799,
+        "ty": -0.08152998810793306,
+        "scale": 1.135104565216957,
+        "rotation": -0.050302025383723845
+      },
+      "sourceCheeks": {
+        "left": [
+          -0.22720938563942955,
+          0.07832660680324972
+        ],
+        "right": [
+          0.26532990378837557,
+          0.034171585221375665
+        ],
+        "samples": [
+          3133,
+          3051
+        ]
+      },
+      "targetCheeks": {
+        "left": [
+          -0.2134837962962962,
+          0.13026046516138953
+        ],
+        "right": [
+          0.22183859767025096,
+          0.11322776657706121
+        ],
+        "samples": [
+          1611,
+          1488
+        ]
+      },
+      "pigmentComponents": [
+        {
+          "pixels": 4298,
+          "bounds": [
+            250,
+            273,
+            297,
+            384
+          ]
+        },
+        {
+          "pixels": 2914,
+          "bounds": [
+            508,
+            297,
+            553,
+            373
+          ]
+        },
+        {
+          "pixels": 1747,
+          "bounds": [
+            360,
+            391,
+            438,
+            442
+          ]
+        }
+      ],
+      "discardedIsolatedMarks": 0,
+      "coloredPixels": 0,
+      "holePixels": 0,
+      "skinBoundarySamples": [
+        407,
+        374,
+        352
+      ],
+      "erasedPixels": 81868,
+      "inkPixels": 7360,
+      "resolution": [
+        768,
+        768
+      ],
+      "newEyeOrMouthDrawn": false,
+      "sourceBodyTransferred": false
+    }
+  },
+  "actions": [
+    "thinking-HeadTilt-0.png",
+    "thinking-HeadTilt-35.png",
+    "thinking-HeadTilt-70.png",
+    "cheering-Cheer-0.png",
+    "cheering-Cheer-35.png",
+    "cheering-Cheer-70.png",
+    "greeting_smile-Wave-0.png",
+    "greeting_smile-Wave-35.png",
+    "greeting_smile-Wave-70.png",
+    "teary-Walk-0.png",
+    "teary-Walk-35.png",
+    "teary-Walk-70.png"
+  ],
+  "recording": "evidence/cheering-cheer.webm",
+  "finishedAt": "2026-09-20T05:47:16.332Z"
+}

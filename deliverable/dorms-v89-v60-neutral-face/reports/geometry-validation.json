@@ -1,0 +1,58 @@
+{
+  "source": "C:\\Users\\User\\Desktop\\\ucf54\ub529\\\ub3c4\ub984\uc774\\deliverable\\dorms-v60-final-shoulder\\models\\basic.glb",
+  "sourceSHA256": "00969b87595ee949d44fbe3f738ad028ee466c215cd64c825268bc01a2ec17d2",
+  "scope": "User-authorized V60 inner-face correction only",
+  "regionsXY": [
+    [
+      -0.132,
+      0.209,
+      0.084,
+      0.11
+    ],
+    [
+      0.158,
+      0.174,
+      0.086,
+      0.08
+    ],
+    [
+      0.008,
+      0.108,
+      0.12,
+      0.108
+    ]
+  ],
+  "vertices": 78799,
+  "triangles": 142278,
+  "changedVertices": 6264,
+  "changedBounds": {
+    "min": [
+      -0.21130700409412384,
+      0.0004670000053010881,
+      0.2858250141143799
+    ],
+    "max": [
+      0.24275800585746765,
+      0.31220701336860657,
+      0.34077900648117065
+    ]
+  },
+  "maxDisplacement": 0.0685543492436409,
+  "newFoldovers": 0,
+  "coreBackfaces": 0,
+  "checks": {
+    "outside_face_exact": true,
+    "zero_weight_exact": true,
+    "cheeks_exact": true,
+    "outside_normals_exact": true,
+    "finite": true,
+    "no_new_foldovers": true,
+    "no_core_backfaces": true,
+    "source_sha_unchanged": true
+  },
+  "pass": true,
+  "newMeshyRequests": 0,
+  "creditsUsed": 0,
+  "releaseConnected": false,
+  "userAppearanceApproved": false
+}

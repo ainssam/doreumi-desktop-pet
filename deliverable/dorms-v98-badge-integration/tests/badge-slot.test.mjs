@@ -1,0 +1,3 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+const m=await import('../src/badge-slot-policy.mjs').catch(()=>({}));
+test('badge slot is exclusive, candidate-gated and independent of other prop slots',()=>{assert.equal(typeof m.nextBadgeSelection,'function');assert.deepEqual(m.nextBadgeSelection({enabled:true,current:'hello'},'rocket',new Set(['hello','rocket'])),{badge:'rocket',replaced:'hello'});assert.deepEqual(m.nextBadgeSelection({enabled:true,current:'rocket'},'',new Set(['hello','rocket'])),{badge:null,replaced:'rocket'});assert.throws(()=>m.nextBadgeSelection({enabled:false,current:null},'hello',new Set(['hello'])),/candidate/);assert.throws(()=>m.nextBadgeSelection({enabled:true,current:null},'unknown',new Set(['hello'])),/unknown/);});

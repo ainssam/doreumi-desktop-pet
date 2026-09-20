@@ -1,0 +1,1 @@
+export function nextBadgeSelection({enabled,current},requested,ids){if(!requested)return {badge:null,replaced:current??null};if(!enabled)throw new Error('candidate mode required');if(!ids.has(requested))throw new Error('unknown badge');return {badge:requested,replaced:current??null};}

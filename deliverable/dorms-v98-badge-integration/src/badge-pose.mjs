@@ -1,0 +1,2 @@
+import {Matrix4,Vector3} from 'three';
+export function badgeWorldFrame(anchor,normal,offset=0){if(!anchor?.isVector3||!normal?.isVector3||normal.lengthSq()<1e-10||![...anchor.toArray(),...normal.toArray(),offset].every(Number.isFinite))throw new Error('invalid badge normal or anchor');const z=normal.clone().normalize(),x=new Vector3(0,1,0).cross(z);if(x.lengthSq()<1e-10)x.set(1,0,0);else x.normalize();const y=z.clone().cross(x).normalize(),p=anchor.clone().addScaledVector(z,offset);return new Matrix4().makeBasis(x,y,z).setPosition(p);}

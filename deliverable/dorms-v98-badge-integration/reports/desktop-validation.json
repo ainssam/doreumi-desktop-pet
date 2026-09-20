@@ -1,0 +1,1603 @@
+{
+  "success": true,
+  "errors": [],
+  "initial": {
+    "ready": true,
+    "expression": "neutral",
+    "candidateMode": false,
+    "effect": "navy",
+    "season": "none",
+    "error": null,
+    "version": "V98",
+    "modelSha256": "00969b87595ee949d44fbe3f738ad028ee466c215cd64c825268bc01a2ec17d2",
+    "expressionCount": 34,
+    "actionAsset": {
+      "name": "Idle",
+      "version": "V60",
+      "approval": "user-approved",
+      "source": "C:\\Users\\User\\Desktop\\코딩\\도름이\\handoff\\doreumi-desktop-pet\\deliverable\\dorms-v60-final-shoulder\\models\\basic.glb"
+    },
+    "expressionAsset": {
+      "id": "neutral",
+      "label": "기본",
+      "version": "V67",
+      "model": "C:\\Users\\User\\Desktop\\코딩\\도름이\\handoff\\doreumi-desktop-pet\\deliverable\\dorms-v86-approved-expression-set\\assets\\neutral\\model.glb",
+      "modelSHA256": "e98d03f97351830416fc6eaa791f014bbe8a5248035f4b03951c98f8fb629e3b",
+      "texture": "C:\\Users\\User\\Desktop\\코딩\\도름이\\handoff\\doreumi-desktop-pet\\deliverable\\dorms-v86-approved-expression-set\\assets\\neutral\\texture.png",
+      "textureSHA256": "30844d4a18d503463f5137cb8838d3a755ed0c755daf652dc8555658af6ac49f",
+      "taskId": "01a0ba1f-da37-7218-99ba-dcfb8ae32baf",
+      "sourceConsumedCredits": 15,
+      "qa": {
+        "front": {
+          "path": "C:\\Users\\User\\Desktop\\코딩\\도름이\\handoff\\doreumi-desktop-pet\\deliverable\\dorms-v86-approved-expression-set\\assets\\neutral\\front.png",
+          "sha256": "5777f6e31d78630c0f2d140a893764d8f62c7d4c9b5d8b5f0a81d958abe87451"
+        },
+        "quarter": {
+          "path": "C:\\Users\\User\\Desktop\\코딩\\도름이\\handoff\\doreumi-desktop-pet\\deliverable\\dorms-v86-approved-expression-set\\assets\\neutral\\quarter.png",
+          "sha256": "fee7a93c1ca96d95f05b3ef145d3de5757e00293b959f3c191f643b4d7f1a132"
+        },
+        "side": {
+          "path": "C:\\Users\\User\\Desktop\\코딩\\도름이\\handoff\\doreumi-desktop-pet\\deliverable\\dorms-v86-approved-expression-set\\assets\\neutral\\side.png",
+          "sha256": "b04f1cb4c3d3303d7623173bee336594c54d4f2783a7ad81226e5aed321f707b"
+        }
+      },
+      "userApproved": true,
+      "status": "USER_APPROVED_STATIC_EXPRESSION",
+      "approvalBasis": "V83_USER_APPROVED",
+      "runtimeConnected": false,
+      "runtimeAdopted": false,
+      "modelUrl": "/assets/neutral/model.glb",
+      "textureUrl": "/assets/neutral/texture.png",
+      "referenceUrl": "/assets/neutral/reference.png",
+      "topologyVerified": true,
+      "integrationStatus": "USER_APPROVED"
+    },
+    "attachments": {
+      "head": null,
+      "hand": null
+    },
+    "badge": null,
+    "sceneProp": null,
+    "model": {
+      "ready": true,
+      "modelVersion": "V60",
+      "modelSha256": "00969b87595ee949d44fbe3f738ad028ee466c215cd64c825268bc01a2ec17d2",
+      "animationCount": 21,
+      "animationNames": [
+        "Idle",
+        "Walk",
+        "Run",
+        "Wave",
+        "Showcase",
+        "HeadTilt",
+        "Sit",
+        "Think",
+        "Bow",
+        "Stretch",
+        "Lie",
+        "Roll",
+        "Jump",
+        "Joy",
+        "Code",
+        "Read",
+        "Cheer",
+        "PeekLeft",
+        "PeekRight",
+        "NewYearBow",
+        "Snowman"
+      ],
+      "active": "Idle",
+      "paused": true,
+      "transition": "hard-cut",
+      "view": "front",
+      "zoom": 1,
+      "time": 0,
+      "duration": 4,
+      "progress": 0,
+      "bounds": {
+        "center": [
+          -6.172978794793949e-11,
+          1.0699999592613834,
+          0
+        ],
+        "size": [
+          1.7309839226989636,
+          2.1399999185227667,
+          0.8204931816338359
+        ],
+        "min": [
+          -0.8654919614112115,
+          0,
+          -0.41024659081691794
+        ],
+        "max": [
+          0.865491961287752,
+          2.1399999185227667,
+          0.41024659081691794
+        ]
+      }
+    },
+    "material": {
+      "expressionId": "neutral",
+      "fit": {
+        "a": 1.1337651891909923,
+        "b": -0.05708984342417553,
+        "tx": 0.007362796620882863,
+        "ty": -0.08155285412133706,
+        "scale": 1.135201636029249,
+        "rotation": -0.05031170998748019
+      },
+      "sourceCheeks": {
+        "left": [
+          -0.22720938563942955,
+          0.07832660680324972
+        ],
+        "right": [
+          0.26532990378837557,
+          0.034171585221375665
+        ],
+        "samples": [
+          3133,
+          3051
+        ]
+      },
+      "targetCheeks": {
+        "left": [
+          -0.21345615671641788,
+          0.13026796356757786
+        ],
+        "right": [
+          0.22182917785986128,
+          0.11324093701029803
+        ],
+        "samples": [
+          1608,
+          1489
+        ]
+      },
+      "pigmentComponents": [
+        {
+          "pixels": 4366,
+          "bounds": [
+            250,
+            272,
+            297,
+            384
+          ]
+        },
+        {
+          "pixels": 4386,
+          "bounds": [
+            506,
+            277,
+            554,
+            388
+          ]
+        },
+        {
+          "pixels": 1196,
+          "bounds": [
+            362,
+            398,
+            439,
+            425
+          ]
+        }
+      ],
+      "discardedIsolatedMarks": 0,
+      "coloredPixels": 0,
+      "holePixels": 0,
+      "skinBoundarySamples": [
+        407,
+        375,
+        352
+      ],
+      "erasedPixels": 81868,
+      "inkPixels": 7969,
+      "resolution": [
+        768,
+        768
+      ],
+      "newEyeOrMouthDrawn": false,
+      "sourceBodyTransferred": false
+    },
+    "releaseComplete": false
+  },
+  "security": {
+    "sandbox": true,
+    "nodeIntegration": false,
+    "contextIsolation": true,
+    "visible": false
+  },
+  "restored": [
+    {
+      "ready": true,
+      "expression": "neutral",
+      "candidateMode": true,
+      "effect": "navy",
+      "season": "none",
+      "error": null,
+      "version": "V98",
+      "modelSha256": "00969b87595ee949d44fbe3f738ad028ee466c215cd64c825268bc01a2ec17d2",
+      "expressionCount": 34,
+      "actionAsset": {
+        "name": "Code",
+        "version": "V60",
+        "approval": "user-approved",
+        "source": "C:\\Users\\User\\Desktop\\코딩\\도름이\\handoff\\doreumi-desktop-pet\\deliverable\\dorms-v60-final-shoulder\\models\\basic.glb"
+      },
+      "expressionAsset": {
+        "id": "neutral",
+        "label": "기본",
+        "version": "V67",
+        "model": "C:\\Users\\User\\Desktop\\코딩\\도름이\\handoff\\doreumi-desktop-pet\\deliverable\\dorms-v86-approved-expression-set\\assets\\neutral\\model.glb",
+        "modelSHA256": "e98d03f97351830416fc6eaa791f014bbe8a5248035f4b03951c98f8fb629e3b",
+        "texture": "C:\\Users\\User\\Desktop\\코딩\\도름이\\handoff\\doreumi-desktop-pet\\deliverable\\dorms-v86-approved-expression-set\\assets\\neutral\\texture.png",
+        "textureSHA256": "30844d4a18d503463f5137cb8838d3a755ed0c755daf652dc8555658af6ac49f",
+        "taskId": "01a0ba1f-da37-7218-99ba-dcfb8ae32baf",
+        "sourceConsumedCredits": 15,
+        "qa": {
+          "front": {
+            "path": "C:\\Users\\User\\Desktop\\코딩\\도름이\\handoff\\doreumi-desktop-pet\\deliverable\\dorms-v86-approved-expression-set\\assets\\neutral\\front.png",
+            "sha256": "5777f6e31d78630c0f2d140a893764d8f62c7d4c9b5d8b5f0a81d958abe87451"
+          },
+          "quarter": {
+            "path": "C:\\Users\\User\\Desktop\\코딩\\도름이\\handoff\\doreumi-desktop-pet\\deliverable\\dorms-v86-approved-expression-set\\assets\\neutral\\quarter.png",
+            "sha256": "fee7a93c1ca96d95f05b3ef145d3de5757e00293b959f3c191f643b4d7f1a132"
+          },
+          "side": {
+            "path": "C:\\Users\\User\\Desktop\\코딩\\도름이\\handoff\\doreumi-desktop-pet\\deliverable\\dorms-v86-approved-expression-set\\assets\\neutral\\side.png",
+            "sha256": "b04f1cb4c3d3303d7623173bee336594c54d4f2783a7ad81226e5aed321f707b"
+          }
+        },
+        "userApproved": true,
+        "status": "USER_APPROVED_STATIC_EXPRESSION",
+        "approvalBasis": "V83_USER_APPROVED",
+        "runtimeConnected": false,
+        "runtimeAdopted": false,
+        "modelUrl": "/assets/neutral/model.glb",
+        "textureUrl": "/assets/neutral/texture.png",
+        "referenceUrl": "/assets/neutral/reference.png",
+        "topologyVerified": true,
+        "integrationStatus": "USER_APPROVED"
+      },
+      "attachments": {
+        "head": null,
+        "hand": null
+      },
+      "badge": null,
+      "sceneProp": {
+        "id": "laptop",
+        "version": "V42",
+        "source": "C:\\Users\\User\\Desktop\\코딩\\도름이\\handoff\\doreumi-desktop-pet\\deliverable\\dorms-v42-character-rig\\props\\laptop.glb",
+        "status": "candidate",
+        "mode": "scene-placement",
+        "note": "V42 컴퓨터 복구 + 승인 Code; 검수 받침대 사용, 키별 타건 접촉 미검증",
+        "action": "Code",
+        "bottom": 0.44000000000000006,
+        "support": 0.44,
+        "visible": true,
+        "bookPageCorrection": false
+      },
+      "model": {
+        "ready": true,
+        "modelVersion": "V60",
+        "modelSha256": "00969b87595ee949d44fbe3f738ad028ee466c215cd64c825268bc01a2ec17d2",
+        "animationCount": 21,
+        "animationNames": [
+          "Idle",
+          "Walk",
+          "Run",
+          "Wave",
+          "Showcase",
+          "HeadTilt",
+          "Sit",
+          "Think",
+          "Bow",
+          "Stretch",
+          "Lie",
+          "Roll",
+          "Jump",
+          "Joy",
+          "Code",
+          "Read",
+          "Cheer",
+          "PeekLeft",
+          "PeekRight",
+          "NewYearBow",
+          "Snowman"
+        ],
+        "active": "Code",
+        "paused": false,
+        "transition": "hard-cut",
+        "view": "front",
+        "zoom": 1,
+        "time": 0.05,
+        "duration": 6,
+        "progress": 0.8333333333333334,
+        "bounds": {
+          "center": [
+            -6.172978794793949e-11,
+            1.0699999592613834,
+            0
+          ],
+          "size": [
+            1.7309839226989636,
+            2.1399999185227667,
+            0.8204931816338359
+          ],
+          "min": [
+            -0.8654919614112115,
+            0,
+            -0.41024659081691794
+          ],
+          "max": [
+            0.865491961287752,
+            2.1399999185227667,
+            0.41024659081691794
+          ]
+        }
+      },
+      "material": {
+        "expressionId": "neutral",
+        "fit": {
+          "a": 1.1337651891909923,
+          "b": -0.05708984342417553,
+          "tx": 0.007362796620882863,
+          "ty": -0.08155285412133706,
+          "scale": 1.135201636029249,
+          "rotation": -0.05031170998748019
+        },
+        "sourceCheeks": {
+          "left": [
+            -0.22720938563942955,
+            0.07832660680324972
+          ],
+          "right": [
+            0.26532990378837557,
+            0.034171585221375665
+          ],
+          "samples": [
+            3133,
+            3051
+          ]
+        },
+        "targetCheeks": {
+          "left": [
+            -0.21345615671641788,
+            0.13026796356757786
+          ],
+          "right": [
+            0.22182917785986128,
+            0.11324093701029803
+          ],
+          "samples": [
+            1608,
+            1489
+          ]
+        },
+        "pigmentComponents": [
+          {
+            "pixels": 4366,
+            "bounds": [
+              250,
+              272,
+              297,
+              384
+            ]
+          },
+          {
+            "pixels": 4386,
+            "bounds": [
+              506,
+              277,
+              554,
+              388
+            ]
+          },
+          {
+            "pixels": 1196,
+            "bounds": [
+              362,
+              398,
+              439,
+              425
+            ]
+          }
+        ],
+        "discardedIsolatedMarks": 0,
+        "coloredPixels": 0,
+        "holePixels": 0,
+        "skinBoundarySamples": [
+          407,
+          375,
+          352
+        ],
+        "erasedPixels": 81868,
+        "inkPixels": 7969,
+        "resolution": [
+          768,
+          768
+        ],
+        "newEyeOrMouthDrawn": false,
+        "sourceBodyTransferred": false
+      },
+      "releaseComplete": false
+    },
+    {
+      "ready": true,
+      "expression": "neutral",
+      "candidateMode": true,
+      "effect": "navy",
+      "season": "none",
+      "error": null,
+      "version": "V98",
+      "modelSha256": "00969b87595ee949d44fbe3f738ad028ee466c215cd64c825268bc01a2ec17d2",
+      "expressionCount": 34,
+      "actionAsset": {
+        "name": "Read",
+        "version": "V60",
+        "approval": "user-approved",
+        "source": "C:\\Users\\User\\Desktop\\코딩\\도름이\\handoff\\doreumi-desktop-pet\\deliverable\\dorms-v60-final-shoulder\\models\\basic.glb"
+      },
+      "expressionAsset": {
+        "id": "neutral",
+        "label": "기본",
+        "version": "V67",
+        "model": "C:\\Users\\User\\Desktop\\코딩\\도름이\\handoff\\doreumi-desktop-pet\\deliverable\\dorms-v86-approved-expression-set\\assets\\neutral\\model.glb",
+        "modelSHA256": "e98d03f97351830416fc6eaa791f014bbe8a5248035f4b03951c98f8fb629e3b",
+        "texture": "C:\\Users\\User\\Desktop\\코딩\\도름이\\handoff\\doreumi-desktop-pet\\deliverable\\dorms-v86-approved-expression-set\\assets\\neutral\\texture.png",
+        "textureSHA256": "30844d4a18d503463f5137cb8838d3a755ed0c755daf652dc8555658af6ac49f",
+        "taskId": "01a0ba1f-da37-7218-99ba-dcfb8ae32baf",
+        "sourceConsumedCredits": 15,
+        "qa": {
+          "front": {
+            "path": "C:\\Users\\User\\Desktop\\코딩\\도름이\\handoff\\doreumi-desktop-pet\\deliverable\\dorms-v86-approved-expression-set\\assets\\neutral\\front.png",
+            "sha256": "5777f6e31d78630c0f2d140a893764d8f62c7d4c9b5d8b5f0a81d958abe87451"
+          },
+          "quarter": {
+            "path": "C:\\Users\\User\\Desktop\\코딩\\도름이\\handoff\\doreumi-desktop-pet\\deliverable\\dorms-v86-approved-expression-set\\assets\\neutral\\quarter.png",
+            "sha256": "fee7a93c1ca96d95f05b3ef145d3de5757e00293b959f3c191f643b4d7f1a132"
+          },
+          "side": {
+            "path": "C:\\Users\\User\\Desktop\\코딩\\도름이\\handoff\\doreumi-desktop-pet\\deliverable\\dorms-v86-approved-expression-set\\assets\\neutral\\side.png",
+            "sha256": "b04f1cb4c3d3303d7623173bee336594c54d4f2783a7ad81226e5aed321f707b"
+          }
+        },
+        "userApproved": true,
+        "status": "USER_APPROVED_STATIC_EXPRESSION",
+        "approvalBasis": "V83_USER_APPROVED",
+        "runtimeConnected": false,
+        "runtimeAdopted": false,
+        "modelUrl": "/assets/neutral/model.glb",
+        "textureUrl": "/assets/neutral/texture.png",
+        "referenceUrl": "/assets/neutral/reference.png",
+        "topologyVerified": true,
+        "integrationStatus": "USER_APPROVED"
+      },
+      "attachments": {
+        "head": null,
+        "hand": null
+      },
+      "badge": null,
+      "sceneProp": {
+        "id": "book-v3",
+        "version": "V42",
+        "source": "C:\\Users\\User\\Desktop\\코딩\\도름이\\handoff\\doreumi-desktop-pet\\deliverable\\dorms-v42-character-rig\\props\\book-v3.glb",
+        "status": "candidate",
+        "mode": "scene-placement",
+        "note": "V42 수정 책 V3 복구 + 승인 Read; 받침대 위 독서, 페이지 넘김 미구현",
+        "action": "Read",
+        "bottom": 0.5,
+        "support": 0.5,
+        "visible": true,
+        "bookPageCorrection": true
+      },
+      "model": {
+        "ready": true,
+        "modelVersion": "V60",
+        "modelSha256": "00969b87595ee949d44fbe3f738ad028ee466c215cd64c825268bc01a2ec17d2",
+        "animationCount": 21,
+        "animationNames": [
+          "Idle",
+          "Walk",
+          "Run",
+          "Wave",
+          "Showcase",
+          "HeadTilt",
+          "Sit",
+          "Think",
+          "Bow",
+          "Stretch",
+          "Lie",
+          "Roll",
+          "Jump",
+          "Joy",
+          "Code",
+          "Read",
+          "Cheer",
+          "PeekLeft",
+          "PeekRight",
+          "NewYearBow",
+          "Snowman"
+        ],
+        "active": "Read",
+        "paused": false,
+        "transition": "hard-cut",
+        "view": "front",
+        "zoom": 1,
+        "time": 0.05,
+        "duration": 6,
+        "progress": 0.8333333333333334,
+        "bounds": {
+          "center": [
+            -6.172978794793949e-11,
+            1.0699999592613834,
+            0
+          ],
+          "size": [
+            1.7309839226989636,
+            2.1399999185227667,
+            0.8204931816338359
+          ],
+          "min": [
+            -0.8654919614112115,
+            0,
+            -0.41024659081691794
+          ],
+          "max": [
+            0.865491961287752,
+            2.1399999185227667,
+            0.41024659081691794
+          ]
+        }
+      },
+      "material": {
+        "expressionId": "neutral",
+        "fit": {
+          "a": 1.1337651891909923,
+          "b": -0.05708984342417553,
+          "tx": 0.007362796620882863,
+          "ty": -0.08155285412133706,
+          "scale": 1.135201636029249,
+          "rotation": -0.05031170998748019
+        },
+        "sourceCheeks": {
+          "left": [
+            -0.22720938563942955,
+            0.07832660680324972
+          ],
+          "right": [
+            0.26532990378837557,
+            0.034171585221375665
+          ],
+          "samples": [
+            3133,
+            3051
+          ]
+        },
+        "targetCheeks": {
+          "left": [
+            -0.21345615671641788,
+            0.13026796356757786
+          ],
+          "right": [
+            0.22182917785986128,
+            0.11324093701029803
+          ],
+          "samples": [
+            1608,
+            1489
+          ]
+        },
+        "pigmentComponents": [
+          {
+            "pixels": 4366,
+            "bounds": [
+              250,
+              272,
+              297,
+              384
+            ]
+          },
+          {
+            "pixels": 4386,
+            "bounds": [
+              506,
+              277,
+              554,
+              388
+            ]
+          },
+          {
+            "pixels": 1196,
+            "bounds": [
+              362,
+              398,
+              439,
+              425
+            ]
+          }
+        ],
+        "discardedIsolatedMarks": 0,
+        "coloredPixels": 0,
+        "holePixels": 0,
+        "skinBoundarySamples": [
+          407,
+          375,
+          352
+        ],
+        "erasedPixels": 81868,
+        "inkPixels": 7969,
+        "resolution": [
+          768,
+          768
+        ],
+        "newEyeOrMouthDrawn": false,
+        "sourceBodyTransferred": false
+      },
+      "releaseComplete": false
+    },
+    {
+      "ready": true,
+      "expression": "neutral",
+      "candidateMode": true,
+      "effect": "navy",
+      "season": "none",
+      "error": null,
+      "version": "V98",
+      "modelSha256": "00969b87595ee949d44fbe3f738ad028ee466c215cd64c825268bc01a2ec17d2",
+      "expressionCount": 34,
+      "actionAsset": {
+        "name": "Showcase",
+        "version": "V60",
+        "approval": "user-approved",
+        "source": "C:\\Users\\User\\Desktop\\코딩\\도름이\\handoff\\doreumi-desktop-pet\\deliverable\\dorms-v60-final-shoulder\\models\\basic.glb"
+      },
+      "expressionAsset": {
+        "id": "neutral",
+        "label": "기본",
+        "version": "V67",
+        "model": "C:\\Users\\User\\Desktop\\코딩\\도름이\\handoff\\doreumi-desktop-pet\\deliverable\\dorms-v86-approved-expression-set\\assets\\neutral\\model.glb",
+        "modelSHA256": "e98d03f97351830416fc6eaa791f014bbe8a5248035f4b03951c98f8fb629e3b",
+        "texture": "C:\\Users\\User\\Desktop\\코딩\\도름이\\handoff\\doreumi-desktop-pet\\deliverable\\dorms-v86-approved-expression-set\\assets\\neutral\\texture.png",
+        "textureSHA256": "30844d4a18d503463f5137cb8838d3a755ed0c755daf652dc8555658af6ac49f",
+        "taskId": "01a0ba1f-da37-7218-99ba-dcfb8ae32baf",
+        "sourceConsumedCredits": 15,
+        "qa": {
+          "front": {
+            "path": "C:\\Users\\User\\Desktop\\코딩\\도름이\\handoff\\doreumi-desktop-pet\\deliverable\\dorms-v86-approved-expression-set\\assets\\neutral\\front.png",
+            "sha256": "5777f6e31d78630c0f2d140a893764d8f62c7d4c9b5d8b5f0a81d958abe87451"
+          },
+          "quarter": {
+            "path": "C:\\Users\\User\\Desktop\\코딩\\도름이\\handoff\\doreumi-desktop-pet\\deliverable\\dorms-v86-approved-expression-set\\assets\\neutral\\quarter.png",
+            "sha256": "fee7a93c1ca96d95f05b3ef145d3de5757e00293b959f3c191f643b4d7f1a132"
+          },
+          "side": {
+            "path": "C:\\Users\\User\\Desktop\\코딩\\도름이\\handoff\\doreumi-desktop-pet\\deliverable\\dorms-v86-approved-expression-set\\assets\\neutral\\side.png",
+            "sha256": "b04f1cb4c3d3303d7623173bee336594c54d4f2783a7ad81226e5aed321f707b"
+          }
+        },
+        "userApproved": true,
+        "status": "USER_APPROVED_STATIC_EXPRESSION",
+        "approvalBasis": "V83_USER_APPROVED",
+        "runtimeConnected": false,
+        "runtimeAdopted": false,
+        "modelUrl": "/assets/neutral/model.glb",
+        "textureUrl": "/assets/neutral/texture.png",
+        "referenceUrl": "/assets/neutral/reference.png",
+        "topologyVerified": true,
+        "integrationStatus": "USER_APPROVED"
+      },
+      "attachments": {
+        "head": null,
+        "hand": null
+      },
+      "badge": null,
+      "sceneProp": {
+        "id": "globe",
+        "version": "V48",
+        "source": "C:\\Users\\User\\Desktop\\코딩\\도름이\\handoff\\doreumi-desktop-pet\\deliverable\\dorms-v48-premium-props\\props\\globe.glb",
+        "status": "candidate",
+        "mode": "scene-placement",
+        "note": "검수 받침대 위 지구본 + 소개 자세; 직접 회전 조작 아님",
+        "action": "Showcase",
+        "bottom": 0.4799999999999999,
+        "support": 0.48,
+        "visible": true,
+        "bookPageCorrection": false
+      },
+      "model": {
+        "ready": true,
+        "modelVersion": "V60",
+        "modelSha256": "00969b87595ee949d44fbe3f738ad028ee466c215cd64c825268bc01a2ec17d2",
+        "animationCount": 21,
+        "animationNames": [
+          "Idle",
+          "Walk",
+          "Run",
+          "Wave",
+          "Showcase",
+          "HeadTilt",
+          "Sit",
+          "Think",
+          "Bow",
+          "Stretch",
+          "Lie",
+          "Roll",
+          "Jump",
+          "Joy",
+          "Code",
+          "Read",
+          "Cheer",
+          "PeekLeft",
+          "PeekRight",
+          "NewYearBow",
+          "Snowman"
+        ],
+        "active": "Showcase",
+        "paused": false,
+        "transition": "hard-cut",
+        "view": "front",
+        "zoom": 1,
+        "time": 0.05,
+        "duration": 7.800000190734863,
+        "progress": 0.6410256253505212,
+        "bounds": {
+          "center": [
+            -6.172978794793949e-11,
+            1.0699999592613834,
+            0
+          ],
+          "size": [
+            1.7309839226989636,
+            2.1399999185227667,
+            0.8204931816338359
+          ],
+          "min": [
+            -0.8654919614112115,
+            0,
+            -0.41024659081691794
+          ],
+          "max": [
+            0.865491961287752,
+            2.1399999185227667,
+            0.41024659081691794
+          ]
+        }
+      },
+      "material": {
+        "expressionId": "neutral",
+        "fit": {
+          "a": 1.1337651891909923,
+          "b": -0.05708984342417553,
+          "tx": 0.007362796620882863,
+          "ty": -0.08155285412133706,
+          "scale": 1.135201636029249,
+          "rotation": -0.05031170998748019
+        },
+        "sourceCheeks": {
+          "left": [
+            -0.22720938563942955,
+            0.07832660680324972
+          ],
+          "right": [
+            0.26532990378837557,
+            0.034171585221375665
+          ],
+          "samples": [
+            3133,
+            3051
+          ]
+        },
+        "targetCheeks": {
+          "left": [
+            -0.21345615671641788,
+            0.13026796356757786
+          ],
+          "right": [
+            0.22182917785986128,
+            0.11324093701029803
+          ],
+          "samples": [
+            1608,
+            1489
+          ]
+        },
+        "pigmentComponents": [
+          {
+            "pixels": 4366,
+            "bounds": [
+              250,
+              272,
+              297,
+              384
+            ]
+          },
+          {
+            "pixels": 4386,
+            "bounds": [
+              506,
+              277,
+              554,
+              388
+            ]
+          },
+          {
+            "pixels": 1196,
+            "bounds": [
+              362,
+              398,
+              439,
+              425
+            ]
+          }
+        ],
+        "discardedIsolatedMarks": 0,
+        "coloredPixels": 0,
+        "holePixels": 0,
+        "skinBoundarySamples": [
+          407,
+          375,
+          352
+        ],
+        "erasedPixels": 81868,
+        "inkPixels": 7969,
+        "resolution": [
+          768,
+          768
+        ],
+        "newEyeOrMouthDrawn": false,
+        "sourceBodyTransferred": false
+      },
+      "releaseComplete": false
+    }
+  ],
+  "redApplied": true,
+  "toolActions": [
+    {
+      "ready": true,
+      "expression": "neutral",
+      "candidateMode": true,
+      "effect": "navy",
+      "season": "none",
+      "error": null,
+      "version": "V98",
+      "modelSha256": "00969b87595ee949d44fbe3f738ad028ee466c215cd64c825268bc01a2ec17d2",
+      "expressionCount": 34,
+      "actionAsset": {
+        "name": "MegaphoneSpeak",
+        "version": "V98",
+        "approval": "candidate",
+        "source": "src/tool-motion.mjs"
+      },
+      "expressionAsset": {
+        "id": "neutral",
+        "label": "기본",
+        "version": "V67",
+        "model": "C:\\Users\\User\\Desktop\\코딩\\도름이\\handoff\\doreumi-desktop-pet\\deliverable\\dorms-v86-approved-expression-set\\assets\\neutral\\model.glb",
+        "modelSHA256": "e98d03f97351830416fc6eaa791f014bbe8a5248035f4b03951c98f8fb629e3b",
+        "texture": "C:\\Users\\User\\Desktop\\코딩\\도름이\\handoff\\doreumi-desktop-pet\\deliverable\\dorms-v86-approved-expression-set\\assets\\neutral\\texture.png",
+        "textureSHA256": "30844d4a18d503463f5137cb8838d3a755ed0c755daf652dc8555658af6ac49f",
+        "taskId": "01a0ba1f-da37-7218-99ba-dcfb8ae32baf",
+        "sourceConsumedCredits": 15,
+        "qa": {
+          "front": {
+            "path": "C:\\Users\\User\\Desktop\\코딩\\도름이\\handoff\\doreumi-desktop-pet\\deliverable\\dorms-v86-approved-expression-set\\assets\\neutral\\front.png",
+            "sha256": "5777f6e31d78630c0f2d140a893764d8f62c7d4c9b5d8b5f0a81d958abe87451"
+          },
+          "quarter": {
+            "path": "C:\\Users\\User\\Desktop\\코딩\\도름이\\handoff\\doreumi-desktop-pet\\deliverable\\dorms-v86-approved-expression-set\\assets\\neutral\\quarter.png",
+            "sha256": "fee7a93c1ca96d95f05b3ef145d3de5757e00293b959f3c191f643b4d7f1a132"
+          },
+          "side": {
+            "path": "C:\\Users\\User\\Desktop\\코딩\\도름이\\handoff\\doreumi-desktop-pet\\deliverable\\dorms-v86-approved-expression-set\\assets\\neutral\\side.png",
+            "sha256": "b04f1cb4c3d3303d7623173bee336594c54d4f2783a7ad81226e5aed321f707b"
+          }
+        },
+        "userApproved": true,
+        "status": "USER_APPROVED_STATIC_EXPRESSION",
+        "approvalBasis": "V83_USER_APPROVED",
+        "runtimeConnected": false,
+        "runtimeAdopted": false,
+        "modelUrl": "/assets/neutral/model.glb",
+        "textureUrl": "/assets/neutral/texture.png",
+        "referenceUrl": "/assets/neutral/reference.png",
+        "topologyVerified": true,
+        "integrationStatus": "USER_APPROVED"
+      },
+      "attachments": {
+        "head": null,
+        "hand": {
+          "id": "megaphone",
+          "visible": true,
+          "error": null,
+          "contact": [
+            0.3768543653708151,
+            0.9465833091848903,
+            0.30657757154845877
+          ],
+          "contactError": 1.2412670766236366e-16,
+          "textures": [
+            {
+              "width": 2048,
+              "height": 2048
+            }
+          ],
+          "model": "C:\\Users\\User\\Desktop\\코딩\\도름이\\handoff\\doreumi-desktop-pet\\deliverable\\dorms-v48-premium-props\\props\\megaphone.glb",
+          "version": "V48",
+          "sourceApproval": "candidate",
+          "attachmentStatus": "fitting",
+          "allowedActions": [
+            "Idle",
+            "MegaphoneSpeak"
+          ]
+        }
+      },
+      "badge": null,
+      "sceneProp": null,
+      "model": {
+        "ready": true,
+        "modelVersion": "V60",
+        "modelSha256": "00969b87595ee949d44fbe3f738ad028ee466c215cd64c825268bc01a2ec17d2",
+        "animationCount": 21,
+        "animationNames": [
+          "Idle",
+          "Walk",
+          "Run",
+          "Wave",
+          "Showcase",
+          "HeadTilt",
+          "Sit",
+          "Think",
+          "Bow",
+          "Stretch",
+          "Lie",
+          "Roll",
+          "Jump",
+          "Joy",
+          "Code",
+          "Read",
+          "Cheer",
+          "PeekLeft",
+          "PeekRight",
+          "NewYearBow",
+          "Snowman"
+        ],
+        "active": "MegaphoneSpeak",
+        "paused": true,
+        "transition": "hard-cut",
+        "view": "front",
+        "zoom": 1,
+        "time": 3,
+        "duration": 6,
+        "progress": 50,
+        "bounds": {
+          "center": [
+            -6.172978794793949e-11,
+            1.0699999592613834,
+            0
+          ],
+          "size": [
+            1.7309839226989636,
+            2.1399999185227667,
+            0.8204931816338359
+          ],
+          "min": [
+            -0.8654919614112115,
+            0,
+            -0.41024659081691794
+          ],
+          "max": [
+            0.865491961287752,
+            2.1399999185227667,
+            0.41024659081691794
+          ]
+        }
+      },
+      "material": {
+        "expressionId": "neutral",
+        "fit": {
+          "a": 1.1337651891909923,
+          "b": -0.05708984342417553,
+          "tx": 0.007362796620882863,
+          "ty": -0.08155285412133706,
+          "scale": 1.135201636029249,
+          "rotation": -0.05031170998748019
+        },
+        "sourceCheeks": {
+          "left": [
+            -0.22720938563942955,
+            0.07832660680324972
+          ],
+          "right": [
+            0.26532990378837557,
+            0.034171585221375665
+          ],
+          "samples": [
+            3133,
+            3051
+          ]
+        },
+        "targetCheeks": {
+          "left": [
+            -0.21345615671641788,
+            0.13026796356757786
+          ],
+          "right": [
+            0.22182917785986128,
+            0.11324093701029803
+          ],
+          "samples": [
+            1608,
+            1489
+          ]
+        },
+        "pigmentComponents": [
+          {
+            "pixels": 4366,
+            "bounds": [
+              250,
+              272,
+              297,
+              384
+            ]
+          },
+          {
+            "pixels": 4386,
+            "bounds": [
+              506,
+              277,
+              554,
+              388
+            ]
+          },
+          {
+            "pixels": 1196,
+            "bounds": [
+              362,
+              398,
+              439,
+              425
+            ]
+          }
+        ],
+        "discardedIsolatedMarks": 0,
+        "coloredPixels": 0,
+        "holePixels": 0,
+        "skinBoundarySamples": [
+          407,
+          375,
+          352
+        ],
+        "erasedPixels": 81868,
+        "inkPixels": 7969,
+        "resolution": [
+          768,
+          768
+        ],
+        "newEyeOrMouthDrawn": false,
+        "sourceBodyTransferred": false
+      },
+      "releaseComplete": false
+    },
+    {
+      "ready": true,
+      "expression": "neutral",
+      "candidateMode": true,
+      "effect": "navy",
+      "season": "none",
+      "error": null,
+      "version": "V98",
+      "modelSha256": "00969b87595ee949d44fbe3f738ad028ee466c215cd64c825268bc01a2ec17d2",
+      "expressionCount": 34,
+      "actionAsset": {
+        "name": "CarryBag",
+        "version": "V98",
+        "approval": "candidate",
+        "source": "src/tool-motion.mjs"
+      },
+      "expressionAsset": {
+        "id": "neutral",
+        "label": "기본",
+        "version": "V67",
+        "model": "C:\\Users\\User\\Desktop\\코딩\\도름이\\handoff\\doreumi-desktop-pet\\deliverable\\dorms-v86-approved-expression-set\\assets\\neutral\\model.glb",
+        "modelSHA256": "e98d03f97351830416fc6eaa791f014bbe8a5248035f4b03951c98f8fb629e3b",
+        "texture": "C:\\Users\\User\\Desktop\\코딩\\도름이\\handoff\\doreumi-desktop-pet\\deliverable\\dorms-v86-approved-expression-set\\assets\\neutral\\texture.png",
+        "textureSHA256": "30844d4a18d503463f5137cb8838d3a755ed0c755daf652dc8555658af6ac49f",
+        "taskId": "01a0ba1f-da37-7218-99ba-dcfb8ae32baf",
+        "sourceConsumedCredits": 15,
+        "qa": {
+          "front": {
+            "path": "C:\\Users\\User\\Desktop\\코딩\\도름이\\handoff\\doreumi-desktop-pet\\deliverable\\dorms-v86-approved-expression-set\\assets\\neutral\\front.png",
+            "sha256": "5777f6e31d78630c0f2d140a893764d8f62c7d4c9b5d8b5f0a81d958abe87451"
+          },
+          "quarter": {
+            "path": "C:\\Users\\User\\Desktop\\코딩\\도름이\\handoff\\doreumi-desktop-pet\\deliverable\\dorms-v86-approved-expression-set\\assets\\neutral\\quarter.png",
+            "sha256": "fee7a93c1ca96d95f05b3ef145d3de5757e00293b959f3c191f643b4d7f1a132"
+          },
+          "side": {
+            "path": "C:\\Users\\User\\Desktop\\코딩\\도름이\\handoff\\doreumi-desktop-pet\\deliverable\\dorms-v86-approved-expression-set\\assets\\neutral\\side.png",
+            "sha256": "b04f1cb4c3d3303d7623173bee336594c54d4f2783a7ad81226e5aed321f707b"
+          }
+        },
+        "userApproved": true,
+        "status": "USER_APPROVED_STATIC_EXPRESSION",
+        "approvalBasis": "V83_USER_APPROVED",
+        "runtimeConnected": false,
+        "runtimeAdopted": false,
+        "modelUrl": "/assets/neutral/model.glb",
+        "textureUrl": "/assets/neutral/texture.png",
+        "referenceUrl": "/assets/neutral/reference.png",
+        "topologyVerified": true,
+        "integrationStatus": "USER_APPROVED"
+      },
+      "attachments": {
+        "head": null,
+        "hand": {
+          "id": "christmas-gift-sack",
+          "visible": true,
+          "error": null,
+          "contact": [
+            0.8458994120276676,
+            0.7368581517252051,
+            0.1232096415305731
+          ],
+          "contactError": 0,
+          "textures": [
+            {
+              "width": 2048,
+              "height": 2048
+            }
+          ],
+          "model": "C:\\Users\\User\\Desktop\\코딩\\도름이\\handoff\\doreumi-desktop-pet\\deliverable\\dorms-v48-premium-props\\props\\christmas-gift-sack.glb",
+          "version": "V48",
+          "sourceApproval": "candidate",
+          "attachmentStatus": "fitting",
+          "allowedActions": [
+            "Idle",
+            "Walk",
+            "CarryBag"
+          ]
+        }
+      },
+      "badge": null,
+      "sceneProp": null,
+      "model": {
+        "ready": true,
+        "modelVersion": "V60",
+        "modelSha256": "00969b87595ee949d44fbe3f738ad028ee466c215cd64c825268bc01a2ec17d2",
+        "animationCount": 21,
+        "animationNames": [
+          "Idle",
+          "Walk",
+          "Run",
+          "Wave",
+          "Showcase",
+          "HeadTilt",
+          "Sit",
+          "Think",
+          "Bow",
+          "Stretch",
+          "Lie",
+          "Roll",
+          "Jump",
+          "Joy",
+          "Code",
+          "Read",
+          "Cheer",
+          "PeekLeft",
+          "PeekRight",
+          "NewYearBow",
+          "Snowman"
+        ],
+        "active": "CarryBag",
+        "paused": true,
+        "transition": "hard-cut",
+        "view": "front",
+        "zoom": 1,
+        "time": 3,
+        "duration": 6,
+        "progress": 50,
+        "bounds": {
+          "center": [
+            -6.172978794793949e-11,
+            1.0699999592613834,
+            0
+          ],
+          "size": [
+            1.7309839226989636,
+            2.1399999185227667,
+            0.8204931816338359
+          ],
+          "min": [
+            -0.8654919614112115,
+            0,
+            -0.41024659081691794
+          ],
+          "max": [
+            0.865491961287752,
+            2.1399999185227667,
+            0.41024659081691794
+          ]
+        }
+      },
+      "material": {
+        "expressionId": "neutral",
+        "fit": {
+          "a": 1.1337651891909923,
+          "b": -0.05708984342417553,
+          "tx": 0.007362796620882863,
+          "ty": -0.08155285412133706,
+          "scale": 1.135201636029249,
+          "rotation": -0.05031170998748019
+        },
+        "sourceCheeks": {
+          "left": [
+            -0.22720938563942955,
+            0.07832660680324972
+          ],
+          "right": [
+            0.26532990378837557,
+            0.034171585221375665
+          ],
+          "samples": [
+            3133,
+            3051
+          ]
+        },
+        "targetCheeks": {
+          "left": [
+            -0.21345615671641788,
+            0.13026796356757786
+          ],
+          "right": [
+            0.22182917785986128,
+            0.11324093701029803
+          ],
+          "samples": [
+            1608,
+            1489
+          ]
+        },
+        "pigmentComponents": [
+          {
+            "pixels": 4366,
+            "bounds": [
+              250,
+              272,
+              297,
+              384
+            ]
+          },
+          {
+            "pixels": 4386,
+            "bounds": [
+              506,
+              277,
+              554,
+              388
+            ]
+          },
+          {
+            "pixels": 1196,
+            "bounds": [
+              362,
+              398,
+              439,
+              425
+            ]
+          }
+        ],
+        "discardedIsolatedMarks": 0,
+        "coloredPixels": 0,
+        "holePixels": 0,
+        "skinBoundarySamples": [
+          407,
+          375,
+          352
+        ],
+        "erasedPixels": 81868,
+        "inkPixels": 7969,
+        "resolution": [
+          768,
+          768
+        ],
+        "newEyeOrMouthDrawn": false,
+        "sourceBodyTransferred": false
+      },
+      "releaseComplete": false
+    }
+  ],
+  "transparentRoot": true,
+  "visibleWindowCapture": true,
+  "combination": {
+    "ready": true,
+    "expression": "greeting_smile",
+    "candidateMode": true,
+    "effect": "navy",
+    "season": "none",
+    "error": null,
+    "version": "V98",
+    "modelSha256": "00969b87595ee949d44fbe3f738ad028ee466c215cd64c825268bc01a2ec17d2",
+    "expressionCount": 34,
+    "actionAsset": {
+      "name": "Wave",
+      "version": "V60",
+      "approval": "user-approved",
+      "source": "C:\\Users\\User\\Desktop\\코딩\\도름이\\handoff\\doreumi-desktop-pet\\deliverable\\dorms-v60-final-shoulder\\models\\basic.glb"
+    },
+    "expressionAsset": {
+      "id": "greeting_smile",
+      "label": "인사 미소",
+      "version": "V81",
+      "model": "C:\\Users\\User\\Desktop\\코딩\\도름이\\handoff\\doreumi-desktop-pet\\deliverable\\dorms-v86-approved-expression-set\\assets\\greeting_smile\\model.glb",
+      "modelSHA256": "df6ba0820d8142e7e6679b55fd7305a3991798b1626f3964d0fc34414073bd0e",
+      "texture": "C:\\Users\\User\\Desktop\\코딩\\도름이\\handoff\\doreumi-desktop-pet\\deliverable\\dorms-v86-approved-expression-set\\assets\\greeting_smile\\texture.png",
+      "textureSHA256": "a89b94ceccb31e64a8f444cfab9089b59d5597c64b6ad6fcaa3e50b09bf4e9b8",
+      "taskId": "01a0baeb-3431-7200-afd1-f9b8021d0980",
+      "sourceConsumedCredits": 15,
+      "qa": {
+        "front": {
+          "path": "C:\\Users\\User\\Desktop\\코딩\\도름이\\handoff\\doreumi-desktop-pet\\deliverable\\dorms-v86-approved-expression-set\\assets\\greeting_smile\\front.png",
+          "sha256": "12eb98193d2e30523cde01bbf15f15421ddec2aeb6b3c0c1b2119733d3a989da"
+        },
+        "quarter": {
+          "path": "C:\\Users\\User\\Desktop\\코딩\\도름이\\handoff\\doreumi-desktop-pet\\deliverable\\dorms-v86-approved-expression-set\\assets\\greeting_smile\\quarter.png",
+          "sha256": "8170b3057364d42c5c4170f47dde71356f0b8145539117118619c07180976f8a"
+        },
+        "side": {
+          "path": "C:\\Users\\User\\Desktop\\코딩\\도름이\\handoff\\doreumi-desktop-pet\\deliverable\\dorms-v86-approved-expression-set\\assets\\greeting_smile\\side.png",
+          "sha256": "a4bbb98c5ac63b5baa14296e89846ed34b7d2f1cca6b0fe559b0ca240298524f"
+        }
+      },
+      "userApproved": true,
+      "status": "USER_APPROVED_STATIC_EXPRESSION",
+      "approvalBasis": "V83_USER_APPROVED",
+      "runtimeConnected": false,
+      "runtimeAdopted": false,
+      "modelUrl": "/assets/greeting_smile/model.glb",
+      "textureUrl": "/assets/greeting_smile/texture.png",
+      "referenceUrl": "/assets/greeting_smile/reference.png",
+      "topologyVerified": true,
+      "integrationStatus": "USER_APPROVED"
+    },
+    "attachments": {
+      "head": {
+        "id": "santa-hat",
+        "visible": true,
+        "error": null,
+        "contact": [
+          -0.31613218729766296,
+          1.6531419930774625,
+          0.0006963999660741203
+        ],
+        "contactError": 2.235514721589783e-16,
+        "textures": [
+          {
+            "width": 2048,
+            "height": 2048
+          }
+        ],
+        "model": "C:\\Users\\User\\Desktop\\코딩\\도름이\\handoff\\doreumi-desktop-pet\\deliverable\\dorms-v48-premium-props\\props\\santa-hat.glb",
+        "version": "V48",
+        "sourceApproval": "candidate",
+        "attachmentStatus": "technical-pass-user-review-required",
+        "allowedActions": [
+          "Idle",
+          "Walk",
+          "Wave",
+          "Cheer",
+          "HeadTilt",
+          "MegaphoneSpeak",
+          "CarryBag"
+        ]
+      },
+      "hand": null
+    },
+    "badge": {
+      "id": "hello",
+      "label": "첫 인사",
+      "version": "V97",
+      "sourceApproval": "candidate",
+      "attachmentStatus": "technical-fit-user-review-required",
+      "model": "C:\\Users\\User\\Desktop\\코딩\\도름이\\handoff\\doreumi-desktop-pet\\deliverable\\dorms-v97-badge-collection\\models\\hello.glb",
+      "visible": true,
+      "error": null,
+      "anchor": [
+        0.33999999999999986,
+        1.04,
+        0.3087094785398584
+      ],
+      "position": [
+        0.3428498935928504,
+        1.0403406461442841,
+        0.31397845061359475
+      ],
+      "normal": [
+        0.44882137227775,
+        0.051488842900551064,
+        0.8921369148530284
+      ],
+      "surfaceGap": 0.00599999999999996,
+      "diameter": 0.18,
+      "scale": 0.09,
+      "textures": [
+        {
+          "width": 2048,
+          "height": 2048,
+          "normalMap": false,
+          "metalnessMap": false,
+          "metalness": 0,
+          "roughness": 0.38
+        }
+      ],
+      "sourceBounds": {
+        "min": [
+          -0.9998030066490173,
+          -1,
+          -0.07342000305652618
+        ],
+        "max": [
+          0.9998030066490173,
+          1,
+          0.07342000305652618
+        ],
+        "size": [
+          1.9996060132980347,
+          2,
+          0.14684000611305237
+        ]
+      }
+    },
+    "sceneProp": null,
+    "model": {
+      "ready": true,
+      "modelVersion": "V60",
+      "modelSha256": "00969b87595ee949d44fbe3f738ad028ee466c215cd64c825268bc01a2ec17d2",
+      "animationCount": 21,
+      "animationNames": [
+        "Idle",
+        "Walk",
+        "Run",
+        "Wave",
+        "Showcase",
+        "HeadTilt",
+        "Sit",
+        "Think",
+        "Bow",
+        "Stretch",
+        "Lie",
+        "Roll",
+        "Jump",
+        "Joy",
+        "Code",
+        "Read",
+        "Cheer",
+        "PeekLeft",
+        "PeekRight",
+        "NewYearBow",
+        "Snowman"
+      ],
+      "active": "Wave",
+      "paused": true,
+      "transition": "hard-cut",
+      "view": "front",
+      "zoom": 1,
+      "time": 1.2599999666213988,
+      "duration": 3.5999999046325684,
+      "progress": 35,
+      "bounds": {
+        "center": [
+          -6.172978794793949e-11,
+          1.0699999592613834,
+          0
+        ],
+        "size": [
+          1.7309839226989636,
+          2.1399999185227667,
+          0.8204931816338359
+        ],
+        "min": [
+          -0.8654919614112115,
+          0,
+          -0.41024659081691794
+        ],
+        "max": [
+          0.865491961287752,
+          2.1399999185227667,
+          0.41024659081691794
+        ]
+      }
+    },
+    "material": {
+      "expressionId": "greeting_smile",
+      "fit": {
+        "a": 1.1337651891909923,
+        "b": -0.05708984342417553,
+        "tx": 0.007362796620882863,
+        "ty": -0.08155285412133706,
+        "scale": 1.135201636029249,
+        "rotation": -0.05031170998748019
+      },
+      "sourceCheeks": {
+        "left": [
+          -0.22720938563942955,
+          0.07832660680324972
+        ],
+        "right": [
+          0.26532990378837557,
+          0.034171585221375665
+        ],
+        "samples": [
+          3133,
+          3051
+        ]
+      },
+      "targetCheeks": {
+        "left": [
+          -0.21345615671641788,
+          0.13026796356757786
+        ],
+        "right": [
+          0.22182917785986128,
+          0.11324093701029803
+        ],
+        "samples": [
+          1608,
+          1489
+        ]
+      },
+      "pigmentComponents": [
+        {
+          "pixels": 4366,
+          "bounds": [
+            250,
+            272,
+            297,
+            384
+          ]
+        },
+        {
+          "pixels": 4386,
+          "bounds": [
+            506,
+            277,
+            554,
+            388
+          ]
+        },
+        {
+          "pixels": 9042,
+          "bounds": [
+            351,
+            363,
+            453,
+            469
+          ]
+        }
+      ],
+      "discardedIsolatedMarks": 0,
+      "coloredPixels": 9025,
+      "holePixels": 0,
+      "skinBoundarySamples": [
+        407,
+        375,
+        352
+      ],
+      "erasedPixels": 81868,
+      "inkPixels": 14078,
+      "resolution": [
+        768,
+        768
+      ],
+      "newEyeOrMouthDrawn": false,
+      "sourceBodyTransferred": false
+    },
+    "releaseComplete": false
+  },
+  "badgeVisible": true,
+  "cleared": true,
+  "url": "http://127.0.0.1:4110",
+  "serverClosed": true
+}

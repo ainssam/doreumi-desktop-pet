@@ -1,0 +1,2 @@
+export const SPIRAL_COLORS=Object.freeze({navy:'#16335f',pink:'#e887b5',green:'#55b38b',purple:'#9976d4',gold:'#e9b450',cyan:'#60bace',red:'#ff0000',orange:'#ff7f00',yellow:'#ffff00',emerald:'#00e030',blue:'#0048ff',indigo:'#2400a8',violet:'#9000ff',black:'#000000'});
+export function resolveSpiralColor(id){if(Object.hasOwn(SPIRAL_COLORS,id))return SPIRAL_COLORS[id];if(typeof id==='string'&&/^#[0-9a-f]{6}$/i.test(id))return id.toLowerCase();throw new Error('나선 색상은 목록 또는 #RRGGBB만 허용됩니다.');}

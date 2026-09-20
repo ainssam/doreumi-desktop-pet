@@ -1,0 +1,2 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {readFile} from 'node:fs/promises';import {approvedActions} from '../src/action-policy.mjs';
+test('all user-approved clips unlock but altered model cannot inherit approval',async()=>{const a=JSON.parse(await readFile(new URL('../ACTION-APPROVAL.json',import.meta.url),'utf8'));const names=approvedActions(a,a.modelSHA256);assert.equal(names.length,21);assert.ok(names.includes('Run'));assert.ok(names.includes('Snowman'));assert.throws(()=>approvedActions(a,'changed'));});

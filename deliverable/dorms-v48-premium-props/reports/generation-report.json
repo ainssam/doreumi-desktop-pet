@@ -1,0 +1,377 @@
+{
+  "library": "Doreumi premium detachable prop library",
+  "appliedToPet": false,
+  "pipeline": [
+    "Meshy image-to-image",
+    "Meshy image-to-3d",
+    "visual review"
+  ],
+  "sourceReferences": [
+    "teacher-subjects.png",
+    "community-poses.png",
+    "brand-guide.png"
+  ],
+  "visualReview": "PENDING",
+  "items": {
+    "magic-wand": {
+      "name": "요술봉",
+      "status": "SUCCEEDED",
+      "taskIds": [
+        "01a0a451-d06d-7346-b289-2eb86dae27d2",
+        "01a0a452-813c-7011-8e86-14b6da38c80b"
+      ],
+      "credits": 52,
+      "appliedToPet": false,
+      "visualReview": "PENDING",
+      "conceptId": "01a0a451-d06d-7346-b289-2eb86dae27d2",
+      "conceptCredits": 12,
+      "conceptDownloaded": true,
+      "conceptFile": "references/magic-wand-concept.png",
+      "modelId": "01a0a452-813c-7011-8e86-14b6da38c80b",
+      "modelCredits": 40,
+      "downloaded": true,
+      "file": "props/magic-wand.glb",
+      "validation": {
+        "version": 2,
+        "byteLength": 9855568
+      },
+      "thumbnail": "previews/magic-wand.png"
+    },
+    "megaphone": {
+      "name": "확성기",
+      "status": "SUCCEEDED",
+      "taskIds": [
+        "01a0a456-a86d-7610-9cea-7c495555c3b1",
+        "01a0a457-5c6f-71da-ac75-9606944ed611"
+      ],
+      "credits": 52,
+      "appliedToPet": false,
+      "visualReview": "PENDING",
+      "conceptId": "01a0a456-a86d-7610-9cea-7c495555c3b1",
+      "conceptCredits": 12,
+      "conceptDownloaded": true,
+      "conceptFile": "references/megaphone-concept.png",
+      "modelId": "01a0a457-5c6f-71da-ac75-9606944ed611",
+      "modelCredits": 40,
+      "downloaded": true,
+      "file": "props/megaphone.glb",
+      "validation": {
+        "version": 2,
+        "byteLength": 16324004
+      },
+      "thumbnail": "previews/megaphone.png"
+    },
+    "heart": {
+      "name": "응원 하트",
+      "status": "SUCCEEDED",
+      "taskIds": [
+        "01a0a45b-9e9f-72e3-9967-bf800ecb9099",
+        "01a0a45c-559f-73a4-9f23-cba19828e75c"
+      ],
+      "credits": 52,
+      "appliedToPet": false,
+      "visualReview": "PENDING",
+      "conceptId": "01a0a45b-9e9f-72e3-9967-bf800ecb9099",
+      "conceptCredits": 12,
+      "conceptDownloaded": true,
+      "conceptFile": "references/heart-concept.png",
+      "modelId": "01a0a45c-559f-73a4-9f23-cba19828e75c",
+      "modelCredits": 40,
+      "downloaded": true,
+      "file": "props/heart.glb",
+      "validation": {
+        "version": 2,
+        "byteLength": 12566976
+      },
+      "thumbnail": "previews/heart.png"
+    },
+    "podium-microphone": {
+      "name": "발표 마이크 연단",
+      "status": "SUCCEEDED",
+      "taskIds": [
+        "01a0a460-b371-7127-bd1e-89ed1e604c75",
+        "01a0a461-63ea-7561-9c87-1717576e7202"
+      ],
+      "credits": 52,
+      "appliedToPet": false,
+      "visualReview": "PENDING",
+      "conceptId": "01a0a460-b371-7127-bd1e-89ed1e604c75",
+      "conceptCredits": 12,
+      "conceptDownloaded": true,
+      "conceptFile": "references/podium-microphone-concept.png",
+      "modelId": "01a0a461-63ea-7561-9c87-1717576e7202",
+      "modelCredits": 40,
+      "downloaded": true,
+      "file": "props/podium-microphone.glb",
+      "validation": {
+        "version": 2,
+        "byteLength": 11233700
+      },
+      "thumbnail": "previews/podium-microphone.png"
+    },
+    "art-palette": {
+      "name": "미술 팔레트와 붓",
+      "status": "SUCCEEDED",
+      "taskIds": [
+        "01a0a471-68a7-7427-b40e-b865de89b221",
+        "01a0a472-19a9-72ad-84ef-c60f1b93513e"
+      ],
+      "credits": 52,
+      "appliedToPet": false,
+      "visualReview": "PENDING",
+      "conceptId": "01a0a471-68a7-7427-b40e-b865de89b221",
+      "conceptCredits": 12,
+      "conceptDownloaded": true,
+      "conceptFile": "references/art-palette-concept.png",
+      "modelId": "01a0a472-19a9-72ad-84ef-c60f1b93513e",
+      "modelCredits": 40,
+      "downloaded": true,
+      "file": "props/art-palette.glb",
+      "validation": {
+        "version": 2,
+        "byteLength": 12938708
+      },
+      "thumbnail": "previews/art-palette.png"
+    },
+    "basketball": {
+      "name": "농구공",
+      "status": "SUCCEEDED",
+      "taskIds": [
+        "01a0a475-07a0-7533-b028-bac6784cba38",
+        "01a0a475-b89f-7734-b335-44882cbbef53"
+      ],
+      "credits": 52,
+      "appliedToPet": false,
+      "visualReview": "PENDING",
+      "conceptId": "01a0a475-07a0-7533-b028-bac6784cba38",
+      "conceptCredits": 12,
+      "conceptDownloaded": true,
+      "conceptFile": "references/basketball-concept.png",
+      "modelId": "01a0a475-b89f-7734-b335-44882cbbef53",
+      "modelCredits": 40,
+      "downloaded": true,
+      "file": "props/basketball.glb",
+      "validation": {
+        "version": 2,
+        "byteLength": 14056380
+      },
+      "thumbnail": "previews/basketball.png"
+    },
+    "globe": {
+      "name": "지구본",
+      "status": "SUCCEEDED",
+      "taskIds": [
+        "01a0a478-d2f4-7145-90ba-68888ee8484f",
+        "01a0a479-8423-746d-82b6-94baaa07aff1"
+      ],
+      "credits": 52,
+      "appliedToPet": false,
+      "visualReview": "PENDING",
+      "conceptId": "01a0a478-d2f4-7145-90ba-68888ee8484f",
+      "conceptCredits": 12,
+      "conceptDownloaded": true,
+      "conceptFile": "references/globe-concept.png",
+      "modelId": "01a0a479-8423-746d-82b6-94baaa07aff1",
+      "modelCredits": 40,
+      "downloaded": true,
+      "file": "props/globe.glb",
+      "validation": {
+        "version": 2,
+        "byteLength": 12773528
+      },
+      "thumbnail": "previews/globe.png"
+    },
+    "guitar": {
+      "name": "기타",
+      "status": "SUCCEEDED",
+      "taskIds": [
+        "01a0a47c-e966-7336-9275-0538939ccc34",
+        "01a0a47d-99a9-7264-bc25-2aef0053db49"
+      ],
+      "credits": 52,
+      "appliedToPet": false,
+      "visualReview": "PENDING",
+      "conceptId": "01a0a47c-e966-7336-9275-0538939ccc34",
+      "conceptCredits": 12,
+      "conceptDownloaded": true,
+      "conceptFile": "references/guitar-concept.png",
+      "modelId": "01a0a47d-99a9-7264-bc25-2aef0053db49",
+      "modelCredits": 40,
+      "downloaded": true,
+      "file": "props/guitar.glb",
+      "validation": {
+        "version": 2,
+        "byteLength": 15826440
+      },
+      "thumbnail": "previews/guitar.png"
+    },
+    "microscope": {
+      "name": "현미경",
+      "status": "SUCCEEDED",
+      "taskIds": [
+        "01a0a482-6ffb-7409-996c-3bb1e7af4f34",
+        "01a0a483-4963-7222-bae3-7b0e5f265246"
+      ],
+      "credits": 52,
+      "appliedToPet": false,
+      "visualReview": "PENDING",
+      "conceptId": "01a0a482-6ffb-7409-996c-3bb1e7af4f34",
+      "conceptCredits": 12,
+      "conceptDownloaded": true,
+      "conceptFile": "references/microscope-concept.png",
+      "modelId": "01a0a483-4963-7222-bae3-7b0e5f265246",
+      "modelCredits": 40,
+      "downloaded": true,
+      "file": "props/microscope.glb",
+      "validation": {
+        "version": 2,
+        "byteLength": 14243012
+      },
+      "thumbnail": "previews/microscope.png"
+    },
+    "chalkboard": {
+      "name": "분필 낙서 칠판",
+      "status": "SUCCEEDED",
+      "taskIds": [
+        "01a0a487-2a1f-74f3-9c5b-83aa8be62794",
+        "01a0a488-04b3-7065-ba9d-5e5cb5cb804d"
+      ],
+      "credits": 52,
+      "appliedToPet": false,
+      "visualReview": "PENDING",
+      "conceptId": "01a0a487-2a1f-74f3-9c5b-83aa8be62794",
+      "conceptCredits": 12,
+      "conceptDownloaded": true,
+      "conceptFile": "references/chalkboard-concept.png",
+      "modelId": "01a0a488-04b3-7065-ba9d-5e5cb5cb804d",
+      "modelCredits": 40,
+      "downloaded": true,
+      "file": "props/chalkboard.glb",
+      "validation": {
+        "version": 2,
+        "byteLength": 12998860
+      },
+      "thumbnail": "previews/chalkboard.png"
+    },
+    "puzzle-stack": {
+      "name": "쌓인 퍼즐 조각",
+      "status": "SUCCEEDED",
+      "taskIds": [
+        "01a0a48c-60c6-740d-b0a8-b06c17fea31d",
+        "01a0a48d-3afa-76c3-8e48-54a546e0af8e"
+      ],
+      "credits": 52,
+      "appliedToPet": false,
+      "visualReview": "PENDING",
+      "conceptId": "01a0a48c-60c6-740d-b0a8-b06c17fea31d",
+      "conceptCredits": 12,
+      "conceptDownloaded": true,
+      "conceptFile": "references/puzzle-stack-concept.png",
+      "modelId": "01a0a48d-3afa-76c3-8e48-54a546e0af8e",
+      "modelCredits": 40,
+      "downloaded": true,
+      "file": "props/puzzle-stack.glb",
+      "validation": {
+        "version": 2,
+        "byteLength": 14509200
+      },
+      "thumbnail": "previews/puzzle-stack.png"
+    },
+    "santa-hat": {
+      "name": "크리스마스 산타 모자",
+      "status": "SUCCEEDED",
+      "taskIds": [
+        "01a0a491-121d-71eb-b105-858048cb2dbc",
+        "01a0a491-c603-75f5-9009-997942a6ff27"
+      ],
+      "credits": 52,
+      "appliedToPet": false,
+      "visualReview": "PENDING",
+      "conceptId": "01a0a491-121d-71eb-b105-858048cb2dbc",
+      "conceptCredits": 12,
+      "conceptDownloaded": true,
+      "conceptFile": "references/santa-hat-concept.png",
+      "modelId": "01a0a491-c603-75f5-9009-997942a6ff27",
+      "modelCredits": 40,
+      "downloaded": true,
+      "file": "props/santa-hat.glb",
+      "validation": {
+        "version": 2,
+        "byteLength": 18162840
+      },
+      "thumbnail": "previews/santa-hat.png"
+    },
+    "seollal-hairpin": {
+      "name": "설날 매화 머리장식",
+      "status": "SUCCEEDED",
+      "taskIds": [
+        "01a0a495-0548-7041-a71f-da17ec2bf2d0",
+        "01a0a495-b602-719e-84de-cac868831354"
+      ],
+      "credits": 52,
+      "appliedToPet": false,
+      "visualReview": "PENDING",
+      "conceptId": "01a0a495-0548-7041-a71f-da17ec2bf2d0",
+      "conceptCredits": 12,
+      "conceptDownloaded": true,
+      "conceptFile": "references/seollal-hairpin-concept.png",
+      "modelId": "01a0a495-b602-719e-84de-cac868831354",
+      "modelCredits": 40,
+      "downloaded": true,
+      "file": "props/seollal-hairpin.glb",
+      "validation": {
+        "version": 2,
+        "byteLength": 24712468
+      },
+      "thumbnail": "previews/seollal-hairpin.png"
+    },
+    "chuseok-hairpin": {
+      "name": "추석 보름달 머리장식",
+      "status": "SUCCEEDED",
+      "taskIds": [
+        "01a0a498-d175-75c3-b073-9993c8412d49",
+        "01a0a49a-a3a5-733a-9530-cb21a9a4369c"
+      ],
+      "credits": 52,
+      "appliedToPet": false,
+      "visualReview": "PENDING",
+      "conceptId": "01a0a498-d175-75c3-b073-9993c8412d49",
+      "conceptCredits": 12,
+      "conceptDownloaded": true,
+      "conceptFile": "references/chuseok-hairpin-concept.png",
+      "modelId": "01a0a49a-a3a5-733a-9530-cb21a9a4369c",
+      "modelCredits": 40,
+      "downloaded": true,
+      "file": "props/chuseok-hairpin.glb",
+      "validation": {
+        "version": 2,
+        "byteLength": 19045908
+      },
+      "thumbnail": "previews/chuseok-hairpin.png"
+    },
+    "christmas-gift-sack": {
+      "name": "크리스마스 선물 주머니",
+      "status": "SUCCEEDED",
+      "taskIds": [
+        "01a0a49d-66d6-7675-a342-ebe476569c29",
+        "01a0a49e-1738-7653-aae3-5c2a9e17dade"
+      ],
+      "credits": 52,
+      "appliedToPet": false,
+      "visualReview": "PENDING",
+      "conceptId": "01a0a49d-66d6-7675-a342-ebe476569c29",
+      "conceptCredits": 12,
+      "conceptDownloaded": true,
+      "conceptFile": "references/christmas-gift-sack-concept.png",
+      "modelId": "01a0a49e-1738-7653-aae3-5c2a9e17dade",
+      "modelCredits": 40,
+      "downloaded": true,
+      "file": "props/christmas-gift-sack.glb",
+      "validation": {
+        "version": 2,
+        "byteLength": 20480452
+      },
+      "thumbnail": "previews/christmas-gift-sack.png"
+    }
+  }
+}

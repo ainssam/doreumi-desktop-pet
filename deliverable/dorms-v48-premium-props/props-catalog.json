@@ -1,0 +1,302 @@
+{
+  "library": "Doreumi premium detachable prop library",
+  "createdAt": "2026-09-15",
+  "appliedToPet": false,
+  "pipeline": [
+    "Meshy image-to-image",
+    "Meshy image-to-3d",
+    "visual review"
+  ],
+  "purpose": "Replace rough text-only candidates with image-guided premium prop candidates. The Doreumi character model, face, spirals, materials, skeleton, and active runtime remain unchanged.",
+  "styleContract": "Use the supplied boards only as a visual-quality guide: rounded premium toy scale, warm off-white, deep navy, soft powder blue, coral pink, quiet pale-gold accents, matte silicone surfaces, generous clean negative space and diffused studio lighting. Every output is one inanimate standalone prop; never generate Doreumi, a mascot, a person, a hand, a face, text, a logo, letters, numbers, watermark, scene, or ground plane.",
+  "items": [
+    {
+      "id": "magic-wand",
+      "name": "요술봉",
+      "recommendedAnchor": "hand",
+      "appliedToPet": false,
+      "visualReview": "CANDIDATE — 3D thumbnail preserves the warm ivory shaft, deep navy grip and pale-gold star. Render the three sparkle diamonds as a runtime effect rather than fixed geometry.",
+      "conceptPrompt": "Create one exquisite, emotionally warm magic wand for a premium Korean education mascot. It is a slender ivory wand with a short deep navy grip, one tiny pale-gold collar, a rounded pale-gold five-point star at the tip, and exactly three small separate pale-gold sparkle diamonds. Use a balanced three-quarter side angle where the entire wand is visible. It should feel gentle, polished and magical rather than like a toy weapon. Smooth matte silicone and soft diffused cream studio light.",
+      "texturePrompt": "High-end matte silicone and satin accents: warm ivory shaft, rich deep navy grip, gentle pale-gold star, collar and sparkles. Clean, smooth, subtle soft highlight, zero scratches, seams, noisy texture, text or logos.",
+      "generation": {
+        "status": "SUCCEEDED",
+        "taskIds": [
+          "01a0a451-d06d-7346-b289-2eb86dae27d2",
+          "01a0a452-813c-7011-8e86-14b6da38c80b"
+        ],
+        "credits": 52,
+        "file": "props/magic-wand.glb",
+        "conceptFile": "references/magic-wand-concept.png"
+      }
+    },
+    {
+      "id": "megaphone",
+      "name": "확성기",
+      "recommendedAnchor": "hand",
+      "appliedToPet": false,
+      "visualReview": "CANDIDATE — 3D thumbnail preserves the complete refined megaphone silhouette, cream rim and powder-blue handle. Render sound rays as a runtime effect rather than fixed geometry.",
+      "conceptPrompt": "Create one compact beautiful handheld megaphone for a premium Korean education mascot. The complete object is shown in a three-quarter side view: a deep navy blue cone, warm ivory horn rim, powder-blue handle, a tiny pale-gold detail at the side, and three separate soft powder-blue sound rays leaving the horn. It must feel cheerful, refined and friendly, with rounded edges and soft diffused cream studio light. Never show the horn straight-on.",
+      "texturePrompt": "Refined deep navy matte silicone cone, clean warm ivory horn rim, powder blue handle and sound rays, tiny pale gold accent. Soft premium collectible-toy finish with controlled highlights, no roughness, scratches, seams, labels, text or logos.",
+      "generation": {
+        "status": "SUCCEEDED",
+        "taskIds": [
+          "01a0a456-a86d-7610-9cea-7c495555c3b1",
+          "01a0a457-5c6f-71da-ac75-9606944ed611"
+        ],
+        "credits": 52,
+        "file": "props/megaphone.glb",
+        "conceptFile": "references/megaphone-concept.png"
+      }
+    },
+    {
+      "id": "heart",
+      "name": "응원 하트",
+      "recommendedAnchor": "hand-or-scene",
+      "appliedToPet": false,
+      "visualReview": "CANDIDATE — 3D thumbnail preserves the clean puffy coral-pink silhouette. Render the two small floating heart accents as a runtime effect rather than fixed geometry.",
+      "conceptPrompt": "Create one elegant plump coral-pink heart prop for a premium Korean education mascot. The heart is symmetrical, softly inflated but not shiny plastic, with a gentle upper notch, rounded depth, a subtle pale-pink-to-coral gradient and two tiny separate pale-gold sparkle hearts floating nearby. It should feel affectionate and calm, photographed in a refined product three-quarter view with soft warm cream studio light.",
+      "texturePrompt": "Matte silky silicone heart with a soft coral-pink gradient and restrained pale-gold sparkle accents. Beautiful clean curves, diffused highlights, no seam, scratch, noise, text or logo.",
+      "generation": {
+        "status": "SUCCEEDED",
+        "taskIds": [
+          "01a0a45b-9e9f-72e3-9967-bf800ecb9099",
+          "01a0a45c-559f-73a4-9f23-cba19828e75c"
+        ],
+        "credits": 52,
+        "file": "props/heart.glb",
+        "conceptFile": "references/heart-concept.png"
+      }
+    },
+    {
+      "id": "podium-microphone",
+      "name": "발표 마이크 연단",
+      "recommendedAnchor": "scene",
+      "appliedToPet": false,
+      "visualReview": "CANDIDATE — 3D thumbnail preserves the rounded navy podium, cream top and graceful microphone. Check Doreumi scale and floor contact before runtime attachment.",
+      "conceptPrompt": "Create one compact refined presentation podium with a single graceful gooseneck microphone for a premium Korean education mascot. Three-quarter front view: a deep navy curved podium body, warm ivory top, a small powder-blue inset accent, a delicate black microphone and a stable rounded base. It should read as an inviting classroom presentation prop, not corporate furniture. Soft matte silicone-toy material, gentle warm cream studio light, clean empty front with no emblem or text.",
+      "texturePrompt": "Deep navy matte curved podium, warm ivory top, small powder-blue inset, satin black microphone. Polished high-end classroom mascot prop, soft diffused highlights, no rough texture, text, emblem, scratch or seam.",
+      "generation": {
+        "status": "SUCCEEDED",
+        "taskIds": [
+          "01a0a460-b371-7127-bd1e-89ed1e604c75",
+          "01a0a461-63ea-7561-9c87-1717576e7202"
+        ],
+        "credits": 52,
+        "file": "props/podium-microphone.glb",
+        "conceptFile": "references/podium-microphone-concept.png"
+      }
+    },
+    {
+      "id": "art-palette",
+      "name": "미술 팔레트와 붓",
+      "recommendedAnchor": "hand",
+      "appliedToPet": false,
+      "visualReview": "CANDIDATE — 3D thumbnail preserves the ivory palette, five-color paint set and brush. Its flat pivot needs hand-anchor rotation review.",
+      "conceptPrompt": "Create one exquisite inanimate artist palette prop with one short brush beside it, for a premium Korean education mascot. The palette is a rounded warm-ivory oval with a soft thumb hole and five neat raised paint dabs: deep navy, powder blue, coral pink, pale gold, and mint. The brush is warm wood with a deep navy ferrule and soft dark bristles. Gentle three-quarter product view, generous clean space, refined and quietly playful.",
+      "texturePrompt": "Matte warm ivory palette, clean soft glossy paint dabs in deep navy, powder blue, coral, pale gold and mint, plus warm wood and deep navy brush accents. High-end collectible classroom prop, no drips, scratches, roughness, text, logo or labels.",
+      "generation": {
+        "status": "SUCCEEDED",
+        "taskIds": [
+          "01a0a471-68a7-7427-b40e-b865de89b221",
+          "01a0a472-19a9-72ad-84ef-c60f1b93513e"
+        ],
+        "credits": 52,
+        "file": "props/art-palette.glb",
+        "conceptFile": "references/art-palette-concept.png"
+      }
+    },
+    {
+      "id": "basketball",
+      "name": "농구공",
+      "recommendedAnchor": "hand-or-floor",
+      "appliedToPet": false,
+      "visualReview": "CANDIDATE — 3D thumbnail preserves the smooth tangerine ball and crisp navy channels. Check hand scale and floor bounce separately.",
+      "conceptPrompt": "Create one small elegant basketball prop for a premium Korean education mascot. A perfectly rounded warm tangerine-orange ball with four precise deep navy curved channels, a soft matte rubber-like silicone finish, and a delicate floor shadow in a refined three-quarter product view. It must feel bouncy and friendly but never rough, pebbly, damaged or realistic sports merchandise.",
+      "texturePrompt": "Smooth warm tangerine-orange matte silicone basketball with crisp deep navy channels and gentle diffused highlights. Premium mascot prop; no brand, text, logo, scratches, seams or noisy grain.",
+      "generation": {
+        "status": "SUCCEEDED",
+        "taskIds": [
+          "01a0a475-07a0-7533-b028-bac6784cba38",
+          "01a0a475-b89f-7734-b335-44882cbbef53"
+        ],
+        "credits": 52,
+        "file": "props/basketball.glb",
+        "conceptFile": "references/basketball-concept.png"
+      }
+    },
+    {
+      "id": "globe",
+      "name": "지구본",
+      "recommendedAnchor": "floor-or-hand",
+      "appliedToPet": false,
+      "visualReview": "CANDIDATE — 3D thumbnail preserves the powder-blue globe, raised ivory continents, navy meridian and pedestal. Check floor scale before attachment.",
+      "conceptPrompt": "Create one compact elegant classroom globe for a premium Korean education mascot. A soft powder-blue sphere with simplified raised warm-ivory continents, a refined deep navy meridian ring, a tiny pale-gold pivot detail, and a rounded warm-ivory pedestal. Quietly magical geography-class feeling, three-quarter product view. No labels, country borders, markings, person, character or scene.",
+      "texturePrompt": "Matte powder-blue ocean, warm ivory raised continent forms, deep navy meridian, pale-gold pivot and ivory pedestal. Smooth premium educational toy surface; no text, map labels, scratches, seams or visual noise.",
+      "generation": {
+        "status": "SUCCEEDED",
+        "taskIds": [
+          "01a0a478-d2f4-7145-90ba-68888ee8484f",
+          "01a0a479-8423-746d-82b6-94baaa07aff1"
+        ],
+        "credits": 52,
+        "file": "props/globe.glb",
+        "conceptFile": "references/globe-concept.png"
+      }
+    },
+    {
+      "id": "guitar",
+      "name": "기타",
+      "recommendedAnchor": "hand-or-floor",
+      "appliedToPet": false,
+      "visualReview": "CANDIDATE — 3D thumbnail preserves the honey body, navy trim and strings. Check two-hand pose contact before attachment.",
+      "conceptPrompt": "Create one compact charming acoustic guitar for a premium Korean education mascot. Smooth warm honey-wood colored rounded body, deep navy blue edge trim, a short dark navy neck, six very subtle strings and a simple round sound hole. It should feel like a gentle music-class prop in a refined three-quarter product view, with no strap, no text, no logo and no hard realistic wood grain.",
+      "texturePrompt": "Soft matte honey-wood body with deep navy trim and neck, delicate strings and a clean dark sound hole. Premium rounded mascot toy finish with gentle diffused light; no scratches, text, logo, labels or noisy wood grain.",
+      "generation": {
+        "status": "SUCCEEDED",
+        "taskIds": [
+          "01a0a47c-e966-7336-9275-0538939ccc34",
+          "01a0a47d-99a9-7264-bc25-2aef0053db49"
+        ],
+        "credits": 52,
+        "file": "props/guitar.glb",
+        "conceptFile": "references/guitar-concept.png"
+      }
+    },
+    {
+      "id": "microscope",
+      "name": "현미경",
+      "recommendedAnchor": "floor",
+      "appliedToPet": false,
+      "visualReview": "CANDIDATE — 3D thumbnail preserves the friendly ivory, navy and powder-blue classroom form. Check tabletop/floor placement before attachment.",
+      "conceptPrompt": "Create one compact beautiful classroom microscope for a premium Korean education mascot. Rounded warm-ivory body with deep navy control knobs and base accents, a short powder-blue objective housing, a simple oval stage and broad stable rounded base. It should read as friendly science exploration rather than clinical equipment. Refined three-quarter product view, no sample, no person, no character, no text or logo.",
+      "texturePrompt": "Matte warm ivory body, clean deep navy controls and base trim, powder-blue objective housing with tiny satin silver optical details. Premium smooth classroom collectible finish with no labels, scratches, seams or text.",
+      "generation": {
+        "status": "SUCCEEDED",
+        "taskIds": [
+          "01a0a482-6ffb-7409-996c-3bb1e7af4f34",
+          "01a0a483-4963-7222-bae3-7b0e5f265246"
+        ],
+        "credits": 52,
+        "file": "props/microscope.glb",
+        "conceptFile": "references/microscope-concept.png"
+      }
+    },
+    {
+      "id": "chalkboard",
+      "name": "분필 낙서 칠판",
+      "recommendedAnchor": "scene",
+      "appliedToPet": false,
+      "visualReview": "CANDIDATE — 3D thumbnail preserves the chalk doodles, ivory frame and powder-blue easel with no readable text. Check scene scale before attachment.",
+      "conceptPrompt": "Create one small freestanding rounded chalkboard for a premium Korean education mascot. The board has a softly rounded warm-ivory frame, very dark navy-green chalk surface, and a tiny powder-blue easel. Include charming hand-drawn white and pale-gold chalk doodles: a star, small planet, open book, lightbulb, triangle, loose spiral and dotted trail. The doodles must be decorative marks only, with no readable letters, numbers, equations or words. Gentle three-quarter product view, no character or scene.",
+      "texturePrompt": "Matte warm ivory frame, deep navy-green board and soft powder-blue easel. Fine chalky white and pale-gold decorative doodles with clean soft edges. Premium classroom mascot prop; no readable text, harsh grain, scratches or logos.",
+      "generation": {
+        "status": "SUCCEEDED",
+        "taskIds": [
+          "01a0a487-2a1f-74f3-9c5b-83aa8be62794",
+          "01a0a488-04b3-7065-ba9d-5e5cb5cb804d"
+        ],
+        "credits": 52,
+        "file": "props/chalkboard.glb",
+        "conceptFile": "references/chalkboard-concept.png"
+      }
+    },
+    {
+      "id": "puzzle-stack",
+      "name": "쌓인 퍼즐 조각",
+      "recommendedAnchor": "hand-or-scene",
+      "appliedToPet": false,
+      "visualReview": "CANDIDATE — 3D thumbnail preserves five separate stacked pieces with no circular border. Check hand and scene contact before attachment.",
+      "conceptPrompt": "Create a small sculptural stack of exactly five thick standalone jigsaw puzzle pieces for a premium Korean education mascot. Pieces are loosely leaning and partly stacked with visible separation, in deep navy, powder blue, coral pink, warm ivory and pale gold. Each has broad rounded tabs and sockets. The entire group must be free-standing; absolutely no circle, disk, badge, coin, ring, tray or circular border. No person, mascot, hand, text or logo. Refined three-quarter product view with quiet warm studio light.",
+      "texturePrompt": "Five smooth thick matte silicone puzzle pieces in deep navy, powder blue, coral pink, warm ivory and pale gold. Clean rounded bevels and deliberate gaps between pieces; no circular frame, scratches, seams, text or labels.",
+      "generation": {
+        "status": "SUCCEEDED",
+        "taskIds": [
+          "01a0a48c-60c6-740d-b0a8-b06c17fea31d",
+          "01a0a48d-3afa-76c3-8e48-54a546e0af8e"
+        ],
+        "credits": 52,
+        "file": "props/puzzle-stack.glb",
+        "conceptFile": "references/puzzle-stack-concept.png"
+      }
+    },
+    {
+      "id": "santa-hat",
+      "name": "크리스마스 산타 모자",
+      "recommendedAnchor": "wearable",
+      "wearableAnchor": "TopSpiral",
+      "appliedToPet": false,
+      "visualReview": "CANDIDATE — 3D thumbnail preserves the red cone, ivory brim and navy clip. Check top-spiral clearance and face visibility before attachment.",
+      "conceptPrompt": "Create one petite premium Santa hat accessory designed to rest over a small mascot's top spiral without covering its face. A soft coral-red curved velvet-like cone, a thick warm-ivory fluffy brim, one round ivory pom-pom, and a discreet deep navy flexible clip hidden under the brim. It must be an empty inanimate wearable accessory only, shown in a three-quarter product view. No character, head, face, hand, text, logo or background scene.",
+      "texturePrompt": "Soft coral-red matte velvet-like fabric, warm ivory fluffy-but-clean brim and pom-pom, discreet deep navy attachment clip. Premium seasonal mascot accessory with no rough fibers, scratches, text or logo.",
+      "generation": {
+        "status": "SUCCEEDED",
+        "taskIds": [
+          "01a0a491-121d-71eb-b105-858048cb2dbc",
+          "01a0a491-c603-75f5-9009-997942a6ff27"
+        ],
+        "credits": 52,
+        "file": "props/santa-hat.glb",
+        "conceptFile": "references/santa-hat-concept.png"
+      }
+    },
+    {
+      "id": "seollal-hairpin",
+      "name": "설날 매화 머리장식",
+      "recommendedAnchor": "wearable",
+      "wearableAnchor": "TopSpiral",
+      "appliedToPet": false,
+      "visualReview": "CANDIDATE — 3D thumbnail preserves the plum blossom, navy ribbon, coral tassel and clip. Check top-spiral clearance before attachment.",
+      "conceptPrompt": "Create one elegant Korean Lunar New Year hair ornament for a small mascot's top spiral. A tiny warm-ivory five-petal plum blossom with a pale-gold center, one deep navy silk ribbon loop, a small coral-red tassel and a discreet curved deep navy clip underneath. It should be a gentle festive traditional accessory, not human jewelry and not a character. Three-quarter product view; no face, person, hand, text, logo or background scene.",
+      "texturePrompt": "Matte warm ivory plum blossom, pale-gold center, deep navy silk ribbon, tiny coral tassel and discreet navy attachment clip. Soft premium Korean seasonal accessory finish with no text, symbols, scratches or harsh metallic shine.",
+      "generation": {
+        "status": "SUCCEEDED",
+        "taskIds": [
+          "01a0a495-0548-7041-a71f-da17ec2bf2d0",
+          "01a0a495-b602-719e-84de-cac868831354"
+        ],
+        "credits": 52,
+        "file": "props/seollal-hairpin.glb",
+        "conceptFile": "references/seollal-hairpin-concept.png"
+      }
+    },
+    {
+      "id": "chuseok-hairpin",
+      "name": "추석 보름달 머리장식",
+      "recommendedAnchor": "wearable",
+      "wearableAnchor": "TopSpiral",
+      "appliedToPet": false,
+      "visualReview": "CANDIDATE — 3D thumbnail preserves the full moon, ivory cloud, coral maple leaf, ribbon and clip. Check top-spiral clearance before attachment.",
+      "conceptPrompt": "Create one elegant Chuseok full-moon hair ornament for a small mascot's top spiral. A small softly rounded pale-gold full moon disk with a raised warm-ivory cloud, one tiny coral maple leaf accent, a deep navy ribbon loop and a discreet curved deep navy clip underneath. It should evoke an autumn harvest moon in a restrained, premium and gentle way. Inanimate accessory only, three-quarter product view; no character, face, person, hand, text, logo or scene.",
+      "texturePrompt": "Soft satin pale-gold moon, warm ivory cloud, coral maple leaf, deep navy ribbon and hidden navy attachment clip. Refined premium Korean autumn accessory with gentle diffused highlights, no text, logos, scratches or rough texture.",
+      "generation": {
+        "status": "SUCCEEDED",
+        "taskIds": [
+          "01a0a498-d175-75c3-b073-9993c8412d49",
+          "01a0a49a-a3a5-733a-9530-cb21a9a4369c"
+        ],
+        "credits": 52,
+        "file": "props/chuseok-hairpin.glb",
+        "conceptFile": "references/chuseok-hairpin-concept.png"
+      }
+    },
+    {
+      "id": "christmas-gift-sack",
+      "name": "크리스마스 선물 주머니",
+      "recommendedAnchor": "hand-or-floor",
+      "appliedToPet": false,
+      "visualReview": "CANDIDATE — 3D thumbnail preserves the coral sack, gifts, gold cord and star charm. Check hand and floor contact before attachment.",
+      "conceptPrompt": "Create one elegant Christmas gift sack for a premium Korean education mascot. A plump soft coral-red fabric sack tied with a pale-gold cord, with two small rounded wrapped gift boxes peeking out in deep navy and warm ivory, each with powder-blue or coral ribbon. Add one tiny pale-gold star charm but no readable tag. Gentle festive product three-quarter view, no character, hand, text, logo, letters or scene.",
+      "texturePrompt": "Soft coral-red matte velvet-like sack, pale-gold cord and star charm, deep navy and warm ivory gift boxes with powder-blue and coral ribbons. Premium clean seasonal mascot prop, no rough fibers, scratches, labels, text or logos.",
+      "generation": {
+        "status": "SUCCEEDED",
+        "taskIds": [
+          "01a0a49d-66d6-7675-a342-ebe476569c29",
+          "01a0a49e-1738-7653-aae3-5c2a9e17dade"
+        ],
+        "credits": 52,
+        "file": "props/christmas-gift-sack.glb",
+        "conceptFile": "references/christmas-gift-sack-concept.png"
+      }
+    }
+  ]
+}
