@@ -6,6 +6,8 @@
 
 요구 환경: Windows 10/11, Git LFS, Node.js 22 이상, npm.
 
+원본 자산 전체는 Git LFS로 약 1.4GB입니다. 웹판(`web/`)만 쓰거나 코드만 볼 때는 `GIT_LFS_SKIP_SMUDGE=1 git clone ...` 처럼 LFS 없이 받고, 필요한 폴더만 `git lfs pull --include="deliverable/dorms-v60-final-shoulder/**"` 처럼 골라 받아 주세요.
+
 ```powershell
 git lfs install
 git clone https://github.com/ainssam/doreumi-desktop-pet.git
@@ -17,6 +19,10 @@ npm run preview
 ```
 
 브라우저 주소는 `http://127.0.0.1:43198/`입니다. Electron 창은 `npm run desktop`으로 실행합니다.
+
+## 웹판 도름이 (`web/`)
+
+도름스(DoRms) 웹사이트에서 움직이는 도름이는 [`web/`](web/) 에 있습니다. 이 저장소의 V60 모델과 표정을 바탕으로 도름스에서 뼈대와 동작을 다듬은 판입니다. 마스터 모델·동작 524개·표정·Three.js 런타임·시험이 들어 있습니다. 도름스와 동기화 도구로 맞추므로 [`web/README.md`](web/README.md) 에서 내용과 규칙을 먼저 읽어 주세요.
 
 ## 먼저 읽을 문서
 
@@ -43,4 +49,4 @@ npm run qa:desktop
 
 파일 전체는 Git LFS로 내려받습니다. 자산별 SHA-256·사용자 승인·미완료 상태를 문서와 JSON에 기록해 두었습니다. 자산 라이선스 안내는 [`LICENSE-ASSETS.md`](LICENSE-ASSETS.md)를 확인하세요.
 
-GitHub 협업 계정은 초대받은 계정으로 로그인해 clone하세요. 코드와 캐릭터 자산은 별도 조건입니다. 초대받지 않은 사용자에게 저장소나 자산을 전달하거나, 자산을 재배포하지 마세요.
+코드와 캐릭터 자산은 조건이 다릅니다. 코드는 MIT([`LICENSE-CODE.md`](LICENSE-CODE.md)), 도름이 캐릭터 자산은 CC BY-NC 4.0([`LICENSE-ASSETS.md`](LICENSE-ASSETS.md))입니다. 출처를 밝히면 비상업적으로 쓰고 고칠 수 있습니다. 상업적 이용은 권리자와 따로 합의해야 합니다.
