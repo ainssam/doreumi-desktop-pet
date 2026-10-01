@@ -1,0 +1,434 @@
+{
+  "actionId": 463,
+  "status": "candidate-frozen-awaiting-root-visual-and-production-replay",
+  "clipSha256": "06f73c76b27fe65d97a7c944747e38fe3b950e65c4fe8fba6a1f5bba66b16696",
+  "virtualSha256": "bcb914fd077fa84d03571284a1fea14caf8fba18e3a355c1e8ed8f9f610fe018",
+  "sourceSha256": "4d4ada0b91b84eca55bcefd07e582555d0822e35cd7e13e432e47209d55eb018",
+  "masterSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+  "rigSignature": "21af64ae682478f53aeb5e96e987efd394744bb695c3a34bc0e6f7be99e6c94f",
+  "publicClipUnchanged": "5f65e1cd46a3c695fd9c4a10369d1da004dbbf395b907b844bde974531a89b22",
+  "adaptation": {
+    "sourceDuration": 2.3333332538604736,
+    "sourceTimeScale": 1,
+    "tailRepair": {
+      "version": 1,
+      "method": "replace-corrupt-final-source-key-with-c1-decelerated-valid-pose",
+      "sourceActionId": 463,
+      "verifiedOriginalSourceSha256": "4d4ada0b91b84eca55bcefd07e582555d0822e35cd7e13e432e47209d55eb018",
+      "originalSourceDuration": 2.3333332538604736,
+      "playbackSourceDuration": 2.3333332538604736,
+      "retainedSourceDuration": 2.299999952316284,
+      "originalInterval": [
+        2.299999952316284,
+        2.3333332538604736
+      ],
+      "timeWarpInterval": [
+        2.2666666507720947,
+        2.3333332538604736
+      ],
+      "removedSourceKeyTimes": [
+        2.3333332538604736
+      ],
+      "replacementPoseSourceTime": 2.299999952316284,
+      "durationPreserved": true,
+      "sourceBeforeWarpPreserved": true,
+      "corruptFinalKeySampled": false,
+      "originalLastKeyDegrees": {
+        "RightFoot": 139.7010701796075,
+        "RightUpLeg": 137.58224333641655,
+        "RightLeg": 96.05217001550687
+      },
+      "reason": "Original last key changes the right leg by 96–140 degrees in one 30 Hz frame; earlier jump and landing motion remain authored."
+    },
+    "landingPreparationSeconds": 0.4,
+    "legLengthsUnchanged": true,
+    "sourceBodyWorldRotationsPreserved": true,
+    "maximumPreservedUpperQuaternionRadians": 5.960464477539063e-8,
+    "sourceDirectionBasedSwingArc": true,
+    "actualSkinFloorReachPlanning": true,
+    "canonicalContactBasis": true,
+    "maximumRootInterpolationLift": 0.010290585113894721,
+    "rootApexBefore": 2.3395323753356934,
+    "rootApexAfter": 2.348524332046509,
+    "rootApexReason": "Dense root-Y interpolation clearance keeps rotating full skin above the floor; approximately 9mm at the original apex. No quaternion or bone-length change."
+  },
+  "numeric": {
+    "sourceContact": {
+      "actionId": 463,
+      "sourceActionId": 463,
+      "derivation": null,
+      "sourceName": "Run_and_Jump",
+      "sourceSha256": "4d4ada0b91b84eca55bcefd07e582555d0822e35cd7e13e432e47209d55eb018",
+      "clipSha256": "06f73c76b27fe65d97a7c944747e38fe3b950e65c4fe8fba6a1f5bba66b16696",
+      "sourceTimeScale": 1,
+      "sourceSamplingHz": 30,
+      "targetSamplingHz": 30,
+      "targetDriftBasis": "equivalent-30Hz-displacement-by-height",
+      "sourceFloor": -0.01742222853881722,
+      "sourcePlantedPairs": 27,
+      "missingTargetContactPairs": 0,
+      "excessiveDriftPairs": 0,
+      "sourceMovingContactPairs": 6,
+      "pivotCompatiblePairs": 0,
+      "maxDriftByHeight": 0.000359103914083293,
+      "failures": []
+    },
+    "actualStagePairs": 29,
+    "actualStageMissing": 0,
+    "verificationFps": 240,
+    "fullSkinFrames": 945,
+    "minimumSkinY": 0.001600167093438673,
+    "materialPointPairs": 231,
+    "materialPointMissing": 0,
+    "materialPointSlip": 0,
+    "materialPointMaxDriftByHeight": 0.00023188374301057652,
+    "maximumBoneLengthError": 0,
+    "maximumScaleError": 0
+  },
+  "focus": {
+    "duration": 3.9333332538604737,
+    "entryDuration": 0.7333333333333333,
+    "clipInterval": [
+      1.9,
+      2.46
+    ],
+    "sourceInterval": [
+      1.1666666666666667,
+      1.7266666666666666
+    ],
+    "largestIntroducedWorld": [
+      {
+        "bone": "thighR",
+        "from": 2.1,
+        "time": 2.1166666666666667,
+        "sourceTime": 1.3833333333333333,
+        "targetLocalDegrees": 8.004898739459083,
+        "targetWorldDegrees": 10.071401857919188,
+        "sourceLocalDegrees": 6.080511489628359,
+        "sourceWorldDegrees": 1.6730808448569612,
+        "jointDistance": 0.09375932666087361
+      },
+      {
+        "bone": "thighR",
+        "from": 2.1166666666666667,
+        "time": 2.1333333333333333,
+        "sourceTime": 1.4,
+        "targetLocalDegrees": 8.005006486939148,
+        "targetWorldDegrees": 10.071395031738113,
+        "sourceLocalDegrees": 6.080512416864964,
+        "sourceWorldDegrees": 1.673080636071223,
+        "jointDistance": 0.09427850054865491
+      },
+      {
+        "bone": "thighR",
+        "from": 2.0833333333333335,
+        "time": 2.1,
+        "sourceTime": 1.3666666666666667,
+        "targetLocalDegrees": 8.99607322225762,
+        "targetWorldDegrees": 9.587721073112485,
+        "sourceLocalDegrees": 4.448572727701931,
+        "sourceWorldDegrees": 1.2599463976298368,
+        "jointDistance": 0.11793295130034136
+      },
+      {
+        "bone": "thighR",
+        "from": 2.066666666666667,
+        "time": 2.0833333333333335,
+        "sourceTime": 1.35,
+        "targetLocalDegrees": 8.996176187703727,
+        "targetWorldDegrees": 9.587700056963643,
+        "sourceLocalDegrees": 4.448579728057795,
+        "sourceWorldDegrees": 1.2599518544192714,
+        "jointDistance": 0.11780897285757093
+      },
+      {
+        "bone": "kneeR",
+        "from": 2.25,
+        "time": 2.2666666666666666,
+        "sourceTime": 1.5333333333333332,
+        "targetLocalDegrees": 1.9529551050850786,
+        "targetWorldDegrees": 10.845535612357493,
+        "sourceLocalDegrees": 7.6277326156413325,
+        "sourceWorldDegrees": 3.1270981819612818,
+        "jointDistance": 0.09041363297644356
+      },
+      {
+        "bone": "kneeR",
+        "from": 2.1,
+        "time": 2.1166666666666667,
+        "sourceTime": 1.3833333333333333,
+        "targetLocalDegrees": 2.4066925903388636,
+        "targetWorldDegrees": 11.750111367399477,
+        "sourceLocalDegrees": 3.716306504199334,
+        "sourceWorldDegrees": 4.080041110601846,
+        "jointDistance": 0.08924761865547973
+      },
+      {
+        "bone": "kneeR",
+        "from": 2.1166666666666667,
+        "time": 2.1333333333333333,
+        "sourceTime": 1.4,
+        "targetLocalDegrees": 2.4065702409658942,
+        "targetWorldDegrees": 11.640171125102537,
+        "sourceLocalDegrees": 3.716308562274113,
+        "sourceWorldDegrees": 4.052168368014105,
+        "jointDistance": 0.09315074964326328
+      },
+      {
+        "bone": "thighR",
+        "from": 2.1333333333333333,
+        "time": 2.15,
+        "sourceTime": 1.4166666666666665,
+        "targetLocalDegrees": 5.940111611000869,
+        "targetWorldDegrees": 10.340973325708516,
+        "sourceLocalDegrees": 6.168230103184535,
+        "sourceWorldDegrees": 2.850039796467348,
+        "jointDistance": 0.074665325372441
+      },
+      {
+        "bone": "thighR",
+        "from": 2.15,
+        "time": 2.1666666666666665,
+        "sourceTime": 1.4333333333333331,
+        "targetLocalDegrees": 5.939957976909443,
+        "targetWorldDegrees": 10.340973654484662,
+        "sourceLocalDegrees": 6.168216485347924,
+        "sourceWorldDegrees": 2.85005039347011,
+        "jointDistance": 0.07732160247804783
+      },
+      {
+        "bone": "kneeR",
+        "from": 2.2333333333333334,
+        "time": 2.25,
+        "sourceTime": 1.5166666666666666,
+        "targetLocalDegrees": 1.9529799259817306,
+        "targetWorldDegrees": 10.67850834238643,
+        "sourceLocalDegrees": 7.627736385190808,
+        "sourceWorldDegrees": 3.4140835078109566,
+        "jointDistance": 0.08658386904883249
+      },
+      {
+        "bone": "thighL",
+        "from": 2.933333333333333,
+        "time": 2.95,
+        "sourceTime": 2.216666666666667,
+        "targetLocalDegrees": 7.666269538315571,
+        "targetWorldDegrees": 7.926134758786315,
+        "sourceLocalDegrees": 1.9960403695972162,
+        "sourceWorldDegrees": 1.0103529333977792,
+        "jointDistance": 0.008039493675712762
+      },
+      {
+        "bone": "thighL",
+        "from": 2.95,
+        "time": 2.966666666666667,
+        "sourceTime": 2.2333333333333334,
+        "targetLocalDegrees": 7.666231960575713,
+        "targetWorldDegrees": 7.926139912319647,
+        "sourceLocalDegrees": 1.9960383364962349,
+        "sourceWorldDegrees": 1.0103589146931378,
+        "jointDistance": 0.008176937759905606
+      },
+      {
+        "bone": "kneeL",
+        "from": 2.966666666666667,
+        "time": 2.9833333333333334,
+        "sourceTime": 2.25,
+        "targetLocalDegrees": 2.246866844619486,
+        "targetWorldDegrees": 7.81603753322555,
+        "sourceLocalDegrees": 2.0324590168736103,
+        "sourceWorldDegrees": 1.209913826231914,
+        "jointDistance": 0.022723888174152343
+      },
+      {
+        "bone": "kneeL",
+        "from": 2.9833333333333334,
+        "time": 3,
+        "sourceTime": 2.2666666666666666,
+        "targetLocalDegrees": 2.246543768213064,
+        "targetWorldDegrees": 7.750296509072138,
+        "sourceLocalDegrees": 2.046089565601369,
+        "sourceWorldDegrees": 1.1805135936585638,
+        "jointDistance": 0.023637882206368338
+      },
+      {
+        "bone": "kneeR",
+        "from": 2.3333333333333335,
+        "time": 2.35,
+        "sourceTime": 1.6166666666666667,
+        "targetLocalDegrees": 0.3640504665726551,
+        "targetWorldDegrees": 7.780304990356142,
+        "sourceLocalDegrees": 1.6672366976784871,
+        "sourceWorldDegrees": 1.2947968913580614,
+        "jointDistance": 0.035781586936372275
+      },
+      {
+        "bone": "kneeR",
+        "from": 2.35,
+        "time": 2.3666666666666667,
+        "sourceTime": 1.6333333333333333,
+        "targetLocalDegrees": 0.3641688318139087,
+        "targetWorldDegrees": 7.796576743415017,
+        "sourceLocalDegrees": 1.6672312923378687,
+        "sourceWorldDegrees": 1.3334235721274126,
+        "jointDistance": 0.03479657123135317
+      },
+      {
+        "bone": "kneeR",
+        "from": 2.066666666666667,
+        "time": 2.0833333333333335,
+        "sourceTime": 1.35,
+        "targetLocalDegrees": 1.9767774674724203,
+        "targetWorldDegrees": 10.872286737371208,
+        "sourceLocalDegrees": 5.317934725485675,
+        "sourceWorldDegrees": 4.500122151087161,
+        "jointDistance": 0.11072172991147888
+      },
+      {
+        "bone": "kneeR",
+        "from": 2.0833333333333335,
+        "time": 2.1,
+        "sourceTime": 1.3666666666666667,
+        "targetLocalDegrees": 1.9764503536727835,
+        "targetWorldDegrees": 10.797337368860573,
+        "sourceLocalDegrees": 5.317930729785734,
+        "sourceWorldDegrees": 4.511604184765516,
+        "jointDistance": 0.11336852740214218
+      },
+      {
+        "bone": "kneeR",
+        "from": 2.033333333333333,
+        "time": 2.05,
+        "sourceTime": 1.3166666666666664,
+        "targetLocalDegrees": 1.37743879289585,
+        "targetWorldDegrees": 9.761559596148262,
+        "sourceLocalDegrees": 7.073135864507017,
+        "sourceWorldDegrees": 3.494161990374924,
+        "jointDistance": 0.06352369659266535
+      },
+      {
+        "bone": "kneeR",
+        "from": 2.05,
+        "time": 2.066666666666667,
+        "sourceTime": 1.3333333333333335,
+        "targetLocalDegrees": 1.378613226517067,
+        "targetWorldDegrees": 9.713961293693883,
+        "sourceLocalDegrees": 7.073135640595342,
+        "sourceWorldDegrees": 3.5736538296050755,
+        "jointDistance": 0.06757929208609863
+      }
+    ],
+    "absoluteWorldPeaks": [
+      {
+        "bone": "wristL",
+        "from": 2.1166666666666667,
+        "time": 2.1333333333333333,
+        "sourceTime": 1.4,
+        "targetLocalDegrees": 19.581072777952425,
+        "targetWorldDegrees": 28.86608417029986,
+        "sourceLocalDegrees": 19.581084530045267,
+        "sourceWorldDegrees": 28.899705967548304,
+        "jointDistance": 0.07566347544010059
+      },
+      {
+        "bone": "wristR",
+        "from": 2.316666666666667,
+        "time": 2.3333333333333335,
+        "sourceTime": 1.6,
+        "targetLocalDegrees": 7.079403077011343,
+        "targetWorldDegrees": 25.50146067767513,
+        "sourceLocalDegrees": 7.079516084122108,
+        "sourceWorldDegrees": 25.501686481539974,
+        "jointDistance": 0.0887491525896568
+      },
+      {
+        "bone": "elbowR",
+        "from": 2.2333333333333334,
+        "time": 2.25,
+        "sourceTime": 1.5166666666666666,
+        "targetLocalDegrees": 1.795275244245733,
+        "targetWorldDegrees": 21.72392814198255,
+        "sourceLocalDegrees": 1.7956587087528426,
+        "sourceWorldDegrees": 21.72924688655107,
+        "jointDistance": 0.1244691981037802
+      },
+      {
+        "bone": "footR",
+        "from": 2.25,
+        "time": 2.2666666666666666,
+        "sourceTime": 1.5333333333333332,
+        "targetLocalDegrees": 12.853104484691368,
+        "targetWorldDegrees": 20.721033214980448,
+        "sourceLocalDegrees": 18.069657816967926,
+        "sourceWorldDegrees": 20.4782184074621,
+        "jointDistance": 0.09377412260391332
+      }
+    ]
+  },
+  "sourceGroundInterpretation": {
+    "restSkinFloor": -7.224277439460414e-8,
+    "sourceMinimumSkinAt1_2333": -0.11009437123481147,
+    "notes": "The original donor also penetrates the floor during its flip. Target uses the preserved rotation plus exact full-skin grounding. Root should assess the visible flip/support style; this is not a claim that unchanged donor body physics is natural."
+  },
+  "required": [
+    "Root normal128 and quarter five-view/full-playback review",
+    "Root focused knee/wrist sequence review",
+    "Host actual stage displacement/contact review",
+    "Exact source/master/plan production replay before any public replacement or approval"
+  ],
+  "files": [
+    {
+      "path": ".artifacts/doreumi-contact-audit/landing463-stage-floor/meshy-463.json",
+      "sha256": "06f73c76b27fe65d97a7c944747e38fe3b950e65c4fe8fba6a1f5bba66b16696"
+    },
+    {
+      "path": ".artifacts/doreumi-contact-audit/landing463-stage-floor/manifest.json",
+      "sha256": "e0f35dba0914dae60f8c6f723c8fbf9a0ef720cf403802d457909c382a6f62e3"
+    },
+    {
+      "path": ".artifacts/doreumi-contact-audit/landing463-stage-floor/contact.json",
+      "sha256": "40ab9685c8d205c8296e7c02a0613050593fbad2efdf0be4a13e60f161f93784"
+    },
+    {
+      "path": ".artifacts/doreumi-contact-audit/landing463-stage-floor/joints.json",
+      "sha256": "54aaa4eb459fc028a93187dc3385cabbcd0dd50e8882beefe1e717e632cc8a45"
+    },
+    {
+      "path": ".artifacts/doreumi-contact-audit/landing463-stage-floor/skin-240hz.json",
+      "sha256": "04687b9e5efe5cfdabd3228c6fd18e21852bc9fdd123cd4ea5225475d422ceda"
+    },
+    {
+      "path": ".artifacts/doreumi-contact-audit/landing463-stage-floor/preview-input.json",
+      "sha256": "6b443e222d8ead91d6d47d665443433f913f9f939b80d49f8b70336a39b79dfa"
+    },
+    {
+      "path": ".artifacts/doreumi-contact-audit/landing463-floor-polar/resolved-plan-463.json",
+      "sha256": "330d15c5372c7ec1d25bfacf571c5ebec1bb87c8d036ed4d275c8f874f8a5731"
+    },
+    {
+      "path": ".artifacts/doreumi-contact-audit/build-landing-463.mjs",
+      "sha256": "e62d890f80b54ea72a6f0cd55d103c3d4c0baeb87ad000d278e9dae20960c881"
+    },
+    {
+      "path": ".artifacts/doreumi-contact-audit/swing-arc-463.mjs",
+      "sha256": "abbf8d4550402bb8d735e3e453d6a17552cb9d3cf91ec4cee38e0c34a8b6c140"
+    },
+    {
+      "path": ".artifacts/doreumi-contact-audit/freeze-landing463.mjs",
+      "sha256": "8fa94293df8f02d735ed47413065d327fc221e2fe581a47a7411820e5ed1a446"
+    },
+    {
+      "path": "scripts/doreumi/meshy-planar-support.mjs",
+      "sha256": "9ca60ecca9f07d3d41d5882fbedc26fa39a05570734d980e9b9b7aacd28ee85c"
+    },
+    {
+      "path": "scripts/doreumi/meshy-stage-support.mjs",
+      "sha256": "50a4a4099e4bfa22bb913512bb5b6958698b9ca660419b5826722870849c47d9"
+    },
+    {
+      "path": ".artifacts/doreumi-contact-audit/landing463-stage-floor/contact-source30.json",
+      "sha256": "ded63f7a56406eed7d3268ad8c10c112843f6f96f469b8395cc2aa36e2450c88"
+    }
+  ],
+  "contactFormat": "Canonical single-action stage evidence; source 30Hz grouped audit preserved as contact-source30.json."
+}

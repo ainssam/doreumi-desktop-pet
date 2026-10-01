@@ -1,0 +1,167 @@
+{
+  "scope": "Root individually inspected all 26 five-view/nine-phase contact sheets. Static evidence only; no naturalness approval from numeric or static results.",
+  "evidence": "/tmp/doreumi-library-321-363",
+  "numericPass": true,
+  "modelSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+  "runtimeBundleSha256": "abf10a7a22a4131b7b65fa659c7eef05157996519e2dd19fcbf955be5fff0ab2",
+  "clipHashes": {
+    "meshy:321": "8b780b289f941584d0f02e1769d9e6164444d1e0c53990aaa1b6a115e79d1870",
+    "meshy:322": "e554e90fb3212d2540b63cd2a14be09539a3cffd84bea105738f55d91b355035",
+    "meshy:324": "7434d7633630528819032585f3d1c66b536bc34af5ec41ff8ecca263e4a79b5c",
+    "meshy:325": "81823869e2e6c8ccbe277e58ae80226f5cbf3ae1c798406adb522c6e0b1cf378",
+    "meshy:326": "de79338f0f0bf737045027e88cdadbb729d98e540a2b5bf78d51073776f351ef",
+    "meshy:328": "ce9fc609fa2aad6f22baa37d214e11986915e2bf6bee1f6d922a8e9168172c7f",
+    "meshy:329": "2bff92e4edd6658b7c6151c1afa97a5664cf31b6235631602f7b2b602f0a0b01",
+    "meshy:330": "bcc73a166256554fe2be5ecdbbd06df29b58981b794407f766ac8ec448b857b5",
+    "meshy:333": "6242f97232ee1e9775f1b568d2d651cb25a3dbbb74cbd72edcc51add09df3d60",
+    "meshy:336": "7a6549806fe476c13355a7b00f28ba57443c46d81dbc4e92718bf7f09c301421",
+    "meshy:338": "ef3a309606784b88c435c97fe95ad5834ddb2a7e527c7e3e30c64eab8daf6805",
+    "meshy:339": "e6ece70350bfd37d441e156fc7e45e80c6d08034d894bc867959c355a93ac1d1",
+    "meshy:340": "987acbd3b6fb29d2cf6882ef47e3a4822d91abc5dbea20aae0f255014855ca94",
+    "meshy:341": "6a25ec1a4e36db052dc3fefacad3672747cd0658abb3217f74fb3969b44620c2",
+    "meshy:344": "362ee08ce04bbb5a1fa1d0473367088fbaeebfa3293bba69c2c517e3abbb71e0",
+    "meshy:345": "027b0c8c2c6489d068f1324ed69f68b5c99e97cbec7af3412594f564fe6c58b9",
+    "meshy:346": "97f08a031fc75c3ada1203ee17ffb0ef77c31b98a46f7e4ddaf76dde0892786b",
+    "meshy:347": "13eafb7fcff81da72d77867a272b2c4c1c6fc9fe11943adb1283041704310ae7",
+    "meshy:348": "f94bd19b7fed84f8667d20a39ded2c1cfa48dee29c4a9d2a3e3f8db6ca77c42a",
+    "meshy:349": "db4cf011e427777a08c51ddf703d0471faf3f670d71e6df834adbf28db5c0124",
+    "meshy:350": "e9d522b1bc250107b6a7ffa9e1f6a236e0f651cdbfded409195aa585f034d37d",
+    "meshy:351": "4b64fa37ba11ea4048de6c6c97e8520c3e51cd2c84f2f45036462ea1847f96b5",
+    "meshy:352": "c5ac0a19f13eeca488e3b98523d000fd5769e302943ad50b37a1dc79b0b5224b",
+    "meshy:353": "8a18a2823fce8bac256424eddddc3725399c129751489a0d3945ce5c7b747b77",
+    "meshy:362": "0267c450c310483f43a13fc8865cd910e909856862aa32c561b2ce80a5e99bde",
+    "meshy:363": "01a8e739c2c7f8c942987a83a178e7b4d23767bf2f39941cb6b9cfbc511a1e60"
+  },
+  "motions": [
+    {
+      "id": 321,
+      "finding": "Alternating bent legs and backward torso read as bicycle crunch. Entry and recovery support need continuous review.",
+      "review": "pending"
+    },
+    {
+      "id": 322,
+      "finding": "Circular torso/leg crunch silhouette remains coherent; floor entry requires support review.",
+      "review": "pending"
+    },
+    {
+      "id": 324,
+      "finding": "Prone push-up transition is visible; short arms leave the belly close to the floor, requiring hand support measurements.",
+      "review": "pending"
+    },
+    {
+      "id": 325,
+      "finding": "Prone hopping push-up remains framed; airborne versus grounded support requires source-phase review.",
+      "review": "pending"
+    },
+    {
+      "id": 326,
+      "finding": "Both arms raise beside the head with distinct legs-open and legs-closed poses. Strong small-size exercise candidate.",
+      "review": "pending"
+    },
+    {
+      "id": 328,
+      "finding": "Prone-to-standing sequence is visible. Generic standing-to-prone entry still needs replacement if rigid tipping is confirmed.",
+      "review": "pending"
+    },
+    {
+      "id": 329,
+      "finding": "Push-up has readable torso pitch but small arm excursion; actual palm floor support remains unverified.",
+      "review": "pending"
+    },
+    {
+      "id": 330,
+      "finding": "Sit-up alternates supine and upright seated poses; generic entry and return require continuous support review.",
+      "review": "pending"
+    },
+    {
+      "id": 333,
+      "finding": "Large head/body turns are distinct from idle. Planted foot pivots and timing remain unverified.",
+      "review": "pending"
+    },
+    {
+      "id": 336,
+      "finding": "Long breath and small look-around are subtle but visible in side views; small-size readability pending.",
+      "review": "pending"
+    },
+    {
+      "id": 338,
+      "finding": "Short breath/look-around preserves silhouette; small-size readability pending.",
+      "review": "pending"
+    },
+    {
+      "id": 339,
+      "finding": "Walking scan includes deep head dip and sudden rear turn; integrated stage travel/contact review required.",
+      "review": "pending"
+    },
+    {
+      "id": 340,
+      "finding": "Crawl includes a large look-back roll. Hands and knees must be measured against floor during continuous playback.",
+      "review": "pending"
+    },
+    {
+      "id": 341,
+      "finding": "Slow walking look-around is readable. Integrated stage travel and foot-contact verification required.",
+      "review": "pending"
+    },
+    {
+      "id": 344,
+      "finding": "Supine-to-sitting-to-standing sequence visible; generic entry into supine remains pending.",
+      "review": "pending"
+    },
+    {
+      "id": 345,
+      "finding": "Prone-to-standing sequence visible; body support and timing between sparse samples remain pending.",
+      "review": "pending"
+    },
+    {
+      "id": 346,
+      "finding": "Seated lateral weight shift into standing visible; hands/feet support needs measurement.",
+      "review": "pending"
+    },
+    {
+      "id": 347,
+      "finding": "Large side roll into prone and standing stays framed. Generic entry and head-floor support need review.",
+      "review": "pending"
+    },
+    {
+      "id": 348,
+      "finding": "Prone crouch into standing remains coherent in samples; support continuity pending.",
+      "review": "pending"
+    },
+    {
+      "id": 349,
+      "finding": "Prone rise with changed final facing is visible; source timing and entry support pending.",
+      "review": "pending"
+    },
+    {
+      "id": 350,
+      "finding": "Seated/backward roll into standing is readable; arm-floor support and transition timing pending.",
+      "review": "pending"
+    },
+    {
+      "id": 351,
+      "finding": "Prone rise shows gradual torso elevation; generic entry and support continuity pending.",
+      "review": "pending"
+    },
+    {
+      "id": 352,
+      "finding": "Cross-legged seated side shift into stand remains distinct; entry and actual supporting hand contact pending.",
+      "review": "pending"
+    },
+    {
+      "id": 353,
+      "finding": "One-sided rise includes a hand beside the head; short-arm silhouette remains intact, support timing pending.",
+      "review": "pending"
+    },
+    {
+      "id": 362,
+      "finding": "Seated crossed short legs remain coherent from all five views. Sit/stand transitions need continuous support verification.",
+      "review": "pending"
+    },
+    {
+      "id": 363,
+      "finding": "Compact crossed-leg floor sitting preserves original proportions. Entry and recovery support pending.",
+      "review": "pending"
+    }
+  ]
+}

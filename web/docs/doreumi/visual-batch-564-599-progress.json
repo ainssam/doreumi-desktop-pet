@@ -1,0 +1,587 @@
+{
+  "checkedAt": "2026-09-24T05:04:48.855167+00:00",
+  "scope": "Root individually inspected listed five-angle/nine-pose sheets and normal128px 4fps temporal sheets. No quarter-speed or ambient approval.",
+  "normalComplete": true,
+  "quarterComplete": false,
+  "runtimeBundleSha256": "a044803f80bc2ff70a68e41dedf58dbe190aa86cf668ba20f73d1259c863d864",
+  "masterSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+  "items": [
+    {
+      "id": "meshy:564",
+      "clipSha256": "e47683577d284df42ac1f89896ad1d4ce67e822cff492b2f6a3391bf26ac095c",
+      "observation": "Alternating tightrope steps and balancing arms are readable, but the required rope is absent; add visible support and audit the actual stage trajectory before approval.",
+      "review": "pending",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-564-599/motion-meshy-564.jpg",
+          "sha256": "31e6b620dc19817afde695e1fbda6b3c6128b11414557639d3277c391a6ab892"
+        },
+        {
+          "file": "/tmp/doreumi-library-564-599/temporal-meshy-564.jpg",
+          "sha256": "1a35fe12c7484557453f1165825048f7114f9f2d23008afa4c6abed9580507da"
+        }
+      ]
+    },
+    {
+      "id": "meshy:565",
+      "clipSha256": "9c24abb0fb4f2a3eb8ebe5147e33f2e6b7d87ea329ddc7760f978a2e4ecde59d",
+      "observation": "Umbrella canopy stays clear of the head and upright in five views; short walking steps read at128px. Quarter playback, actual grip/clearance and stage contacts remain.",
+      "review": "pending",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-564-599/motion-meshy-565.jpg",
+          "sha256": "bc352da463de3fc5eafcedc8cb2df40d0d739a24596ac4afc6bc9ee3cae65326"
+        },
+        {
+          "file": "/tmp/doreumi-library-564-599/temporal-meshy-565.jpg",
+          "sha256": "02c21b69c4a0b3db3c70aaba1b5c58bb3c86be465416354d7e9a3a21a73f9de8"
+        }
+      ]
+    },
+    {
+      "id": "meshy:566",
+      "clipSha256": "d5e683a54d541aa49f2645c2c03b760e39c7497fa5bdc1fa00bf0c87c66afb12",
+      "observation": "Compact forward stepping with restrained arm motion; inspect quarter speed and actual stage support before approval.",
+      "review": "pending",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-564-599/motion-meshy-566.jpg",
+          "sha256": "44e8150138173b7dd5c7dbd50039377e906789c09f0dc4ddc187eb3136657542"
+        },
+        {
+          "file": "/tmp/doreumi-library-564-599/temporal-meshy-566.jpg",
+          "sha256": "b1aab08c6ad3d2b9729690b00756f84316ede8cce87ae277db828e003366055d"
+        }
+      ]
+    },
+    {
+      "id": "meshy:567",
+      "clipSha256": "77038d85ba72e6233610c7388cf979dcc3dcd671a34bdfe469d7d1f95dc4c6ff",
+      "observation": "Forward lean and short assisted steps are visible but walker support is absent; required prop/support context remains.",
+      "review": "pending",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-564-599/motion-meshy-567.jpg",
+          "sha256": "7eca15fea4e81a5de8efadc610ecddc92074e271de0a0012ad01fe21ae68cf1c"
+        },
+        {
+          "file": "/tmp/doreumi-library-564-599/temporal-meshy-567.jpg",
+          "sha256": "d4f17faf164daf2edfa142ae0b4f22080cd85581a60af05fe36cca4fe0252200"
+        }
+      ]
+    },
+    {
+      "id": "meshy:568",
+      "clipSha256": "5d2dc054ff5a9011ac90cee5a8e248cf454f8e503f0df4838c253aa560d43fa2",
+      "observation": "Treading-water pose keeps feet suspended and arms forward. Missing water context makes it look unsupported; no ambient approval.",
+      "review": "pending",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-564-599/motion-meshy-568.jpg",
+          "sha256": "850a101e67c20626abb5048ad37940614e7375cbbc928a3cf5fac0871215733d"
+        },
+        {
+          "file": "/tmp/doreumi-library-564-599/temporal-meshy-568.jpg",
+          "sha256": "30e4250b2e61ba050d25fafb6b24ead95481664647e6ffdf2d43d2d2b95c3769"
+        }
+      ]
+    },
+    {
+      "id": "meshy:569",
+      "clipSha256": "8cb2c8350af7725249ed8da5f2dfb97b631400279782d9bba2a6745a7ae90086",
+      "observation": "Prone swimming strokes are visible, but water and entry/exit context are absent; upright-to-prone transition needs water staging.",
+      "review": "pending",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-564-599/motion-meshy-569.jpg",
+          "sha256": "2741982568007090b189bc9994a4d32a265f5a15952aa8fc310454ec99567b81"
+        },
+        {
+          "file": "/tmp/doreumi-library-564-599/temporal-meshy-569.jpg",
+          "sha256": "c3f99ec53df62e7ec45fe2a162d6da01d18c09ce5cdfc957973fd0ce853391b3"
+        }
+      ]
+    },
+    {
+      "id": "meshy:570",
+      "clipSha256": "3aa650c3495939a8d788fa439944a859e1ec8736182a04fc661918a35510135b",
+      "observation": "Prone swim becomes a forward upright tread/edge pose; no water or pool edge is visible. Context and entry/exit support remain.",
+      "review": "pending",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-564-599/motion-meshy-570.jpg",
+          "sha256": "da9f7399d6649e87cdd73a5ae3a21cda7835520772bbe57b2bad174e4d404a0f"
+        },
+        {
+          "file": "/tmp/doreumi-library-564-599/temporal-meshy-570.jpg",
+          "sha256": "65842a017cf7b5215f9d9be01f82f2bcc9d177808f2bd477d5422c6d57e42715"
+        }
+      ]
+    },
+    {
+      "id": "meshy:571",
+      "clipSha256": "de5e69cde15c4adfe63e4f0250b852b8639c083379ae606b39535b4c2c861bce",
+      "observation": "Running left turn has readable inside lean and alternating feet, with a return to upright idle. Quarter-speed and true stage contact remain.",
+      "review": "pending",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-564-599/motion-meshy-571.jpg",
+          "sha256": "0df7f559a335f167e2d35baed4c44175e0c8effc3491927af850b482f70e969d"
+        },
+        {
+          "file": "/tmp/doreumi-library-564-599/temporal-meshy-571.jpg",
+          "sha256": "860afaaefa69e5dbe3d4207b464e1adc6a038338016bc2b1f8446cbc771a96de"
+        }
+      ]
+    },
+    {
+      "id": "meshy:572",
+      "clipSha256": "5a6604b10405863f95c19ecc44c9cd29259c0420c33a8df312eb160fc65cbd87",
+      "observation": "Left walking turn has distinct alternating steps and modest torso lean; actual stage pivot support and quarter playback remain.",
+      "review": "pending",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-564-599/motion-meshy-572.jpg",
+          "sha256": "4efd140449c28bc5ecd9ee231a1dfc0f72f92290d123c6974a3dbc28fc92120f"
+        },
+        {
+          "file": "/tmp/doreumi-library-564-599/temporal-meshy-572.jpg",
+          "sha256": "7948b1feee11757a51f4c4f48f94a15148a4266f19f825166fed01bfe46c50e5"
+        }
+      ]
+    },
+    {
+      "id": "meshy:573",
+      "clipSha256": "d2827df139883123816a1299985761380c9b7e9655feb03dccf469059c6fe972",
+      "observation": "Weapon-dependent rifle turning stance remains excluded by its existing context gate; observed full motion, no ambient approval.",
+      "review": "pending",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-564-599/motion-meshy-573.jpg",
+          "sha256": "f1f96da8fae6cbaa6d0ac2165b6aa3adcbd463fd70713f640998f26242d5a48b"
+        },
+        {
+          "file": "/tmp/doreumi-library-564-599/temporal-meshy-573.jpg",
+          "sha256": "462ad1f4d06266001138b997cbdb288ba2ff27676946ac7f1f4c5c2e7f2d3e37"
+        }
+      ]
+    },
+    {
+      "id": "meshy:574",
+      "clipSha256": "3b68123f71cdd9d3a9e8932eb273f87750564ad05afaaf9afda747570fcdb798",
+      "observation": "Weapon-dependent walking turn remains excluded by the existing context gate; observed full motion.",
+      "review": "pending",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-564-599/motion-meshy-574.jpg",
+          "sha256": "2d0ea134963ce3dc5d548eef5d5765cf6270d50d4b70198ed3ff9cc55b9b1fc8"
+        },
+        {
+          "file": "/tmp/doreumi-library-564-599/temporal-meshy-574.jpg",
+          "sha256": "d6823ee32ceb20cced5c40e89513d731c82562d43d1cd4654f739d5d2c2d4641"
+        }
+      ]
+    },
+    {
+      "id": "meshy:575",
+      "clipSha256": "7a7c05cbabc2c92e5460b83dc35129073150d13328b31fcf4ecad9d28143c59d",
+      "observation": "Raised fists and crouched turn are readable, with no strike in this clip. Source/support and quarter playback remain before deciding ambient use.",
+      "review": "pending",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-564-599/motion-meshy-575.jpg",
+          "sha256": "0e36df4e06dd062b5bb215475a7d0a6b57b4c09c8a6ffa4239e47074502c4b68"
+        },
+        {
+          "file": "/tmp/doreumi-library-564-599/temporal-meshy-575.jpg",
+          "sha256": "fa9380a52c7cd62379e739df38070c9b057a5b6932f319f990dc385b561a37ff"
+        }
+      ]
+    },
+    {
+      "id": "meshy:576",
+      "clipSha256": "739abbffdbc989a349313cb1fd4d2300856e98c6eeef8e412de4b93d137c2d8a",
+      "observation": "Quiet left pivot has a readable weight shift and returns upright; planted-foot rotation needs exact contact review.",
+      "review": "pending",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-564-599/motion-meshy-576.jpg",
+          "sha256": "d809a877552f3461e915758321078a4d5afda9923a996d4702a3ad1de92416c4"
+        },
+        {
+          "file": "/tmp/doreumi-library-564-599/temporal-meshy-576.jpg",
+          "sha256": "58ff578d31cd78eaf6c8795a44d2d65c710a860f3cfe391fb4864c0e093c4666"
+        }
+      ]
+    },
+    {
+      "id": "meshy:577",
+      "clipSha256": "34e012bdc7b7f428c0981e05032cba015aa9bd172cc8098dfff4399ec658ea50",
+      "observation": "Head dips before the step-turn, with a coherent small step and return; quarter-speed contact and joint review remain.",
+      "review": "pending",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-564-599/motion-meshy-577.jpg",
+          "sha256": "80a43379f200416d79bf51174e2c2c6f687a4eba0e35eda09004677ebb8c8195"
+        },
+        {
+          "file": "/tmp/doreumi-library-564-599/temporal-meshy-577.jpg",
+          "sha256": "ef15747e31586aa6b6bd772c7e4a4b474b254c6c1da1847c7fe91550e589f451"
+        }
+      ]
+    },
+    {
+      "id": "meshy:578",
+      "clipSha256": "a42b6f08d310f3c96de62b735d93c59ff2fd31185616f4bcac3ce466489144f0",
+      "observation": "Torch follows the raised left hand and body turn, but its tiny tan bulb reads like a paintbrush at128px. Requested a clearer flame silhouette and repeated clearance/visual review.",
+      "review": "pending",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-564-599/motion-meshy-578.jpg",
+          "sha256": "9ce829b367c245446998c7b4a09a3a0bf460ef6e2c7315c7633a2b14afb39dbe"
+        },
+        {
+          "file": "/tmp/doreumi-library-564-599/temporal-meshy-578.jpg",
+          "sha256": "ea95b88891c5d141d685c71c262c7acd2bf18e10524da2b69fa63f531e11c14e"
+        }
+      ]
+    },
+    {
+      "id": "meshy:579",
+      "clipSha256": "fced6d55b8af4ad849d98bb599b3adfb6f6159c5dca410adf17e1756b6831653",
+      "observation": "Long depressed turn retains swaying shoulders, back lean and a bowed head through the turn; source foot contacts and quarter-speed review remain.",
+      "review": "pending",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-564-599/motion-meshy-579.jpg",
+          "sha256": "2b5eee06e6bee3e4d22f7cf1846e41251326f54eff34fcc02fc8ef464b8c2163"
+        },
+        {
+          "file": "/tmp/doreumi-library-564-599/temporal-meshy-579.jpg",
+          "sha256": "5159ab3415f5e6cd9cdd09746c9643aead328adeae5231d695f456c7d1c3670c"
+        }
+      ]
+    },
+    {
+      "id": "meshy:580",
+      "clipSha256": "7b748317a1682740b36680c82c8332890cb60caa2392f8515956b3f07b9620d3",
+      "observation": "Sword/shield alert turn is observed but excluded by existing weapon context gate.",
+      "review": "pending",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-564-599/motion-meshy-580.jpg",
+          "sha256": "e8351f6ebf56465515fe9a6021b4987e3d8104a4d7ec68546565b7f2e9d3266a"
+        },
+        {
+          "file": "/tmp/doreumi-library-564-599/temporal-meshy-580.jpg",
+          "sha256": "ea529a109e448dacabd7ce32f7a1e0a40fb3f7b71330c8f28aee08679eff6fb3"
+        }
+      ]
+    },
+    {
+      "id": "meshy:581",
+      "clipSha256": "19e44a4241b358cff90e156880c33301b3bcbd0054dec72a6132a5d227843059",
+      "observation": "Sharp right run turn has strong inside lean and a clear corrective step; quarter-speed and actual stage support are required.",
+      "review": "pending",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-564-599/motion-meshy-581.jpg",
+          "sha256": "1ce7ed821354b2247231b1cdda21ecaa8e13d19c508f64dcf047c75f61d6763e"
+        },
+        {
+          "file": "/tmp/doreumi-library-564-599/temporal-meshy-581.jpg",
+          "sha256": "704c4e9786495bc373bede3421a773faaba079ee1dbda298813899cee49e673c"
+        }
+      ]
+    },
+    {
+      "id": "meshy:582",
+      "clipSha256": "42eb6e5a8def6400daa275855db4105ef184106ce26009f8bb695577aee9cc31",
+      "observation": "Right running turn has compact alternating strides and inside torso tilt; stage support/quarter review remain.",
+      "review": "pending",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-564-599/motion-meshy-582.jpg",
+          "sha256": "014ec19e202d38e19627c45fc3b65e61de35f43fc783ce4a164f892bc35f7bf0"
+        },
+        {
+          "file": "/tmp/doreumi-library-564-599/temporal-meshy-582.jpg",
+          "sha256": "fa8100fc867e9d2b1c29e1aa81ea17f7c9aaed75168c13fa16d75b29656be0f4"
+        }
+      ]
+    },
+    {
+      "id": "meshy:583",
+      "clipSha256": "41bc7d7d6233c60b61c44efe4f3c33c4d293a3528ab0d564824420d22a9eab4d",
+      "observation": "Right walking turn is readable with restrained arm swing; stage turning foot contacts and quarter review remain.",
+      "review": "pending",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-564-599/motion-meshy-583.jpg",
+          "sha256": "4e0fdf75255de07cb67db854a8ec31b520e84aa6692b3ce367bcb599b727ae76"
+        },
+        {
+          "file": "/tmp/doreumi-library-564-599/temporal-meshy-583.jpg",
+          "sha256": "e7f093ae51b3202c401b844c6c8fcd50cf5942d6a6ff545de381e54bcce791ba"
+        }
+      ]
+    },
+    {
+      "id": "meshy:584",
+      "clipSha256": "7ed72abf57fdcbe71f02ec45c24c92ad94db74dbc9b6a4781473b6e326672c5a",
+      "observation": "Long right turn with crossing strides brings the feet close together; inspect exact skin clearance at crossing and quarter playback.",
+      "review": "pending",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-564-599/motion-meshy-584.jpg",
+          "sha256": "0872ae00b46b30765282893fe71c5b63c6ee4b943d31f0195658732cfeecd561"
+        },
+        {
+          "file": "/tmp/doreumi-library-564-599/temporal-meshy-584.jpg",
+          "sha256": "eb13460c8833217ef11be038db29c24d622e7d0cc8a1f361d7ccd9176cf082d6"
+        }
+      ]
+    },
+    {
+      "id": "meshy:585",
+      "clipSha256": "b6f17257d39ca19badaa1e20b426f72974a4646e87af433faee8e56a1e51e872",
+      "observation": "Rifle aiming right turn is observed but remains excluded by existing weapon context gate.",
+      "review": "pending",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-564-599/motion-meshy-585.jpg",
+          "sha256": "8e518f42abdd3a91350a629f1d8db919a0952c4c81634a3c0271fa6febbe58fe"
+        },
+        {
+          "file": "/tmp/doreumi-library-564-599/temporal-meshy-585.jpg",
+          "sha256": "975a0e53e33e180b394f9494ccfb5f271c38dcf87ba135cfa2ba1e75d2cac497"
+        }
+      ]
+    },
+    {
+      "id": "meshy:586",
+      "clipSha256": "c61b80d9a0de51d73b2629b3e3484e1e6d25894bb2c6a75c69d619ce146310bd",
+      "observation": "Upright idle right pivot has subtle anticipatory weight shift; exact planted-foot rotation/contact and quarter review remain.",
+      "review": "pending",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-564-599/motion-meshy-586.jpg",
+          "sha256": "f4519e3cf78e9ff9d5c0c05f7e123bc536149c34f150b1c0f20118d1b6a02a58"
+        },
+        {
+          "file": "/tmp/doreumi-library-564-599/temporal-meshy-586.jpg",
+          "sha256": "611238c14abf4fe52e0bfbca61b82f22630996c45b5e092dc2d5bce09df07013"
+        }
+      ]
+    },
+    {
+      "id": "meshy:587",
+      "clipSha256": "7efb3035776012a0171e50faa0373d865096b14d71b0de78bd0990d0b2627569",
+      "observation": "Right walk-to-idle turn reads with alternating steps; stage contact and quarter-speed review remain.",
+      "review": "pending",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-564-599/motion-meshy-587.jpg",
+          "sha256": "e566b69d7e83488d0bd87f3b73ee9a63d90f7fb1e08a627d9fdcb7a025b2fde3"
+        },
+        {
+          "file": "/tmp/doreumi-library-564-599/temporal-meshy-587.jpg",
+          "sha256": "cc92921803e720211b9055aba40c4baeac94850222c06e78b847b94dfe95f79b"
+        }
+      ]
+    },
+    {
+      "id": "meshy:588",
+      "clipSha256": "e1741eb0673ab51c54b732cc6d8e8f662839ec00088f15bfc16c9b979caf0d91",
+      "observation": "Slouched head-first right turn reads as frustration; quarter playback and actual source contacts remain.",
+      "review": "pending",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-564-599/motion-meshy-588.jpg",
+          "sha256": "40baf865675c48347acbecf9840d36a712eaa908db0f2c415bf5975439a32c41"
+        },
+        {
+          "file": "/tmp/doreumi-library-564-599/temporal-meshy-588.jpg",
+          "sha256": "bf2c772e26906373b6336252d392e11a7217f0e8ae9c95eb43f35b82050491a3"
+        }
+      ]
+    },
+    {
+      "id": "meshy:589",
+      "clipSha256": "7d3aef80b24fdda5f761f2b682980948463517004c48b973a523829a1d89c358",
+      "observation": "Alert right pivot has a small anticipation then brisk turn; inspect planted-foot rotation and quarter playback.",
+      "review": "pending",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-564-599/motion-meshy-589.jpg",
+          "sha256": "fdcbca0c7459bf8a2d42932d840fac68d5474f5e8fa6ad591deb3c5c82aa082a"
+        },
+        {
+          "file": "/tmp/doreumi-library-564-599/temporal-meshy-589.jpg",
+          "sha256": "1515534682ddfd84a4471373935b1cc024f72211869cc88e936163ca1dfa3c1c"
+        }
+      ]
+    },
+    {
+      "id": "meshy:590",
+      "clipSha256": "150d89a1930026d1521baff035067a217d0b50bf783527c2ec6a3250859f2c73",
+      "observation": "Slouched full turn uses coherent head and torso sway; foot crossing and stage travel need contact verification.",
+      "review": "pending",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-564-599/motion-meshy-590.jpg",
+          "sha256": "a7501980740c8b89aa05b376f936d5e4123d64d0beb54c5641ce8c62411d65b0"
+        },
+        {
+          "file": "/tmp/doreumi-library-564-599/temporal-meshy-590.jpg",
+          "sha256": "a38c2febf1313582e6a5f4e6197485c8ea07fa0518f0f1cbd1fe4463af46fa5f"
+        }
+      ],
+      "ambientConstraint": "Registry weapon-context exclusion remains; observed turn does not override the established friendly-ambient exclusion."
+    },
+    {
+      "id": "meshy:591",
+      "clipSha256": "6f749957e17b473a9f0723b8a08d1d2e455f78e3cdb7b2430c3e5b5204af605e",
+      "observation": "Open-palm side gestures and shoulder sway read clearly at128px without visible arm separation; quarter playback and source contacts remain.",
+      "review": "pending",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-564-599/motion-meshy-591.jpg",
+          "sha256": "4f870ae0f9423f737feafecc385c3dc68e0d06ff5741e7fb71e38b8fe043d015"
+        },
+        {
+          "file": "/tmp/doreumi-library-564-599/temporal-meshy-591.jpg",
+          "sha256": "0aa5f60ca3c6a243e7357c4ed860a21d384f160c339b4f597d9ab8b98eeac4d7"
+        }
+      ]
+    },
+    {
+      "id": "meshy:592",
+      "clipSha256": "3eda4a7966f3dec827e405f63527c5af96eea9aa56cb80bc4835b2b8eba8bca9",
+      "observation": "Alternating raised hands with head tilt are readable; inspect wrist and planted-foot continuity at quarter speed.",
+      "review": "pending",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-564-599/motion-meshy-592.jpg",
+          "sha256": "e3c16bd55cb8efb49d6654b7e19ec174548c16732edd7920904a36a659ecfe08"
+        },
+        {
+          "file": "/tmp/doreumi-library-564-599/temporal-meshy-592.jpg",
+          "sha256": "90e3bc2d2216b1058d90c16bfd0dad1f8d222d2c181699689cebe2738076265d"
+        }
+      ]
+    },
+    {
+      "id": "meshy:593",
+      "clipSha256": "bcc15cb489f8531bea7c86023981aa57bb8d77b2046f91b5cccd41ddf662fd1b",
+      "observation": "Alternating lifted knees with downward head bob and turning steps are readable; stage trajectory and contacts remain.",
+      "review": "pending",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-564-599/motion-meshy-593.jpg",
+          "sha256": "ed0e39596ff928c561cb1efc2eb1ca951f266297b85c81aaab591604af1579eb"
+        },
+        {
+          "file": "/tmp/doreumi-library-564-599/temporal-meshy-593.jpg",
+          "sha256": "8da8110d147b089644c52c60c18b73bfd524681a7379f4f983a4f57ecb961496"
+        }
+      ]
+    },
+    {
+      "id": "meshy:594",
+      "clipSha256": "bc74d2587a762a61a057fdb407c9f48cf017cce64a01917401bdb0a00e3cc0d2",
+      "observation": "Bouncy alternating steps and quarter turns are readable; small foot crossing needs skin clearance and stage verification.",
+      "review": "pending",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-564-599/motion-meshy-594.jpg",
+          "sha256": "7a42142949ee6b93c77c0be8105c0fcfaf040065526af7854df6bbadcc705d49"
+        },
+        {
+          "file": "/tmp/doreumi-library-564-599/temporal-meshy-594.jpg",
+          "sha256": "d05d5b67ee7b66a9550fd28cfb5e0bd0e17a99eeefa5b4da94371b8686fe1755"
+        }
+      ]
+    },
+    {
+      "id": "meshy:595",
+      "clipSha256": "eab4298211c2d0f5937ce4fb0e200b44dea7828ff33308acab0e8a8d9edb3f7d",
+      "observation": "Cheerful high-knee bounce with arms lifting reads at128px; quarter playback and landing contacts remain.",
+      "review": "pending",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-564-599/motion-meshy-595.jpg",
+          "sha256": "b154d7a027dc915feb69f24dd27a0966cf607bdbbc9dea79e37b6e2fae3e39ea"
+        },
+        {
+          "file": "/tmp/doreumi-library-564-599/temporal-meshy-595.jpg",
+          "sha256": "35e5904abf9108be43c06ef35aabe706a8fda59aabcc855a7843c90db7134ac8"
+        }
+      ]
+    },
+    {
+      "id": "meshy:596",
+      "clipSha256": "05ab45db64a9495ba2be8b683607963f9762d879d7ea5e5904f5b6e852ec3757",
+      "observation": "Broad side bends with both arms raised and a forward bow are continuous at normal speed; actual support and quarter playback remain.",
+      "review": "pending",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-564-599/motion-meshy-596.jpg",
+          "sha256": "1ccc7ac58a77819a7e60cb4794198f2ce66af6a6edb080e51d06d014b42d924b"
+        },
+        {
+          "file": "/tmp/doreumi-library-564-599/temporal-meshy-596.jpg",
+          "sha256": "bdc96af41f38019f4c63fa5b79de03235dad80a24f3117afc5905d8490407ec4"
+        }
+      ]
+    },
+    {
+      "id": "meshy:597",
+      "clipSha256": "41113cd40e892a0dabc99a6037d74760fbcf8dc1dec629fbf25040c4ffc360b5",
+      "observation": "Alternating knee lifts and arm swings are readable; inspect foot support and stage travel before approval.",
+      "review": "pending",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-564-599/motion-meshy-597.jpg",
+          "sha256": "3ddcd9f23a7696f0d96e12ed7bc093fdb46963b61eded8a347337984d3c4fabb"
+        },
+        {
+          "file": "/tmp/doreumi-library-564-599/temporal-meshy-597.jpg",
+          "sha256": "e0c74bf3e8a7f74062b4ef739f79f2efc283c1a014f82f55b5a2e347720a8b5a"
+        }
+      ]
+    },
+    {
+      "id": "meshy:598",
+      "clipSha256": "db55c79c0aba9993089ccf4cb3c33a332d27540b6c071cbd8060a7bec303d20b",
+      "observation": "Kettlebell stays with both hands through forward bends, but its lowest pass approaches the floor; actual prop-floor and hand-contact measurements plus quarter playback remain.",
+      "review": "pending",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-564-599/motion-meshy-598.jpg",
+          "sha256": "9172a7383d2a78f74008e7ba443a9ad9c9ebda1994f539bccb719c6a426ad754"
+        },
+        {
+          "file": "/tmp/doreumi-library-564-599/temporal-meshy-598.jpg",
+          "sha256": "51b5ab059e53df94eeb77f75be3f2982e8e297de174f1f564f7f213fe9146e42"
+        }
+      ]
+    },
+    {
+      "id": "meshy:599",
+      "clipSha256": "2b9c881e53d14cc148a8402963fbc8634cd43885d5f4233810af5c9baa216dda",
+      "observation": "Subtle weight shifts and small alternating hand gestures read as a calm idle; quarter playback and planted-foot contact audit remain.",
+      "review": "pending",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-564-599/motion-meshy-599.jpg",
+          "sha256": "2a321bb30ee44aa4235f15105bd844653225a2860bb232d05475a26746a341d2"
+        },
+        {
+          "file": "/tmp/doreumi-library-564-599/temporal-meshy-599.jpg",
+          "sha256": "94f8119f9d8cfe7f55e97f2097b449c9533c135e89ea01db394ff51d37f5ad69"
+        }
+      ]
+    }
+  ]
+}

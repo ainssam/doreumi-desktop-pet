@@ -1,0 +1,101 @@
+'use client';
+
+import { useCallback, useEffect, useRef, useState } from 'react';
+import { chooseAmbientMotion, expressionForMotion, fetchMotionLibrary, type LibraryMotion } from '@/lib/doreumi/motion-library';
+import type { DoreumiExpression } from '@/lib/doreumi/motion-catalog';
+import type { DoreumiStageFrame } from '@/lib/doreumi/motion-travel';
+import { doreumiSeason } from '@/lib/doreumi/seasons';
+
+/** Every approved authored action takes part. Holds (Code/Read/Sit/Lie) vary their length. */
+const QUIET: { action: string; expression: DoreumiExpression; seconds: number | [number, number] }[] = [
+  { action: 'Code', expression: 'focused', seconds: [10, 18] },
+  { action: 'Read', expression: 'curious', seconds: [9, 16] },
+  { action: 'Sit', expression: 'smile', seconds: [7, 12] },
+  { action: 'Lie', expression: 'sleepy', seconds: [8, 14] },
+  { action: 'HeadTilt', expression: 'confused', seconds: 4 },
+  { action: 'Stretch', expression: 'yawning', seconds: 5 },
+  { action: 'Joy', expression: 'sparkly', seconds: 4 },
+  { action: 'Wave', expression: 'greeting_smile', seconds: 3.6 },
+  { action: 'Think', expression: 'skeptical', seconds: 6 },
+  { action: 'Cheer', expression: 'sparkly', seconds: 4 },
+  { action: 'Jump', expression: 'laugh', seconds: 2.8 },
+  { action: 'Showcase', expression: 'proud', seconds: 7.8 },
+  { action: 'Bow', expression: 'greeting_smile', seconds: 4 },
+  { action: 'Roll', expression: 'laugh', seconds: 4 },
+  { action: 'PeekLeft', expression: 'curious', seconds: 5 },
+  { action: 'PeekRight', expression: 'curious', seconds: 5 },
+];
+const SEASONAL: Partial<Record<ReturnType<typeof doreumiSeason>, { action: string; expression: DoreumiExpression; seconds: number }>> = {
+  seollal: { action: 'NewYearBow', expression: 'greeting_smile', seconds: 7 },
+  christmas: { action: 'Snowman', expression: 'laugh', seconds: 7 },
+};
+const between = (range: number | [number, number]) => Array.isArray(range) ? range[0] + Math.random() * (range[1] - range[0]) : range;
+/** Mostly short, irregular breaths between performances; now and then a longer pause. */
+function ambientGapMs(roll = Math.random(), jitter = Math.random()): number {
+  if (roll < .7) return 1200 + jitter * 2800;
+  if (roll < .95) return 4000 + jitter * 5000;
+  return 10000 + jitter * 6000;
+}
+const REST = { action: 'Idle', expression: 'neutral' as DoreumiExpression };
+
+/** Interrupting interaction cancels both the next performance and its expiry timer. */
+export function useDoreumiPersonality(enabled: boolean, canPlayMotion?: (motion: LibraryMotion) => boolean) {
+  const [pose, setPose] = useState(REST);
+  const library = useRef<LibraryMotion[]>([]), recent = useRef<string[]>([]);
+  const canPlay = useRef(canPlayMotion); canPlay.current = canPlayMotion;
+  const frameHandler = useRef<(frame: DoreumiStageFrame) => void>(() => {});
+  const onMotionFrame = useCallback((frame: DoreumiStageFrame) => frameHandler.current(frame), []);
+  useEffect(() => {
+    const controller = new AbortController();
+    let retry: ReturnType<typeof setTimeout> | undefined, attempts = 0;
+    const load = () => {
+      attempts++;
+      void fetchMotionLibrary(controller.signal).then(value => { library.current = value.motions; }).catch(() => {
+        if (!controller.signal.aborted && attempts < 4) retry = setTimeout(load, 5000 * 2 ** (attempts - 1));
+      });
+    };
+    load();
+    return () => { controller.abort(); clearTimeout(retry); };
+  }, []);
+  useEffect(() => {
+    const media = window.matchMedia('(prefers-reduced-motion: reduce)');
+    let next: ReturnType<typeof setTimeout> | undefined, end: ReturnType<typeof setTimeout> | undefined;
+    let performance: { action: string; seconds: number; started: boolean } | undefined;
+    let paused = false;
+    function cancel() { clearTimeout(next); clearTimeout(end); performance = undefined; setPose(REST); }
+    frameHandler.current = frame => {
+      if (frame.paused) { if (!paused) cancel(); paused = true; return; }
+      if (paused) { paused = false; schedule(); return; }
+      if (!performance) return;
+      if (document.hidden || media.matches) { cancel(); return; }
+      if (performance.started || frame.action !== performance.action || !Number.isFinite(frame.time)) return;
+      performance.started = true;
+      clearTimeout(end);
+      // Download and recovery time do not consume the performance itself.
+      end = setTimeout(schedule, Math.max(0, performance.seconds - Math.max(0, frame.time)) * 1000);
+    };
+    function schedule() {
+      cancel();
+      if (!enabled || paused || media.matches || document.hidden) return;
+      next = setTimeout(() => {
+        const imported = chooseAmbientMotion(library.current.filter(item => item.review === 'passed' && item.ambient && (canPlay.current?.(item) ?? true)), recent.current);
+        const seasonal = SEASONAL[doreumiSeason()];
+        const pool = seasonal ? [...QUIET, seasonal] : QUIET;
+        const local = pool.filter(item => !recent.current.includes(item.action));
+        const authored = local[Math.floor(Math.random() * local.length)] ?? pool.find(item => item.action !== recent.current.at(-1))!;
+        const item = imported && Math.random() < .6
+          ? { action: imported.id, expression: expressionForMotion(imported), seconds: imported.duration }
+          : { action: authored.action, expression: authored.expression, seconds: between(authored.seconds) };
+        recent.current = [...recent.current.slice(-9), item.action];
+        performance = { action: item.action, seconds: Math.max(1, item.seconds), started: false };
+        setPose({ action: item.action, expression: item.expression });
+        // A failed or stalled load must not leave the director stuck forever.
+        end = setTimeout(schedule, 30_000);
+      }, ambientGapMs());
+    }
+    schedule();
+    media.addEventListener('change', schedule); document.addEventListener('visibilitychange', schedule);
+    return () => { frameHandler.current = () => {}; clearTimeout(next); clearTimeout(end); media.removeEventListener('change', schedule); document.removeEventListener('visibilitychange', schedule); };
+  }, [enabled]);
+  return { ...(enabled ? pose : REST), onMotionFrame };
+}

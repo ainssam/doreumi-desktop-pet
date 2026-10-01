@@ -1,0 +1,490 @@
+{
+  "version": 1,
+  "checkedAt": "2026-09-24T04:49:26.284Z",
+  "masterSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+  "scope": "Runtime camera framing only. Imported clip bytes and approved registry values are unchanged by the camera fix.",
+  "finding": {
+    "priority": "P2",
+    "trigger": "Interrupt tracked501/508 flight at peak using Think or Dragged.",
+    "cause": "Current-action-only framing first ignored outgoing pose. After mixer-weight correction, the last outgoing tracking weight reached0 and camera center incorrectly resumed exponential lag. An actual173.6ms RAF consumed the entire140ms drag crossfade.",
+    "fixedTimestepGap": "The first2043 fixed120Hz skin frames passed while actual normal browser failed. That result was insufficient; both failed normal and passing quarter evidence are retained.",
+    "productionFix": "Snapshot the actions that actually contributed to the last mixer pose. Blend camera centers with their effective weights, retain the largest contributing envelope, and keep direct center tracking through the first untracked frame after fade completion."
+  },
+  "before": [
+    {
+      "directory": "/tmp/doreumi-camera-interrupt-normal",
+      "report": {
+        "file": "/tmp/doreumi-camera-interrupt-normal/report.json",
+        "sha256": "d02552e28739584e4a2a139217869b5b31405c9ab83a79dd42f8f8a18b0475fd"
+      },
+      "runtimeBundleSha256": "40853afc0e663a8fcb067d9bd993b1e96ce6c2fd5e6aaaf954ff1a5bfe1f574c",
+      "modelSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+      "clipHashes": {
+        "meshy:501": "f57dfa782e546fcb502c916a1310cbaf83ec7bb903f7925ee2136f8df321a22f",
+        "meshy:508": "0add9b3931372b7bfdbad074315e697632b03215ab68dfb5b1031aedc5dc5a32"
+      },
+      "playbackRate": 1,
+      "technicalPass": false,
+      "rootVisualReview": "Root viewed all four interruption sheets; normal clipped, quarter did not.",
+      "failures": [
+        "meshy:501 -> Think/6: clipped {\"min\":[-0.5497238281613795,-1.0588819128471032,-0.6278553611013277],\"max\":[0.4050111482265367,0.2650189926609835,-0.5730113602755371]}",
+        "meshy:501 -> Dragged/3: clipped {\"min\":[-0.6703695180685485,-1.8754319546120553,-0.627621019942104],\"max\":[0.6087075679596281,-0.36384194928254554,-0.572898394153135]}",
+        "meshy:501 -> Dragged/4: clipped {\"min\":[-0.6950876828032121,-1.4586004934984984,-0.6274616205939973],\"max\":[0.615004522854821,0.09860304891704141,-0.5724980192146187]}",
+        "meshy:501 -> Dragged/5: clipped {\"min\":[-0.7143825311394632,-1.172524071300562,-0.6272908992854824],\"max\":[0.6165953610481264,0.4190510893755258,-0.5720605093991774]}",
+        "meshy:501 -> Dragged/6: clipped {\"min\":[-0.7249379598474429,-1.0329002382758052,-0.6271701500472631],\"max\":[0.6161243115192424,0.5770711282216021,-0.5717373171942985]}",
+        "meshy:508 -> Dragged/3: clipped {\"min\":[-0.6672807449608633,-1.306109914883563,-0.627621019942104],\"max\":[0.6059029064771432,0.19851533678029656,-0.5728983941531349]}",
+        "meshy:508 -> Dragged/4: clipped {\"min\":[-0.6964025556663482,-1.0977669807894763,-0.6274383195937736],\"max\":[0.6138928169239839,0.4609930627127692,-0.5724369060391361]}"
+      ],
+      "visualEvidence": [
+        {
+          "file": "/tmp/doreumi-camera-interrupt-normal/camera-meshy-501-Think.jpg",
+          "sha256": "d8f8f2a05b9ef79640cf385195185844e5a6d12d5a7b33198804395d61bdac30"
+        },
+        {
+          "file": "/tmp/doreumi-camera-interrupt-normal/camera-meshy-501-Dragged.jpg",
+          "sha256": "def85fc717f7fcd0cbc433e2d01dc9754feb845b7e6c514cf513348da61aa6de"
+        },
+        {
+          "file": "/tmp/doreumi-camera-interrupt-normal/camera-meshy-508-Think.jpg",
+          "sha256": "2389360ac6c1260cb4e50a8e7f22ac71d74d71cdef0ec37f3921e8aa895b75f5"
+        },
+        {
+          "file": "/tmp/doreumi-camera-interrupt-normal/camera-meshy-508-Dragged.jpg",
+          "sha256": "466c5f46a7fd5248519a3ff76fc5df9e303502f141b09ba4f85ef278255f6530"
+        }
+      ]
+    },
+    {
+      "directory": "/tmp/doreumi-camera-interrupt-quarter",
+      "report": {
+        "file": "/tmp/doreumi-camera-interrupt-quarter/report.json",
+        "sha256": "640b7e2f7e52f8e760b1c7d4cfb53adc8a01c46e748f293c506e1b3e76df6415"
+      },
+      "runtimeBundleSha256": "40853afc0e663a8fcb067d9bd993b1e96ce6c2fd5e6aaaf954ff1a5bfe1f574c",
+      "modelSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+      "clipHashes": {
+        "meshy:501": "f57dfa782e546fcb502c916a1310cbaf83ec7bb903f7925ee2136f8df321a22f",
+        "meshy:508": "0add9b3931372b7bfdbad074315e697632b03215ab68dfb5b1031aedc5dc5a32"
+      },
+      "playbackRate": 0.25,
+      "technicalPass": true,
+      "rootVisualReview": "Root viewed all four interruption sheets; normal clipped, quarter did not.",
+      "failures": [],
+      "visualEvidence": [
+        {
+          "file": "/tmp/doreumi-camera-interrupt-quarter/camera-meshy-501-Think.jpg",
+          "sha256": "97eb1b4be0084cd9581cd4b15a1374e82660def81e13cf6481b32c50d728b338"
+        },
+        {
+          "file": "/tmp/doreumi-camera-interrupt-quarter/camera-meshy-501-Dragged.jpg",
+          "sha256": "b13189c83630a3109fed3e7cbc97f5aebbbe84213a1d3662cbb337134d51a085"
+        },
+        {
+          "file": "/tmp/doreumi-camera-interrupt-quarter/camera-meshy-508-Think.jpg",
+          "sha256": "2341c9c2447e4aec0c8f3e1f39ab89feab2f528813193492ecff23dd9e08cd39"
+        },
+        {
+          "file": "/tmp/doreumi-camera-interrupt-quarter/camera-meshy-508-Dragged.jpg",
+          "sha256": "887546a9538bcb20521db5f1ef49e5bc43fa11e14e2102f33b480289ed79a3a2"
+        }
+      ]
+    }
+  ],
+  "regression": {
+    "command": "node --import ./tests/register-alias.mjs --test tests/doreumi-camera.test.mjs",
+    "tests": 4,
+    "passed": 4,
+    "actualSkinFrames": 2331,
+    "worstOverflowModelUnits": 0,
+    "recordedDeltas": [
+      0.1736,
+      0.0624,
+      0.0627,
+      0.0556,
+      0.0624,
+      0.0626,
+      0.0554,
+      0.0626
+    ],
+    "additionalDeltaSeconds": [
+      0.008333333333333333,
+      0.05,
+      0.1,
+      0.25
+    ],
+    "playbackRates": [
+      1,
+      0.25
+    ],
+    "aspectRatios": [
+      0.5,
+      1,
+      2
+    ],
+    "includes": "Real serialized501/508 generator reconstruction, complete flight, Think/Dragged/other tracked interruption, repeated interruption, synchronous render0 and source/master actual skin."
+  },
+  "currentCode": [
+    {
+      "file": "src/lib/doreumi/motion-camera.ts",
+      "sha256": "e34348775f65ccdcf470f2ebd80c21fd5c8105b71a91016bae4b93afb79fcc0b"
+    },
+    {
+      "file": "src/lib/doreumi/motion.ts",
+      "sha256": "e5b2f1255e6e03c04e35190b2110e3e3058bf435006b92f7f87942e7c98faa77"
+    },
+    {
+      "file": "src/lib/doreumi/motion-runtime.ts",
+      "sha256": "c784e6bc3912f0a81b5023074b8e8ef0b16c0c783afc2f6994794210af913733"
+    },
+    {
+      "file": "scripts/doreumi/motion-qa.mjs",
+      "sha256": "64c5e9073b912ef312a9220d821488ec13a049da430b1beece7aad86cf30b63c"
+    },
+    {
+      "file": "tests/doreumi-camera.test.mjs",
+      "sha256": "199610a6024d3ce9e787ff363e6ddb76f90187e14fe886b50c771437e7d2a280"
+    }
+  ],
+  "after": {
+    "status": "passed-root-normal-and-quarter-browser",
+    "completedAt": "2026-09-24T04:50:12.984Z",
+    "results": [
+      {
+        "directory": "/tmp/doreumi-camera-interrupt-v2-normal",
+        "report": {
+          "file": "/tmp/doreumi-camera-interrupt-v2-normal/report.json",
+          "sha256": "87211d4f2693c618241dd75b34df12ffd8f6dcec24a6997c223b33d6392cac3d"
+        },
+        "runtimeBundleSha256": "686bdeb91df35aca84880d4a480cd8ccb5ef1eb7b9dfc623b8f0bacd2d306890",
+        "modelSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+        "registrySha256": "d2d53e5d35a9a83cc7592b60b12879cbe636eed8b4a3268aa591f57e070b0ee0",
+        "clipHashes": {
+          "meshy:501": "f57dfa782e546fcb502c916a1310cbaf83ec7bb903f7925ee2136f8df321a22f",
+          "meshy:508": "0add9b3931372b7bfdbad074315e697632b03215ab68dfb5b1031aedc5dc5a32"
+        },
+        "playbackRate": 1,
+        "technicalPass": true,
+        "rootVisualReview": "Root personally viewed all four sheets. Full body remains contained through the final outgoing weight reaching zero. No clipped feet or body.",
+        "transitions": [
+          {
+            "from": "meshy:501",
+            "to": "Think",
+            "frameCount": 15,
+            "minNormalizedY": -0.8404131146216641,
+            "maxNormalizedY": 0.747677250336281,
+            "sheet": {
+              "file": "/tmp/doreumi-camera-interrupt-v2-normal/camera-meshy-501-Think.jpg",
+              "sha256": "df0926d6d71bcaaa6b6c994428b77ad4e9fcb96d33a8977f3fd9f6927d49650d"
+            }
+          },
+          {
+            "from": "meshy:501",
+            "to": "Dragged",
+            "frameCount": 15,
+            "minNormalizedY": -0.8411142385316175,
+            "maxNormalizedY": 0.7920061821322295,
+            "sheet": {
+              "file": "/tmp/doreumi-camera-interrupt-v2-normal/camera-meshy-501-Dragged.jpg",
+              "sha256": "377e8506d875b9ded97377aaedcf6d1bc92eb246a47476cf47a7f57ec0c923cc"
+            }
+          },
+          {
+            "from": "meshy:508",
+            "to": "Think",
+            "frameCount": 15,
+            "minNormalizedY": -0.8400175542894492,
+            "maxNormalizedY": 0.7473338024995081,
+            "sheet": {
+              "file": "/tmp/doreumi-camera-interrupt-v2-normal/camera-meshy-508-Think.jpg",
+              "sha256": "5b0d9ada6dc8c2addad5cbb0f10de339fb2f97d87ee89efa0739093ab16b2e11"
+            }
+          },
+          {
+            "from": "meshy:508",
+            "to": "Dragged",
+            "frameCount": 15,
+            "minNormalizedY": -0.8411077300081429,
+            "maxNormalizedY": 0.791957152757931,
+            "sheet": {
+              "file": "/tmp/doreumi-camera-interrupt-v2-normal/camera-meshy-508-Dragged.jpg",
+              "sha256": "df741743be63215bef152b6bbb025b05f36ae7796e30bb2807258fe9103758ff"
+            }
+          }
+        ]
+      },
+      {
+        "directory": "/tmp/doreumi-camera-interrupt-v2-quarter",
+        "report": {
+          "file": "/tmp/doreumi-camera-interrupt-v2-quarter/report.json",
+          "sha256": "c0aa610904eb3a4d30c53925f20aa841e29242572173cf4d35928a1017964e69"
+        },
+        "runtimeBundleSha256": "686bdeb91df35aca84880d4a480cd8ccb5ef1eb7b9dfc623b8f0bacd2d306890",
+        "modelSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+        "registrySha256": "d2d53e5d35a9a83cc7592b60b12879cbe636eed8b4a3268aa591f57e070b0ee0",
+        "clipHashes": {
+          "meshy:501": "f57dfa782e546fcb502c916a1310cbaf83ec7bb903f7925ee2136f8df321a22f",
+          "meshy:508": "0add9b3931372b7bfdbad074315e697632b03215ab68dfb5b1031aedc5dc5a32"
+        },
+        "playbackRate": 0.25,
+        "technicalPass": true,
+        "rootVisualReview": "Root personally viewed all four sheets. Full body remains contained through the final outgoing weight reaching zero. No clipped feet or body.",
+        "transitions": [
+          {
+            "from": "meshy:501",
+            "to": "Think",
+            "frameCount": 52,
+            "minNormalizedY": -0.8411642055941106,
+            "maxNormalizedY": 0.7483780304500242,
+            "sheet": {
+              "file": "/tmp/doreumi-camera-interrupt-v2-quarter/camera-meshy-501-Think.jpg",
+              "sha256": "452dc7cba61c92e3328f2768225c2f6c5a1e194f866fa05d46429e809b419674"
+            }
+          },
+          {
+            "from": "meshy:501",
+            "to": "Dragged",
+            "frameCount": 52,
+            "minNormalizedY": -0.8411924601846992,
+            "maxNormalizedY": 0.7934511819933083,
+            "sheet": {
+              "file": "/tmp/doreumi-camera-interrupt-v2-quarter/camera-meshy-501-Dragged.jpg",
+              "sha256": "6bb8042816ce2c1f73f8d6acd6f986e1418276d7e2c847fdcc75381f7f482c7d"
+            }
+          },
+          {
+            "from": "meshy:508",
+            "to": "Think",
+            "frameCount": 52,
+            "minNormalizedY": -0.8411642056677784,
+            "maxNormalizedY": 0.7483779427255514,
+            "sheet": {
+              "file": "/tmp/doreumi-camera-interrupt-v2-quarter/camera-meshy-508-Think.jpg",
+              "sha256": "5ab8c672aa0701336fbbaa73f8d3c2b1ffd98a3b9f7e1af3d0e420da6cb67185"
+            }
+          },
+          {
+            "from": "meshy:508",
+            "to": "Dragged",
+            "frameCount": 52,
+            "minNormalizedY": -0.8411954571579559,
+            "maxNormalizedY": 0.7934508260473317,
+            "sheet": {
+              "file": "/tmp/doreumi-camera-interrupt-v2-quarter/camera-meshy-508-Dragged.jpg",
+              "sha256": "7f27a8a6fb7cf7f19ac243c400bc8a58aad46391a02cf2545df65627d40b06da"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "validation": {
+    "cameraTests": "4/4 passed,2331 actual-skin frames including recorded failure deltas",
+    "relatedTests": "23/23 passed including actual donor reproduction22/23/24/67",
+    "typescript": "tsc --noEmit --incremental false passed",
+    "eslint": "motion-camera.ts,motion-runtime.ts,motion.ts passed"
+  },
+  "zoomRecoveryV3": {
+    "problem": "The last outgoing wide frame remained at full size until its weight reached zero, then a .1-second camera shrink caused29.57% apparent expansion on a173.6msRAF.",
+    "resolution": {
+      "status": "passed-root-browser-and-independent-code",
+      "before": ".artifacts/doreumi-contact-audit/airborne-502/camera-exit-before.json",
+      "after": ".artifacts/doreumi-contact-audit/airborne-502/camera-exit-after.json",
+      "priorMaxSizeStep": {
+        "at60Hz": 0.04442033045480254,
+        "at173ms": 0.29570768766599365
+      },
+      "currentMaxSizeStep": {
+        "at60Hz": 0.010050167084168171,
+        "at173ms": 0.020201340026756
+      },
+      "policy": "Keep safe expansion and tracked centers. Limit shrinking apparent scale in log space, including a visual step bound after slow RAF. Capture at least two real seconds after stable Idle.",
+      "captures": [
+        {
+          "report": "/tmp/doreumi-camera-exit-v3-502-1/report.json",
+          "reportSha256": "e09427725aa5e13a9be007aa37e6f4b2857ae3988ebad63eb0bfc83117903e34",
+          "runtimeBundleSha256": "676fbe53c073dbc7ef9d71ee10f12dfb4a8ced9d0da0fb171d522582c6ed89c3",
+          "modelSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+          "clipHashes": {
+            "meshy:502": "c1a29fe35a74c0e51b563c5d16accfb4102d20b956925451347ccfdaea7b4ba0"
+          },
+          "playbackRate": 1,
+          "technicalPass": true,
+          "playbackCoverage": [
+            {
+              "firstTime": 0,
+              "lastTime": 2.486099999999997,
+              "duration": 2.7286686089494943,
+              "tolerance": 0.35,
+              "observedFrames": 10,
+              "monotonic": true,
+              "finalAction": "Idle",
+              "finalActiveActions": 1,
+              "stableIdleAt": 3.3518999999985097,
+              "settledIdleSeconds": 2.2288999999985104
+            }
+          ],
+          "transitions": [],
+          "images": [
+            {
+              "path": "/tmp/doreumi-camera-exit-v3-502-1/playback-meshy-502.jpg",
+              "sha256": "3768d7b9a18feaab9b86f6edc4afed0f76f6f160c5a3e0a9435285744f25b936"
+            }
+          ]
+        },
+        {
+          "report": "/tmp/doreumi-camera-exit-v3-502-0.25/report.json",
+          "reportSha256": "93a0ba934181abcd3c2aa380b8a4ff974f1c919f349669bbfb5cd97f98a13dfb",
+          "runtimeBundleSha256": "e3f0d2f08e72c5ae7af717f54db6b4e32db9fc1649d1e3a4a32e5c306e3a1d5a",
+          "modelSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+          "clipHashes": {
+            "meshy:502": "c1a29fe35a74c0e51b563c5d16accfb4102d20b956925451347ccfdaea7b4ba0"
+          },
+          "playbackRate": 0.25,
+          "technicalPass": true,
+          "playbackCoverage": [
+            {
+              "firstTime": 0,
+              "lastTime": 2.5452000000000004,
+              "duration": 2.7286686089494943,
+              "tolerance": 0.35,
+              "observedFrames": 11,
+              "monotonic": true,
+              "finalAction": "Idle",
+              "finalActiveActions": 1,
+              "stableIdleAt": 13.248,
+              "settledIdleSeconds": 2.156400000005961
+            }
+          ],
+          "transitions": [],
+          "images": [
+            {
+              "path": "/tmp/doreumi-camera-exit-v3-502-0.25/playback-meshy-502.jpg",
+              "sha256": "1c3a0dde5ec4029a6cbf0b527244c18bcf523c4cb511b95b2c51e028af0cdc04"
+            }
+          ]
+        },
+        {
+          "report": "/tmp/doreumi-camera-interrupt-v3-1/report.json",
+          "reportSha256": "75697183423ee175575d5e537fd85f45215ab3786c01a687224ee00b40d9a462",
+          "runtimeBundleSha256": "e3f0d2f08e72c5ae7af717f54db6b4e32db9fc1649d1e3a4a32e5c306e3a1d5a",
+          "modelSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+          "clipHashes": {
+            "meshy:501": "f57dfa782e546fcb502c916a1310cbaf83ec7bb903f7925ee2136f8df321a22f",
+            "meshy:508": "0add9b3931372b7bfdbad074315e697632b03215ab68dfb5b1031aedc5dc5a32"
+          },
+          "playbackRate": 1,
+          "technicalPass": true,
+          "playbackCoverage": [],
+          "transitions": [
+            {
+              "from": "meshy:501",
+              "to": "Think",
+              "frames": 16
+            },
+            {
+              "from": "meshy:501",
+              "to": "Dragged",
+              "frames": 16
+            },
+            {
+              "from": "meshy:508",
+              "to": "Think",
+              "frames": 16
+            },
+            {
+              "from": "meshy:508",
+              "to": "Dragged",
+              "frames": 16
+            }
+          ],
+          "images": [
+            {
+              "path": "/tmp/doreumi-camera-interrupt-v3-1/camera-meshy-501-Think.jpg",
+              "sha256": "c6625f1f9aacecce36ab6dce5c1028633418daf6bbc9ac94f832ee7f064b212f"
+            },
+            {
+              "path": "/tmp/doreumi-camera-interrupt-v3-1/camera-meshy-501-Dragged.jpg",
+              "sha256": "7f904c935de098f89214e8daeca535155693ddd62153d4ee5a8d7257a4ef3d73"
+            },
+            {
+              "path": "/tmp/doreumi-camera-interrupt-v3-1/camera-meshy-508-Think.jpg",
+              "sha256": "5ed5838e3f7da4932e78035e6658a6857c7bb23e503c648c2af3f9c26fcc393f"
+            },
+            {
+              "path": "/tmp/doreumi-camera-interrupt-v3-1/camera-meshy-508-Dragged.jpg",
+              "sha256": "28c1a409d55610d050910475ca48010a897ac17c4c3f01325088d879b1f6abf8"
+            }
+          ]
+        },
+        {
+          "report": "/tmp/doreumi-camera-interrupt-v3-0.25/report.json",
+          "reportSha256": "4522c7a78d2bc64bd7947630934e4dddbad21b0716d32c462b64705d11b3c085",
+          "runtimeBundleSha256": "e3f0d2f08e72c5ae7af717f54db6b4e32db9fc1649d1e3a4a32e5c306e3a1d5a",
+          "modelSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+          "clipHashes": {
+            "meshy:501": "f57dfa782e546fcb502c916a1310cbaf83ec7bb903f7925ee2136f8df321a22f",
+            "meshy:508": "0add9b3931372b7bfdbad074315e697632b03215ab68dfb5b1031aedc5dc5a32"
+          },
+          "playbackRate": 0.25,
+          "technicalPass": true,
+          "playbackCoverage": [],
+          "transitions": [
+            {
+              "from": "meshy:501",
+              "to": "Think",
+              "frames": 54
+            },
+            {
+              "from": "meshy:501",
+              "to": "Dragged",
+              "frames": 54
+            },
+            {
+              "from": "meshy:508",
+              "to": "Think",
+              "frames": 54
+            },
+            {
+              "from": "meshy:508",
+              "to": "Dragged",
+              "frames": 54
+            }
+          ],
+          "images": [
+            {
+              "path": "/tmp/doreumi-camera-interrupt-v3-0.25/camera-meshy-501-Think.jpg",
+              "sha256": "dfda1ad6768106b83e6dd2505938ac027d705cf71de2c3f809a23e9dabb858da"
+            },
+            {
+              "path": "/tmp/doreumi-camera-interrupt-v3-0.25/camera-meshy-501-Dragged.jpg",
+              "sha256": "fdf9ac2ddc83beeeee9de6338ea663c52846e2f36745a6421b3dd479663d8928"
+            },
+            {
+              "path": "/tmp/doreumi-camera-interrupt-v3-0.25/camera-meshy-508-Think.jpg",
+              "sha256": "941a84cd274bb5fd428e19c2b41aa8a241a666162b5955f936f6aae822781231"
+            },
+            {
+              "path": "/tmp/doreumi-camera-interrupt-v3-0.25/camera-meshy-508-Dragged.jpg",
+              "sha256": "03029d4ba4ffae1672d5afdae7d6eecd74ae10b45382c6e85838935face4bff6"
+            }
+          ]
+        }
+      ],
+      "independentReview": "code_review independently ran camera, playback capture and contact-audit regression tests; root confirmed ten camera-v3 sheets."
+    },
+    "implementationSha256": "54bb6bc2f7b709b60e02b828ebed88a3166d17add3626f60c2dd4e3110f56b37",
+    "qaSha256": "8eab862f6fd3d0ad0ca2daabc91cf5e8c6100a0bd3c6ca640050943f1c005338",
+    "tests": {
+      "command": "node --import ./tests/register-alias.mjs --test tests/doreumi-camera.test.mjs tests/doreumi-airborne-fall.test.mjs tests/doreumi-contact-audit.test.mjs",
+      "passed": 12,
+      "airborneSkinFrames": 1331,
+      "trackedInterruptSkinFrames": 2331,
+      "worstOverflow": 0,
+      "maximumExitScaleStep": 0.020201340026756
+    },
+    "playbackCaptureTests": {
+      "command": "node --test tests/doreumi-playback-capture.test.mjs",
+      "passed": 5
+    }
+  }
+}

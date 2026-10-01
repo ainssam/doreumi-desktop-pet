@@ -1,0 +1,242 @@
+{
+  "checkedAt": "2026-09-24T05:35:46.316Z",
+  "review": "passed",
+  "masterSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+  "scope": "Root visual review bound to exact production donor/master replay. Complete source-planted denominator and all-joint 60Hz shipping audits retained.",
+  "visualEvidence": {
+    "file": "docs/doreumi/visual-late-geometric-candidate.json",
+    "sha256": "201e3669459a4342b56ce0c515235626673cd866f6e972e7eb56f48d0479c4aa"
+  },
+  "motions": [
+    {
+      "id": "meshy:591",
+      "clipSha256": "202bdef36139b8f9601ef130fdb9859eb8550e3aa5d2baf1f99b6dd9675b34b5",
+      "sourceSha256": "10426e558cf7d8325783b7a9f617188065c0cf579b1a33abebb056ad86b8f3c5",
+      "metadataSha256": "418e2de17956d19c51caced25152dfd6a253ef36daf0915ff180c1290de1ea30",
+      "contactPlan": {
+        "version": 1,
+        "planSha256": "4a9ed1690e073f9ad8cbda46c9ef5952ac36142b1a68a78344b0d4ea1d568452",
+        "reproducedClipSha256": "202bdef36139b8f9601ef130fdb9859eb8550e3aa5d2baf1f99b6dd9675b34b5"
+      },
+      "contact": {
+        "actionId": 591,
+        "sourceActionId": 591,
+        "derivation": null,
+        "sourceName": "Hip_Hop_Dance",
+        "sourceSha256": "10426e558cf7d8325783b7a9f617188065c0cf579b1a33abebb056ad86b8f3c5",
+        "clipSha256": "202bdef36139b8f9601ef130fdb9859eb8550e3aa5d2baf1f99b6dd9675b34b5",
+        "sourceTimeScale": 1,
+        "sourceSamplingHz": 30,
+        "targetSamplingHz": 30,
+        "targetDriftBasis": "equivalent-30Hz-displacement-by-height",
+        "sourceFloor": 0.042918986278195285,
+        "sourcePlantedPairs": 211,
+        "missingTargetContactPairs": 0,
+        "excessiveDriftPairs": 0,
+        "sourceMovingContactPairs": 35,
+        "pivotCompatiblePairs": 0,
+        "maxDriftByHeight": 0.0013067833728077876,
+        "failures": []
+      },
+      "joints": {
+        "largestIntroducedLocal": {
+          "bone": "thighR",
+          "from": 4.75,
+          "time": 4.766666666666667,
+          "sourceTime": 4.033333333333333,
+          "targetLocalDegrees": 4.243593132520424,
+          "targetWorldDegrees": 3.3066202444966706,
+          "sourceLocalDegrees": 0.5933488886719333,
+          "sourceWorldDegrees": 1.6822668249767974,
+          "jointDistance": 0.011585004164728093
+        },
+        "largestIntroducedWorld": {
+          "bone": "kneeL",
+          "from": 2.6,
+          "time": 2.6166666666666667,
+          "sourceTime": 1.8833333333333333,
+          "targetLocalDegrees": 2.1286483251150705,
+          "targetWorldDegrees": 3.1085633466580163,
+          "sourceLocalDegrees": 0.4114245341372123,
+          "sourceWorldDegrees": 1.1691190055953067,
+          "jointDistance": 0.005015025205328561
+        }
+      }
+    },
+    {
+      "id": "meshy:592",
+      "clipSha256": "5271ab939a368a02c60defe06e935c5a362778efc768fb132af90159bd829b39",
+      "sourceSha256": "10426e558cf7d8325783b7a9f617188065c0cf579b1a33abebb056ad86b8f3c5",
+      "metadataSha256": "f14a08aa4b591a9aa49e989210a4c817994a9e251d48f39697098df07696c04d",
+      "contactPlan": {
+        "version": 1,
+        "planSha256": "ba62b9391a4e1a4c2fd1c1fb90cf8a60f43db873b6b72225837a71de317e23f4",
+        "reproducedClipSha256": "5271ab939a368a02c60defe06e935c5a362778efc768fb132af90159bd829b39"
+      },
+      "contact": {
+        "actionId": 592,
+        "sourceActionId": 592,
+        "derivation": null,
+        "sourceName": "Hip_Hop_Dance_1",
+        "sourceSha256": "10426e558cf7d8325783b7a9f617188065c0cf579b1a33abebb056ad86b8f3c5",
+        "clipSha256": "5271ab939a368a02c60defe06e935c5a362778efc768fb132af90159bd829b39",
+        "sourceTimeScale": 1,
+        "sourceSamplingHz": 30,
+        "targetSamplingHz": 30,
+        "targetDriftBasis": "equivalent-30Hz-displacement-by-height",
+        "sourceFloor": 0.01035090811731007,
+        "sourcePlantedPairs": 170,
+        "missingTargetContactPairs": 0,
+        "excessiveDriftPairs": 0,
+        "sourceMovingContactPairs": 32,
+        "pivotCompatiblePairs": 1,
+        "maxDriftByHeight": 0.0009271202932827714,
+        "failures": []
+      },
+      "joints": {
+        "largestIntroducedLocal": {
+          "bone": "torso",
+          "from": 0.8,
+          "time": 0.8166666666666667,
+          "sourceTime": 0.1166666666666667,
+          "targetLocalDegrees": 5.046634033782634,
+          "targetWorldDegrees": 1.6219527506750024,
+          "sourceLocalDegrees": 0.08494075816654771,
+          "sourceWorldDegrees": 1.62103831875117,
+          "jointDistance": 0.013944669604822013
+        },
+        "largestIntroducedWorld": {
+          "bone": "kneeL",
+          "from": 1.6,
+          "time": 1.6166666666666667,
+          "sourceTime": 0.9166666666666667,
+          "targetLocalDegrees": 2.184213601710417,
+          "targetWorldDegrees": 5.240912479120997,
+          "sourceLocalDegrees": 0.3698618046504075,
+          "sourceWorldDegrees": 2.2170866521608406,
+          "jointDistance": 0.011610271284014628
+        }
+      }
+    },
+    {
+      "id": "meshy:596",
+      "clipSha256": "7488f6c7de80c9c29680b54af98ba5c27bdabb6e4f331f1f5ad004c8c0993c92",
+      "sourceSha256": "3e4afa754ace02380e013a94f24320ff6f937a7ae54e5a1af82a2d0d6a493fa8",
+      "metadataSha256": "3fd821402344686af0521d263b90fee59af6839b79f26b9022374e00c6d731b6",
+      "contactPlan": {
+        "version": 1,
+        "planSha256": "f517bbc52b0942e789f1f566dca781189255ad0cd71c28560bd50aa9ae969a81",
+        "reproducedClipSha256": "7488f6c7de80c9c29680b54af98ba5c27bdabb6e4f331f1f5ad004c8c0993c92"
+      },
+      "contact": {
+        "actionId": 596,
+        "sourceActionId": 596,
+        "derivation": null,
+        "sourceName": "ymca_dance",
+        "sourceSha256": "3e4afa754ace02380e013a94f24320ff6f937a7ae54e5a1af82a2d0d6a493fa8",
+        "clipSha256": "7488f6c7de80c9c29680b54af98ba5c27bdabb6e4f331f1f5ad004c8c0993c92",
+        "sourceTimeScale": 1,
+        "sourceSamplingHz": 30,
+        "targetSamplingHz": 30,
+        "targetDriftBasis": "equivalent-30Hz-displacement-by-height",
+        "sourceFloor": 0.017348089590987534,
+        "sourcePlantedPairs": 232,
+        "missingTargetContactPairs": 0,
+        "excessiveDriftPairs": 0,
+        "sourceMovingContactPairs": 36,
+        "pivotCompatiblePairs": 0,
+        "maxDriftByHeight": 0.0010472184143373792,
+        "failures": []
+      },
+      "joints": {
+        "largestIntroducedLocal": {
+          "bone": "kneeR",
+          "from": 2.15,
+          "time": 2.1666666666666665,
+          "sourceTime": 1.4666666666666666,
+          "targetLocalDegrees": 4.10535707162918,
+          "targetWorldDegrees": 2.7432998441853833,
+          "sourceLocalDegrees": 0.08686019280840596,
+          "sourceWorldDegrees": 2.291830429570354,
+          "jointDistance": 0.006447433783167312
+        },
+        "largestIntroducedWorld": {
+          "bone": "thighL",
+          "from": 2.066666666666667,
+          "time": 2.0833333333333335,
+          "sourceTime": 1.3833333333333335,
+          "targetLocalDegrees": 5.153391472984123,
+          "targetWorldDegrees": 4.660116596206778,
+          "sourceLocalDegrees": 2.2507634405240227,
+          "sourceWorldDegrees": 1.6656645409332158,
+          "jointDistance": 0.008610840039788688
+        }
+      }
+    },
+    {
+      "id": "meshy:599",
+      "clipSha256": "24a4dbda2afe45e858a896d3318191c0fe390277a4d3a5d518f112df8aec1120",
+      "sourceSha256": "85a6ea80f39e894e31c660cb27b05caf9d28367f992c9b2feaaa2b20ca19cc2c",
+      "metadataSha256": "cc377a76ce62312fa6038c4f0dfd7a8ae0486b1ad31bd49f7cfe6ef8705e5033",
+      "contactPlan": {
+        "version": 1,
+        "planSha256": "c9445b087763cf0fc4b3c73e80415737ced2263bbbab12b1096e3d3c0a7a981a",
+        "reproducedClipSha256": "24a4dbda2afe45e858a896d3318191c0fe390277a4d3a5d518f112df8aec1120"
+      },
+      "contact": {
+        "actionId": 599,
+        "sourceActionId": 599,
+        "derivation": null,
+        "sourceName": "Idle_15",
+        "sourceSha256": "85a6ea80f39e894e31c660cb27b05caf9d28367f992c9b2feaaa2b20ca19cc2c",
+        "clipSha256": "24a4dbda2afe45e858a896d3318191c0fe390277a4d3a5d518f112df8aec1120",
+        "sourceTimeScale": 1,
+        "sourceSamplingHz": 30,
+        "targetSamplingHz": 30,
+        "targetDriftBasis": "equivalent-30Hz-displacement-by-height",
+        "sourceFloor": 0.00431947768678364,
+        "sourcePlantedPairs": 422,
+        "missingTargetContactPairs": 0,
+        "excessiveDriftPairs": 0,
+        "sourceMovingContactPairs": 0,
+        "pivotCompatiblePairs": 0,
+        "maxDriftByHeight": 0.0009762778824371862,
+        "failures": []
+      },
+      "joints": {
+        "largestIntroducedLocal": {
+          "bone": "kneeR",
+          "from": 1.9166666666666667,
+          "time": 1.9333333333333333,
+          "sourceTime": 1.2333333333333334,
+          "targetLocalDegrees": 1.9978972848284295,
+          "targetWorldDegrees": 1.1824813115157955,
+          "sourceLocalDegrees": 0.05303755453351182,
+          "sourceWorldDegrees": 0.23988399988586612,
+          "jointDistance": 0.003429385995090722
+        },
+        "largestIntroducedWorld": {
+          "bone": "kneeR",
+          "from": 1.9333333333333333,
+          "time": 1.95,
+          "sourceTime": 1.25,
+          "targetLocalDegrees": 1.9976090889082485,
+          "targetWorldDegrees": 1.1810184411487836,
+          "sourceLocalDegrees": 0.11967230749826212,
+          "sourceWorldDegrees": 0.19132708827695977,
+          "jointDistance": 0.003408041597391399
+        }
+      }
+    }
+  ],
+  "artifacts": [
+    {
+      "file": ".artifacts/doreumi-contact-audit/promotion-late4/contact.json",
+      "sha256": "4e2c961574bd68b3ad11abdbba410a41bce1bfc1d5efa55a272a8ce4e3cc0c79"
+    },
+    {
+      "file": ".artifacts/doreumi-contact-audit/promotion-late4/joints.json",
+      "sha256": "01727130025e347bfc6a2eda59f6b9d939f662855935cef923c4071f0f9ab3ce"
+    }
+  ]
+}

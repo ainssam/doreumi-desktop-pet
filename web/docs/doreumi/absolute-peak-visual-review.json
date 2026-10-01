@@ -1,0 +1,269 @@
+{
+  "checkedAt": "2026-09-24T04:12:31.683140+00:00",
+  "scope": "Eight exact peak windows,13 consecutive60Hz poses atfront/45/side. Root individually inspected every sheet, plus three full-resolution adjacent452 peak images. Prior normal/quarter whole-motion evidence remains required.",
+  "method": "Source-inclusive absolute angular peaks triggered review even when retarget delta was low. Round short paws rotate quickly as arms lift without separated skin. Actual Three skin duplicate-position groups have zero separation across all13frames for each inspected clip.",
+  "items": [
+    {
+      "id": "meshy:452",
+      "clipSha256": "79e024d38ca4e45af2ea635cc39389efd320d55b8d96ef865df6b88f5ecaaa24",
+      "fractions": [
+        0.29729728835732644,
+        0.3018017927263769,
+        0.3063062970954273,
+        0.31081080146447765,
+        0.31531530583352807,
+        0.3198198102025785,
+        0.32432431457162886,
+        0.3288288189406793,
+        0.3333333233097297,
+        0.33783782767878007,
+        0.3423423320478305,
+        0.34684683641688085,
+        0.35135134078593133
+      ],
+      "angles": [
+        0,
+        45,
+        90
+      ],
+      "file": "/tmp/doreumi-absolute-focus-452/motion-meshy-452.jpg",
+      "sha256": "60d155eafac93ba3540466ed5ecc27f86fa90d0d84c4fc1146ec01bb677114b4",
+      "observation": "Rapid wrist/arm reorientation remains connected to the larger gesture; no discontinuous skin silhouette in individually inspected60Hz sequence."
+    },
+    {
+      "id": "meshy:601",
+      "clipSha256": "b2954026c33be3cfc4ea98dfd43b6cab5fa47aa6304665f3d86aff8671e4045f",
+      "fractions": [
+        0.29729728835732644,
+        0.3018017927263769,
+        0.3063062970954273,
+        0.31081080146447765,
+        0.31531530583352807,
+        0.3198198102025785,
+        0.32432431457162886,
+        0.3288288189406793,
+        0.3333333233097297,
+        0.33783782767878007,
+        0.3423423320478305,
+        0.34684683641688085,
+        0.35135134078593133
+      ],
+      "angles": [
+        0,
+        45,
+        90
+      ],
+      "file": "/tmp/doreumi-absolute-focus-601/motion-meshy-601.jpg",
+      "sha256": "60d155eafac93ba3540466ed5ecc27f86fa90d0d84c4fc1146ec01bb677114b4",
+      "observation": "Rapid wrist/arm reorientation remains connected to the larger gesture; no discontinuous skin silhouette in individually inspected60Hz sequence."
+    },
+    {
+      "id": "meshy:298",
+      "clipSha256": "eba0bc33a84a33c2eec49767f9835d3b916f058abbc03bd6b88d8a0f48ca650a",
+      "fractions": [
+        0.31730769448996293,
+        0.32211538683072,
+        0.32692307917147695,
+        0.33173077151223396,
+        0.33653846385299097,
+        0.34134615619374803,
+        0.34615384853450504,
+        0.35096154087526205,
+        0.3557692332160191,
+        0.36057692555677606,
+        0.36538461789753307,
+        0.3701923102382901,
+        0.37500000257904714
+      ],
+      "angles": [
+        0,
+        45,
+        90
+      ],
+      "file": "/tmp/doreumi-absolute-focus-298/motion-meshy-298.jpg",
+      "sha256": "1bf1e0106eb0a0a145636d282f282af3f38e823ee75bbccaca01846840877f4f",
+      "observation": "Rapid wrist/arm reorientation remains connected to the larger gesture; no discontinuous skin silhouette in individually inspected60Hz sequence."
+    },
+    {
+      "id": "meshy:403",
+      "clipSha256": "2b140f5812e47496ba0279e89968873482d9289f48c3f0258bffb4ac8bafdbc9",
+      "fractions": [
+        0.32795699262112,
+        0.33333333676227356,
+        0.3387096809034271,
+        0.3440860250445807,
+        0.3494623691857342,
+        0.3548387133268878,
+        0.3602150574680414,
+        0.3655914016091949,
+        0.3709677457503485,
+        0.3763440898915021,
+        0.3817204340326556,
+        0.38709677817380916,
+        0.3924731223149628
+      ],
+      "angles": [
+        0,
+        45,
+        90
+      ],
+      "file": "/tmp/doreumi-absolute-focus-403/motion-meshy-403.jpg",
+      "sha256": "40aa222b441f6c091ad662ec30c236bc2bdb53ffa3debd50d5ece3aaee69aee6",
+      "observation": "Rapid wrist/arm reorientation remains connected to the larger gesture; no discontinuous skin silhouette in individually inspected60Hz sequence."
+    },
+    {
+      "id": "meshy:461",
+      "clipSha256": "c44de1442c7f94c337e0d8c10d37830357bb16b796135066e99056d12f06610d",
+      "fractions": [
+        0.32113821388017294,
+        0.32520325456209753,
+        0.3292682952440221,
+        0.3333333359259467,
+        0.3373983766078713,
+        0.3414634172897959,
+        0.3455284579717205,
+        0.3495934986536451,
+        0.3536585393355697,
+        0.35772358001749427,
+        0.36178862069941886,
+        0.36585366138134345,
+        0.36991870206326805
+      ],
+      "angles": [
+        0,
+        45,
+        90
+      ],
+      "file": "/tmp/doreumi-absolute-focus-461/motion-meshy-461.jpg",
+      "sha256": "41d6f402d593d6415bff774e1b7ffc982acb67d8e877bfaeb10064da4803398d",
+      "observation": "Rapid wrist/arm reorientation remains connected to the larger gesture; no discontinuous skin silhouette in individually inspected60Hz sequence."
+    },
+    {
+      "id": "meshy:388",
+      "clipSha256": "6332ed94b57c807bee066455ef445bc695ebe59275bcb407bbdc3ec4f5fbcfbe",
+      "fractions": [
+        0.3701923102286747,
+        0.3750000025694318,
+        0.37980769491018873,
+        0.38461538725094574,
+        0.38942307959170275,
+        0.3942307719324598,
+        0.3990384642732168,
+        0.40384615661397383,
+        0.40865384895473084,
+        0.41346154129548784,
+        0.41826923363624485,
+        0.42307692597700186,
+        0.4278846183177589
+      ],
+      "angles": [
+        0,
+        45,
+        90
+      ],
+      "file": "/tmp/doreumi-absolute-focus-388/motion-meshy-388.jpg",
+      "sha256": "b1787092f9924899da678dbb5125ecba8bb2193099c32d347e864b0bea1f43c0",
+      "observation": "Rapid wrist/arm reorientation remains connected to the larger gesture; no discontinuous skin silhouette in individually inspected60Hz sequence."
+    },
+    {
+      "id": "meshy:295",
+      "clipSha256": "d81e02e4e5aa901b43bbc392c5c4e7387a9f15e5a6e5e1f1afd62aa331122244",
+      "fractions": [
+        0.4020978980824779,
+        0.4055944015440039,
+        0.40909090500552986,
+        0.41258740846705577,
+        0.41608391192858174,
+        0.4195804153901077,
+        0.4230769188516337,
+        0.4265734223131596,
+        0.43006992577468556,
+        0.43356642923621147,
+        0.43706293269773755,
+        0.44055943615926346,
+        0.44405593962078943
+      ],
+      "angles": [
+        0,
+        45,
+        90
+      ],
+      "file": "/tmp/doreumi-absolute-focus-295/motion-meshy-295.jpg",
+      "sha256": "36cafb42f92e85a1c1b3fab10b319961efcded016863759ef3c2318c6985761b",
+      "observation": "Rapid wrist/arm reorientation remains connected to the larger gesture; no discontinuous skin silhouette in individually inspected60Hz sequence."
+    },
+    {
+      "id": "meshy:460",
+      "clipSha256": "9501cb4e30f1daf24109cf4a0bdb567b1d36219d26a640a2b3c585508b57fc3e",
+      "fractions": [
+        0.353503179345113,
+        0.35668789267254647,
+        0.35987260599997994,
+        0.36305731932741336,
+        0.3662420326548468,
+        0.36942674598228026,
+        0.37261145930971373,
+        0.37579617263714715,
+        0.3789808859645806,
+        0.3821655992920141,
+        0.3853503126194475,
+        0.38853502594688094,
+        0.3917197392743144
+      ],
+      "angles": [
+        0,
+        45,
+        90
+      ],
+      "file": "/tmp/doreumi-absolute-focus-460/motion-meshy-460.jpg",
+      "sha256": "49ddccc3a57875bdc7e55604bbfee02a8e2518212ff51d1af780ce6f2c726c9e",
+      "observation": "Rapid wrist/arm reorientation remains connected to the larger gesture; no discontinuous skin silhouette in individually inspected60Hz sequence."
+    }
+  ],
+  "skinSeams": {
+    "method": "Actual Three skin duplicate-vertex separation at13frames around inspected peaks",
+    "pairs": 7126,
+    "results": [
+      {
+        "id": 452,
+        "maxGap": 0,
+        "worst": null
+      },
+      {
+        "id": 601,
+        "maxGap": 0,
+        "worst": null
+      },
+      {
+        "id": 298,
+        "maxGap": 0,
+        "worst": null
+      },
+      {
+        "id": 403,
+        "maxGap": 0,
+        "worst": null
+      },
+      {
+        "id": 461,
+        "maxGap": 0,
+        "worst": null
+      },
+      {
+        "id": 388,
+        "maxGap": 0,
+        "worst": null
+      },
+      {
+        "id": 295,
+        "maxGap": 0,
+        "worst": null
+      },
+      {
+        "id": 460,
+        "maxGap": 0,
+        "worst": null
+      }
+    ]
+  }
+}

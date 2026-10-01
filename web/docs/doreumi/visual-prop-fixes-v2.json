@@ -1,0 +1,77 @@
+{
+  "checkedAt": "2026-09-24T03:32:27.058268+00:00",
+  "smallRuntimeSha256": "4139157b1f657f787a69ff5b9c0f4a5578a719f23ff177fabb2670bbf387517c",
+  "quarterRuntimeSha256": "4139157b1f657f787a69ff5b9c0f4a5578a719f23ff177fabb2670bbf387517c",
+  "method": "36/46 individual normal128 and quarter five-angle static plus4fps/1fps temporal review.48 normal128 static and temporal only: failed visual occlusion despite numeric framing pass.",
+  "items": [
+    {
+      "id": "meshy:36",
+      "clipSha256": "87f0747570d61c227cdf463e66f6cecdd1c6dfa952fa04a9c87145ae40fb02d4",
+      "observation": "Hand reaches cheek with smooth wrist and elbow; tilt and release remain readable.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-prop-fixes-small/motion-meshy-36.jpg",
+          "sha256": "db955cee9837e2d438eb19d5e1101646bd3ef798e40fbbc38298cd5a3582b980"
+        },
+        {
+          "file": "/tmp/doreumi-prop-fixes-small/temporal-meshy-36.jpg",
+          "sha256": "e5685134ef4283bd2c6d9976190ee83805f622af2259a2d97a0deb1501361475"
+        },
+        {
+          "file": "/tmp/doreumi-prop-fixes-quarter/motion-meshy-36.jpg",
+          "sha256": "c7a1e83bf8351d20cb4bb0276cb2d821e867cd98e3447c9a77369255ec029c7d"
+        },
+        {
+          "file": "/tmp/doreumi-prop-fixes-quarter/temporal-meshy-36.jpg",
+          "sha256": "153e829b9a83d36e2372d24512cf47398ef5dea9f7e60b20a3353379595d1ba8"
+        }
+      ]
+    },
+    {
+      "id": "meshy:46",
+      "clipSha256": "f7d31e5c8821c6e8d0f080c574c03adb5ae097a1463946ae45ada85389fd26f2",
+      "observation": "Eight rope jumps have readable wrist grip, airborne feet and recovery; no ninth recovery rotation. Actual60Hz rope clearance is separate numeric evidence.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-prop-fixes-small/motion-meshy-46.jpg",
+          "sha256": "13bf5a947db00531916010b3878ce267859149b8c748792b3b3d0e70d3b8f4b5"
+        },
+        {
+          "file": "/tmp/doreumi-prop-fixes-small/temporal-meshy-46.jpg",
+          "sha256": "2720d47ed0544e89c502805120ab7c3428a18954efa468dbe3e3dce3ea850a3f"
+        },
+        {
+          "file": "/tmp/doreumi-prop-fixes-quarter/motion-meshy-46.jpg",
+          "sha256": "b26e3587b4757ce8e637f44d00beab4a17cbd06e5369b1b5cdcf25419389b860"
+        },
+        {
+          "file": "/tmp/doreumi-prop-fixes-quarter/temporal-meshy-46.jpg",
+          "sha256": "d52c4f96766405677fcfbccf5243feffbe64ca38673a01c140e948a49716e599"
+        }
+      ]
+    },
+    {
+      "id": "meshy:48",
+      "clipSha256": "654675e5c3d87bc0b88f235a8f5e76f90a4aebfb732ac8adb80fedb090af6363",
+      "observation": "Framing passes, but mirror blocks face at default45-degree camera. This version fails visual readability; newer placement requires separate review.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-prop-fixes-small/motion-meshy-48.jpg",
+          "sha256": "be601df129aa2ea388ea8f2487a2e4a75734dd79f60be0e533d9ce26410ec1d6"
+        },
+        {
+          "file": "/tmp/doreumi-prop-fixes-small/temporal-meshy-48.jpg",
+          "sha256": "340566b0be4c068e985f368ab286398e473c07021b1b8f1275819bca41b99a54"
+        },
+        {
+          "file": "/tmp/doreumi-prop-fixes-quarter/motion-meshy-48.jpg",
+          "sha256": "5dc21453eec8a1b85bd092cac9b4b4cb7909cb8c94ad1bcf87e005d73326da66"
+        },
+        {
+          "file": "/tmp/doreumi-prop-fixes-quarter/temporal-meshy-48.jpg",
+          "sha256": "002f99e3cd55c4ddb369148dc974ef72df475a03fafbabd1ed55200b0f6a7922"
+        }
+      ]
+    }
+  ]
+}

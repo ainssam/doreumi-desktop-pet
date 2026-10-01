@@ -1,0 +1,241 @@
+{
+  "checkedAt": "2026-09-24T05:14:24.213544+00:00",
+  "review": "props-visual-passed-motion-pending",
+  "scope": "Root individually viewed all7 five-angle/nine-pose sheets and all7 temporal sheets at normal128px and quarter speed.",
+  "masterSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+  "runtimeBundleSha256": [
+    "63e58569fe80678a667392cd8e112133b5ac86030291381676b060b4d3cac628",
+    "63e58569fe80678a667392cd8e112133b5ac86030291381676b060b4d3cac628"
+  ],
+  "observation": "Orange pointed flame with warm inner core is now distinguishable from the previous round beige brush-like tip. Left-hand handle remains attached during torso leans and turns; flame stays outside head silhouette in five views. This is prop appearance/placement review, not approval of foot contacts or stage locomotion.",
+  "motions": [
+    {
+      "id": "meshy:337",
+      "clipSha256": "9365ab9eac9a12a1a2bef4c50b2da2ccce2edf62cec19ccef9154672757370a8",
+      "review": "pending",
+      "observation": "Looking-around torso turn with stable raised torch; planted-foot pivot/contact review remains.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-torch-flame-v2-1/motion-meshy-337.jpg",
+          "sha256": "3c678f84430232e99f5cb7a821ef67ac888dd397a6c6a220a833bd6059c1b3ab"
+        },
+        {
+          "file": "/tmp/doreumi-torch-flame-v2-1/temporal-meshy-337.jpg",
+          "sha256": "1982cab61ee119fc1c5651c7e1e5657cb8c1513b44844b4c100a1aa4a19991a0"
+        },
+        {
+          "file": "/tmp/doreumi-torch-flame-v2-1/report.json",
+          "sha256": "b289d52cc5f8ad8baec6f60a41b83c4d5be060daa95cfe5c351b9dce1f0e4470"
+        },
+        {
+          "file": "/tmp/doreumi-torch-flame-v2-0.25/motion-meshy-337.jpg",
+          "sha256": "876e79eefe3be84a62df8dfd71374b88f72d07ce3201aa7691cfccfd0c3b20f5"
+        },
+        {
+          "file": "/tmp/doreumi-torch-flame-v2-0.25/temporal-meshy-337.jpg",
+          "sha256": "e2c9d14d0e850bd0f938105427a7352104666c8e5b5c084580b76dff465a295b"
+        },
+        {
+          "file": "/tmp/doreumi-torch-flame-v2-0.25/report.json",
+          "sha256": "39461dcb43192b4a5e9a57a24a879683368461b6caef373cf18c46626daa83b5"
+        }
+      ]
+    },
+    {
+      "id": "meshy:520",
+      "clipSha256": "35385fc0817545ef626b2abf11943692e4f82faea2dd53e39ea53d1952bfac96",
+      "review": "pending",
+      "observation": "Torch remains clear during a strong forward lean and alternating compact running steps; full Host travel/foot contact review remains.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-torch-flame-v2-1/motion-meshy-520.jpg",
+          "sha256": "bf5520484924ba142e4b842d439fd0864b85e38715eb13c09007946bca9d46f7"
+        },
+        {
+          "file": "/tmp/doreumi-torch-flame-v2-1/temporal-meshy-520.jpg",
+          "sha256": "efc0a5bb000b27ee87d6fcdc0a88ad8e12a95d4a6fca1d91f2f0d6447967b5a6"
+        },
+        {
+          "file": "/tmp/doreumi-torch-flame-v2-1/report.json",
+          "sha256": "b289d52cc5f8ad8baec6f60a41b83c4d5be060daa95cfe5c351b9dce1f0e4470"
+        },
+        {
+          "file": "/tmp/doreumi-torch-flame-v2-0.25/motion-meshy-520.jpg",
+          "sha256": "3ef333247958e3133ac43e535aa92e7913edb7e034925a634b334d08e326c75e"
+        },
+        {
+          "file": "/tmp/doreumi-torch-flame-v2-0.25/temporal-meshy-520.jpg",
+          "sha256": "1775036f33f66f0511f9a1e3730f90bf957357dc47360ed2d411517d68ddee29"
+        },
+        {
+          "file": "/tmp/doreumi-torch-flame-v2-0.25/report.json",
+          "sha256": "39461dcb43192b4a5e9a57a24a879683368461b6caef373cf18c46626daa83b5"
+        }
+      ]
+    },
+    {
+      "id": "meshy:521",
+      "clipSha256": "cf1ce2027c59171ab503be93fc1b41464f5b3aa2a64b876f92ca760fe5357ffc",
+      "review": "pending",
+      "observation": "Torch remains clear during a strong forward lean and alternating compact running steps; full Host travel/foot contact review remains.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-torch-flame-v2-1/motion-meshy-521.jpg",
+          "sha256": "784cab4552744b35e7fec76fdf37d0a1ba11bc53ca6bf0067166019727184e74"
+        },
+        {
+          "file": "/tmp/doreumi-torch-flame-v2-1/temporal-meshy-521.jpg",
+          "sha256": "433f80ddb0cc7b34902adcafebdff8dce19e03d99706e0b13c276fba0ce6e1c6"
+        },
+        {
+          "file": "/tmp/doreumi-torch-flame-v2-1/report.json",
+          "sha256": "b289d52cc5f8ad8baec6f60a41b83c4d5be060daa95cfe5c351b9dce1f0e4470"
+        },
+        {
+          "file": "/tmp/doreumi-torch-flame-v2-0.25/motion-meshy-521.jpg",
+          "sha256": "7e6f4f305224819c0a11360ffa678f589feb6bd3058ca0746a18759672d0ee14"
+        },
+        {
+          "file": "/tmp/doreumi-torch-flame-v2-0.25/temporal-meshy-521.jpg",
+          "sha256": "ab8059e2c867c4ef8efab58c3f621712204cb0eb4b355837bb06e43f69020636"
+        },
+        {
+          "file": "/tmp/doreumi-torch-flame-v2-0.25/report.json",
+          "sha256": "39461dcb43192b4a5e9a57a24a879683368461b6caef373cf18c46626daa83b5"
+        }
+      ]
+    },
+    {
+      "id": "meshy:522",
+      "clipSha256": "a820d40577da14925e772058ca99549b44aa83fac6d9041d8b8d161a4d54a9e4",
+      "review": "pending",
+      "observation": "Torch remains clear during a strong forward lean and alternating compact running steps; full Host travel/foot contact review remains.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-torch-flame-v2-1/motion-meshy-522.jpg",
+          "sha256": "6a61cb6ad8906c47029afd1a7b6e532afa0a9d79cb9354629997c183ff4e1ad4"
+        },
+        {
+          "file": "/tmp/doreumi-torch-flame-v2-1/temporal-meshy-522.jpg",
+          "sha256": "1bad07cc394e43e7b240069fbac7b65957358994f85121ce900ad1c551dd7da6"
+        },
+        {
+          "file": "/tmp/doreumi-torch-flame-v2-1/report.json",
+          "sha256": "b289d52cc5f8ad8baec6f60a41b83c4d5be060daa95cfe5c351b9dce1f0e4470"
+        },
+        {
+          "file": "/tmp/doreumi-torch-flame-v2-0.25/motion-meshy-522.jpg",
+          "sha256": "ed1bcf8e02c3a20d2f07ec37fc9956006c3f7b26fafb31997906670f54f06b4f"
+        },
+        {
+          "file": "/tmp/doreumi-torch-flame-v2-0.25/temporal-meshy-522.jpg",
+          "sha256": "49ea1238b0ae2158419a4232cc8ede1a6cfc85fedeb2c676a3128fd0fc4653c8"
+        },
+        {
+          "file": "/tmp/doreumi-torch-flame-v2-0.25/report.json",
+          "sha256": "39461dcb43192b4a5e9a57a24a879683368461b6caef373cf18c46626daa83b5"
+        }
+      ]
+    },
+    {
+      "id": "meshy:578",
+      "clipSha256": "a42b6f08d310f3c96de62b735d93c59ff2fd31185616f4bcac3ce466489144f0",
+      "review": "pending",
+      "observation": "Looking-around torso turn with stable raised torch; planted-foot pivot/contact review remains.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-torch-flame-v2-1/motion-meshy-578.jpg",
+          "sha256": "8589c319bb918ef2cbda8d48e362a21f5a39a5881a27a59a69f3d92690206883"
+        },
+        {
+          "file": "/tmp/doreumi-torch-flame-v2-1/temporal-meshy-578.jpg",
+          "sha256": "d933391e49cd75dc9861331704f52aa6521026866c418938cc6312e18af1e46a"
+        },
+        {
+          "file": "/tmp/doreumi-torch-flame-v2-1/report.json",
+          "sha256": "b289d52cc5f8ad8baec6f60a41b83c4d5be060daa95cfe5c351b9dce1f0e4470"
+        },
+        {
+          "file": "/tmp/doreumi-torch-flame-v2-0.25/motion-meshy-578.jpg",
+          "sha256": "60d9fd6c5e3567a6460e07b78ea85b1c56686fb76899eee15403af7c064e4fd0"
+        },
+        {
+          "file": "/tmp/doreumi-torch-flame-v2-0.25/temporal-meshy-578.jpg",
+          "sha256": "db7ec84bcc375182af06b870be126cdae7cb20da2b32a319a7f4b4cb37ab4a2b"
+        },
+        {
+          "file": "/tmp/doreumi-torch-flame-v2-0.25/report.json",
+          "sha256": "39461dcb43192b4a5e9a57a24a879683368461b6caef373cf18c46626daa83b5"
+        }
+      ]
+    },
+    {
+      "id": "meshy:624",
+      "clipSha256": "2ef185b9d29baa87ac0f9f9f0780e0be62beace268dda7e40925dded9e2e67ae",
+      "review": "pending",
+      "observation": "Torch remains clear during a strong forward lean and alternating compact running steps; full Host travel/foot contact review remains.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-torch-flame-v2-1/motion-meshy-624.jpg",
+          "sha256": "f2a77204e28dcf8a079d833d0551cb230ce3892055948b8f20131696ff32d8a4"
+        },
+        {
+          "file": "/tmp/doreumi-torch-flame-v2-1/temporal-meshy-624.jpg",
+          "sha256": "cc0b9499bbfcb9e5f75260ff1952d8672b41ce00f77a8351c03b2d22971c840f"
+        },
+        {
+          "file": "/tmp/doreumi-torch-flame-v2-1/report.json",
+          "sha256": "b289d52cc5f8ad8baec6f60a41b83c4d5be060daa95cfe5c351b9dce1f0e4470"
+        },
+        {
+          "file": "/tmp/doreumi-torch-flame-v2-0.25/motion-meshy-624.jpg",
+          "sha256": "5f8689d4721d6be82fb33709ce285ce3cce73dac26ba9dc808689266fa5a21a0"
+        },
+        {
+          "file": "/tmp/doreumi-torch-flame-v2-0.25/temporal-meshy-624.jpg",
+          "sha256": "ac9c44b19a5be70bc3f8164504cb989e17975180d12aae106a3f9948edee9204"
+        },
+        {
+          "file": "/tmp/doreumi-torch-flame-v2-0.25/report.json",
+          "sha256": "39461dcb43192b4a5e9a57a24a879683368461b6caef373cf18c46626daa83b5"
+        }
+      ]
+    },
+    {
+      "id": "meshy:625",
+      "clipSha256": "f630617aa74521fc62c05c844a169f3bad4bbaaea4ab5c4c6d5ba846e496bee8",
+      "review": "pending",
+      "observation": "Torch remains clear during a strong forward lean and alternating compact running steps; full Host travel/foot contact review remains.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-torch-flame-v2-1/motion-meshy-625.jpg",
+          "sha256": "bc87612105ecb2699c2b0b142a1ee29fa71ec12535615aafdd6b8175b7954b1b"
+        },
+        {
+          "file": "/tmp/doreumi-torch-flame-v2-1/temporal-meshy-625.jpg",
+          "sha256": "ceb7d91f934de6f2d365714e863f7c5ff5626b4df61788f9e905ffc57dd68082"
+        },
+        {
+          "file": "/tmp/doreumi-torch-flame-v2-1/report.json",
+          "sha256": "b289d52cc5f8ad8baec6f60a41b83c4d5be060daa95cfe5c351b9dce1f0e4470"
+        },
+        {
+          "file": "/tmp/doreumi-torch-flame-v2-0.25/motion-meshy-625.jpg",
+          "sha256": "c0e6df97709b1eefd22e5d621d6cb7160e8ffc3835c29665b796fefd119610e4"
+        },
+        {
+          "file": "/tmp/doreumi-torch-flame-v2-0.25/temporal-meshy-625.jpg",
+          "sha256": "7d808ab3e5a25bde2ddf01041efb92586d0c8a77a61ebc6cd6a17cf7731dc6c9"
+        },
+        {
+          "file": "/tmp/doreumi-torch-flame-v2-0.25/report.json",
+          "sha256": "39461dcb43192b4a5e9a57a24a879683368461b6caef373cf18c46626daa83b5"
+        }
+      ]
+    }
+  ],
+  "supportAudit": {
+    "file": ".artifacts/doreumi-contact-audit/torch-v2-support.json",
+    "sha256": "1fc03396d2785c9e23b0b7a71825c72f384bab063395027a9dcc3bbacab1335d"
+  }
+}

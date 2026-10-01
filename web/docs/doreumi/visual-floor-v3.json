@@ -1,0 +1,20 @@
+{
+  "review": "pending",
+  "evidenceDirectory": "/tmp/doreumi-floor-v3-quarter",
+  "numericSamplesPass": true,
+  "method": "Five-view nine-pose skeleton sheets plus 1fps quarter-speed45degree temporal sequences individually inspected. Normal128 and wholeclip source-contact/continuity after adapter remain pending.",
+  "observations": [
+    {
+      "id": "meshy:344",
+      "clipSha256": "09dceae4d1175b2790801d7faf27cff987b06b075232072edc54082b4104da44",
+      "finding": "Runtime duplicate-time failure fixed. Sits before reclining, then source rises through seated forward lean into standing. Former rigid standing-to-horizontal entry absent in sampled sequence. No false standing hover visible.",
+      "review": "pending"
+    },
+    {
+      "id": "meshy:363",
+      "clipSha256": "5c6413a181f37205114cbacff9c56f90b2ad28f131bbed811be13089831a77ab",
+      "finding": "Knees lower before folding legs; torso settles with hands ahead, legs unfold before standing. Short-limb joints remain connected and grounded.",
+      "review": "pending"
+    }
+  ]
+}

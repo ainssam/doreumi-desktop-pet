@@ -1,0 +1,205 @@
+{
+  "review": "passed",
+  "checkedAt": "2026-09-24T03:00:16.868847+00:00",
+  "masterSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+  "evidenceDirectories": [
+    "/tmp/doreumi-contact-clean-small",
+    "/tmp/doreumi-contact-clean-quarter-a"
+  ],
+  "method": "Root individually inspected each five-view nine-pose sheet at actual128px normal playback and full-size quarter playback with skeleton. Temporal sequences inspected at4fps normal and1fps quarter. Independent60Hz whole-joint and source-confirmed full-foot contact audits bind exact clip hashes. Temporal frame inspection is not a claim to view every rendered video frame.",
+  "scope": "Only these six assets approved. Small capture intentionally stopped after these six completed actions; no per-action failures. Full responsive/expression checks remain covered by separate runtime checkpoint, not this motion-only suite.",
+  "motions": [
+    {
+      "id": "meshy:2",
+      "review": "passed",
+      "ambient": true,
+      "clipSha256": "08d0f198355209a120858a794ce5301ee142efd21599a08f5588415838979de5",
+      "metadataSha256": "891d7ba1bb43fd66c23c4e4dc07eb2ad43f023487dd5bf9f0c7e07f0a3c7305b",
+      "visualFinding": "Alert looks side to side with coordinated upper-body turn; readable at 128px and connected through sequence.",
+      "sourcePlantedPairs": 228,
+      "maximumSourceConfirmedSlipFractionHeight": 0.005033267357926491,
+      "largestIntroducedWorld": {
+        "bone": "elbowL",
+        "from": 2.533333333333333,
+        "time": 2.55,
+        "sourceTime": 1.8499999999999999,
+        "targetLocalDegrees": 0.8279817295697155,
+        "targetWorldDegrees": 1.57063538932409,
+        "sourceLocalDegrees": 0.9009009693661442,
+        "sourceWorldDegrees": 1.3652494816958902,
+        "jointDistance": 0.013560409800511396
+      },
+      "largestIntroducedLocal": {
+        "bone": "head",
+        "from": 3.1333333333333333,
+        "time": 3.15,
+        "sourceTime": 2.45,
+        "targetLocalDegrees": 3.704890427954715,
+        "targetWorldDegrees": 4.334352578364063,
+        "sourceLocalDegrees": 0.8299756399198417,
+        "sourceWorldDegrees": 4.3418122209754735,
+        "jointDistance": 0.0024859168810896603
+      }
+    },
+    {
+      "id": "meshy:11",
+      "review": "passed",
+      "ambient": true,
+      "clipSha256": "5c7203ec43e2d74bda4d273b7e9b60ba55527aab84e1de92e6f46f49da3d26f9",
+      "metadataSha256": "bd35a8a9f8503cf1428da1d3639f5c5e60d4bf739addc61d053f34366b322996",
+      "visualFinding": "Quiet idle has small head tilt and weight shift; subtle by design, no visible snap.",
+      "sourcePlantedPairs": 140,
+      "maximumSourceConfirmedSlipFractionHeight": 0.0006009314750379813,
+      "largestIntroducedWorld": {
+        "bone": "wristL",
+        "from": 1.1166666666666667,
+        "time": 1.1333333333333333,
+        "sourceTime": 0.43333333333333335,
+        "targetLocalDegrees": 0.15659647994794051,
+        "targetWorldDegrees": 0.18121266001870423,
+        "sourceLocalDegrees": 0.17774773126666896,
+        "sourceWorldDegrees": 0.055413209569939274,
+        "jointDistance": 0.0010100759635600538
+      },
+      "largestIntroducedLocal": {
+        "bone": "torso",
+        "from": 0.8666666666666667,
+        "time": 0.8833333333333333,
+        "sourceTime": 0.18333333333333335,
+        "targetLocalDegrees": 0.21356096379136302,
+        "targetWorldDegrees": 0.16728676234348624,
+        "sourceLocalDegrees": 0.008247463323389442,
+        "sourceWorldDegrees": 0.15262694001739807,
+        "jointDistance": 0.00023166464765221018
+      }
+    },
+    {
+      "id": "meshy:12",
+      "review": "passed",
+      "ambient": true,
+      "clipSha256": "3fed289233000aec115841b68d52495acacb4dd2cfc4658173ba1eadb7d48ad3",
+      "metadataSha256": "c6add21d4536a794487963fe7cdf4a649745ff8885290f913242c3b584852c81",
+      "visualFinding": "Exaggerated backward stretch with arms raised; feet remain fixed, head/torso silhouette connected; quarter-speed joints needed.",
+      "sourcePlantedPairs": 320,
+      "maximumSourceConfirmedSlipFractionHeight": 0.005961077962991422,
+      "largestIntroducedWorld": {
+        "bone": "footL",
+        "from": 3.683333333333333,
+        "time": 3.7,
+        "sourceTime": 3,
+        "targetLocalDegrees": 0.7077972637667328,
+        "targetWorldDegrees": 0.23383626097467555,
+        "sourceLocalDegrees": 0.8152758378020879,
+        "sourceWorldDegrees": 0.00780348571042587,
+        "jointDistance": 0.0006269257007426097
+      },
+      "largestIntroducedLocal": {
+        "bone": "head",
+        "from": 3.8333333333333335,
+        "time": 3.85,
+        "sourceTime": 3.1500000000000004,
+        "targetLocalDegrees": 3.1000510520014712,
+        "targetWorldDegrees": 1.213386150139918,
+        "sourceLocalDegrees": 1.385529703830379,
+        "sourceWorldDegrees": 1.136354778051585,
+        "jointDistance": 0.006622241435649424
+      }
+    },
+    {
+      "id": "meshy:38",
+      "review": "passed",
+      "ambient": true,
+      "clipSha256": "60cf7486c85a73e0bf935f8927d6cee3d9ff9c75f69c02de6218c1533dcd4d65",
+      "metadataSha256": "e7fd157d78ab9f995dd693907d326fb4cc39af199aa4db3ee29e6ddce887df3d",
+      "visualFinding": "Seated dozing dips head left/right and returns upright; foot and seated silhouette readable, no chair dependency visible.",
+      "sourcePlantedPairs": 650,
+      "maximumSourceConfirmedSlipFractionHeight": 0.0003440740374158351,
+      "largestIntroducedWorld": {
+        "bone": "elbowR",
+        "from": 9.766666666666667,
+        "time": 9.783333333333333,
+        "sourceTime": 9.05,
+        "targetLocalDegrees": 0.5364063049492087,
+        "targetWorldDegrees": 0.3327547993383828,
+        "sourceLocalDegrees": 0.4536679864219827,
+        "sourceWorldDegrees": 0.18219568981688475,
+        "jointDistance": 0.0019185171233028259
+      },
+      "largestIntroducedLocal": {
+        "bone": "head",
+        "from": 9.633333333333333,
+        "time": 9.65,
+        "sourceTime": 8.916666666666668,
+        "targetLocalDegrees": 0.9699548136481323,
+        "targetWorldDegrees": 1.1765287035928642,
+        "sourceLocalDegrees": 0.3681222242846271,
+        "sourceWorldDegrees": 1.2177347804313314,
+        "jointDistance": 0.001555608965717271
+      }
+    },
+    {
+      "id": "meshy:243",
+      "review": "passed",
+      "ambient": true,
+      "clipSha256": "27c4d203caf5005018c885abcd8b232eed740361bcb8221498091ac3fd198612",
+      "metadataSha256": "02748ea010d058a58c8ae49c2fb94d001bef0d597fb7d0be5a07eb681c4df426",
+      "visualFinding": "Neutral idle subtly shifts arms and head; continuous entry and return visible.",
+      "sourcePlantedPairs": 598,
+      "maximumSourceConfirmedSlipFractionHeight": 0.0009821641789369505,
+      "largestIntroducedWorld": {
+        "bone": "footR",
+        "from": 4.2,
+        "time": 4.216666666666667,
+        "sourceTime": 3.5166666666666666,
+        "targetLocalDegrees": 0.05227281135332045,
+        "targetWorldDegrees": 0.18974754050971787,
+        "sourceLocalDegrees": 0.013721734669708614,
+        "sourceWorldDegrees": 0.024045999315824983,
+        "jointDistance": 0.00037901209953110474
+      },
+      "largestIntroducedLocal": {
+        "bone": "torso",
+        "from": 6.05,
+        "time": 6.066666666666666,
+        "sourceTime": 5.366666666666666,
+        "targetLocalDegrees": 0.13119133204979153,
+        "targetWorldDegrees": 0.15231431764880804,
+        "sourceLocalDegrees": 0,
+        "sourceWorldDegrees": 0.16172284183920885,
+        "jointDistance": 0.0003444398239272873
+      }
+    },
+    {
+      "id": "meshy:244",
+      "review": "passed",
+      "ambient": true,
+      "clipSha256": "9be1c76fe67396492a04cba74c41aa7aa86c07ba4245baed3a3eabcda9ce5aa2",
+      "metadataSha256": "8774a0c2560676f8fc5632f50504bb149deb44a3fef0a3084852e1d24fc53345",
+      "visualFinding": "Neutral idle has gradual gaze and body sway, no apparent discontinuity.",
+      "sourcePlantedPairs": 837,
+      "maximumSourceConfirmedSlipFractionHeight": 0.0012182379185477856,
+      "largestIntroducedWorld": {
+        "bone": "wristR",
+        "from": 10.45,
+        "time": 10.466666666666667,
+        "sourceTime": 9.766666666666667,
+        "targetLocalDegrees": 0.05247575271877449,
+        "targetWorldDegrees": 0.608359265271201,
+        "sourceLocalDegrees": 0.14780432467543736,
+        "sourceWorldDegrees": 0.4395083329286251,
+        "jointDistance": 0.0031509530788487424
+      },
+      "largestIntroducedLocal": {
+        "bone": "torso",
+        "from": 4,
+        "time": 4.016666666666667,
+        "sourceTime": 3.3166666666666664,
+        "targetLocalDegrees": 0.2613344156382862,
+        "targetWorldDegrees": 0.22939251152121623,
+        "sourceLocalDegrees": 0,
+        "sourceWorldDegrees": 0.2195953385003994,
+        "jointDistance": 0.00016467370478884792
+      }
+    }
+  ]
+}

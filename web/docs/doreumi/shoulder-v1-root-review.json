@@ -1,0 +1,55 @@
+{
+  "status": "promising-local-fix-not-final-model-approval",
+  "observation": "Same public595 pose at source1.8667: the candidate removes the original visible armpit white triangle fold while preserving a rounded upper-arm silhouette. Three-view25-pose local sequence looks continuous. Remaining inversions elsewhere and regression of all approved/base clips remain required. Public master unchanged.",
+  "captures": [
+    {
+      "name": "public",
+      "modelSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+      "reportSha256": "3da40ae892e1261aa6d8ebd07f236ca207c6881cfccc0da34643532056b79a47",
+      "runtimeBundleSha256": "5af8919905a69be1a85a8f2e4209b85b1e32a3b97e8240370bfe6051e0a3f72c",
+      "images": [
+        {
+          "path": "/tmp/doreumi-shoulder-v1-public/motion-meshy-595.jpg",
+          "sha256": "3cef9d464c44dd664260a4ad621045d312c7d490c10515e1eb3e2047d21a80e6",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-shoulder-v1-public/action-meshy-595-45-0.5833333391282294.png",
+          "sha256": "406b06444534e632eb61b85ec1d3061b5fd2bba46db317d6fc51b10e7acdd716",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "name": "candidate",
+      "modelSha256": "5dbfd3594aaf54bfc439e6065983117bd3896d2fa075c78dbe5298502f343e77",
+      "reportSha256": "f854a6b349dcd1abe722e68cefa58ecc5762307c47767d2dd5e00c2bb567c76d",
+      "runtimeBundleSha256": "5af8919905a69be1a85a8f2e4209b85b1e32a3b97e8240370bfe6051e0a3f72c",
+      "images": [
+        {
+          "path": "/tmp/doreumi-shoulder-v1-candidate/motion-meshy-595.jpg",
+          "sha256": "62b5719641cc9b29c6a8bd3a5aeac6132d39de149a7757f4f4817d382a14b905",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-shoulder-v1-candidate/action-meshy-595-45-0.5833333391282294.png",
+          "sha256": "deab31658cb27e46fec610f0bfa74b81fd4f66c06c1d1438a558ba80f72357f0",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "name": "focus",
+      "modelSha256": "5dbfd3594aaf54bfc439e6065983117bd3896d2fa075c78dbe5298502f343e77",
+      "reportSha256": "4e76b7d8394505be6804aa56b2f7aa6f82337087f687855ec56f876a1f6552d5",
+      "runtimeBundleSha256": "5af8919905a69be1a85a8f2e4209b85b1e32a3b97e8240370bfe6051e0a3f72c",
+      "images": [
+        {
+          "path": "/tmp/doreumi-shoulder-v1-focus/motion-meshy-595.jpg",
+          "sha256": "83e91508ab152775adc929c5d389f81cb3f6a6cb86818d4d516044d6e362469a",
+          "rootViewed": true
+        }
+      ]
+    }
+  ]
+}

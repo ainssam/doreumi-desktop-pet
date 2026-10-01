@@ -1,0 +1,49 @@
+{
+  "masterSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+  "review": "24 temporal contact sheets individually inspected; Lie and Roll require new continuous capture with corrected camera.",
+  "evidenceDirectory": "/tmp/doreumi-master-final-all",
+  "sampling": "4 frames per second extracted from normal playback at 45 degrees. Does not verify every rendered frame. Prior five-angle static evidence is separate.",
+  "actions": [
+    "Idle",
+    "Walk",
+    "Run",
+    "Sit",
+    "Code",
+    "Read",
+    "Think",
+    "Wave",
+    "Bow",
+    "NewYearBow",
+    "HeadTilt",
+    "PeekLeft",
+    "PeekRight",
+    "Stretch",
+    "Cheer",
+    "Joy",
+    "Jump",
+    "Landing",
+    "Falling",
+    "Dragged",
+    "Snowman",
+    "Showcase",
+    "CarryBag",
+    "MegaphoneSpeak"
+  ],
+  "observations": {
+    "Walk": "Alternating short steps, coordinated opposed arm swing and small body weight shift are visible. Integrated stage foot slip is covered by separate Host checks.",
+    "Run": "Short cycle has visible knee lift and larger arm swing; temporal sheet has only seven sampled frames, so framewise contact measurements remain necessary.",
+    "Code": "Sits before lap laptop opens; laptop rests across knees and both arms reach keyboard. Subtle alternating typing and gaze changes visible. First temporal image is previous held pose before playback restart, not a new entry snap.",
+    "Read": "Seated lap book supported by hands; looking down and small turns visible.",
+    "Stretch": "Arms rise with elbow bend on either side of head, then return smoothly.",
+    "NewYearBow": "Knees lower before torso bow; both hands move forward with body descent and recovery.",
+    "Jump": "Visible preparation crouch, ascent, descent, landing compression and recovery.",
+    "Snowman": "Ball roll, lift, head placement, pat and presentation read sequentially; geometric hand contact is measured separately.",
+    "CarryBag": "Bag remains attached to hand as forearm moves.",
+    "MegaphoneSpeak": "Horn rises to mouth and lowers with arm, remaining readable."
+  },
+  "limitations": [
+    "Small cyclic hand/eye movements cannot be fully judged from 4 fps frames.",
+    "Lie/Roll old temporal framing is stale and excluded.",
+    "This record is not approval of the 524 imported actions."
+  ]
+}

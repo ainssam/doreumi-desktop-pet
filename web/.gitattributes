@@ -1,0 +1,8 @@
+# web/ 은 도름스(DoRms)에서 맞춰 올리는 웹판이다. 공개 저장소에서 누가 받아도 LFS 대역폭을 쓰지 않도록
+# 이 폴더만 Git LFS 를 끈다(저장소 루트의 *.glb·*.png LFS 규칙보다 이 파일이 우선한다).
+*.glb -filter -diff -merge -text
+*.png -filter -diff -merge -text
+*.bin -filter -diff -merge -text
+*.webm -filter -diff -merge -text
+*.gif -filter -diff -merge -text
+*.webp -diff -text

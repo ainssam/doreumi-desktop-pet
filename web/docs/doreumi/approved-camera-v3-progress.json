@@ -1,0 +1,2258 @@
+{
+  "status": "passed",
+  "scope": "Root individually viewed 57 actual rendered full-cycle playback sheets at normal speed/128px and 57 at quarter speed after camera shrink fix, including at least two real seconds of stable Idle. Supplemental camera/recovery checkpoint only; prior multi-angle pose and source-contact reviews remain separately required. This does not approve any new motion.",
+  "normal": [
+    2,
+    11,
+    12,
+    22,
+    23,
+    24,
+    27,
+    36,
+    38,
+    40,
+    46,
+    63,
+    67,
+    243,
+    244,
+    246,
+    247,
+    249,
+    250,
+    251,
+    252,
+    255,
+    256,
+    269,
+    290,
+    293,
+    295,
+    296,
+    298,
+    299,
+    308,
+    309,
+    310,
+    313,
+    314,
+    317,
+    318,
+    319,
+    326,
+    338,
+    354,
+    388,
+    403,
+    406,
+    412,
+    451,
+    452,
+    460,
+    461,
+    474,
+    503,
+    591,
+    592,
+    596,
+    599,
+    601,
+    639
+  ],
+  "quarter": [
+    2,
+    11,
+    12,
+    22,
+    23,
+    24,
+    27,
+    36,
+    38,
+    40,
+    46,
+    63,
+    67,
+    243,
+    244,
+    246,
+    247,
+    249,
+    250,
+    251,
+    252,
+    255,
+    256,
+    269,
+    290,
+    293,
+    295,
+    296,
+    298,
+    299,
+    308,
+    309,
+    310,
+    313,
+    314,
+    317,
+    318,
+    319,
+    326,
+    338,
+    354,
+    388,
+    403,
+    406,
+    412,
+    451,
+    452,
+    460,
+    461,
+    474,
+    503,
+    591,
+    592,
+    596,
+    599,
+    601,
+    639
+  ],
+  "observations": {
+    "2": "Side pivot and return remain continuous; camera returns gradually with no pop.",
+    "11": "Small head dip and idle sway remain stable through the full recovery and settled tail.",
+    "12": "Raised hands and a deep backward torso stretch return through a forward bow to standing, with a gradual camera settle.",
+    "22": "Dance alternates lifted arms, bent knees and turns; body and camera settle continuously after return.",
+    "23": "Upper-body rocking, bow and compact running-like knee lifts recover continuously.",
+    "24": "Open-arm dance and alternating bent-knee steps settle without a camera jump.",
+    "27": "Raised hands near cheeks and one-foot pose hold release continuously to standing.",
+    "36": "Hand-to-head greeting and torso tilt remain continuous through recovery.",
+    "38": "Seated restful hold rises through bent legs to standing; camera remains stable.",
+    "40": "Turning and crossing steps return continuously; actual stage travel was checked separately.",
+    "46": "Rope rotates over head and beneath lifted feet; recovery fades the prop and eases the camera.",
+    "63": "Shuffle steps and arm gestures turn through the body and return without a visible leg snap.",
+    "67": "Bouncy dance, backward bend and turn recover through bent knees without a camera jump.",
+    "243": "Subtle idle weight shift and head turn stay stable through the settled tail.",
+    "244": "Quiet side sway and head dip preserve planted stance and gradual recovery.",
+    "246": "Small alternating weight shifts remain steady with continuous return to Idle.",
+    "247": "Backward weight lean and small shoulder motions return continuously.",
+    "249": "Small idle body sway stays stable through the final camera settle.",
+    "250": "Forward hunch and lowered head release to upright smoothly.",
+    "251": "Quiet idle sway has no abrupt pose or camera change.",
+    "252": "Relaxed head and shoulder motion stays continuous into settled Idle.",
+    "255": "Forward bow and single-foot stomp/lift return continuously; detailed support windows are separately documented.",
+    "256": "Bow and single-foot gesture settle without a camera snap; detailed source contact adaptation remains separately documented.",
+    "269": "Sit, recline and lie back transition continuously through seated recovery to standing; camera settles gradually.",
+    "290": "A small bent-arm conversational gesture lowers naturally to Idle without a camera jump.",
+    "293": "Brief outward palm gesture and relaxed shoulder return stay continuous.",
+    "295": "Both arms rise beside the face and lower continuously without a sudden camera change.",
+    "296": "One-handed conversational gesture extends, pauses and lowers smoothly.",
+    "298": "Bow followed by both raised hands and return to rest remains continuous.",
+    "299": "Seated cushion entry, standing clap and seated recovery return continuously to Idle; zoom settles gradually.",
+    "308": "Alternating small palm gestures and shoulder motions settle continuously.",
+    "309": "Hands at hips and side weight shift return smoothly to relaxed arms.",
+    "310": "Head dips and torso turns recover continuously to the initial viewing direction.",
+    "313": "Small sideways turn and bent-arm gesture recover without a pose or zoom jump.",
+    "314": "Short sideways hand gesture and torso shift return continuously.",
+    "317": "Small shrug and both palms outward release to rest without a discontinuity.",
+    "318": "Hands together and deep forward bow recover with continuous torso and camera motion.",
+    "319": "Brief low crouch with bent arms returns to standing smoothly.",
+    "326": "Raised-arm cheering and alternating knee lifts settle continuously into relaxed standing.",
+    "338": "Looking around with short head dips and turns remains smooth through recovery.",
+    "354": "Seated claps on cushion recover through a bent-leg rise; camera size settles gradually.",
+    "388": "Forward lean, open-arm shrug and slight squat blend continuously into standing.",
+    "403": "Deep bow with raised bent arms lowers and recovers continuously.",
+    "406": "Recline, side/head roll and crouch recovery remain continuous; camera gradually returns to Idle framing.",
+    "412": "Raised-arm side-to-side turns return gradually to front and relaxed arms.",
+    "451": "Seated one-hand-supported lean holds and releases through sitting to standing without a camera snap.",
+    "452": "Backflip takeoff, inversion and bent-leg landing recover continuously; zoom settles gradually.",
+    "460": "Small consecutive hops and forward bends land through flexed legs, then recover smoothly.",
+    "461": "Compact tucked-leg jump lands in a squat and rises with continuous framing.",
+    "474": "Low squat and tucked hop return through seated-looking deep squat to standing continuously.",
+    "503": "Forward tucked pose with raised foot releases continuously to standing.",
+    "591": "Alternating raised palms, bent-knee sway and pivot blend continuously to Idle.",
+    "592": "Small bouncy dance with shoulder/head tilt and alternating arms settles smoothly.",
+    "596": "Raised-arm broad side bends and foot shifts recover continuously.",
+    "599": "Quiet arm and weight shifts settle with no abrupt change.",
+    "601": "Full backflip crouch, inversion and landing recover with gradual camera settle.",
+    "639": "Alternating high knees and raised-arm dance return continuously to standing."
+  },
+  "normalEvidence": {
+    "report": "/tmp/doreumi-approved-camera-v3-1/report.json",
+    "reportSha256": "a30b1b67a31ac24218f0771e4c33790b44e502e8a877a8d885ece2aa9ab8f02e",
+    "runtimeBundleSha256": "e3f0d2f08e72c5ae7af717f54db6b4e32db9fc1649d1e3a4a32e5c306e3a1d5a",
+    "modelSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+    "clipHashes": {
+      "meshy:2": "08d0f198355209a120858a794ce5301ee142efd21599a08f5588415838979de5",
+      "meshy:11": "5c7203ec43e2d74bda4d273b7e9b60ba55527aab84e1de92e6f46f49da3d26f9",
+      "meshy:12": "3fed289233000aec115841b68d52495acacb4dd2cfc4658173ba1eadb7d48ad3",
+      "meshy:22": "6edb0e3e5413e3be891a1d45f16272bd096efef975d0a1d77d24a681b0c97815",
+      "meshy:23": "8f4af4a3d9089b158749a5fd47774c6886b55397ad22778bb67ff731c4006048",
+      "meshy:24": "96d8aa8a7591f25ea708642d10690111c4849f9716abfec6840864a9f44b37f7",
+      "meshy:27": "78b956bea8c19583ef4ff890785b1a3ea2e0a5520bd40dc1f9d7b10946669065",
+      "meshy:36": "87f0747570d61c227cdf463e66f6cecdd1c6dfa952fa04a9c87145ae40fb02d4",
+      "meshy:38": "60cf7486c85a73e0bf935f8927d6cee3d9ff9c75f69c02de6218c1533dcd4d65",
+      "meshy:40": "60da32a00387d86bb70fe813342ebb90057dca2d214efc864bbab512472b1f67",
+      "meshy:46": "f7d31e5c8821c6e8d0f080c574c03adb5ae097a1463946ae45ada85389fd26f2",
+      "meshy:63": "8fc9d1e161364dedce3c1400b2eace811995f2550b72fd19811ae3baefb2a947",
+      "meshy:67": "4cd82441b1a79129067a1ea304dd77e7910d11d528ff0f8cfd95b82edf2a389e",
+      "meshy:243": "27c4d203caf5005018c885abcd8b232eed740361bcb8221498091ac3fd198612",
+      "meshy:244": "9be1c76fe67396492a04cba74c41aa7aa86c07ba4245baed3a3eabcda9ce5aa2",
+      "meshy:246": "c9db340e09cb7f3ef46fcb98b4bedac61fb94bfadd66a976fc03dce4d5498562",
+      "meshy:247": "dab97165b90935540eedee7f160bc15a28ff4d6914e1f4a83675e9f7e59257bf",
+      "meshy:249": "6ee6877312a4563fda41cabf28468bfe7a3c97916f0751a35ba1081459b47222",
+      "meshy:250": "6aac4487139210c83fffa723ce1b0b4c7ac9b4ea77aa0f81128cdf0b67bc512d",
+      "meshy:251": "a67e05ee17f2c9741850cbba2dcd6397958888e009d1121e57d80621b11f4de0",
+      "meshy:252": "9a4be592385b3fcb986bba1f5c4f6f4fa05c56af02b5142fe45115c0ee8d9d33",
+      "meshy:255": "269bb3f433fcd9879138bef1f7fa10669a0ee8591c6bacf8d44a576b25616f85",
+      "meshy:256": "7e85f5b4d168de3d4adbb11d342da3edeab47393023a4ca9ea8f0748422175a3",
+      "meshy:269": "31aef9c4e7abd3b9e2861d05e85dc42d2f65202b7d2daf1f0f9c29288a591b4e",
+      "meshy:290": "de92f40c7a4bbde6673d267b70fd69d1aaa4c9c017bcb65a7c738c9be5928bb8",
+      "meshy:293": "38f650f454a0c563b29bfafe54d41edebaeea5be660949eeb5d1368702540d4b",
+      "meshy:295": "d81e02e4e5aa901b43bbc392c5c4e7387a9f15e5a6e5e1f1afd62aa331122244",
+      "meshy:296": "4484a3aeb28cc58f6684b6bf6ed4b434d05f9ca47b65992575e80ad85a9db847",
+      "meshy:298": "eba0bc33a84a33c2eec49767f9835d3b916f058abbc03bd6b88d8a0f48ca650a",
+      "meshy:299": "b0188e4194cff5402e8f764ade7c1d4cc339e03636343bb6442622d212c20c3b",
+      "meshy:308": "0181e5d8e14d47450fa6c1fb7e9d2b3cdf19e1d552b488fbb0f1bf07cdd7f0b5",
+      "meshy:309": "a9394f87d2d4796263bda2c34828948b32db10c4d5cbf4626153423b07345a18",
+      "meshy:310": "26248fcf5c4e9d430bf1683ca2c54eed0c84b9db12646614227a148e3e16a25d",
+      "meshy:313": "451fc33ca77a6ee7a4e5cf728b1e880f94deaf272c8fd6fc26d4ca82dc6d346c",
+      "meshy:314": "969532a13a42ef2d1b545b302c5c3816098e47371d419ab4d650019dafee58d4",
+      "meshy:317": "f90a5e5599292a62461e4f64df02d4b8ff10301b3acf6c3590ef97ddfcb816c4",
+      "meshy:318": "241003805b82fdd8987118995a986bd412cf00359c5cebd0926a44be8c8a7574",
+      "meshy:319": "3cd1c0f1b97203cb703b37b349f709e3a673c602fc5e0a9454cbe7329c8f7392",
+      "meshy:326": "de79338f0f0bf737045027e88cdadbb729d98e540a2b5bf78d51073776f351ef",
+      "meshy:338": "ef3a309606784b88c435c97fe95ad5834ddb2a7e527c7e3e30c64eab8daf6805",
+      "meshy:354": "ccc3cc6ac6b18340b741d71e15d02c8c7614d0ca668316edf2601a7a853ae2ab",
+      "meshy:388": "6332ed94b57c807bee066455ef445bc695ebe59275bcb407bbdc3ec4f5fbcfbe",
+      "meshy:403": "2b140f5812e47496ba0279e89968873482d9289f48c3f0258bffb4ac8bafdbc9",
+      "meshy:406": "42bfddc199c332a2ee2ce4076d5aaa140bd950b8f7e1e14e9664c5dfc52e076e",
+      "meshy:412": "82718f16aa253a7877862d1fac4c945814fe4ff61decd53c1502ac963c05a7be",
+      "meshy:451": "7a4081f6afa43840e9fcff3474df196d11a2a9e0e4c50f66526f403416ac290a",
+      "meshy:452": "79e024d38ca4e45af2ea635cc39389efd320d55b8d96ef865df6b88f5ecaaa24",
+      "meshy:460": "9501cb4e30f1daf24109cf4a0bdb567b1d36219d26a640a2b3c585508b57fc3e",
+      "meshy:461": "c44de1442c7f94c337e0d8c10d37830357bb16b796135066e99056d12f06610d",
+      "meshy:474": "3ddae44d2fc8fb39c6a1220ca5c4b8eba124bb230d0c35b87566e1cd6d4196f8",
+      "meshy:503": "de140e46f1b56de0068b9f345fe3d42392c508d4637cde67c75cdeec74e8e6f2",
+      "meshy:591": "202bdef36139b8f9601ef130fdb9859eb8550e3aa5d2baf1f99b6dd9675b34b5",
+      "meshy:592": "5271ab939a368a02c60defe06e935c5a362778efc768fb132af90159bd829b39",
+      "meshy:596": "7488f6c7de80c9c29680b54af98ba5c27bdabb6e4f331f1f5ad004c8c0993c92",
+      "meshy:599": "24a4dbda2afe45e858a896d3318191c0fe390277a4d3a5d518f112df8aec1120",
+      "meshy:601": "b2954026c33be3cfc4ea98dfd43b6cab5fa47aa6304665f3d86aff8671e4045f",
+      "meshy:639": "42beed94ff90692c0190c35b35a7a2d64f6a7793f74b8773878e265c24673af8"
+    },
+    "samples": [
+      {
+        "id": "meshy:2",
+        "image": "/tmp/doreumi-approved-camera-v3-1/playback-meshy-2.jpg",
+        "sha256": "be6d1d95f328120fcffd5e8ae3fce111e60cfe231577ed03e7acaa45ac0f0a08",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 5.562699999999984,
+          "duration": 5.566666666666666,
+          "tolerance": 0.35,
+          "observedFrames": 21,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 6.11629999999702,
+          "settledIdleSeconds": 2.2272000000029806
+        }
+      },
+      {
+        "id": "meshy:11",
+        "image": "/tmp/doreumi-approved-camera-v3-1/playback-meshy-11.jpg",
+        "sha256": "1b05761bb15bfb207147488b27bf86c64b6dfbc50e00fd16c400bc8f92d33d0e",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 3.896799999999995,
+          "duration": 3.8999999205271405,
+          "tolerance": 0.35,
+          "observedFrames": 15,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 4.4617999999970195,
+          "settledIdleSeconds": 2.2417000000029805
+        }
+      },
+      {
+        "id": "meshy:12",
+        "image": "/tmp/doreumi-approved-camera-v3-1/playback-meshy-12.jpg",
+        "sha256": "ca40501cb58f40778a7e3381de08b377d831dd1cb318fc6ce438a840eb4c0674",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 6.687399999999979,
+          "duration": 6.900000158945719,
+          "tolerance": 0.35,
+          "observedFrames": 25,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 7.49110000000149,
+          "settledIdleSeconds": 2.0300999999940395
+        }
+      },
+      {
+        "id": "meshy:22",
+        "image": "/tmp/doreumi-approved-camera-v3-1/playback-meshy-22.jpg",
+        "sha256": "52e9ff2631fc261f8c20611a3f7774f408b9b6f7971cc7631352de9af86fbc8d",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 9.305800000000028,
+          "duration": 9.33333355585734,
+          "tolerance": 0.35,
+          "observedFrames": 34,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 9.86370000000298,
+          "settledIdleSeconds": 2.279799999997019
+        }
+      },
+      {
+        "id": "meshy:23",
+        "image": "/tmp/doreumi-approved-camera-v3-1/playback-meshy-23.jpg",
+        "sha256": "8f76ecb3a696a23c867a1e52692a402569059e8c0f39362484dd6cb28d4871c2",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 8.979300000000016,
+          "duration": 9.066666666666666,
+          "tolerance": 0.35,
+          "observedFrames": 33,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 9.54,
+          "settledIdleSeconds": 2.2335999999940412
+        }
+      },
+      {
+        "id": "meshy:24",
+        "image": "/tmp/doreumi-approved-camera-v3-1/playback-meshy-24.jpg",
+        "sha256": "d92deeefb94a2190a02ba29a67bedd329bca2d509536d7097f90a5e5eaa55940",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 9.41680000000004,
+          "duration": 9.600000445048014,
+          "tolerance": 0.35,
+          "observedFrames": 35,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 10.22360000000149,
+          "settledIdleSeconds": 2.07260000000149
+        }
+      },
+      {
+        "id": "meshy:27",
+        "image": "/tmp/doreumi-approved-camera-v3-1/playback-meshy-27.jpg",
+        "sha256": "720973cdcd4090b677dea1e4b907167c87cdaa873fa3d8f036693664b92b1999",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 7.5902999999999885,
+          "duration": 7.733333174387614,
+          "tolerance": 0.35,
+          "observedFrames": 28,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 8.16140000000596,
+          "settledIdleSeconds": 2.2276999999955294
+        }
+      },
+      {
+        "id": "meshy:36",
+        "image": "/tmp/doreumi-approved-camera-v3-1/playback-meshy-36.jpg",
+        "sha256": "5506a55faa71a9e175a714cb6104a006179c18d85dc365e5fc14d49ddc8987c5",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 13.007200000000175,
+          "duration": 13.066666666666666,
+          "tolerance": 0.35,
+          "observedFrames": 47,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 13.56729999999702,
+          "settledIdleSeconds": 2.257899999998509
+        }
+      },
+      {
+        "id": "meshy:38",
+        "image": "/tmp/doreumi-approved-camera-v3-1/playback-meshy-38.jpg",
+        "sha256": "3d9d3fe5bf093e8a6f292b806a4ce6262bf3675da8b550544ba53749be36635c",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 12.382100000000166,
+          "duration": 12.433333015441894,
+          "tolerance": 0.35,
+          "observedFrames": 45,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 12.94219999999553,
+          "settledIdleSeconds": 2.2423000000044695
+        }
+      },
+      {
+        "id": "meshy:40",
+        "image": "/tmp/doreumi-approved-camera-v3-1/playback-meshy-40.jpg",
+        "sha256": "84e1e90555893fd69f4fee8f34748a4d7b571f110763f49712b5d312e3828176",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 12.166800000000158,
+          "duration": 12.266666475931803,
+          "tolerance": 0.35,
+          "observedFrames": 45,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 12.7135,
+          "settledIdleSeconds": 2.1377999999970196
+        }
+      },
+      {
+        "id": "meshy:46",
+        "image": "/tmp/doreumi-approved-camera-v3-1/playback-meshy-46.jpg",
+        "sha256": "fab53b05b6a4cea3517c83919703ac82b8fbd43f7bddbe39a3b030d8a60f5a50",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 9.909900000000066,
+          "duration": 10.133333269755045,
+          "tolerance": 0.35,
+          "observedFrames": 38,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 10.7525,
+          "settledIdleSeconds": 2.0788000000044704
+        }
+      },
+      {
+        "id": "meshy:63",
+        "image": "/tmp/doreumi-approved-camera-v3-1/playback-meshy-63.jpg",
+        "sha256": "f96dee2b6b0fe23342cbfbedf45d47f5ccda59394bf9706062c835f16d232f8a",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 11.23650000000011,
+          "duration": 11.266666984558105,
+          "tolerance": 0.35,
+          "observedFrames": 41,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 11.7805,
+          "settledIdleSeconds": 2.00290000000596
+        }
+      },
+      {
+        "id": "meshy:67",
+        "image": "/tmp/doreumi-approved-camera-v3-1/playback-meshy-67.jpg",
+        "sha256": "11b2f96174d66ff41562ef0785c6fa5cf9fe92d17c215aa78b016991fd771a67",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 9.403000000000041,
+          "duration": 9.633333269755045,
+          "tolerance": 0.35,
+          "observedFrames": 35,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 10.23580000000447,
+          "settledIdleSeconds": 2.221600000001491
+        }
+      },
+      {
+        "id": "meshy:243",
+        "image": "/tmp/doreumi-approved-camera-v3-1/playback-meshy-243.jpg",
+        "sha256": "185f5dd6ebf1cc5c10f87d0a98eec82e3fa489a62eb9b9c32209a249a466d810",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 11.437800000000134,
+          "duration": 11.533332888285319,
+          "tolerance": 0.35,
+          "observedFrames": 42,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 11.9925,
+          "settledIdleSeconds": 2.2126999999955306
+        }
+      },
+      {
+        "id": "meshy:244",
+        "image": "/tmp/doreumi-approved-camera-v3-1/playback-meshy-244.jpg",
+        "sha256": "77f3d1a72fd27e68d46e090bde701ca22b01c6047f66977df8d35c7b0abe2e20",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 15.27800000000026,
+          "duration": 15.533332888285319,
+          "tolerance": 0.35,
+          "observedFrames": 56,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 16.12260000000149,
+          "settledIdleSeconds": 2.2312000000029784
+        }
+      },
+      {
+        "id": "meshy:246",
+        "image": "/tmp/doreumi-approved-camera-v3-1/playback-meshy-246.jpg",
+        "sha256": "9f4d7502c7d41ac3b8629381fa9547373a560d2436d79ea82dc312e6a99bc5e2",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 8.909900000000013,
+          "duration": 8.966666762034098,
+          "tolerance": 0.35,
+          "observedFrames": 33,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 9.49010000000149,
+          "settledIdleSeconds": 2.221599999994039
+        }
+      },
+      {
+        "id": "meshy:247",
+        "image": "/tmp/doreumi-approved-camera-v3-1/playback-meshy-247.jpg",
+        "sha256": "fae1c98e7882de60da73093d9581286853d5690530add0095745061158e3c4c5",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 10.28500000000007,
+          "duration": 10.333333079020182,
+          "tolerance": 0.35,
+          "observedFrames": 38,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 10.83810000000149,
+          "settledIdleSeconds": 2.2220999999940396
+        }
+      },
+      {
+        "id": "meshy:249",
+        "image": "/tmp/doreumi-approved-camera-v3-1/playback-meshy-249.jpg",
+        "sha256": "2bba20d62c534e25e177daba557298333f1e5626a0a7a92e2ef952e151651e5a",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 3.3748000000000125,
+          "duration": 3.566666666666667,
+          "tolerance": 0.35,
+          "observedFrames": 13,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 4.22729999999702,
+          "settledIdleSeconds": 2.2422000000029803
+        }
+      },
+      {
+        "id": "meshy:250",
+        "image": "/tmp/doreumi-approved-camera-v3-1/playback-meshy-250.jpg",
+        "sha256": "dda54a697d1779c02b8ec90519b8f28a995d6f236a968f942f6949de5c77ea79",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 4.965499999999989,
+          "duration": 5.233333412806193,
+          "tolerance": 0.35,
+          "observedFrames": 19,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 5.79610000000149,
+          "settledIdleSeconds": 2.028399999998509
+        }
+      },
+      {
+        "id": "meshy:251",
+        "image": "/tmp/doreumi-approved-camera-v3-1/playback-meshy-251.jpg",
+        "sha256": "f1e8e9f4433b71c96cd58544dfe5f655d308de17ad1e6cffe6b7f85b3ae2a188",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 3.354200000000008,
+          "duration": 3.466666642824809,
+          "tolerance": 0.35,
+          "observedFrames": 13,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 3.9321999999955297,
+          "settledIdleSeconds": 2.2275
+        }
+      },
+      {
+        "id": "meshy:252",
+        "image": "/tmp/doreumi-approved-camera-v3-1/playback-meshy-252.jpg",
+        "sha256": "08265d20cbbc777c338e0975cedda67c3de79fa36f52047d5c5237bceaabd8d7",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 7.514999999999982,
+          "duration": 7.566666666666666,
+          "tolerance": 0.35,
+          "observedFrames": 28,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 8.0765,
+          "settledIdleSeconds": 2.2641000000014913
+        }
+      },
+      {
+        "id": "meshy:255",
+        "image": "/tmp/doreumi-approved-camera-v3-1/playback-meshy-255.jpg",
+        "sha256": "5c955685c3a46fb94d202d3167ad8009cebe49dbd294a3213095202606261ebe",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 2.9514000000000196,
+          "duration": 2.966666642824809,
+          "tolerance": 0.35,
+          "observedFrames": 12,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 3.5318000000044703,
+          "settledIdleSeconds": 2.21189999999851
+        }
+      },
+      {
+        "id": "meshy:256",
+        "image": "/tmp/doreumi-approved-camera-v3-1/playback-meshy-256.jpg",
+        "sha256": "fbf6863344af490483122bf9c57418d986ab8aacbee76396f1fb7c2d5ee4a2a8",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 2.792299999999986,
+          "duration": 2.966666642824809,
+          "tolerance": 0.35,
+          "observedFrames": 11,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 3.3755,
+          "settledIdleSeconds": 2.2622000000029803
+        }
+      },
+      {
+        "id": "meshy:269",
+        "image": "/tmp/doreumi-approved-camera-v3-1/playback-meshy-269.jpg",
+        "sha256": "0388d40cb3f405dbd2012337ac1d03beabfcec445feaa3ed6245cdf694127325",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 9.854100000000086,
+          "duration": 10.066666444142658,
+          "tolerance": 0.35,
+          "observedFrames": 36,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 10.625800000004471,
+          "settledIdleSeconds": 2.1578999999985093
+        }
+      },
+      {
+        "id": "meshy:290",
+        "image": "/tmp/doreumi-approved-camera-v3-1/playback-meshy-290.jpg",
+        "sha256": "d4cb2d302d7856f48eb8332cbc5425379d56a5fd4e5bf6416289e17420b04bc3",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 5.639699999999999,
+          "duration": 5.666666571299235,
+          "tolerance": 0.35,
+          "observedFrames": 22,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 6.21970000000298,
+          "settledIdleSeconds": 2.0404999999999998
+        }
+      },
+      {
+        "id": "meshy:293",
+        "image": "/tmp/doreumi-approved-camera-v3-1/playback-meshy-293.jpg",
+        "sha256": "dd978bd413edbe29b37a67ba0f0ae23e846f03760e13a90f086d2c02f7b6fd0b",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 2.0488999999999638,
+          "duration": 2.13333332935969,
+          "tolerance": 0.35,
+          "observedFrames": 8,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 2.6457999999970196,
+          "settledIdleSeconds": 2.2161000000014903
+        }
+      },
+      {
+        "id": "meshy:295",
+        "image": "/tmp/doreumi-approved-camera-v3-1/playback-meshy-295.jpg",
+        "sha256": "472ec2b242eac6283836679356312a5248fae44d5d17c73227d8e04529ebb4f8",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 4.541700000000007,
+          "duration": 4.766666714350382,
+          "tolerance": 0.35,
+          "observedFrames": 17,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 5.42880000000447,
+          "settledIdleSeconds": 2.2455000000000007
+        }
+      },
+      {
+        "id": "meshy:296",
+        "image": "/tmp/doreumi-approved-camera-v3-1/playback-meshy-296.jpg",
+        "sha256": "423be4947f3f5a80a096ec7c666d9c353ba1b4c097daecf009fec90fd0553cc7",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 6.2446000000000215,
+          "duration": 6.299999777475993,
+          "tolerance": 0.35,
+          "observedFrames": 23,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 6.75739999999851,
+          "settledIdleSeconds": 2.251999999999999
+        }
+      },
+      {
+        "id": "meshy:298",
+        "image": "/tmp/doreumi-approved-camera-v3-1/playback-meshy-298.jpg",
+        "sha256": "172e3cd887efa815ee1949f93d122274ae4fe1b25c051a9c4bc6ed647b49104c",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 3.3404000000000207,
+          "duration": 3.466666642824809,
+          "tolerance": 0.35,
+          "observedFrames": 13,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 3.88920000000298,
+          "settledIdleSeconds": 2.2216000000014904
+        }
+      },
+      {
+        "id": "meshy:299",
+        "image": "/tmp/doreumi-approved-camera-v3-1/playback-meshy-299.jpg",
+        "sha256": "674ab9efaef3d2bd0e7bf4ec1ca5dcf83ab404f4f578888c4659a0a64e0a300e",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 5.590299999999977,
+          "duration": 5.733333174387614,
+          "tolerance": 0.35,
+          "observedFrames": 21,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 6.14510000000149,
+          "settledIdleSeconds": 2.2242999999970205
+        }
+      },
+      {
+        "id": "meshy:308",
+        "image": "/tmp/doreumi-approved-camera-v3-1/playback-meshy-308.jpg",
+        "sha256": "2d3616e3a68e698bf91a22d5d01afefe3d497e37717315528396058ca8775e15",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 11.639100000000079,
+          "duration": 11.833333079020182,
+          "tolerance": 0.35,
+          "observedFrames": 42,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 12.48439999999851,
+          "settledIdleSeconds": 2.2308999999985097
+        }
+      },
+      {
+        "id": "meshy:309",
+        "image": "/tmp/doreumi-approved-camera-v3-1/playback-meshy-309.jpg",
+        "sha256": "39ffb5e42b1808f6f917d3bba34ea7ef4804fa792647bd3622805af86cb325fe",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 6.67410000000002,
+          "duration": 6.733333174387614,
+          "tolerance": 0.35,
+          "observedFrames": 25,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 7.23120000000298,
+          "settledIdleSeconds": 2.2234999999999996
+        }
+      },
+      {
+        "id": "meshy:310",
+        "image": "/tmp/doreumi-approved-camera-v3-1/playback-meshy-310.jpg",
+        "sha256": "e40f106d00344c15d74eb298d5aba0c085611d2ec0eafa6ed4ef25482ffb4854",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 6.0904000000000105,
+          "duration": 6.2333332061767575,
+          "tolerance": 0.35,
+          "observedFrames": 23,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 6.653800000004471,
+          "settledIdleSeconds": 2.219299999997019
+        }
+      },
+      {
+        "id": "meshy:313",
+        "image": "/tmp/doreumi-approved-camera-v3-1/playback-meshy-313.jpg",
+        "sha256": "84c1cb33fad8e12cd1f5e64f055bf1d6e6c8e9b7fab3fe2712bbf62360b4b475",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 5.465499999999989,
+          "duration": 5.533333365122477,
+          "tolerance": 0.35,
+          "observedFrames": 20,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 6.0425,
+          "settledIdleSeconds": 2.2902000000029794
+        }
+      },
+      {
+        "id": "meshy:314",
+        "image": "/tmp/doreumi-approved-camera-v3-1/playback-meshy-314.jpg",
+        "sha256": "3b62439b44d051de5b572980b4b64e63cdd3413de1cdbc765bcfae25aa535ca4",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 5.22249999999999,
+          "duration": 5.333333317438761,
+          "tolerance": 0.35,
+          "observedFrames": 19,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 5.79339999999851,
+          "settledIdleSeconds": 2.27760000000149
+        }
+      },
+      {
+        "id": "meshy:317",
+        "image": "/tmp/doreumi-approved-camera-v3-1/playback-meshy-317.jpg",
+        "sha256": "ebd8065a710221b933d5bf45fe24be40aa35607c8c15f81e69341450506f14dd",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 3.409800000000044,
+          "duration": 3.566666666666667,
+          "tolerance": 0.35,
+          "observedFrames": 13,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 4.24110000000149,
+          "settledIdleSeconds": 2.20939999999851
+        }
+      },
+      {
+        "id": "meshy:318",
+        "image": "/tmp/doreumi-approved-camera-v3-1/playback-meshy-318.jpg",
+        "sha256": "7e5bf55119302842bfa3142e535f529d7377d98820f91352222e25ad00db3f44",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 4.701099999999967,
+          "duration": 4.866666618982951,
+          "tolerance": 0.35,
+          "observedFrames": 18,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 5.531800000004471,
+          "settledIdleSeconds": 2.225299999997019
+        }
+      },
+      {
+        "id": "meshy:319",
+        "image": "/tmp/doreumi-approved-camera-v3-1/playback-meshy-319.jpg",
+        "sha256": "509d41a146fb78b866b1c56bef8663671cb53ebef20bb06838ebfc8ec511ffe0",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 3.352999999999996,
+          "duration": 3.466666642824809,
+          "tolerance": 0.35,
+          "observedFrames": 13,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 3.92439999999851,
+          "settledIdleSeconds": 2.22760000000149
+        }
+      },
+      {
+        "id": "meshy:326",
+        "image": "/tmp/doreumi-approved-camera-v3-1/playback-meshy-326.jpg",
+        "sha256": "210bb9bcedd41afdad6ef7217a931bfdab43740329043fab207d9552ad6e61cc",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 2.7715999999999736,
+          "duration": 2.800000023841858,
+          "tolerance": 0.35,
+          "observedFrames": 11,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 3.3253000000044706,
+          "settledIdleSeconds": 2.2364999999999995
+        }
+      },
+      {
+        "id": "meshy:338",
+        "image": "/tmp/doreumi-approved-camera-v3-1/playback-meshy-338.jpg",
+        "sha256": "03fcda52244c22fd707d2233a31a908af5d865995cd65039538f23c5f45dc01e",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 9.194700000000031,
+          "duration": 9.433333460489909,
+          "tolerance": 0.35,
+          "observedFrames": 34,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 10.01979999999702,
+          "settledIdleSeconds": 2.2467000000029813
+        }
+      },
+      {
+        "id": "meshy:354",
+        "image": "/tmp/doreumi-approved-camera-v3-1/playback-meshy-354.jpg",
+        "sha256": "d920ba6f15697dd3c7f503936da5912e2ad705d8e1526fc0127a9b3454c358d7",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 4.806999999999989,
+          "duration": 4.89999992052714,
+          "tolerance": 0.35,
+          "observedFrames": 18,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 5.3558000000044705,
+          "settledIdleSeconds": 2.24489999999851
+        }
+      },
+      {
+        "id": "meshy:388",
+        "image": "/tmp/doreumi-approved-camera-v3-1/playback-meshy-388.jpg",
+        "sha256": "cd4a4f2573d288286642ba9bfe6db91f18edade86864c992723957548efe2385",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 3.326400000000019,
+          "duration": 3.466666642824809,
+          "tolerance": 0.35,
+          "observedFrames": 13,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 3.8878999999985098,
+          "settledIdleSeconds": 2.2161000000014903
+        }
+      },
+      {
+        "id": "meshy:403",
+        "image": "/tmp/doreumi-approved-camera-v3-1/playback-meshy-403.jpg",
+        "sha256": "e362015ac2912aed50390f5b4504af46e16ddfdb4927ca5969fbb9d8acecd256",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 3.0558999999999616,
+          "duration": 3.0999999682108563,
+          "tolerance": 0.35,
+          "observedFrames": 12,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 3.6218999999985098,
+          "settledIdleSeconds": 2.229
+        }
+      },
+      {
+        "id": "meshy:406",
+        "image": "/tmp/doreumi-approved-camera-v3-1/playback-meshy-406.jpg",
+        "sha256": "83c6ee709df964c9b966ee1752b2192b81e9c221a50d2a5f5d957f1d0423ef70",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 6.112400000000008,
+          "duration": 6.316666634877523,
+          "tolerance": 0.35,
+          "observedFrames": 23,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 6.95760000000149,
+          "settledIdleSeconds": 2.21789999999851
+        }
+      },
+      {
+        "id": "meshy:412",
+        "image": "/tmp/doreumi-approved-camera-v3-1/playback-meshy-412.jpg",
+        "sha256": "da05b69c36fa72d15719168a7d7d8667a613adf5f37318b64eb0304cb3e7e745",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 10.069600000000015,
+          "duration": 10.133333269755045,
+          "tolerance": 0.35,
+          "observedFrames": 37,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 10.63660000000149,
+          "settledIdleSeconds": 2.215899999998509
+        }
+      },
+      {
+        "id": "meshy:451",
+        "image": "/tmp/doreumi-approved-camera-v3-1/playback-meshy-451.jpg",
+        "sha256": "c7c6d34cdfb9cfb973848b09dee117ed83558d68ed46fb10a03c2098caf5e939",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 5.2709000000000135,
+          "duration": 5.39999992052714,
+          "tolerance": 0.35,
+          "observedFrames": 20,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 5.83639999999851,
+          "settledIdleSeconds": 2.232800000004471
+        }
+      },
+      {
+        "id": "meshy:452",
+        "image": "/tmp/doreumi-approved-camera-v3-1/playback-meshy-452.jpg",
+        "sha256": "fc947da9a29af50edd5f2c5ff7ff62a4af86272704ccdc95342a95c12b9e3f5f",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 3.569499999999996,
+          "duration": 3.700000111262004,
+          "tolerance": 0.35,
+          "observedFrames": 14,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 4.13,
+          "settledIdleSeconds": 2.2212000000029803
+        }
+      },
+      {
+        "id": "meshy:460",
+        "image": "/tmp/doreumi-approved-camera-v3-1/playback-meshy-460.jpg",
+        "sha256": "9e4714bae4349ec8ff007264d9647535a88fc6752617c9fbe39d105a17a68d55",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 5.02079999999998,
+          "duration": 5.233333412806193,
+          "tolerance": 0.35,
+          "observedFrames": 19,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 5.8507000000029805,
+          "settledIdleSeconds": 2.2095000000000002
+        }
+      },
+      {
+        "id": "meshy:461",
+        "image": "/tmp/doreumi-approved-camera-v3-1/playback-meshy-461.jpg",
+        "sha256": "11345a85d1658af845f6df2e59c58c174666138da8f38b95d38a63f4b971f1a4",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 3.9307000000000056,
+          "duration": 4.099999968210856,
+          "tolerance": 0.35,
+          "observedFrames": 15,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 4.523700000002981,
+          "settledIdleSeconds": 2.0372999999970194
+        }
+      },
+      {
+        "id": "meshy:474",
+        "image": "/tmp/doreumi-approved-camera-v3-1/playback-meshy-474.jpg",
+        "sha256": "59941228711820f8ebc6f25188a19609c7fbb2c19919031492b59630d0805c19",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 3.4792000000000067,
+          "duration": 3.6333332935969036,
+          "tolerance": 0.35,
+          "observedFrames": 13,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 4.05219999999553,
+          "settledIdleSeconds": 2.232
+        }
+      },
+      {
+        "id": "meshy:503",
+        "image": "/tmp/doreumi-approved-camera-v3-1/playback-meshy-503.jpg",
+        "sha256": "ad135d0ad5ecd56bde728994b65d205300a4d24fc86044b93f7a7bd4698f4ead",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 2.2362000000000677,
+          "duration": 2.4999999880790713,
+          "tolerance": 0.35,
+          "observedFrames": 9,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 3.064,
+          "settledIdleSeconds": 2.2227999999970196
+        }
+      },
+      {
+        "id": "meshy:591",
+        "image": "/tmp/doreumi-approved-camera-v3-1/playback-meshy-591.jpg",
+        "sha256": "287dc249d836caeb793b37c69cab64ba64ee036d64131998c8f36f7ab645862e",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 5.590099999999967,
+          "duration": 5.699999904632568,
+          "tolerance": 0.35,
+          "observedFrames": 21,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 6.14889999999851,
+          "settledIdleSeconds": 2.222399999998509
+        }
+      },
+      {
+        "id": "meshy:592",
+        "image": "/tmp/doreumi-approved-camera-v3-1/playback-meshy-592.jpg",
+        "sha256": "0013f0d3dacc0d178b69c92a79c20e22c20edc2efb1d771d85d04c493aced863",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 4.70830000000004,
+          "duration": 4.9333332220713295,
+          "tolerance": 0.35,
+          "observedFrames": 18,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 5.55789999999851,
+          "settledIdleSeconds": 2.2220000000000004
+        }
+      },
+      {
+        "id": "meshy:596",
+        "image": "/tmp/doreumi-approved-camera-v3-1/playback-meshy-596.jpg",
+        "sha256": "90868ff94e82d7129aced8c3c766d69cecc909e5bb7fe68d7d2aa3a403841055",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 6.090299999999922,
+          "duration": 6.099999968210856,
+          "tolerance": 0.35,
+          "observedFrames": 23,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 6.64780000000447,
+          "settledIdleSeconds": 2.21739999999851
+        }
+      },
+      {
+        "id": "meshy:599",
+        "image": "/tmp/doreumi-approved-camera-v3-1/playback-meshy-599.jpg",
+        "sha256": "5361dbc3f13c6da6bf220ec07ae8017dbb30095f007c1e6287f7d61792779a3d",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 8.368099999999979,
+          "duration": 8.599999968210856,
+          "tolerance": 0.35,
+          "observedFrames": 31,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 9.20639999999851,
+          "settledIdleSeconds": 2.18320000000298
+        }
+      },
+      {
+        "id": "meshy:601",
+        "image": "/tmp/doreumi-approved-camera-v3-1/playback-meshy-601.jpg",
+        "sha256": "e411091a1487000221fd738a2639390cbf9c67f695e9c2d2b981b2f2c5bb973f",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 3.576400000000017,
+          "duration": 3.700000111262004,
+          "tolerance": 0.35,
+          "observedFrames": 14,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 4.14529999999702,
+          "settledIdleSeconds": 2.21939999999851
+        }
+      },
+      {
+        "id": "meshy:639",
+        "image": "/tmp/doreumi-approved-camera-v3-1/playback-meshy-639.jpg",
+        "sha256": "1ca250d8e8a93c970849d8ed2a470ec4cb8061591d9201794bc9be4907918b2e",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 4.7429999999999914,
+          "duration": 4.799999952316284,
+          "tolerance": 0.35,
+          "observedFrames": 18,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 5.2947000000029805,
+          "settledIdleSeconds": 2.2215
+        }
+      }
+    ]
+  },
+  "quarterEvidence": {
+    "report": "/tmp/doreumi-approved-camera-v3-0.25/report.json",
+    "reportSha256": "f2aaa8ef3f57f9eaab2d2226e446d214b17c57def432a85dfc3c06ef65f052bd",
+    "runtimeBundleSha256": "37da1b8b0579819aed949205415e6c0d861f9beb0b47b4a37cb0b560059f681c",
+    "modelSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+    "clipHashes": {
+      "meshy:2": "08d0f198355209a120858a794ce5301ee142efd21599a08f5588415838979de5",
+      "meshy:11": "5c7203ec43e2d74bda4d273b7e9b60ba55527aab84e1de92e6f46f49da3d26f9",
+      "meshy:12": "3fed289233000aec115841b68d52495acacb4dd2cfc4658173ba1eadb7d48ad3",
+      "meshy:22": "6edb0e3e5413e3be891a1d45f16272bd096efef975d0a1d77d24a681b0c97815",
+      "meshy:23": "8f4af4a3d9089b158749a5fd47774c6886b55397ad22778bb67ff731c4006048",
+      "meshy:24": "96d8aa8a7591f25ea708642d10690111c4849f9716abfec6840864a9f44b37f7",
+      "meshy:27": "78b956bea8c19583ef4ff890785b1a3ea2e0a5520bd40dc1f9d7b10946669065",
+      "meshy:36": "87f0747570d61c227cdf463e66f6cecdd1c6dfa952fa04a9c87145ae40fb02d4",
+      "meshy:38": "60cf7486c85a73e0bf935f8927d6cee3d9ff9c75f69c02de6218c1533dcd4d65",
+      "meshy:40": "60da32a00387d86bb70fe813342ebb90057dca2d214efc864bbab512472b1f67",
+      "meshy:46": "f7d31e5c8821c6e8d0f080c574c03adb5ae097a1463946ae45ada85389fd26f2",
+      "meshy:63": "8fc9d1e161364dedce3c1400b2eace811995f2550b72fd19811ae3baefb2a947",
+      "meshy:67": "4cd82441b1a79129067a1ea304dd77e7910d11d528ff0f8cfd95b82edf2a389e",
+      "meshy:243": "27c4d203caf5005018c885abcd8b232eed740361bcb8221498091ac3fd198612",
+      "meshy:244": "9be1c76fe67396492a04cba74c41aa7aa86c07ba4245baed3a3eabcda9ce5aa2",
+      "meshy:246": "c9db340e09cb7f3ef46fcb98b4bedac61fb94bfadd66a976fc03dce4d5498562",
+      "meshy:247": "dab97165b90935540eedee7f160bc15a28ff4d6914e1f4a83675e9f7e59257bf",
+      "meshy:249": "6ee6877312a4563fda41cabf28468bfe7a3c97916f0751a35ba1081459b47222",
+      "meshy:250": "6aac4487139210c83fffa723ce1b0b4c7ac9b4ea77aa0f81128cdf0b67bc512d",
+      "meshy:251": "a67e05ee17f2c9741850cbba2dcd6397958888e009d1121e57d80621b11f4de0",
+      "meshy:252": "9a4be592385b3fcb986bba1f5c4f6f4fa05c56af02b5142fe45115c0ee8d9d33",
+      "meshy:255": "269bb3f433fcd9879138bef1f7fa10669a0ee8591c6bacf8d44a576b25616f85",
+      "meshy:256": "7e85f5b4d168de3d4adbb11d342da3edeab47393023a4ca9ea8f0748422175a3",
+      "meshy:269": "31aef9c4e7abd3b9e2861d05e85dc42d2f65202b7d2daf1f0f9c29288a591b4e",
+      "meshy:290": "de92f40c7a4bbde6673d267b70fd69d1aaa4c9c017bcb65a7c738c9be5928bb8",
+      "meshy:293": "38f650f454a0c563b29bfafe54d41edebaeea5be660949eeb5d1368702540d4b",
+      "meshy:295": "d81e02e4e5aa901b43bbc392c5c4e7387a9f15e5a6e5e1f1afd62aa331122244",
+      "meshy:296": "4484a3aeb28cc58f6684b6bf6ed4b434d05f9ca47b65992575e80ad85a9db847",
+      "meshy:298": "eba0bc33a84a33c2eec49767f9835d3b916f058abbc03bd6b88d8a0f48ca650a",
+      "meshy:299": "b0188e4194cff5402e8f764ade7c1d4cc339e03636343bb6442622d212c20c3b",
+      "meshy:308": "0181e5d8e14d47450fa6c1fb7e9d2b3cdf19e1d552b488fbb0f1bf07cdd7f0b5",
+      "meshy:309": "a9394f87d2d4796263bda2c34828948b32db10c4d5cbf4626153423b07345a18",
+      "meshy:310": "26248fcf5c4e9d430bf1683ca2c54eed0c84b9db12646614227a148e3e16a25d",
+      "meshy:313": "451fc33ca77a6ee7a4e5cf728b1e880f94deaf272c8fd6fc26d4ca82dc6d346c",
+      "meshy:314": "969532a13a42ef2d1b545b302c5c3816098e47371d419ab4d650019dafee58d4",
+      "meshy:317": "f90a5e5599292a62461e4f64df02d4b8ff10301b3acf6c3590ef97ddfcb816c4",
+      "meshy:318": "241003805b82fdd8987118995a986bd412cf00359c5cebd0926a44be8c8a7574",
+      "meshy:319": "3cd1c0f1b97203cb703b37b349f709e3a673c602fc5e0a9454cbe7329c8f7392",
+      "meshy:326": "de79338f0f0bf737045027e88cdadbb729d98e540a2b5bf78d51073776f351ef",
+      "meshy:338": "ef3a309606784b88c435c97fe95ad5834ddb2a7e527c7e3e30c64eab8daf6805",
+      "meshy:354": "ccc3cc6ac6b18340b741d71e15d02c8c7614d0ca668316edf2601a7a853ae2ab",
+      "meshy:388": "6332ed94b57c807bee066455ef445bc695ebe59275bcb407bbdc3ec4f5fbcfbe",
+      "meshy:403": "2b140f5812e47496ba0279e89968873482d9289f48c3f0258bffb4ac8bafdbc9",
+      "meshy:406": "42bfddc199c332a2ee2ce4076d5aaa140bd950b8f7e1e14e9664c5dfc52e076e",
+      "meshy:412": "82718f16aa253a7877862d1fac4c945814fe4ff61decd53c1502ac963c05a7be",
+      "meshy:451": "7a4081f6afa43840e9fcff3474df196d11a2a9e0e4c50f66526f403416ac290a",
+      "meshy:452": "79e024d38ca4e45af2ea635cc39389efd320d55b8d96ef865df6b88f5ecaaa24",
+      "meshy:460": "9501cb4e30f1daf24109cf4a0bdb567b1d36219d26a640a2b3c585508b57fc3e",
+      "meshy:461": "c44de1442c7f94c337e0d8c10d37830357bb16b796135066e99056d12f06610d",
+      "meshy:474": "3ddae44d2fc8fb39c6a1220ca5c4b8eba124bb230d0c35b87566e1cd6d4196f8",
+      "meshy:503": "de140e46f1b56de0068b9f345fe3d42392c508d4637cde67c75cdeec74e8e6f2",
+      "meshy:591": "202bdef36139b8f9601ef130fdb9859eb8550e3aa5d2baf1f99b6dd9675b34b5",
+      "meshy:592": "5271ab939a368a02c60defe06e935c5a362778efc768fb132af90159bd829b39",
+      "meshy:596": "7488f6c7de80c9c29680b54af98ba5c27bdabb6e4f331f1f5ad004c8c0993c92",
+      "meshy:599": "24a4dbda2afe45e858a896d3318191c0fe390277a4d3a5d518f112df8aec1120",
+      "meshy:601": "b2954026c33be3cfc4ea98dfd43b6cab5fa47aa6304665f3d86aff8671e4045f",
+      "meshy:639": "42beed94ff90692c0190c35b35a7a2d64f6a7793f74b8773878e265c24673af8"
+    },
+    "samples": [
+      {
+        "id": "meshy:2",
+        "image": "/tmp/doreumi-approved-camera-v3-0.25/playback-meshy-2.jpg",
+        "sha256": "3e237e55e9e02afac18ba4d36c2864e1858b422b3389beda62e68e13bc20b942",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 5.359549999999985,
+          "duration": 5.566666666666666,
+          "tolerance": 0.35,
+          "observedFrames": 22,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 24.522,
+          "settledIdleSeconds": 2.1298999999985107
+        }
+      },
+      {
+        "id": "meshy:11",
+        "image": "/tmp/doreumi-approved-camera-v3-0.25/playback-meshy-11.jpg",
+        "sha256": "2db6b40d7b322c033cfb3b9a7628125e03b7eb47f93e07d52799743ce7769777",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 3.8282000000000016,
+          "duration": 3.8999999205271405,
+          "tolerance": 0.35,
+          "observedFrames": 16,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 17.39810000000149,
+          "settledIdleSeconds": 2.1194999999999986
+        }
+      },
+      {
+        "id": "meshy:12",
+        "image": "/tmp/doreumi-approved-camera-v3-0.25/playback-meshy-12.jpg",
+        "sha256": "86fae1c6e59875f4e54d15ea9bde41e0abb2c87106e7d7edcd400157e34b3c8e",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 6.698050000000008,
+          "duration": 6.900000158945719,
+          "tolerance": 0.35,
+          "observedFrames": 27,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 29.9005,
+          "settledIdleSeconds": 2.2371000000014902
+        }
+      },
+      {
+        "id": "meshy:22",
+        "image": "/tmp/doreumi-approved-camera-v3-0.25/playback-meshy-22.jpg",
+        "sha256": "52c0e71d5a696beaca6f99d941cf09205388fac60ac0ec7e441ca4e77e5b4bad",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 9.265775000000025,
+          "duration": 9.33333355585734,
+          "tolerance": 0.35,
+          "observedFrames": 37,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 39.12679999999702,
+          "settledIdleSeconds": 2.160100000001492
+        }
+      },
+      {
+        "id": "meshy:23",
+        "image": "/tmp/doreumi-approved-camera-v3-0.25/playback-meshy-23.jpg",
+        "sha256": "e17612d71210df71127a8685acfd568cc916fca2fa4d34bd3b43c9e4669dbee1",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 9.031375000000033,
+          "duration": 9.066666666666666,
+          "tolerance": 0.35,
+          "observedFrames": 36,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 38.192,
+          "settledIdleSeconds": 2.192799999997021
+        }
+      },
+      {
+        "id": "meshy:24",
+        "image": "/tmp/doreumi-approved-camera-v3-0.25/playback-meshy-24.jpg",
+        "sha256": "c367d17608f77f50f2974abc62e886cf7ab70a1d8dd1feaff220663e61598c4f",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 9.44810000000003,
+          "duration": 9.600000445048014,
+          "tolerance": 0.35,
+          "observedFrames": 38,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 40.87060000000149,
+          "settledIdleSeconds": 2.122399999998514
+        }
+      },
+      {
+        "id": "meshy:27",
+        "image": "/tmp/doreumi-approved-camera-v3-0.25/playback-meshy-27.jpg",
+        "sha256": "b60f04cbf1f3c7d41abc55e24114f92d65a9cec28bdca735f549a2dddfd7b00e",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 7.668525000000011,
+          "duration": 7.733333174387614,
+          "tolerance": 0.35,
+          "observedFrames": 31,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 32.71739999999851,
+          "settledIdleSeconds": 2.0978000000044688
+        }
+      },
+      {
+        "id": "meshy:36",
+        "image": "/tmp/doreumi-approved-camera-v3-0.25/playback-meshy-36.jpg",
+        "sha256": "afb4e313f2510d4641b2949126d5a8d2ea7d306dc4fca6e697f560b74a56c3ea",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 12.960300000000045,
+          "duration": 13.066666666666666,
+          "tolerance": 0.35,
+          "observedFrames": 52,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 53.90860000000149,
+          "settledIdleSeconds": 2.06380000000447
+        }
+      },
+      {
+        "id": "meshy:38",
+        "image": "/tmp/doreumi-approved-camera-v3-0.25/playback-meshy-38.jpg",
+        "sha256": "4f4d92ed68e4505b19b882e07236629c5dd9aaa9a91fe328454d77bb5fdd544d",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 12.305425000000024,
+          "duration": 12.433333015441894,
+          "tolerance": 0.35,
+          "observedFrames": 49,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 52.33410000000149,
+          "settledIdleSeconds": 2.193799999997019
+        }
+      },
+      {
+        "id": "meshy:40",
+        "image": "/tmp/doreumi-approved-camera-v3-0.25/playback-meshy-40.jpg",
+        "sha256": "5b6bcaa76aeb95a8219ad2352fbe6990f7f5df94b94bf899e3a2ddcc09a57468",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 12.231175000000018,
+          "duration": 12.266666475931803,
+          "tolerance": 0.35,
+          "observedFrames": 49,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 50.97220000000298,
+          "settledIdleSeconds": 2.191299999997021
+        }
+      },
+      {
+        "id": "meshy:46",
+        "image": "/tmp/doreumi-approved-camera-v3-0.25/playback-meshy-46.jpg",
+        "sha256": "0dbd1da4eaaede749189c7f0f8f34abd4835eb1eb253e310c4988c304faffac8",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 10.02100000000002,
+          "duration": 10.133333269755045,
+          "tolerance": 0.35,
+          "observedFrames": 40,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 43.1635,
+          "settledIdleSeconds": 2.1910000000000025
+        }
+      },
+      {
+        "id": "meshy:63",
+        "image": "/tmp/doreumi-approved-camera-v3-0.25/playback-meshy-63.jpg",
+        "sha256": "a67b5a6a4bd0df0d67e5dd0824aa921c97c9aa4560bb000572d29b121a018af1",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 11.252000000000008,
+          "duration": 11.266666984558105,
+          "tolerance": 0.35,
+          "observedFrames": 45,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 47.0475,
+          "settledIdleSeconds": 2.113699999995532
+        }
+      },
+      {
+        "id": "meshy:67",
+        "image": "/tmp/doreumi-approved-camera-v3-0.25/playback-meshy-67.jpg",
+        "sha256": "5c180665409ce50336f73aa6a67fcea04e8b922cf45daf76c69041a2df239669",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 9.457075000000017,
+          "duration": 9.633333269755045,
+          "tolerance": 0.35,
+          "observedFrames": 38,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 40.884,
+          "settledIdleSeconds": 2.185799999997016
+        }
+      },
+      {
+        "id": "meshy:243",
+        "image": "/tmp/doreumi-approved-camera-v3-0.25/playback-meshy-243.jpg",
+        "sha256": "4d91347ecf0520eddaa0654bd9a8642efd22a9bae085223a4137d696bec84349",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 11.331900000000019,
+          "duration": 11.533332888285319,
+          "tolerance": 0.35,
+          "observedFrames": 45,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 48.38460000000149,
+          "settledIdleSeconds": 2.1880000000000024
+        }
+      },
+      {
+        "id": "meshy:244",
+        "image": "/tmp/doreumi-approved-camera-v3-0.25/playback-meshy-244.jpg",
+        "sha256": "ee3fd600465db803e48f5b4193507e50a6c8856ef5b38ceac24fbc3f43bfd4d4",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 15.47385000000016,
+          "duration": 15.533332888285319,
+          "tolerance": 0.35,
+          "observedFrames": 72,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 82.0383999999985,
+          "settledIdleSeconds": 2.6225000000000023
+        }
+      },
+      {
+        "id": "meshy:246",
+        "image": "/tmp/doreumi-approved-camera-v3-0.25/playback-meshy-246.jpg",
+        "sha256": "b43aa6f40c036d53d95bbf23c234ce7bd67a59a2a52692e976cf95a9d41c92e4",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 8.928749999999997,
+          "duration": 8.966666762034098,
+          "tolerance": 0.35,
+          "observedFrames": 36,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 37.793800000004474,
+          "settledIdleSeconds": 2.0759999999999934
+        }
+      },
+      {
+        "id": "meshy:247",
+        "image": "/tmp/doreumi-approved-camera-v3-0.25/playback-meshy-247.jpg",
+        "sha256": "72eea138810b9510f78ab6fafedee1a4756be35f08d19e553944419db1f716d2",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 10.244950000000001,
+          "duration": 10.333333079020182,
+          "tolerance": 0.35,
+          "observedFrames": 41,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 43.02569999999553,
+          "settledIdleSeconds": 2.1603000000044688
+        }
+      },
+      {
+        "id": "meshy:249",
+        "image": "/tmp/doreumi-approved-camera-v3-0.25/playback-meshy-249.jpg",
+        "sha256": "c9156f4c1337c5e7f60328cfc115b47b4a31de45bc18ae5df3ce21a6626c243c",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 3.5611499999999934,
+          "duration": 3.566666666666667,
+          "tolerance": 0.35,
+          "observedFrames": 15,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 16.315,
+          "settledIdleSeconds": 2.144600000001489
+        }
+      },
+      {
+        "id": "meshy:250",
+        "image": "/tmp/doreumi-approved-camera-v3-0.25/playback-meshy-250.jpg",
+        "sha256": "556793e5905ecc76e9f551ab0583f051b4d9c02eb5c699f6050b02de8d73ff60",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 5.074774999999997,
+          "duration": 5.233333412806193,
+          "tolerance": 0.35,
+          "observedFrames": 21,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 23.43569999999553,
+          "settledIdleSeconds": 2.1013000000044677
+        }
+      },
+      {
+        "id": "meshy:251",
+        "image": "/tmp/doreumi-approved-camera-v3-0.25/playback-meshy-251.jpg",
+        "sha256": "0cb493690a8d16f87b5e27a41d214ac2e6be03103584e939940bc953a11680ab",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 3.3211499999999927,
+          "duration": 3.466666642824809,
+          "tolerance": 0.35,
+          "observedFrames": 14,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 16.3755,
+          "settledIdleSeconds": 2.1181000000014905
+        }
+      },
+      {
+        "id": "meshy:252",
+        "image": "/tmp/doreumi-approved-camera-v3-0.25/playback-meshy-252.jpg",
+        "sha256": "b770429c70d3097e5f06103106aa04971a65dee6353e2a51b042eaf20d5b98c0",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 7.424074999999978,
+          "duration": 7.566666666666666,
+          "tolerance": 0.35,
+          "observedFrames": 30,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 32.8025,
+          "settledIdleSeconds": 2.22810000000149
+        }
+      },
+      {
+        "id": "meshy:255",
+        "image": "/tmp/doreumi-approved-camera-v3-0.25/playback-meshy-255.jpg",
+        "sha256": "03ad53c12b56c3e865b5ed2721d72a49c792164b45bcd08edf9a09319e5ebe51",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 2.8385250000000224,
+          "duration": 2.966666642824809,
+          "tolerance": 0.35,
+          "observedFrames": 12,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 14.46889999999851,
+          "settledIdleSeconds": 2.071399999998512
+        }
+      },
+      {
+        "id": "meshy:256",
+        "image": "/tmp/doreumi-approved-camera-v3-0.25/playback-meshy-256.jpg",
+        "sha256": "0f067b75b79fd164dd75a33275794ac67f002af6b03ceb78596b9d7e39ffeb63",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 2.8453749999999993,
+          "duration": 2.966666642824809,
+          "tolerance": 0.35,
+          "observedFrames": 12,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 14.48839999999851,
+          "settledIdleSeconds": 2.183
+        }
+      },
+      {
+        "id": "meshy:269",
+        "image": "/tmp/doreumi-approved-camera-v3-0.25/playback-meshy-269.jpg",
+        "sha256": "4e795264dbbe1150b3a63bf2f2311db228fb8cee5619d2bc9c84019f4059f7ac",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 9.94464999999999,
+          "duration": 10.066666444142658,
+          "tolerance": 0.35,
+          "observedFrames": 40,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 42.858,
+          "settledIdleSeconds": 2.153500000000001
+        }
+      },
+      {
+        "id": "meshy:290",
+        "image": "/tmp/doreumi-approved-camera-v3-0.25/playback-meshy-290.jpg",
+        "sha256": "df6b847102cd28087aefd0d3a2650d0e8c9877171adb552410d91d9d21e7f4a8",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 5.618475000000008,
+          "duration": 5.666666571299235,
+          "tolerance": 0.35,
+          "observedFrames": 23,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 24.53810000000149,
+          "settledIdleSeconds": 2.0762000000029808
+        }
+      },
+      {
+        "id": "meshy:293",
+        "image": "/tmp/doreumi-approved-camera-v3-0.25/playback-meshy-293.jpg",
+        "sha256": "4d94a476ebbab7d23b1936c970e1c4ec24a4850c7e7a274a81894d04dacf8332",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 2.036225000000003,
+          "duration": 2.13333332935969,
+          "tolerance": 0.35,
+          "observedFrames": 9,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 10.2385,
+          "settledIdleSeconds": 2.2333999999985092
+        }
+      },
+      {
+        "id": "meshy:295",
+        "image": "/tmp/doreumi-approved-camera-v3-0.25/playback-meshy-295.jpg",
+        "sha256": "b47ebdf6273bc925e8e36feb01f53aa76b8c50256f19036e09d34604b94ab6c2",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 4.573024999999995,
+          "duration": 4.766666714350382,
+          "tolerance": 0.35,
+          "observedFrames": 19,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 21.38160000000149,
+          "settledIdleSeconds": 2.2821999999955302
+        }
+      },
+      {
+        "id": "meshy:296",
+        "image": "/tmp/doreumi-approved-camera-v3-0.25/playback-meshy-296.jpg",
+        "sha256": "b6754a883d951e4761a58adad4e00e3c48689e0a57204079eaff110743de6821",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 6.102450000000024,
+          "duration": 6.299999777475993,
+          "tolerance": 0.35,
+          "observedFrames": 25,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 27.49260000000149,
+          "settledIdleSeconds": 2.1054999999999993
+        }
+      },
+      {
+        "id": "meshy:298",
+        "image": "/tmp/doreumi-approved-camera-v3-0.25/playback-meshy-298.jpg",
+        "sha256": "532877de75675be11756df132eb565c03aea5eeb187f2609c09e15e7c4ffae84",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 3.3282250000000326,
+          "duration": 3.466666642824809,
+          "tolerance": 0.35,
+          "observedFrames": 14,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 16.35939999999851,
+          "settledIdleSeconds": 2.154
+        }
+      },
+      {
+        "id": "meshy:299",
+        "image": "/tmp/doreumi-approved-camera-v3-0.25/playback-meshy-299.jpg",
+        "sha256": "8dc3e17bc0a59d12cfe372164c4a575b5a27591ebd17c2df342cae020a33d8a9",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 5.663275000000029,
+          "duration": 5.733333174387614,
+          "tolerance": 0.35,
+          "observedFrames": 23,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 24.7295,
+          "settledIdleSeconds": 2.0997000000029793
+        }
+      },
+      {
+        "id": "meshy:308",
+        "image": "/tmp/doreumi-approved-camera-v3-0.25/playback-meshy-308.jpg",
+        "sha256": "26c58ee95f1c7c5fde239172a5ac66b69384cd3e90d9c2a558f5f233e7a2efb9",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 11.765824999999955,
+          "duration": 11.833333079020182,
+          "tolerance": 0.35,
+          "observedFrames": 47,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 49.08770000000298,
+          "settledIdleSeconds": 2.1082999999970156
+        }
+      },
+      {
+        "id": "meshy:309",
+        "image": "/tmp/doreumi-approved-camera-v3-0.25/playback-meshy-309.jpg",
+        "sha256": "770bbff6051a4a5249dd97baff9dd06c04d648c1dc3ed8816f6152acde66992a",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 6.626875000000005,
+          "duration": 6.733333174387614,
+          "tolerance": 0.35,
+          "observedFrames": 27,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 28.59389999999851,
+          "settledIdleSeconds": 2.1036999999955306
+        }
+      },
+      {
+        "id": "meshy:310",
+        "image": "/tmp/doreumi-approved-camera-v3-0.25/playback-meshy-310.jpg",
+        "sha256": "af7edef20909f4c36cb06dd55aab12fc6eb1fdd4c86e769b7eadd302b72f587c",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 6.166850000000032,
+          "duration": 6.2333332061767575,
+          "tolerance": 0.35,
+          "observedFrames": 25,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 26.71020000000298,
+          "settledIdleSeconds": 2.1297999999970187
+        }
+      },
+      {
+        "id": "meshy:313",
+        "image": "/tmp/doreumi-approved-camera-v3-0.25/playback-meshy-313.jpg",
+        "sha256": "56f93a3175e90a7a024543488c423361dbc3f8f9a223c790b830278659cb199c",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 5.364799999999987,
+          "duration": 5.533333365122477,
+          "tolerance": 0.35,
+          "observedFrames": 22,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 24.56260000000149,
+          "settledIdleSeconds": 2.146300000004473
+        }
+      },
+      {
+        "id": "meshy:314",
+        "image": "/tmp/doreumi-approved-camera-v3-0.25/playback-meshy-314.jpg",
+        "sha256": "450fc2ebbd025c4ed40aa7dbc6ebf99b35af2905190fc882b512972ddb192252",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 5.121550000000046,
+          "duration": 5.333333317438761,
+          "tolerance": 0.35,
+          "observedFrames": 21,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 23.6065,
+          "settledIdleSeconds": 2.1818999999985103
+        }
+      },
+      {
+        "id": "meshy:317",
+        "image": "/tmp/doreumi-approved-camera-v3-0.25/playback-meshy-317.jpg",
+        "sha256": "12a0c99da5143e5753050feb6d3916bed9e85c7fe661a67fa6d29b010bdfc120",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 3.335100000000034,
+          "duration": 3.566666666666667,
+          "tolerance": 0.35,
+          "observedFrames": 14,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 16.3945,
+          "settledIdleSeconds": 2.1842999999970196
+        }
+      },
+      {
+        "id": "meshy:318",
+        "image": "/tmp/doreumi-approved-camera-v3-0.25/playback-meshy-318.jpg",
+        "sha256": "9b8f2e80971bb2fbaa2171d4e32031b9ddd37e40fb29a716f2194d081acc4e3a",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 4.637225000000037,
+          "duration": 4.866666618982951,
+          "tolerance": 0.35,
+          "observedFrames": 19,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 21.61260000000149,
+          "settledIdleSeconds": 2.0308999999985105
+        }
+      },
+      {
+        "id": "meshy:319",
+        "image": "/tmp/doreumi-approved-camera-v3-0.25/playback-meshy-319.jpg",
+        "sha256": "cdee8d9ac3bbe26d5eb797476347128231bd5937a6e2ba1ad36c3b559bd081d3",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 3.3455249999999617,
+          "duration": 3.466666642824809,
+          "tolerance": 0.35,
+          "observedFrames": 14,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 16.48080000000447,
+          "settledIdleSeconds": 2.1212999999970172
+        }
+      },
+      {
+        "id": "meshy:326",
+        "image": "/tmp/doreumi-approved-camera-v3-0.25/playback-meshy-326.jpg",
+        "sha256": "5102a865f5fdc5de6fe074d6022282a3a5c6bbc4b2432c7fc9fc64b1e56461f6",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 2.5451500000000213,
+          "duration": 2.800000023841858,
+          "tolerance": 0.35,
+          "observedFrames": 11,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 13.27889999999851,
+          "settledIdleSeconds": 2.2226999999955304
+        }
+      },
+      {
+        "id": "meshy:338",
+        "image": "/tmp/doreumi-approved-camera-v3-0.25/playback-meshy-338.jpg",
+        "sha256": "2a64e0608c8ae86dc2d82fb987a2b0ad385fc1348f7be24de01198d1e2bdea3b",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 9.222475000000038,
+          "duration": 9.433333460489909,
+          "tolerance": 0.35,
+          "observedFrames": 37,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 39.99710000000149,
+          "settledIdleSeconds": 2.108300000004469
+        }
+      },
+      {
+        "id": "meshy:354",
+        "image": "/tmp/doreumi-approved-camera-v3-0.25/playback-meshy-354.jpg",
+        "sha256": "bda243334926c00133e05a65eb05c264191b0e1b69b48f935bff90e4b46511ac",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 4.894424999999996,
+          "duration": 4.89999992052714,
+          "tolerance": 0.35,
+          "observedFrames": 20,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 21.64420000000298,
+          "settledIdleSeconds": 2.2720999999940403
+        }
+      },
+      {
+        "id": "meshy:388",
+        "image": "/tmp/doreumi-approved-camera-v3-0.25/playback-meshy-388.jpg",
+        "sha256": "b502e4df67b9bd1a8b0903d6d92dcf9099eb9df9a94652d60c073e88d8ee34ac",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 3.3195,
+          "duration": 3.466666642824809,
+          "tolerance": 0.35,
+          "observedFrames": 14,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 16.35220000000298,
+          "settledIdleSeconds": 2.0206000000014903
+        }
+      },
+      {
+        "id": "meshy:403",
+        "image": "/tmp/doreumi-approved-camera-v3-0.25/playback-meshy-403.jpg",
+        "sha256": "36a8e322b1dd3a84404a879a909fa90f667ecc558dd07204191089469d9088e2",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 3.086849999999972,
+          "duration": 3.0999999682108563,
+          "tolerance": 0.35,
+          "observedFrames": 13,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 14.39319999999553,
+          "settledIdleSeconds": 2.147499999999999
+        }
+      },
+      {
+        "id": "meshy:406",
+        "image": "/tmp/doreumi-approved-camera-v3-0.25/playback-meshy-406.jpg",
+        "sha256": "99e00fb9404d96f6498f25d6577be9089f65206109770625d0fa84b6f9b336d5",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 6.102575000000006,
+          "duration": 6.316666634877523,
+          "tolerance": 0.35,
+          "observedFrames": 25,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 27.49260000000149,
+          "settledIdleSeconds": 2.2321999999955295
+        }
+      },
+      {
+        "id": "meshy:412",
+        "image": "/tmp/doreumi-approved-camera-v3-0.25/playback-meshy-412.jpg",
+        "sha256": "bd3f8c2df0b6e7d41ef0b7dec21b326bd4c227ba741712c7ddaf0ce349d49bd8",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 9.934325000000031,
+          "duration": 10.133333269755045,
+          "tolerance": 0.35,
+          "observedFrames": 40,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 42.84390000000596,
+          "settledIdleSeconds": 2.2313999999985086
+        }
+      },
+      {
+        "id": "meshy:451",
+        "image": "/tmp/doreumi-approved-camera-v3-0.25/playback-meshy-451.jpg",
+        "sha256": "aa27c707a226cd7295d546f8f21b80f4f493ddc67f3c56cf5c757dc9c6fcb16d",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 5.329924999999988,
+          "duration": 5.39999992052714,
+          "tolerance": 0.35,
+          "observedFrames": 22,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 23.36519999999553,
+          "settledIdleSeconds": 2.1449999999999996
+        }
+      },
+      {
+        "id": "meshy:452",
+        "image": "/tmp/doreumi-approved-camera-v3-0.25/playback-meshy-452.jpg",
+        "sha256": "299f73dfdf7f9b538d226638f76dfb2bbf7367d577406567016d216b78e0abf5",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 3.5730499999999843,
+          "duration": 3.700000111262004,
+          "tolerance": 0.35,
+          "observedFrames": 15,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 17.35290000000596,
+          "settledIdleSeconds": 2.1972999999970213
+        }
+      },
+      {
+        "id": "meshy:460",
+        "image": "/tmp/doreumi-approved-camera-v3-0.25/playback-meshy-460.jpg",
+        "sha256": "e796559f72e063bc32c948b66a3c7e28438394871aa9494aca5ee0693a540102",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 5.130275000000024,
+          "duration": 5.233333412806193,
+          "tolerance": 0.35,
+          "observedFrames": 21,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 22.56939999999851,
+          "settledIdleSeconds": 2.1945000000000014
+        }
+      },
+      {
+        "id": "meshy:461",
+        "image": "/tmp/doreumi-approved-camera-v3-0.25/playback-meshy-461.jpg",
+        "sha256": "c3cc83bc48356ba42ed09ddd584a4268d067cb2377a6b1a8ccc0a10a3f9229ea",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 3.852499999999998,
+          "duration": 4.099999968210856,
+          "tolerance": 0.35,
+          "observedFrames": 16,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 18.49039999999851,
+          "settledIdleSeconds": 2.1814999999999998
+        }
+      },
+      {
+        "id": "meshy:474",
+        "image": "/tmp/doreumi-approved-camera-v3-0.25/playback-meshy-474.jpg",
+        "sha256": "4b37c27cbf7d80c42f6356fd1c937520730bf7ca92b3677230769e0822e9d79a",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 3.600674999999985,
+          "duration": 3.6333332935969036,
+          "tolerance": 0.35,
+          "observedFrames": 15,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 16.41219999999553,
+          "settledIdleSeconds": 2.132900000005961
+        }
+      },
+      {
+        "id": "meshy:503",
+        "image": "/tmp/doreumi-approved-camera-v3-0.25/playback-meshy-503.jpg",
+        "sha256": "a25ffd2b3bb1bb63e4da0d162b4d51549b636ad43b2436e57475b0e61be1b7f6",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 2.331299999999986,
+          "duration": 2.4999999880790713,
+          "tolerance": 0.35,
+          "observedFrames": 10,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 12.42589999999851,
+          "settledIdleSeconds": 2.177799999997019
+        }
+      },
+      {
+        "id": "meshy:591",
+        "image": "/tmp/doreumi-approved-camera-v3-0.25/playback-meshy-591.jpg",
+        "sha256": "3b84946629ae35a203c996ac9c2c9d67b4ffe382717e55aa5f97be269d323e66",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 5.614650000000027,
+          "duration": 5.699999904632568,
+          "tolerance": 0.35,
+          "observedFrames": 23,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 24.53969999999553,
+          "settledIdleSeconds": 2.27170000000298
+        }
+      },
+      {
+        "id": "meshy:592",
+        "image": "/tmp/doreumi-approved-camera-v3-0.25/playback-meshy-592.jpg",
+        "sha256": "c261edb40deaddc1ae74bfb8ebf376b95c8488aff822148db934369d078b5709",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 4.826474999999981,
+          "duration": 4.9333332220713295,
+          "tolerance": 0.35,
+          "observedFrames": 20,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 21.38719999999553,
+          "settledIdleSeconds": 2.239800000004468
+        }
+      },
+      {
+        "id": "meshy:596",
+        "image": "/tmp/doreumi-approved-camera-v3-0.25/playback-meshy-596.jpg",
+        "sha256": "ad38fd835a59d741486b8ad548696ec3f3b8a24d7e52701168c895fbe6903b8d",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 5.917049999999993,
+          "duration": 6.099999968210856,
+          "tolerance": 0.35,
+          "observedFrames": 24,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 26.76609999999404,
+          "settledIdleSeconds": 2.1382000000029784
+        }
+      },
+      {
+        "id": "meshy:599",
+        "image": "/tmp/doreumi-approved-camera-v3-0.25/playback-meshy-599.jpg",
+        "sha256": "7840c626f44b21234d70b441778eda3a0fad2e2180d75ba185354e42c2cdd01d",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 8.446299999999995,
+          "duration": 8.599999968210856,
+          "tolerance": 0.35,
+          "observedFrames": 34,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 36.86760000000149,
+          "settledIdleSeconds": 2.192799999997021
+        }
+      },
+      {
+        "id": "meshy:601",
+        "image": "/tmp/doreumi-approved-camera-v3-0.25/playback-meshy-601.jpg",
+        "sha256": "f35186b6878f59d2253fd6a469a1a94c9f8f8b43289b82083b119a66f5c5a050",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 3.5732499999999963,
+          "duration": 3.700000111262004,
+          "tolerance": 0.35,
+          "observedFrames": 15,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 17.36220000000298,
+          "settledIdleSeconds": 2.1488999999985126
+        }
+      },
+      {
+        "id": "meshy:639",
+        "image": "/tmp/doreumi-approved-camera-v3-0.25/playback-meshy-639.jpg",
+        "sha256": "c9b6f7d33a2a15167ffe08ea1b46d0a65ac05cc8e378501ca200a10ad0890b2f",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 4.560824999999954,
+          "duration": 4.799999952316284,
+          "tolerance": 0.35,
+          "observedFrames": 19,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1,
+          "stableIdleAt": 21.3035,
+          "settledIdleSeconds": 2.222399999998512
+        }
+      }
+    ]
+  },
+  "findings": [],
+  "limitations": [
+    "Headless render evidence does not establish physical-device frame rate.",
+    "502 was reviewed separately after this 57-motion snapshot; 578 camera-v3 tail checkpoint is separate."
+  ]
+}

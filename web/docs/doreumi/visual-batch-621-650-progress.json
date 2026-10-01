@@ -1,0 +1,1870 @@
+{
+  "status": "visual-reviewed-contact-corrections-pending",
+  "scope": "All25 motions: root individually viewed normal128px and quarter538px five-angle nine-pose sheets plus actual full-cycle playback, including stable Idle tail. This is visual inspection evidence, not blanket approval; numeric support and Host gates remain.",
+  "normal": [
+    621,
+    622,
+    623,
+    624,
+    625,
+    626,
+    627,
+    628,
+    629,
+    632,
+    635,
+    636,
+    637,
+    638,
+    639,
+    640,
+    641,
+    642,
+    643,
+    644,
+    645,
+    646,
+    647,
+    648,
+    650
+  ],
+  "quarter": [
+    621,
+    622,
+    623,
+    624,
+    625,
+    626,
+    627,
+    628,
+    629,
+    632,
+    635,
+    636,
+    637,
+    638,
+    639,
+    640,
+    641,
+    642,
+    643,
+    644,
+    645,
+    646,
+    647,
+    648,
+    650
+  ],
+  "observations": {
+    "621": "Confident alternating high-knee strut and broad arm swing readable; source stationary-pair denominator only1, Host moving-contact travel required.",
+    "622": "Backward crawl lowers whole torso near floor; hand and knee support is not established visually and source foot denominator0. Requires actual palm/knee support plus Host travel.",
+    "623": "Gun-holding crouched lateral motion is empty-handed; weapon context exclusion remains, no approval.",
+    "624": "Torch left crouch steps maintain hand/flame clearance but low crossed-foot support needs source/Host phase audit.",
+    "625": "Torch right crouch side-steps and recovery coherent; flame clears face/body, moving-contact Host gate remains.",
+    "626": "Shaky small forward lean walk readable; numeric source89pairs2missing1slip confirms correction needed.",
+    "627": "Deep forward-lean charge with lowered arms, no bow prop. Source/context eligibility needs explicit resolution; not approved.",
+    "628": "Forward-lean throwing preparation without an object, repeated shuffle feet. Needs action context and support, zero source stationary pairs is not contact pass.",
+    "629": "Playful strut with one hand raised and hip sway, coherent recovery; numeric missing source contact1/2 and actual Host travel pending.",
+    "632": "Funky high knees, swinging arms and torso lean readable; no stationary source foot pairs, moving-contact Host verification required.",
+    "635": "Bag remains at lowered hand through alternating gait, props visible and recovery coherent. One of4 source planted pairs missing; Host required.",
+    "636": "Running greeting clearly raises and waves arm while legs alternate; same source-derived curve preserved. Host speed/support required.",
+    "637": "Asymmetric injured gait with torso slump is readable but repeated foot skimming/dragging demands correction:36/60 source contacts missing and18 excessive slips.",
+    "638": "Backward asymmetric steps and torso lean coherent;2/5 source planted pairs missing, moving-contact Host needed.",
+    "639": "Approved jazz-hands regression: raised hands and knee lifts coherent, smooth Idle recovery.",
+    "640": "Sideways airborne obstacle-vault, empty support context; launch/landing and missing1/2 source contact require correction.",
+    "641": "Sideways vault with tucked leg, no obstacle; floor/airborne context and landing gate pending, zero denominator not pass.",
+    "642": "Forward-lean jump with arm spread and leg extension, no obstacle context; launch/landing and Host path pending.",
+    "643": "Jump-run cycles tuck and extend legs, arm swing readable; source3pairs1missing2slip needs stage reconstruction.",
+    "644": "Forward sprint with alternating feet and modest arm swing remains coherent; moving-contact Host rate required.",
+    "645": "Uneven limping stride and shoulder tilt readable; missing1/2 source contact requires corrected support.",
+    "646": "Short asymmetric steps, arm counter-swing and recovery coherent;11/33 source planted pairs missing.",
+    "647": "Limping small-foot crossover and forward lean;2/3 source planted pairs missing.",
+    "648": "More pronounced limping foot lift and lateral arm swing;2/3 source pairs missing.",
+    "650": "Forward arms with staggered torso lean reads as mummy walk, connected joints;1/60 source contact missing and Host travel pending."
+  },
+  "numericEvidence": {
+    "contactSha256": "348d854f204a4586a2974d989ef2d5ad485ae960613c8b8ab1aeb781d65da093",
+    "jointSha256": "ef13a2ed92691926d6216f9e7611011b61aaf8af920dd4467a76e1832e58295e",
+    "modelSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+    "sourceContacts": [
+      {
+        "actionId": 621,
+        "clipSha256": "ed244ef91beeae25648e84d972279a8f5ddffbe25c3bf3c014d9ef59e7027eac",
+        "sourcePlantedPairs": 1,
+        "missingTargetContactPairs": 0,
+        "excessiveDriftPairs": 0,
+        "sourceMovingContactPairs": 82,
+        "maxDriftByHeight": 5.813811178285748e-10
+      },
+      {
+        "actionId": 622,
+        "clipSha256": "d07a037d3d40667d960635e4ef30411fe9a198cead94246abd9a4ea3a074a57c",
+        "sourcePlantedPairs": 0,
+        "missingTargetContactPairs": 0,
+        "excessiveDriftPairs": 0,
+        "sourceMovingContactPairs": 25,
+        "maxDriftByHeight": 0
+      },
+      {
+        "actionId": 623,
+        "clipSha256": "2fb72193efeee2256b2db644404f766f1d69d1aa3ae97c3b302d2dfa39d23dc4",
+        "sourcePlantedPairs": 1,
+        "missingTargetContactPairs": 0,
+        "excessiveDriftPairs": 0,
+        "sourceMovingContactPairs": 52,
+        "maxDriftByHeight": 0.006441436715120813
+      },
+      {
+        "actionId": 624,
+        "clipSha256": "2ef185b9d29baa87ac0f9f9f0780e0be62beace268dda7e40925dded9e2e67ae",
+        "sourcePlantedPairs": 0,
+        "missingTargetContactPairs": 0,
+        "excessiveDriftPairs": 0,
+        "sourceMovingContactPairs": 25,
+        "maxDriftByHeight": 0
+      },
+      {
+        "actionId": 625,
+        "clipSha256": "f630617aa74521fc62c05c844a169f3bad4bbaaea4ab5c4c6d5ba846e496bee8",
+        "sourcePlantedPairs": 2,
+        "missingTargetContactPairs": 0,
+        "excessiveDriftPairs": 0,
+        "sourceMovingContactPairs": 40,
+        "maxDriftByHeight": 0.0041654961535435835
+      },
+      {
+        "actionId": 626,
+        "clipSha256": "3ce9c091f01bc7aa2ed4f7118f5389f11c91bdee61096fb0d5b238882a93f6aa",
+        "sourcePlantedPairs": 89,
+        "missingTargetContactPairs": 2,
+        "excessiveDriftPairs": 1,
+        "sourceMovingContactPairs": 23,
+        "maxDriftByHeight": 0.01575953181576221
+      },
+      {
+        "actionId": 627,
+        "clipSha256": "54672d6bae1d32061b5215d9cf1905a2e99c5e2948ae08cd0e37c3db3fbffe3d",
+        "sourcePlantedPairs": 0,
+        "missingTargetContactPairs": 0,
+        "excessiveDriftPairs": 0,
+        "sourceMovingContactPairs": 8,
+        "maxDriftByHeight": 0
+      },
+      {
+        "actionId": 628,
+        "clipSha256": "05112d48449e46304b80ea64a2310b8a5dcc89506a9c2c5a99cd93f0d64eb6e7",
+        "sourcePlantedPairs": 0,
+        "missingTargetContactPairs": 0,
+        "excessiveDriftPairs": 0,
+        "sourceMovingContactPairs": 8,
+        "maxDriftByHeight": 0
+      },
+      {
+        "actionId": 629,
+        "clipSha256": "594086c863d7584743c079cd7ce308fd0942e5d0abfc4d8108444540c696bada",
+        "sourcePlantedPairs": 2,
+        "missingTargetContactPairs": 1,
+        "excessiveDriftPairs": 0,
+        "sourceMovingContactPairs": 112,
+        "maxDriftByHeight": 1.8575881684770955e-11
+      },
+      {
+        "actionId": 632,
+        "clipSha256": "4279c79fc02abd407a660db5dc7e11441df32c708d21a613344d7907bae8ba95",
+        "sourcePlantedPairs": 0,
+        "missingTargetContactPairs": 0,
+        "excessiveDriftPairs": 0,
+        "sourceMovingContactPairs": 63,
+        "maxDriftByHeight": 0
+      },
+      {
+        "actionId": 635,
+        "clipSha256": "8494bcd85c31683066c56c6284b0e33e7b5dd69f401cca8b32e360def72810d4",
+        "sourcePlantedPairs": 4,
+        "missingTargetContactPairs": 1,
+        "excessiveDriftPairs": 0,
+        "sourceMovingContactPairs": 110,
+        "maxDriftByHeight": 3.5327269488927636e-05
+      },
+      {
+        "actionId": 636,
+        "clipSha256": "500289fc75b55c5cd0013941d3bcb64c3117a5724c924e740047f07b26d480b9",
+        "sourcePlantedPairs": 2,
+        "missingTargetContactPairs": 0,
+        "excessiveDriftPairs": 0,
+        "sourceMovingContactPairs": 37,
+        "maxDriftByHeight": 8.722195558781309e-06
+      },
+      {
+        "actionId": 637,
+        "clipSha256": "5488afbd0d2bf6552382d65766cb85a4978f1d8f6e250300d5187c26794097f6",
+        "sourcePlantedPairs": 60,
+        "missingTargetContactPairs": 36,
+        "excessiveDriftPairs": 18,
+        "sourceMovingContactPairs": 310,
+        "maxDriftByHeight": 0.0363552196115885
+      },
+      {
+        "actionId": 638,
+        "clipSha256": "93b33144d3c0f5077e234765cae7e4b03e740322fff290e18e640a948437106c",
+        "sourcePlantedPairs": 5,
+        "missingTargetContactPairs": 2,
+        "excessiveDriftPairs": 0,
+        "sourceMovingContactPairs": 79,
+        "maxDriftByHeight": 0.0006980131954728661
+      },
+      {
+        "actionId": 639,
+        "clipSha256": "42beed94ff90692c0190c35b35a7a2d64f6a7793f74b8773878e265c24673af8",
+        "sourcePlantedPairs": 2,
+        "missingTargetContactPairs": 0,
+        "excessiveDriftPairs": 0,
+        "sourceMovingContactPairs": 72,
+        "maxDriftByHeight": 0.009809184929671363
+      },
+      {
+        "actionId": 640,
+        "clipSha256": "dae8afd2061e4c7ea14cac8d668be5331f183de341a5dd3511627c50ac68fb31",
+        "sourcePlantedPairs": 2,
+        "missingTargetContactPairs": 1,
+        "excessiveDriftPairs": 0,
+        "sourceMovingContactPairs": 16,
+        "maxDriftByHeight": 0.00025710897265668846
+      },
+      {
+        "actionId": 641,
+        "clipSha256": "1989a1f00afc290f1055cf4279b81ebdbe252200c5f37f5aa38e71f0202de0dc",
+        "sourcePlantedPairs": 0,
+        "missingTargetContactPairs": 0,
+        "excessiveDriftPairs": 0,
+        "sourceMovingContactPairs": 7,
+        "maxDriftByHeight": 0
+      },
+      {
+        "actionId": 642,
+        "clipSha256": "4e893033dfe77ca0b92c295ac8203320b8bd4e973eb06dc761ed8e05622f9492",
+        "sourcePlantedPairs": 1,
+        "missingTargetContactPairs": 0,
+        "excessiveDriftPairs": 0,
+        "sourceMovingContactPairs": 9,
+        "maxDriftByHeight": 0.008211653491433215
+      },
+      {
+        "actionId": 643,
+        "clipSha256": "0e0a824f5974630c96d38c7c9da1dbe6125a6795876c8d50c89133fccdafe49b",
+        "sourcePlantedPairs": 3,
+        "missingTargetContactPairs": 1,
+        "excessiveDriftPairs": 2,
+        "sourceMovingContactPairs": 29,
+        "maxDriftByHeight": 0.013702845544513316
+      },
+      {
+        "actionId": 644,
+        "clipSha256": "58e23682d51ed0383c4449d8ef705391a7f0999bc7abcd611c4f3b3b5d4926d3",
+        "sourcePlantedPairs": 1,
+        "missingTargetContactPairs": 0,
+        "excessiveDriftPairs": 0,
+        "sourceMovingContactPairs": 7,
+        "maxDriftByHeight": 1.3276607652190963e-05
+      },
+      {
+        "actionId": 645,
+        "clipSha256": "24b490927f764330c4bccb05650b6e3346906e9704e716dc63e9c613417fa033",
+        "sourcePlantedPairs": 2,
+        "missingTargetContactPairs": 1,
+        "excessiveDriftPairs": 0,
+        "sourceMovingContactPairs": 120,
+        "maxDriftByHeight": 2.4773313619834206e-06
+      },
+      {
+        "actionId": 646,
+        "clipSha256": "6c5762b226dcf885d8ce6b7b4f0ff4c06b87a794f885637d7e87f4b1f3642f78",
+        "sourcePlantedPairs": 33,
+        "missingTargetContactPairs": 11,
+        "excessiveDriftPairs": 0,
+        "sourceMovingContactPairs": 14,
+        "maxDriftByHeight": 0.005511821714800636
+      },
+      {
+        "actionId": 647,
+        "clipSha256": "1052c8673188c01c486be241512fe46407270f679d1a96eb4373859c0ca6c2c3",
+        "sourcePlantedPairs": 3,
+        "missingTargetContactPairs": 2,
+        "excessiveDriftPairs": 0,
+        "sourceMovingContactPairs": 91,
+        "maxDriftByHeight": 5.382523154859024e-09
+      },
+      {
+        "actionId": 648,
+        "clipSha256": "32cd9c0d441e7376dbf43553279c95cc22e4df6e59d3f206272c11e35e40987d",
+        "sourcePlantedPairs": 3,
+        "missingTargetContactPairs": 2,
+        "excessiveDriftPairs": 0,
+        "sourceMovingContactPairs": 62,
+        "maxDriftByHeight": 7.799944224811821e-09
+      },
+      {
+        "actionId": 650,
+        "clipSha256": "03ce5f1c5585ae251c0aeb886082cf28d2667bc3e23aa3bd126c04de60d00bea",
+        "sourcePlantedPairs": 60,
+        "missingTargetContactPairs": 1,
+        "excessiveDriftPairs": 0,
+        "sourceMovingContactPairs": 172,
+        "maxDriftByHeight": 0.005952534965596822
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "actionId": 621,
+      "speed": "1",
+      "clipSha256": "ed244ef91beeae25648e84d972279a8f5ddffbe25c3bf3c014d9ef59e7027eac",
+      "runtimeBundleSha256": "b4beafcd943778edee2cf70c9b794fd7d569194dc1d2dc7eb540cf99483d5ea8",
+      "reportSha256": "7271044f3a7ac1f0fe61bac0e388476169162c964de6b7fa22c0235b951966f7",
+      "coverage": {
+        "firstTime": 0,
+        "lastTime": 4.187999999999994,
+        "duration": 4.233333412806193,
+        "tolerance": 0.35,
+        "observedFrames": 16,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1,
+        "stableIdleAt": 4.77310000000149,
+        "settledIdleSeconds": 2.0365
+      },
+      "images": [
+        {
+          "path": "/tmp/doreumi-library-621-650-1/motion-meshy-621.jpg",
+          "sha256": "c6bebec3b7e5d82c601be629642aaa586afcae2d626d914d3a5f5deb1f3f8bfd",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-library-621-650-1/playback-meshy-621.jpg",
+          "sha256": "366b96a6296d407c93f2cc07c55f1714686bff3ffd2270014563d59abefec532",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 622,
+      "speed": "1",
+      "clipSha256": "d07a037d3d40667d960635e4ef30411fe9a198cead94246abd9a4ea3a074a57c",
+      "runtimeBundleSha256": "b4beafcd943778edee2cf70c9b794fd7d569194dc1d2dc7eb540cf99483d5ea8",
+      "reportSha256": "7271044f3a7ac1f0fe61bac0e388476169162c964de6b7fa22c0235b951966f7",
+      "coverage": {
+        "firstTime": 0,
+        "lastTime": 7.423799999999983,
+        "duration": 7.433333305517833,
+        "tolerance": 0.35,
+        "observedFrames": 27,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1,
+        "stableIdleAt": 8.00229999999702,
+        "settledIdleSeconds": 2.2716000000014898
+      },
+      "images": [
+        {
+          "path": "/tmp/doreumi-library-621-650-1/motion-meshy-622.jpg",
+          "sha256": "00559c27d23b264c14cf2a3160d3770db104dad6773d5c897df41247ee2999c1",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-library-621-650-1/playback-meshy-622.jpg",
+          "sha256": "4323d33062562e7bb3685ed75e8e071be77c2a5c8175ea4f9a85017890a66e9f",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 623,
+      "speed": "1",
+      "clipSha256": "2fb72193efeee2256b2db644404f766f1d69d1aa3ae97c3b302d2dfa39d23dc4",
+      "runtimeBundleSha256": "b4beafcd943778edee2cf70c9b794fd7d569194dc1d2dc7eb540cf99483d5ea8",
+      "reportSha256": "7271044f3a7ac1f0fe61bac0e388476169162c964de6b7fa22c0235b951966f7",
+      "coverage": {
+        "firstTime": 0,
+        "lastTime": 2.8418,
+        "duration": 2.866666650772095,
+        "tolerance": 0.35,
+        "observedFrames": 11,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1,
+        "stableIdleAt": 3.3996000000014903,
+        "settledIdleSeconds": 2.26619999999553
+      },
+      "images": [
+        {
+          "path": "/tmp/doreumi-library-621-650-1/motion-meshy-623.jpg",
+          "sha256": "e96a6836ea82ebe5d7fcef9f44ee579248539ea7f6cfedf5ba67aa94232bd9cb",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-library-621-650-1/playback-meshy-623.jpg",
+          "sha256": "ec5ee92641a57588ba0d4d49b42f6d351d5a17e113fac37be22428994b0b3682",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 624,
+      "speed": "1",
+      "clipSha256": "2ef185b9d29baa87ac0f9f9f0780e0be62beace268dda7e40925dded9e2e67ae",
+      "runtimeBundleSha256": "b4beafcd943778edee2cf70c9b794fd7d569194dc1d2dc7eb540cf99483d5ea8",
+      "reportSha256": "7271044f3a7ac1f0fe61bac0e388476169162c964de6b7fa22c0235b951966f7",
+      "coverage": {
+        "firstTime": 0,
+        "lastTime": 2.7370999999999954,
+        "duration": 2.7666666587193807,
+        "tolerance": 0.35,
+        "observedFrames": 11,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1,
+        "stableIdleAt": 3.3052999999970196,
+        "settledIdleSeconds": 2.2765
+      },
+      "images": [
+        {
+          "path": "/tmp/doreumi-library-621-650-1/motion-meshy-624.jpg",
+          "sha256": "f2a77204e28dcf8a079d833d0551cb230ce3892055948b8f20131696ff32d8a4",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-library-621-650-1/playback-meshy-624.jpg",
+          "sha256": "9dc81eb739cca7ea22883bc4ef0056c7010e0e23cdc38eaf33681dd8c1946a27",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 625,
+      "speed": "1",
+      "clipSha256": "f630617aa74521fc62c05c844a169f3bad4bbaaea4ab5c4c6d5ba846e496bee8",
+      "runtimeBundleSha256": "b4beafcd943778edee2cf70c9b794fd7d569194dc1d2dc7eb540cf99483d5ea8",
+      "reportSha256": "7271044f3a7ac1f0fe61bac0e388476169162c964de6b7fa22c0235b951966f7",
+      "coverage": {
+        "firstTime": 0,
+        "lastTime": 2.5428999999999995,
+        "duration": 2.699999992052714,
+        "tolerance": 0.35,
+        "observedFrames": 10,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1,
+        "stableIdleAt": 3.326,
+        "settledIdleSeconds": 2.0993999999985102
+      },
+      "images": [
+        {
+          "path": "/tmp/doreumi-library-621-650-1/motion-meshy-625.jpg",
+          "sha256": "bc87612105ecb2699c2b0b142a1ee29fa71ec12535615aafdd6b8175b7954b1b",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-library-621-650-1/playback-meshy-625.jpg",
+          "sha256": "3be7ab5feba51706c1dd251da569de352fd5b0777fda9232fab0e7692158d1ee",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 626,
+      "speed": "1",
+      "clipSha256": "3ce9c091f01bc7aa2ed4f7118f5389f11c91bdee61096fb0d5b238882a93f6aa",
+      "runtimeBundleSha256": "b4beafcd943778edee2cf70c9b794fd7d569194dc1d2dc7eb540cf99483d5ea8",
+      "reportSha256": "7271044f3a7ac1f0fe61bac0e388476169162c964de6b7fa22c0235b951966f7",
+      "coverage": {
+        "firstTime": 0,
+        "lastTime": 4.187599999999984,
+        "duration": 4.4333332220713295,
+        "tolerance": 0.35,
+        "observedFrames": 16,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1,
+        "stableIdleAt": 5.054699999995529,
+        "settledIdleSeconds": 2.2691000000014903
+      },
+      "images": [
+        {
+          "path": "/tmp/doreumi-library-621-650-1/motion-meshy-626.jpg",
+          "sha256": "8126890c826247a0bdb55116c2d728eba451856db5b5b624fa7616817bc9f773",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-library-621-650-1/playback-meshy-626.jpg",
+          "sha256": "ecd4bbaa8efd9268b8c8d07d07e9654f49e32b6fdefd3bacc30abf084be51680",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 627,
+      "speed": "1",
+      "clipSha256": "54672d6bae1d32061b5215d9cf1905a2e99c5e2948ae08cd0e37c3db3fbffe3d",
+      "runtimeBundleSha256": "b4beafcd943778edee2cf70c9b794fd7d569194dc1d2dc7eb540cf99483d5ea8",
+      "reportSha256": "7271044f3a7ac1f0fe61bac0e388476169162c964de6b7fa22c0235b951966f7",
+      "coverage": {
+        "firstTime": 0,
+        "lastTime": 1.9931000000000045,
+        "duration": 2.2,
+        "tolerance": 0.35,
+        "observedFrames": 8,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1,
+        "stableIdleAt": 2.8478000000044705,
+        "settledIdleSeconds": 2.2787999999970197
+      },
+      "images": [
+        {
+          "path": "/tmp/doreumi-library-621-650-1/motion-meshy-627.jpg",
+          "sha256": "6ed0ba48440d55dd028f7d6525696ef62eaf322bf0266788f16634f74235e186",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-library-621-650-1/playback-meshy-627.jpg",
+          "sha256": "c1c00e2f0f087aaa5ed8d4249d329fbaf1ee4e71fc168f224d3a8d0a510d9d95",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 628,
+      "speed": "1",
+      "clipSha256": "05112d48449e46304b80ea64a2310b8a5dcc89506a9c2c5a99cd93f0d64eb6e7",
+      "runtimeBundleSha256": "b4beafcd943778edee2cf70c9b794fd7d569194dc1d2dc7eb540cf99483d5ea8",
+      "reportSha256": "7271044f3a7ac1f0fe61bac0e388476169162c964de6b7fa22c0235b951966f7",
+      "coverage": {
+        "firstTime": 0,
+        "lastTime": 2.2639999999999976,
+        "duration": 2.3333333293596903,
+        "tolerance": 0.35,
+        "observedFrames": 9,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1,
+        "stableIdleAt": 2.8278999999985097,
+        "settledIdleSeconds": 2.2716999999955294
+      },
+      "images": [
+        {
+          "path": "/tmp/doreumi-library-621-650-1/motion-meshy-628.jpg",
+          "sha256": "149659b1d4d755b575221771575aae28d120c117ef19e5fc11694834601534c1",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-library-621-650-1/playback-meshy-628.jpg",
+          "sha256": "aa2db10c81cc023bc4753d75607b41ae803e5ea8130e2c9565c79e557ecc8600",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 629,
+      "speed": "1",
+      "clipSha256": "594086c863d7584743c079cd7ce308fd0942e5d0abfc4d8108444540c696bada",
+      "runtimeBundleSha256": "b4beafcd943778edee2cf70c9b794fd7d569194dc1d2dc7eb540cf99483d5ea8",
+      "reportSha256": "7271044f3a7ac1f0fe61bac0e388476169162c964de6b7fa22c0235b951966f7",
+      "coverage": {
+        "firstTime": 0,
+        "lastTime": 4.757099999999997,
+        "duration": 4.800000015894572,
+        "tolerance": 0.35,
+        "observedFrames": 18,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1,
+        "stableIdleAt": 5.32839999999851,
+        "settledIdleSeconds": 2.26010000000149
+      },
+      "images": [
+        {
+          "path": "/tmp/doreumi-library-621-650-1/motion-meshy-629.jpg",
+          "sha256": "8b916cee1b81ddf408700b4eb82e41db538bdf752e60473a3ebd30ccdff039bb",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-library-621-650-1/playback-meshy-629.jpg",
+          "sha256": "ef8b3be045609f3b484cf710ff68b3937ecf6cce6cd8d9d734ca80b665ccbab9",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 632,
+      "speed": "1",
+      "clipSha256": "4279c79fc02abd407a660db5dc7e11441df32c708d21a613344d7907bae8ba95",
+      "runtimeBundleSha256": "b4beafcd943778edee2cf70c9b794fd7d569194dc1d2dc7eb540cf99483d5ea8",
+      "reportSha256": "7271044f3a7ac1f0fe61bac0e388476169162c964de6b7fa22c0235b951966f7",
+      "coverage": {
+        "firstTime": 0,
+        "lastTime": 3.444499999999995,
+        "duration": 3.466666642824809,
+        "tolerance": 0.35,
+        "observedFrames": 14,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1,
+        "stableIdleAt": 3.99420000000298,
+        "settledIdleSeconds": 2.2766000000014905
+      },
+      "images": [
+        {
+          "path": "/tmp/doreumi-library-621-650-1/motion-meshy-632.jpg",
+          "sha256": "920ae3a939e6829ee624da2b6afa74c73690a2898e2765082aaaa6ce5e5b22d8",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-library-621-650-1/playback-meshy-632.jpg",
+          "sha256": "9e6c95b09d90fa59f865eaf4bf739c27d76dca1a9c64f09c4635fe143e69a32a",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 635,
+      "speed": "1",
+      "clipSha256": "8494bcd85c31683066c56c6284b0e33e7b5dd69f401cca8b32e360def72810d4",
+      "runtimeBundleSha256": "b4beafcd943778edee2cf70c9b794fd7d569194dc1d2dc7eb540cf99483d5ea8",
+      "reportSha256": "7271044f3a7ac1f0fe61bac0e388476169162c964de6b7fa22c0235b951966f7",
+      "coverage": {
+        "firstTime": 0,
+        "lastTime": 5.187599999999997,
+        "duration": 5.300000015894572,
+        "tolerance": 0.35,
+        "observedFrames": 20,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1,
+        "stableIdleAt": 5.7511000000014905,
+        "settledIdleSeconds": 2.274499999999999
+      },
+      "images": [
+        {
+          "path": "/tmp/doreumi-library-621-650-1/motion-meshy-635.jpg",
+          "sha256": "45eb6dc981568087c93af8baac44a5f5bb6049040da50e485e1e3459361a8d4e",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-library-621-650-1/playback-meshy-635.jpg",
+          "sha256": "682739d98dd5c3a330ca7cebff68f24dd56a365e318996198fee7d52ad8bc974",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 636,
+      "speed": "1",
+      "clipSha256": "500289fc75b55c5cd0013941d3bcb64c3117a5724c924e740047f07b26d480b9",
+      "runtimeBundleSha256": "b4beafcd943778edee2cf70c9b794fd7d569194dc1d2dc7eb540cf99483d5ea8",
+      "reportSha256": "7271044f3a7ac1f0fe61bac0e388476169162c964de6b7fa22c0235b951966f7",
+      "coverage": {
+        "firstTime": 0,
+        "lastTime": 3.9304999999999946,
+        "duration": 4.033333365122477,
+        "tolerance": 0.35,
+        "observedFrames": 15,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1,
+        "stableIdleAt": 4.489199999995529,
+        "settledIdleSeconds": 2.2293000000044705
+      },
+      "images": [
+        {
+          "path": "/tmp/doreumi-library-621-650-1/motion-meshy-636.jpg",
+          "sha256": "661c130532e235eb991f557b01a49397ff4efbca46aa96f286e899e7c20e6759",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-library-621-650-1/playback-meshy-636.jpg",
+          "sha256": "32ba9c76ac057d0ee028eb704915e82b3ad47b4ab6d9f9a0fb8e2631a92f6229",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 637,
+      "speed": "1",
+      "clipSha256": "5488afbd0d2bf6552382d65766cb85a4978f1d8f6e250300d5187c26794097f6",
+      "runtimeBundleSha256": "b4beafcd943778edee2cf70c9b794fd7d569194dc1d2dc7eb540cf99483d5ea8",
+      "reportSha256": "7271044f3a7ac1f0fe61bac0e388476169162c964de6b7fa22c0235b951966f7",
+      "coverage": {
+        "firstTime": 0,
+        "lastTime": 9.99440000000005,
+        "duration": 10.266666475931803,
+        "tolerance": 0.35,
+        "observedFrames": 37,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1,
+        "stableIdleAt": 10.83489999999851,
+        "settledIdleSeconds": 2.240399999998509
+      },
+      "images": [
+        {
+          "path": "/tmp/doreumi-library-621-650-1/motion-meshy-637.jpg",
+          "sha256": "f70c0cce95f611554643a47c66e86704f1a3709c22273208df59f9d2352108bd",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-library-621-650-1/playback-meshy-637.jpg",
+          "sha256": "8b56169f7f83b840f7c18df3348264ef405c0511ffef855e31f08f3a229208a3",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 638,
+      "speed": "1",
+      "clipSha256": "93b33144d3c0f5077e234765cae7e4b03e740322fff290e18e640a948437106c",
+      "runtimeBundleSha256": "b4beafcd943778edee2cf70c9b794fd7d569194dc1d2dc7eb540cf99483d5ea8",
+      "reportSha256": "7271044f3a7ac1f0fe61bac0e388476169162c964de6b7fa22c0235b951966f7",
+      "coverage": {
+        "firstTime": 0,
+        "lastTime": 3.222700000000008,
+        "duration": 3.2333332935969037,
+        "tolerance": 0.35,
+        "observedFrames": 12,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1,
+        "stableIdleAt": 3.809,
+        "settledIdleSeconds": 2.2751000000014896
+      },
+      "images": [
+        {
+          "path": "/tmp/doreumi-library-621-650-1/motion-meshy-638.jpg",
+          "sha256": "26023a189a0daf115caaf2d02245e03227a37a4c4c3c72d9922ffe24845de6c3",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-library-621-650-1/playback-meshy-638.jpg",
+          "sha256": "6fbcd58b34096282e4994ad47d6d2822c3e6e0a5ba7294b27977ede11a43a556",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 639,
+      "speed": "1",
+      "clipSha256": "42beed94ff90692c0190c35b35a7a2d64f6a7793f74b8773878e265c24673af8",
+      "runtimeBundleSha256": "b4beafcd943778edee2cf70c9b794fd7d569194dc1d2dc7eb540cf99483d5ea8",
+      "reportSha256": "7271044f3a7ac1f0fe61bac0e388476169162c964de6b7fa22c0235b951966f7",
+      "coverage": {
+        "firstTime": 0,
+        "lastTime": 4.770899999999987,
+        "duration": 4.799999952316284,
+        "tolerance": 0.35,
+        "observedFrames": 18,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1,
+        "stableIdleAt": 5.331900000005961,
+        "settledIdleSeconds": 2.2414999999999994
+      },
+      "images": [
+        {
+          "path": "/tmp/doreumi-library-621-650-1/motion-meshy-639.jpg",
+          "sha256": "115afa82f840a8380b0e03f362067529258b972d7f7cfb546c14cb898831cd3d",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-library-621-650-1/playback-meshy-639.jpg",
+          "sha256": "88bf8e587bc3706cf61a250f51955f665f83dc8a377bf0f9da3a6f0e8d2be5ab",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 640,
+      "speed": "1",
+      "clipSha256": "dae8afd2061e4c7ea14cac8d668be5331f183de341a5dd3511627c50ac68fb31",
+      "runtimeBundleSha256": "b4beafcd943778edee2cf70c9b794fd7d569194dc1d2dc7eb540cf99483d5ea8",
+      "reportSha256": "7271044f3a7ac1f0fe61bac0e388476169162c964de6b7fa22c0235b951966f7",
+      "coverage": {
+        "firstTime": 0,
+        "lastTime": 3.632199999999978,
+        "duration": 3.6666666348775228,
+        "tolerance": 0.35,
+        "observedFrames": 14,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1,
+        "stableIdleAt": 4.1815,
+        "settledIdleSeconds": 2.2525000000000004
+      },
+      "images": [
+        {
+          "path": "/tmp/doreumi-library-621-650-1/motion-meshy-640.jpg",
+          "sha256": "dde0c3fedaf9634aee5a70fb63bff72e4622a1c23013fa00990a49f1f3eebe4b",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-library-621-650-1/playback-meshy-640.jpg",
+          "sha256": "83276c3651f79f6eb955b933163d18607492fc2564328843fc23e7b8100e6f71",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 641,
+      "speed": "1",
+      "clipSha256": "1989a1f00afc290f1055cf4279b81ebdbe252200c5f37f5aa38e71f0202de0dc",
+      "runtimeBundleSha256": "b4beafcd943778edee2cf70c9b794fd7d569194dc1d2dc7eb540cf99483d5ea8",
+      "reportSha256": "7271044f3a7ac1f0fe61bac0e388476169162c964de6b7fa22c0235b951966f7",
+      "coverage": {
+        "firstTime": 0,
+        "lastTime": 2.487100000000003,
+        "duration": 2.7333332935969032,
+        "tolerance": 0.35,
+        "observedFrames": 10,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1,
+        "stableIdleAt": 3.32739999999851,
+        "settledIdleSeconds": 2.24470000000298
+      },
+      "images": [
+        {
+          "path": "/tmp/doreumi-library-621-650-1/motion-meshy-641.jpg",
+          "sha256": "d38212870a36f9617fba26fa69ece862dbdbae9734878c19ae95381b04f6cb59",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-library-621-650-1/playback-meshy-641.jpg",
+          "sha256": "358329edfd19669f5b78b8eb0c03c92e51029295e19834326bf87d8c2fc1d953",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 642,
+      "speed": "1",
+      "clipSha256": "4e893033dfe77ca0b92c295ac8203320b8bd4e973eb06dc761ed8e05622f9492",
+      "runtimeBundleSha256": "b4beafcd943778edee2cf70c9b794fd7d569194dc1d2dc7eb540cf99483d5ea8",
+      "reportSha256": "7271044f3a7ac1f0fe61bac0e388476169162c964de6b7fa22c0235b951966f7",
+      "coverage": {
+        "firstTime": 0,
+        "lastTime": 2.236099999999975,
+        "duration": 2.4666666428248085,
+        "tolerance": 0.35,
+        "observedFrames": 9,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1,
+        "stableIdleAt": 3.0631000000014903,
+        "settledIdleSeconds": 2.2274999999999996
+      },
+      "images": [
+        {
+          "path": "/tmp/doreumi-library-621-650-1/motion-meshy-642.jpg",
+          "sha256": "bb301ebcafdbf2004f774b7ed5723737b16acc8ffaecb2e6e730ab568d4ac1ce",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-library-621-650-1/playback-meshy-642.jpg",
+          "sha256": "c36f005701d91bbca926632ccd943f64b2e6f71b63854004ceb6d0a6e1e18ee5",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 643,
+      "speed": "1",
+      "clipSha256": "0e0a824f5974630c96d38c7c9da1dbe6125a6795876c8d50c89133fccdafe49b",
+      "runtimeBundleSha256": "b4beafcd943778edee2cf70c9b794fd7d569194dc1d2dc7eb540cf99483d5ea8",
+      "reportSha256": "7271044f3a7ac1f0fe61bac0e388476169162c964de6b7fa22c0235b951966f7",
+      "coverage": {
+        "firstTime": 0,
+        "lastTime": 3.638999999999995,
+        "duration": 3.7999999046325685,
+        "tolerance": 0.35,
+        "observedFrames": 14,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1,
+        "stableIdleAt": 4.47159999999404,
+        "settledIdleSeconds": 2.23680000000447
+      },
+      "images": [
+        {
+          "path": "/tmp/doreumi-library-621-650-1/motion-meshy-643.jpg",
+          "sha256": "c17bf6e27ed7761bc0247d96c851f61ddafcea90684331c6b18afa5110facf98",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-library-621-650-1/playback-meshy-643.jpg",
+          "sha256": "58ce6524210d780554deb62d33e7ae4936a63431666762a68e962df9b851844d",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 644,
+      "speed": "1",
+      "clipSha256": "58e23682d51ed0383c4449d8ef705391a7f0999bc7abcd611c4f3b3b5d4926d3",
+      "runtimeBundleSha256": "b4beafcd943778edee2cf70c9b794fd7d569194dc1d2dc7eb540cf99483d5ea8",
+      "reportSha256": "7271044f3a7ac1f0fe61bac0e388476169162c964de6b7fa22c0235b951966f7",
+      "coverage": {
+        "firstTime": 0,
+        "lastTime": 2.256999999999999,
+        "duration": 2.466666658719381,
+        "tolerance": 0.35,
+        "observedFrames": 9,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1,
+        "stableIdleAt": 3.1058999999985097,
+        "settledIdleSeconds": 2.2473000000044703
+      },
+      "images": [
+        {
+          "path": "/tmp/doreumi-library-621-650-1/motion-meshy-644.jpg",
+          "sha256": "280c15cacbfcd66ceca2b1343dec5214cd1e5d9ab01f73e8e5467662cf6d4d91",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-library-621-650-1/playback-meshy-644.jpg",
+          "sha256": "62a0ae6eb27e38e57b901368dd2058da720fca799dbfd8943016f9678fbf5568",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 645,
+      "speed": "1",
+      "clipSha256": "24b490927f764330c4bccb05650b6e3346906e9704e716dc63e9c613417fa033",
+      "runtimeBundleSha256": "b4beafcd943778edee2cf70c9b794fd7d569194dc1d2dc7eb540cf99483d5ea8",
+      "reportSha256": "7271044f3a7ac1f0fe61bac0e388476169162c964de6b7fa22c0235b951966f7",
+      "coverage": {
+        "firstTime": 0,
+        "lastTime": 5.055600000000026,
+        "duration": 5.133333269755045,
+        "tolerance": 0.35,
+        "observedFrames": 19,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1,
+        "stableIdleAt": 5.6143999999985095,
+        "settledIdleSeconds": 2.23489999999851
+      },
+      "images": [
+        {
+          "path": "/tmp/doreumi-library-621-650-1/motion-meshy-645.jpg",
+          "sha256": "335833ce713f861c9870a80fbc03463f971df456635ed8ff24f8aa90d9287804",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-library-621-650-1/playback-meshy-645.jpg",
+          "sha256": "eeb85f3050e53264cb68660fdc34482fe33e430ed3e0109168130a4a1fb6e68e",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 646,
+      "speed": "1",
+      "clipSha256": "6c5762b226dcf885d8ce6b7b4f0ff4c06b87a794f885637d7e87f4b1f3642f78",
+      "runtimeBundleSha256": "b4beafcd943778edee2cf70c9b794fd7d569194dc1d2dc7eb540cf99483d5ea8",
+      "reportSha256": "7271044f3a7ac1f0fe61bac0e388476169162c964de6b7fa22c0235b951966f7",
+      "coverage": {
+        "firstTime": 0,
+        "lastTime": 3.0902999999999854,
+        "duration": 3.0999999682108563,
+        "tolerance": 0.35,
+        "observedFrames": 12,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1,
+        "stableIdleAt": 3.661,
+        "settledIdleSeconds": 2.24310000000149
+      },
+      "images": [
+        {
+          "path": "/tmp/doreumi-library-621-650-1/motion-meshy-646.jpg",
+          "sha256": "a0645189c0b165f6b8ad3790cfd94d9e9bf077bd20ee3875f0453ad67c35a5c3",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-library-621-650-1/playback-meshy-646.jpg",
+          "sha256": "cde67fc29176fef2c8bc2a2e4de84a3bbfcd918062c6a5754abde39373fcee15",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 647,
+      "speed": "1",
+      "clipSha256": "1052c8673188c01c486be241512fe46407270f679d1a96eb4373859c0ca6c2c3",
+      "runtimeBundleSha256": "b4beafcd943778edee2cf70c9b794fd7d569194dc1d2dc7eb540cf99483d5ea8",
+      "reportSha256": "7271044f3a7ac1f0fe61bac0e388476169162c964de6b7fa22c0235b951966f7",
+      "coverage": {
+        "firstTime": 0,
+        "lastTime": 3.9040999999999726,
+        "duration": 4.033333365122477,
+        "tolerance": 0.35,
+        "observedFrames": 15,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1,
+        "stableIdleAt": 4.49620000000298,
+        "settledIdleSeconds": 2.1755000000000004
+      },
+      "images": [
+        {
+          "path": "/tmp/doreumi-library-621-650-1/motion-meshy-647.jpg",
+          "sha256": "4bed50d5878f704e9e581a4fff333dbd09a2ead02b29ddf9ed865c72305b71e8",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-library-621-650-1/playback-meshy-647.jpg",
+          "sha256": "50e4b53f9153b7842e5b7473a6531a5562373bc598ff4e630eaeee16c556055c",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 648,
+      "speed": "1",
+      "clipSha256": "32cd9c0d441e7376dbf43553279c95cc22e4df6e59d3f206272c11e35e40987d",
+      "runtimeBundleSha256": "b4beafcd943778edee2cf70c9b794fd7d569194dc1d2dc7eb540cf99483d5ea8",
+      "reportSha256": "7271044f3a7ac1f0fe61bac0e388476169162c964de6b7fa22c0235b951966f7",
+      "coverage": {
+        "firstTime": 0,
+        "lastTime": 4.465700000000004,
+        "duration": 4.5000000635782875,
+        "tolerance": 0.35,
+        "observedFrames": 17,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1,
+        "stableIdleAt": 5.03210000000149,
+        "settledIdleSeconds": 2.2123999999985102
+      },
+      "images": [
+        {
+          "path": "/tmp/doreumi-library-621-650-1/motion-meshy-648.jpg",
+          "sha256": "b35ec017a5415453c8cd51f9c6c49af79e64cf2288c8b6b5b7de61341541d17c",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-library-621-650-1/playback-meshy-648.jpg",
+          "sha256": "995e988749ffc9360490beff48bcaf2f004c297d1e5e0b203ae1cad8e67dded5",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 650,
+      "speed": "1",
+      "clipSha256": "03ce5f1c5585ae251c0aeb886082cf28d2667bc3e23aa3bd126c04de60d00bea",
+      "runtimeBundleSha256": "b4beafcd943778edee2cf70c9b794fd7d569194dc1d2dc7eb540cf99483d5ea8",
+      "reportSha256": "7271044f3a7ac1f0fe61bac0e388476169162c964de6b7fa22c0235b951966f7",
+      "coverage": {
+        "firstTime": 0,
+        "lastTime": 6.409699999999995,
+        "duration": 6.433333460489909,
+        "tolerance": 0.35,
+        "observedFrames": 24,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1,
+        "stableIdleAt": 6.998300000004471,
+        "settledIdleSeconds": 2.2887999999970203
+      },
+      "images": [
+        {
+          "path": "/tmp/doreumi-library-621-650-1/motion-meshy-650.jpg",
+          "sha256": "900691a6dba3cc489168471ca29e73886e5ed30ad8bb747d1e2533ece5b4bd21",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-library-621-650-1/playback-meshy-650.jpg",
+          "sha256": "99c07d260fe3782af153fed74b666647755bdd8f4440012b39209eaadfe104fa",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 621,
+      "speed": "0.25",
+      "clipSha256": "ed244ef91beeae25648e84d972279a8f5ddffbe25c3bf3c014d9ef59e7027eac",
+      "runtimeBundleSha256": "494acea1d182740d9f6e4b17503f2442744f918e472701c00ec47a3eb7eb8660",
+      "reportSha256": "6a07069907afee09c8e307b766e34ded0e25ff7a59a5ac8bb61f17a9e28421a1",
+      "coverage": {
+        "firstTime": 0,
+        "lastTime": 4.054,
+        "duration": 4.233333412806193,
+        "tolerance": 0.35,
+        "observedFrames": 17,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1,
+        "stableIdleAt": 19.34060000000149,
+        "settledIdleSeconds": 2.0311000000014907
+      },
+      "images": [
+        {
+          "path": "/tmp/doreumi-library-621-650-0.25/motion-meshy-621.jpg",
+          "sha256": "eada3ea505238d92e6818797204a0abfcd4e6ef2e0cc4c933d5b6eccc2eac840",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-library-621-650-0.25/playback-meshy-621.jpg",
+          "sha256": "4b98885aba1df0fc87c783d1e329fd4bca578233fdf266a1428f18a2be44c725",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 622,
+      "speed": "0.25",
+      "clipSha256": "d07a037d3d40667d960635e4ef30411fe9a198cead94246abd9a4ea3a074a57c",
+      "runtimeBundleSha256": "494acea1d182740d9f6e4b17503f2442744f918e472701c00ec47a3eb7eb8660",
+      "reportSha256": "6a07069907afee09c8e307b766e34ded0e25ff7a59a5ac8bb61f17a9e28421a1",
+      "coverage": {
+        "firstTime": 0,
+        "lastTime": 7.178950000000003,
+        "duration": 7.433333305517833,
+        "tolerance": 0.35,
+        "observedFrames": 29,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1,
+        "stableIdleAt": 31.8005,
+        "settledIdleSeconds": 2.1033999999985085
+      },
+      "images": [
+        {
+          "path": "/tmp/doreumi-library-621-650-0.25/motion-meshy-622.jpg",
+          "sha256": "4c0f5ee59f7354909df8bd6645a468084c360b2b92a4442f696f12155f7ee4ef",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-library-621-650-0.25/playback-meshy-622.jpg",
+          "sha256": "e0cba7973a0659170d19729b8ce874076b6a6911154b7f4f744e186dc1cc7731",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 623,
+      "speed": "0.25",
+      "clipSha256": "2fb72193efeee2256b2db644404f766f1d69d1aa3ae97c3b302d2dfa39d23dc4",
+      "runtimeBundleSha256": "494acea1d182740d9f6e4b17503f2442744f918e472701c00ec47a3eb7eb8660",
+      "reportSha256": "6a07069907afee09c8e307b766e34ded0e25ff7a59a5ac8bb61f17a9e28421a1",
+      "coverage": {
+        "firstTime": 0,
+        "lastTime": 2.8125250000000013,
+        "duration": 2.866666650772095,
+        "tolerance": 0.35,
+        "observedFrames": 12,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1,
+        "stableIdleAt": 13.31659999999404,
+        "settledIdleSeconds": 2.1012000000029794
+      },
+      "images": [
+        {
+          "path": "/tmp/doreumi-library-621-650-0.25/motion-meshy-623.jpg",
+          "sha256": "56e88dec5eb72935e8e1294436104d53d9eb3db4c5ce2374f065438b3dbf4a01",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-library-621-650-0.25/playback-meshy-623.jpg",
+          "sha256": "9695ff94ad9839917970d442558cf046c18004e6521cb8bc494c37eb45f89519",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 624,
+      "speed": "0.25",
+      "clipSha256": "2ef185b9d29baa87ac0f9f9f0780e0be62beace268dda7e40925dded9e2e67ae",
+      "runtimeBundleSha256": "494acea1d182740d9f6e4b17503f2442744f918e472701c00ec47a3eb7eb8660",
+      "reportSha256": "6a07069907afee09c8e307b766e34ded0e25ff7a59a5ac8bb61f17a9e28421a1",
+      "coverage": {
+        "firstTime": 0,
+        "lastTime": 2.5728999999999997,
+        "duration": 2.7666666587193807,
+        "tolerance": 0.35,
+        "observedFrames": 11,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1,
+        "stableIdleAt": 13.42019999999553,
+        "settledIdleSeconds": 2.153200000002979
+      },
+      "images": [
+        {
+          "path": "/tmp/doreumi-library-621-650-0.25/motion-meshy-624.jpg",
+          "sha256": "5f8689d4721d6be82fb33709ce285ce3cce73dac26ba9dc808689266fa5a21a0",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-library-621-650-0.25/playback-meshy-624.jpg",
+          "sha256": "c1f7a7cb1d91ea601f672ea412d060933a1df5dfdcf8ecfdd0dc8abd6904a2b3",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 625,
+      "speed": "0.25",
+      "clipSha256": "f630617aa74521fc62c05c844a169f3bad4bbaaea4ab5c4c6d5ba846e496bee8",
+      "runtimeBundleSha256": "494acea1d182740d9f6e4b17503f2442744f918e472701c00ec47a3eb7eb8660",
+      "reportSha256": "6a07069907afee09c8e307b766e34ded0e25ff7a59a5ac8bb61f17a9e28421a1",
+      "coverage": {
+        "firstTime": 0,
+        "lastTime": 2.5455249999999974,
+        "duration": 2.699999992052714,
+        "tolerance": 0.35,
+        "observedFrames": 11,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1,
+        "stableIdleAt": 13.28489999999851,
+        "settledIdleSeconds": 2.1138999999985106
+      },
+      "images": [
+        {
+          "path": "/tmp/doreumi-library-621-650-0.25/motion-meshy-625.jpg",
+          "sha256": "c0e6df97709b1eefd22e5d621d6cb7160e8ffc3835c29665b796fefd119610e4",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-library-621-650-0.25/playback-meshy-625.jpg",
+          "sha256": "0f4ca2d0c6da2d8773786bb1fd2b74a09cbd31b2388b433141efc9e3f95d5e86",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 626,
+      "speed": "0.25",
+      "clipSha256": "3ce9c091f01bc7aa2ed4f7118f5389f11c91bdee61096fb0d5b238882a93f6aa",
+      "runtimeBundleSha256": "494acea1d182740d9f6e4b17503f2442744f918e472701c00ec47a3eb7eb8660",
+      "reportSha256": "6a07069907afee09c8e307b766e34ded0e25ff7a59a5ac8bb61f17a9e28421a1",
+      "coverage": {
+        "firstTime": 0,
+        "lastTime": 4.319524999999994,
+        "duration": 4.4333332220713295,
+        "tolerance": 0.35,
+        "observedFrames": 18,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1,
+        "stableIdleAt": 20.40029999999702,
+        "settledIdleSeconds": 2.1397000000029784
+      },
+      "images": [
+        {
+          "path": "/tmp/doreumi-library-621-650-0.25/motion-meshy-626.jpg",
+          "sha256": "3b59e4a11f8aba90a1e35e8d601d79fdf0db665d24c3f6df2d2f19d7be40ad7f",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-library-621-650-0.25/playback-meshy-626.jpg",
+          "sha256": "e349c6fb58094dc0bbfd6fa8608b47ab5f328267b450d802bd98ebaaadb86832",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 627,
+      "speed": "0.25",
+      "clipSha256": "54672d6bae1d32061b5215d9cf1905a2e99c5e2948ae08cd0e37c3db3fbffe3d",
+      "runtimeBundleSha256": "494acea1d182740d9f6e4b17503f2442744f918e472701c00ec47a3eb7eb8660",
+      "reportSha256": "6a07069907afee09c8e307b766e34ded0e25ff7a59a5ac8bb61f17a9e28421a1",
+      "coverage": {
+        "firstTime": 0,
+        "lastTime": 2.0556500000000013,
+        "duration": 2.2,
+        "tolerance": 0.35,
+        "observedFrames": 9,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1,
+        "stableIdleAt": 11.32560000000149,
+        "settledIdleSeconds": 2.14979999999702
+      },
+      "images": [
+        {
+          "path": "/tmp/doreumi-library-621-650-0.25/motion-meshy-627.jpg",
+          "sha256": "f6a5687f5ea094cd309ff4f64a4b5e08a79b56a3aa46c5f80b93010474f0a17c",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-library-621-650-0.25/playback-meshy-627.jpg",
+          "sha256": "e9fcb8d793acf388ea9bcd19e793f93f3811377dd2ba56699473a4978ddec53d",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 628,
+      "speed": "0.25",
+      "clipSha256": "05112d48449e46304b80ea64a2310b8a5dcc89506a9c2c5a99cd93f0d64eb6e7",
+      "runtimeBundleSha256": "494acea1d182740d9f6e4b17503f2442744f918e472701c00ec47a3eb7eb8660",
+      "reportSha256": "6a07069907afee09c8e307b766e34ded0e25ff7a59a5ac8bb61f17a9e28421a1",
+      "coverage": {
+        "firstTime": 0,
+        "lastTime": 2.288300000000003,
+        "duration": 2.3333333293596903,
+        "tolerance": 0.35,
+        "observedFrames": 10,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1,
+        "stableIdleAt": 11.18360000000149,
+        "settledIdleSeconds": 2.1195000000000004
+      },
+      "images": [
+        {
+          "path": "/tmp/doreumi-library-621-650-0.25/motion-meshy-628.jpg",
+          "sha256": "159750cacd15924b0d42cae529bf8ddbcd02d5fe16e7fb05e64ba09be28094d8",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-library-621-650-0.25/playback-meshy-628.jpg",
+          "sha256": "58caabdd1f25c6e8f3dae86380b01fcc089ded1ebf36ff4152addc42a5c9d0fb",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 629,
+      "speed": "0.25",
+      "clipSha256": "594086c863d7584743c079cd7ce308fd0942e5d0abfc4d8108444540c696bada",
+      "runtimeBundleSha256": "494acea1d182740d9f6e4b17503f2442744f918e472701c00ec47a3eb7eb8660",
+      "reportSha256": "6a07069907afee09c8e307b766e34ded0e25ff7a59a5ac8bb61f17a9e28421a1",
+      "coverage": {
+        "firstTime": 0,
+        "lastTime": 4.623450000000006,
+        "duration": 4.800000015894572,
+        "tolerance": 0.35,
+        "observedFrames": 19,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1,
+        "stableIdleAt": 21.54679999999702,
+        "settledIdleSeconds": 2.1092000000029785
+      },
+      "images": [
+        {
+          "path": "/tmp/doreumi-library-621-650-0.25/motion-meshy-629.jpg",
+          "sha256": "74060e2f14210fa01c0cf8f0406170101f40c336005b223df08c3083b154a388",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-library-621-650-0.25/playback-meshy-629.jpg",
+          "sha256": "9bb8208493049f3a90841d5355dd75b26cd654c14d5d3dcce32db834cdf16083",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 632,
+      "speed": "0.25",
+      "clipSha256": "4279c79fc02abd407a660db5dc7e11441df32c708d21a613344d7907bae8ba95",
+      "runtimeBundleSha256": "494acea1d182740d9f6e4b17503f2442744f918e472701c00ec47a3eb7eb8660",
+      "reportSha256": "6a07069907afee09c8e307b766e34ded0e25ff7a59a5ac8bb61f17a9e28421a1",
+      "coverage": {
+        "firstTime": 0,
+        "lastTime": 3.307399999999998,
+        "duration": 3.466666642824809,
+        "tolerance": 0.35,
+        "observedFrames": 14,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1,
+        "stableIdleAt": 16.31520000000298,
+        "settledIdleSeconds": 2.099
+      },
+      "images": [
+        {
+          "path": "/tmp/doreumi-library-621-650-0.25/motion-meshy-632.jpg",
+          "sha256": "a25a44b5db87292959ad8c4abb6e651aa8be5acf6394a0a40ed3f2d00438f29e",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-library-621-650-0.25/playback-meshy-632.jpg",
+          "sha256": "5f3f39a20114e58efa5135584bf8b8b1bba7d84e7ce5005471c7e241e291dc69",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 635,
+      "speed": "0.25",
+      "clipSha256": "8494bcd85c31683066c56c6284b0e33e7b5dd69f401cca8b32e360def72810d4",
+      "runtimeBundleSha256": "494acea1d182740d9f6e4b17503f2442744f918e472701c00ec47a3eb7eb8660",
+      "reportSha256": "6a07069907afee09c8e307b766e34ded0e25ff7a59a5ac8bb61f17a9e28421a1",
+      "coverage": {
+        "firstTime": 0,
+        "lastTime": 5.172124999999991,
+        "duration": 5.300000015894572,
+        "tolerance": 0.35,
+        "observedFrames": 21,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1,
+        "stableIdleAt": 23.76989999999851,
+        "settledIdleSeconds": 2.0608000000044697
+      },
+      "images": [
+        {
+          "path": "/tmp/doreumi-library-621-650-0.25/motion-meshy-635.jpg",
+          "sha256": "08ae839ed094db98a50eb2195bbc3030ab54cd40b62a7a85c6f8a2a55b93fb50",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-library-621-650-0.25/playback-meshy-635.jpg",
+          "sha256": "3381a3a71feebe5d60c2e87f5197db494511268e8195b280a5d3f95525cb1ef3",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 636,
+      "speed": "0.25",
+      "clipSha256": "500289fc75b55c5cd0013941d3bcb64c3117a5724c924e740047f07b26d480b9",
+      "runtimeBundleSha256": "494acea1d182740d9f6e4b17503f2442744f918e472701c00ec47a3eb7eb8660",
+      "reportSha256": "6a07069907afee09c8e307b766e34ded0e25ff7a59a5ac8bb61f17a9e28421a1",
+      "coverage": {
+        "firstTime": 0,
+        "lastTime": 3.8194249999999976,
+        "duration": 4.033333365122477,
+        "tolerance": 0.35,
+        "observedFrames": 16,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1,
+        "stableIdleAt": 18.33529999999702,
+        "settledIdleSeconds": 2.208600000001489
+      },
+      "images": [
+        {
+          "path": "/tmp/doreumi-library-621-650-0.25/motion-meshy-636.jpg",
+          "sha256": "43d5b876e0429e766c3c1e2fd011034ca93e2dc53eeb8c292660b6efb5e4e647",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-library-621-650-0.25/playback-meshy-636.jpg",
+          "sha256": "79f66795c8a0f9841ad7a6a1e776519bdce17b4822cdc2478acbf62360ae8f48",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 637,
+      "speed": "0.25",
+      "clipSha256": "5488afbd0d2bf6552382d65766cb85a4978f1d8f6e250300d5187c26794097f6",
+      "runtimeBundleSha256": "494acea1d182740d9f6e4b17503f2442744f918e472701c00ec47a3eb7eb8660",
+      "reportSha256": "6a07069907afee09c8e307b766e34ded0e25ff7a59a5ac8bb61f17a9e28421a1",
+      "coverage": {
+        "firstTime": 0,
+        "lastTime": 10.244975000000021,
+        "duration": 10.266666475931803,
+        "tolerance": 0.35,
+        "observedFrames": 41,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1,
+        "stableIdleAt": 43.06159999999404,
+        "settledIdleSeconds": 2.000900000005963
+      },
+      "images": [
+        {
+          "path": "/tmp/doreumi-library-621-650-0.25/motion-meshy-637.jpg",
+          "sha256": "ab39d1b5ce2d5dd31ea49c35808ed26f6d8fe81fe6e0baf2ebeb52dac34dcfce",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-library-621-650-0.25/playback-meshy-637.jpg",
+          "sha256": "3bb876117ff01d7f8cdf6fc4089de17f9e486dafc9dd328516a2de80259364a2",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 638,
+      "speed": "0.25",
+      "clipSha256": "93b33144d3c0f5077e234765cae7e4b03e740322fff290e18e640a948437106c",
+      "runtimeBundleSha256": "494acea1d182740d9f6e4b17503f2442744f918e472701c00ec47a3eb7eb8660",
+      "reportSha256": "6a07069907afee09c8e307b766e34ded0e25ff7a59a5ac8bb61f17a9e28421a1",
+      "coverage": {
+        "firstTime": 0,
+        "lastTime": 3.083425000000001,
+        "duration": 3.2333332935969037,
+        "tolerance": 0.35,
+        "observedFrames": 13,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1,
+        "stableIdleAt": 15.47939999999851,
+        "settledIdleSeconds": 2.055899999998509
+      },
+      "images": [
+        {
+          "path": "/tmp/doreumi-library-621-650-0.25/motion-meshy-638.jpg",
+          "sha256": "2085e6e20240fe8e6c05c267caead07f2adb29cf95a371f326c23c50f1331b8d",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-library-621-650-0.25/playback-meshy-638.jpg",
+          "sha256": "a24624535de6bf297e1c01443224278637c75d6374b93e8a546cfa7c2013c99c",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 639,
+      "speed": "0.25",
+      "clipSha256": "42beed94ff90692c0190c35b35a7a2d64f6a7793f74b8773878e265c24673af8",
+      "runtimeBundleSha256": "494acea1d182740d9f6e4b17503f2442744f918e472701c00ec47a3eb7eb8660",
+      "reportSha256": "6a07069907afee09c8e307b766e34ded0e25ff7a59a5ac8bb61f17a9e28421a1",
+      "coverage": {
+        "firstTime": 0,
+        "lastTime": 4.5833999999999895,
+        "duration": 4.799999952316284,
+        "tolerance": 0.35,
+        "observedFrames": 19,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1,
+        "stableIdleAt": 21.44529999999702,
+        "settledIdleSeconds": 2.15120000000298
+      },
+      "images": [
+        {
+          "path": "/tmp/doreumi-library-621-650-0.25/motion-meshy-639.jpg",
+          "sha256": "ea75bc33a8b468118495fab6fe5f51dd471b2fa2896765edcffc61fc58b4b8c4",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-library-621-650-0.25/playback-meshy-639.jpg",
+          "sha256": "3ecdb8a73f738fcb0831dad7efe83c3e6faa9b64b84efb9da2a49c1d910c74f5",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 640,
+      "speed": "0.25",
+      "clipSha256": "dae8afd2061e4c7ea14cac8d668be5331f183de341a5dd3511627c50ac68fb31",
+      "runtimeBundleSha256": "494acea1d182740d9f6e4b17503f2442744f918e472701c00ec47a3eb7eb8660",
+      "reportSha256": "6a07069907afee09c8e307b766e34ded0e25ff7a59a5ac8bb61f17a9e28421a1",
+      "coverage": {
+        "firstTime": 0,
+        "lastTime": 3.5903500000000004,
+        "duration": 3.6666666348775228,
+        "tolerance": 0.35,
+        "observedFrames": 15,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1,
+        "stableIdleAt": 16.39770000000298,
+        "settledIdleSeconds": 2.2319999999999993
+      },
+      "images": [
+        {
+          "path": "/tmp/doreumi-library-621-650-0.25/motion-meshy-640.jpg",
+          "sha256": "ae7bdddbca1e7957f62475ef89f1757ce0045308d641a0cb464e7cd71250e276",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-library-621-650-0.25/playback-meshy-640.jpg",
+          "sha256": "92e7f90c829971c233cac4eac58dae7e8d9c6c738c1b7d559bebdafce0d85175",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 641,
+      "speed": "0.25",
+      "clipSha256": "1989a1f00afc290f1055cf4279b81ebdbe252200c5f37f5aa38e71f0202de0dc",
+      "runtimeBundleSha256": "494acea1d182740d9f6e4b17503f2442744f918e472701c00ec47a3eb7eb8660",
+      "reportSha256": "6a07069907afee09c8e307b766e34ded0e25ff7a59a5ac8bb61f17a9e28421a1",
+      "coverage": {
+        "firstTime": 0,
+        "lastTime": 2.560800000000002,
+        "duration": 2.7333332935969032,
+        "tolerance": 0.35,
+        "observedFrames": 11,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1,
+        "stableIdleAt": 13.33470000000298,
+        "settledIdleSeconds": 2.0298999999985092
+      },
+      "images": [
+        {
+          "path": "/tmp/doreumi-library-621-650-0.25/motion-meshy-641.jpg",
+          "sha256": "b7e825e8b9a340a8e8eec7ffc10f48993e31ac454d7ca7a5307b91ae77d67b55",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-library-621-650-0.25/playback-meshy-641.jpg",
+          "sha256": "fb4cc86f54cfa340ad789a66350891be605fde72dc57aa06f0e51508e9a8cf25",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 642,
+      "speed": "0.25",
+      "clipSha256": "4e893033dfe77ca0b92c295ac8203320b8bd4e973eb06dc761ed8e05622f9492",
+      "runtimeBundleSha256": "494acea1d182740d9f6e4b17503f2442744f918e472701c00ec47a3eb7eb8660",
+      "reportSha256": "6a07069907afee09c8e307b766e34ded0e25ff7a59a5ac8bb61f17a9e28421a1",
+      "coverage": {
+        "firstTime": 0,
+        "lastTime": 2.312824999999998,
+        "duration": 2.4666666428248085,
+        "tolerance": 0.35,
+        "observedFrames": 10,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1,
+        "stableIdleAt": 12.36479999999702,
+        "settledIdleSeconds": 2.0657999999970205
+      },
+      "images": [
+        {
+          "path": "/tmp/doreumi-library-621-650-0.25/motion-meshy-642.jpg",
+          "sha256": "65ca626cee359dfa9bb24b0071479fa73b8344cfebbf43cab5ec2680d01f924c",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-library-621-650-0.25/playback-meshy-642.jpg",
+          "sha256": "4789c25c1a8df7ebdbc9286748dd7cd7fef017213d29c1dd8bcd314c2c8ba3e2",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 643,
+      "speed": "0.25",
+      "clipSha256": "0e0a824f5974630c96d38c7c9da1dbe6125a6795876c8d50c89133fccdafe49b",
+      "runtimeBundleSha256": "494acea1d182740d9f6e4b17503f2442744f918e472701c00ec47a3eb7eb8660",
+      "reportSha256": "6a07069907afee09c8e307b766e34ded0e25ff7a59a5ac8bb61f17a9e28421a1",
+      "coverage": {
+        "firstTime": 0,
+        "lastTime": 3.7951999999999932,
+        "duration": 3.7999999046325685,
+        "tolerance": 0.35,
+        "observedFrames": 16,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1,
+        "stableIdleAt": 17.22169999999553,
+        "settledIdleSeconds": 2.1655000000000015
+      },
+      "images": [
+        {
+          "path": "/tmp/doreumi-library-621-650-0.25/motion-meshy-643.jpg",
+          "sha256": "d76fb05c2932874921893069443b70da2ce646e83b384dbfb6e3048493595b63",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-library-621-650-0.25/playback-meshy-643.jpg",
+          "sha256": "6b90c9f3e747929fa393692e26273cc463f830f4deebad860ca0d6d78613b936",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 644,
+      "speed": "0.25",
+      "clipSha256": "58e23682d51ed0383c4449d8ef705391a7f0999bc7abcd611c4f3b3b5d4926d3",
+      "runtimeBundleSha256": "494acea1d182740d9f6e4b17503f2442744f918e472701c00ec47a3eb7eb8660",
+      "reportSha256": "6a07069907afee09c8e307b766e34ded0e25ff7a59a5ac8bb61f17a9e28421a1",
+      "coverage": {
+        "firstTime": 0,
+        "lastTime": 2.3296249999999983,
+        "duration": 2.466666658719381,
+        "tolerance": 0.35,
+        "observedFrames": 10,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1,
+        "stableIdleAt": 12.38820000000298,
+        "settledIdleSeconds": 2.242100000001491
+      },
+      "images": [
+        {
+          "path": "/tmp/doreumi-library-621-650-0.25/motion-meshy-644.jpg",
+          "sha256": "c904edd456aa12e1450ab87426a24c5d4432d111282c80e96675f32d96e7f491",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-library-621-650-0.25/playback-meshy-644.jpg",
+          "sha256": "3b6a899e0640267a66557c322fe8e1b69a98f8673dfdab59d262af62acc4ec06",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 645,
+      "speed": "0.25",
+      "clipSha256": "24b490927f764330c4bccb05650b6e3346906e9704e716dc63e9c613417fa033",
+      "runtimeBundleSha256": "494acea1d182740d9f6e4b17503f2442744f918e472701c00ec47a3eb7eb8660",
+      "reportSha256": "6a07069907afee09c8e307b766e34ded0e25ff7a59a5ac8bb61f17a9e28421a1",
+      "coverage": {
+        "firstTime": 0,
+        "lastTime": 5.086900000000001,
+        "duration": 5.133333269755045,
+        "tolerance": 0.35,
+        "observedFrames": 21,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1,
+        "stableIdleAt": 22.36879999999702,
+        "settledIdleSeconds": 2.1347000000029794
+      },
+      "images": [
+        {
+          "path": "/tmp/doreumi-library-621-650-0.25/motion-meshy-645.jpg",
+          "sha256": "0763d490062f93f5139f2657bd52138cc7be585375ef70d5a29502e5ebe58eac",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-library-621-650-0.25/playback-meshy-645.jpg",
+          "sha256": "f1e2f4c4c9e8d24496fceb9278710717b446ddedcdc5dfbd20492776aeaa2b59",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 646,
+      "speed": "0.25",
+      "clipSha256": "6c5762b226dcf885d8ce6b7b4f0ff4c06b87a794f885637d7e87f4b1f3642f78",
+      "runtimeBundleSha256": "494acea1d182740d9f6e4b17503f2442744f918e472701c00ec47a3eb7eb8660",
+      "reportSha256": "6a07069907afee09c8e307b766e34ded0e25ff7a59a5ac8bb61f17a9e28421a1",
+      "coverage": {
+        "firstTime": 0,
+        "lastTime": 3.041700000000011,
+        "duration": 3.0999999682108563,
+        "tolerance": 0.35,
+        "observedFrames": 13,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1,
+        "stableIdleAt": 14.22039999999851,
+        "settledIdleSeconds": 2.1151000000014903
+      },
+      "images": [
+        {
+          "path": "/tmp/doreumi-library-621-650-0.25/motion-meshy-646.jpg",
+          "sha256": "b4b5a90e868e75d0406269e0c8d22099f9402cd1d05c042eeee387f776133ae5",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-library-621-650-0.25/playback-meshy-646.jpg",
+          "sha256": "3c07a036696e71fc55a126f048d0fe86a4108ab2706b8a0a87b9c6c282441913",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 647,
+      "speed": "0.25",
+      "clipSha256": "1052c8673188c01c486be241512fe46407270f679d1a96eb4373859c0ca6c2c3",
+      "runtimeBundleSha256": "494acea1d182740d9f6e4b17503f2442744f918e472701c00ec47a3eb7eb8660",
+      "reportSha256": "6a07069907afee09c8e307b766e34ded0e25ff7a59a5ac8bb61f17a9e28421a1",
+      "coverage": {
+        "firstTime": 0,
+        "lastTime": 3.843825000000013,
+        "duration": 4.033333365122477,
+        "tolerance": 0.35,
+        "observedFrames": 16,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1,
+        "stableIdleAt": 18.4675,
+        "settledIdleSeconds": 2.2079999999999984
+      },
+      "images": [
+        {
+          "path": "/tmp/doreumi-library-621-650-0.25/motion-meshy-647.jpg",
+          "sha256": "382d68e1939a972d820f341d8beebddc58c81b34c831b9e9e4b20b87c26625b4",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-library-621-650-0.25/playback-meshy-647.jpg",
+          "sha256": "2dfcc04c895666105378f8ddf5499d366a942e510f0f967f13ff5497e0cd0b7b",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 648,
+      "speed": "0.25",
+      "clipSha256": "32cd9c0d441e7376dbf43553279c95cc22e4df6e59d3f206272c11e35e40987d",
+      "runtimeBundleSha256": "494acea1d182740d9f6e4b17503f2442744f918e472701c00ec47a3eb7eb8660",
+      "reportSha256": "6a07069907afee09c8e307b766e34ded0e25ff7a59a5ac8bb61f17a9e28421a1",
+      "coverage": {
+        "firstTime": 0,
+        "lastTime": 4.368149999999989,
+        "duration": 4.5000000635782875,
+        "tolerance": 0.35,
+        "observedFrames": 18,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1,
+        "stableIdleAt": 20.611,
+        "settledIdleSeconds": 2.1216999999955277
+      },
+      "images": [
+        {
+          "path": "/tmp/doreumi-library-621-650-0.25/motion-meshy-648.jpg",
+          "sha256": "cb66342be87f6fe362780218eddec046eb0dea62fdbd5531bdb0977a0a9bb7bd",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-library-621-650-0.25/playback-meshy-648.jpg",
+          "sha256": "91127daf3d651cbe802ea58447aee1591290f42e520e217dc4361a547698d8a3",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 650,
+      "speed": "0.25",
+      "clipSha256": "03ce5f1c5585ae251c0aeb886082cf28d2667bc3e23aa3bd126c04de60d00bea",
+      "runtimeBundleSha256": "494acea1d182740d9f6e4b17503f2442744f918e472701c00ec47a3eb7eb8660",
+      "reportSha256": "6a07069907afee09c8e307b766e34ded0e25ff7a59a5ac8bb61f17a9e28421a1",
+      "coverage": {
+        "firstTime": 0,
+        "lastTime": 6.325024999999994,
+        "duration": 6.433333460489909,
+        "tolerance": 0.35,
+        "observedFrames": 26,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1,
+        "stableIdleAt": 27.3735,
+        "settledIdleSeconds": 2.1711999999955296
+      },
+      "images": [
+        {
+          "path": "/tmp/doreumi-library-621-650-0.25/motion-meshy-650.jpg",
+          "sha256": "78d9d68d569ed2d5843ac21a85daecfab7d3f513b5a5999a3899d9cbaf003cd2",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-library-621-650-0.25/playback-meshy-650.jpg",
+          "sha256": "7bbf211a43cacdaf17dd7028bbde1050c8f5e336f68627dea3d4f81ae2bfbce6",
+          "rootViewed": true
+        }
+      ]
+    }
+  ],
+  "quarterObservations": "All25 individually viewed. Findings agree with normal review. 622 needs palm/knee support; 623 weapon pose excluded; 627/628 empty-hand forward charge context pending; 637/638 and645-648 foot support corrections required; 640-642 need obstacle and launch/landing proof; 643 jump-run support corrections required; 650 mummy arm/torso gesture coherent but one missed source contact remains. 639 regression remains visually coherent. No new registry approval."
+}

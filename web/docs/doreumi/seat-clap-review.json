@@ -1,0 +1,238 @@
+{
+  "checkedAt": "2026-09-24T04:58:12.126Z",
+  "masterSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+  "review": "passed",
+  "visualReviewer": "/root",
+  "scope": "Two exact source-timed clap adaptations with a fixed floor cushion. Parent inspected all eight normal-128 and quarter-speed static/temporal sheets, five angles and nine phases. Independent exact shipping source-planted contact and 21-joint 60 Hz checks; cushion-to-skin contact and full-skin exclusion at 30 Hz.",
+  "reports": [
+    {
+      "file": "/tmp/doreumi-seat-clap-1/report.json",
+      "sha256": "b43ebb75833747e0dc33d3d18db553dc7914933bfd88ad4533480c08538b68bc",
+      "runtimeBundleSha256": "3422594d9675c944104a40efc990358e701afad6908d99a20652ee0e4a7475ce",
+      "playbackRate": 1,
+      "angles": [
+        0,
+        90,
+        180,
+        -90,
+        45
+      ],
+      "fractions": [
+        0,
+        0.125,
+        0.25,
+        0.375,
+        0.5,
+        0.625,
+        0.75,
+        0.875,
+        1
+      ],
+      "samples": 90,
+      "failures": 0
+    },
+    {
+      "file": "/tmp/doreumi-seat-clap-0.25/report.json",
+      "sha256": "d2ca7f2ed306f910e6e627499b95bd60d953681da63e4f86ff511577a9fce54d",
+      "runtimeBundleSha256": "3422594d9675c944104a40efc990358e701afad6908d99a20652ee0e4a7475ce",
+      "playbackRate": 0.25,
+      "angles": [
+        0,
+        90,
+        180,
+        -90,
+        45
+      ],
+      "fractions": [
+        0,
+        0.125,
+        0.25,
+        0.375,
+        0.5,
+        0.625,
+        0.75,
+        0.875,
+        1
+      ],
+      "samples": 90,
+      "failures": 0
+    }
+  ],
+  "numericalSupport": {
+    "file": ".artifacts/doreumi-contact-audit/seat-clap-support.json",
+    "sha256": "f8acb487d8adccd4f3159f6a2751accd5e5ab2c1e5684d6b5d6525ba647e4ab9",
+    "fps": 30,
+    "samples": 227,
+    "actualButtContactSamples": 141,
+    "maximumTriangleGap": 0.009781090285663319,
+    "minimumSkinRadiusSquared": 1.1118266734822735,
+    "allSkinVertexCount": 78799,
+    "fixedFloorXZ": true,
+    "standingCushionFollowsBody": false
+  },
+  "sourceCodeHashes": {
+    "src/lib/doreumi/motion-context-props.ts": "81c5857f1a0856baaff82b785884d0e08205d85899ada9c48dfa9cfe87f8b357",
+    "src/lib/doreumi/motion-portable-props.ts": "2ca96af06fad210583453ea3139070c97ee59983f9548e89c5b81bc8c6538e1e",
+    "tests/doreumi-context-props.test.mjs": "f8b45fa8b2592914fd9874dfd129d7b3696e7a78318b304a9033558c44c04d5e"
+  },
+  "motions": [
+    {
+      "id": "meshy:299",
+      "review": "passed",
+      "ambient": true,
+      "clipSha256": "b0188e4194cff5402e8f764ade7c1d4cc339e03636343bb6442622d212c20c3b",
+      "metadataSha256": "f71b191a602831126a4e07f33243bf139ce3bd25cef03a97df399a73b2be4c58",
+      "sourceSha256": "b93fd4d355e3435d364ef079a3cfcd7bc5361618855d446770495704aa10db0f",
+      "visualEvidence": [
+        {
+          "file": "/tmp/doreumi-seat-clap-1/motion-meshy-299.jpg",
+          "sha256": "b675b3441a8a2870852bbbe15dd9bfc621c708b2f4f4ba4261286d0a7cb7d2c3"
+        },
+        {
+          "file": "/tmp/doreumi-seat-clap-1/temporal-meshy-299.jpg",
+          "sha256": "d271c6efb750c9fb3aeacd01375fefc4ac224d4500cf17adbb0aa202aef1a79b"
+        },
+        {
+          "file": "/tmp/doreumi-seat-clap-0.25/motion-meshy-299.jpg",
+          "sha256": "03c3a98bf3bd284c1ba45e6a2aca91376260ee4474f3bef4c25995ebf93e3d1d"
+        },
+        {
+          "file": "/tmp/doreumi-seat-clap-0.25/temporal-meshy-299.jpg",
+          "sha256": "d028bcda4cc8b69efc867b197b0d53e1cad6461b985a2f58fa332bd39535169d"
+        }
+      ],
+      "observations": "Fixed cushion remains on the floor as the character rises, claps, and sits. Palms meet in front of the belly.",
+      "sourceContact": {
+        "actionId": 299,
+        "sourceActionId": 299,
+        "derivation": null,
+        "sourceName": "Stand_Clap_and_Sit_Down",
+        "sourceSha256": "b93fd4d355e3435d364ef079a3cfcd7bc5361618855d446770495704aa10db0f",
+        "clipSha256": "b0188e4194cff5402e8f764ade7c1d4cc339e03636343bb6442622d212c20c3b",
+        "sourceFloor": 0.00123594065481298,
+        "sourcePlantedPairs": 231,
+        "missingTargetContactPairs": 0,
+        "excessiveDriftPairs": 0,
+        "sourceMovingContactPairs": 19,
+        "pivotCompatiblePairs": 0,
+        "maxDriftByHeight": 0.005773468889748211,
+        "failures": []
+      },
+      "joints": {
+        "fps": 60,
+        "maximumLocal": {
+          "bone": "thighL",
+          "from": 1.2666666666666666,
+          "time": 1.2833333333333334,
+          "sourceTime": 0.5833333333333335,
+          "targetLocalDegrees": 5.2402237372847456,
+          "targetWorldDegrees": 3.7171444966418323,
+          "sourceLocalDegrees": 5.307836112482712,
+          "sourceWorldDegrees": 3.7678558115764202,
+          "jointDistance": 0.006994793476944283
+        },
+        "maximumWorld": {
+          "bone": "wristR",
+          "from": 0.8833333333333333,
+          "time": 0.9,
+          "sourceTime": 0.20000000000000007,
+          "targetLocalDegrees": 0,
+          "targetWorldDegrees": 3.933006449141995,
+          "sourceLocalDegrees": 2.1145248482353263,
+          "sourceWorldDegrees": 0.7736104012783347,
+          "jointDistance": 0.03603247403174208
+        },
+        "largestIntroducedWorld": {
+          "bone": "wristR",
+          "from": 0.85,
+          "time": 0.8666666666666667,
+          "sourceTime": 0.16666666666666674,
+          "targetLocalDegrees": 0,
+          "targetWorldDegrees": 3.8327840877655053,
+          "sourceLocalDegrees": 2.6195245888405267,
+          "sourceWorldDegrees": 0.47719597736158725,
+          "jointDistance": 0.03329435372442821
+        }
+      }
+    },
+    {
+      "id": "meshy:354",
+      "review": "passed",
+      "ambient": true,
+      "clipSha256": "ccc3cc6ac6b18340b741d71e15d02c8c7614d0ca668316edf2601a7a853ae2ab",
+      "metadataSha256": "a8cbaa3ff6f48e69dd091b895d31fb4e5dde39a235a1326d4e4bce7a2668b356",
+      "sourceSha256": "cabc62964390bdefcc3235f7020d5b2df57ea43a349c9d47b7032f2f10fc16a8",
+      "visualEvidence": [
+        {
+          "file": "/tmp/doreumi-seat-clap-1/motion-meshy-354.jpg",
+          "sha256": "ab25713293113fd9a2107019ff18015e41dc1a90ab1e49a2d6c1db4e9d48ac6f"
+        },
+        {
+          "file": "/tmp/doreumi-seat-clap-1/temporal-meshy-354.jpg",
+          "sha256": "6793ddb8b0f11d114ad378a4ea70008ae7f7f4fbdddba50cc88f08df9543b21e"
+        },
+        {
+          "file": "/tmp/doreumi-seat-clap-0.25/motion-meshy-354.jpg",
+          "sha256": "1e26febd7a2fb2d68afff14f1a102de05a812acd3b1b66bf671704346fd3d1b6"
+        },
+        {
+          "file": "/tmp/doreumi-seat-clap-0.25/temporal-meshy-354.jpg",
+          "sha256": "7702f18ee9da269781fd2050b65e76034f776fbfe72ad28f3708538e9174da18"
+        }
+      ],
+      "observations": "Seated clap and torso fold read coherently, with cushion support and no visible palm/body intersection.",
+      "sourceContact": {
+        "actionId": 354,
+        "sourceActionId": 354,
+        "derivation": null,
+        "sourceName": "Sitting_Clap",
+        "sourceSha256": "cabc62964390bdefcc3235f7020d5b2df57ea43a349c9d47b7032f2f10fc16a8",
+        "clipSha256": "ccc3cc6ac6b18340b741d71e15d02c8c7614d0ca668316edf2601a7a853ae2ab",
+        "sourceFloor": -0.003003401346326266,
+        "sourcePlantedPairs": 200,
+        "missingTargetContactPairs": 0,
+        "excessiveDriftPairs": 0,
+        "sourceMovingContactPairs": 0,
+        "pivotCompatiblePairs": 0,
+        "maxDriftByHeight": 0.0005951634765096682,
+        "failures": []
+      },
+      "joints": {
+        "fps": 60,
+        "maximumLocal": {
+          "bone": "shoulderL",
+          "from": 3.5833333333333335,
+          "time": 3.6,
+          "sourceTime": 2.9000000000000004,
+          "targetLocalDegrees": 2.6579655063479914,
+          "targetWorldDegrees": 2.670861223894908,
+          "sourceLocalDegrees": 0.43434320774595503,
+          "sourceWorldDegrees": 0.5037281875484162,
+          "jointDistance": 0.001790644980093751
+        },
+        "maximumWorld": {
+          "bone": "elbowR",
+          "from": 3.533333333333333,
+          "time": 3.55,
+          "sourceTime": 2.8499999999999996,
+          "targetLocalDegrees": 0.24595376129235272,
+          "targetWorldDegrees": 3.644791470311545,
+          "sourceLocalDegrees": 1.1537440965744385,
+          "sourceWorldDegrees": 2.4986899590423284,
+          "jointDistance": 0.020457485427313793
+        },
+        "largestIntroducedWorld": {
+          "bone": "elbowL",
+          "from": 3.55,
+          "time": 3.566666666666667,
+          "sourceTime": 2.866666666666667,
+          "targetLocalDegrees": 0.12145810313359677,
+          "targetWorldDegrees": 3.556152514534473,
+          "sourceLocalDegrees": 1.2732771325377097,
+          "sourceWorldDegrees": 0.6645228341356443,
+          "jointDistance": 0.020777073335129386
+        }
+      }
+    }
+  ]
+}

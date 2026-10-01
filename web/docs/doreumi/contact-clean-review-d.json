@@ -1,0 +1,459 @@
+{
+  "review": "passed",
+  "checkedAt": "2026-09-24T03:28:32.509444+00:00",
+  "masterSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+  "method": "Nine individually inspected five-angle/nine-pose normal128px and quarter-speed joint-overlay sheets. Actual playback temporal samples4fps normal/1fps quarter. Quarter uses production expressionForMotion mood mapping. Matching full-source physical-foot contact and21-joint60Hz audits. Not every rendered video frame.",
+  "scope": "Nine completed actions only, each45quarter samples with no failures. Completed batch has14 unrelated48 mirror framing failures;48 remains pending. No approval of other entries.",
+  "motions": [
+    {
+      "id": "meshy:338",
+      "review": "passed",
+      "ambient": true,
+      "clipSha256": "ef3a309606784b88c435c97fe95ad5834ddb2a7e527c7e3e30c64eab8daf6805",
+      "metadataSha256": "604d2f49a9ceba34892f8545e5f7dbec1b6ee5efba0f12e1acc73a7990348ad4",
+      "visualFinding": "Inhale and left/right head turn.",
+      "sourcePlantedPairs": 474,
+      "maximumSourceConfirmedSlipFractionHeight": 0.0009222815620618711,
+      "largestIntroducedWorld": {
+        "bone": "wristL",
+        "from": 5.216666666666667,
+        "time": 5.233333333333333,
+        "sourceTime": 4.533333333333333,
+        "targetLocalDegrees": 0.1259663574963697,
+        "targetWorldDegrees": 0.3426304975090388,
+        "sourceLocalDegrees": 0.1499217186567601,
+        "sourceWorldDegrees": 0.1918430184402756,
+        "jointDistance": 0.0010906468607299786
+      },
+      "largestIntroducedLocal": {
+        "bone": "torso",
+        "from": 3.95,
+        "time": 3.966666666666667,
+        "sourceTime": 3.2666666666666666,
+        "targetLocalDegrees": 0.2474864607356052,
+        "targetWorldDegrees": 0.2602795394858201,
+        "sourceLocalDegrees": 0.014695839000325069,
+        "sourceWorldDegrees": 0.23613541359974996,
+        "jointDistance": 0.00010667122994953227
+      },
+      "visualEvidence": [
+        {
+          "file": "/tmp/doreumi-contact-clean-small-b/motion-meshy-338.jpg",
+          "sha256": "7e3a878c5879b9747aa40eb3d58482a5f9d04d60f823f9e7c34762c4446bd369"
+        },
+        {
+          "file": "/tmp/doreumi-contact-clean-small-b/temporal-338.jpg",
+          "sha256": "98c42f76c9b96961ff5f38c164ec4395983dd12d670476a7426a6737f0bafd98"
+        },
+        {
+          "file": "/tmp/doreumi-contact-clean-quarter-b/motion-meshy-338.jpg",
+          "sha256": "2bc8e47cfd8f925eac8c348b95a8f06bab18b3a1d255c62f0253132e0857c479"
+        },
+        {
+          "file": "/tmp/doreumi-contact-clean-quarter-b/temporal-meshy-338.jpg",
+          "sha256": "dfd1ed96fc3fbb1220899e27ac85c7e6b374faf60a11a33ce5285cc23a0724a5"
+        }
+      ]
+    },
+    {
+      "id": "meshy:388",
+      "review": "passed",
+      "ambient": true,
+      "clipSha256": "6332ed94b57c807bee066455ef445bc695ebe59275bcb407bbdc3ec4f5fbcfbe",
+      "metadataSha256": "e8a7d1735103f5b9dcf77cb3c7cee6a2fbc4af181c767b010165e0c92c9432b7",
+      "visualFinding": "Anticipation then both elbows lift in muscle pose.",
+      "sourcePlantedPairs": 114,
+      "maximumSourceConfirmedSlipFractionHeight": 0.004581780044369647,
+      "largestIntroducedWorld": {
+        "bone": "footR",
+        "from": 1.3,
+        "time": 1.3166666666666667,
+        "sourceTime": 0.6166666666666667,
+        "targetLocalDegrees": 0.41737221768051974,
+        "targetWorldDegrees": 0.2555952335681514,
+        "sourceLocalDegrees": 0.33993057381415037,
+        "sourceWorldDegrees": 0.015405013026373954,
+        "jointDistance": 0.003089744128445369
+      },
+      "largestIntroducedLocal": {
+        "bone": "torso",
+        "from": 1.0666666666666667,
+        "time": 1.0833333333333333,
+        "sourceTime": 0.3833333333333333,
+        "targetLocalDegrees": 2.8521800665074064,
+        "targetWorldDegrees": 3.167944908850915,
+        "sourceLocalDegrees": 0.22994333790915222,
+        "sourceWorldDegrees": 3.205788452468514,
+        "jointDistance": 0.001992975810459692
+      },
+      "visualEvidence": [
+        {
+          "file": "/tmp/doreumi-contact-clean-small-b/motion-meshy-388.jpg",
+          "sha256": "b9ec551556251744ba2f7a6d676034d72f9293f95c00b21acc9df8d97225fa22"
+        },
+        {
+          "file": "/tmp/doreumi-contact-clean-small-b/temporal-388.jpg",
+          "sha256": "28abc6947f48ab31547c51d06eaf82906dae71fa46ade1374dca9ef26ada3eb9"
+        },
+        {
+          "file": "/tmp/doreumi-contact-clean-quarter-b/motion-meshy-388.jpg",
+          "sha256": "110251ff84a40e20b94297e3b883eb969423c0d67992921e4055e2731f97bf84"
+        },
+        {
+          "file": "/tmp/doreumi-contact-clean-quarter-b/temporal-meshy-388.jpg",
+          "sha256": "5d902b8826d419ccb0006d2cd13234cebabba544c46f0b1835bf6b673c8ee9ba"
+        }
+      ]
+    },
+    {
+      "id": "meshy:403",
+      "review": "passed",
+      "ambient": true,
+      "clipSha256": "2b140f5812e47496ba0279e89968873482d9289f48c3f0258bffb4ac8bafdbc9",
+      "metadataSha256": "d682b7925d8cc6cfcb805e5e2a7c4d8f5762403298c9a4aeb0493c2f7b20c223",
+      "visualFinding": "Fast victory accent; slow view pending.",
+      "sourcePlantedPairs": 92,
+      "maximumSourceConfirmedSlipFractionHeight": 0.002306312598039573,
+      "largestIntroducedWorld": {
+        "bone": "footL",
+        "from": 1.0833333333333333,
+        "time": 1.1,
+        "sourceTime": 0.40000000000000013,
+        "targetLocalDegrees": 1.1793741455603493,
+        "targetWorldDegrees": 0.269765619222162,
+        "sourceLocalDegrees": 1.2690566379321724,
+        "sourceWorldDegrees": 0.020971276356641824,
+        "jointDistance": 0.0012739632753321116
+      },
+      "largestIntroducedLocal": {
+        "bone": "torso",
+        "from": 1.0833333333333333,
+        "time": 1.1,
+        "sourceTime": 0.40000000000000013,
+        "targetLocalDegrees": 1.8006698059375943,
+        "targetWorldDegrees": 1.3131183487664426,
+        "sourceLocalDegrees": 0.18532795377076697,
+        "sourceWorldDegrees": 1.2353883465321291,
+        "jointDistance": 0.002239302716182637
+      },
+      "visualEvidence": [
+        {
+          "file": "/tmp/doreumi-contact-clean-small-b/motion-meshy-403.jpg",
+          "sha256": "fee0e39e5e37c16f2a2a93495a78c1c6939a48364c510609dbe1e36b5a1df984"
+        },
+        {
+          "file": "/tmp/doreumi-contact-clean-small-b/temporal-403.jpg",
+          "sha256": "88bc9ff1935b7d489056cfebfd17db4fff828eaac72fd71db8f03001dcdb480d"
+        },
+        {
+          "file": "/tmp/doreumi-contact-clean-quarter-b/motion-meshy-403.jpg",
+          "sha256": "fdde0bd6863b078131ffa8de086632a7203c83033ef995c518bb6a9a395fb321"
+        },
+        {
+          "file": "/tmp/doreumi-contact-clean-quarter-b/temporal-meshy-403.jpg",
+          "sha256": "ba18cd4bae35e8b0fb2d1f18bd72e58f7127d8d7d9e3fa07cb7701b41899997b"
+        }
+      ]
+    },
+    {
+      "id": "meshy:412",
+      "review": "passed",
+      "ambient": true,
+      "clipSha256": "82718f16aa253a7877862d1fac4c945814fe4ff61decd53c1502ac963c05a7be",
+      "metadataSha256": "178b43c7ff3f6bae2824f60293babbf670a6273b2573ce50b35dc5ed246357a6",
+      "visualFinding": "Arms open with torso turns and front return.",
+      "sourcePlantedPairs": 509,
+      "maximumSourceConfirmedSlipFractionHeight": 0.008300878125418893,
+      "largestIntroducedWorld": {
+        "bone": "shoulderL",
+        "from": 6.283333333333333,
+        "time": 6.3,
+        "sourceTime": 5.6,
+        "targetLocalDegrees": 0.35154184455855836,
+        "targetWorldDegrees": 2.289677827587415,
+        "sourceLocalDegrees": 0.28271099983860887,
+        "sourceWorldDegrees": 2.068676296757115,
+        "jointDistance": 0.013921210998772264
+      },
+      "largestIntroducedLocal": {
+        "bone": "torso",
+        "from": 4.866666666666666,
+        "time": 4.883333333333334,
+        "sourceTime": 4.183333333333334,
+        "targetLocalDegrees": 0.4132706494276238,
+        "targetWorldDegrees": 2.0557800682331697,
+        "sourceLocalDegrees": 0,
+        "sourceWorldDegrees": 2.100618927061578,
+        "jointDistance": 0.0014382751121099116
+      },
+      "visualEvidence": [
+        {
+          "file": "/tmp/doreumi-contact-clean-small-b/motion-meshy-412.jpg",
+          "sha256": "776055b47758582a0d8e92d1feaf13225837698e397777d911c045ed2bcdb508"
+        },
+        {
+          "file": "/tmp/doreumi-contact-clean-small-b/temporal-412.jpg",
+          "sha256": "bfe4235eb7689e7a20590c1db5c626bf05508557fd7a7665bf4dd4155c1ff003"
+        },
+        {
+          "file": "/tmp/doreumi-contact-clean-quarter-b/motion-meshy-412.jpg",
+          "sha256": "07df58212b0c181b5ea05c165d383ae85db92a118fec794b564f1333b1126532"
+        },
+        {
+          "file": "/tmp/doreumi-contact-clean-quarter-b/temporal-meshy-412.jpg",
+          "sha256": "00924d1e04f1f3217c9978a7e469adccb117e7d5e1f59bbdfc1d0048b8c905f7"
+        }
+      ]
+    },
+    {
+      "id": "meshy:452",
+      "review": "passed",
+      "ambient": true,
+      "clipSha256": "79e024d38ca4e45af2ea635cc39389efd320d55b8d96ef865df6b88f5ecaaa24",
+      "metadataSha256": "b41d43101ef7c038df4aee3c4adf1aa72f2dec7ea3d0ae0b95ae7a7b856eec01",
+      "visualFinding": "Crouch, airborne backflip, bent landing visible.",
+      "sourcePlantedPairs": 51,
+      "maximumSourceConfirmedSlipFractionHeight": 0.008795960870122226,
+      "largestIntroducedWorld": {
+        "bone": "footR",
+        "from": 2.65,
+        "time": 2.6666666666666665,
+        "sourceTime": 1.9666666666666666,
+        "targetLocalDegrees": 0.951355403108466,
+        "targetWorldDegrees": 0.1705280172874502,
+        "sourceLocalDegrees": 0.9275315482988887,
+        "sourceWorldDegrees": 0.008530218409527716,
+        "jointDistance": 0.005763467966492622
+      },
+      "largestIntroducedLocal": {
+        "bone": "torso",
+        "from": 1.7,
+        "time": 1.7166666666666666,
+        "sourceTime": 1.0166666666666666,
+        "targetLocalDegrees": 3.0517299723642832,
+        "targetWorldDegrees": 7.191492224499967,
+        "sourceLocalDegrees": 0.022978143873602187,
+        "sourceWorldDegrees": 7.191639376454784,
+        "jointDistance": 0.07059975845020147
+      },
+      "visualEvidence": [
+        {
+          "file": "/tmp/doreumi-contact-clean-small-b/motion-meshy-452.jpg",
+          "sha256": "9dcce96c82198cfc24d8111a7220460364e1bafc24e919caf1ce0ed641e94243"
+        },
+        {
+          "file": "/tmp/doreumi-contact-clean-small-b/temporal-452.jpg",
+          "sha256": "e3ecdb227e208fb920f870ebe8e0408497984d0e7d540f4b2fb0998c8751af7d"
+        },
+        {
+          "file": "/tmp/doreumi-contact-clean-quarter-b/motion-meshy-452.jpg",
+          "sha256": "2f4c40d0b28bbdba7f943afdea1cf2a3c1dd420628955f2d79c32a39de4d7e5a"
+        },
+        {
+          "file": "/tmp/doreumi-contact-clean-quarter-b/temporal-meshy-452.jpg",
+          "sha256": "1985cf0b3ceaa6e16d231034005622e5b0f954189d15375f0e798c954907c02a"
+        }
+      ]
+    },
+    {
+      "id": "meshy:460",
+      "review": "passed",
+      "ambient": true,
+      "clipSha256": "9501cb4e30f1daf24109cf4a0bdb567b1d36219d26a640a2b3c585508b57fc3e",
+      "metadataSha256": "d69bf0635430a229941c5851a614ee23d65130bf14f5c6032e1f41695b9117a7",
+      "visualFinding": "Airborne forward lean and landing.",
+      "sourcePlantedPairs": 101,
+      "maximumSourceConfirmedSlipFractionHeight": 0.009426016056285576,
+      "largestIntroducedWorld": {
+        "bone": "head",
+        "from": 3.216666666666667,
+        "time": 3.2333333333333334,
+        "sourceTime": 2.533333333333333,
+        "targetLocalDegrees": 0.37636728877412257,
+        "targetWorldDegrees": 1.2626720946426462,
+        "sourceLocalDegrees": 0.38517295020005893,
+        "sourceWorldDegrees": 1.0677393732265907,
+        "jointDistance": 0.01912994160549053
+      },
+      "largestIntroducedLocal": {
+        "bone": "torso",
+        "from": 2.3333333333333335,
+        "time": 2.35,
+        "sourceTime": 1.6500000000000001,
+        "targetLocalDegrees": 2.6166432791727314,
+        "targetWorldDegrees": 4.27166916807707,
+        "sourceLocalDegrees": 0.09501950116190336,
+        "sourceWorldDegrees": 4.271280720481518,
+        "jointDistance": 0.010607011502345599
+      },
+      "visualEvidence": [
+        {
+          "file": "/tmp/doreumi-contact-clean-small-b/motion-meshy-460.jpg",
+          "sha256": "cca591aa49298531a28f14b2f268823ff0405df0d3a791e45101b5bb9bae5cbe"
+        },
+        {
+          "file": "/tmp/doreumi-contact-clean-small-b/temporal-460.jpg",
+          "sha256": "874d9674ccc7065b11c67ba287f28773edcda640c8ad227605a3c6a177e5feb8"
+        },
+        {
+          "file": "/tmp/doreumi-contact-clean-quarter-b/motion-meshy-460.jpg",
+          "sha256": "6d08fc42d9bd33df2405ab8a367b7e781c29bf1f446c53a29d6df7c7d0a77ea8"
+        },
+        {
+          "file": "/tmp/doreumi-contact-clean-quarter-b/temporal-meshy-460.jpg",
+          "sha256": "0aa94450a4fd68965aa092007d75ba234c48233b490b99b349e86b7b7a4c0cdf"
+        }
+      ]
+    },
+    {
+      "id": "meshy:461",
+      "review": "passed",
+      "ambient": true,
+      "clipSha256": "c44de1442c7f94c337e0d8c10d37830357bb16b796135066e99056d12f06610d",
+      "metadataSha256": "1c30bfde26788dba1f72de5e4f99d15ce74416ef8415c594e02774b9012e9920",
+      "visualFinding": "Legs open in airborne tuck.",
+      "sourcePlantedPairs": 97,
+      "maximumSourceConfirmedSlipFractionHeight": 0.004532351442647958,
+      "largestIntroducedWorld": {
+        "bone": "torso",
+        "from": 1.9,
+        "time": 1.9166666666666667,
+        "sourceTime": 1.2166666666666668,
+        "targetLocalDegrees": 0.07508906444665929,
+        "targetWorldDegrees": 0.6979343158015582,
+        "sourceLocalDegrees": 0.042017612680105496,
+        "sourceWorldDegrees": 0.36177583163823473,
+        "jointDistance": 0.0029943383555717045
+      },
+      "largestIntroducedLocal": {
+        "bone": "torso",
+        "from": 1.6333333333333333,
+        "time": 1.65,
+        "sourceTime": 0.95,
+        "targetLocalDegrees": 8.625539525003378,
+        "targetWorldDegrees": 7.835130696542867,
+        "sourceLocalDegrees": 0.9239793196885102,
+        "sourceWorldDegrees": 7.903910207729478,
+        "jointDistance": 0.009861156788454594
+      },
+      "visualEvidence": [
+        {
+          "file": "/tmp/doreumi-contact-clean-small-b/motion-meshy-461.jpg",
+          "sha256": "a444fd658cb2626ae6904691e636600cf272e378150791d6aa486f2354761e87"
+        },
+        {
+          "file": "/tmp/doreumi-contact-clean-small-b/temporal-461.jpg",
+          "sha256": "acca1e2b449ad0c7d5f3fe7a9ca7b9e8a0bdae909acfb9b863960338c328217a"
+        },
+        {
+          "file": "/tmp/doreumi-contact-clean-quarter-b/motion-meshy-461.jpg",
+          "sha256": "1e994ca255f78746682f156dd3acc71c999f34b6f5fd9325450e624a6a952d00"
+        },
+        {
+          "file": "/tmp/doreumi-contact-clean-quarter-b/temporal-meshy-461.jpg",
+          "sha256": "c0c8cc5b2fc44a6745a5b52c09f6c4e43521250ad696df7b5339bd5ca188410d"
+        }
+      ]
+    },
+    {
+      "id": "meshy:474",
+      "review": "passed",
+      "ambient": true,
+      "clipSha256": "3ddae44d2fc8fb39c6a1220ca5c4b8eba124bb230d0c35b87566e1cd6d4196f8",
+      "metadataSha256": "e254291a2a69e9d398519f542dacd2d048a7cd11fcf654e915c8f22541344d2f",
+      "visualFinding": "Repeated tuck jumps and compression.",
+      "sourcePlantedPairs": 5,
+      "maximumSourceConfirmedSlipFractionHeight": 0.002695382586945065,
+      "largestIntroducedWorld": {
+        "bone": "wristL",
+        "from": 2.283333333333333,
+        "time": 2.3,
+        "sourceTime": 1.4,
+        "targetLocalDegrees": 0.4437084057247953,
+        "targetWorldDegrees": 0.2003238455529297,
+        "sourceLocalDegrees": 0.4182356766006973,
+        "sourceWorldDegrees": 0.011890221707500625,
+        "jointDistance": 0.004789858352249025
+      },
+      "largestIntroducedLocal": {
+        "bone": "head",
+        "from": 1.35,
+        "time": 1.3666666666666667,
+        "sourceTime": 0.4666666666666667,
+        "targetLocalDegrees": 6.075467334617076,
+        "targetWorldDegrees": 4.017879204391648,
+        "sourceLocalDegrees": 2.7153736879347385,
+        "sourceWorldDegrees": 4.068617166975609,
+        "jointDistance": 0.03573667355728671
+      },
+      "visualEvidence": [
+        {
+          "file": "/tmp/doreumi-contact-clean-small-b/motion-meshy-474.jpg",
+          "sha256": "19c022e7c8838855dcdf44476c35c2b84e56f9bd2f61d0a1029e91740e46cf17"
+        },
+        {
+          "file": "/tmp/doreumi-contact-clean-small-b/temporal-474.jpg",
+          "sha256": "a0aa8b97e2c6de28c0416c469d5361c68f02d040207fe139bfda3afb815e2713"
+        },
+        {
+          "file": "/tmp/doreumi-contact-clean-quarter-b/motion-meshy-474.jpg",
+          "sha256": "bd70e52d9aa36cd04e5768605143498887e89d60b190c61a1a21a9610cc99fb7"
+        },
+        {
+          "file": "/tmp/doreumi-contact-clean-quarter-b/temporal-meshy-474.jpg",
+          "sha256": "296f3d20070c1bbb7ee812520be8e766f77d1c98d37b2d17e1481dbf39624383"
+        }
+      ]
+    },
+    {
+      "id": "meshy:503",
+      "review": "passed",
+      "ambient": true,
+      "clipSha256": "de140e46f1b56de0068b9f345fe3d42392c508d4637cde67c75cdeec74e8e6f2",
+      "metadataSha256": "f9450f9c22f7cfa8b4ba480370439708c14f21e886d01046b97a2c5d8a752ac1",
+      "visualFinding": "Forward crouched stumble stabilizes upright.",
+      "sourcePlantedPairs": 39,
+      "maximumSourceConfirmedSlipFractionHeight": 0.0016355648786237787,
+      "largestIntroducedWorld": {
+        "bone": "wristR",
+        "from": 1.5,
+        "time": 1.5166666666666666,
+        "sourceTime": 0.6833333333333332,
+        "targetLocalDegrees": 0.05172243226919182,
+        "targetWorldDegrees": 0.12281971402251321,
+        "sourceLocalDegrees": 0,
+        "sourceWorldDegrees": 0,
+        "jointDistance": 0.000334449205377424
+      },
+      "largestIntroducedLocal": {
+        "bone": "torso",
+        "from": 1.35,
+        "time": 1.3666666666666667,
+        "sourceTime": 0.5333333333333333,
+        "targetLocalDegrees": 0.11801078383739311,
+        "targetWorldDegrees": 0.08810516103191146,
+        "sourceLocalDegrees": 2.4148365394514667e-06,
+        "sourceWorldDegrees": 0.08115235903388478,
+        "jointDistance": 0.0006426962513314762
+      },
+      "visualEvidence": [
+        {
+          "file": "/tmp/doreumi-contact-clean-small-b/motion-meshy-503.jpg",
+          "sha256": "a93f18b38878d73e21b8196a1e5faf51e595ea10d2f4a18e81268a7e85d7468c"
+        },
+        {
+          "file": "/tmp/doreumi-contact-clean-small-b/temporal-503.jpg",
+          "sha256": "f049d44bd92c12b30c3d6a8d4a07bb4b3e00bb36c495059c4d9477effcf5dc52"
+        },
+        {
+          "file": "/tmp/doreumi-contact-clean-quarter-b/motion-meshy-503.jpg",
+          "sha256": "6da2f8cb92292495f8ca4a310719607abc3789c58637c9a30a4b1c76399759c9"
+        },
+        {
+          "file": "/tmp/doreumi-contact-clean-quarter-b/temporal-meshy-503.jpg",
+          "sha256": "a298f0956baa36c5c3898106aa4556d2fa48d97bfde7bb6cf2bf42f826272472"
+        }
+      ]
+    }
+  ]
+}

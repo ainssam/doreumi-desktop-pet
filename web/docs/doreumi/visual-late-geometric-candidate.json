@@ -1,0 +1,529 @@
+{
+  "checkedAt": "2026-09-24T05:33:25.558Z",
+  "review": "visual-passed",
+  "scope": "Root individually inspected normal128 and quarter five-view nine-pose sheets, two 13-frame 60Hz focus windows per motion, and all eight complete directly rendered playback sheets. Every run covers the imported clock from near zero through settled Idle with activeActions=1; no WebM timestamp inference.",
+  "motions": [
+    {
+      "id": "meshy:591",
+      "clipSha256": "202bdef36139b8f9601ef130fdb9859eb8550e3aa5d2baf1f99b6dd9675b34b5",
+      "sourceSha256": "10426e558cf7d8325783b7a9f617188065c0cf579b1a33abebb056ad86b8f3c5",
+      "observation": "Alternating open hands, torso sway and small pivots are readable; focused knee flex has continuous soles and no IK pop. Root additionally inspected complete directly rendered normal and quarter playback: continuous sway, head/arm gestures and compact planted steps, with clean recovery through settled Idle.",
+      "sourceContact": {
+        "actionId": 591,
+        "sourceActionId": 591,
+        "derivation": null,
+        "sourceName": "Hip_Hop_Dance",
+        "sourceSha256": "10426e558cf7d8325783b7a9f617188065c0cf579b1a33abebb056ad86b8f3c5",
+        "clipSha256": "202bdef36139b8f9601ef130fdb9859eb8550e3aa5d2baf1f99b6dd9675b34b5",
+        "sourceFloor": 0.042918986278195285,
+        "sourcePlantedPairs": 211,
+        "missingTargetContactPairs": 0,
+        "excessiveDriftPairs": 0,
+        "sourceMovingContactPairs": 35,
+        "pivotCompatiblePairs": 0,
+        "maxDriftByHeight": 0.0013067833728077876,
+        "failures": []
+      },
+      "largestIntroducedWorld": {
+        "bone": "kneeL",
+        "from": 2.6,
+        "time": 2.6166666666666667,
+        "sourceTime": 1.8833333333333333,
+        "targetLocalDegrees": 2.1286483251150705,
+        "targetWorldDegrees": 3.1085633466580163,
+        "sourceLocalDegrees": 0.4114245341372123,
+        "sourceWorldDegrees": 1.1691190055953067,
+        "jointDistance": 0.005015025205328561
+      },
+      "largestIntroducedLocal": {
+        "bone": "thighR",
+        "from": 4.75,
+        "time": 4.766666666666667,
+        "sourceTime": 4.033333333333333,
+        "targetLocalDegrees": 4.243593132520424,
+        "targetWorldDegrees": 3.3066202444966706,
+        "sourceLocalDegrees": 0.5933488886719333,
+        "sourceWorldDegrees": 1.6822668249767974,
+        "jointDistance": 0.011585004164728093
+      },
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-candidate-591-1/report.json",
+          "sha256": "7c231ce543e8ed24306abc073ee44eea20424a53d894459bf830ef05fa2fe9fe"
+        },
+        {
+          "file": "/tmp/doreumi-candidate-591-1/motion-meshy-591.jpg",
+          "sha256": "eb2a90df6d45ea1e56f831647bec428132c69c8e9faf1104d3d738a1f7be9ff7"
+        },
+        {
+          "file": "/tmp/doreumi-candidate-591-0.25/report.json",
+          "sha256": "e02d1dd4c689cf965d13cefd0b0e7337567dea1cb2797fed5adb0d55782cfba4"
+        },
+        {
+          "file": "/tmp/doreumi-candidate-591-0.25/motion-meshy-591.jpg",
+          "sha256": "3b866c2351f128fe1ffe1590280f5e51231d7cf908983f20f7e9effe3e5a8106"
+        },
+        {
+          "file": "/tmp/doreumi-candidate-591-focus-0/report.json",
+          "sha256": "45e976eddb9d220a06d4771b0559925afb40c6e215c1903d3168390c4ad481c3"
+        },
+        {
+          "file": "/tmp/doreumi-candidate-591-focus-0/motion-meshy-591.jpg",
+          "sha256": "d19c33edf7bce9c8aee4e535cd7e30a8ee683cb7ea55b1af8d673850c900177f"
+        },
+        {
+          "file": "/tmp/doreumi-candidate-591-focus-1/report.json",
+          "sha256": "4d33bab7b7e1c89b888a44387672884f4246b2e7b903ed9f01ae2b108eaad54e"
+        },
+        {
+          "file": "/tmp/doreumi-candidate-591-focus-1/motion-meshy-591.jpg",
+          "sha256": "cffc96da80fd78908b3add7461b841c54cba5b0282d73e450375de9b9ed9caaf"
+        }
+      ],
+      "completeRenderedPlayback": [
+        {
+          "rate": 1,
+          "coverage": {
+            "firstTime": 0,
+            "lastTime": 5.576599999999985,
+            "duration": 5.699999904632568,
+            "tolerance": 0.35,
+            "observedFrames": 21,
+            "monotonic": true,
+            "finalAction": "Idle",
+            "finalActiveActions": 1
+          },
+          "runtimeBundleSha256": "8cc808759dd5294bdd560a2737218a6d3b3031a24c426033466848fef97cfecc",
+          "registrySha256": "7313d34a95e35d8ca3af9ce80cdc02300f6153d94df2becc3f603b5eae2f9e43",
+          "files": [
+            {
+              "file": "/tmp/doreumi-complete-591-1/report.json",
+              "sha256": "5403bb41ca344aee1891d249a40951e72dc15d147ec48eb1f53b54d7b0c82a7f"
+            },
+            {
+              "file": "/tmp/doreumi-complete-591-1/playback-meshy-591.jpg",
+              "sha256": "1938200a1a9126adb209f9d63ad7554fd67dad867acfb0d455bce5b57a350cca"
+            }
+          ]
+        },
+        {
+          "rate": 0.25,
+          "coverage": {
+            "firstTime": 0,
+            "lastTime": 5.57124999999999,
+            "duration": 5.699999904632568,
+            "tolerance": 0.35,
+            "observedFrames": 23,
+            "monotonic": true,
+            "finalAction": "Idle",
+            "finalActiveActions": 1
+          },
+          "runtimeBundleSha256": "8cc808759dd5294bdd560a2737218a6d3b3031a24c426033466848fef97cfecc",
+          "registrySha256": "7313d34a95e35d8ca3af9ce80cdc02300f6153d94df2becc3f603b5eae2f9e43",
+          "files": [
+            {
+              "file": "/tmp/doreumi-complete-591-0.25/report.json",
+              "sha256": "f6a1f29bc419a1df6d96dd335724630a607b1536686e71ce154056948c039176"
+            },
+            {
+              "file": "/tmp/doreumi-complete-591-0.25/playback-meshy-591.jpg",
+              "sha256": "2c253ae1a27e1cdfd11f3ae09e8a04d7fb3dfd1d21a3ad8cf1785d71d3114692"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "meshy:592",
+      "clipSha256": "5271ab939a368a02c60defe06e935c5a362778efc768fb132af90159bd829b39",
+      "sourceSha256": "10426e558cf7d8325783b7a9f617188065c0cf579b1a33abebb056ad86b8f3c5",
+      "observation": "Alternating raised hands and head tilts accompany small knee bends; both focus windows show continuous weight transfer. Root additionally inspected complete directly rendered normal and quarter playback: continuous sway, head/arm gestures and compact planted steps, with clean recovery through settled Idle.",
+      "sourceContact": {
+        "actionId": 592,
+        "sourceActionId": 592,
+        "derivation": null,
+        "sourceName": "Hip_Hop_Dance_1",
+        "sourceSha256": "10426e558cf7d8325783b7a9f617188065c0cf579b1a33abebb056ad86b8f3c5",
+        "clipSha256": "5271ab939a368a02c60defe06e935c5a362778efc768fb132af90159bd829b39",
+        "sourceFloor": 0.01035090811731007,
+        "sourcePlantedPairs": 170,
+        "missingTargetContactPairs": 0,
+        "excessiveDriftPairs": 0,
+        "sourceMovingContactPairs": 32,
+        "pivotCompatiblePairs": 1,
+        "maxDriftByHeight": 0.0009271202932827714,
+        "failures": []
+      },
+      "largestIntroducedWorld": {
+        "bone": "kneeL",
+        "from": 1.6,
+        "time": 1.6166666666666667,
+        "sourceTime": 0.9166666666666667,
+        "targetLocalDegrees": 2.184213601710417,
+        "targetWorldDegrees": 5.240912479120997,
+        "sourceLocalDegrees": 0.3698618046504075,
+        "sourceWorldDegrees": 2.2170866521608406,
+        "jointDistance": 0.011610271284014628
+      },
+      "largestIntroducedLocal": {
+        "bone": "torso",
+        "from": 0.8,
+        "time": 0.8166666666666667,
+        "sourceTime": 0.1166666666666667,
+        "targetLocalDegrees": 5.046634033782634,
+        "targetWorldDegrees": 1.6219527506750024,
+        "sourceLocalDegrees": 0.08494075816654771,
+        "sourceWorldDegrees": 1.62103831875117,
+        "jointDistance": 0.013944669604822013
+      },
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-candidate-592-1/report.json",
+          "sha256": "e066593195cea0ec05f93736432014565a75368c6c4edd7754c9ada90e9e254c"
+        },
+        {
+          "file": "/tmp/doreumi-candidate-592-1/motion-meshy-592.jpg",
+          "sha256": "401d41ffa730a4dc5039ac86aa4521356441c4f391d838036d6758da6d1a30cd"
+        },
+        {
+          "file": "/tmp/doreumi-candidate-592-0.25/report.json",
+          "sha256": "15767e99c4e7a17a815142efda3b983fb338760df06a9270c98550935d9e2377"
+        },
+        {
+          "file": "/tmp/doreumi-candidate-592-0.25/motion-meshy-592.jpg",
+          "sha256": "a4d14b2c0366ba91fe21549a26b088a606fef61d55498d3bdf3a262eafaf599b"
+        },
+        {
+          "file": "/tmp/doreumi-candidate-592-focus-0/report.json",
+          "sha256": "1463833491cceb252c2562e5d743d449308a9fbaa1ef8c39c296f2fe2bf92e27"
+        },
+        {
+          "file": "/tmp/doreumi-candidate-592-focus-0/motion-meshy-592.jpg",
+          "sha256": "9dadc669ccb89c8fc350682f01154d413feb62f822f256af5afb2995848be973"
+        },
+        {
+          "file": "/tmp/doreumi-candidate-592-focus-1/report.json",
+          "sha256": "12128e1b11efa5ef5b336be97faf4bf0be8bac67bb47c28523647c243f8d42fc"
+        },
+        {
+          "file": "/tmp/doreumi-candidate-592-focus-1/motion-meshy-592.jpg",
+          "sha256": "9d6433525cf4a8f10e032aea68e3406873474ba7b76df20f24a0c52fc9413351"
+        }
+      ],
+      "completeRenderedPlayback": [
+        {
+          "rate": 1,
+          "coverage": {
+            "firstTime": 0,
+            "lastTime": 4.847299999999989,
+            "duration": 4.9333332220713295,
+            "tolerance": 0.35,
+            "observedFrames": 18,
+            "monotonic": true,
+            "finalAction": "Idle",
+            "finalActiveActions": 1
+          },
+          "runtimeBundleSha256": "8cc808759dd5294bdd560a2737218a6d3b3031a24c426033466848fef97cfecc",
+          "registrySha256": "825494199baaa51895096f50c9e2b6e85e4b45d6e7a04ad8c506411e04be9e0b",
+          "files": [
+            {
+              "file": "/tmp/doreumi-complete-592-1/report.json",
+              "sha256": "0605c814c0570c6f230c87f7f4830a294af1a3b7dd2898d888961ce69278cb55"
+            },
+            {
+              "file": "/tmp/doreumi-complete-592-1/playback-meshy-592.jpg",
+              "sha256": "92feb15a3c4ad210939cbb90abd43ded6109d0e2762a88658bc7442f04280842"
+            }
+          ]
+        },
+        {
+          "rate": 0.25,
+          "coverage": {
+            "firstTime": 0,
+            "lastTime": 4.861199999999991,
+            "duration": 4.9333332220713295,
+            "tolerance": 0.35,
+            "observedFrames": 20,
+            "monotonic": true,
+            "finalAction": "Idle",
+            "finalActiveActions": 1
+          },
+          "runtimeBundleSha256": "8cc808759dd5294bdd560a2737218a6d3b3031a24c426033466848fef97cfecc",
+          "registrySha256": "825494199baaa51895096f50c9e2b6e85e4b45d6e7a04ad8c506411e04be9e0b",
+          "files": [
+            {
+              "file": "/tmp/doreumi-complete-592-0.25/report.json",
+              "sha256": "25eb4efa50a7513e69ed1002dc8737fe1317e5e52343776116e0a8120e731ebd"
+            },
+            {
+              "file": "/tmp/doreumi-complete-592-0.25/playback-meshy-592.jpg",
+              "sha256": "531fc564e4fb5182504d2e9442a18a5e36bb7865dbac6c1823131f288eb34717"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "meshy:596",
+      "clipSha256": "7488f6c7de80c9c29680b54af98ba5c27bdabb6e4f331f1f5ad004c8c0993c92",
+      "sourceSha256": "3e4afa754ace02380e013a94f24320ff6f937a7ae54e5a1af82a2d0d6a493fa8",
+      "observation": "Broad side bends and raised arms retain a compact planted stance; the thigh and knee focus windows show continuous flex without a pole flip. Root additionally inspected complete directly rendered normal and quarter playback: continuous sway, head/arm gestures and compact planted steps, with clean recovery through settled Idle.",
+      "sourceContact": {
+        "actionId": 596,
+        "sourceActionId": 596,
+        "derivation": null,
+        "sourceName": "ymca_dance",
+        "sourceSha256": "3e4afa754ace02380e013a94f24320ff6f937a7ae54e5a1af82a2d0d6a493fa8",
+        "clipSha256": "7488f6c7de80c9c29680b54af98ba5c27bdabb6e4f331f1f5ad004c8c0993c92",
+        "sourceFloor": 0.017348089590987534,
+        "sourcePlantedPairs": 232,
+        "missingTargetContactPairs": 0,
+        "excessiveDriftPairs": 0,
+        "sourceMovingContactPairs": 36,
+        "pivotCompatiblePairs": 0,
+        "maxDriftByHeight": 0.0010472184143373792,
+        "failures": []
+      },
+      "largestIntroducedWorld": {
+        "bone": "thighL",
+        "from": 2.066666666666667,
+        "time": 2.0833333333333335,
+        "sourceTime": 1.3833333333333335,
+        "targetLocalDegrees": 5.153391472984123,
+        "targetWorldDegrees": 4.660116596206778,
+        "sourceLocalDegrees": 2.2507634405240227,
+        "sourceWorldDegrees": 1.6656645409332158,
+        "jointDistance": 0.008610840039788688
+      },
+      "largestIntroducedLocal": {
+        "bone": "kneeR",
+        "from": 2.15,
+        "time": 2.1666666666666665,
+        "sourceTime": 1.4666666666666666,
+        "targetLocalDegrees": 4.10535707162918,
+        "targetWorldDegrees": 2.7432998441853833,
+        "sourceLocalDegrees": 0.08686019280840596,
+        "sourceWorldDegrees": 2.291830429570354,
+        "jointDistance": 0.006447433783167312
+      },
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-candidate-596-1/report.json",
+          "sha256": "3728f690c1d2dd0d093b42571a13a408159a8a1eb080c1f24c76e7545c3ceefa"
+        },
+        {
+          "file": "/tmp/doreumi-candidate-596-1/motion-meshy-596.jpg",
+          "sha256": "d53aae9848a24e66985f76e4a5d57a982ae234ff1553d19f3f68f0128372f69d"
+        },
+        {
+          "file": "/tmp/doreumi-candidate-596-0.25/report.json",
+          "sha256": "027557d2f4ffec0655e4b562971110a280423fcfc275938d80b372945fa92f5d"
+        },
+        {
+          "file": "/tmp/doreumi-candidate-596-0.25/motion-meshy-596.jpg",
+          "sha256": "192a9435f0d3bf9442efa111efef8cb343ae68ccbd07888effe76d18bb9aeaa1"
+        },
+        {
+          "file": "/tmp/doreumi-candidate-596-focus-0/report.json",
+          "sha256": "2b837a7330581b7f2aa789b69b2c56d159cc0cf7726a2be57a13f13ef030515d"
+        },
+        {
+          "file": "/tmp/doreumi-candidate-596-focus-0/motion-meshy-596.jpg",
+          "sha256": "22e7ac91ecb566d987109d6fa545e0fba7725fdba4520b8831109c24dc957aa1"
+        },
+        {
+          "file": "/tmp/doreumi-candidate-596-focus-1/report.json",
+          "sha256": "7a5d5bbe3679393622aa52bfe649cd563722251fe9ffdd9d641e3cba5244eeca"
+        },
+        {
+          "file": "/tmp/doreumi-candidate-596-focus-1/motion-meshy-596.jpg",
+          "sha256": "24a0cbbabd2424b81689eb31d41cb36835a906cc3996ffd8a919ffccb1dd2a36"
+        }
+      ],
+      "completeRenderedPlayback": [
+        {
+          "rate": 1,
+          "coverage": {
+            "firstTime": 0,
+            "lastTime": 6.005599999999983,
+            "duration": 6.099999968210856,
+            "tolerance": 0.35,
+            "observedFrames": 23,
+            "monotonic": true,
+            "finalAction": "Idle",
+            "finalActiveActions": 1
+          },
+          "runtimeBundleSha256": "8cc808759dd5294bdd560a2737218a6d3b3031a24c426033466848fef97cfecc",
+          "registrySha256": "1dc7149080826f955be6250f8c864b893999aedd27c1d0b131bde214119c3779",
+          "files": [
+            {
+              "file": "/tmp/doreumi-complete-596-1/report.json",
+              "sha256": "fa12d327079f8498442b7bb770a94af5331e7ab005a25fa2c8555f0ac73f800f"
+            },
+            {
+              "file": "/tmp/doreumi-complete-596-1/playback-meshy-596.jpg",
+              "sha256": "932bfe8a77fd786f4b77c309536ddb5400b27cfdb2f8bf9b048639075d4958d9"
+            }
+          ]
+        },
+        {
+          "rate": 0.25,
+          "coverage": {
+            "firstTime": 0,
+            "lastTime": 6.057399999999989,
+            "duration": 6.099999968210856,
+            "tolerance": 0.35,
+            "observedFrames": 25,
+            "monotonic": true,
+            "finalAction": "Idle",
+            "finalActiveActions": 1
+          },
+          "runtimeBundleSha256": "8cc808759dd5294bdd560a2737218a6d3b3031a24c426033466848fef97cfecc",
+          "registrySha256": "1dc7149080826f955be6250f8c864b893999aedd27c1d0b131bde214119c3779",
+          "files": [
+            {
+              "file": "/tmp/doreumi-complete-596-0.25/report.json",
+              "sha256": "520e6cf736a1aaf0a2ca0e807d7a262f4b89dc13814f4464767916ea8925cd48"
+            },
+            {
+              "file": "/tmp/doreumi-complete-596-0.25/playback-meshy-596.jpg",
+              "sha256": "8e5db6b3eae7fe48162c663cc7877de9aa4c685992e2791a48e56fe98038e067"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "meshy:599",
+      "clipSha256": "24a4dbda2afe45e858a896d3318191c0fe390277a4d3a5d518f112df8aec1120",
+      "sourceSha256": "85a6ea80f39e894e31c660cb27b05caf9d28367f992c9b2feaaa2b20ca19cc2c",
+      "observation": "Small hand gestures and gentle weight shifts remain restrained and readable; slow focused knee changes show no abrupt deformation. Root additionally inspected complete directly rendered normal and quarter playback: continuous sway, head/arm gestures and compact planted steps, with clean recovery through settled Idle.",
+      "sourceContact": {
+        "actionId": 599,
+        "sourceActionId": 599,
+        "derivation": null,
+        "sourceName": "Idle_15",
+        "sourceSha256": "85a6ea80f39e894e31c660cb27b05caf9d28367f992c9b2feaaa2b20ca19cc2c",
+        "clipSha256": "24a4dbda2afe45e858a896d3318191c0fe390277a4d3a5d518f112df8aec1120",
+        "sourceFloor": 0.00431947768678364,
+        "sourcePlantedPairs": 422,
+        "missingTargetContactPairs": 0,
+        "excessiveDriftPairs": 0,
+        "sourceMovingContactPairs": 0,
+        "pivotCompatiblePairs": 0,
+        "maxDriftByHeight": 0.0009762778824371862,
+        "failures": []
+      },
+      "largestIntroducedWorld": {
+        "bone": "kneeR",
+        "from": 1.9333333333333333,
+        "time": 1.95,
+        "sourceTime": 1.25,
+        "targetLocalDegrees": 1.9976090889082485,
+        "targetWorldDegrees": 1.1810184411487836,
+        "sourceLocalDegrees": 0.11967230749826212,
+        "sourceWorldDegrees": 0.19132708827695977,
+        "jointDistance": 0.003408041597391399
+      },
+      "largestIntroducedLocal": {
+        "bone": "kneeR",
+        "from": 1.9166666666666667,
+        "time": 1.9333333333333333,
+        "sourceTime": 1.2333333333333334,
+        "targetLocalDegrees": 1.9978972848284295,
+        "targetWorldDegrees": 1.1824813115157955,
+        "sourceLocalDegrees": 0.05303755453351182,
+        "sourceWorldDegrees": 0.23988399988586612,
+        "jointDistance": 0.003429385995090722
+      },
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-candidate-599-1/report.json",
+          "sha256": "ca091a23c744d6faf2aafae394e864a5bf23ebfbc89aeb7101ee75b7e94ab0d2"
+        },
+        {
+          "file": "/tmp/doreumi-candidate-599-1/motion-meshy-599.jpg",
+          "sha256": "7b0a3e23f290e926331aedcf84282f069d8930d75a29ac47515937a2b19b7b58"
+        },
+        {
+          "file": "/tmp/doreumi-candidate-599-0.25/report.json",
+          "sha256": "1ee0cbf1f2a3348b3fd52bea600784783a2f47e9362cc3334b8a7e5ddb3bdea1"
+        },
+        {
+          "file": "/tmp/doreumi-candidate-599-0.25/motion-meshy-599.jpg",
+          "sha256": "50579e87cd6cfeda32cf40ed639f991948699c4a42105878dc8179da7262180d"
+        },
+        {
+          "file": "/tmp/doreumi-candidate-599-focus-0/report.json",
+          "sha256": "81efabf540a7136d0d545c08c63b6a36e3090ae19f7b92dc07a7d3f62e992dff"
+        },
+        {
+          "file": "/tmp/doreumi-candidate-599-focus-0/motion-meshy-599.jpg",
+          "sha256": "d879bde7f5dd2f96683afd060b972d8ffff90936054673b7c0d8d63c9616a038"
+        },
+        {
+          "file": "/tmp/doreumi-candidate-599-focus-1/report.json",
+          "sha256": "2c21b5a5cec78c606fac42d7a6fb5aa4f3731bd156f9f186350fb3f014b6d125"
+        },
+        {
+          "file": "/tmp/doreumi-candidate-599-focus-1/motion-meshy-599.jpg",
+          "sha256": "b353fb9cd84ac163842caf746a25fed59d4a67bdb3460d09fe011cdee9b8d98e"
+        }
+      ],
+      "completeRenderedPlayback": [
+        {
+          "rate": 1,
+          "coverage": {
+            "firstTime": 0,
+            "lastTime": 8.458399999999992,
+            "duration": 8.599999968210856,
+            "tolerance": 0.35,
+            "observedFrames": 31,
+            "monotonic": true,
+            "finalAction": "Idle",
+            "finalActiveActions": 1
+          },
+          "runtimeBundleSha256": "8cc808759dd5294bdd560a2737218a6d3b3031a24c426033466848fef97cfecc",
+          "registrySha256": "ae0f87051e3e48674b5241cc89a28111126c9eb6012cb69670e9f93a6a93aae8",
+          "files": [
+            {
+              "file": "/tmp/doreumi-complete-599-1/report.json",
+              "sha256": "ed65219eab45e54185e8bf640c9b3b5f2bc41520a91e715011d19da4b3b07aca"
+            },
+            {
+              "file": "/tmp/doreumi-complete-599-1/playback-meshy-599.jpg",
+              "sha256": "0f6071bf9d5c1e56378ed209d175e583d24f23cfb0f4d40fd1e168c84a4b8814"
+            }
+          ]
+        },
+        {
+          "rate": 0.25,
+          "coverage": {
+            "firstTime": 0,
+            "lastTime": 8.474349999999959,
+            "duration": 8.599999968210856,
+            "tolerance": 0.35,
+            "observedFrames": 34,
+            "monotonic": true,
+            "finalAction": "Idle",
+            "finalActiveActions": 1
+          },
+          "runtimeBundleSha256": "8cc808759dd5294bdd560a2737218a6d3b3031a24c426033466848fef97cfecc",
+          "registrySha256": "ae0f87051e3e48674b5241cc89a28111126c9eb6012cb69670e9f93a6a93aae8",
+          "files": [
+            {
+              "file": "/tmp/doreumi-direct-599-0.25/report.json",
+              "sha256": "9c523708878800df082e241eccfe1286f526d2ba356a2be2f4a8a2f08fb4acfe"
+            },
+            {
+              "file": "/tmp/doreumi-direct-599-0.25/playback-meshy-599.jpg",
+              "sha256": "ab01ca9f7de48d49acfe57c4d005239d8daac7a233e19aa7897cc75ed400ae50"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "masterSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+  "productionReplay": "Exact donor/master-bound production replay completed; shipping validation is recorded separately in visual-late-geometric-reviewed.json."
+}

@@ -1,0 +1,143 @@
+{
+  "scope": "Root inspected all 22 five-view/nine-phase sheets. Static evidence only; continuous, small-size and support/contact reviews remain.",
+  "evidence": "/tmp/doreumi-library-290-319",
+  "numericPass": true,
+  "modelSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+  "runtimeBundleSha256": "06dd309a019810eef68a7fa5d397991f698a3b460f45cee8709e732b75f9f5c4",
+  "clipHashes": {
+    "meshy:290": "de92f40c7a4bbde6673d267b70fd69d1aaa4c9c017bcb65a7c738c9be5928bb8",
+    "meshy:291": "910d9f3455f3753e46a8e29596a2f04ce93d398fc8d6db67da7d352c0f749a54",
+    "meshy:293": "38f650f454a0c563b29bfafe54d41edebaeea5be660949eeb5d1368702540d4b",
+    "meshy:294": "6a7833565f31149c38e66ec3145464306c1068df0da4027b62f527ea875dcf57",
+    "meshy:295": "d81e02e4e5aa901b43bbc392c5c4e7387a9f15e5a6e5e1f1afd62aa331122244",
+    "meshy:296": "4484a3aeb28cc58f6684b6bf6ed4b434d05f9ca47b65992575e80ad85a9db847",
+    "meshy:297": "fca3310dd4149e5f14e0c688602d3cf21bb74f0eaca343444ce06c8d99cfbf00",
+    "meshy:298": "eba0bc33a84a33c2eec49767f9835d3b916f058abbc03bd6b88d8a0f48ca650a",
+    "meshy:301": "d918c7ac811e5ebdff91a4ff5dfe812950e695f1765a0747ab9b48756c601d8c",
+    "meshy:303": "4053cd0191209f8f35e331691fe9f7296b2c93f6b60491ec0d7445f60aa9b629",
+    "meshy:306": "4126c31af2d6a87d5b4077bc238817213125b791a265a080dfbb30860d039d8a",
+    "meshy:308": "0181e5d8e14d47450fa6c1fb7e9d2b3cdf19e1d552b488fbb0f1bf07cdd7f0b5",
+    "meshy:309": "a9394f87d2d4796263bda2c34828948b32db10c4d5cbf4626153423b07345a18",
+    "meshy:310": "26248fcf5c4e9d430bf1683ca2c54eed0c84b9db12646614227a148e3e16a25d",
+    "meshy:311": "fe0e920029312bf61db560bc4647d2b7640d2b32d774b29131d8804fbf54c5b7",
+    "meshy:313": "451fc33ca77a6ee7a4e5cf728b1e880f94deaf272c8fd6fc26d4ca82dc6d346c",
+    "meshy:314": "969532a13a42ef2d1b545b302c5c3816098e47371d419ab4d650019dafee58d4",
+    "meshy:315": "c9568732c343acd498beda6ad92edd38c77530cb1070b84f065346e328b11875",
+    "meshy:316": "dfcf3fe6a4b23ec49b375483d8581b910bb716ac1d39698d44bc39eea6d8ce56",
+    "meshy:317": "f90a5e5599292a62461e4f64df02d4b8ff10301b3acf6c3590ef97ddfcb816c4",
+    "meshy:318": "2316e07e649d3bfddf1e5125b9f312181d872c71b3327cd0a38bb84a8f6912f3",
+    "meshy:319": "3cd1c0f1b97203cb703b37b349f709e3a673c602fc5e0a9454cbe7329c8f7392"
+  },
+  "motions": [
+    {
+      "id": 290,
+      "finding": "One forearm raises into a readable small wave; elbow remains connected.",
+      "review": "pending"
+    },
+    {
+      "id": 291,
+      "finding": "Wave and deep sideways body dips remain distinct; weight transfer needs continuous review.",
+      "review": "pending"
+    },
+    {
+      "id": 293,
+      "finding": "Raised single hand and torso turn are visible; wrist remains within the hand silhouette.",
+      "review": "pending"
+    },
+    {
+      "id": 294,
+      "finding": "Asymmetric arm wave and side lean preserve short limbs.",
+      "review": "pending"
+    },
+    {
+      "id": 295,
+      "finding": "Both hands lift beside the face and open outward; a strong cute gesture candidate for slow/small review.",
+      "review": "pending"
+    },
+    {
+      "id": 296,
+      "finding": "One-hand wave has distinct opening and recovery poses.",
+      "review": "pending"
+    },
+    {
+      "id": 297,
+      "finding": "Head turn and cheek-height gesture remain coherent.",
+      "review": "pending"
+    },
+    {
+      "id": 298,
+      "finding": "Both arms lift beside the head without extending bone lengths; candidate for slow/small review.",
+      "review": "pending"
+    },
+    {
+      "id": 301,
+      "finding": "Alternating raised forearms and head tilt read as cheering.",
+      "review": "pending"
+    },
+    {
+      "id": 303,
+      "finding": "Both forearms rise repeatedly with backward torso lean; balance/tempo pending.",
+      "review": "pending"
+    },
+    {
+      "id": 306,
+      "finding": "One-arm cheer includes a larger turn and weight shift; support needs review.",
+      "review": "pending"
+    },
+    {
+      "id": 308,
+      "finding": "Low open-hand talking gestures remain attached and distinct.",
+      "review": "pending"
+    },
+    {
+      "id": 309,
+      "finding": "Hand-on-hip posture is readable without arm separation.",
+      "review": "pending"
+    },
+    {
+      "id": 310,
+      "finding": "Talking includes a forearm opening and brief bow; transitions pending.",
+      "review": "pending"
+    },
+    {
+      "id": 311,
+      "finding": "Low emphatic arm gestures preserve body silhouette; expressive playback pending.",
+      "review": "pending"
+    },
+    {
+      "id": 313,
+      "finding": "Both forearms gesture near the waist; original short-hand shape maintained.",
+      "review": "pending"
+    },
+    {
+      "id": 314,
+      "finding": "One-hand open gesture is subtle; inspect readability at 128px.",
+      "review": "pending"
+    },
+    {
+      "id": 315,
+      "finding": "Hand-on-hip with opposite palm opening is readable from front/side.",
+      "review": "pending"
+    },
+    {
+      "id": 316,
+      "finding": "Bent head and hands beside cheeks/temples are visible; actual contact interval requires measurement.",
+      "review": "pending"
+    },
+    {
+      "id": 317,
+      "finding": "Shoulder shrug is subtle and stays framed; small-size readability pending.",
+      "review": "pending"
+    },
+    {
+      "id": 318,
+      "finding": "Both hands now meet in front of the chest while the body bows; verify surface contact through the rubbing cycle.",
+      "review": "pending"
+    },
+    {
+      "id": 319,
+      "finding": "Air squat bends knees with forward arms; no sampled stretched limb, continuous planted support remains pending.",
+      "review": "pending"
+    }
+  ]
+}

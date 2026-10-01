@@ -1,0 +1,486 @@
+{
+  "version": 1,
+  "status": "centroid-production-visual-and-code-passed;shoulder-candidate-pending",
+  "masterUnchanged": {
+    "path": "public/doreumi/doreumi-master.glb",
+    "sha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c"
+  },
+  "scope": {
+    "sourceGeometryUvTexturesNeutralPreserved": true,
+    "masterOrRegistryPromoted": false,
+    "browserOwner": "root",
+    "thisAgentBrowserUsed": false
+  },
+  "curl": {
+    "cause": "MSAA pixel-center interpolation extrapolates UV outside tiny atlas islands of covered triangles",
+    "actualEvidence": {
+      "pixel": [
+        201,
+        133
+      ],
+      "coveredSamples": 16,
+      "coveredTextureRgb": [
+        5,
+        27,
+        74
+      ],
+      "example": {
+        "face": 88379,
+        "uv": [
+          0.3735865914152417,
+          0.27225417452660755
+        ],
+        "texel": [
+          5,
+          27,
+          74
+        ],
+        "centerBarycentric": [
+          0.6306940363929945,
+          -4.212222763373602,
+          4.581528726980608
+        ],
+        "centerUv": [
+          0.39368359374356277,
+          0.2859989761365531
+        ],
+        "centerTexel": [
+          250.81731312792266,
+          180.14970940934927,
+          164.68780626850503
+        ]
+      },
+      "depthAndSeams": "curl surface is rigid under the head transform; no open edge or mismatched seam weight/normal detected",
+      "notAllBrightEdgePixelsAreDefects": "pixel161,98 has 9/16 uncovered subpixels and expected background antialiasing"
+    },
+    "correction": "Centroid interpolation for only base-map vMapUv, independently in vertex and fragment shader chunks copied per material; no global ShaderChunk mutation, texture/UV/geometry/DoubleSide changes or face-expression changes",
+    "rootVisualObservations": {
+      "diagnostic": "Production, diffuse-only and atlas-only all retained the curl specks; specular/shading-only cause rejected.",
+      "centroid": "Both centroid production shading and centroid atlas-only captures removed curl, chest logo and body-edge speckles; armpit fold remained, separating the two causes."
+    },
+    "captures": [
+      {
+        "directory": "/tmp/doreumi-curl-diagnostic-production",
+        "report": {
+          "path": "/tmp/doreumi-curl-diagnostic-production/report.json",
+          "sha256": "25f097dc95dc04679687c1ea1e098f9eaffcbfcd91ae269de30a6a06ceadc774"
+        },
+        "image": {
+          "path": "/tmp/doreumi-curl-diagnostic-production/action-meshy-595-45-0.5779220832904166.png",
+          "sha256": "48f944285c228d3d9fa3561ecfcb1e7d2b8033c9315052080ba42958f4820a79"
+        },
+        "modelSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+        "clipSha256": "be367676e5043f143fe83d12b68abc320c0ba6a4915622bd186251cb6a84ff41",
+        "runtimeBundleSha256": "1008ac34de5bf64c27370f126875b7a0ebedc2930033100f8e3a9c0f5a91b33b",
+        "materialDiagnostic": "production",
+        "uvDiagnostic": "production",
+        "browserPass": true
+      },
+      {
+        "directory": "/tmp/doreumi-curl-diagnostic-diffuse-only",
+        "report": {
+          "path": "/tmp/doreumi-curl-diagnostic-diffuse-only/report.json",
+          "sha256": "7230f0fa1628cccb08fe056c26adbdc51fd4132195e0b2f1e66a8bfd118f6986"
+        },
+        "image": {
+          "path": "/tmp/doreumi-curl-diagnostic-diffuse-only/action-meshy-595-45-0.5779220832904166.png",
+          "sha256": "4a94c81c32cff65d6f9fc7d4809c1fb789aa8792d3cfb7e34a5cb0fa98fde4fa"
+        },
+        "modelSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+        "clipSha256": "be367676e5043f143fe83d12b68abc320c0ba6a4915622bd186251cb6a84ff41",
+        "runtimeBundleSha256": "4cc14577eba156717933d10cacfb30b644d48c864659bf3dbf63f4b1cb2e9378",
+        "materialDiagnostic": "diffuse-only",
+        "uvDiagnostic": "production",
+        "browserPass": true
+      },
+      {
+        "directory": "/tmp/doreumi-curl-diagnostic-atlas-only",
+        "report": {
+          "path": "/tmp/doreumi-curl-diagnostic-atlas-only/report.json",
+          "sha256": "c50dcd60ad9601037e19b8df6f323db17bc046575053f55e1b3dc9eb98640c58"
+        },
+        "image": {
+          "path": "/tmp/doreumi-curl-diagnostic-atlas-only/action-meshy-595-45-0.5779220832904166.png",
+          "sha256": "72e4cc71fddb6c0fb570b3bad783d981c44f1bc063462b20cc4d00abbdf4f5f0"
+        },
+        "modelSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+        "clipSha256": "be367676e5043f143fe83d12b68abc320c0ba6a4915622bd186251cb6a84ff41",
+        "runtimeBundleSha256": "75567b998f03248535f7745c5a290c99a4aefc64154663836f9ce99e487806df",
+        "materialDiagnostic": "atlas-only",
+        "uvDiagnostic": "production",
+        "browserPass": true
+      },
+      {
+        "directory": "/tmp/doreumi-curl-centroid-production",
+        "report": {
+          "path": "/tmp/doreumi-curl-centroid-production/report.json",
+          "sha256": "0ea32aefd19e4fb54f9196e7b3a456dfb2e4262e591cc92545125475f1189296"
+        },
+        "image": {
+          "path": "/tmp/doreumi-curl-centroid-production/action-meshy-595-45-0.5779220832904166.png",
+          "sha256": "99d63ca0b3a96530e290bb666b86c9ee3887c67c9f42f55fc8617c3d648efcbe"
+        },
+        "modelSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+        "clipSha256": "be367676e5043f143fe83d12b68abc320c0ba6a4915622bd186251cb6a84ff41",
+        "runtimeBundleSha256": "56347efb3d992d57776cff4c6b222941d80cb9f48d291096549ff744c1917d14",
+        "materialDiagnostic": "production",
+        "uvDiagnostic": "centroid",
+        "browserPass": true
+      },
+      {
+        "directory": "/tmp/doreumi-curl-centroid-atlas-only",
+        "report": {
+          "path": "/tmp/doreumi-curl-centroid-atlas-only/report.json",
+          "sha256": "cced75d41fd440d44f18a59eb9e7ca05f3d84ab551a2a44c1a3422ca33e5c8e7"
+        },
+        "image": {
+          "path": "/tmp/doreumi-curl-centroid-atlas-only/action-meshy-595-45-0.5779220832904166.png",
+          "sha256": "62831182c3ade18dca4fe53e36de191ddd67aba3052a3a3f4bc875690ea0339c"
+        },
+        "modelSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+        "clipSha256": "be367676e5043f143fe83d12b68abc320c0ba6a4915622bd186251cb6a84ff41",
+        "runtimeBundleSha256": "8fb8aa8b4375f97dcc5be09f099c05a7e89cc1f67e3cbdbfe74d49fb7f2c033b",
+        "materialDiagnostic": "atlas-only",
+        "uvDiagnostic": "centroid",
+        "browserPass": true
+      }
+    ],
+    "code": [
+      {
+        "path": "src/lib/doreumi/motion-material.ts",
+        "sha256": "353072bdff24626b1bc6a0cfc98e312304f4e9ba34512301cf4d5491bad0739a"
+      },
+      {
+        "path": "src/lib/doreumi/motion-runtime.ts",
+        "sha256": "eb47365100bc8107e8b2db3fd759d13ef2a3ef1c8392a4d7375b2d727e0e017e"
+      },
+      {
+        "path": "scripts/doreumi/qa-material-diagnostic.mjs",
+        "sha256": "a4429581ee48e4a4d309e2dbc96bc35703c9091e8e7e7ad50c51c61f25ed2dd4"
+      },
+      {
+        "path": "scripts/doreumi/motion-qa.mjs",
+        "sha256": "bb13291c663b15efdc171dd18f89859a9702343eaf13275c2816222fcea56166"
+      }
+    ],
+    "tests": {
+      "files": [
+        {
+          "path": "tests/doreumi-material.test.mjs",
+          "sha256": "032ad2d1c378f767780fbfc8b86a3b20f1e98c7c28c324577f106183972252ea"
+        },
+        {
+          "path": "tests/doreumi-material-diagnostic.test.mjs",
+          "sha256": "5306b28906f44d0daf42e97bf77840ab39910ee6e970c1063cc23d90bcac4e04"
+        }
+      ],
+      "result": {
+        "path": ".artifacts/doreumi-contact-audit/material-production-tests.tap",
+        "sha256": "d85502ec14b6e10d3229c3180aad787364c26bbf68af4ec6709d50d879f45e67"
+      },
+      "passed": 16,
+      "typecheck": "motion-material.ts passed standalone TypeScript check"
+    },
+    "measurement": {
+      "path": ".artifacts/doreumi-contact-audit/595-pixel-coverage-corrected.json",
+      "sha256": "c032b3d9b0a5f0b34d1982b21ae66ed23016dc9c3858b491b86941063381d1e8"
+    },
+    "productionVisualReview": {
+      "path": "docs/doreumi/centroid-surface-visual-review.json",
+      "sha256": "cb92c3d6e3c30847fb0b0d59a7c79d6645ecfe1c5cb9a48682a241ce22b70e61",
+      "reviewer": "root",
+      "reported": "Production default595,34expressions,Idle/Walk/Wave/Code in3angles and4pose→Run transitions personally viewed and passed"
+    },
+    "independentCodeReview": {
+      "reviewer": "code_review",
+      "materialTestsPassed": 5,
+      "findingsP1P2": 0,
+      "browserUsed": false
+    },
+    "productionCode": [
+      {
+        "path": "src/lib/doreumi/motion-material.ts",
+        "sha256": "353072bdff24626b1bc6a0cfc98e312304f4e9ba34512301cf4d5491bad0739a"
+      },
+      {
+        "path": "src/lib/doreumi/motion-runtime.ts",
+        "sha256": "eb47365100bc8107e8b2db3fd759d13ef2a3ef1c8392a4d7375b2d727e0e017e"
+      }
+    ]
+  },
+  "shoulder": {
+    "cause": "Pose deformation folds the connected axilla surface; coincident UV seams remain closed. Exact leading backface followed by a frontface .0001232 units behind confirms local overlap.",
+    "closedTopology": {
+      "coincidentGroups": 7126,
+      "maximumDeformedSeparation": 0,
+      "mismatchedWeightGroups": 0,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "duplicateFaces": 0
+    },
+    "measurement": {
+      "path": ".artifacts/doreumi-contact-audit/595-seams.json",
+      "sha256": "cbf745c67ad7f4a9d3ef83c1968cfb0a5e64f68914e027701f5bf46273fc0c6a"
+    },
+    "candidate": {
+      "model": {
+        "path": ".artifacts/doreumi-contact-audit/shoulder-surface/doreumi-master-shoulder-v1.glb",
+        "sha256": "5dbfd3594aaf54bfc439e6065983117bd3896d2fa075c78dbe5298502f343e77"
+      },
+      "numeric": {
+        "path": ".artifacts/doreumi-contact-audit/shoulder-surface/candidate-v1.json",
+        "sha256": "f6571772b3a08af7cbc1ac4f8a4ed83f6af25349a27302357011170995277bc2"
+      },
+      "summary": {
+        "poses": 25,
+        "beforeMaximumNegativeArea": 0.06600354232505692,
+        "afterMaximumNegativeArea": 0.03149187290480053,
+        "beforeMinimumProblemFaceNormal": -0.9774050025147922,
+        "afterMinimumProblemFaceNormal": 0.7859137593264549,
+        "allPosesNegativeAreaReduced": true
+      },
+      "maximumNeutralError": 1.2393712916265648e-07,
+      "protectedAttributesUnchanged": true,
+      "bonesAndInverseBindsUnchanged": true,
+      "all26ClipsUnchanged": true,
+      "status": "experimental, not approved"
+    },
+    "remaining": [
+      "Compare new master at identical source times in browser, including surrounding25 poses and other joints.",
+      "Some shoulder-region and wrist geometric-normal opposition remains; lower proxy counts are not complete self-intersection approval.",
+      "If a new master is selected, repeat approved motion skin/contact/prop/visual checks using exact new bytes before changing public master or approvals."
+    ],
+    "candidateV1VisualReview": {
+      "reviewer": "root",
+      "paths": [
+        "/tmp/doreumi-shoulder-v1-public",
+        "/tmp/doreumi-shoulder-v1-candidate",
+        "/tmp/doreumi-shoulder-v1-focus"
+      ],
+      "reported": "Same595pose3angles and25surroundingposes×3angles remove exact axilla white triangles and retain round connected arm; positive first review, further wrist correction and full regressions required."
+    },
+    "candidateV2": {
+      "model": {
+        "path": ".artifacts/doreumi-contact-audit/shoulder-surface/doreumi-master-shoulder-v2.glb",
+        "sha256": "0ce071ae3c43e4bb70d9997dbceb0f2d4c39ed5ae37b2bbd958745a067a4f512"
+      },
+      "numeric": {
+        "path": ".artifacts/doreumi-contact-audit/shoulder-surface/candidate-v2.json",
+        "sha256": "119ffb5fe36806465936a54813f144a4a2cb50bd8a050951cf2b6334285c4a8c"
+      },
+      "summary": {
+        "poses": 25,
+        "beforeMaximumNegativeArea": 0.06600354232505692,
+        "afterMaximumNegativeArea": 0.0046983267033971245,
+        "beforeMinimumProblemFaceNormal": -0.9774050025147922,
+        "afterMinimumProblemFaceNormal": 0.7888493552488988,
+        "allPosesNegativeAreaReduced": true
+      },
+      "maximumNeutralError": 1.223490940805065e-07,
+      "status": "experimental, pending browser and regression"
+    },
+    "candidateHistory": [
+      {
+        "version": 2,
+        "model": {
+          "path": ".artifacts/doreumi-contact-audit/shoulder-surface/doreumi-master-shoulder-v2.glb",
+          "sha256": "0ce071ae3c43e4bb70d9997dbceb0f2d4c39ed5ae37b2bbd958745a067a4f512"
+        },
+        "numeric": {
+          "path": ".artifacts/doreumi-contact-audit/shoulder-surface/candidate-v2.json",
+          "sha256": "119ffb5fe36806465936a54813f144a4a2cb50bd8a050951cf2b6334285c4a8c"
+        },
+        "review": "pending",
+        "visible595": {
+          "file": {
+            "path": ".artifacts/doreumi-contact-audit/shoulder-surface/doreumi-master-shoulder-v2-visible-folds.json",
+            "sha256": "b7de0c92aeab4c14850733ef0a35c9cbf7dfcde3d9bb52a9fed3a345850b9392"
+          },
+          "before": 1646,
+          "after": 3,
+          "poses": 25,
+          "angles": 8
+        }
+      },
+      {
+        "version": 3,
+        "model": {
+          "path": ".artifacts/doreumi-contact-audit/shoulder-surface/doreumi-master-shoulder-v3.glb",
+          "sha256": "748b8d5e74f240be2467594884b04547a65ef2f9a21baca68098d2fd060dbba5"
+        },
+        "numeric": {
+          "path": ".artifacts/doreumi-contact-audit/shoulder-surface/candidate-v3.json",
+          "sha256": "185f63fc72416f20409e7dd0e4981864a779cfc2a72ba27f4c512b85239adde0"
+        },
+        "review": "pending",
+        "visible595": {
+          "file": {
+            "path": ".artifacts/doreumi-contact-audit/shoulder-surface/doreumi-master-shoulder-v3-visible-folds.json",
+            "sha256": "978e01e04949058103d98afad579d1cfc94e44f7ee4926d0093ca83aeef563de"
+          },
+          "before": 1646,
+          "after": 8,
+          "poses": 25,
+          "angles": 8
+        }
+      },
+      {
+        "version": 4,
+        "model": {
+          "path": ".artifacts/doreumi-contact-audit/shoulder-surface/doreumi-master-shoulder-v4.glb",
+          "sha256": "92fc5f13c0f9cfed881cf81dfe30053f57711249bac0f3542cb977202e10218b"
+        },
+        "numeric": {
+          "path": ".artifacts/doreumi-contact-audit/shoulder-surface/candidate-v4.json",
+          "sha256": "3678456ca254445d85a329b3470b896b108db02eeed8e4d88a139452c5d98c97"
+        },
+        "review": "rejected-as-final: new-visible-lower-body-folds-in40",
+        "visible595": {
+          "file": {
+            "path": ".artifacts/doreumi-contact-audit/shoulder-surface/doreumi-master-shoulder-v4-visible-folds.json",
+            "sha256": "d3fbd38cbe684ca07431cb4bb53a63bede2d209a93e5d97d356f43375d8ea8f4"
+          },
+          "before": 1646,
+          "after": 0,
+          "poses": 25,
+          "angles": 8
+        },
+        "coarse85": {
+          "path": ".artifacts/doreumi-contact-audit/shoulder-surface/doreumi-master-shoulder-v4-coarse-regression.json",
+          "sha256": "e0f93ba8d217f236cadb8e6cff255f6cb864cdb9d384eeab496dc063bb7d1f2b"
+        },
+        "screeningVisibility": {
+          "354": {
+            "file": {
+              "path": ".artifacts/doreumi-contact-audit/shoulder-surface/doreumi-master-shoulder-v4-visible-meshy-354.json",
+              "sha256": "e67f96468366e53619934a870acc6f909e71fc7bcb08768da3eb4bfc69b17418"
+            },
+            "before": 15,
+            "after": 4
+          },
+          "318": {
+            "file": {
+              "path": ".artifacts/doreumi-contact-audit/shoulder-surface/doreumi-master-shoulder-v4-visible-meshy-318.json",
+              "sha256": "4785318a82984140fbbacf8069f9217cef9493baf2224e14113443ca02291920"
+            },
+            "before": 23,
+            "after": 0
+          },
+          "299": {
+            "file": {
+              "path": ".artifacts/doreumi-contact-audit/shoulder-surface/doreumi-master-shoulder-v4-visible-meshy-299.json",
+              "sha256": "e009c8fdc74aafb6927841de5ae69880768a6d3760be8e6dd3602c6ffbf4dce2"
+            },
+            "before": 24,
+            "after": 0
+          },
+          "67": {
+            "file": {
+              "path": ".artifacts/doreumi-contact-audit/shoulder-surface/doreumi-master-shoulder-v4-visible-meshy-67.json",
+              "sha256": "68205b52f440118f4bb32029ed4912794e56ac10ccdda17e3538df1008144644"
+            },
+            "before": 18,
+            "after": 0
+          },
+          "40": {
+            "file": {
+              "path": ".artifacts/doreumi-contact-audit/shoulder-surface/doreumi-master-shoulder-v4-visible-meshy-40.json",
+              "sha256": "96dd4929301a878a3c5dffcc617c8ec6c2b5ae8bee505f2efb5da2d025ea5db1"
+            },
+            "before": 18,
+            "after": 48
+          }
+        }
+      },
+      {
+        "version": 5,
+        "model": {
+          "path": ".artifacts/doreumi-contact-audit/shoulder-surface/doreumi-master-shoulder-v5.glb",
+          "sha256": "b1a2cdac45d27b677d85166e9d76b0f5873886bbed80ba12c7e2607cca5bfdd3"
+        },
+        "numeric": {
+          "path": ".artifacts/doreumi-contact-audit/shoulder-surface/candidate-v5.json",
+          "sha256": "3012cc5ec368ea68096d64736488272a81bfea5c01866172ffb726cbfbe54364"
+        },
+        "review": "rejected-as-final: vertical-bound-only-worsened40",
+        "visible595": {
+          "file": {
+            "path": ".artifacts/doreumi-contact-audit/shoulder-surface/doreumi-master-shoulder-v5-visible-folds.json",
+            "sha256": "5176147513397c1bb9df99987a59c586c1ac909076b720e1cef14e8216140e44"
+          },
+          "before": 1646,
+          "after": 0,
+          "poses": 25,
+          "angles": 8
+        }
+      },
+      {
+        "version": 6,
+        "model": {
+          "path": ".artifacts/doreumi-contact-audit/shoulder-surface/doreumi-master-shoulder-v6.glb",
+          "sha256": "9f0605dfbd6a4eb6e1780634e2b24dc9b4cb7980d2a95d77191824ac0e41292a"
+        },
+        "numeric": {
+          "path": ".artifacts/doreumi-contact-audit/shoulder-surface/candidate-v6.json",
+          "sha256": "0eaa3042db59cbf5f2a4194c563f489c89d32d480c948228af3bcf23815adde6"
+        },
+        "review": "bone-distance-domain-candidate:595-and354-visible0,40-visible3;85screen-pending",
+        "visible595": {
+          "file": {
+            "path": ".artifacts/doreumi-contact-audit/shoulder-surface/doreumi-master-shoulder-v6-visible-folds.json",
+            "sha256": "0b8a760f5735d04b87f2cac4a9ec939a42e94431151db1fae9eccce59eb543d6"
+          },
+          "before": 1646,
+          "after": 0,
+          "poses": 25,
+          "angles": 8
+        }
+      }
+    ],
+    "rootVisualCheckpointV4": {
+      "reported": "Root personally inspected595problem25x3focus and45degreecenter,27/36/5965viewsx9normal. No visible shoulder/wrist break; shape retained. Final acceptance withheld after numeric40regression.",
+      "scope": "diagnostic-only-not-master-approval"
+    },
+    "regressionCause": "Early XY-only shoulder domain changed originally body/thigh-only vertices in the lower torso. A 3D distance domain around actual unchanged shoulder/arm/elbow segments is now being measured; no public asset is replaced.",
+    "acrobaticsV4": {
+      "status": "numeric-contact-pass-visual-pending-and-master-not-selected",
+      "contact": {
+        "path": ".artifacts/doreumi-contact-audit/shoulder-surface/acro-v4/contact.json",
+        "sha256": "f7caa0dc3b16b3b7fcea53904ef47775eddf4fa63f0d72891fea08410f886813"
+      },
+      "manifest": {
+        "path": ".artifacts/doreumi-contact-audit/shoulder-surface/acro-v4/manifest.json",
+        "sha256": "e506424aec8e07474cb6a9e41ca7ab93b7aaf89f6b1ac6403f11c672650ee696"
+      },
+      "model": {
+        "path": ".artifacts/doreumi-contact-audit/shoulder-surface/doreumi-master-shoulder-v4.glb",
+        "sha256": "92fc5f13c0f9cfed881cf81dfe30053f57711249bac0f3542cb977202e10218b"
+      }
+    }
+  },
+  "skinCandidatePreview": {
+    "scope": "explicit isolated --skin-candidate for406/451; general override remains unchanged",
+    "protection": "Decoded geometry/UV/morph/texture/material/bones/all26clips and accessor layouts are exact against the current public master. Neutral surface error<1e-6. Actual acquired donor SHA and decoded vertex count bind both contact vertices. All files stay under ignored candidate/acquisition roots.",
+    "code": [
+      {
+        "path": "scripts/doreumi/qa-skin-candidate.mjs",
+        "sha256": "9c7697f7cdf0fc4bcfc201b3b75dddc8d123bb0a65307d32d47984e9dfaa412e"
+      },
+      {
+        "path": "scripts/doreumi/motion-qa.mjs",
+        "sha256": "99ef84c91fa7bab886b572264fc356468349f8c4c61a518bef016761b2bf7124"
+      },
+      {
+        "path": "tests/doreumi-skin-candidate.test.mjs",
+        "sha256": "e454c9af5a880abef573c049c488093d688d31eeaef39b8115a7887a0b6b4ad6"
+      }
+    ],
+    "tests": {
+      "path": ".artifacts/doreumi-contact-audit/shoulder-surface/skin-preview-tests.tap",
+      "sha256": "1b9d67a394a06cbda8127668bfa29103190b0e6e347acf8c2bcd6d77ff95305e"
+    },
+    "testsPassed": 11,
+    "independentSecurity": "root reported pass after normalized accessor and vertex/source findings fixed",
+    "browserUsedByThisAgent": false
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "checkedAt": "2026-09-24T03:35:44.600634+00:00",
+  "runtimeBundleSha256": "aaa257e0ce7c4e76490140d4b5fd883cc6bb6b0d98d48d74d193799f18c071f7",
+  "method": "Individually inspected all6 five-angle/nine-pose128px sheets and4fps sampled actual playback. Not approval of all motions or every rendered frame.",
+  "items": [
+    {
+      "id": "meshy:48",
+      "clipSha256": "654675e5c3d87bc0b88f235a8f5e76f90a4aebfb732ac8adb80fedb090af6363",
+      "observation": "Face stays visible at default45 camera; mirror is edge-on at that angle but full shape visible in frontal views. Quarter inspection pending.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-acrobatics-small-v1/motion-meshy-48.jpg",
+          "sha256": "9dd8d3bed422e6cefad6397f0c440d45f0a14b67c28f88a44c3824242d74ca03"
+        },
+        {
+          "file": "/tmp/doreumi-acrobatics-small-v1/temporal-meshy-48.jpg",
+          "sha256": "ce0b5156c47c1a78933e22c54e60e9fa6771d4f3fb963eab0af65f724d43fa59"
+        }
+      ]
+    },
+    {
+      "id": "meshy:375",
+      "clipSha256": "cc56bb4be1baae442d350a55773d5e5b65f3bd5e805883fb1efce35056152994",
+      "observation": "Supported tuck side-roll retains original rotation; seated transition sampled at4fps, quarter review needed for short recline transition.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-acrobatics-small-v1/motion-meshy-375.jpg",
+          "sha256": "a5291f29aca2a23b26a8682cf14efa245f247e6a56467dc1fd72e9cc369a596e"
+        },
+        {
+          "file": "/tmp/doreumi-acrobatics-small-v1/temporal-meshy-375.jpg",
+          "sha256": "ee5e5396a52c1c98a189662c725fc2e1b30dc030a9b7c1e673575494a6eea5dc"
+        }
+      ]
+    },
+    {
+      "id": "meshy:395",
+      "clipSha256": "cec8d712f07609e91b52aa4c12d9f5563ea57011d5a6a2c636f3b825e56397ba",
+      "observation": "Back-supported spin replaces unreachable headstand. Seated entry and return are readable at128px; quarter pending.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-acrobatics-small-v1/motion-meshy-395.jpg",
+          "sha256": "b924c7f676af3ed9ada32357fdf537d38e466195974eba4e95c11d8a8a1b12b9"
+        },
+        {
+          "file": "/tmp/doreumi-acrobatics-small-v1/temporal-meshy-395.jpg",
+          "sha256": "25300f7c90627c2c5208c95ccb5f4d6139785c27cddc8e5d42f42e5a52b9fed6"
+        }
+      ]
+    },
+    {
+      "id": "meshy:406",
+      "clipSha256": "28aa189ec728aca88ba6c5724a7fa2d4c447c4dfe468cf2feb4c4f2a8a398f17",
+      "observation": "Flair and jump preserved, fast core rotation needs quarter inspection.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-acrobatics-small-v1/motion-meshy-406.jpg",
+          "sha256": "cf12b54b61dd7333cbff295fc6a3bc84f563e2f8f61a55786e06ec3c4604000d"
+        },
+        {
+          "file": "/tmp/doreumi-acrobatics-small-v1/temporal-meshy-406.jpg",
+          "sha256": "02efe03cb79d027ba6df619bfd13f1638779d5c86694cbe86224c69ea1125a31"
+        }
+      ]
+    },
+    {
+      "id": "meshy:451",
+      "clipSha256": "7a4081f6afa43840e9fcff3474df196d11a2a9e0e4c50f66526f403416ac290a",
+      "observation": "Seated one-hand brace with opposite hand raised is cute and readable; quarter support inspection pending.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-acrobatics-small-v1/motion-meshy-451.jpg",
+          "sha256": "639ecbbbf2673b2221fd33f2f320339c0ef2d4d08f802126608ce9beeded2e94"
+        },
+        {
+          "file": "/tmp/doreumi-acrobatics-small-v1/temporal-meshy-451.jpg",
+          "sha256": "d5a32d44bc8f81feacf554cad0fe9dca46c2a1183687d40a501c8ab297a4b461"
+        }
+      ]
+    },
+    {
+      "id": "meshy:500",
+      "clipSha256": "d5bd1218c500fb0672e6bb2eb74129ac1aba4b5165df5a1fe0f5492c9c2a1bb0",
+      "observation": "Wrist branch snap no longer evident, but rigid whole-body floor recovery and missing wall context remain; not approved.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-acrobatics-small-v1/motion-meshy-500.jpg",
+          "sha256": "2db91a54a60cefb3944e5548851ab7163bacb65cb17e193ef922b92b3a4b7a05"
+        },
+        {
+          "file": "/tmp/doreumi-acrobatics-small-v1/temporal-meshy-500.jpg",
+          "sha256": "e5dee88bd75dcccd4e0ae5a5107bdbea94a50be59e7bdbd6bb52b2e2b7acf286"
+        }
+      ]
+    }
+  ]
+}

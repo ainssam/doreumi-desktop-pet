@@ -1,0 +1,215 @@
+{
+  "evidenceDirectory": "/tmp/doreumi-library-425-460",
+  "review": "pending",
+  "masterSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+  "observations": [
+    {
+      "id": "meshy:425",
+      "clipSha256": "ed47a439c6c423308e220bc362bbd1ecdfaf61bd3b301c033d93edd0f8a3ce8d",
+      "finding": "Rifle vault has empty hands and absent obstacle; context exclusion remains.",
+      "review": "pending"
+    },
+    {
+      "id": "meshy:426",
+      "clipSha256": "d7d5690e69b5e87476eaf4d7bddf1d30d011726ecee1157e6c22bdfd0eee5597",
+      "finding": "Compact body roll visible, floor hand support and cover context unresolved.",
+      "review": "pending"
+    },
+    {
+      "id": "meshy:427",
+      "clipSha256": "b64304b70b4e4be14bb855949d584a063eba1450229eb85ed55c45494b3dff31",
+      "finding": "Sideways vault with tucked legs; absent obstacle and unverified hand support.",
+      "review": "pending"
+    },
+    {
+      "id": "meshy:428",
+      "clipSha256": "c813b1c3c536e088fbf0b06b1c234d3ba34e490b6acb9e1a93442530ef561e63",
+      "finding": "Tucked-knee vault with spread arms; requires explicit adaptation before a standalone hop.",
+      "review": "pending"
+    },
+    {
+      "id": "meshy:429",
+      "clipSha256": "86d216bd56c74f77cc546dbea72531c45bea941dc22da231c11a26025bc8a301",
+      "finding": "Parkour curl and landing; hand support has no obstacle.",
+      "review": "pending"
+    },
+    {
+      "id": "meshy:430",
+      "clipSha256": "bc67b208c8fe9bb46e23b458e1d53591a10bdedce6b9d60e42b8ba2fb88f3dd1",
+      "finding": "Vault then roll; ground support and obstacle adaptation required.",
+      "review": "pending"
+    },
+    {
+      "id": "meshy:431",
+      "clipSha256": "45238d5db3624e4cd554cbf3d0f7be94bfee5a9b3a77eb8da930586728f002cc",
+      "finding": "Legs extend forward into seated-looking airborne vault; unsupported context.",
+      "review": "pending"
+    },
+    {
+      "id": "meshy:432",
+      "clipSha256": "8c97be52a06bb39e602cb2e8b32d389f4a1288355a1f6e65d66f8fadab17d22d",
+      "finding": "Readable sideways body rotation; obstacle absent.",
+      "review": "pending"
+    },
+    {
+      "id": "meshy:433",
+      "clipSha256": "3ac812e5623e9032c8d1b6b88e40428632f5ddd51f7203ff5d1109e7719dc56e",
+      "finding": "Vault includes full inversion; palms never meet an obstacle. Source support and landing continuity require adaptation.",
+      "review": "pending"
+    },
+    {
+      "id": "meshy:434",
+      "clipSha256": "1f73717976a8534354cf90ab8b66264665395ba82d86c0e94e4e15fcbee45bb5",
+      "finding": "Alternating bent knees and reaching arms read as climbing, but character floats without a ladder.",
+      "review": "pending"
+    },
+    {
+      "id": "meshy:435",
+      "clipSha256": "9773f66d15ed1a790ebac4e065c44b5807de74a55806845d11506c8504992e9f",
+      "finding": "Leans over imaginary ladder top then recovers upright at elevated height; no support surface.",
+      "review": "pending"
+    },
+    {
+      "id": "meshy:436",
+      "clipSha256": "651e89bf42ec7b2a1701f404c2f819c596d68b66d43f8c25f3b4f202caabef4c",
+      "finding": "Turns into ladder-mount pose and rises in empty space. Climbing context required.",
+      "review": "pending"
+    },
+    {
+      "id": "meshy:437",
+      "clipSha256": "5f611b156adb253932cb0e55c2d3e7f0f30d22d96986622610bbfce12d204bb4",
+      "finding": "Slow reaching and stepping poses have no rung contact; absent ladder and persistent floating posture prevent ambient use.",
+      "review": "pending"
+    },
+    {
+      "id": "meshy:438",
+      "clipSha256": "0f691ecebaa55c5e1d08a5c03350ba949a12a40db2df8e9a3526765408b08574",
+      "finding": "Looped knee lifts and reaching arms float without ladder; rung contact adaptation needed.",
+      "review": "pending"
+    },
+    {
+      "id": "meshy:439",
+      "clipSha256": "38ad398455304a81bbb51b0b3f5d722bc84e45ffc5f49e36e9a24f2ce07f7449",
+      "finding": "Both limbs spread and shuffle left as if on wall; short arms reach empty space.",
+      "review": "pending"
+    },
+    {
+      "id": "meshy:440",
+      "clipSha256": "dbdec60a1417530e7aad509f3ac8cf9f71504064bdf49917d24b7645adbbef9d",
+      "finding": "Rightward climbing has alternating tucked knees and hands; wall contact absent.",
+      "review": "pending"
+    },
+    {
+      "id": "meshy:441",
+      "clipSha256": "a7bcf4adf2063a1fccf0c4c7a29eb020f6944ca917dd67aa770924a1e5fbc273",
+      "finding": "High steps and forward lean read as stair climbing but feet lack stair surfaces.",
+      "review": "pending"
+    },
+    {
+      "id": "meshy:442",
+      "clipSha256": "f5a800cfc4fe63b5b0fefa7cacbcb33357837633003dcec1f4ecf784e796ed74",
+      "finding": "Fast high steps retain raised body posture; stair support missing.",
+      "review": "pending"
+    },
+    {
+      "id": "meshy:444",
+      "clipSha256": "3e1fab564a905f831cb107f14f026f4b6968c53dcaf8f704f41765225551d2b7",
+      "finding": "Arms reach up and body tilts while climbing, with no wall for hands or feet.",
+      "review": "pending"
+    },
+    {
+      "id": "meshy:445",
+      "clipSha256": "f9351488750210a5b071628fe6e2881796341f301c2b611529c8bed1f9b95938",
+      "finding": "Diagonal wall run hangs in a tilted airborne stance through several phases; needs wall contact and stage travel.",
+      "review": "pending"
+    },
+    {
+      "id": "meshy:446",
+      "clipSha256": "900ba62b43b74378bd05c55c2a5bd131b8a013a95eec2397b20229d6f1a27bb0",
+      "finding": "Left hanging traverse raises hands beside the head but body leans backwards unsupported; needs ledge grip.",
+      "review": "pending"
+    },
+    {
+      "id": "meshy:447",
+      "clipSha256": "0387138f406ca7243c61f56d8aba1092432084eb83efdc0f28c355d1fc44c33b",
+      "finding": "Right hanging traverse mirrors the unsupported backward lean; both grips and a ledge are absent.",
+      "review": "pending"
+    },
+    {
+      "id": "meshy:448",
+      "clipSha256": "505154162f2568e294144491519b916be6ecc15d31e47b7273f9aab9a07c190f",
+      "finding": "Jump transitions into a held airborne grab with bent knees; wall absent, hands only in front of chest.",
+      "review": "pending"
+    },
+    {
+      "id": "meshy:449",
+      "clipSha256": "23713dc8ac0d31a4b6a1bbbccd12a85c196673fb2d3ae02793f9a6e2c25b8526",
+      "finding": "Rope climb alternates hands near head with backward body lean; no rope or hand grip.",
+      "review": "pending"
+    },
+    {
+      "id": "meshy:450",
+      "clipSha256": "ee03c233e95a2c2d5f597f74fb802a322561fe526a52d7bd4c5dceadd109c99d",
+      "finding": "Wall flip rotates backward with tucked body and lands; wall push-off and ground contact need source-aware adaptation.",
+      "review": "pending"
+    },
+    {
+      "id": "meshy:451",
+      "clipSha256": "c2fbc3af87b4b5fea4134c91bb191a725371cf3dc25281e23412894cdf5320e3",
+      "finding": "One-arm handstand is unsupported: head extends below the short supporting arm at .375/.5. Explicit short-limb support adaptation required.",
+      "review": "pending"
+    },
+    {
+      "id": "meshy:452",
+      "clipSha256": "79e024d38ca4e45af2ea635cc39389efd320d55b8d96ef865df6b88f5ecaaa24",
+      "finding": "Backflip has visible crouch, inversion and landing; compact limbs remain connected. Needs continuous angular/contact checks and small-size review.",
+      "review": "pending"
+    },
+    {
+      "id": "meshy:453",
+      "clipSha256": "b8e16a2737f2c8f105b1e499382ab4cc22643131e9e9ca3860b76182f4f68fc5",
+      "finding": "Backflip/sweep passes through unsupported horizontal floor-level poses; requires continuous source support classification.",
+      "review": "pending"
+    },
+    {
+      "id": "meshy:455",
+      "clipSha256": "dc38b06fe75ff8f31bad39746ee4919ccf88b0f1ecadc8369b5e6baebf317f9b",
+      "finding": "Sweep rotates into inversion with hands above head-bottom; short-arm support not established.",
+      "review": "pending"
+    },
+    {
+      "id": "meshy:456",
+      "clipSha256": "1524e617fd31d2f9025c383bb949b5ecf5e5c532a56a2030b8551f748406d1dc",
+      "finding": "Partner takedown turns over then lies prone. No partner; generic prone-to-standing recovery remains implausible.",
+      "review": "pending"
+    },
+    {
+      "id": "meshy:457",
+      "clipSha256": "6e129b951de59dd5e8ec9fc0b2005e5c86745a7625d09d287c3c2a4ee11980eb",
+      "finding": "Jumping punch visually becomes forward dive/prone roll; no clear punch contact and prone recovery needs correction.",
+      "review": "pending"
+    },
+    {
+      "id": "meshy:458",
+      "clipSha256": "2552c77952e2ab619c2d87254844418ca5c55f1eca2b8f105becc197a569813b",
+      "finding": "Unicycle dismount turns and lands with empty hands and no cycle; context exclusion remains.",
+      "review": "pending"
+    },
+    {
+      "id": "meshy:459",
+      "clipSha256": "e48c85c7ba96dede4cbb8654634219e1ab956193414485b4e5b45dbbc08f6326",
+      "finding": "Running jump ends in back roll; source hand/ground support and recovery need continuous inspection.",
+      "review": "pending"
+    },
+    {
+      "id": "meshy:460",
+      "clipSha256": "9501cb4e30f1daf24109cf4a0bdb567b1d36219d26a640a2b3c585508b57fc3e",
+      "finding": "Arms-open jump compresses deeply forward before recovering; five-view silhouette readable, source timing and landing need normal/slow inspection.",
+      "review": "pending"
+    }
+  ],
+  "method": "Individually inspected five-view nine-pose sheets. Continuous recordings, source-contact and whole-joint audits and 128px review are not yet approved.",
+  "numericSamplesPass": true,
+  "inspectedActionCount": 34,
+  "sourceReportComplete": true
+}

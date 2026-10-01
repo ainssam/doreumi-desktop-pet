@@ -1,0 +1,316 @@
+{
+  "checkedAt": "2026-09-24T05:55:36.385Z",
+  "id": "meshy:578",
+  "review": "passed",
+  "ambient": true,
+  "visualReviewer": "/root",
+  "clipSha256": "4ca11a9b311f3dedf79f21f221919d184438da1dcf1cb43f111ec35740067072",
+  "metadataSha256": "3b8264487972ce6efd3ff600a4cb6d265bbd788e2b416d0a5a7263083bada0ad",
+  "sourceSha256": "65dc40b0a9e842db4b62458fd772d61693f314d05c56b91371a4cd5af222d493",
+  "masterSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+  "visualReview": {
+    "file": "docs/doreumi/visual-torch578-candidate.json",
+    "sha256": "7b24c37f8816b1db77dccd73fa05d55ad7d7a2fce1eb51966943a4b46f9d0f65"
+  },
+  "propsReview": {
+    "file": "docs/doreumi/torch-flame-visual-review.json",
+    "sha256": "25fe3eb9a2306425c504dc683c90460d3bdcc833ce09c8897c4c761101e90465"
+  },
+  "host": [
+    {
+      "file": "/tmp/doreumi-torch578-host-final-1/report.json",
+      "sha256": "9069a66962755412273fc59b9462989015e80af8b0334c72768b2357f6b264c3",
+      "playbackRate": 1,
+      "bundleHashes": {
+        "stdin.js": "547b1eada3fb7be6bc159584016730f935fe01a78f5f1a4a6dc29d661840d991",
+        "stdin.css": "2a13d4bc0e4ea3d6ee502322fc91df21c40fecc11125f892db48fee0054e1426"
+      },
+      "metadataSha256": "3b8264487972ce6efd3ff600a4cb6d265bbd788e2b416d0a5a7263083bada0ad",
+      "samples": [
+        {
+          "viewport": {
+            "width": 1280,
+            "height": 900
+          },
+          "completePlayback": true,
+          "contactBasis": {
+            "version": 1,
+            "basis": "source-and-target-skin",
+            "mesh": "Doreumi",
+            "vertexCount": 78799,
+            "sourceFloor": 0.016753729984596198,
+            "sourceTolerance": 0.04,
+            "targetFloor": 0.002,
+            "targetTolerance": 0.012,
+            "stationarySpeed": 0.15,
+            "supportedPairs": 39,
+            "movingContactPairs": 3,
+            "sourcePlantedPairs": 50,
+            "missingTargetContactPairs": 0,
+            "airbornePairs": 0,
+            "maxStageSpeed": 0.4620343403735108,
+            "phases": 7,
+            "endpoints": "same-source-contact-phase",
+            "feet": "each-confirmed-foot-independently"
+          },
+          "contactFrames": 23,
+          "maxContactSlipRatio": 0.00312612102811611,
+          "distancePx": 4.953125,
+          "endedYaw": -0.0022467337894240018,
+          "endedX": 1127.96875,
+          "settledX": 1127.96875
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "completePlayback": true,
+          "contactBasis": {
+            "version": 1,
+            "basis": "source-and-target-skin",
+            "mesh": "Doreumi",
+            "vertexCount": 78799,
+            "sourceFloor": 0.016753729984596198,
+            "sourceTolerance": 0.04,
+            "targetFloor": 0.002,
+            "targetTolerance": 0.012,
+            "stationarySpeed": 0.15,
+            "supportedPairs": 39,
+            "movingContactPairs": 3,
+            "sourcePlantedPairs": 50,
+            "missingTargetContactPairs": 0,
+            "airbornePairs": 0,
+            "maxStageSpeed": 0.4620343403735108,
+            "phases": 7,
+            "endpoints": "same-source-contact-phase",
+            "feet": "each-confirmed-foot-independently"
+          },
+          "contactFrames": 21,
+          "maxContactSlipRatio": 0.0029762836156699813,
+          "distancePx": 3.734375,
+          "endedYaw": -0.0021386863751830364,
+          "endedX": 262.953125,
+          "settledX": 262.953125
+        }
+      ],
+      "images": [
+        {
+          "file": "/tmp/doreumi-torch578-host-final-1/1280x900-stage-578-moving.png",
+          "sha256": "841bc385c691224867a135f7094fa711efbfab48122c2d9d8a365f7a5799d3c2"
+        },
+        {
+          "file": "/tmp/doreumi-torch578-host-final-1/1280x900-stage-578-rest.png",
+          "sha256": "5068a4432050abf9bd65f204fe82484e945496c2ae530f5865ca85d497b3998e"
+        },
+        {
+          "file": "/tmp/doreumi-torch578-host-final-1/390x844-stage-578-moving.png",
+          "sha256": "4541c5f1182d048182b94ce4eaf90dac617af07f020e15ccff5d509fff5520aa"
+        },
+        {
+          "file": "/tmp/doreumi-torch578-host-final-1/390x844-stage-578-rest.png",
+          "sha256": "ebfbe0333468b183253264e936935e6e4e5ca68b9db3cdffd197277f25327f04"
+        }
+      ]
+    },
+    {
+      "file": "/tmp/doreumi-torch578-host-final-0.25/report.json",
+      "sha256": "8dbfc53a5866c2e2f45d6f26f36d27366ed7a3db3fe06654234591f9ef2bede1",
+      "playbackRate": 0.25,
+      "bundleHashes": {
+        "stdin.js": "547b1eada3fb7be6bc159584016730f935fe01a78f5f1a4a6dc29d661840d991",
+        "stdin.css": "2a13d4bc0e4ea3d6ee502322fc91df21c40fecc11125f892db48fee0054e1426"
+      },
+      "metadataSha256": "3b8264487972ce6efd3ff600a4cb6d265bbd788e2b416d0a5a7263083bada0ad",
+      "samples": [
+        {
+          "viewport": {
+            "width": 1280,
+            "height": 900
+          },
+          "completePlayback": true,
+          "contactBasis": {
+            "version": 1,
+            "basis": "source-and-target-skin",
+            "mesh": "Doreumi",
+            "vertexCount": 78799,
+            "sourceFloor": 0.016753729984596198,
+            "sourceTolerance": 0.04,
+            "targetFloor": 0.002,
+            "targetTolerance": 0.012,
+            "stationarySpeed": 0.15,
+            "supportedPairs": 39,
+            "movingContactPairs": 3,
+            "sourcePlantedPairs": 50,
+            "missingTargetContactPairs": 0,
+            "airbornePairs": 0,
+            "maxStageSpeed": 0.4620343403735108,
+            "phases": 7,
+            "endpoints": "same-source-contact-phase",
+            "feet": "each-confirmed-foot-independently"
+          },
+          "contactFrames": 101,
+          "maxContactSlipRatio": 0.0025118104646124134,
+          "distancePx": 4.96875,
+          "endedYaw": -0.0022628393425917037,
+          "endedX": 1127.96875,
+          "settledX": 1127.96875
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "completePlayback": true,
+          "contactBasis": {
+            "version": 1,
+            "basis": "source-and-target-skin",
+            "mesh": "Doreumi",
+            "vertexCount": 78799,
+            "sourceFloor": 0.016753729984596198,
+            "sourceTolerance": 0.04,
+            "targetFloor": 0.002,
+            "targetTolerance": 0.012,
+            "stationarySpeed": 0.15,
+            "supportedPairs": 39,
+            "movingContactPairs": 3,
+            "sourcePlantedPairs": 50,
+            "missingTargetContactPairs": 0,
+            "airbornePairs": 0,
+            "maxStageSpeed": 0.4620343403735108,
+            "phases": 7,
+            "endpoints": "same-source-contact-phase",
+            "feet": "each-confirmed-foot-independently"
+          },
+          "contactFrames": 101,
+          "maxContactSlipRatio": 0.001977681755610528,
+          "distancePx": 3.734375,
+          "endedYaw": -0.0022467337927271967,
+          "endedX": 262.953125,
+          "settledX": 262.953125
+        }
+      ],
+      "images": [
+        {
+          "file": "/tmp/doreumi-torch578-host-final-0.25/1280x900-stage-578-moving.png",
+          "sha256": "d013b79af4a5cf36903128106847b1ad9aab00b5269125c0f996f19ffb980d9e"
+        },
+        {
+          "file": "/tmp/doreumi-torch578-host-final-0.25/1280x900-stage-578-rest.png",
+          "sha256": "b44db8e9750ae836183b67c52f83881d859aa1d4862817b38b70ba30c1f43580"
+        },
+        {
+          "file": "/tmp/doreumi-torch578-host-final-0.25/390x844-stage-578-moving.png",
+          "sha256": "47198b68735ca9364c4dc82094c0171ec79cdb8ef95a82d2a618137bb9d3c7b5"
+        },
+        {
+          "file": "/tmp/doreumi-torch578-host-final-0.25/390x844-stage-578-rest.png",
+          "sha256": "2cd6de79b0068045b243779d5839f2dcef107647f9ae024f3a4f108842e93162"
+        }
+      ]
+    }
+  ],
+  "sourceContact": {
+    "file": ".artifacts/doreumi-contact-audit/torch578-stage-v1/contact.json",
+    "sha256": "154767d903f71fb2711259e264aa1aff9e330048fe1e3debd6e89ad0e8f639b0",
+    "summary": {
+      "actionId": 578,
+      "sourceActionId": 578,
+      "derivation": null,
+      "sourceName": "Idle_Torch_Turn_Left",
+      "sourceSha256": "65dc40b0a9e842db4b62458fd772d61693f314d05c56b91371a4cd5af222d493",
+      "clipSha256": "4ca11a9b311f3dedf79f21f221919d184438da1dcf1cb43f111ec35740067072",
+      "sourceTimeScale": 1,
+      "sourceFloor": 0.016753729984596198,
+      "sourcePlantedPairs": 49,
+      "missingTargetContactPairs": 0,
+      "excessiveDriftPairs": 0,
+      "sourceMovingContactPairs": 29,
+      "pivotCompatiblePairs": 3,
+      "maxDriftByHeight": 0.0011367000984897281,
+      "failures": []
+    }
+  },
+  "stageSkin": {
+    "file": ".artifacts/doreumi-contact-audit/torch578-stage-v1/stage-contact-60hz.json",
+    "sha256": "36078ca50c10f68a2595f811a8340676285807107ec5cfd91b55b483b26e9c10",
+    "summary": {
+      "clipSha256": "4ca11a9b311f3dedf79f21f221919d184438da1dcf1cb43f111ec35740067072",
+      "fps": 60,
+      "pairs": 96,
+      "missing": 0,
+      "excessiveDriftPairs": 0,
+      "maxDriftByHeight": 0.0010995207929064747,
+      "failures": []
+    }
+  },
+  "sourcePhaseTravel": {
+    "sourcePlantedPairs": 50,
+    "missingTargetContactPairs": 0,
+    "supportedPairs": 39,
+    "movingContactPairs": 3,
+    "interpretation": "The travel phase classifier counts 50 source pairs; the generic whole-source audit counts 49. Both retain their own exact denominators and report zero missing contact."
+  },
+  "joints": {
+    "file": ".artifacts/doreumi-contact-audit/torch578-stage-v1/joints.json",
+    "sha256": "b922baf751e97add037ebd9f4405638ca3be24727170315127c80a6d3dfa5996",
+    "fps": 60,
+    "largestIntroducedLocal": {
+      "bone": "thighL",
+      "from": 1.3666666666666667,
+      "time": 1.3833333333333333,
+      "sourceTime": 0.6833333333333333,
+      "targetLocalDegrees": 4.958700234833963,
+      "targetWorldDegrees": 6.225143084513177,
+      "sourceLocalDegrees": 0.6138866909614878,
+      "sourceWorldDegrees": 3.5152209008330444,
+      "jointDistance": 0.014000961026396268
+    },
+    "largestIntroducedWorld": {
+      "bone": "thighL",
+      "from": 1.3166666666666667,
+      "time": 1.3333333333333333,
+      "sourceTime": 0.6333333333333333,
+      "targetLocalDegrees": 4.332743556349174,
+      "targetWorldDegrees": 5.112361615522283,
+      "sourceLocalDegrees": 0.36470350439229454,
+      "sourceWorldDegrees": 2.3836843972133224,
+      "jointDistance": 0.011833505111827874
+    }
+  },
+  "production": {
+    "plan": {
+      "file": "scripts/doreumi/contact-plans/578.json",
+      "sha256": "7b4ad2afdb51f8d4e1723df85e23fe9c9b866ab1d99b9a18048de40bc04ce1d8"
+    },
+    "replay": {
+      "version": 1,
+      "planSha256": "7b4ad2afdb51f8d4e1723df85e23fe9c9b866ab1d99b9a18048de40bc04ce1d8",
+      "reproducedClipSha256": "4ca11a9b311f3dedf79f21f221919d184438da1dcf1cb43f111ec35740067072"
+    },
+    "method": "Actual acquired donor -> source geometry leg adaptation with bounded physical contact plan -> virtual-root split -> actual skin phase travel -> exact clip and frame/travel hashes checked before any public write.",
+    "runtimeRootXZ": 0,
+    "otherRegistryEntriesPreserved": 523,
+    "priorApprovalsPreserved": 58
+  },
+  "limitations": [
+    "This review approves only action578 with its exact clip and travel metadata. Other torch clips still require whole-motion review.",
+    "Common camera exit interpolation is covered by the separate all-approved playback checkpoint."
+  ],
+  "shippingProps": {
+    "file": ".artifacts/doreumi-contact-audit/torch578-shipping-props.log",
+    "sha256": "3e2b0c9f306d63837daccabeb574477483abb3e5aa60e1e8c219ccfa6e18fed5",
+    "summary": {
+      "samples": 697,
+      "minimumFlameBoxGap": 0.14335881666447747,
+      "flameTriangleIntersections": 0,
+      "maximumGripError": 2.8449465006019636e-16,
+      "shaftIntrusions": 0,
+      "intrusionY": [
+        null,
+        null
+      ]
+    },
+    "scope": "The torch branch was re-audited on all seven shipping clips including newly published578. Later walker-only prop edits do not modify the flame or torch placement branch."
+  }
+}

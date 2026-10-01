@@ -1,0 +1,250 @@
+{
+  "review": "passed",
+  "checkedAt": "2026-09-24T03:33:03.478711+00:00",
+  "masterSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+  "method": "Two individually inspected five-angle/nine-pose normal128px and quarter-speed joint-overlay sheets. Actual playback temporal samples4fps normal/1fps quarter. Quarter uses production expressionForMotion mood mapping. Matching full-source physical-foot contact and21-joint60Hz audits. Rope additionally has8 actual60Hz jump crossings with minimum clearance0.05431 and no body triangle intersections. Source-relative arm changes up to3.899 degrees were inspected in the sampled actual playback, not automatically rejected or passed by angle alone. Not every rendered video frame.",
+  "scope": "Two completed actions only, each45quarter samples with no failures. Mirror48 remains pending because actual face occlusion failed despite framing passing. No approval of other entries.",
+  "motions": [
+    {
+      "id": "meshy:36",
+      "review": "passed",
+      "ambient": true,
+      "clipSha256": "87f0747570d61c227cdf463e66f6cecdd1c6dfa952fa04a9c87145ae40fb02d4",
+      "metadataSha256": "257409be5871ea822376b3151c9669506398eb54a70597ac9fbff83a74c02433",
+      "visualFinding": "Hand reaches cheek with smooth wrist and elbow; tilt and release remain readable.",
+      "sourcePlantedPairs": 666,
+      "maximumSourceConfirmedSlipFractionHeight": 0.005110539807598932,
+      "largestIntroducedWorld": {
+        "bone": "wristR",
+        "from": 1.4333333333333333,
+        "time": 1.45,
+        "sourceTime": 0.75,
+        "targetLocalDegrees": 1.4133441751420326,
+        "targetWorldDegrees": 5.364610159402003,
+        "sourceLocalDegrees": 0.8627446538705018,
+        "sourceWorldDegrees": 1.4652325197053186,
+        "jointDistance": 0.029712368687766073
+      },
+      "largestIntroducedLocal": {
+        "bone": "shoulderR",
+        "from": 1.5166666666666666,
+        "time": 1.5333333333333334,
+        "sourceTime": 0.8333333333333335,
+        "targetLocalDegrees": 2.311671673394247,
+        "targetWorldDegrees": 2.4166621023824444,
+        "sourceLocalDegrees": 0.14942672311212704,
+        "sourceWorldDegrees": 0.26682577682787234,
+        "jointDistance": 0.0010064109501713744
+      },
+      "visualEvidence": [
+        {
+          "file": "/tmp/doreumi-prop-fixes-small/motion-meshy-36.jpg",
+          "sha256": "db955cee9837e2d438eb19d5e1101646bd3ef798e40fbbc38298cd5a3582b980"
+        },
+        {
+          "file": "/tmp/doreumi-prop-fixes-small/temporal-meshy-36.jpg",
+          "sha256": "e5685134ef4283bd2c6d9976190ee83805f622af2259a2d97a0deb1501361475"
+        },
+        {
+          "file": "/tmp/doreumi-prop-fixes-quarter/motion-meshy-36.jpg",
+          "sha256": "c7a1e83bf8351d20cb4bb0276cb2d821e867cd98e3447c9a77369255ec029c7d"
+        },
+        {
+          "file": "/tmp/doreumi-prop-fixes-quarter/temporal-meshy-36.jpg",
+          "sha256": "153e829b9a83d36e2372d24512cf47398ef5dea9f7e60b20a3353379595d1ba8"
+        }
+      ]
+    },
+    {
+      "id": "meshy:46",
+      "review": "passed",
+      "ambient": true,
+      "clipSha256": "f7d31e5c8821c6e8d0f080c574c03adb5ae097a1463946ae45ada85389fd26f2",
+      "metadataSha256": "12478529f77a6d3261628a9ae79b83a760bb0f7653c1418bd1cece5623b934c6",
+      "visualFinding": "Eight rope jumps have readable wrist grip, airborne feet and recovery; no ninth recovery rotation. Actual60Hz rope clearance is separate numeric evidence.",
+      "sourcePlantedPairs": 103,
+      "maximumSourceConfirmedSlipFractionHeight": 0.0023703894276926258,
+      "largestIntroducedWorld": {
+        "bone": "wristL",
+        "from": 7.15,
+        "time": 7.166666666666667,
+        "sourceTime": 6.466666666666667,
+        "targetLocalDegrees": 1.2286850716542108,
+        "targetWorldDegrees": 6.97464121781358,
+        "sourceLocalDegrees": 3.014238278934407,
+        "sourceWorldDegrees": 4.693730634381063,
+        "jointDistance": 0.025683702808169562
+      },
+      "largestIntroducedLocal": {
+        "bone": "torso",
+        "from": 8.35,
+        "time": 8.366666666666667,
+        "sourceTime": 7.666666666666667,
+        "targetLocalDegrees": 2.0297887768740557,
+        "targetWorldDegrees": 0.63207517292722,
+        "sourceLocalDegrees": 0.12904345878879087,
+        "sourceWorldDegrees": 0.6313964600517201,
+        "jointDistance": 0.014551827182089626
+      },
+      "visualEvidence": [
+        {
+          "file": "/tmp/doreumi-prop-fixes-small/motion-meshy-46.jpg",
+          "sha256": "13bf5a947db00531916010b3878ce267859149b8c748792b3b3d0e70d3b8f4b5"
+        },
+        {
+          "file": "/tmp/doreumi-prop-fixes-small/temporal-meshy-46.jpg",
+          "sha256": "2720d47ed0544e89c502805120ab7c3428a18954efa468dbe3e3dce3ea850a3f"
+        },
+        {
+          "file": "/tmp/doreumi-prop-fixes-quarter/motion-meshy-46.jpg",
+          "sha256": "b26e3587b4757ce8e637f44d00beab4a17cbd06e5369b1b5cdcf25419389b860"
+        },
+        {
+          "file": "/tmp/doreumi-prop-fixes-quarter/temporal-meshy-46.jpg",
+          "sha256": "d52c4f96766405677fcfbccf5243feffbe64ca38673a01c140e948a49716e599"
+        }
+      ]
+    }
+  ],
+  "propChecks": {
+    "rope-46.json": {
+      "actionId": 46,
+      "clipSha256": "f7d31e5c8821c6e8d0f080c574c03adb5ae097a1463946ae45ada85389fd26f2",
+      "masterSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+      "propsSha256": "3afb73cd723457b44a2e9c2404a3e79ac81faa79c1e45b910c015111ef430d54",
+      "method": "Full decoded master triangles; rope centerline at four samples per segment excluding held endpoints; triangle closest-point radius 0.011 plus double-sided ray parity for inside points.",
+      "samples": 102,
+      "totalSurfaceIntersections": 0,
+      "totalInsidePoints": 0
+    },
+    "rope-46-timing.json": {
+      "actionId": 46,
+      "clipSha256": "f7d31e5c8821c6e8d0f080c574c03adb5ae097a1463946ae45ada85389fd26f2",
+      "masterSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+      "propsSha256": "3afb73cd723457b44a2e9c2404a3e79ac81faa79c1e45b910c015111ef430d54",
+      "fps": 60,
+      "basis": "Actual rope centerline sampled four times per segment; lower-arc XZ containment within each decoded foot skin convex hull. Clearance subtracts actual minimum sole Y and the 0.011 tube radius. Both feet must be airborne during each lower crossing.",
+      "groups": {
+        "L": [
+          {
+            "start": 1,
+            "end": 1.05,
+            "samples": 4,
+            "minimumClearance": 0.06995395621432185,
+            "minimumOtherSole": 0.09071735488375277
+          },
+          {
+            "start": 2.033333333333333,
+            "end": 2.0833333333333335,
+            "samples": 4,
+            "minimumClearance": 0.054915124699682155,
+            "minimumOtherSole": 0.08247774899387728
+          },
+          {
+            "start": 3.066666666666667,
+            "end": 3.1166666666666667,
+            "samples": 4,
+            "minimumClearance": 0.06824613177849878,
+            "minimumOtherSole": 0.09093273729017448
+          },
+          {
+            "start": 4.1,
+            "end": 4.15,
+            "samples": 4,
+            "minimumClearance": 0.06217427153524244,
+            "minimumOtherSole": 0.0815826533660533
+          },
+          {
+            "start": 5.166666666666667,
+            "end": 5.216666666666667,
+            "samples": 4,
+            "minimumClearance": 0.06519584698109246,
+            "minimumOtherSole": 0.0896126992109425
+          },
+          {
+            "start": 6.266666666666667,
+            "end": 6.333333333333333,
+            "samples": 5,
+            "minimumClearance": 0.07509270940616594,
+            "minimumOtherSole": 0.09734040628327079
+          },
+          {
+            "start": 7.383333333333334,
+            "end": 7.416666666666667,
+            "samples": 3,
+            "minimumClearance": 0.10054201583992681,
+            "minimumOtherSole": 0.10641803708774455
+          },
+          {
+            "start": 8.483333333333333,
+            "end": 8.516666666666667,
+            "samples": 3,
+            "minimumClearance": 0.08442364785449083,
+            "minimumOtherSole": 0.12227839273187757
+          }
+        ],
+        "R": [
+          {
+            "start": 0.9833333333333333,
+            "end": 1.05,
+            "samples": 5,
+            "minimumClearance": 0.06141809626515868,
+            "minimumOtherSole": 0.0892306048531104
+          },
+          {
+            "start": 2.0166666666666666,
+            "end": 2.0833333333333335,
+            "samples": 5,
+            "minimumClearance": 0.0543094274857949,
+            "minimumOtherSole": 0.07571531849504565
+          },
+          {
+            "start": 3.066666666666667,
+            "end": 3.1166666666666667,
+            "samples": 4,
+            "minimumClearance": 0.06593273716848166,
+            "minimumOtherSole": 0.0932461319001916
+          },
+          {
+            "start": 4.1,
+            "end": 4.15,
+            "samples": 4,
+            "minimumClearance": 0.05658265324436049,
+            "minimumOtherSole": 0.08717427165693525
+          },
+          {
+            "start": 5.15,
+            "end": 5.216666666666667,
+            "samples": 5,
+            "minimumClearance": 0.0595206611526877,
+            "minimumOtherSole": 0.08567302650755648
+          },
+          {
+            "start": 6.266666666666667,
+            "end": 6.316666666666666,
+            "samples": 4,
+            "minimumClearance": 0.07234040616157797,
+            "minimumOtherSole": 0.10048146229601151
+          },
+          {
+            "start": 7.366666666666666,
+            "end": 7.416666666666667,
+            "samples": 4,
+            "minimumClearance": 0.08141803696605174,
+            "minimumOtherSole": 0.12554201596161962
+          },
+          {
+            "start": 8.466666666666667,
+            "end": 8.516666666666667,
+            "samples": 4,
+            "minimumClearance": 0.09727839261018476,
+            "minimumOtherSole": 0.10942364797618365
+          }
+        ]
+      },
+      "minimumClearance": 0.0543094274857949,
+      "minimumOtherSole": 0.07571531849504565,
+      "pass": true
+    }
+  }
+}

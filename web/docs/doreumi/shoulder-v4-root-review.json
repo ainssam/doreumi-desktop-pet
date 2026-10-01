@@ -1,0 +1,318 @@
+{
+  "status": "gesture-surface-reviewed-rejected-pending-lower-torso-weight-correction",
+  "approved": false,
+  "modelSha256": "92fc5f13c0f9cfed881cf81dfe30053f57711249bac0f3542cb977202e10218b",
+  "normal": [
+    27,
+    36,
+    595,
+    596
+  ],
+  "quarter": [
+    27,
+    36,
+    595,
+    596
+  ],
+  "observations": "Round shoulder-to-forearm silhouette preserved during lifted arms, waves and lateral sways. The white armpit/wrist fold seen on595 is absent in the inspected25-pose3-angle window and45degree center. This is a skin-only diagnostic using current public clips;595 pending floor candidate is not promoted. Newmaster requires85clip regression and406/451 re-solved palm support review. Quarter-speed gesture sheets and playback also inspected. Independent visible-face screening found remaining lower-torso folds on354 and increased exposure on40 (18 to48 hits); v4 is not eligible for public adoption. These numerical findings are not yet root screenshot reviewed.",
+  "captures": [
+    {
+      "actionId": 27,
+      "speed": "1",
+      "clipSha256": "78b956bea8c19583ef4ff890785b1a3ea2e0a5520bd40dc1f9d7b10946669065",
+      "reportSha256": "13794f9db0629e48ec48a66d82bb3b261157c32f5dc7b18095b7f891ec4eb8f7",
+      "runtimeBundleSha256": "c7172054e204d463852777c8a498e92378029acf3bfd9cdb0deebbcc63f22241",
+      "coverage": {
+        "firstTime": 0,
+        "lastTime": 7.549799999999979,
+        "duration": 7.733333174387614,
+        "tolerance": 0.35,
+        "observedFrames": 28,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1,
+        "stableIdleAt": 8.40269999999553,
+        "settledIdleSeconds": 2.2416000000014904
+      },
+      "images": [
+        {
+          "path": "/tmp/doreumi-shoulder-v4-gestures-1/motion-meshy-27.jpg",
+          "sha256": "16d86a007938cbe53c9574881821cf16d76510588c29d5cc67151b7e7791e632",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-shoulder-v4-gestures-1/playback-meshy-27.jpg",
+          "sha256": "ac8933f5824cdc263d0d77aa41803bf32db1f592b735b8c61dbd0c20a97f4023",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 36,
+      "speed": "1",
+      "clipSha256": "87f0747570d61c227cdf463e66f6cecdd1c6dfa952fa04a9c87145ae40fb02d4",
+      "reportSha256": "13794f9db0629e48ec48a66d82bb3b261157c32f5dc7b18095b7f891ec4eb8f7",
+      "runtimeBundleSha256": "c7172054e204d463852777c8a498e92378029acf3bfd9cdb0deebbcc63f22241",
+      "coverage": {
+        "firstTime": 0,
+        "lastTime": 13.000100000000188,
+        "duration": 13.066666666666666,
+        "tolerance": 0.35,
+        "observedFrames": 47,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1,
+        "stableIdleAt": 13.565,
+        "settledIdleSeconds": 2.23839999999851
+      },
+      "images": [
+        {
+          "path": "/tmp/doreumi-shoulder-v4-gestures-1/motion-meshy-36.jpg",
+          "sha256": "de8439c779bc5f80a5b2d9fb1ad4922e0db57084206f919b0526582f7968d9ca",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-shoulder-v4-gestures-1/playback-meshy-36.jpg",
+          "sha256": "61ec4097a19690e6c425013627014577a3d22f4092345f280218339c8f88e139",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 595,
+      "speed": "1",
+      "clipSha256": "eab4298211c2d0f5937ce4fb0e200b44dea7828ff33308acab0e8a8d9edb3f7d",
+      "reportSha256": "13794f9db0629e48ec48a66d82bb3b261157c32f5dc7b18095b7f891ec4eb8f7",
+      "runtimeBundleSha256": "c7172054e204d463852777c8a498e92378029acf3bfd9cdb0deebbcc63f22241",
+      "coverage": {
+        "firstTime": 0,
+        "lastTime": 4.517999999999992,
+        "duration": 4.799999952316284,
+        "tolerance": 0.35,
+        "observedFrames": 17,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1,
+        "stableIdleAt": 5.36259999999404,
+        "settledIdleSeconds": 2.00010000000149
+      },
+      "images": [
+        {
+          "path": "/tmp/doreumi-shoulder-v4-gestures-1/motion-meshy-595.jpg",
+          "sha256": "20385bc9f28ddd1da7899d0fd7aa0532976ade542c2ad16d4ffad3d0c38ce878",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-shoulder-v4-gestures-1/playback-meshy-595.jpg",
+          "sha256": "2540c4274992ce04c5afe0b1688a7f015b94d876d0b76cee3cc5e67767501659",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 596,
+      "speed": "1",
+      "clipSha256": "7488f6c7de80c9c29680b54af98ba5c27bdabb6e4f331f1f5ad004c8c0993c92",
+      "reportSha256": "13794f9db0629e48ec48a66d82bb3b261157c32f5dc7b18095b7f891ec4eb8f7",
+      "runtimeBundleSha256": "c7172054e204d463852777c8a498e92378029acf3bfd9cdb0deebbcc63f22241",
+      "coverage": {
+        "firstTime": 0,
+        "lastTime": 6.035499999999978,
+        "duration": 6.099999968210856,
+        "tolerance": 0.35,
+        "observedFrames": 22,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1,
+        "stableIdleAt": 6.59389999999851,
+        "settledIdleSeconds": 2.2706000000014894
+      },
+      "images": [
+        {
+          "path": "/tmp/doreumi-shoulder-v4-gestures-1/motion-meshy-596.jpg",
+          "sha256": "16c45006b40691627ce461e1ae8dd9768eb69c5732ef7ff3644ad6fa6c5c5da6",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-shoulder-v4-gestures-1/playback-meshy-596.jpg",
+          "sha256": "3c89e844705f36c69ae6dc15ab4bbcf831fdd5bd496b54844c2bb827a17e9060",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 27,
+      "speed": "0.25",
+      "clipSha256": "78b956bea8c19583ef4ff890785b1a3ea2e0a5520bd40dc1f9d7b10946669065",
+      "reportSha256": "1e3352da67d184086ce00b0b16b36619c0fffdc0e741b4f4e7c5d698842f53fa",
+      "runtimeBundleSha256": "c7172054e204d463852777c8a498e92378029acf3bfd9cdb0deebbcc63f22241",
+      "coverage": {
+        "firstTime": 0,
+        "lastTime": 7.683424999999996,
+        "duration": 7.733333174387614,
+        "tolerance": 0.35,
+        "observedFrames": 31,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1,
+        "stableIdleAt": 32.77860000000149,
+        "settledIdleSeconds": 2.042899999998511
+      },
+      "images": [
+        {
+          "path": "/tmp/doreumi-shoulder-v4-gestures-0.25/motion-meshy-27.jpg",
+          "sha256": "b1975dd9d39244593eabdf553f80d6982e4c90b3d309fb6f20b0d31779b22220",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-shoulder-v4-gestures-0.25/playback-meshy-27.jpg",
+          "sha256": "291369ebfc0ea77947ab5a8a66045bea603fc4473cd894f118209b9f638f3b04",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 36,
+      "speed": "0.25",
+      "clipSha256": "87f0747570d61c227cdf463e66f6cecdd1c6dfa952fa04a9c87145ae40fb02d4",
+      "reportSha256": "1e3352da67d184086ce00b0b16b36619c0fffdc0e741b4f4e7c5d698842f53fa",
+      "runtimeBundleSha256": "c7172054e204d463852777c8a498e92378029acf3bfd9cdb0deebbcc63f22241",
+      "coverage": {
+        "firstTime": 0,
+        "lastTime": 12.829749999999924,
+        "duration": 13.066666666666666,
+        "tolerance": 0.35,
+        "observedFrames": 51,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1,
+        "stableIdleAt": 54.43410000000149,
+        "settledIdleSeconds": 2.076299999997019
+      },
+      "images": [
+        {
+          "path": "/tmp/doreumi-shoulder-v4-gestures-0.25/motion-meshy-36.jpg",
+          "sha256": "b96780b778a2ad4b97c3e35b3e57f040d918482ea6ebe92ec6ab8c9e85d7f4a4",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-shoulder-v4-gestures-0.25/playback-meshy-36.jpg",
+          "sha256": "95b938ab37e23a1ddcb421738d756ccc78c9464329b47d4581043564f6e5d2be",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 595,
+      "speed": "0.25",
+      "clipSha256": "eab4298211c2d0f5937ce4fb0e200b44dea7828ff33308acab0e8a8d9edb3f7d",
+      "reportSha256": "1e3352da67d184086ce00b0b16b36619c0fffdc0e741b4f4e7c5d698842f53fa",
+      "runtimeBundleSha256": "c7172054e204d463852777c8a498e92378029acf3bfd9cdb0deebbcc63f22241",
+      "coverage": {
+        "firstTime": 0,
+        "lastTime": 4.545500000000013,
+        "duration": 4.799999952316284,
+        "tolerance": 0.35,
+        "observedFrames": 19,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1,
+        "stableIdleAt": 21.3155,
+        "settledIdleSeconds": 2.031200000002979
+      },
+      "images": [
+        {
+          "path": "/tmp/doreumi-shoulder-v4-gestures-0.25/motion-meshy-595.jpg",
+          "sha256": "a10ac38f99df270d1f381eb9d949f52a061824846871f2fd627444242b790942",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-shoulder-v4-gestures-0.25/playback-meshy-595.jpg",
+          "sha256": "6409d79e7d5f6274370d8fdf5b8e575d80410a20e299081e29f010023cc8a065",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 596,
+      "speed": "0.25",
+      "clipSha256": "7488f6c7de80c9c29680b54af98ba5c27bdabb6e4f331f1f5ad004c8c0993c92",
+      "reportSha256": "1e3352da67d184086ce00b0b16b36619c0fffdc0e741b4f4e7c5d698842f53fa",
+      "runtimeBundleSha256": "c7172054e204d463852777c8a498e92378029acf3bfd9cdb0deebbcc63f22241",
+      "coverage": {
+        "firstTime": 0,
+        "lastTime": 5.875575000000013,
+        "duration": 6.099999968210856,
+        "tolerance": 0.35,
+        "observedFrames": 24,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1,
+        "stableIdleAt": 26.59230000000447,
+        "settledIdleSeconds": 2.1172999999970195
+      },
+      "images": [
+        {
+          "path": "/tmp/doreumi-shoulder-v4-gestures-0.25/motion-meshy-596.jpg",
+          "sha256": "59f373b66e72011a5a4bc8ff5b26d37e7840c84f47b0c4a28d307308f18f6e47",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-shoulder-v4-gestures-0.25/playback-meshy-596.jpg",
+          "sha256": "ed086925147d0e1037859e760a8ef957674d0da9067bfd955e952f494377f053",
+          "rootViewed": true
+        }
+      ]
+    }
+  ],
+  "focus": {
+    "reportSha256": "87deea4e68186e685c1e713bc54ab171e5b2b1c9f91749423c712c9bc288187f",
+    "runtimeBundleSha256": "e469151d85555620ad4c7ea65eded3546b77ae5c40162cb5ed78d86b1c7d3bad",
+    "images": [
+      {
+        "path": "/tmp/doreumi-shoulder-v4-focus/motion-meshy-595.jpg",
+        "sha256": "3bcfef9710a35c2f690310a31bc964cd531e31681bd1bf620b4810a7b9884686",
+        "rootViewed": true
+      },
+      {
+        "path": "/tmp/doreumi-shoulder-v4-focus/action-meshy-595-45-0.5833333391282294.png",
+        "sha256": "849f898d9dc7e6cdf423b50accacf584ba03d430ba48bb6afedf43986a81eaa4",
+        "rootViewed": true
+      }
+    ]
+  },
+  "baseDiagnostic": {
+    "status": "partial-visual-review-master-rejected",
+    "reportSha256": "b2b18703670048bef815639b81c003d8a22e2fcabaa81393e2e3368602219487",
+    "runtimeBundleSha256": "c7172054e204d463852777c8a498e92378029acf3bfd9cdb0deebbcc63f22241",
+    "automaticPass": true,
+    "rootViewed": [
+      "Walk",
+      "Code"
+    ],
+    "observations": "Walk alternating short strides and counter-swing preserve the rounded silhouette. Code lowers into a seated hold with laptop above the thighs and hands at keyboard. This does not clear the independent lower-torso regression on imported40.",
+    "images": [
+      {
+        "path": "/tmp/doreumi-shoulder-v4-base-1/motion-Walk.jpg",
+        "sha256": "4b8ad518ae5c3cd59904ca7de819ffdb7c0248753d5ee4e11e5d4ae8e6f513d6",
+        "rootViewed": true
+      },
+      {
+        "path": "/tmp/doreumi-shoulder-v4-base-1/playback-Walk.jpg",
+        "sha256": "e3b8c9d62826607b20b8bf130096b2e29d9ed1e14c78a5a24bd8ef649ab09b20",
+        "rootViewed": true
+      },
+      {
+        "path": "/tmp/doreumi-shoulder-v4-base-1/motion-Code.jpg",
+        "sha256": "40c1f31c0dbaadfb3af34230d45d2c9f56845215aba5d8b90ddd08ace86633a6",
+        "rootViewed": true
+      },
+      {
+        "path": "/tmp/doreumi-shoulder-v4-base-1/playback-Code.jpg",
+        "sha256": "768d971d6475b469ea7e747ee5059139e0c4b2c9a1276f2c5873bc4651ddefc3",
+        "rootViewed": true
+      }
+    ],
+    "quarterStatus": "intentionally-stopped-after-v4-rejected-on-imported-lower-torso-regression; no-completion-claim"
+  }
+}

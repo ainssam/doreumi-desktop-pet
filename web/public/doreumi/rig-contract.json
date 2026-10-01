@@ -1,0 +1,865 @@
+{
+  "version": 3,
+  "rigSignature": "21af64ae682478f53aeb5e96e987efd394744bb695c3a34bc0e6f7be99e6c94f",
+  "sourceHash": "34fc1e2d7c127ab693633742598404686d7cb87d0cff6deb6f1f33a3c94d7e67",
+  "height": 2.14,
+  "runtimeRootTranslation": [
+    0,
+    1.1423397064208984,
+    0
+  ],
+  "forward": "+Z",
+  "up": "+Y",
+  "bones": [
+    {
+      "name": "DoreumiRig",
+      "parent": "",
+      "restLocalPosition": [
+        0,
+        0,
+        0
+      ],
+      "restLocalQuaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "restLocalScale": [
+        1,
+        1,
+        1
+      ],
+      "restWorldMatrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "root",
+      "parent": "DoreumiRig",
+      "restLocalPosition": [
+        0,
+        -1.14,
+        0
+      ],
+      "restLocalQuaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "restLocalScale": [
+        1,
+        1,
+        1
+      ],
+      "restWorldMatrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -1.14,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "body",
+      "parent": "root",
+      "restLocalPosition": [
+        0,
+        0.41999999999999993,
+        0
+      ],
+      "restLocalQuaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "restLocalScale": [
+        1,
+        1,
+        1
+      ],
+      "restWorldMatrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -0.72,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "torso",
+      "parent": "body",
+      "restLocalPosition": [
+        0,
+        0.25999999999999995,
+        0
+      ],
+      "restLocalQuaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "restLocalScale": [
+        1,
+        1,
+        1
+      ],
+      "restWorldMatrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -0.46,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "head",
+      "parent": "torso",
+      "restLocalPosition": [
+        0,
+        0.41500000000000004,
+        0.025
+      ],
+      "restLocalQuaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "restLocalScale": [
+        1,
+        1,
+        1
+      ],
+      "restWorldMatrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -0.044999999999999984,
+        0.025,
+        1
+      ]
+    },
+    {
+      "name": "shoulderL",
+      "parent": "torso",
+      "restLocalPosition": [
+        0.4,
+        0.21500000000000002,
+        0
+      ],
+      "restLocalQuaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "restLocalScale": [
+        1,
+        1,
+        1
+      ],
+      "restWorldMatrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0.4,
+        -0.245,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "armL",
+      "parent": "shoulderL",
+      "restLocalPosition": [
+        0.16999999999999993,
+        0,
+        0
+      ],
+      "restLocalQuaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "restLocalScale": [
+        1,
+        1,
+        1
+      ],
+      "restWorldMatrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0.57,
+        -0.245,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "elbowL",
+      "parent": "armL",
+      "restLocalPosition": [
+        0.14300000000000002,
+        -0.178,
+        0.029
+      ],
+      "restLocalQuaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "restLocalScale": [
+        1,
+        1,
+        1
+      ],
+      "restWorldMatrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0.713,
+        -0.423,
+        0.029,
+        1
+      ]
+    },
+    {
+      "name": "wristL",
+      "parent": "elbowL",
+      "restLocalPosition": [
+        0.08700000000000008,
+        -0.09700000000000003,
+        0.030999999999999996
+      ],
+      "restLocalQuaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "restLocalScale": [
+        1,
+        1,
+        1
+      ],
+      "restWorldMatrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0.8,
+        -0.52,
+        0.06,
+        1
+      ]
+    },
+    {
+      "name": "shoulderR",
+      "parent": "torso",
+      "restLocalPosition": [
+        -0.4,
+        0.21500000000000002,
+        0
+      ],
+      "restLocalQuaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "restLocalScale": [
+        1,
+        1,
+        1
+      ],
+      "restWorldMatrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -0.4,
+        -0.245,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "armR",
+      "parent": "shoulderR",
+      "restLocalPosition": [
+        -0.16999999999999993,
+        0,
+        0
+      ],
+      "restLocalQuaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "restLocalScale": [
+        1,
+        1,
+        1
+      ],
+      "restWorldMatrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -0.57,
+        -0.245,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "elbowR",
+      "parent": "armR",
+      "restLocalPosition": [
+        -0.14300000000000002,
+        -0.178,
+        0.029
+      ],
+      "restLocalQuaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "restLocalScale": [
+        1,
+        1,
+        1
+      ],
+      "restWorldMatrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -0.713,
+        -0.423,
+        0.029,
+        1
+      ]
+    },
+    {
+      "name": "wristR",
+      "parent": "elbowR",
+      "restLocalPosition": [
+        -0.08700000000000008,
+        -0.09700000000000003,
+        0.030999999999999996
+      ],
+      "restLocalQuaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "restLocalScale": [
+        1,
+        1,
+        1
+      ],
+      "restWorldMatrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -0.8,
+        -0.52,
+        0.06,
+        1
+      ]
+    },
+    {
+      "name": "thighL",
+      "parent": "body",
+      "restLocalPosition": [
+        0.2675,
+        0,
+        0
+      ],
+      "restLocalQuaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "restLocalScale": [
+        1,
+        1,
+        1
+      ],
+      "restWorldMatrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0.2675,
+        -0.72,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "kneeL",
+      "parent": "thighL",
+      "restLocalPosition": [
+        0,
+        -0.17000000000000004,
+        0.015
+      ],
+      "restLocalQuaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "restLocalScale": [
+        1,
+        1,
+        1
+      ],
+      "restWorldMatrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0.2675,
+        -0.89,
+        0.015,
+        1
+      ]
+    },
+    {
+      "name": "shinL",
+      "parent": "kneeL",
+      "restLocalPosition": [
+        0,
+        0,
+        0
+      ],
+      "restLocalQuaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "restLocalScale": [
+        1,
+        1,
+        1
+      ],
+      "restWorldMatrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0.2675,
+        -0.89,
+        0.015,
+        1
+      ]
+    },
+    {
+      "name": "footL",
+      "parent": "shinL",
+      "restLocalPosition": [
+        0,
+        -0.15499999999999992,
+        0.05
+      ],
+      "restLocalQuaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "restLocalScale": [
+        1,
+        1,
+        1
+      ],
+      "restWorldMatrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0.2675,
+        -1.045,
+        0.065,
+        1
+      ]
+    },
+    {
+      "name": "thighR",
+      "parent": "body",
+      "restLocalPosition": [
+        -0.2675,
+        0,
+        0
+      ],
+      "restLocalQuaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "restLocalScale": [
+        1,
+        1,
+        1
+      ],
+      "restWorldMatrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -0.2675,
+        -0.72,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "kneeR",
+      "parent": "thighR",
+      "restLocalPosition": [
+        0,
+        -0.17000000000000004,
+        0.015
+      ],
+      "restLocalQuaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "restLocalScale": [
+        1,
+        1,
+        1
+      ],
+      "restWorldMatrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -0.2675,
+        -0.89,
+        0.015,
+        1
+      ]
+    },
+    {
+      "name": "shinR",
+      "parent": "kneeR",
+      "restLocalPosition": [
+        0,
+        0,
+        0
+      ],
+      "restLocalQuaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "restLocalScale": [
+        1,
+        1,
+        1
+      ],
+      "restWorldMatrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -0.2675,
+        -0.89,
+        0.015,
+        1
+      ]
+    },
+    {
+      "name": "footR",
+      "parent": "shinR",
+      "restLocalPosition": [
+        0,
+        -0.15499999999999992,
+        0.05
+      ],
+      "restLocalQuaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "restLocalScale": [
+        1,
+        1,
+        1
+      ],
+      "restWorldMatrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -0.2675,
+        -1.045,
+        0.065,
+        1
+      ]
+    }
+  ],
+  "gait": {
+    "Walk": {
+      "cycleSeconds": 1.15,
+      "stride": 0.145,
+      "stanceFraction": 0.64,
+      "lift": 0.045
+    },
+    "Run": {
+      "cycleSeconds": 0.45,
+      "stride": 0.19,
+      "stanceFraction": 0.48,
+      "lift": 0.09
+    }
+  },
+  "sockets": {
+    "lap": {
+      "parent": "body",
+      "position": [
+        0,
+        0.17,
+        0.265
+      ]
+    },
+    "palmL": {
+      "parent": "wristL",
+      "position": [
+        0.028,
+        -0.035,
+        0.02
+      ]
+    },
+    "palmR": {
+      "parent": "wristR",
+      "position": [
+        -0.028,
+        -0.035,
+        0.02
+      ]
+    }
+  },
+  "inspection": {
+    "version": 3,
+    "bones": 20,
+    "elbows": 2,
+    "wrists": 2,
+    "knees": 2,
+    "kneeVertices": 4435,
+    "neckVertices": 21048,
+    "weldedVertices": 14786,
+    "influencedVertices": 78799,
+    "maxRestError": 8.962990656612968e-8
+  }
+}

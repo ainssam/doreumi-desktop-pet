@@ -1,0 +1,78 @@
+{
+  "scope": "Root inspected all eleven five-view/nine-phase sheets; static only, no ambient approval.",
+  "evidence": "/tmp/doreumi-context-v2",
+  "modelSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+  "runtimeBundleSha256": "95c23725f3d8de6351c9ee9bb4c3774f0de1f94ca7ff5ed7c116c60eb2af0d9f",
+  "clipHashes": {
+    "meshy:29": "5fed27b2ef6b4fc3e308ab7b2187ce1a9ca04dc8ef46789c303fcadbd91d9821",
+    "meshy:32": "bd2e2d53a86af4205adfd58d38915c56d17f0156610ff4edf38d233a2b57f637",
+    "meshy:43": "cae95ab4d6eeebe2e2eb6fe623c244304f946b054b35b62592398ceeb6cfce3a",
+    "meshy:272": "d0ceb36d916828deed2c7904dbbf87c5b8868f18bba648f649116758d3eb3204",
+    "meshy:284": "6403486f397eea361bdb198f1d1471360739a0c1462bbfc7b76fe4ae731f32f2",
+    "meshy:327": "f4bee601df1015dd62f70be12ba5d5f0894d07cb1724ef856d56f9643f55db26",
+    "meshy:551": "3d1cdfa99d71ec5b0278f0e00dd09c767d6567b4618841dc78f8565569ccf296",
+    "meshy:552": "10dede87e4379853c67ee2154cc8b7a794129e3a43066af0dd10c61da4fc7f70",
+    "meshy:565": "9c24abb0fb4f2a3eb8ebe5147e33f2e6b7d87ea329ddc7760f978a2e4ecde59d",
+    "meshy:598": "db55c79c0aba9993089ccf4cb3c33a332d27540b6c071cbd8060a7bec303d20b",
+    "meshy:611": "326f5c063e2d250a467370d5ffa6b73f25254a6264588efe9edde6e9d657ea1d"
+  },
+  "numericPass": true,
+  "motions": [
+    {
+      "id": 29,
+      "finding": "Phone stays visibly attached to the hand while the other arm gestures.",
+      "review": "pending"
+    },
+    {
+      "id": 32,
+      "finding": "Low chair supports sitting and forward leaning; entry and exit need continuous timing check.",
+      "review": "pending"
+    },
+    {
+      "id": 43,
+      "finding": "Small handled bag hangs from the hand and stays outside the body.",
+      "review": "pending"
+    },
+    {
+      "id": 272,
+      "finding": "Body support is now present, but cushion has jagged column-shaped ridges; replace with a smooth continuous cushion before approval.",
+      "review": "pending",
+      "followup": "v3 smooth continuous cushion inspected in all five views and quarter-speed temporal video frames. Visible columns were removed and torso support retained. Normal/small playback remains pending. /tmp/doreumi-context-272-v3"
+    },
+    {
+      "id": 284,
+      "finding": "Gift starts on the ground and later follows the hand. Verify exact pickup contact and transition in slow playback.",
+      "review": "pending"
+    },
+    {
+      "id": 327,
+      "finding": "Forward kettle grip replaces long triangular extension; torso bend and elbows remain coherent.",
+      "review": "pending"
+    },
+    {
+      "id": 551,
+      "finding": "Box now stays close to both hands without fork-like extensions.",
+      "review": "pending"
+    },
+    {
+      "id": 552,
+      "finding": "Both buckets remain upright and near hands during large torso bends; continuous carrying travel still pending.",
+      "review": "pending"
+    },
+    {
+      "id": 565,
+      "finding": "Curved umbrella canopy is readable and fully framed in five views.",
+      "review": "pending"
+    },
+    {
+      "id": 598,
+      "finding": "Turning kettlebell variation retains the improved short grip and forward arm bend.",
+      "review": "pending"
+    },
+    {
+      "id": 611,
+      "finding": "Box-carry variation retains original arm proportions and close hand contact.",
+      "review": "pending"
+    }
+  ]
+}

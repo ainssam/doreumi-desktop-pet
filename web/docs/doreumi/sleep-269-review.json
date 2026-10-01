@@ -1,0 +1,237 @@
+{
+  "version": 1,
+  "checkedAt": "2026-09-24T04:51:36.456Z",
+  "masterSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+  "review": "passed",
+  "reviewer": "root visual lane and rig_audit independent support/joint audit",
+  "scope": "Explicit floor-sleep adaptation. Root inspected normal128 and quarter-speed five-view/nine-pose sheets and actual4fps/1fps playback, then approved continuous doze/recline and seated rise.",
+  "motions": [
+    {
+      "id": "meshy:269",
+      "review": "passed",
+      "ambient": true,
+      "clipSha256": "31aef9c4e7abd3b9e2861d05e85dc42d2f65202b7d2daf1f0f9c29288a591b4e",
+      "metadataSha256": "ac988a5ac029d3bcfbd77b87df7e5e5869be1a41954fa7bb16bfd1f954c8afbc",
+      "sourceSha256": "b7684e827b75498803828a5ef8e688452e98fb9edb1f5259dd33d02ee9d0dab5",
+      "sourceSupportInterpretation": "Donor rest floor is0 but authored sleep skin is0.1609–0.5744 above it. There are no literal rest-floor foot-contact pairs. The target explicitly supports its hip/back/torso on the floor; this approval does not claim an airborne foot is planted.",
+      "targetSupportType": "feet to hip/back/torso to seated rise and feet",
+      "sourceBodyRange": {
+        "minimum": 0.16088921912732473,
+        "maximum": 0.5743725942740301
+      },
+      "targetCoreBodyRange": {
+        "minimum": 0.0010507529822761513,
+        "maximum": 0.003027927692505483
+      },
+      "wholeClip120HzMinimum": {
+        "minY": 0.0010507529822761513,
+        "time": 2.9166666666666665
+      },
+      "jointAudit": {
+        "fps": 60,
+        "jointsChecked": 21,
+        "maximumCoreLocal": {
+          "bone": "wristL",
+          "from": 1.8333333333333333,
+          "time": 1.85,
+          "sourceTime": 0.03333333333333366,
+          "targetLocalDegrees": 8.658864415111527,
+          "targetWorldDegrees": 8.329422215988043,
+          "sourceLocalDegrees": 8.658733621563687,
+          "sourceWorldDegrees": 8.332068092707901,
+          "jointDistance": 0.010741301289948496
+        },
+        "maximumCoreWorld": {
+          "bone": "wristL",
+          "from": 1.8166666666666667,
+          "time": 1.8333333333333333,
+          "sourceTime": 0.01666666666666683,
+          "targetLocalDegrees": 8.658600420243356,
+          "targetWorldDegrees": 8.360079663148982,
+          "sourceLocalDegrees": 8.658733700009016,
+          "sourceWorldDegrees": 8.363047647615401,
+          "jointDistance": 0.010995013893933385
+        },
+        "largestIntroducedLocal": {
+          "bone": "torso",
+          "from": 3.35,
+          "time": 3.3666666666666667,
+          "sourceTime": 1.5500000000000003,
+          "targetLocalDegrees": 1.5204672253046962,
+          "targetWorldDegrees": 1.7912852810011568,
+          "sourceLocalDegrees": 0,
+          "sourceWorldDegrees": 1.7268671284272292,
+          "jointDistance": 0.0027320554104956992
+        },
+        "largestIntroducedWorld": {
+          "bone": "torso",
+          "from": 4.1,
+          "time": 4.116666666666666,
+          "sourceTime": 2.3,
+          "targetLocalDegrees": 0.1611944754481744,
+          "targetWorldDegrees": 1.4108821967572258,
+          "sourceLocalDegrees": 0.009777038408500525,
+          "sourceWorldDegrees": 0.7653229133723927,
+          "jointDistance": 0.004595324972887152
+        },
+        "maximumTransitionWorld": {
+          "bone": "wristR",
+          "from": 7.883333333333334,
+          "time": 7.9,
+          "sourceTime": 5.733333110809326,
+          "targetLocalDegrees": 1.7234418431547318,
+          "targetWorldDegrees": 3.9923517389594774,
+          "sourceLocalDegrees": 0,
+          "sourceWorldDegrees": 0,
+          "jointDistance": 0.01787314746290403
+        },
+        "interpretation": "The fastest core wrist8.6589degrees per60Hz sample matches the original source8.6587. Largest added local step is torso1.5205degrees and world excess0.6456degrees. No isolated new branch jump found."
+      },
+      "representativeSupport": [
+        {
+          "sourceTime": 0,
+          "sourceBodyMinY": 0.183133589071767,
+          "targetBodyMinY": 0.0015640240532040495,
+          "minimumInfluences": [
+            {
+              "bone": "footR",
+              "weight": 1
+            }
+          ],
+          "sourceWristY": {
+            "L": 0.7900798961545707,
+            "R": 0.778899894588605
+          }
+        },
+        {
+          "sourceTime": 1.4333332777023315,
+          "sourceBodyMinY": 0.2904491816520459,
+          "targetBodyMinY": 0.002000010653985021,
+          "minimumInfluences": [
+            {
+              "bone": "body",
+              "weight": 0.44747433066368103
+            },
+            {
+              "bone": "thighR",
+              "weight": 0.5425205826759338
+            },
+            {
+              "bone": "torso",
+              "weight": 0.010005091316998005
+            }
+          ],
+          "sourceWristY": {
+            "L": 0.6500502965747061,
+            "R": 0.7005475268957102
+          }
+        },
+        {
+          "sourceTime": 2.866666555404663,
+          "sourceBodyMinY": 0.5100194125128418,
+          "targetBodyMinY": 0.0022649194223310597,
+          "minimumInfluences": [
+            {
+              "bone": "body",
+              "weight": 0.7539454102516174
+            },
+            {
+              "bone": "thighR",
+              "weight": 0.0011556264944374561
+            },
+            {
+              "bone": "torso",
+              "weight": 0.2448989599943161
+            }
+          ],
+          "sourceWristY": {
+            "L": 0.6198101749096208,
+            "R": 0.6512271837061698
+          }
+        },
+        {
+          "sourceTime": 4.299999833106995,
+          "sourceBodyMinY": 0.5313927966529705,
+          "targetBodyMinY": 0.0022634129195969743,
+          "minimumInfluences": [
+            {
+              "bone": "body",
+              "weight": 0.00360700860619545
+            },
+            {
+              "bone": "torso",
+              "weight": 0.9963929653167725
+            }
+          ],
+          "sourceWristY": {
+            "L": 0.6342495023656237,
+            "R": 0.6662335860244419
+          }
+        },
+        {
+          "sourceTime": 5.733333110809326,
+          "sourceBodyMinY": 0.5206543961234033,
+          "targetBodyMinY": 0.0020017962349687755,
+          "minimumInfluences": [
+            {
+              "bone": "body",
+              "weight": 0.00360700860619545
+            },
+            {
+              "bone": "torso",
+              "weight": 0.9963929653167725
+            }
+          ],
+          "sourceWristY": {
+            "L": 0.627526546568963,
+            "R": 0.6447255772742213
+          }
+        }
+      ],
+      "visualEvidence": [
+        {
+          "file": "/tmp/doreumi-library-462-508/report.json",
+          "sha256": "3e7179b94d3d045be9bf33f4b0bf90892e359d277e0f1ce2d0c6fa12102ab6d8"
+        },
+        {
+          "file": "/tmp/doreumi-library-462-508/motion-meshy-269.jpg",
+          "sha256": "1228c536524f4e04e6c71d0a0b87b39935bb21de5dcbee9b20cfec0e0e2b6050"
+        },
+        {
+          "file": "/tmp/doreumi-library-462-508/temporal-meshy-269.jpg",
+          "sha256": "5be88ea4254fc813633754e8cbf34736c46eb8cb3d48f87a2ec739682a20139a"
+        },
+        {
+          "file": "/tmp/doreumi-floor-stomp-quarter-v2/report.json",
+          "sha256": "d89ab84ae169125418e6668e404bd31363bbec66f1b3308c1b04631c4281d20d"
+        },
+        {
+          "file": "/tmp/doreumi-floor-stomp-quarter-v2/motion-meshy-269.jpg",
+          "sha256": "0d281a841bcdc36c6748ab806968a14523f9e1559e2f6a273e23b22a4c6ec6be"
+        },
+        {
+          "file": "/tmp/doreumi-floor-stomp-quarter-v2/temporal-meshy-269.jpg",
+          "sha256": "6a066d8ebe6ed3c34e8ebabc8396df3b2e7a10eb1c6d3343f3f52aa344539fa5"
+        }
+      ],
+      "numericEvidence": [
+        {
+          "file": ".artifacts/doreumi-camera-checkpoint/support-interpretation.json",
+          "sha256": "75fe05265059d75061de1b7a25e6ca5ad87b1a290b81e24a0a9ed288a22fffcc"
+        },
+        {
+          "file": ".artifacts/doreumi-contact-audit/review-b-independent.json",
+          "sha256": "74f79221965563daeb5fa197795b95dc62cf9c7f714e3bd80e4909714514a3db"
+        },
+        {
+          "file": ".artifacts/doreumi-contact-audit/review-b-latest-joints.json",
+          "sha256": "87e1048e8e98f81d61dfee252f227d3935914f388376a142503e1128a37c66af"
+        },
+        {
+          "file": ".artifacts/doreumi-transition-audit/sleep-falls-shipping.json",
+          "sha256": "4d8c0c9bd7a22c4bce87278cd0c55446110166b4327887da4066acb85e866d20"
+        }
+      ]
+    }
+  ]
+}

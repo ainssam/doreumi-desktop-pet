@@ -1,0 +1,305 @@
+{
+  "scope": "Root individually inspected all 42 five-view/nine-phase sheets. Static evidence only; all pending continuous, contact, joint and small-size review.",
+  "evidence": "/tmp/doreumi-library-365-422",
+  "numericPass": true,
+  "modelSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+  "runtimeBundleSha256": "a37bdcd76298f2304fddbfa6accf0bbeb542738765270d04a02f7618697f4d0d",
+  "clipHashes": {
+    "meshy:365": "d48d7d06306323ee4dac5ea0be380eb1830bc9d7e5118ae4183925be368423e2",
+    "meshy:366": "fbf52886315ace0e31b9c5ae10c0901747552b7f38108983f825dc7e48816518",
+    "meshy:367": "d3bbca963d7faacf5f5595510daf5d6c943333075e39d1262e5505fdaaf6faac",
+    "meshy:368": "0659fde5dd2334170a29971ba75de2c1383a04e3cd1fa9eab35b26b660eeeb04",
+    "meshy:369": "176e396ad4e01419333296b3cd7af73da8d10b5e4e5cc3333408ea1c1b65bed7",
+    "meshy:370": "4d9a045ae47532dafee87502d2c0bdcd574f066ef49efbcc56a1b3f638e85bc4",
+    "meshy:372": "6cc1788ef1552841b62f54bad4b9d3d7ba850c94314d82d8ec8a7ccd09d032ec",
+    "meshy:375": "a7fc3a2eec6098524e50dfe5a00cfb08548345ae476bd1311ca27e8788df0a86",
+    "meshy:376": "d2ecd26b9163a624864a4a2aa379fff0fbf136ebe267c3458c5ff413f85b006e",
+    "meshy:377": "fde448de5f581a33a2fbc66d845215d7535182af4e93d67d0ad99b58929d6933",
+    "meshy:378": "d2c980bfaded67266d14813d896206c27e9b14f4d6881d2d8c1480271b21f9af",
+    "meshy:379": "87f7cb187f28fe87476784142abd984283b4e85c44b48474143ae3fbfeddcf99",
+    "meshy:381": "4b69ae45b9b9a9ec9be5affb3376c72d3971bafe9f6fd091df3dd140c38098a3",
+    "meshy:382": "ece624a2914646cdd6cc564d17a2a0b73a4e6f8b7b2c8221260209b2e7e23714",
+    "meshy:384": "21457537bbce610c2987e9df1e65eaad3b3b6aae78233176c52770bb42677663",
+    "meshy:385": "6dae780b0725d0a1b50461050bd8dfd0602b82a61a9cdd890e1a7f2129d00a40",
+    "meshy:386": "5780eefcfe2d296ed1d1961ccf605bba7ed3b22fa1ce07ef132480d8da06e345",
+    "meshy:387": "f1ed154012e1509aca94b31068bee74fdbc0afcf20cbe484e479266a5035c282",
+    "meshy:388": "6332ed94b57c807bee066455ef445bc695ebe59275bcb407bbdc3ec4f5fbcfbe",
+    "meshy:391": "803fccbd84f77e7e507505a6cfe5d96218bf31ec342a9fb43763dc193286f3d0",
+    "meshy:392": "051ffdd5c6aa5bdd8c850245a79235247cc807b3f9e66d13d719af98f7f98117",
+    "meshy:394": "7ac1c4e4054ecc0a111218783334c54a40a3895ad711cc9149e732f6e55308cd",
+    "meshy:395": "fdd608afa824387f3802aa2c2f04989075de0fb79ab6df51d39ad1c8ef737137",
+    "meshy:396": "0fcd8ce7fc761317e2c558d387e9f37af53086ed9e15ed22aa430051ccfddbfe",
+    "meshy:397": "9e755ec49ce194ffc7893c05f44f45a44c5f3102491bc9ac9fb35203ef764a92",
+    "meshy:399": "14dfaace3a7b3d40f951a63b503805bef1988ef6b7fedf6014843c159ac910fb",
+    "meshy:401": "65c4313ebf84b70254223394107793012d32d9c2a937101bab8fd794f5987403",
+    "meshy:402": "b974ab8a7e1cce6945c5f9bb66d964478bb9fa65ffce3a93692dbb90d7902a85",
+    "meshy:403": "2b140f5812e47496ba0279e89968873482d9289f48c3f0258bffb4ac8bafdbc9",
+    "meshy:404": "cf5588da9a9cb775eaa08c6e5e7d6b9c5284a54693a5a194590e7f89b8b96f15",
+    "meshy:405": "f2a450d747071d9177a54ae22bc54aa7d8a0e52a0734cb50fe3298aad54f2ddf",
+    "meshy:406": "ad01c13e5ae556878f070c42f66ceebde7edcfbbdf78635520ad32abb29f35f8",
+    "meshy:408": "e255379bb542163cce2a293f7ec47b98dbdd129f58e43687bf18269e7c73f718",
+    "meshy:409": "8248496f5814d4dc7854dc398995f9ad290f1092301e9a4c209e0d56cd351ee7",
+    "meshy:412": "82718f16aa253a7877862d1fac4c945814fe4ff61decd53c1502ac963c05a7be",
+    "meshy:413": "803ed6281b53dce6a9c1a9dca3e1290241488fb7bfcbf5aa209aec1811be66de",
+    "meshy:414": "8ec6dc3d54e770dd3a3bb15871cd6f19508d6e568ab20823d3463c2ae908a7e3",
+    "meshy:415": "08760206121a61a4a6d92e04912d85f9f4808504391b7a874be87241a1e15972",
+    "meshy:416": "71cb146b5611a0aab73d2fa14ca930944cf985e04426b468a5e8f8737c9d77ed",
+    "meshy:417": "aa0e8d2912a53d79f442214f9716fb74bdd2bd232b5e4d327982dc1d5cf42a3a",
+    "meshy:420": "381b347c9ab1a747d2ce430277578e1d7256bdc1f168205f181c93fbe3a333d1",
+    "meshy:422": "9799f566d2def1890605be9fce8163e488698b12347c80c2a5547162e509b8ba"
+  },
+  "motions": [
+    {
+      "id": 365,
+      "label": "Kneel_on_One_Knee_and_Stand",
+      "finding": "One-knee kneel and rise are visible. Actual supporting knee/sole and entry transition pending.",
+      "review": "pending"
+    },
+    {
+      "id": 366,
+      "label": "falling_down",
+      "finding": "Backward fall into sitting/rolling is coherent in samples; recovery support requires staged transition review.",
+      "review": "pending"
+    },
+    {
+      "id": 367,
+      "label": "SideLying_Reach_Help",
+      "finding": "Side-lying reach is visible, with face turning away from front view. Generic entry/recovery and arm support require correction.",
+      "review": "pending"
+    },
+    {
+      "id": 368,
+      "label": "Angry_To_Tantrum_Sit",
+      "finding": "Tantrum shifts from standing into sitting with raised hand; sitting transitions and supporting surfaces pending.",
+      "review": "pending"
+    },
+    {
+      "id": 369,
+      "label": "Lie_Back_Leg_Swing",
+      "finding": "Leg swing in a reclined/rolled pose remains framed. Entry/recovery and intended source support pending.",
+      "review": "pending"
+    },
+    {
+      "id": 370,
+      "label": "Stand_To_Side_Lying",
+      "finding": "Standing to side lying is readable; generic exit to standing lacks reviewed support sequence.",
+      "review": "pending"
+    },
+    {
+      "id": 372,
+      "label": "Prone_Reach_Help",
+      "finding": "Low prone reaching is subtle; actual hand/belly support and staged entry/exit need correction.",
+      "review": "pending"
+    },
+    {
+      "id": 375,
+      "label": "Handstand_Flip",
+      "finding": "Inverted handstand silhouette puts the head/curl below hands. Genuine hand-supported balance is not established; dedicated adaptation required.",
+      "review": "pending"
+    },
+    {
+      "id": 376,
+      "label": "Punch_Pose",
+      "finding": "Compact punch stance and torso turn visible, original arm proportions retained. Foot pivots and ambient suitability pending.",
+      "review": "pending"
+    },
+    {
+      "id": 377,
+      "label": "Relax_arms_then_strike_battle_pose",
+      "finding": "Relaxed arms into broad stance remain readable; supporting foot pivots pending.",
+      "review": "pending"
+    },
+    {
+      "id": 378,
+      "label": "Large_step_then_high_kick",
+      "finding": "Step, torso lean and short-leg kick visible; full travel, balance and landing review pending.",
+      "review": "pending"
+    },
+    {
+      "id": 379,
+      "label": "Side_jumps_in_horse_stance",
+      "finding": "Repeated squat/hop shapes are clear; continuous contact and landing compression pending.",
+      "review": "pending"
+    },
+    {
+      "id": 381,
+      "label": "Step_Right_for_Exercise",
+      "finding": "Side steps include deep torso dip; actual foot support and stage displacement pending.",
+      "review": "pending"
+    },
+    {
+      "id": 382,
+      "label": "Jump_and_Slam_Back_Down",
+      "finding": "Backward slam/roll is visible; source airborne interval, impact and recovery pending.",
+      "review": "pending"
+    },
+    {
+      "id": 384,
+      "label": "Quick_Step_and_Spin_Dodge",
+      "finding": "Stepping spin preserves attached limbs; stage travel and planted pivot review pending.",
+      "review": "pending"
+    },
+    {
+      "id": 385,
+      "label": "Boxing_Warmup",
+      "finding": "Boxing warmup includes arm flexion and deep side bend; planted support and tempo pending.",
+      "review": "pending"
+    },
+    {
+      "id": 386,
+      "label": "Zombie_Scream",
+      "finding": "Forward scream/bow posture is readable, but neutral test expression does not communicate intent; expressive playback pending.",
+      "review": "pending"
+    },
+    {
+      "id": 387,
+      "label": "Half_Squat_with_Thumb_Up",
+      "finding": "Half squat and raised short hand are visible; thumb shape cannot be assumed on original mitten-like hand.",
+      "review": "pending"
+    },
+    {
+      "id": 388,
+      "label": "Show_Both_Arm_Muscles",
+      "finding": "Both arms flex outward, preserving short limbs. Strong normal/small playback candidate after contact and continuity audit.",
+      "review": "pending"
+    },
+    {
+      "id": 391,
+      "label": "Head_Hold_in_Pain",
+      "finding": "Head-hold gesture keeps hands near shoulders/cheeks, not visibly on top of head. Actual intended head contact requires adapted reachable target.",
+      "review": "pending"
+    },
+    {
+      "id": 392,
+      "label": "Ground_Flip_and_Sweep_Up",
+      "finding": "Inverted ground flip/sweep visible; actual hand/head support and airborne timing need review.",
+      "review": "pending"
+    },
+    {
+      "id": 394,
+      "label": "Backflip_and_Hooks",
+      "finding": "Backflip and short punches are framed; landing and source continuity pending.",
+      "review": "pending"
+    },
+    {
+      "id": 395,
+      "label": "Breakdance_1990",
+      "finding": "Breakdance inversion places head/curl below hands. Unsupported handstand cannot be approved; original proportions need a suitable adaptation.",
+      "review": "pending"
+    },
+    {
+      "id": 396,
+      "label": "Burpee_Exercise",
+      "finding": "Burpee repeats prone posture and raised-arm jump; actual palms versus belly support requires correction.",
+      "review": "pending"
+    },
+    {
+      "id": 397,
+      "label": "360_Power_Spin_Jump",
+      "finding": "Full body spin/jump visible; airborne and landing support pending.",
+      "review": "pending"
+    },
+    {
+      "id": 399,
+      "label": "Step_Step_Turn_Kick",
+      "finding": "Steps, turn and short kick are visible; foot pivots and travel timing pending.",
+      "review": "pending"
+    },
+    {
+      "id": 401,
+      "label": "Sprint_Roll_and_Flip",
+      "finding": "Run/roll/flip sequence remains framed; actual floor support, airborne timing and runway pending.",
+      "review": "pending"
+    },
+    {
+      "id": 402,
+      "label": "Run_and_Leap",
+      "finding": "Short-leg running leap reads clearly; integrated stage displacement, runway and landing pending.",
+      "review": "pending"
+    },
+    {
+      "id": 403,
+      "label": "Victory_Fist_Pump",
+      "finding": "Victory gesture is subtle, with torso bow more visible than fist pump; normal/small playback readability pending.",
+      "review": "pending"
+    },
+    {
+      "id": 404,
+      "label": "Crouch_and_Step_Back",
+      "finding": "Crouch/backstep includes a clear short backward hop; integrated travel/support pending.",
+      "review": "pending"
+    },
+    {
+      "id": 405,
+      "label": "Joyful_Dance_with_Hand_Sway",
+      "finding": "Small happy body and hand sway remains visible from side views; small-size rhythm and foot support pending.",
+      "review": "pending"
+    },
+    {
+      "id": 406,
+      "label": "Thomas_Flair_to_Jump_Up",
+      "finding": "Flair/roll into rising stance visible; true hand support is unverified and requires contact adaptation.",
+      "review": "pending"
+    },
+    {
+      "id": 408,
+      "label": "Jazz_Hands",
+      "finding": "Raised hands and alternating knees are clear and cute at review scale; candidate after continuous joint/contact audit.",
+      "review": "pending"
+    },
+    {
+      "id": 409,
+      "label": "Finger_Wag_No",
+      "finding": "Bent posture and small hand wag visible; individual finger motion is unavailable on original hand mesh.",
+      "review": "pending"
+    },
+    {
+      "id": 412,
+      "label": "victory",
+      "finding": "Both arms spread upward and recover, a strong victory candidate after joint/contact and small playback checks.",
+      "review": "pending"
+    },
+    {
+      "id": 413,
+      "label": "Backflip_and_Rise",
+      "finding": "Backflip ends prone before rising; actual landing, floor support and recovery pending.",
+      "review": "pending"
+    },
+    {
+      "id": 414,
+      "label": "Double_kick_forward",
+      "finding": "Alternating short forward kicks preserve proportions; planted support and continuous balance pending.",
+      "review": "pending"
+    },
+    {
+      "id": 415,
+      "label": "Happy_Sway_Standing",
+      "finding": "Gentle hip/head sway readable in five views; small-size rhythm pending.",
+      "review": "pending"
+    },
+    {
+      "id": 416,
+      "label": "Hit_in_Back_While_Running",
+      "finding": "Running with forward stumble/recoil is visible; travel/contact and mood need playback review.",
+      "review": "pending"
+    },
+    {
+      "id": 417,
+      "label": "Hop_with_Arms_Raised",
+      "finding": "Compact raised-arm hop remains framed; airborne interval and landing contact pending.",
+      "review": "pending"
+    },
+    {
+      "id": 420,
+      "label": "Left_Hand_Bitten_Step_Back",
+      "finding": "Head/body recoil and backward steps visible; semantic hand interaction and travel pending.",
+      "review": "pending"
+    },
+    {
+      "id": 422,
+      "label": "Rising_Flying_Kick",
+      "finding": "Flying kick/rotation visible; source airborne motion, runway and landing pending.",
+      "review": "pending"
+    }
+  ]
+}

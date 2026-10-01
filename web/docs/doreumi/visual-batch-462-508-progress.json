@@ -1,0 +1,728 @@
+{
+  "checkedAt": "2026-09-24T03:54:42.324290+00:00",
+  "scope": "45 individually inspected normal128px five-angle sheets and temporal4fps sampled sequences. Bounds pass does not establish naturalness. No approvals in this batch.",
+  "runtimeBundleSha256": "aaa257e0ce7c4e76490140d4b5fd883cc6bb6b0d98d48d74d193799f18c071f7",
+  "items": [
+    {
+      "id": "meshy:255",
+      "clipSha256": "269bb3f433fcd9879138bef1f7fa10669a0ee8591c6bacf8d44a576b25616f85",
+      "review": "pending",
+      "observation": "Foot projects forward visibly; brief stomp needs quarter inspection.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-462-508/motion-meshy-255.jpg",
+          "sha256": "bdd4dd4a4d8ff10bcd8da6b9812436c32dc34041a343fe8033ee9b1f8a019985"
+        },
+        {
+          "file": "/tmp/doreumi-library-462-508/temporal-meshy-255.jpg",
+          "sha256": "445fa3958a7c4f14f62b2be4ef29c71472e45e56b57ac8747d87a4476ca5bc73"
+        }
+      ]
+    },
+    {
+      "id": "meshy:256",
+      "clipSha256": "7e85f5b4d168de3d4adbb11d342da3edeab47393023a4ca9ea8f0748422175a3",
+      "review": "pending",
+      "observation": "Forward foot silhouette improved; brief stomp needs quarter inspection.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-462-508/motion-meshy-256.jpg",
+          "sha256": "447f3c202cefc69a6eed9ea55710fb14b4496102cad8455a503357db8aabd5dd"
+        },
+        {
+          "file": "/tmp/doreumi-library-462-508/temporal-meshy-256.jpg",
+          "sha256": "c2b2dcac381f86942b647e00048ad951eeef936fe96507d7f3da68883cd66e1f"
+        }
+      ]
+    },
+    {
+      "id": "meshy:269",
+      "clipSha256": "31aef9c4e7abd3b9e2861d05e85dc42d2f65202b7d2daf1f0f9c29288a591b4e",
+      "review": "pending",
+      "observation": "Sit, doze, recline, sleep, seated recovery now readable; quarter and exact audits pending.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-462-508/motion-meshy-269.jpg",
+          "sha256": "1228c536524f4e04e6c71d0a0b87b39935bb21de5dcbee9b20cfec0e0e2b6050"
+        },
+        {
+          "file": "/tmp/doreumi-library-462-508/temporal-meshy-269.jpg",
+          "sha256": "5be88ea4254fc813633754e8cbf34736c46eb8cb3d48f87a2ec739682a20139a"
+        }
+      ]
+    },
+    {
+      "id": "meshy:462",
+      "clipSha256": "ff1b456771a85cec2f910ced7e09f35088fa3796cda4798b8c67bee587bae0f7",
+      "review": "pending",
+      "observation": "Backflip has crouch and full rotation followed by recovery.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-462-508/motion-meshy-462.jpg",
+          "sha256": "98b9b558ab6c99790b74f07b7a5ac7a5f28f3babe9687b48e4c926193b36b887"
+        },
+        {
+          "file": "/tmp/doreumi-library-462-508/temporal-meshy-462.jpg",
+          "sha256": "31d22b538e6ace2fdc4cb05d8586c7e47fd04462204e81f5116d0c92f6ff8db1"
+        }
+      ]
+    },
+    {
+      "id": "meshy:463",
+      "clipSha256": "d9b24dd87fd96eea4b810e1cf80c0554168d6cb227e6d913b6536076656a6a06",
+      "review": "pending",
+      "observation": "Forward running flip and leg recovery visible; flagged foot quaternion interval still needs quarter check.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-462-508/motion-meshy-463.jpg",
+          "sha256": "feffb35da9c44a6a7c721757ef383557b3d199bc205f85eb0e35ee84c6438e5c"
+        },
+        {
+          "file": "/tmp/doreumi-library-462-508/temporal-meshy-463.jpg",
+          "sha256": "dced75977262e4f661ce503a68612c07d8d54774f76628c8becd09ed9fe0614b"
+        }
+      ]
+    },
+    {
+      "id": "meshy:465",
+      "clipSha256": "ec5fc3d1820d1268da1e5f76c8b4d8207c8091ebda6eac1f95b60dbb5b5a6818",
+      "review": "pending",
+      "observation": "Jump and reaching/catching gesture lacks interaction target.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-462-508/motion-meshy-465.jpg",
+          "sha256": "44572946c411c87c26e99130458b816d077582017d1b91eeeb1fe8b542af57a2"
+        },
+        {
+          "file": "/tmp/doreumi-library-462-508/temporal-meshy-465.jpg",
+          "sha256": "dbb519b6053b7ee4b3c319fdbceff56570674cc49da76b6be3d2262c708d1e24"
+        }
+      ]
+    },
+    {
+      "id": "meshy:466",
+      "clipSha256": "99f2b54d5d600b6b8bffd18ffc8e44b599d45477ed9348211071cbbfd8fc401b",
+      "review": "pending",
+      "observation": "Regular jump and crossed-leg recovery visible; needs quarter joint/contact checks.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-462-508/motion-meshy-466.jpg",
+          "sha256": "7c50e90f74148af67e8a2debe5fa6d71c1f8df410e353d2abb3fa7c033a11628"
+        },
+        {
+          "file": "/tmp/doreumi-library-462-508/temporal-meshy-466.jpg",
+          "sha256": "d7ce2409ac5fc8521ff8ab9352a2196e69095e071b4db4f23a793c3a5fd15448"
+        }
+      ]
+    },
+    {
+      "id": "meshy:467",
+      "clipSha256": "300f9e177f2341a4fb989ca4a70d15ecb2691078883c6536588017b83fdd462a",
+      "review": "pending",
+      "observation": "Raised-knee obstacle step lacks obstacle context.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-462-508/motion-meshy-467.jpg",
+          "sha256": "bb301ebcafdbf2004f774b7ed5723737b16acc8ffaecb2e6e730ab568d4ac1ce"
+        },
+        {
+          "file": "/tmp/doreumi-library-462-508/temporal-meshy-467.jpg",
+          "sha256": "411b06351ffcf23fdd31730d13dab89d8e7312885e71c28e5aee1840ce7eac3b"
+        }
+      ]
+    },
+    {
+      "id": "meshy:468",
+      "clipSha256": "1dbeeeb716622c8ee43510d7f3f8d5eb065c8db64e2bcff468e35e79c7f6278b",
+      "review": "pending",
+      "observation": "Backward hop with arm balance and crouch visible.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-462-508/motion-meshy-468.jpg",
+          "sha256": "954d9fafe0ab6faf38a36e469b8a1136bae7899bce3bc8ed62f375eaff596612"
+        },
+        {
+          "file": "/tmp/doreumi-library-462-508/temporal-meshy-468.jpg",
+          "sha256": "f8943d9cee0c26b75774adcf72e7abd7e4740ffc700d26d00147c288e468fdb4"
+        }
+      ]
+    },
+    {
+      "id": "meshy:470",
+      "clipSha256": "49ce3432c523d38833dab4e49aeb095d89251007aab5b87b253445c3d5cec083",
+      "review": "pending",
+      "observation": "Full temporal extraction regenerated and inspected: standing rises into air before drop; source-height and launch platform investigation required.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-462-508/motion-meshy-470.jpg",
+          "sha256": "b3453f052a61a3e92d53439c8d28a3be8035bafbd9c251e0141d0489b25ba8ce"
+        },
+        {
+          "file": "/tmp/doreumi-library-462-508/temporal-meshy-470.jpg",
+          "sha256": "3a63641890c760e24e239648f0c12697c8008d66ab9fc6186bb64d18421fb419"
+        }
+      ]
+    },
+    {
+      "id": "meshy:471",
+      "clipSha256": "c2f9be4a1581d432e11040baca918fab041472de4b6ea78f6c8e35f671c4de12",
+      "review": "pending",
+      "observation": "Sideways aerial obstacle turn lacks obstacle.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-462-508/motion-meshy-471.jpg",
+          "sha256": "dde0c3fedaf9634aee5a70fb63bff72e4622a1c23013fa00990a49f1f3eebe4b"
+        },
+        {
+          "file": "/tmp/doreumi-library-462-508/temporal-meshy-471.jpg",
+          "sha256": "6ef6955c392786f509e25fddff0251357e6d2806ce1aed7145825d79a538f24f"
+        }
+      ]
+    },
+    {
+      "id": "meshy:472",
+      "clipSha256": "49e5a933c4f898dddef2ef6a9c05557580ebb643ef399ea58317f04b7e891938",
+      "review": "pending",
+      "observation": "Another sideways aerial obstacle rotation lacks obstacle.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-462-508/motion-meshy-472.jpg",
+          "sha256": "d38212870a36f9617fba26fa69ece862dbdbae9734878c19ae95381b04f6cb59"
+        },
+        {
+          "file": "/tmp/doreumi-library-462-508/temporal-meshy-472.jpg",
+          "sha256": "9cf77ca23ff927c1d60260cc7b616b7f70ba264c7f05b9e1568521c6286a11e5"
+        }
+      ]
+    },
+    {
+      "id": "meshy:473",
+      "clipSha256": "9659f6eda33955408ca84bfe5a538634a9ce6fed642ce4f21e33ad1b10c75c51",
+      "review": "pending",
+      "observation": "Tucked jump with side shift; wrist candidate needs quarter check.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-462-508/motion-meshy-473.jpg",
+          "sha256": "3fe4726d17d68a1baa84735f27bf015cb982303fa18c703c6481cf73e37c0e98"
+        },
+        {
+          "file": "/tmp/doreumi-library-462-508/temporal-meshy-473.jpg",
+          "sha256": "3e29316cf0e8d4e6895a9461c8a41fb902f96f1310bcd59fa8c8b2650e2a466b"
+        }
+      ]
+    },
+    {
+      "id": "meshy:475",
+      "clipSha256": "d064c035cd324521bd3348b501080b308a4c853b701528cf3c04d3be7c657896",
+      "review": "pending",
+      "observation": "Climbing gestures read as unsupported hops without wall.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-462-508/motion-meshy-475.jpg",
+          "sha256": "40b288a37364a721ba7fc3b7be842f35a629a5530e926ff1b9765b9345bb2b9b"
+        },
+        {
+          "file": "/tmp/doreumi-library-462-508/temporal-meshy-475.jpg",
+          "sha256": "08319e31c9614d4a7649aeb14f6181c51567e7e49a47c6646f32bda7d9c5e951"
+        }
+      ]
+    },
+    {
+      "id": "meshy:476",
+      "clipSha256": "111d58db5d93743546fff6e48838730b473b2461d7e2698877afed2b1b6aa82d",
+      "review": "pending",
+      "observation": "Hanging and pushing feet lacks climb surface.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-462-508/motion-meshy-476.jpg",
+          "sha256": "989763b4a5e7b5df0bb352ecc14d6cf00359b784b7823b8f8cf97bfa024cb029"
+        },
+        {
+          "file": "/tmp/doreumi-library-462-508/temporal-meshy-476.jpg",
+          "sha256": "060765bbb3ea4f14dd96d050f640960680fe1ab2953e010e4cc05a8cbb44912c"
+        }
+      ]
+    },
+    {
+      "id": "meshy:477",
+      "clipSha256": "d5eb918e34988f5850718886ebbc2a89db8befd552bc61a73e1266b46faeae14",
+      "review": "pending",
+      "observation": "Leaning rope hang lacks rope and support.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-462-508/motion-meshy-477.jpg",
+          "sha256": "d2d38fc6eac40ee073b9f7812208a82b973dc86f48522c39379015e8694f54ed"
+        },
+        {
+          "file": "/tmp/doreumi-library-462-508/temporal-meshy-477.jpg",
+          "sha256": "cab85faec380e38cb11b6f874d696c95ba50d1d8ff25a3cb2d62dc82c207a45a"
+        }
+      ]
+    },
+    {
+      "id": "meshy:478",
+      "clipSha256": "8b8239a89f8d8b24f93d309f3ca8016917ad22d2c2d9ae11adccbda5a1eaddb6",
+      "review": "pending",
+      "observation": "Overhead bar-hang posture lacks bar.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-462-508/motion-meshy-478.jpg",
+          "sha256": "763723d70cc40d8d4a8aa1ef96f93d9c01bdb816824f0ca0d7e4496301ec3a9f"
+        },
+        {
+          "file": "/tmp/doreumi-library-462-508/temporal-meshy-478.jpg",
+          "sha256": "57f91b7d484c3e8e1a032f01fe3657ac5459076f326c03f00b362e7da1aee7db"
+        }
+      ]
+    },
+    {
+      "id": "meshy:479",
+      "clipSha256": "083169794728871ec3202e68a0512a54d9a5d4ba9e1263e0465e91bba810c9e5",
+      "review": "pending",
+      "observation": "Upside-down rope hold has unsupported rotation entry/exit without rope.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-462-508/motion-meshy-479.jpg",
+          "sha256": "c568b598f85d8d6733437dd6726837914c8d1ae195451595680f6894f49a82bd"
+        },
+        {
+          "file": "/tmp/doreumi-library-462-508/temporal-meshy-479.jpg",
+          "sha256": "e225880a29117e8e53a33e2b5a542c8632a2db1fdfb39216c8166ad80e47285b"
+        }
+      ]
+    },
+    {
+      "id": "meshy:480",
+      "clipSha256": "0f35d9b3a09bae539713ba1e4fca569a43d3c99f77fa1b8c8190ed98072d38e6",
+      "review": "pending",
+      "observation": "Upside-down rope idle needs rope and supported entry/exit.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-462-508/motion-meshy-480.jpg",
+          "sha256": "528d3b0527284956e53abb0e13b3b3b975e8e0bdaa32c6bbbfb36e24f4657409"
+        },
+        {
+          "file": "/tmp/doreumi-library-462-508/temporal-meshy-480.jpg",
+          "sha256": "42348187b7d61177a44a3dff27452d8db9901afe5556c3c5d82aa412f1799b00"
+        }
+      ]
+    },
+    {
+      "id": "meshy:481",
+      "review": "pending",
+      "observation": "Inverted rope rotation lacks supporting rope.",
+      "clipSha256": "e704ab9946d05717dfaa6040adf430a0ef6e60143f7162a616e85a5bebe61ccc",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-462-508/motion-meshy-481.jpg",
+          "sha256": "ee0a6e21106e4830d53acf4679da7dc7a2a206e0ee76b63354db435072c4a336"
+        },
+        {
+          "file": "/tmp/doreumi-library-462-508/temporal-meshy-481.jpg",
+          "sha256": "d63b2b3c62a6a8eb2e8a72db08cbd54e3d42b23d8b83058c65385a9d2ba844ac"
+        }
+      ]
+    },
+    {
+      "id": "meshy:482",
+      "review": "pending",
+      "observation": "Wall grab lacks wall.",
+      "clipSha256": "fc244dcb370bc8b155286aaa000b7be0bbea1cbb065ecbdc5d10b8af55ab29dd",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-462-508/motion-meshy-482.jpg",
+          "sha256": "4dc6e272ca98b6b04cc6a8060435c8c9d925bb0f4e1ac033bc267c65fea3cc8d"
+        },
+        {
+          "file": "/tmp/doreumi-library-462-508/temporal-meshy-482.jpg",
+          "sha256": "a3177c7c5ace1cfc1e7c9387086ec4603a50d1b307ba5431aa91c19e5ba71d08"
+        }
+      ]
+    },
+    {
+      "id": "meshy:483",
+      "review": "pending",
+      "observation": "Sideways bar support lacks bar.",
+      "clipSha256": "619369cec935d33aa15233fd3424cf26c4b8a10bc4edc3c58bfb45ae70380dda",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-462-508/motion-meshy-483.jpg",
+          "sha256": "76bd0b71d98facd0a315e6da5481f5c9eebbd4cda6262a8f2c6b195a52af9f21"
+        },
+        {
+          "file": "/tmp/doreumi-library-462-508/temporal-meshy-483.jpg",
+          "sha256": "5fed10aff8e70d405a5a860b8e3f000e43f553e0351e29049eba757c2f56d1b2"
+        }
+      ]
+    },
+    {
+      "id": "meshy:484",
+      "review": "pending",
+      "observation": "Opposite sideways bar support lacks bar.",
+      "clipSha256": "9a0b29090472af6f539a22698909eb3117542649eb6daf3d6bb151da00e32b82",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-462-508/motion-meshy-484.jpg",
+          "sha256": "29120524eb2af26d202c2d3622a774770c1735afce1a1cd0e0796fbad984f48b"
+        },
+        {
+          "file": "/tmp/doreumi-library-462-508/temporal-meshy-484.jpg",
+          "sha256": "b47572553fe3e3f749b81a69a5b7d74915e9302d2330bf19b6770ce468e10ae7"
+        }
+      ]
+    },
+    {
+      "id": "meshy:485",
+      "review": "pending",
+      "observation": "Jump-to-bar lacks bar.",
+      "clipSha256": "197f7221eadbbd8164006d1dbe393201e56815a235851f0f72a812df75c6b3e6",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-462-508/motion-meshy-485.jpg",
+          "sha256": "469c6f404e15e3b18660c1b53cfc6330cfaea30e913079d36655e578e2258f70"
+        },
+        {
+          "file": "/tmp/doreumi-library-462-508/temporal-meshy-485.jpg",
+          "sha256": "7757a0ae909dd644ee33f3dc3ed26e50e6aa53ad32c23506d30dc8c786bba780"
+        }
+      ]
+    },
+    {
+      "id": "meshy:486",
+      "review": "pending",
+      "observation": "Wall step-down lacks wall.",
+      "clipSha256": "a0e9dd6ed8a40325157215dd269f64c74609473b5ef4b51b2d7474895027f2d9",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-462-508/motion-meshy-486.jpg",
+          "sha256": "0505a3a3cebfb9fd91ab1f15d1353eab6aa892e56de08afd33411464f18cea86"
+        },
+        {
+          "file": "/tmp/doreumi-library-462-508/temporal-meshy-486.jpg",
+          "sha256": "1c227cc82a5d06ee80d93116d0e7ec83b65009eaf1806f6ecdf6a796fd0172c5"
+        }
+      ]
+    },
+    {
+      "id": "meshy:487",
+      "review": "pending",
+      "observation": "Reclined fall recovers rigidly; wall absent.",
+      "clipSha256": "97e8e6935a1e8d32e13a015f490a3dcb66da58fc8fec133024d8ffd3f5352e6f",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-462-508/motion-meshy-487.jpg",
+          "sha256": "01adf802a09c721ef83a215479d39df5b806412dd40246262333ec8217dedd86"
+        },
+        {
+          "file": "/tmp/doreumi-library-462-508/temporal-meshy-487.jpg",
+          "sha256": "fb20161caf6720ce2835ce104ef9e0b831ef5fa3bca83cbc1ea10935c6e06325"
+        }
+      ]
+    },
+    {
+      "id": "meshy:488",
+      "review": "pending",
+      "observation": "Reclined fall recovers rigidly; environment absent.",
+      "clipSha256": "8ee1a1cc05ebca31ca533ad86ae778a2eb211b89ebb734aab7bf091bf1bba12d",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-462-508/motion-meshy-488.jpg",
+          "sha256": "7e680efa8b65c29a68ddd708477a4f6fe389df3f8d8e661697076034a75f59e1"
+        },
+        {
+          "file": "/tmp/doreumi-library-462-508/temporal-meshy-488.jpg",
+          "sha256": "407c8cc1d98fbc59f6535da533bf08fae66ad43e9d665e4cdd06bbd983f02d6b"
+        }
+      ]
+    },
+    {
+      "id": "meshy:489",
+      "review": "pending",
+      "observation": "Back landing needs seated recovery.",
+      "clipSha256": "e490ca5b4dcc5752c624d641e0beb7e2668ceffc6e505faa5acc7d3ceed88692",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-462-508/motion-meshy-489.jpg",
+          "sha256": "51a25c432eb5176bdff493c9f019009900bbe1eddb44a8c94ddd719bda5c5cf9"
+        },
+        {
+          "file": "/tmp/doreumi-library-462-508/temporal-meshy-489.jpg",
+          "sha256": "ae3d8bd44dbd982f5a55edf82355e9caa88bd0b58d1d6e98309e3540b1d6722b"
+        }
+      ]
+    },
+    {
+      "id": "meshy:490",
+      "review": "pending",
+      "observation": "Updated fall has seated recovery visible in actual playback; quarter pending.",
+      "clipSha256": "6cb9538f971ec118ec06f10f0ad6122931dabd51191051ab2f0b53cfeb1751dc",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-462-508/motion-meshy-490.jpg",
+          "sha256": "018267a5f8b72060b7bdf62f833dd22dac84c7b25e6b6beb7066ae9df821f448"
+        },
+        {
+          "file": "/tmp/doreumi-library-462-508/temporal-meshy-490.jpg",
+          "sha256": "cf51a541e6cc235087c3ee0c5ce880381502a39ee06924bd8e5d7d270f5e8b3f"
+        }
+      ]
+    },
+    {
+      "id": "meshy:491",
+      "review": "pending",
+      "observation": "Bar-drop lacks supporting bar.",
+      "clipSha256": "4f0f811db67c55cf107c738e0e9d54ca8e2e368c69c3617dca0e27d18da526b0",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-462-508/motion-meshy-491.jpg",
+          "sha256": "abe24fc6419d4223c3a5e857e95223f5f2ffd1d66ef8438146ab4a2d8d819e22"
+        },
+        {
+          "file": "/tmp/doreumi-library-462-508/temporal-meshy-491.jpg",
+          "sha256": "ec783f700a37e17644fed8646efb797e4fa7e54f1a8d6be72ce9d117e33adb16"
+        }
+      ]
+    },
+    {
+      "id": "meshy:492",
+      "review": "pending",
+      "observation": "Wall jump lacks launch surface.",
+      "clipSha256": "5ad5ee65492d944955183997d7527c665024ca815c3c0c18900128a6a6973725",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-462-508/motion-meshy-492.jpg",
+          "sha256": "7ce4dc60cc95f3268338829cc066b9b95db3fba634b637bef452e1056aa70691"
+        },
+        {
+          "file": "/tmp/doreumi-library-462-508/temporal-meshy-492.jpg",
+          "sha256": "049f591484fd955807a116c7fb09c09babb03c210224b6f21998d5b55cd18968"
+        }
+      ]
+    },
+    {
+      "id": "meshy:493",
+      "review": "pending",
+      "observation": "Wall turn jump lacks launch surface.",
+      "clipSha256": "99bd75066e7be2690200f2af27ce643210e902bf5f6e6a48b3e7b8a97dffff36",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-462-508/motion-meshy-493.jpg",
+          "sha256": "d07fedb968c8778fbe212dfba6ea2d6f8df06570fe1a6a0771d62c0af3cb7148"
+        },
+        {
+          "file": "/tmp/doreumi-library-462-508/temporal-meshy-493.jpg",
+          "sha256": "fc78727bdbf7bfe6e4aea6acb43ab26e3988cea52340a56e6387c84f7afd07e4"
+        }
+      ]
+    },
+    {
+      "id": "meshy:494",
+      "review": "pending",
+      "observation": "Hanging forward drop lacks rope.",
+      "clipSha256": "39a8c35311b99b68def873709d3fca8accea11526f45f564d1619995d781232a",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-462-508/motion-meshy-494.jpg",
+          "sha256": "cdfa0321ddd54feb28f83bbcf44808578ff4258f8635897fc2c279e8c8e790a4"
+        },
+        {
+          "file": "/tmp/doreumi-library-462-508/temporal-meshy-494.jpg",
+          "sha256": "c6bf506f4e3fbe05a559768027be86db96a6fd3ca01da45c3f3e82a7781ded20"
+        }
+      ]
+    },
+    {
+      "id": "meshy:495",
+      "review": "pending",
+      "observation": "Bar swing lacks bar and hand contact.",
+      "clipSha256": "9a7ad8eb7954190bd5a2590ca5733fe95a2eaae75deabd987567c3a32986ba8d",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-462-508/motion-meshy-495.jpg",
+          "sha256": "2da8322fb2bd0913b08766a1853bb4f44e1e81c90ae0b84bd15319eba9ad9395"
+        },
+        {
+          "file": "/tmp/doreumi-library-462-508/temporal-meshy-495.jpg",
+          "sha256": "487fc2fd2d900a3b72bca8b05a6ce2836f74367974a33fb816941403157e0bcb"
+        }
+      ]
+    },
+    {
+      "id": "meshy:496",
+      "review": "pending",
+      "observation": "Backflip release has crouched landing but rope absent.",
+      "clipSha256": "3e6abe4857f04a238e2b7c6445be732f4b1c120b3c7c7bd48c80c07c73181c60",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-462-508/motion-meshy-496.jpg",
+          "sha256": "e211d854271c830530f4f1c00b8919ca25c2f7131074f9ecf2c1f88952107c45"
+        },
+        {
+          "file": "/tmp/doreumi-library-462-508/temporal-meshy-496.jpg",
+          "sha256": "8d6823d893d73d46cc7b8d57fa753d65b7dac8570be2c089c8942022dcdfe2f3"
+        }
+      ]
+    },
+    {
+      "id": "meshy:497",
+      "review": "pending",
+      "observation": "Core reads suspended rather than supported kick; source support needs investigation.",
+      "clipSha256": "1ddddded8921ad8b63f065b247d09652965e5184b871e484e5da1a6dbb54bb13",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-462-508/motion-meshy-497.jpg",
+          "sha256": "ebb6ef2bb5e7d0b09c43eecd7f4010f3a0d7d7f9c044254ae9216d05bb2370fe"
+        },
+        {
+          "file": "/tmp/doreumi-library-462-508/temporal-meshy-497.jpg",
+          "sha256": "1d745e8f3339c7a74ed4d28375f1fdefbae095d983a20503f72a645dfbc60e3f"
+        }
+      ]
+    },
+    {
+      "id": "meshy:498",
+      "review": "pending",
+      "observation": "Reclined endpoint recovers rigidly.",
+      "clipSha256": "a74c2cce5e3cc7a56b8a44684a1cdc6aad1f0524f0f1c29cc4c09ff2c265aef0",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-462-508/motion-meshy-498.jpg",
+          "sha256": "c523bc3f33fe9179d5c0bf31fa864e7aae5043670a2fea43cdca99ae20cf62ae"
+        },
+        {
+          "file": "/tmp/doreumi-library-462-508/temporal-meshy-498.jpg",
+          "sha256": "e979abdedfa49111a3a84116025710049fca141cd257bd6f4e0b2064ec054511"
+        }
+      ]
+    },
+    {
+      "id": "meshy:499",
+      "review": "pending",
+      "observation": "Reclined endpoint recovers rigidly.",
+      "clipSha256": "4ec707486d5873cda1a2be6745428286a2a87c2f39365a9ed358ff76f54f12a4",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-462-508/motion-meshy-499.jpg",
+          "sha256": "aba0f6ac4782baaebac6fbaf36b60783c8bdc6c334b920ec493a38b2f3ef458c"
+        },
+        {
+          "file": "/tmp/doreumi-library-462-508/temporal-meshy-499.jpg",
+          "sha256": "496a276389f33d49a7878192c060f2fec6d79ae2cf90ad395868dfb0756f1f91"
+        }
+      ]
+    },
+    {
+      "id": "meshy:501",
+      "review": "pending",
+      "observation": "Fail: framing reduces character to about20px at128px stage; posture unreadable.",
+      "clipSha256": "f57dfa782e546fcb502c916a1310cbaf83ec7bb903f7925ee2136f8df321a22f",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-462-508/motion-meshy-501.jpg",
+          "sha256": "68f567d9674732a8c161b134b8e6e518c16c7b0ad1293d5cb456107471e3a9b2"
+        },
+        {
+          "file": "/tmp/doreumi-library-462-508/temporal-meshy-501.jpg",
+          "sha256": "e889f08f72ff7e6bc074d28d5ebec0b62a09f3aacce567d4ed90448a95616e5b"
+        }
+      ]
+    },
+    {
+      "id": "meshy:502",
+      "review": "pending",
+      "observation": "Prone airborne source retained with hand-brace to kneeling recovery; quarter pending.",
+      "clipSha256": "7b0c8a41a122bc7390d56d48c4bffdee2281e7f8de00ed82253c6bcd6dc2e0f4",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-462-508/motion-meshy-502.jpg",
+          "sha256": "acd2272e4dd033773a17dff8c231f8383017177a2e05a88cdfc64449c94a69be"
+        },
+        {
+          "file": "/tmp/doreumi-library-462-508/temporal-meshy-502.jpg",
+          "sha256": "d84fc7cd033e5f98acaace02d3b1df2c9c0823e7987c916dff118b22bef7d56b"
+        }
+      ]
+    },
+    {
+      "id": "meshy:504",
+      "review": "pending",
+      "observation": "Reclined endpoint recovers rigidly.",
+      "clipSha256": "e73c50029d7adfdd2aabfb818303770b50ae4b530cfae4a8752227eb4eeefb1e",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-462-508/motion-meshy-504.jpg",
+          "sha256": "ff54e9d812e0c8ce23c9ab6e357260adf2059998d224046fcb7b0f76a6c10f3f"
+        },
+        {
+          "file": "/tmp/doreumi-library-462-508/temporal-meshy-504.jpg",
+          "sha256": "15f79233947cd10d0737f97a604102bf1442aa0a52bcd71413ea7851d2671fed"
+        }
+      ]
+    },
+    {
+      "id": "meshy:505",
+      "review": "pending",
+      "observation": "Floor scoot/twist visible; body-ground support needs exact audit.",
+      "clipSha256": "d059e52a99ae2f508bb66bad54f39b80ca5a89cc229b628ba79b05507c7c35cc",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-462-508/motion-meshy-505.jpg",
+          "sha256": "e1737869cff22634616931177bc07108c15fe7c6a7ded18db0a4e2adfcdfe98b"
+        },
+        {
+          "file": "/tmp/doreumi-library-462-508/temporal-meshy-505.jpg",
+          "sha256": "1d05eab5eebc30f535216c7ea06b1fb38656d5e810de6ba8bef4793d9f7aa070"
+        }
+      ]
+    },
+    {
+      "id": "meshy:506",
+      "review": "pending",
+      "observation": "Aerial forward rotation visible; finish recovery needs source support audit.",
+      "clipSha256": "53fb362ddd38add182fc80743e181eef31449cadaa00a942cbda83d013cb7672",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-462-508/motion-meshy-506.jpg",
+          "sha256": "5bd09f300e499cf658f2f8040cb58998ef75dd8468a4633859c8a65a4c501bde"
+        },
+        {
+          "file": "/tmp/doreumi-library-462-508/temporal-meshy-506.jpg",
+          "sha256": "5ead30057bf0368ac31445856bfbd8d68328527be3f26fd0c573a11977c29bed"
+        }
+      ]
+    },
+    {
+      "id": "meshy:507",
+      "review": "pending",
+      "observation": "Aerial rotation visible; contact and quarter pending.",
+      "clipSha256": "2ba654c3a1e2703782fb2f5f0803c8b0fe2b341f12399365619b4add1076ecd6",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-462-508/motion-meshy-507.jpg",
+          "sha256": "a5dcf9ed3f2bd99f343be69ef3e5aa65308d5e73ffdc23b9bf7256cd8b28db68"
+        },
+        {
+          "file": "/tmp/doreumi-library-462-508/temporal-meshy-507.jpg",
+          "sha256": "b4c66353e42e8ff28b41c8088715092abd6a28991acabef7a52a45ff1c16090f"
+        }
+      ]
+    },
+    {
+      "id": "meshy:508",
+      "review": "pending",
+      "observation": "Fail: framing shrinks character below useful display size, abruptly returns to full-size Idle.",
+      "clipSha256": "0add9b3931372b7bfdbad074315e697632b03215ab68dfb5b1031aedc5dc5a32",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-462-508/motion-meshy-508.jpg",
+          "sha256": "0baf46a79a05e5b8c669034cbcb7abba1866c312ccd27b5255409246d331ff3c"
+        },
+        {
+          "file": "/tmp/doreumi-library-462-508/temporal-meshy-508.jpg",
+          "sha256": "805ffce89cd019892b011351b5d3a1475c63d1a451c22969502739597d4298a6"
+        }
+      ]
+    }
+  ],
+  "automaticBoundsPass": true
+}

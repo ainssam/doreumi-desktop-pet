@@ -1,0 +1,492 @@
+{
+  "version": 1,
+  "checkedAt": "2026-09-24T04:49:26.273Z",
+  "masterSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+  "scope": "Independent read-only support interpretation. Current shipping bytes checked; no source or target adaptation reapplied and no registry promotion for these three motions.",
+  "numericEvidence": [
+    {
+      "file": ".artifacts/doreumi-camera-checkpoint/support-interpretation.json",
+      "sha256": "75fe05265059d75061de1b7a25e6ca5ad87b1a290b81e24a0a9ed288a22fffcc"
+    },
+    {
+      "file": ".artifacts/doreumi-contact-audit/review-b-independent.json",
+      "sha256": "74f79221965563daeb5fa197795b95dc62cf9c7f714e3bd80e4909714514a3db"
+    },
+    {
+      "file": ".artifacts/doreumi-contact-audit/review-b-latest-joints.json",
+      "sha256": "87e1048e8e98f81d61dfee252f227d3935914f388376a142503e1128a37c66af"
+    },
+    {
+      "file": ".artifacts/doreumi-transition-audit/sleep-falls-source-support.json",
+      "sha256": "0f636b63ca67f16636a85eaee4d6bb49076d169c0535c24b1a529b75cdf94fdd"
+    },
+    {
+      "file": ".artifacts/doreumi-transition-audit/sleep-falls-shipping.json",
+      "sha256": "4d8c0c9bd7a22c4bce87278cd0c55446110166b4327887da4066acb85e866d20"
+    }
+  ],
+  "motions": [
+    {
+      "id": "meshy:269",
+      "clipSha256": "31aef9c4e7abd3b9e2861d05e85dc42d2f65202b7d2daf1f0f9c29288a591b4e",
+      "metadataSha256": "ac988a5ac029d3bcfbd77b87df7e5e5869be1a41954fa7bb16bfd1f954c8afbc",
+      "sourceSha256": "b7684e827b75498803828a5ef8e688452e98fb9edb1f5259dd33d02ee9d0dab5",
+      "registryReview": "passed",
+      "interpretation": "Explicit floor-sleep adaptation. The donor body is elevated0.161–0.574 above its rest floor, so literal donor-floor foot planting does not describe this performance. The target explicitly removes that elevation, enters through sitting, reclines onto hip/back/torso skin and recovers through sitting.",
+      "remaining": "Root accepted the explicit floor-sleep adaptation after normal/quarter review and complete21-joint source-relative audit. See sleep-269-review.json for exact SHA-bound approval.",
+      "supportType": "feet to hip/back/torso to feet",
+      "status": "passed-root-visual-and-numeric",
+      "sourceRestFullSkinFloor": -7.224277439460414e-8,
+      "sourceBodyRange": {
+        "minimum": 0.16088921912732473,
+        "maximum": 0.5743725942740301
+      },
+      "sourceP10FootFloor": 0.17752680377141408,
+      "targetCoreBodyRange": {
+        "minimum": 0.0010507529822761513,
+        "maximum": 0.003027927692505483
+      },
+      "minimumFullSkin120Hz": {
+        "minY": 0.0010507529822761513,
+        "time": 2.9166666666666665
+      },
+      "coreMaximumWorld": {
+        "bone": "wristL",
+        "from": 1.8166666666666667,
+        "time": 1.8333333333333333,
+        "sourceTime": 0.01666666666666683,
+        "targetLocalDegrees": 8.658600420243356,
+        "targetWorldDegrees": 8.360079663148982,
+        "sourceLocalDegrees": 8.658733700009016,
+        "sourceWorldDegrees": 8.363047647615401,
+        "jointDistance": 0.010995013893933385
+      },
+      "coreMaximumLocal": {
+        "bone": "wristL",
+        "from": 1.8333333333333333,
+        "time": 1.85,
+        "sourceTime": 0.03333333333333366,
+        "targetLocalDegrees": 8.658864415111527,
+        "targetWorldDegrees": 8.329422215988043,
+        "sourceLocalDegrees": 8.658733621563687,
+        "sourceWorldDegrees": 8.332068092707901,
+        "jointDistance": 0.010741301289948496
+      },
+      "transitionMaximumWorld": {
+        "bone": "wristR",
+        "from": 7.883333333333334,
+        "time": 7.9,
+        "sourceTime": 5.733333110809326,
+        "targetLocalDegrees": 1.7234418431547318,
+        "targetWorldDegrees": 3.9923517389594774,
+        "sourceLocalDegrees": 0,
+        "sourceWorldDegrees": 0,
+        "jointDistance": 0.01787314746290403
+      },
+      "representativeSupport": [
+        {
+          "sourceTime": 0,
+          "sourceBodyMinY": 0.183133589071767,
+          "targetBodyMinY": 0.0015640240532040495,
+          "minimumInfluences": [
+            {
+              "bone": "footR",
+              "weight": 1
+            }
+          ],
+          "sourceWristY": {
+            "L": 0.7900798961545707,
+            "R": 0.778899894588605
+          }
+        },
+        {
+          "sourceTime": 1.4333332777023315,
+          "sourceBodyMinY": 0.2904491816520459,
+          "targetBodyMinY": 0.002000010653985021,
+          "minimumInfluences": [
+            {
+              "bone": "body",
+              "weight": 0.44747433066368103
+            },
+            {
+              "bone": "thighR",
+              "weight": 0.5425205826759338
+            },
+            {
+              "bone": "torso",
+              "weight": 0.010005091316998005
+            }
+          ],
+          "sourceWristY": {
+            "L": 0.6500502965747061,
+            "R": 0.7005475268957102
+          }
+        },
+        {
+          "sourceTime": 2.866666555404663,
+          "sourceBodyMinY": 0.5100194125128418,
+          "targetBodyMinY": 0.0022649194223310597,
+          "minimumInfluences": [
+            {
+              "bone": "body",
+              "weight": 0.7539454102516174
+            },
+            {
+              "bone": "thighR",
+              "weight": 0.0011556264944374561
+            },
+            {
+              "bone": "torso",
+              "weight": 0.2448989599943161
+            }
+          ],
+          "sourceWristY": {
+            "L": 0.6198101749096208,
+            "R": 0.6512271837061698
+          }
+        },
+        {
+          "sourceTime": 4.299999833106995,
+          "sourceBodyMinY": 0.5313927966529705,
+          "targetBodyMinY": 0.0022634129195969743,
+          "minimumInfluences": [
+            {
+              "bone": "body",
+              "weight": 0.00360700860619545
+            },
+            {
+              "bone": "torso",
+              "weight": 0.9963929653167725
+            }
+          ],
+          "sourceWristY": {
+            "L": 0.6342495023656237,
+            "R": 0.6662335860244419
+          }
+        },
+        {
+          "sourceTime": 5.733333110809326,
+          "sourceBodyMinY": 0.5206543961234033,
+          "targetBodyMinY": 0.0020017962349687755,
+          "minimumInfluences": [
+            {
+              "bone": "body",
+              "weight": 0.00360700860619545
+            },
+            {
+              "bone": "torso",
+              "weight": 0.9963929653167725
+            }
+          ],
+          "sourceWristY": {
+            "L": 0.627526546568963,
+            "R": 0.6447255772742213
+          }
+        }
+      ],
+      "approvalEvidence": "docs/doreumi/sleep-269-review.json"
+    },
+    {
+      "id": "meshy:490",
+      "clipSha256": "6cb9538f971ec118ec06f10f0ad6122931dabd51191051ab2f0b53cfeb1751dc",
+      "metadataSha256": "99d5d81fa8e16d8ea8807c9d1b47eec9bdcf4099ea0620bcc31e223d27fd770b",
+      "sourceSha256": "75fe91ac848ed4633ee399913947139f53987ecf5b678f7fa09329a915cb1b07",
+      "registryReview": "pending",
+      "interpretation": "The acquired fall starts on a relative foot plane around0.087, with wrists near waist height0.93, so the HangingfromLedge catalog family alone does not establish a missing ledge grip in this fragment. Source rotation and airborne height variation are retained relative to that plane. It ends with torso skin0.06597 above the floor, then the added reclined recovery makes floor contact.",
+      "remaining": "Keep pending until the self-contained fall/landing interpretation is explicitly accepted. The37 relative source-contact pairs pass, but the donor neutral-floor denominator is0 and cannot independently prove an actual ground impact or a ledge-release context. Horizontal source travel is removed by the stationary staging policy.",
+      "supportType": "relative foot stance to airborne fall to torso-supported recovery",
+      "status": "pending-fall-context",
+      "sourceRestFullSkinFloor": -7.224277439460414e-8,
+      "sourceBodyRange": {
+        "minimum": 0.08326547596949323,
+        "maximum": 0.7797462175925348
+      },
+      "sourceP10FootFloor": 0.08676965242995027,
+      "targetCoreBodyRange": {
+        "minimum": 0.0014474549788697916,
+        "maximum": 0.25623749365445503
+      },
+      "minimumFullSkin120Hz": {
+        "minY": 0.0014474549788697916,
+        "time": 1.3333333333333333
+      },
+      "coreMaximumWorld": {
+        "bone": "armL",
+        "from": 5.25,
+        "time": 5.266666666666667,
+        "sourceTime": 4.566666666666666,
+        "targetLocalDegrees": 11.68594714582596,
+        "targetWorldDegrees": 13.701499931084875,
+        "sourceLocalDegrees": 11.686065144987055,
+        "sourceWorldDegrees": 13.701785626510718,
+        "jointDistance": 0.019095419424809138
+      },
+      "coreMaximumLocal": {
+        "bone": "armR",
+        "from": 4.866666666666666,
+        "time": 4.883333333333334,
+        "sourceTime": 4.183333333333334,
+        "targetLocalDegrees": 12.635986172125996,
+        "targetWorldDegrees": 8.15878828600875,
+        "sourceLocalDegrees": 12.63592607493101,
+        "sourceWorldDegrees": 8.158700181611168,
+        "jointDistance": 0.03410619685645175
+      },
+      "transitionMaximumWorld": {
+        "bone": "armL",
+        "from": 5.933333333333334,
+        "time": 5.95,
+        "sourceTime": 4.699999809265137,
+        "targetLocalDegrees": 1.6368777860929187,
+        "targetWorldDegrees": 4.014842942497056,
+        "sourceLocalDegrees": 0,
+        "sourceWorldDegrees": 0,
+        "jointDistance": 0.04115106341146615
+      },
+      "representativeSupport": [
+        {
+          "sourceTime": 0,
+          "sourceBodyMinY": 0.08764510048088617,
+          "targetBodyMinY": 0.002117166987193747,
+          "minimumInfluences": [
+            {
+              "bone": "footR",
+              "weight": 1
+            }
+          ],
+          "sourceWristY": {
+            "L": 0.9324797766868531,
+            "R": 0.9354046286065141
+          }
+        },
+        {
+          "sourceTime": 1.1749999523162842,
+          "sourceBodyMinY": 0.4423307318844375,
+          "targetBodyMinY": 0.13107952154457556,
+          "minimumInfluences": [
+            {
+              "bone": "footR",
+              "weight": 1
+            }
+          ],
+          "sourceWristY": {
+            "L": 1.480820008955662,
+            "R": 1.257128369666176
+          }
+        },
+        {
+          "sourceTime": 2.3499999046325684,
+          "sourceBodyMinY": 0.4581206368635268,
+          "targetBodyMinY": 0.1371809296256989,
+          "minimumInfluences": [
+            {
+              "bone": "footR",
+              "weight": 1
+            }
+          ],
+          "sourceWristY": {
+            "L": 1.6750078533424237,
+            "R": 1.2483716576964385
+          }
+        },
+        {
+          "sourceTime": 3.5249998569488525,
+          "sourceBodyMinY": 0.5834297375791214,
+          "targetBodyMinY": 0.18347085100444954,
+          "minimumInfluences": [
+            {
+              "bone": "footL",
+              "weight": 1
+            }
+          ],
+          "sourceWristY": {
+            "L": 1.633525472219105,
+            "R": 2.444310701649955
+          }
+        },
+        {
+          "sourceTime": 4.699999809265137,
+          "sourceBodyMinY": 0.2671073456026477,
+          "targetBodyMinY": 0.065973786152778,
+          "minimumInfluences": [
+            {
+              "bone": "body",
+              "weight": 0.20338600873947144
+            },
+            {
+              "bone": "armR",
+              "weight": 0.000028036745788995177
+            },
+            {
+              "bone": "shoulderR",
+              "weight": 0.0000520682442584075
+            },
+            {
+              "bone": "torso",
+              "weight": 0.7965338826179504
+            }
+          ],
+          "sourceWristY": {
+            "L": 0.39976721560661616,
+            "R": 0.45327676817521134
+          }
+        }
+      ]
+    },
+    {
+      "id": "meshy:502",
+      "clipSha256": "7b0c8a41a122bc7390d56d48c4bffdee2281e7f8de00ed82253c6bcd6dc2e0f4",
+      "metadataSha256": "8b1c2f8bbf1a86ed64bcd8c22a4fc15c9ee1a1258a680eca2cf814d542f8e565",
+      "sourceSha256": "d4eeaeea8e16dc1ec703aeb13f42eaf7fd638923258ef4923efdd5efa847990b",
+      "registryReview": "pending",
+      "interpretation": "The entire source is an airborne prone/falling pose: full skin stays0.654–0.827 above donor rest floor. Its source-foot p10 plane0.677 is an altitude statistic, not a measured physical ground plane. The retained converter maps that variation near the floor, where target torso skin lies0.00171–0.05567 above it. The new entry/exit have separately measured two-palm braces around0.003782.",
+      "remaining": "Keep pending. Entry/exit bracing is real, but it does not establish palm support during the airborne core. Decide and document an airborne fall with launch/landing staging, or an explicitly supported cute prone variation, before approval. Do not classify the single relative-foot pair as proof of grounded exercise.",
+      "supportType": "grounded entry brace, unresolved near-floor airborne core, grounded exit brace",
+      "status": "pending-airborne-context",
+      "sourceRestFullSkinFloor": -7.224277439460414e-8,
+      "sourceBodyRange": {
+        "minimum": 0.654270158726361,
+        "maximum": 0.82656562639924
+      },
+      "sourceP10FootFloor": 0.6774616302186056,
+      "targetCoreBodyRange": {
+        "minimum": 0.001709236163522148,
+        "maximum": 0.05567485973015464
+      },
+      "minimumFullSkin120Hz": {
+        "minY": 0.0017006498669615948,
+        "time": 6.858333333333333
+      },
+      "coreMaximumWorld": {
+        "bone": "footL",
+        "from": 3.2,
+        "time": 3.216666666666667,
+        "sourceTime": 0.16666666666666696,
+        "targetLocalDegrees": 4.447018902343892,
+        "targetWorldDegrees": 4.682962466538805,
+        "sourceLocalDegrees": 4.447118469509814,
+        "sourceWorldDegrees": 4.525126695559881,
+        "jointDistance": 0.007154377654781618
+      },
+      "coreMaximumLocal": {
+        "bone": "footL",
+        "from": 3.183333333333333,
+        "time": 3.2,
+        "sourceTime": 0.15000000000000036,
+        "targetLocalDegrees": 4.447168642661104,
+        "targetWorldDegrees": 4.674578928051559,
+        "sourceLocalDegrees": 4.447118322856038,
+        "sourceWorldDegrees": 4.516107374610945,
+        "jointDistance": 0.007123198977872761
+      },
+      "transitionMaximumWorld": {
+        "bone": "footL",
+        "from": 8.033333333333333,
+        "time": 8.05,
+        "sourceTime": 4.5,
+        "targetLocalDegrees": 3.295779508593146,
+        "targetWorldDegrees": 3.7632131284090673,
+        "sourceLocalDegrees": 0,
+        "sourceWorldDegrees": 0,
+        "jointDistance": 0.006730192357803905
+      },
+      "representativeSupport": [
+        {
+          "sourceTime": 0,
+          "sourceBodyMinY": 0.7494323599605958,
+          "targetBodyMinY": 0.027021994545301097,
+          "minimumInfluences": [
+            {
+              "bone": "body",
+              "weight": 0.07388100028038025
+            },
+            {
+              "bone": "torso",
+              "weight": 0.9261189699172974
+            }
+          ],
+          "sourceWristY": {
+            "L": 1.0409131055874625,
+            "R": 1.0677893449548042
+          }
+        },
+        {
+          "sourceTime": 1.125,
+          "sourceBodyMinY": 0.735755392998312,
+          "targetBodyMinY": 0.022210448540899208,
+          "minimumInfluences": [
+            {
+              "bone": "body",
+              "weight": 0.07388100028038025
+            },
+            {
+              "bone": "torso",
+              "weight": 0.9261189699172974
+            }
+          ],
+          "sourceWristY": {
+            "L": 1.0292360159391283,
+            "R": 1.0447198147107415
+          }
+        },
+        {
+          "sourceTime": 2.25,
+          "sourceBodyMinY": 0.7990682743108742,
+          "targetBodyMinY": 0.04579718972136859,
+          "minimumInfluences": [
+            {
+              "bone": "body",
+              "weight": 0.04058622568845749
+            },
+            {
+              "bone": "torso",
+              "weight": 0.9594137668609619
+            }
+          ],
+          "sourceWristY": {
+            "L": 1.1255429766039895,
+            "R": 1.0326048628440732
+          }
+        },
+        {
+          "sourceTime": 3.375,
+          "sourceBodyMinY": 0.7831056375936098,
+          "targetBodyMinY": 0.039620975233710935,
+          "minimumInfluences": [
+            {
+              "bone": "body",
+              "weight": 0.05950228124856949
+            },
+            {
+              "bone": "torso",
+              "weight": 0.9404976963996887
+            }
+          ],
+          "sourceWristY": {
+            "L": 1.147331607482147,
+            "R": 1.0263111127578695
+          }
+        },
+        {
+          "sourceTime": 4.5,
+          "sourceBodyMinY": 0.7495599874429313,
+          "targetBodyMinY": 0.027069482969288856,
+          "minimumInfluences": [
+            {
+              "bone": "body",
+              "weight": 0.07388100028038025
+            },
+            {
+              "bone": "torso",
+              "weight": 0.9261189699172974
+            }
+          ],
+          "sourceWristY": {
+            "L": 1.0410293301802984,
+            "R": 1.0673809386753252
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "checkedAt": "2026-09-24T04:57:23.228Z",
+  "id": "meshy:40",
+  "review": "passed",
+  "reviewer": "root visual lane; independent shipping numeric replay",
+  "clipSha256": "60da32a00387d86bb70fe813342ebb90057dca2d214efc864bbab512472b1f67",
+  "sourceSha256": "a62e4713ec5d8cfef672a1665417b3e2de1927dab934d309a2fe5fb35cdca9ec",
+  "masterSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+  "contactPlan": {
+    "version": 1,
+    "planSha256": "253b4d1a2ea8d617dd212d62f3d4999503af3e03b7041879dedfda3b52549e09",
+    "reproducedClipSha256": "60da32a00387d86bb70fe813342ebb90057dca2d214efc864bbab512472b1f67"
+  },
+  "stageMetadataSha256": "2f08a653d80775f61a2b7d466f58fdbfdfb8ea6bd32cdb28830a4c916afc7ee1",
+  "scope": "Exact root-reviewed candidate reproduced by the production converter from the acquired donor and immutable master. Virtual-root support is solved before horizontal root removal; travel is rebaked from actual source/target skin and complete body framing is remeasured. No stored candidate clip or travel curve is copied.",
+  "visualEvidence": {
+    "file": "docs/doreumi/visual-stage40-candidate.json",
+    "sha256": "20fd57e234bcb6006b37733ee254d9888ef727d603e6df9e227407659811941a"
+  },
+  "contact": {
+    "actionId": 40,
+    "sourceActionId": 40,
+    "derivation": null,
+    "sourceName": "Excited_Walk_M",
+    "sourceSha256": "a62e4713ec5d8cfef672a1665417b3e2de1927dab934d309a2fe5fb35cdca9ec",
+    "clipSha256": "60da32a00387d86bb70fe813342ebb90057dca2d214efc864bbab512472b1f67",
+    "sourceFloor": 0.08715507884973267,
+    "sourcePlantedPairs": 378,
+    "missingTargetContactPairs": 0,
+    "excessiveDriftPairs": 0,
+    "sourceMovingContactPairs": 65,
+    "pivotCompatiblePairs": 0,
+    "maxDriftByHeight": 0.001226808233053782,
+    "failures": []
+  },
+  "stageContact": {
+    "clipSha256": "60da32a00387d86bb70fe813342ebb90057dca2d214efc864bbab512472b1f67",
+    "sourcePlantedPairs": 383,
+    "sourceMissing": 0,
+    "fps": 60,
+    "pairs": 744,
+    "missing": 0,
+    "excessiveDriftPairs": 0,
+    "maxDriftByHeight": 0.0013189953223794997,
+    "failures": []
+  },
+  "joints": {
+    "largestIntroducedWorld": {
+      "bone": "thighR",
+      "from": 3.566666666666667,
+      "time": 3.5833333333333335,
+      "sourceTime": 2.8833333333333337,
+      "targetLocalDegrees": 9.192266568910801,
+      "targetWorldDegrees": 9.723799049368099,
+      "sourceLocalDegrees": 1.0001098801367627,
+      "sourceWorldDegrees": 1.7772854258194595,
+      "jointDistance": 0.008468850922565248
+    },
+    "largestIntroducedLocal": {
+      "bone": "kneeR",
+      "from": 4.666666666666667,
+      "time": 4.683333333333334,
+      "sourceTime": 3.9833333333333334,
+      "targetLocalDegrees": 14.860545913918113,
+      "targetWorldDegrees": 8.116745718717786,
+      "sourceLocalDegrees": 2.7834067859142517,
+      "sourceWorldDegrees": 2.050074034162912,
+      "jointDistance": 0.02916033799520005
+    }
+  },
+  "artifacts": [
+    {
+      "file": ".artifacts/doreumi-contact-audit/promotion-40/contact.json",
+      "sha256": "2cc349254a5c984f87b26c85703bc2d2ff818752f9ac8b150155422d6b707aa7"
+    },
+    {
+      "file": ".artifacts/doreumi-contact-audit/promotion-40/stage-contact-60hz.json",
+      "sha256": "bb32c9cf1ab14e79b2861209e3a2327cd303988e378d016a8dd7c46b7fe314ae"
+    },
+    {
+      "file": ".artifacts/doreumi-contact-audit/promotion-40/joints.json",
+      "sha256": "ee6c2a3acc0ab34c9f6da59b05c841ad1ffc0cd9b4ccd7d40874484eed984996"
+    }
+  ],
+  "metadataSha256": "27bf179936ee9c3c8424f34eec6649b239213cf520aa3dd0a45d4bf530ddf723"
+}

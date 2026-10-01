@@ -1,0 +1,36 @@
+{
+  "checkedAt": "2026-09-24T05:16:48.988032+00:00",
+  "id": "meshy:502",
+  "clipSha256": "12f0b878434d0eaf3f2a0c6bbf01329293e59cef6ad03b97fa647b8f60649747",
+  "visualReview": "failed",
+  "scope": "Root individually inspected normal128px and quarter-speed five-angle/nine-pose sheets and temporal sequences.",
+  "finding": "Despite a mathematically ballistic root, six seconds airborne with camera tracking hides the vertical arc. The prone body remains almost stationary in the viewport and reads as unsupported hovering, not a convincing brief jump/fall.",
+  "requiredCorrection": "Explicitly retime the original airborne pose sequence into a brief1.2\u20131.6s flight with stronger gravity, readable crouch/launch/landing, and fixed ground-relative framing for this modest jump. Re-audit all skin contacts, interpolation and camera bounds.",
+  "metadataFinding": "Candidate manifest top-level duration10.6 is stale; actual clip and runtime duration7.405595655170957.",
+  "evidence": [
+    {
+      "file": "/tmp/doreumi-candidate-502-1/report.json",
+      "sha256": "e37ca7111dd0f1e5aaab082948c94d1ca3768df644f60a1a72ad3e5e398e241b"
+    },
+    {
+      "file": "/tmp/doreumi-candidate-502-1/motion-meshy-502.jpg",
+      "sha256": "cf7979c1999703500befd3125a5913de97d19d5d69748b844327256e6c7ecc7a"
+    },
+    {
+      "file": "/tmp/doreumi-candidate-502-1/temporal-meshy-502.jpg",
+      "sha256": "dfba9e30587c52e7a9432a92946f3674d9521585ee8dfca09c6730343321825e"
+    },
+    {
+      "file": "/tmp/doreumi-candidate-502-0.25/report.json",
+      "sha256": "f63d0bbedfac8539737299e0833fc93b8b65ea019695947fbfadae13a71d7a0e"
+    },
+    {
+      "file": "/tmp/doreumi-candidate-502-0.25/motion-meshy-502.jpg",
+      "sha256": "3c822c6d9401dd3ab81d2625196c2ea632e93f02b2e2a41a47d70e438008785c"
+    },
+    {
+      "file": "/tmp/doreumi-candidate-502-0.25/temporal-meshy-502.jpg",
+      "sha256": "6490b4b4001e1ee9a8729062cc3806749a075fe66c00c19bbfe28a5819b49c7a"
+    }
+  ]
+}

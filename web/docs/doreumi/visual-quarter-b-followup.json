@@ -1,0 +1,220 @@
+{
+  "checkedAt": "2026-09-24T03:29:48.281534+00:00",
+  "masterSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+  "runtimeBundleSha256": "bf0dc022cabf3ea9b05151b92951d364091721c0caf027ddb1097ced26bb055b",
+  "method": "Individually inspected five-angle/nine-pose sheets and1fps sampled actual quarter-speed playback. Not every rendered frame. Approval requires separate contact/joint and registry evidence.",
+  "batchPass": false,
+  "batchFailures": "14 mirror48 framing failures in this frozen runtime; newer placement is a separate capture.",
+  "items": [
+    {
+      "id": "meshy:343",
+      "clipSha256": "1613f68e78a2aa3b77c70104d52f438ab2252a09dc33e7a37e23940f9b5fa2df",
+      "observation": "Cushion now visibly supports seated body; cup reaches face and returns without the old release snap.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-contact-clean-quarter-b/motion-meshy-343.jpg",
+          "sha256": "738d14283c8752665ecbe48d9d2724d7046544df59637502f1d86d58bd42d01e"
+        },
+        {
+          "file": "/tmp/doreumi-contact-clean-quarter-b/temporal-meshy-343.jpg",
+          "sha256": "f292576938241e8c30a8bb6e22eca1122adf2567effc320cef0a1df3c9b58576"
+        }
+      ]
+    },
+    {
+      "id": "meshy:338",
+      "clipSha256": "ef3a309606784b88c435c97fe95ad5834ddb2a7e527c7e3e30c64eab8daf6805",
+      "observation": "Curious hand-to-chin pose and small torso turns remain readable.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-contact-clean-quarter-b/motion-meshy-338.jpg",
+          "sha256": "2bc8e47cfd8f925eac8c348b95a8f06bab18b3a1d255c62f0253132e0857c479"
+        },
+        {
+          "file": "/tmp/doreumi-contact-clean-quarter-b/temporal-meshy-338.jpg",
+          "sha256": "dfd1ed96fc3fbb1220899e27ac85c7e6b374faf60a11a33ce5285cc23a0724a5"
+        }
+      ]
+    },
+    {
+      "id": "meshy:388",
+      "clipSha256": "6332ed94b57c807bee066455ef445bc695ebe59275bcb407bbdc3ec4f5fbcfbe",
+      "observation": "Bow followed by open-arm shrug is coherent.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-contact-clean-quarter-b/motion-meshy-388.jpg",
+          "sha256": "110251ff84a40e20b94297e3b883eb969423c0d67992921e4055e2731f97bf84"
+        },
+        {
+          "file": "/tmp/doreumi-contact-clean-quarter-b/temporal-meshy-388.jpg",
+          "sha256": "5d902b8826d419ccb0006d2cd13234cebabba544c46f0b1835bf6b673c8ee9ba"
+        }
+      ]
+    },
+    {
+      "id": "meshy:403",
+      "clipSha256": "2b140f5812e47496ba0279e89968873482d9289f48c3f0258bffb4ac8bafdbc9",
+      "observation": "Quick forward bow and recovery read clearly.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-contact-clean-quarter-b/motion-meshy-403.jpg",
+          "sha256": "fdde0bd6863b078131ffa8de086632a7203c83033ef995c518bb6a9a395fb321"
+        },
+        {
+          "file": "/tmp/doreumi-contact-clean-quarter-b/temporal-meshy-403.jpg",
+          "sha256": "ba18cd4bae35e8b0fb2d1f18bd72e58f7127d8d7d9e3fa07cb7701b41899997b"
+        }
+      ]
+    },
+    {
+      "id": "meshy:412",
+      "clipSha256": "82718f16aa253a7877862d1fac4c945814fe4ff61decd53c1502ac963c05a7be",
+      "observation": "Raised-arm victory turns and settles smoothly.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-contact-clean-quarter-b/motion-meshy-412.jpg",
+          "sha256": "07df58212b0c181b5ea05c165d383ae85db92a118fec794b564f1333b1126532"
+        },
+        {
+          "file": "/tmp/doreumi-contact-clean-quarter-b/temporal-meshy-412.jpg",
+          "sha256": "00924d1e04f1f3217c9978a7e469adccb117e7d5e1f59bbdfc1d0048b8c905f7"
+        }
+      ]
+    },
+    {
+      "id": "meshy:452",
+      "clipSha256": "79e024d38ca4e45af2ea635cc39389efd320d55b8d96ef865df6b88f5ecaaa24",
+      "observation": "Crouch, full backward rotation and compressed landing are readable.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-contact-clean-quarter-b/motion-meshy-452.jpg",
+          "sha256": "2f4c40d0b28bbdba7f943afdea1cf2a3c1dd420628955f2d79c32a39de4d7e5a"
+        },
+        {
+          "file": "/tmp/doreumi-contact-clean-quarter-b/temporal-meshy-452.jpg",
+          "sha256": "1985cf0b3ceaa6e16d231034005622e5b0f954189d15375f0e798c954907c02a"
+        }
+      ]
+    },
+    {
+      "id": "meshy:460",
+      "clipSha256": "9501cb4e30f1daf24109cf4a0bdb567b1d36219d26a640a2b3c585508b57fc3e",
+      "observation": "Forward-leaning jump and recovery preserve a distinct airborne phase.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-contact-clean-quarter-b/motion-meshy-460.jpg",
+          "sha256": "6d08fc42d9bd33df2405ab8a367b7e781c29bf1f446c53a29d6df7c7d0a77ea8"
+        },
+        {
+          "file": "/tmp/doreumi-contact-clean-quarter-b/temporal-meshy-460.jpg",
+          "sha256": "0aa94450a4fd68965aa092007d75ba234c48233b490b99b349e86b7b7a4c0cdf"
+        }
+      ]
+    },
+    {
+      "id": "meshy:461",
+      "clipSha256": "c44de1442c7f94c337e0d8c10d37830357bb16b796135066e99056d12f06610d",
+      "observation": "Open tuck jump lands into a small crouch.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-contact-clean-quarter-b/motion-meshy-461.jpg",
+          "sha256": "1e994ca255f78746682f156dd3acc71c999f34b6f5fd9325450e624a6a952d00"
+        },
+        {
+          "file": "/tmp/doreumi-contact-clean-quarter-b/temporal-meshy-461.jpg",
+          "sha256": "c0c8cc5b2fc44a6745a5b52c09f6c4e43521250ad696df7b5339bd5ca188410d"
+        }
+      ]
+    },
+    {
+      "id": "meshy:474",
+      "clipSha256": "3ddae44d2fc8fb39c6a1220ca5c4b8eba124bb230d0c35b87566e1cd6d4196f8",
+      "observation": "Repeated tucked jumps retain readable knee and arm silhouettes.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-contact-clean-quarter-b/motion-meshy-474.jpg",
+          "sha256": "bd70e52d9aa36cd04e5768605143498887e89d60b190c61a1a21a9610cc99fb7"
+        },
+        {
+          "file": "/tmp/doreumi-contact-clean-quarter-b/temporal-meshy-474.jpg",
+          "sha256": "296f3d20070c1bbb7ee812520be8e766f77d1c98d37b2d17e1481dbf39624383"
+        }
+      ]
+    },
+    {
+      "id": "meshy:490",
+      "clipSha256": "14ee083468b02d4f55fd6c865c5f98be8725feac12e06298824f4f6c4b5d5ffc",
+      "observation": "Recovery still rotates reclined torso upright without adequate sit/hand support; fix required.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-contact-clean-quarter-b/motion-meshy-490.jpg",
+          "sha256": "016b36a3f7a734aaf218760ad588869e65dcce20c892f84ed93e3249c81bc52a"
+        },
+        {
+          "file": "/tmp/doreumi-contact-clean-quarter-b/temporal-meshy-490.jpg",
+          "sha256": "52c8e3e7f515a848e3f5a6b9e0f881942ef0af3a72e3c033e20ae4d3b14e39c4"
+        }
+      ]
+    },
+    {
+      "id": "meshy:502",
+      "clipSha256": "0ac5d4a674c56cd77fbfecbf31ed1e9024387d0cd6511958d97ed75e411b64a2",
+      "observation": "Prone entry and recovery tip whole body; planted palm support missing; fix required.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-contact-clean-quarter-b/motion-meshy-502.jpg",
+          "sha256": "787ebd7f18fc3336084b4b67e82f3fb7076d670dd60f9031fda3ae421e233444"
+        },
+        {
+          "file": "/tmp/doreumi-contact-clean-quarter-b/temporal-meshy-502.jpg",
+          "sha256": "30addcd9857fd66bb50f6c8ccbbc923d5e35d01172ee3b8988e225f7a0cc2c71"
+        }
+      ]
+    },
+    {
+      "id": "meshy:503",
+      "clipSha256": "de140e46f1b56de0068b9f345fe3d42392c508d4637cde67c75cdeec74e8e6f2",
+      "observation": "Small crouched stumble recovers without a rigid floor transition.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-contact-clean-quarter-b/motion-meshy-503.jpg",
+          "sha256": "6da2f8cb92292495f8ca4a310719607abc3789c58637c9a30a4b1c76399759c9"
+        },
+        {
+          "file": "/tmp/doreumi-contact-clean-quarter-b/temporal-meshy-503.jpg",
+          "sha256": "a298f0956baa36c5c3898106aa4556d2fa48d97bfde7bb6cf2bf42f826272472"
+        }
+      ]
+    },
+    {
+      "id": "meshy:601",
+      "clipSha256": "b2954026c33be3cfc4ea98dfd43b6cab5fa47aa6304665f3d86aff8671e4045f",
+      "observation": "Local in-place derivation preserves the full backflip and landing.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-contact-clean-quarter-b/motion-meshy-601.jpg",
+          "sha256": "2f4c40d0b28bbdba7f943afdea1cf2a3c1dd420628955f2d79c32a39de4d7e5a"
+        },
+        {
+          "file": "/tmp/doreumi-contact-clean-quarter-b/temporal-meshy-601.jpg",
+          "sha256": "fe3c0a6b360d550021db7c73d1219e6ea8912fc7f1197b12fce3b31ed4c0a552"
+        }
+      ]
+    },
+    {
+      "id": "meshy:639",
+      "clipSha256": "42beed94ff90692c0190c35b35a7a2d64f6a7793f74b8773878e265c24673af8",
+      "observation": "Alternating lifted knees with raised arms remain distinct.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-contact-clean-quarter-b/motion-meshy-639.jpg",
+          "sha256": "d08639f19c8130374dfbcc1af675a2b4f53e92932f4898af7b07aae46653e418"
+        },
+        {
+          "file": "/tmp/doreumi-contact-clean-quarter-b/temporal-meshy-639.jpg",
+          "sha256": "5c41911e4e48562ed6b813393ba33c8024ee17c83c9485488d0ae553897bcbda"
+        }
+      ]
+    }
+  ]
+}

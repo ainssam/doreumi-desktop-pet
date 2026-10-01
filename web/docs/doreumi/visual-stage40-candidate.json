@@ -1,0 +1,89 @@
+{
+  "checkedAt": "2026-09-24T04:51:24.922599+00:00",
+  "id": "meshy:40",
+  "clipSha256": "60da32a00387d86bb70fe813342ebb90057dca2d214efc864bbab512472b1f67",
+  "candidateManifestSha256": "a5078b42f89385c40ae47f8a8d481447db71d32344370fa0ebad67a0c8ee381e",
+  "masterSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+  "review": "visual-passed-production-replay-pending",
+  "reviewer": "root",
+  "scope": "Individually viewed normal128 and quarter-speed five-angle nine-pose sheets, 4fps/1fps temporal sheets, four thirteen-frame 60Hz focus windows at three angles. Actual Host desktop/mobile normal and quarter contact checks passed. Candidate only; public40 and ambient remain pending.",
+  "observation": "Compact turning steps retain alternating visible feet and torso counterbalance. Four focused knee/hip peak windows show continuous foot silhouette and knee flexion without the prior pole-branch flip or foot tucked abruptly under the torso. Back-lean recovery settles into upright idle. Actual Host travel preserves stationary support while moving across the page.",
+  "sourceFocusSeconds": [
+    2.8833333333333333,
+    3.9833333333333334,
+    5.215,
+    5.4
+  ],
+  "hostMaxContactSlipRatio": {
+    "normalDesktop": 0.0018260454916013361,
+    "normalMobile": 0.0018443858484750433,
+    "quarterDesktop": 0.0008245829610636286,
+    "quarterMobile": 0.000888860546113605
+  },
+  "evidence": [
+    {
+      "file": "/tmp/doreumi-stage40-isolated-1/report.json",
+      "sha256": "bd59c32269acebd25ab74cc9075185bf4a00d12e0219acece6fdcb0464f51154"
+    },
+    {
+      "file": "/tmp/doreumi-stage40-isolated-1/motion-meshy-40.jpg",
+      "sha256": "bde0148c16796ddeb35c9bc797c255ee0d359aa27232c53480224deb2081040b"
+    },
+    {
+      "file": "/tmp/doreumi-stage40-isolated-1/temporal-meshy-40.jpg",
+      "sha256": "cc76b1de34c7aac281f547ed157c5cc2bba9b26c98d15d2fdb7275472559d9ce"
+    },
+    {
+      "file": "/tmp/doreumi-stage40-isolated-0.25/report.json",
+      "sha256": "e34bceaa288cb984630d3eae2d4b39580b7d9101d28430a27243f2bdc5dffb2c"
+    },
+    {
+      "file": "/tmp/doreumi-stage40-isolated-0.25/motion-meshy-40.jpg",
+      "sha256": "cbe030454968693cdb906964306556176218d956b9b7150b068ec8e376e11e11"
+    },
+    {
+      "file": "/tmp/doreumi-stage40-isolated-0.25/temporal-meshy-40.jpg",
+      "sha256": "a11136ad67b196c4f648dc83ade6bdf5058bfd896d0dfba66e19a957b7944d15"
+    },
+    {
+      "file": "/tmp/doreumi40-focus-0/report.json",
+      "sha256": "e736fd8220c3b2790673e8f06ae178b187d7980dc1e3f62e13a395a8f709bb71"
+    },
+    {
+      "file": "/tmp/doreumi40-focus-0/motion-meshy-40.jpg",
+      "sha256": "6c82301ee2e1765106a90543f670c28047774bed963364a498c4cfd19b124dc9"
+    },
+    {
+      "file": "/tmp/doreumi40-focus-1/report.json",
+      "sha256": "93523e339253b9645d200fe5a1e6c4262856814989339d71bd9882edd0becddf"
+    },
+    {
+      "file": "/tmp/doreumi40-focus-1/motion-meshy-40.jpg",
+      "sha256": "301d1988cdd0dab2d82e219cdcd1bb57a354d23726a3f042599ee2dccd9bfdd0"
+    },
+    {
+      "file": "/tmp/doreumi40-focus-2/report.json",
+      "sha256": "0257c1c2b8b3ad67feb58762623e8df59dd4e26d7558069adc352348161be3cc"
+    },
+    {
+      "file": "/tmp/doreumi40-focus-2/motion-meshy-40.jpg",
+      "sha256": "05f0b8867166e08b41ead5d202c47942ee50a36fc1a42962ff6a75bca59e8949"
+    },
+    {
+      "file": "/tmp/doreumi40-focus-3/report.json",
+      "sha256": "26932e4e1b446b0e00da80d75d998f0562840e5d16f0e1cf9d5439c71737fc4e"
+    },
+    {
+      "file": "/tmp/doreumi40-focus-3/motion-meshy-40.jpg",
+      "sha256": "c7d8b839e301b13f188c75be2223747ecfcd8bc2dbdec93e5f1eda6ea2c89c4e"
+    },
+    {
+      "file": "/tmp/doreumi-stage40-candidate/report.json",
+      "sha256": "9c6fecb85cfbab1fed516238b30355572659a99275bc3bd2a969a5ef6396a619"
+    },
+    {
+      "file": "/tmp/doreumi-stage40-candidate-quarter/report.json",
+      "sha256": "dcb69d4821a974c6b4e4851d687a9130cb713cf6cff3a86d0adedfec8827c14b"
+    }
+  ]
+}

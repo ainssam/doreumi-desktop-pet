@@ -1,0 +1,1428 @@
+{
+  "status": "four-motions-and-host-reviewed-new-master-contact-regression-pending",
+  "approved": false,
+  "observations": {
+    "439": "Low ledge stays fixed while short legs alternate on its footstep and hands use separated rails. Normal and quarter playback and two 60Hz focus windows remain continuous. Old master wrist surface wrinkles visible in side close-ups require new master regression.",
+    "619": "Same low-ledge adaptation for in-place source, shown with fixed prop and bounded local root movement. Normal and quarter playback and both focus windows viewed. Shared master wrist correction still pending.",
+    "440": "Rightward low-ledge adaptation remains bounded against a fixed ledge. Normal and quarter playback, two25-frame60Hz focus windows and4 full-size45/90degree center images reviewed. No visible knee branch jump. Shared master wrist/shoulder surface corrections and new-master contact revalidation remain pending.",
+    "620": "Rightward low-ledge adaptation remains bounded against a fixed ledge. Normal and quarter playback, two25-frame60Hz focus windows and4 full-size45/90degree center images reviewed. No visible knee branch jump. Shared master wrist/shoulder surface corrections and new-master contact revalidation remain pending."
+  },
+  "captures": [
+    {
+      "actionId": 439,
+      "sample": "1",
+      "reportSha256": "477216d946510079ad2e2f323c232cd0c8d2cbf6d34e767926ef1ae3fa878152",
+      "clipSha256": "0e7f782c43265ec111e7f3b34dc0a865bb541e49029388f51a62664e9f85f1bb",
+      "runtimeBundleSha256": "c7172054e204d463852777c8a498e92378029acf3bfd9cdb0deebbcc63f22241",
+      "modelSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+      "images": [
+        {
+          "path": "/tmp/doreumi-wall-visible-439-1/motion-meshy-439.jpg",
+          "sha256": "970f312a9d487f32833d86d24d3cc2c4b94bc9cf21036e923eaf5ba48c6d40a5",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-wall-visible-439-1/playback-meshy-439.jpg",
+          "sha256": "6c2a189f1c63b4300e481ed458df64c7e8f3e9e2912b64ebad6728322f327299",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 439,
+      "sample": "0.25",
+      "reportSha256": "6e018462960c94376a890db98bf7a1df3365313ae4f484b13794cdd9c22987b2",
+      "clipSha256": "0e7f782c43265ec111e7f3b34dc0a865bb541e49029388f51a62664e9f85f1bb",
+      "runtimeBundleSha256": "c7172054e204d463852777c8a498e92378029acf3bfd9cdb0deebbcc63f22241",
+      "modelSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+      "images": [
+        {
+          "path": "/tmp/doreumi-wall-visible-439-0.25/motion-meshy-439.jpg",
+          "sha256": "a37496789c4e6ccd324cb9c4ed56406188e40dd9f1cc2cda46be233daa90e9cc",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-wall-visible-439-0.25/playback-meshy-439.jpg",
+          "sha256": "83ddb5681be83528ddefc45aed840682b9f1865696d4cec5a73c954ab447ff31",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 439,
+      "sample": "focus-0",
+      "reportSha256": "54b4598261ce0b28e4a260dd3bb8e200a6a09834c0ee4f82b4f36b27a2e92d08",
+      "clipSha256": "0e7f782c43265ec111e7f3b34dc0a865bb541e49029388f51a62664e9f85f1bb",
+      "runtimeBundleSha256": "e469151d85555620ad4c7ea65eded3546b77ae5c40162cb5ed78d86b1c7d3bad",
+      "modelSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+      "images": [
+        {
+          "path": "/tmp/doreumi-wall-visible-439-focus-0/motion-meshy-439.jpg",
+          "sha256": "075a1e0aa5085bd5c009ab70b8bb1ca703b96fa4c6367f7b9b087280f19e5f8b",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-wall-visible-439-focus-0/action-meshy-439-45-0.3981900473967399.png",
+          "sha256": "dfb49b84fbdc4b4d310fafe5707d2001b6df003082ed32314dca4b3ddd8cfcd0",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-wall-visible-439-focus-0/action-meshy-439-90-0.3981900473967399.png",
+          "sha256": "02de61717a19bcfe1ee6ef353c8d6af3d1173c578a2d76bca6867889b96aa5d8",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 439,
+      "sample": "focus-1",
+      "reportSha256": "41bb677f037f8370cd5fc7b3fba085c07f082e4fd984751d89a98d260e59779d",
+      "clipSha256": "0e7f782c43265ec111e7f3b34dc0a865bb541e49029388f51a62664e9f85f1bb",
+      "runtimeBundleSha256": "e469151d85555620ad4c7ea65eded3546b77ae5c40162cb5ed78d86b1c7d3bad",
+      "modelSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+      "images": [
+        {
+          "path": "/tmp/doreumi-wall-visible-439-focus-1/motion-meshy-439.jpg",
+          "sha256": "9fad62f7834a966c63d3186206568b35f01f7556200e61c6b0ef37a8884ee919",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-wall-visible-439-focus-1/action-meshy-439-45-0.2828054313897301.png",
+          "sha256": "91849ab5d5652467bb515789c97393320f04be44dbacc8c0422db81c028a98a9",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-wall-visible-439-focus-1/action-meshy-439-90-0.2828054313897301.png",
+          "sha256": "79001ddc7d51fa06be3ce4636660ec0115a0f1037cfa5233bcd3510f5986375a",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 619,
+      "sample": "1",
+      "reportSha256": "666407e3a99dd0e731162a307849715020f1d7736595be37cde44baf27d48cba",
+      "clipSha256": "fb8c3f9fe1fd0bd151daa5af98be6d85c91a59e3735a57792c2f501d59a9b473",
+      "runtimeBundleSha256": "c7172054e204d463852777c8a498e92378029acf3bfd9cdb0deebbcc63f22241",
+      "modelSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+      "images": [
+        {
+          "path": "/tmp/doreumi-wall-visible-619-1/motion-meshy-619.jpg",
+          "sha256": "1dbfc32ebbd4bff469bd2c3b3d0f0fe856769020c2a21c1cdbc4c3b61424d086",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-wall-visible-619-1/playback-meshy-619.jpg",
+          "sha256": "0d0cdca763900c88c1fa81085ff8843fb920b91e1fa8670140b19a92035a94c8",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 619,
+      "sample": "0.25",
+      "reportSha256": "f1d46023ede1aee39c571ac433447d764082a616031e8c61aae9628bab0e49e3",
+      "clipSha256": "fb8c3f9fe1fd0bd151daa5af98be6d85c91a59e3735a57792c2f501d59a9b473",
+      "runtimeBundleSha256": "c7172054e204d463852777c8a498e92378029acf3bfd9cdb0deebbcc63f22241",
+      "modelSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+      "images": [
+        {
+          "path": "/tmp/doreumi-wall-visible-619-0.25/motion-meshy-619.jpg",
+          "sha256": "3dbfa3eabe23f8adf75632d8d344cdf767171e670d756daec65858d56fe2b4ec",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-wall-visible-619-0.25/playback-meshy-619.jpg",
+          "sha256": "6910665f4693c7dd045509f7afe37dd2b56362d26170c03ae18845f387235287",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 619,
+      "sample": "focus-0",
+      "reportSha256": "69b629cd4632db65099e941662676cb83666dd0e5cc90f4ce2b9a8d6077d964c",
+      "clipSha256": "fb8c3f9fe1fd0bd151daa5af98be6d85c91a59e3735a57792c2f501d59a9b473",
+      "runtimeBundleSha256": "e469151d85555620ad4c7ea65eded3546b77ae5c40162cb5ed78d86b1c7d3bad",
+      "modelSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+      "images": [
+        {
+          "path": "/tmp/doreumi-wall-visible-619-focus-0/motion-meshy-619.jpg",
+          "sha256": "ddbe845d24be06068fb5fe93f7e731a3217167f3345469049be012cf7cc5e50a",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-wall-visible-619-focus-0/action-meshy-619-45-0.3941441416043796.png",
+          "sha256": "7759c969e0f19a47f74c98ffafecf6fac03af8f5da073ec51ea55a1916da3256",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-wall-visible-619-focus-0/action-meshy-619-90-0.3941441416043796.png",
+          "sha256": "11d34476870ec2ca73fa6396a0bdcba8512b4cbde845bcd4773b0137217d378c",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 619,
+      "sample": "focus-1",
+      "reportSha256": "d2179bfa52292f00debcdf7747860c73a0a13deac58af5921f8a747fc5216971",
+      "clipSha256": "fb8c3f9fe1fd0bd151daa5af98be6d85c91a59e3735a57792c2f501d59a9b473",
+      "runtimeBundleSha256": "e469151d85555620ad4c7ea65eded3546b77ae5c40162cb5ed78d86b1c7d3bad",
+      "modelSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+      "images": [
+        {
+          "path": "/tmp/doreumi-wall-visible-619-focus-1/motion-meshy-619.jpg",
+          "sha256": "12565264ee3f78fb093fed4f150b3be02e75cd9ffab023327a298aba5d29fd0a",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-wall-visible-619-focus-1/action-meshy-619-45-0.2815315297174141.png",
+          "sha256": "2ddbc782c1822241615602089c7b141ae16263d031d6f79d0835756b1a1cce4f",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-wall-visible-619-focus-1/action-meshy-619-90-0.2815315297174141.png",
+          "sha256": "dd090522d5e460036146b749b94031011d817a65f9bcaad11f08b5bc089995b9",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 440,
+      "sample": "1",
+      "reportSha256": "e3aebbe2625e9103732762a15aee24add47ce3d12feed15c096bd004fd5637a3",
+      "clipSha256": "2af9ab5cab68dc21b294879117fa0bcff33860db4e59e88190fb8c27ed44ecb2",
+      "runtimeBundleSha256": "c7172054e204d463852777c8a498e92378029acf3bfd9cdb0deebbcc63f22241",
+      "modelSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+      "images": [
+        {
+          "path": "/tmp/doreumi-wall-visible-440-1/motion-meshy-440.jpg",
+          "sha256": "3f93c5263b56889246501e8a0be68a591f0e4a387aaee7cf7a3c4bf1214ce21f",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-wall-visible-440-1/playback-meshy-440.jpg",
+          "sha256": "87d8fe25bbf6a834101bdbd2d04929f84ca269ede88e37d630fcaadfa2c69116",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 440,
+      "sample": "0.25",
+      "reportSha256": "e877bb81e3e1d3c7f6b2cd0f66767559f00b6f441a476dc3ab963b4c6fddbb8f",
+      "clipSha256": "2af9ab5cab68dc21b294879117fa0bcff33860db4e59e88190fb8c27ed44ecb2",
+      "runtimeBundleSha256": "c7172054e204d463852777c8a498e92378029acf3bfd9cdb0deebbcc63f22241",
+      "modelSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+      "images": [
+        {
+          "path": "/tmp/doreumi-wall-visible-440-0.25/motion-meshy-440.jpg",
+          "sha256": "42cf2e3a621ebda8c5d54c16a78e4976b106dc7b45a8e7729d5caa059a2149d1",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-wall-visible-440-0.25/playback-meshy-440.jpg",
+          "sha256": "5df857b48075a189e05b7d3e1b74e105d7f499b0826f277d3d1195998bc6ed6c",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 440,
+      "sample": "focus-0",
+      "reportSha256": "bbe7264d7377ae922df184c63c1889c892723483357f5cbaf5d4bcf97856026c",
+      "clipSha256": "2af9ab5cab68dc21b294879117fa0bcff33860db4e59e88190fb8c27ed44ecb2",
+      "runtimeBundleSha256": "e469151d85555620ad4c7ea65eded3546b77ae5c40162cb5ed78d86b1c7d3bad",
+      "modelSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+      "images": [
+        {
+          "path": "/tmp/doreumi-wall-visible-440-focus-0/motion-meshy-440.jpg",
+          "sha256": "9a80fa1eb9c718e746b5378455890338497e1f1a43e26e9a4c093d364acaa838",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-wall-visible-440-focus-0/action-meshy-440-45-0.3914027170433864.png",
+          "sha256": "ae4acd31d90f64afc08febb8185d065a8f68773dad2ef7cc9ff3a5307e0c95f5",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-wall-visible-440-focus-0/action-meshy-440-90-0.3914027170433864.png",
+          "sha256": "20917761867c357af32fea852a8d944aa6ea6b5e05f5188684f167548108e76d",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 440,
+      "sample": "focus-1",
+      "reportSha256": "670983c97d910506b519d8ab1a644ebaec4d89e033fc88001ede555105d56263",
+      "clipSha256": "2af9ab5cab68dc21b294879117fa0bcff33860db4e59e88190fb8c27ed44ecb2",
+      "runtimeBundleSha256": "e469151d85555620ad4c7ea65eded3546b77ae5c40162cb5ed78d86b1c7d3bad",
+      "modelSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+      "images": [
+        {
+          "path": "/tmp/doreumi-wall-visible-440-focus-1/motion-meshy-440.jpg",
+          "sha256": "018d1d8b95ad6dc31122648cc311f694051829d3bdbb96a8cca8a4021f0c5245",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-wall-visible-440-focus-1/action-meshy-440-45-0.27601810103637653.png",
+          "sha256": "de0b8c6faeaf660c9c10eace20d75896260580a260e2aa32c287b3eb62f4c3e2",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-wall-visible-440-focus-1/action-meshy-440-90-0.27601810103637653.png",
+          "sha256": "f163219de4c5811a761d57b8c1084c0e5fa649bc9f423468e39a5c443077d7ad",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 620,
+      "sample": "1",
+      "reportSha256": "318ac41844bcebf20afb8355849c72e44f5971d57d1ef51a2af6090892fcf3f9",
+      "clipSha256": "df916c975c6df20a48cf1cc9635cbe59a27a40fa6ac8aa1562b6269a54765a17",
+      "runtimeBundleSha256": "c7172054e204d463852777c8a498e92378029acf3bfd9cdb0deebbcc63f22241",
+      "modelSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+      "images": [
+        {
+          "path": "/tmp/doreumi-wall-visible-620-1/motion-meshy-620.jpg",
+          "sha256": "c87ea1e411bd3baa8d52436be85f7f32f9b28a4e77a8b23cfcd91b735d8ebb45",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-wall-visible-620-1/playback-meshy-620.jpg",
+          "sha256": "1e78488e33d10cd56858f62d260f4df225be9ceaaa3c076c6867b47573376bad",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 620,
+      "sample": "0.25",
+      "reportSha256": "e9ffd9c87e3b8d539699acb6f1e3623bea593e6c4422ce859b92db2121805073",
+      "clipSha256": "df916c975c6df20a48cf1cc9635cbe59a27a40fa6ac8aa1562b6269a54765a17",
+      "runtimeBundleSha256": "c7172054e204d463852777c8a498e92378029acf3bfd9cdb0deebbcc63f22241",
+      "modelSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+      "images": [
+        {
+          "path": "/tmp/doreumi-wall-visible-620-0.25/motion-meshy-620.jpg",
+          "sha256": "3fae2e595587b3123ab2414856b1a6a9b9e25b725478a8303019b87c063478eb",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-wall-visible-620-0.25/playback-meshy-620.jpg",
+          "sha256": "6fd83379b68b099dfe03bfe288ae149d3cebab2340d24618ef50bab8c22d75be",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 620,
+      "sample": "focus-0",
+      "reportSha256": "859e0e2384794b321d0a95ffdd1871f02d01f1ea953596d7d1508c875d795e4e",
+      "clipSha256": "df916c975c6df20a48cf1cc9635cbe59a27a40fa6ac8aa1562b6269a54765a17",
+      "runtimeBundleSha256": "e469151d85555620ad4c7ea65eded3546b77ae5c40162cb5ed78d86b1c7d3bad",
+      "modelSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+      "images": [
+        {
+          "path": "/tmp/doreumi-wall-visible-620-focus-0/motion-meshy-620.jpg",
+          "sha256": "08588f6acc9662465545622dada9c279906b4f7a61a3484ec21202178d7b7864",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-wall-visible-620-focus-0/action-meshy-620-45-0.37837837594020446.png",
+          "sha256": "01d31be14afc447fc82fded7fc385472a22a9c954d6961ad8296c554cb89525c",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-wall-visible-620-focus-0/action-meshy-620-90-0.37837837594020446.png",
+          "sha256": "b687f58990711bae7726edf31721d18ad9d74c40a0d6f654d3dc449c84177e15",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 620,
+      "sample": "focus-1",
+      "reportSha256": "e57a38a745816909d0c3f917073ebc8b716dcc56d6c777dc9cf7209ea54965eb",
+      "clipSha256": "df916c975c6df20a48cf1cc9635cbe59a27a40fa6ac8aa1562b6269a54765a17",
+      "runtimeBundleSha256": "e469151d85555620ad4c7ea65eded3546b77ae5c40162cb5ed78d86b1c7d3bad",
+      "modelSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+      "images": [
+        {
+          "path": "/tmp/doreumi-wall-visible-620-focus-1/motion-meshy-620.jpg",
+          "sha256": "07dc9faaa6fd154b6ae3060bf0d5d51d2659eb05ba6e835cb4639561bdb7e664",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-wall-visible-620-focus-1/action-meshy-620-45-0.27477477300419606.png",
+          "sha256": "4ff425d1bd87116ff12464d1692072558fd28a9c87e47a6299f4a1e2b89770cd",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-wall-visible-620-focus-1/action-meshy-620-90-0.27477477300419606.png",
+          "sha256": "f6f1afb01b9c704b770a17dd8b1ca78a96bff1614b6dc277efe3ed416aef8d03",
+          "rootViewed": true
+        }
+      ]
+    }
+  ],
+  "failedCapture": {
+    "path": "/tmp/doreumi-wall-left-439-1/report.json",
+    "rootViewedImages": 4,
+    "finding": "Environment absent from actual images despite numeric support evidence. Fixed mesh lookup that previously depended on optional resting-hand probes. Superseded by wall-visible captures."
+  },
+  "host": [
+    {
+      "actionId": 439,
+      "speed": "1",
+      "reportSha256": "8b36bb72fb4364955b1b143db7644202276749b9007526683f7f3917c9af8901",
+      "bundleHashes": {
+        "stdin.js": "16f4550d8428f09fee774fc833171dda7c63af127d236126ad414d66ea1cfd13",
+        "stdin.css": "2a13d4bc0e4ea3d6ee502322fc91df21c40fecc11125f892db48fee0054e1426"
+      },
+      "samples": [
+        {
+          "viewport": {
+            "width": 1280,
+            "height": 900
+          },
+          "action": "meshy:439",
+          "completePlayback": true,
+          "kind": "fixed-environment",
+          "facingRequestPreservedAnchor": true,
+          "interrupted": {
+            "action": "Dragged",
+            "environmentVisible": false,
+            "phase": "dragged"
+          },
+          "stopDecisions": []
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "action": "meshy:439",
+          "completePlayback": true,
+          "kind": "fixed-environment",
+          "facingRequestPreservedAnchor": true,
+          "interrupted": {
+            "action": "Dragged",
+            "environmentVisible": false,
+            "phase": "dragged"
+          },
+          "stopDecisions": []
+        }
+      ],
+      "images": [
+        {
+          "path": "/tmp/doreumi-wall-host-439-stable-1/1280x900-environment-439-interrupted.png",
+          "sha256": "4e044aeedfafc3f024cf15a4fdedb41923c83c72d2488cce479c9fcaa1742e39",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-wall-host-439-stable-1/1280x900-environment-439-moving.png",
+          "sha256": "00a7b9b321196bf0eb2b5b43c8c6a3d05d6e2af5c52a3f39206398b8ac08ebc5",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-wall-host-439-stable-1/1280x900-environment-439-rest.png",
+          "sha256": "38d1b58dad07a10a894e4d61a917f76c9fb2b5e9956fd6ab3e47a82cc4224fdf",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-wall-host-439-stable-1/390x844-environment-439-interrupted.png",
+          "sha256": "c99e8a7093dd8fe597eb9d412f9ed9fa00938f930b14e2fb3ad183a6a20b1f1b",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-wall-host-439-stable-1/390x844-environment-439-moving.png",
+          "sha256": "ac52ca8d3e25b7be119239a1674f50bf77fff07230593745760965984694dc59",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-wall-host-439-stable-1/390x844-environment-439-rest.png",
+          "sha256": "9c0864bbdea01d64aae3dac23370ec2aad370c0b983e18128f7b2ab4d12f605b",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 439,
+      "speed": "0.25",
+      "reportSha256": "70ba73c028acc5f7fc8bbe156572f3154bd5cafc4c176e532d2a51742627da53",
+      "bundleHashes": {
+        "stdin.js": "16f4550d8428f09fee774fc833171dda7c63af127d236126ad414d66ea1cfd13",
+        "stdin.css": "2a13d4bc0e4ea3d6ee502322fc91df21c40fecc11125f892db48fee0054e1426"
+      },
+      "samples": [
+        {
+          "viewport": {
+            "width": 1280,
+            "height": 900
+          },
+          "action": "meshy:439",
+          "completePlayback": true,
+          "kind": "fixed-environment",
+          "facingRequestPreservedAnchor": true,
+          "interrupted": {
+            "action": "Dragged",
+            "environmentVisible": false,
+            "phase": "dragged"
+          },
+          "stopDecisions": []
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "action": "meshy:439",
+          "completePlayback": true,
+          "kind": "fixed-environment",
+          "facingRequestPreservedAnchor": true,
+          "interrupted": {
+            "action": "Dragged",
+            "environmentVisible": false,
+            "phase": "dragged"
+          },
+          "stopDecisions": []
+        }
+      ],
+      "images": [
+        {
+          "path": "/tmp/doreumi-wall-host-439-stable-0.25/1280x900-environment-439-interrupted.png",
+          "sha256": "3e09e700bda97841dd000ea0e2ef0cf5d728e451443e45907ae1aaec35ab30cf",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-wall-host-439-stable-0.25/1280x900-environment-439-moving.png",
+          "sha256": "003ae10e6e2615021597bb6469fb10b8dbb8974cf7c1116e85ffb66b7472baeb",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-wall-host-439-stable-0.25/1280x900-environment-439-rest.png",
+          "sha256": "9bb1d2afd6fab0a80cf7c7013c54e85948b65264329d0785e659ef77375dc390",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-wall-host-439-stable-0.25/390x844-environment-439-interrupted.png",
+          "sha256": "076019419457875b91ce78419ba5b9727cb58e77c7b9b67d8d9149c964d6cb27",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-wall-host-439-stable-0.25/390x844-environment-439-moving.png",
+          "sha256": "be9060abbbd1372c52d5f70ebf3e0f61475aeaf2486fc35e71bb3c310f90ff06",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-wall-host-439-stable-0.25/390x844-environment-439-rest.png",
+          "sha256": "77ef0287f2cb321449f80a151e535976eab2b8853f9ec64bbc214ff99201b38c",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 619,
+      "speed": "1",
+      "reportSha256": "062fc88e003fabad393cb27cd80332f78f9d0dc7716822cc5e7edaa30d63ff51",
+      "bundleHashes": {
+        "stdin.js": "16f4550d8428f09fee774fc833171dda7c63af127d236126ad414d66ea1cfd13",
+        "stdin.css": "2a13d4bc0e4ea3d6ee502322fc91df21c40fecc11125f892db48fee0054e1426"
+      },
+      "samples": [
+        {
+          "viewport": {
+            "width": 1280,
+            "height": 900
+          },
+          "action": "meshy:619",
+          "completePlayback": true,
+          "kind": "fixed-environment",
+          "facingRequestPreservedAnchor": true,
+          "interrupted": {
+            "action": "Dragged",
+            "environmentVisible": false,
+            "phase": "dragged"
+          },
+          "stopDecisions": []
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "action": "meshy:619",
+          "completePlayback": true,
+          "kind": "fixed-environment",
+          "facingRequestPreservedAnchor": true,
+          "interrupted": {
+            "action": "Dragged",
+            "environmentVisible": false,
+            "phase": "dragged"
+          },
+          "stopDecisions": []
+        }
+      ],
+      "images": [
+        {
+          "path": "/tmp/doreumi-wall-host-619-stable-1/1280x900-environment-619-interrupted.png",
+          "sha256": "1d05df2bdf94c6a8f698be32ca796d8f837f0cdecfa19032512b394d751bdf5c",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-wall-host-619-stable-1/1280x900-environment-619-moving.png",
+          "sha256": "dda0dcbcdfcfb4801989bc0b9c80fb378b27cf1efa658cc3b32288ac2be87446",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-wall-host-619-stable-1/1280x900-environment-619-rest.png",
+          "sha256": "68171c98546b4fdb45d61ee7fd4704faf030dbb52bc2f60b392ec4470f2eeb43",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-wall-host-619-stable-1/390x844-environment-619-interrupted.png",
+          "sha256": "63d100eb49eaabf0289882f6da1c65c6e47e18fdbfdf030162d5be5ded1add36",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-wall-host-619-stable-1/390x844-environment-619-moving.png",
+          "sha256": "9667a53079106fda2c510742b7f44f50872eeb5a1ba7dee911b65c3bc2de2087",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-wall-host-619-stable-1/390x844-environment-619-rest.png",
+          "sha256": "df5e80dca694554cc242d6cea67e5667670167a4704df2fec0e26fdf7c0f8439",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 619,
+      "speed": "0.25",
+      "reportSha256": "7be766c3814f232a4638362f904d1e6a66ed7f893f3f35fbee7a09b5087f6cc3",
+      "bundleHashes": {
+        "stdin.js": "16f4550d8428f09fee774fc833171dda7c63af127d236126ad414d66ea1cfd13",
+        "stdin.css": "2a13d4bc0e4ea3d6ee502322fc91df21c40fecc11125f892db48fee0054e1426"
+      },
+      "samples": [
+        {
+          "viewport": {
+            "width": 1280,
+            "height": 900
+          },
+          "action": "meshy:619",
+          "completePlayback": true,
+          "kind": "fixed-environment",
+          "facingRequestPreservedAnchor": true,
+          "interrupted": {
+            "action": "Dragged",
+            "environmentVisible": false,
+            "phase": "dragged"
+          },
+          "stopDecisions": []
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "action": "meshy:619",
+          "completePlayback": true,
+          "kind": "fixed-environment",
+          "facingRequestPreservedAnchor": true,
+          "interrupted": {
+            "action": "Dragged",
+            "environmentVisible": false,
+            "phase": "dragged"
+          },
+          "stopDecisions": []
+        }
+      ],
+      "images": [
+        {
+          "path": "/tmp/doreumi-wall-host-619-stable-0.25/1280x900-environment-619-interrupted.png",
+          "sha256": "42bf20da9430046c8cedf9ea73c29e0f23465134fde7b99c0fc6d701516c8340",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-wall-host-619-stable-0.25/1280x900-environment-619-moving.png",
+          "sha256": "c761eb70dcaee98502f0f86dcaf2b7f1c0b5d026ba9eb855e00fc599ac829725",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-wall-host-619-stable-0.25/1280x900-environment-619-rest.png",
+          "sha256": "892ff97c6f960252f3b0a75f5293680852a3bfffadd0907411141b954b4bab23",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-wall-host-619-stable-0.25/390x844-environment-619-interrupted.png",
+          "sha256": "1600a4f9e22095494a26461bcef0f2cd9b93dabaad76c71e4d9663942feac788",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-wall-host-619-stable-0.25/390x844-environment-619-moving.png",
+          "sha256": "642372ea905dc986db8f0040d68276a1ad0e288a614766e876c98d4a57b8db5c",
+          "rootViewed": true
+        },
+        {
+          "path": "/tmp/doreumi-wall-host-619-stable-0.25/390x844-environment-619-rest.png",
+          "sha256": "e9ac2eb670fbf638a0a72a8d544dc434887a9663baec25982dc1b51c7ecbad42",
+          "rootViewed": true
+        }
+      ]
+    },
+    {
+      "actionId": 440,
+      "speed": "1",
+      "reportSha256": "20597642ce35238ca35f0e700d74f2f07cdf70a11ac3d883d1eb878999803c94",
+      "bundleHashes": {
+        "stdin.js": "16f4550d8428f09fee774fc833171dda7c63af127d236126ad414d66ea1cfd13",
+        "stdin.css": "2a13d4bc0e4ea3d6ee502322fc91df21c40fecc11125f892db48fee0054e1426"
+      },
+      "samples": [
+        {
+          "viewport": {
+            "width": 1280,
+            "height": 900
+          },
+          "action": "meshy:440",
+          "completePlayback": true,
+          "kind": "fixed-environment",
+          "facingRequestPreservedAnchor": true,
+          "interrupted": {
+            "action": "Dragged",
+            "environmentVisible": false,
+            "phase": "dragged",
+            "dom": {
+              "canvases": 1,
+              "characters": 1,
+              "currentRect": {
+                "x": 1032,
+                "y": 651,
+                "width": 140,
+                "height": 130
+              },
+              "previousPoint": [
+                {
+                  "tag": "HTML",
+                  "className": ""
+                }
+              ],
+              "currentPoint": [
+                {
+                  "tag": "BUTTON",
+                  "className": "doreumi-avatar-button"
+                },
+                {
+                  "tag": "HTML",
+                  "className": ""
+                }
+              ],
+              "fallbackOpacity": "0"
+            }
+          },
+          "stopDecisions": []
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "action": "meshy:440",
+          "completePlayback": true,
+          "kind": "fixed-environment",
+          "facingRequestPreservedAnchor": true,
+          "interrupted": {
+            "action": "Dragged",
+            "environmentVisible": false,
+            "phase": "dragged",
+            "dom": {
+              "canvases": 1,
+              "characters": 1,
+              "currentRect": {
+                "x": 178,
+                "y": 643,
+                "width": 116,
+                "height": 98
+              },
+              "previousPoint": [
+                {
+                  "tag": "HTML",
+                  "className": ""
+                }
+              ],
+              "currentPoint": [
+                {
+                  "tag": "BUTTON",
+                  "className": "doreumi-avatar-button"
+                },
+                {
+                  "tag": "HTML",
+                  "className": ""
+                }
+              ],
+              "fallbackOpacity": "0"
+            }
+          },
+          "stopDecisions": []
+        }
+      ],
+      "images": [
+        {
+          "path": "/tmp/doreumi-wall-host-440-stable-1/host-context-sheet.png",
+          "sha256": "1e03dd48520e04d668213a93c554bdd2ba89668924606ca09d6bdea5f35be28c",
+          "rootViewed": true,
+          "basis": "Unresized lossless screenshot crops retaining the entire character and lower viewport; whole viewport constraints measured in Host report.",
+          "sources": [
+            {
+              "path": "/tmp/doreumi-wall-host-440-stable-1/1280x900-environment-440-moving.png",
+              "sha256": "c44cdbb317e0972cf2120c610343d68efb6e43ab8ea1e64a04e43cccc927f4f7",
+              "crop": [
+                890,
+                560,
+                1280,
+                900
+              ]
+            },
+            {
+              "path": "/tmp/doreumi-wall-host-440-stable-1/1280x900-environment-440-rest.png",
+              "sha256": "27207e4ef99f5424b5d99a0e9dcae15aab639c93c8d2ca068b3799b4a14c2ff8",
+              "crop": [
+                890,
+                560,
+                1280,
+                900
+              ]
+            },
+            {
+              "path": "/tmp/doreumi-wall-host-440-stable-1/1280x900-environment-440-interrupted.png",
+              "sha256": "6d13a239c5ff4712bc9d68efe09d2dfae8fc0884f9e74abcbc56dcd42af6c6e6",
+              "crop": [
+                890,
+                560,
+                1280,
+                900
+              ]
+            },
+            {
+              "path": "/tmp/doreumi-wall-host-440-stable-1/1280x900-environment-440-interrupted-settled.png",
+              "sha256": "6a4d88c87d4bdb9ff0719b7572fc3500c30d629fa46b268d44ea0985e1889a0f",
+              "crop": [
+                890,
+                560,
+                1280,
+                900
+              ]
+            },
+            {
+              "path": "/tmp/doreumi-wall-host-440-stable-1/390x844-environment-440-moving.png",
+              "sha256": "952bb9fbec56d3dd57af1404e74574f7ce057d7f4a0ac33997744231319bb72b",
+              "crop": [
+                0,
+                504,
+                390,
+                844
+              ]
+            },
+            {
+              "path": "/tmp/doreumi-wall-host-440-stable-1/390x844-environment-440-rest.png",
+              "sha256": "1a72ea7ecab14598988d83daf30100e402a45abd0cedba41f4f0d6ac7ebc8df3",
+              "crop": [
+                0,
+                504,
+                390,
+                844
+              ]
+            },
+            {
+              "path": "/tmp/doreumi-wall-host-440-stable-1/390x844-environment-440-interrupted.png",
+              "sha256": "0f3851663edf720024feede3ee87570c94b1d0c6f8181b5cfa77341f1f9d0d9f",
+              "crop": [
+                0,
+                504,
+                390,
+                844
+              ]
+            },
+            {
+              "path": "/tmp/doreumi-wall-host-440-stable-1/390x844-environment-440-interrupted-settled.png",
+              "sha256": "ed2b546c63677aba1e6a222cf10a6381aa7b56c8da6814fcabbe4c9d1346d172",
+              "crop": [
+                0,
+                504,
+                390,
+                844
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "actionId": 440,
+      "speed": "0.25",
+      "reportSha256": "b52f37b540946ff810ac7e828ef73da338dc7483318d8c8694c97e31efe0dd10",
+      "bundleHashes": {
+        "stdin.js": "16f4550d8428f09fee774fc833171dda7c63af127d236126ad414d66ea1cfd13",
+        "stdin.css": "2a13d4bc0e4ea3d6ee502322fc91df21c40fecc11125f892db48fee0054e1426"
+      },
+      "samples": [
+        {
+          "viewport": {
+            "width": 1280,
+            "height": 900
+          },
+          "action": "meshy:440",
+          "completePlayback": true,
+          "kind": "fixed-environment",
+          "facingRequestPreservedAnchor": true,
+          "interrupted": {
+            "action": "Dragged",
+            "environmentVisible": false,
+            "phase": "dragged",
+            "dom": {
+              "canvases": 1,
+              "characters": 1,
+              "currentRect": {
+                "x": 1032,
+                "y": 651,
+                "width": 140,
+                "height": 130
+              },
+              "previousPoint": [
+                {
+                  "tag": "HTML",
+                  "className": ""
+                }
+              ],
+              "currentPoint": [
+                {
+                  "tag": "BUTTON",
+                  "className": "doreumi-avatar-button"
+                },
+                {
+                  "tag": "HTML",
+                  "className": ""
+                }
+              ],
+              "fallbackOpacity": "0"
+            }
+          },
+          "stopDecisions": []
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "action": "meshy:440",
+          "completePlayback": true,
+          "kind": "fixed-environment",
+          "facingRequestPreservedAnchor": true,
+          "interrupted": {
+            "action": "Dragged",
+            "environmentVisible": false,
+            "phase": "dragged",
+            "dom": {
+              "canvases": 1,
+              "characters": 1,
+              "currentRect": {
+                "x": 178,
+                "y": 643,
+                "width": 116,
+                "height": 98
+              },
+              "previousPoint": [
+                {
+                  "tag": "HTML",
+                  "className": ""
+                }
+              ],
+              "currentPoint": [
+                {
+                  "tag": "BUTTON",
+                  "className": "doreumi-avatar-button"
+                },
+                {
+                  "tag": "HTML",
+                  "className": ""
+                }
+              ],
+              "fallbackOpacity": "0"
+            }
+          },
+          "stopDecisions": []
+        }
+      ],
+      "images": [
+        {
+          "path": "/tmp/doreumi-wall-host-440-stable-0.25/host-context-sheet.png",
+          "sha256": "f1c677ac5961cb59f4e832c5fa127a007656d182e93b5e61971c46b5a508bcc9",
+          "rootViewed": true,
+          "basis": "Unresized lossless screenshot crops retaining the entire character and lower viewport; whole viewport constraints measured in Host report.",
+          "sources": [
+            {
+              "path": "/tmp/doreumi-wall-host-440-stable-0.25/1280x900-environment-440-moving.png",
+              "sha256": "64b3a1895af661dd7a3e74453813217c41e6558cedeca7cea68e0462ec887879",
+              "crop": [
+                890,
+                560,
+                1280,
+                900
+              ]
+            },
+            {
+              "path": "/tmp/doreumi-wall-host-440-stable-0.25/1280x900-environment-440-rest.png",
+              "sha256": "70af63c4337e1baead9988ef8aa966b1a84b51f1fd67965af78d4a9b1bba828c",
+              "crop": [
+                890,
+                560,
+                1280,
+                900
+              ]
+            },
+            {
+              "path": "/tmp/doreumi-wall-host-440-stable-0.25/1280x900-environment-440-interrupted.png",
+              "sha256": "141bd755cad20093dc0d068ad35a75dbfe0e8a8958bd03b46c3d6d2d636a7fc0",
+              "crop": [
+                890,
+                560,
+                1280,
+                900
+              ]
+            },
+            {
+              "path": "/tmp/doreumi-wall-host-440-stable-0.25/1280x900-environment-440-interrupted-settled.png",
+              "sha256": "a92ed8d4e7a067a0bb89f03e51b46e5299452c280a96247899738fe07f2dafdc",
+              "crop": [
+                890,
+                560,
+                1280,
+                900
+              ]
+            },
+            {
+              "path": "/tmp/doreumi-wall-host-440-stable-0.25/390x844-environment-440-moving.png",
+              "sha256": "489e8ceeaef0738f17d32d4e97e6259130db3d4734ad7540fd0c138046deac79",
+              "crop": [
+                0,
+                504,
+                390,
+                844
+              ]
+            },
+            {
+              "path": "/tmp/doreumi-wall-host-440-stable-0.25/390x844-environment-440-rest.png",
+              "sha256": "04257a8cd571451844a00fba06635405bd3c144c5c706a49b1e5f584ff797a02",
+              "crop": [
+                0,
+                504,
+                390,
+                844
+              ]
+            },
+            {
+              "path": "/tmp/doreumi-wall-host-440-stable-0.25/390x844-environment-440-interrupted.png",
+              "sha256": "773b8bf4f90cec6ff7609205f21eef8a36646e2504133ab17aa0de0d0c8f9e51",
+              "crop": [
+                0,
+                504,
+                390,
+                844
+              ]
+            },
+            {
+              "path": "/tmp/doreumi-wall-host-440-stable-0.25/390x844-environment-440-interrupted-settled.png",
+              "sha256": "1425e97d1a3d3b3973abffec88811c6699603bd3ed2b6e8f8d4962d21c3f419e",
+              "crop": [
+                0,
+                504,
+                390,
+                844
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "actionId": 620,
+      "speed": "1",
+      "reportSha256": "6de55d066ff83bacb43c2b8a4cfbd4b2987f9f446208d196693c0f26189f0493",
+      "bundleHashes": {
+        "stdin.js": "16f4550d8428f09fee774fc833171dda7c63af127d236126ad414d66ea1cfd13",
+        "stdin.css": "2a13d4bc0e4ea3d6ee502322fc91df21c40fecc11125f892db48fee0054e1426"
+      },
+      "samples": [
+        {
+          "viewport": {
+            "width": 1280,
+            "height": 900
+          },
+          "action": "meshy:620",
+          "completePlayback": true,
+          "kind": "fixed-environment",
+          "facingRequestPreservedAnchor": true,
+          "interrupted": {
+            "action": "Dragged",
+            "environmentVisible": false,
+            "phase": "dragged",
+            "dom": {
+              "canvases": 1,
+              "characters": 1,
+              "currentRect": {
+                "x": 1032,
+                "y": 651,
+                "width": 140,
+                "height": 130
+              },
+              "previousPoint": [
+                {
+                  "tag": "HTML",
+                  "className": ""
+                }
+              ],
+              "currentPoint": [
+                {
+                  "tag": "BUTTON",
+                  "className": "doreumi-avatar-button"
+                },
+                {
+                  "tag": "HTML",
+                  "className": ""
+                }
+              ],
+              "fallbackOpacity": "0"
+            }
+          },
+          "stopDecisions": []
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "action": "meshy:620",
+          "completePlayback": true,
+          "kind": "fixed-environment",
+          "facingRequestPreservedAnchor": true,
+          "interrupted": {
+            "action": "Dragged",
+            "environmentVisible": false,
+            "phase": "dragged",
+            "dom": {
+              "canvases": 1,
+              "characters": 1,
+              "currentRect": {
+                "x": 178,
+                "y": 643,
+                "width": 116,
+                "height": 98
+              },
+              "previousPoint": [
+                {
+                  "tag": "HTML",
+                  "className": ""
+                }
+              ],
+              "currentPoint": [
+                {
+                  "tag": "BUTTON",
+                  "className": "doreumi-avatar-button"
+                },
+                {
+                  "tag": "HTML",
+                  "className": ""
+                }
+              ],
+              "fallbackOpacity": "0"
+            }
+          },
+          "stopDecisions": []
+        }
+      ],
+      "images": [
+        {
+          "path": "/tmp/doreumi-wall-host-620-stable-1/host-context-sheet.png",
+          "sha256": "988f687e04a233733e4b290624d74833118c04f4ff1437f6abcc483975f631c6",
+          "rootViewed": true,
+          "basis": "Unresized lossless screenshot crops retaining the entire character and lower viewport; whole viewport constraints measured in Host report.",
+          "sources": [
+            {
+              "path": "/tmp/doreumi-wall-host-620-stable-1/1280x900-environment-620-moving.png",
+              "sha256": "7eac382af2a9276bb47121119fa99952219374c2e4f629cb98a815fa3c13e2e4",
+              "crop": [
+                890,
+                560,
+                1280,
+                900
+              ]
+            },
+            {
+              "path": "/tmp/doreumi-wall-host-620-stable-1/1280x900-environment-620-rest.png",
+              "sha256": "8f7f28ec08a7885db879560425973cd85d5a76c9fc454d4605aacb5ceea1056d",
+              "crop": [
+                890,
+                560,
+                1280,
+                900
+              ]
+            },
+            {
+              "path": "/tmp/doreumi-wall-host-620-stable-1/1280x900-environment-620-interrupted.png",
+              "sha256": "df88ae693cb5dcda3c9f1d68d12a87eedbb2a69a52687ca2443985c4a0524581",
+              "crop": [
+                890,
+                560,
+                1280,
+                900
+              ]
+            },
+            {
+              "path": "/tmp/doreumi-wall-host-620-stable-1/1280x900-environment-620-interrupted-settled.png",
+              "sha256": "dd572359e8e515632fda658b09eb9bff060b045cc450ba058bce7fbf526dff1b",
+              "crop": [
+                890,
+                560,
+                1280,
+                900
+              ]
+            },
+            {
+              "path": "/tmp/doreumi-wall-host-620-stable-1/390x844-environment-620-moving.png",
+              "sha256": "b6309b160ecfe563851039a97c749cd0e4ee1cf74d7cded09e4bff489515864b",
+              "crop": [
+                0,
+                504,
+                390,
+                844
+              ]
+            },
+            {
+              "path": "/tmp/doreumi-wall-host-620-stable-1/390x844-environment-620-rest.png",
+              "sha256": "b584e39c38eff03584e95300bfa94a67554fbfd12d7f22775fd6d68449ab109f",
+              "crop": [
+                0,
+                504,
+                390,
+                844
+              ]
+            },
+            {
+              "path": "/tmp/doreumi-wall-host-620-stable-1/390x844-environment-620-interrupted.png",
+              "sha256": "7cc39cba514db987f0d7993ecea1ef471f04e4ed4293301a78d5dacdd7ce3f37",
+              "crop": [
+                0,
+                504,
+                390,
+                844
+              ]
+            },
+            {
+              "path": "/tmp/doreumi-wall-host-620-stable-1/390x844-environment-620-interrupted-settled.png",
+              "sha256": "349ae61cbac041afedddaf80dd71bbd09f77991fe0ecf79e3ef113ff37e0a2ed",
+              "crop": [
+                0,
+                504,
+                390,
+                844
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "actionId": 620,
+      "speed": "0.25",
+      "reportSha256": "f0823503cd0849483cf38c3368ba8cedbb01d1a6eeeaee8f28d677b5abecdbfc",
+      "bundleHashes": {
+        "stdin.js": "16f4550d8428f09fee774fc833171dda7c63af127d236126ad414d66ea1cfd13",
+        "stdin.css": "2a13d4bc0e4ea3d6ee502322fc91df21c40fecc11125f892db48fee0054e1426"
+      },
+      "samples": [
+        {
+          "viewport": {
+            "width": 1280,
+            "height": 900
+          },
+          "action": "meshy:620",
+          "completePlayback": true,
+          "kind": "fixed-environment",
+          "facingRequestPreservedAnchor": true,
+          "interrupted": {
+            "action": "Dragged",
+            "environmentVisible": false,
+            "phase": "dragged",
+            "dom": {
+              "canvases": 1,
+              "characters": 1,
+              "currentRect": {
+                "x": 1032,
+                "y": 651,
+                "width": 140,
+                "height": 130
+              },
+              "previousPoint": [
+                {
+                  "tag": "HTML",
+                  "className": ""
+                }
+              ],
+              "currentPoint": [
+                {
+                  "tag": "BUTTON",
+                  "className": "doreumi-avatar-button"
+                },
+                {
+                  "tag": "HTML",
+                  "className": ""
+                }
+              ],
+              "fallbackOpacity": "0"
+            }
+          },
+          "stopDecisions": []
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "action": "meshy:620",
+          "completePlayback": true,
+          "kind": "fixed-environment",
+          "facingRequestPreservedAnchor": true,
+          "interrupted": {
+            "action": "Dragged",
+            "environmentVisible": false,
+            "phase": "dragged",
+            "dom": {
+              "canvases": 1,
+              "characters": 1,
+              "currentRect": {
+                "x": 178,
+                "y": 643,
+                "width": 116,
+                "height": 98
+              },
+              "previousPoint": [
+                {
+                  "tag": "HTML",
+                  "className": ""
+                }
+              ],
+              "currentPoint": [
+                {
+                  "tag": "BUTTON",
+                  "className": "doreumi-avatar-button"
+                },
+                {
+                  "tag": "HTML",
+                  "className": ""
+                }
+              ],
+              "fallbackOpacity": "0"
+            }
+          },
+          "stopDecisions": []
+        }
+      ],
+      "images": [
+        {
+          "path": "/tmp/doreumi-wall-host-620-stable-0.25/host-context-sheet.png",
+          "sha256": "87874a747c86303d1cca2f779ce27e788cc11b40fe6f4fc301084e2588d9ec23",
+          "rootViewed": true,
+          "basis": "Unresized lossless screenshot crops retaining the entire character and lower viewport; whole viewport constraints measured in Host report.",
+          "sources": [
+            {
+              "path": "/tmp/doreumi-wall-host-620-stable-0.25/1280x900-environment-620-moving.png",
+              "sha256": "d9111ef68256d5d39492c111554f45a53d64e703352ebbc6f2ec17c5aab138c9",
+              "crop": [
+                890,
+                560,
+                1280,
+                900
+              ]
+            },
+            {
+              "path": "/tmp/doreumi-wall-host-620-stable-0.25/1280x900-environment-620-rest.png",
+              "sha256": "4710c4487396b632e35a067986def4702afc1f9514c9e5d0082367b80d0c57e5",
+              "crop": [
+                890,
+                560,
+                1280,
+                900
+              ]
+            },
+            {
+              "path": "/tmp/doreumi-wall-host-620-stable-0.25/1280x900-environment-620-interrupted.png",
+              "sha256": "e067fb1acbe428a0dd39f4ae3aa13044f5ad08209fa23892c970a546d80b7216",
+              "crop": [
+                890,
+                560,
+                1280,
+                900
+              ]
+            },
+            {
+              "path": "/tmp/doreumi-wall-host-620-stable-0.25/1280x900-environment-620-interrupted-settled.png",
+              "sha256": "08aea0ca86092affdd7ffe7bab299b6dd6d097cf0fcca7714183f543d7ae1aa0",
+              "crop": [
+                890,
+                560,
+                1280,
+                900
+              ]
+            },
+            {
+              "path": "/tmp/doreumi-wall-host-620-stable-0.25/390x844-environment-620-moving.png",
+              "sha256": "e24275a5860b67e0ff8295d6134e962744b15f773b1dc5f2498ccc68bd886ad9",
+              "crop": [
+                0,
+                504,
+                390,
+                844
+              ]
+            },
+            {
+              "path": "/tmp/doreumi-wall-host-620-stable-0.25/390x844-environment-620-rest.png",
+              "sha256": "f70745bea0e2625abf038fbd8887f9dedda3a5efe9f23e8a0272b412d862853f",
+              "crop": [
+                0,
+                504,
+                390,
+                844
+              ]
+            },
+            {
+              "path": "/tmp/doreumi-wall-host-620-stable-0.25/390x844-environment-620-interrupted.png",
+              "sha256": "5539973895c636360ff0f25fcae9d32cbaf052ac84448ade736efe0077f24d90",
+              "crop": [
+                0,
+                504,
+                390,
+                844
+              ]
+            },
+            {
+              "path": "/tmp/doreumi-wall-host-620-stable-0.25/390x844-environment-620-interrupted-settled.png",
+              "sha256": "72fd63f10b329d30bccbf4fa62c087f00863474009f409bea4800d150a27096d",
+              "crop": [
+                0,
+                504,
+                390,
+                844
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "remaining": "No public promotion. New master shoulder/wrist weights require fresh contact evidence and visual regression before these four clips may be approved."
+}
