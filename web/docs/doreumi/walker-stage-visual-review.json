@@ -1,0 +1,643 @@
+{
+  "status": "visual-reviewed-master-surface-fix-pending",
+  "clips": [
+    {
+      "actionId": 567,
+      "observations": "Rigid rollator remains under palms; small stooped steps alternate without a visible knee branch jump in normal and quarter playback. Focused 60Hz windows remain continuous. Shared master shoulder correction remains pending.",
+      "captures": [
+        {
+          "speed": "1",
+          "clipSha256": "32eb16a369c36eb8320e8d352439a845cf141317e2afa3397fc93c79c5e63cc0",
+          "reportSha256": "f395d57a3df78f6d584aeaa25cd2c427841f9d4a3a9ce83dabdfbc1164ddcc95",
+          "runtimeBundleSha256": "76021adec40b7514af635030ca94cbed0cd0968c9ede57d2cb68e35b3ce224a4",
+          "coverage": {
+            "firstTime": 0,
+            "lastTime": 5.063799999999987,
+            "duration": 5.3000000476837155,
+            "tolerance": 0.35,
+            "observedFrames": 19,
+            "monotonic": true,
+            "finalAction": "Idle",
+            "finalActiveActions": 1,
+            "stableIdleAt": 5.90139999999851,
+            "settledIdleSeconds": 2.243299999997019
+          },
+          "images": [
+            {
+              "path": "/tmp/doreumi-walker-stage-567-1/motion-meshy-567.jpg",
+              "sha256": "66e1f1a580b2eb00d44cb1f0d5b67569caf7ab7ff417ee9f94fdc9c1f62942bc",
+              "rootViewed": true
+            },
+            {
+              "path": "/tmp/doreumi-walker-stage-567-1/playback-meshy-567.jpg",
+              "sha256": "84fcf8098da388ad79e12ad2a65ae4b07ac4422a892a37b3ae1ed3c337902471",
+              "rootViewed": true
+            }
+          ]
+        },
+        {
+          "speed": "0.25",
+          "clipSha256": "32eb16a369c36eb8320e8d352439a845cf141317e2afa3397fc93c79c5e63cc0",
+          "reportSha256": "a4e52f17db909db529957a377a07a34940e5a3932f2163d41590344e155a4a49",
+          "runtimeBundleSha256": "76021adec40b7514af635030ca94cbed0cd0968c9ede57d2cb68e35b3ce224a4",
+          "coverage": {
+            "firstTime": 0,
+            "lastTime": 5.121624999999984,
+            "duration": 5.3000000476837155,
+            "tolerance": 0.35,
+            "observedFrames": 21,
+            "monotonic": true,
+            "finalAction": "Idle",
+            "finalActiveActions": 1,
+            "stableIdleAt": 23.585599999994038,
+            "settledIdleSeconds": 2.222400000005962
+          },
+          "images": [
+            {
+              "path": "/tmp/doreumi-walker-stage-567-0.25/motion-meshy-567.jpg",
+              "sha256": "2d234c8eb41c8863f5a37698000dffddfdf99f97715e810cbd9d76880f31b73b",
+              "rootViewed": true
+            },
+            {
+              "path": "/tmp/doreumi-walker-stage-567-0.25/playback-meshy-567.jpg",
+              "sha256": "831c6302eccd28940db7413ba3f43d6836e7d6a096f6301cd47fdee202ec2517",
+              "rootViewed": true
+            }
+          ]
+        }
+      ],
+      "focus": [
+        {
+          "reportSha256": "8910b2de5c13d71744573ebf09ce90d9d279d3d87f9f0229b570fa539cdc5b38",
+          "images": [
+            {
+              "path": "/tmp/doreumi-walker-stage-567-focus-0/motion-meshy-567.jpg",
+              "sha256": "7fccf922f23e111d3dc781688f3f918a1d16f2f9e19f5eaf832b8f7ec5cf7ef8",
+              "rootViewed": true
+            },
+            {
+              "path": "/tmp/doreumi-walker-stage-567-focus-0/action-meshy-567-45-0.5094339576808106.png",
+              "sha256": "06c9306af1c6eb20f048775701979baaa13b0c7f4a20b874d445a01d39cbc001",
+              "rootViewed": true
+            }
+          ]
+        },
+        {
+          "reportSha256": "5d095804a4ec38d43ec194003fd454b39a39493852004c09752a8f5a6624f4d8",
+          "images": [
+            {
+              "path": "/tmp/doreumi-walker-stage-567-focus-1/motion-meshy-567.jpg",
+              "sha256": "6ec6a59409d7eab1cae226fa40325596fff5555fea81fe4712db85c514f0b8d0",
+              "rootViewed": true
+            },
+            {
+              "path": "/tmp/doreumi-walker-stage-567-focus-1/action-meshy-567-45-0.8081760933578291.png",
+              "sha256": "328c57723fe063d147e224311e93255d785dbbf255da2312ad2d03b5b91e3687",
+              "rootViewed": true
+            }
+          ]
+        }
+      ],
+      "host": [
+        {
+          "speed": "1",
+          "reportSha256": "63991be8014f6a176dffda2989f1906c9eea2d264c2ef08a431b222a5c0cacc7",
+          "samples": [
+            {
+              "viewport": {
+                "width": 1280,
+                "height": 900
+              },
+              "completePlayback": true,
+              "contactFrames": 85,
+              "distancePx": 11.140625,
+              "maxContactSlipRatio": 0.001706172115323758,
+              "endedX": 1120.859375,
+              "settledX": 1120.859375
+            },
+            {
+              "viewport": {
+                "width": 390,
+                "height": 844
+              },
+              "completePlayback": true,
+              "contactFrames": 91,
+              "distancePx": 8.40625,
+              "maxContactSlipRatio": 0.0015693576366154777,
+              "endedX": 257.59375,
+              "settledX": 257.59375
+            }
+          ],
+          "images": [
+            {
+              "path": "/tmp/doreumi-stage-host-567-1/1280x900-stage-567-moving.png",
+              "sha256": "b10dd72edcda0825aac8fb24171beadcbf15954c81f98eca23dbc75efa57939f",
+              "rootViewed": true
+            },
+            {
+              "path": "/tmp/doreumi-stage-host-567-1/1280x900-stage-567-rest.png",
+              "sha256": "d96677c89260f27501c561144cc45cf1611ed5be9e979997360ef921da9f9453",
+              "rootViewed": true
+            },
+            {
+              "path": "/tmp/doreumi-stage-host-567-1/390x844-stage-567-rest.png",
+              "sha256": "4a2fb9bd5da14b4015787daa835e4f4f170b68217a210bb383f9e8eca982b5b7",
+              "rootViewed": true
+            },
+            {
+              "path": "/tmp/doreumi-stage-host-567-1/390x844-stage-567-moving.png",
+              "sha256": "00fcd6cc683a6a2c3bad9ad37d7ac9dd163a108cc3c2fca4b3e33b55b6ce4949",
+              "rootViewed": true
+            }
+          ]
+        },
+        {
+          "speed": "0.25",
+          "reportSha256": "ea5103d880c894f893475cd27c0ef88e95e66bc4f67e0bea00261be89fbe0484",
+          "samples": [
+            {
+              "viewport": {
+                "width": 1280,
+                "height": 900
+              },
+              "completePlayback": true,
+              "contactFrames": 406,
+              "distancePx": 11.140625,
+              "maxContactSlipRatio": 0.0009660612788100985,
+              "endedX": 1120.859375,
+              "settledX": 1120.859375
+            },
+            {
+              "viewport": {
+                "width": 390,
+                "height": 844
+              },
+              "completePlayback": true,
+              "contactFrames": 395,
+              "distancePx": 8.40625,
+              "maxContactSlipRatio": 0.0010908187725861887,
+              "endedX": 257.59375,
+              "settledX": 257.59375
+            }
+          ],
+          "images": [
+            {
+              "path": "/tmp/doreumi-stage-host-567-0.25/1280x900-stage-567-moving.png",
+              "sha256": "59d1e4945172bb63c770a8b3815eb59f5d33958376fef6622ad5e80696c2e7e5",
+              "rootViewed": true
+            },
+            {
+              "path": "/tmp/doreumi-stage-host-567-0.25/1280x900-stage-567-rest.png",
+              "sha256": "a975c55bb06fae3d838f717d626fcb6fc1c19e714cbbee2d3ca52649c4e3dc5a",
+              "rootViewed": true
+            },
+            {
+              "path": "/tmp/doreumi-stage-host-567-0.25/390x844-stage-567-rest.png",
+              "sha256": "9fc546347e37a3e894faa2c1915de20547e940c6f92560b3a8039588f431d767",
+              "rootViewed": true
+            },
+            {
+              "path": "/tmp/doreumi-stage-host-567-0.25/390x844-stage-567-moving.png",
+              "sha256": "f887ce581f3f453c3d38adf9aa7e2096aeab1c538f512f951ff4949af900a40c",
+              "rootViewed": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "actionId": 696,
+      "observations": "Rigid rollator remains under palms; small stooped steps alternate without a visible knee branch jump in normal and quarter playback. Focused 60Hz windows remain continuous. Shared master shoulder correction remains pending.",
+      "captures": [
+        {
+          "speed": "1",
+          "clipSha256": "54b65278ef29984ba80dda77fc1821c8fde1564761b252aa1e46c68cab607335",
+          "reportSha256": "9c139b2d452f1cfa0f1d0334bad99088acb949931eaa8a4412b745b8dd708d86",
+          "runtimeBundleSha256": "76021adec40b7514af635030ca94cbed0cd0968c9ede57d2cb68e35b3ce224a4",
+          "coverage": {
+            "firstTime": 0,
+            "lastTime": 5.041499999999991,
+            "duration": 5.3000000476837155,
+            "tolerance": 0.35,
+            "observedFrames": 19,
+            "monotonic": true,
+            "finalAction": "Idle",
+            "finalActiveActions": 1,
+            "stableIdleAt": 5.906700000002981,
+            "settledIdleSeconds": 2.1531000000014897
+          },
+          "images": [
+            {
+              "path": "/tmp/doreumi-walker-stage-696-1/motion-meshy-696.jpg",
+              "sha256": "7ab721003ba0b0077a26540e5e2de1a898df0a21b3432572ef67d15e5934b3be",
+              "rootViewed": true
+            },
+            {
+              "path": "/tmp/doreumi-walker-stage-696-1/playback-meshy-696.jpg",
+              "sha256": "21cc8746566593c7df8e8cd78a7a707369c0aefa90de6c534cb52eaf6e0d1a95",
+              "rootViewed": true
+            }
+          ]
+        },
+        {
+          "speed": "0.25",
+          "clipSha256": "54b65278ef29984ba80dda77fc1821c8fde1564761b252aa1e46c68cab607335",
+          "reportSha256": "dda2558dece039a2f95dd49d7043bdae663020ad386a6b543668758fb4da179d",
+          "runtimeBundleSha256": "318ae47067bdbde66a083762d922916db0ea9358431dc0c9dbed92941e0ccece",
+          "coverage": {
+            "firstTime": 0,
+            "lastTime": 5.138974999999994,
+            "duration": 5.3000000476837155,
+            "tolerance": 0.35,
+            "observedFrames": 21,
+            "monotonic": true,
+            "finalAction": "Idle",
+            "finalActiveActions": 1,
+            "stableIdleAt": 23.63469999999553,
+            "settledIdleSeconds": 2.151900000005959
+          },
+          "images": [
+            {
+              "path": "/tmp/doreumi-walker-stage-696-0.25/motion-meshy-696.jpg",
+              "sha256": "ecd5c33c72898c09fb59a22939ea0e44692f9bb1873f53c6471b84a2f03f58da",
+              "rootViewed": true
+            },
+            {
+              "path": "/tmp/doreumi-walker-stage-696-0.25/playback-meshy-696.jpg",
+              "sha256": "d14c9e804cc1b2cd20c109a5f5ab32d8245b3341a2ce03de98086e5907887b1a",
+              "rootViewed": true
+            }
+          ]
+        }
+      ],
+      "focus": [
+        {
+          "reportSha256": "a9243657db01e3faf485ad46b72343dd9d5be7bb9dc2c821d7d4fb25c06cf2ae",
+          "images": [
+            {
+              "path": "/tmp/doreumi-walker-stage-696-focus-0/motion-meshy-696.jpg",
+              "sha256": "f13ebb30cbb8074bde1cb152564de05ba9d35ffde7c793d8d0f279644f8bebe5",
+              "rootViewed": true
+            },
+            {
+              "path": "/tmp/doreumi-walker-stage-696-focus-0/action-meshy-696-45-0.5188679198600848.png",
+              "sha256": "8517d33ba6c2cd9efb2c447cedd3ba565ac600c761537dfaaccd7afd3f48640b",
+              "rootViewed": true
+            }
+          ]
+        },
+        {
+          "reportSha256": "93ef92aec32145c442084b4696f1a6cac4dd1ed496818620feb683143e18d144",
+          "images": [
+            {
+              "path": "/tmp/doreumi-walker-stage-696-focus-1/motion-meshy-696.jpg",
+              "sha256": "83fc8f930822dce2fe3da00a8c73cd46c6ae4a818b3e2c556d93c04d952c9f8e",
+              "rootViewed": true
+            },
+            {
+              "path": "/tmp/doreumi-walker-stage-696-focus-1/action-meshy-696-45-0.8081760933578291.png",
+              "sha256": "fc7b15da9c7e39b852b7b3eae3eb4e1576feba06119579282810e5abe6cb5e4b",
+              "rootViewed": true
+            }
+          ]
+        }
+      ],
+      "hostStatus": "Right-edge forced playback was correctly boundary-stopped. QA now checks production eligibility before playing. Actual approved motion40 prelude supplies runway; normal/quarter rerun pending.",
+      "host": [
+        {
+          "speed": "1",
+          "reportSha256": "5cd9ed55fcb6f3ef316a51bb830422043537dea3240639b5e492fa1b2eadcb91",
+          "modelSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+          "bundleHashes": {
+            "stdin.js": "01678628d4006792c1b2ff987439104ed13da867eba86ee6d60f6d975dddf3c4",
+            "stdin.css": "2a13d4bc0e4ea3d6ee502322fc91df21c40fecc11125f892db48fee0054e1426"
+          },
+          "stageEligibility": [
+            {
+              "viewport": {
+                "width": 1280,
+                "height": 900
+              },
+              "action": "meshy:696",
+              "phase": "before-approved-prelude",
+              "eligible": false
+            },
+            {
+              "viewport": {
+                "width": 1280,
+                "height": 900
+              },
+              "action": "meshy:40",
+              "phase": "before-playback",
+              "eligible": true
+            },
+            {
+              "viewport": {
+                "width": 1280,
+                "height": 900
+              },
+              "action": "meshy:696",
+              "phase": "before-playback",
+              "eligible": true
+            },
+            {
+              "viewport": {
+                "width": 390,
+                "height": 844
+              },
+              "action": "meshy:696",
+              "phase": "before-approved-prelude",
+              "eligible": false
+            },
+            {
+              "viewport": {
+                "width": 390,
+                "height": 844
+              },
+              "action": "meshy:40",
+              "phase": "before-playback",
+              "eligible": true
+            },
+            {
+              "viewport": {
+                "width": 390,
+                "height": 844
+              },
+              "action": "meshy:696",
+              "phase": "before-playback",
+              "eligible": true
+            }
+          ],
+          "stagePrelude": 40,
+          "samples": [
+            {
+              "viewport": {
+                "width": 1280,
+                "height": 900
+              },
+              "action": "meshy:696",
+              "reason": "idle",
+              "completePlayback": true,
+              "stopDecisions": [],
+              "contactBasis": {
+                "version": 1,
+                "basis": "source-and-target-skin",
+                "mesh": "Doreumi",
+                "vertexCount": 78799,
+                "sourceFloor": -0.0004179743125155861,
+                "sourceTolerance": 0.04,
+                "targetFloor": 0.002,
+                "targetTolerance": 0.012,
+                "stationarySpeed": 0.15,
+                "supportedPairs": 112,
+                "movingContactPairs": 0,
+                "sourcePlantedPairs": 173,
+                "missingTargetContactPairs": 0,
+                "airbornePairs": 0,
+                "maxStageSpeed": 0.2746803311096716,
+                "phases": 22,
+                "endpoints": "same-source-contact-phase",
+                "feet": "each-confirmed-foot-independently"
+              },
+              "contactEvidence": "measured",
+              "contactFrames": 76,
+              "distancePx": 3.875,
+              "maxContactSlipPx": 0.10290155151892577,
+              "maxContactSlipRatio": 0.0013431036012618643,
+              "endedYaw": -0.009375476864407397,
+              "endedX": 1121.71875,
+              "settledX": 1121.71875
+            },
+            {
+              "viewport": {
+                "width": 390,
+                "height": 844
+              },
+              "action": "meshy:696",
+              "reason": "idle",
+              "completePlayback": true,
+              "stopDecisions": [],
+              "contactBasis": {
+                "version": 1,
+                "basis": "source-and-target-skin",
+                "mesh": "Doreumi",
+                "vertexCount": 78799,
+                "sourceFloor": -0.0004179743125155861,
+                "sourceTolerance": 0.04,
+                "targetFloor": 0.002,
+                "targetTolerance": 0.012,
+                "stationarySpeed": 0.15,
+                "supportedPairs": 112,
+                "movingContactPairs": 0,
+                "sourcePlantedPairs": 173,
+                "missingTargetContactPairs": 0,
+                "airbornePairs": 0,
+                "maxStageSpeed": 0.2746803311096716,
+                "phases": 22,
+                "endpoints": "same-source-contact-phase",
+                "feet": "each-confirmed-foot-independently"
+              },
+              "contactEvidence": "measured",
+              "contactFrames": 62,
+              "distancePx": 2.921875,
+              "maxContactSlipPx": 0.0965991908936985,
+              "maxContactSlipRatio": 0.0016747969955728404,
+              "endedYaw": -0.0066209594617259,
+              "endedX": 258.265625,
+              "settledX": 258.265625
+            }
+          ],
+          "images": [
+            {
+              "path": "/tmp/doreumi-stage-host-696-prelude40-1/1280x900-stage-696-moving.png",
+              "sha256": "68ed3fc8bdc1019d190eedd248d00450148b10ffef0ca292fe98015426cee8f8",
+              "rootViewed": true
+            },
+            {
+              "path": "/tmp/doreumi-stage-host-696-prelude40-1/1280x900-stage-696-rest.png",
+              "sha256": "c8950581f981e047fa5662634910cdd295702f444237b707f5a985717101034d",
+              "rootViewed": true
+            },
+            {
+              "path": "/tmp/doreumi-stage-host-696-prelude40-1/390x844-stage-696-moving.png",
+              "sha256": "53a0138db362d73f1aa54a34cde80b5a4c650910dd5eb0049ba866a5d57beaa6",
+              "rootViewed": true
+            },
+            {
+              "path": "/tmp/doreumi-stage-host-696-prelude40-1/390x844-stage-696-rest.png",
+              "sha256": "748bec72fa45767dd3992b07be388f72b41b7489527d44cd0a0c21c8d8d67a7a",
+              "rootViewed": true
+            }
+          ]
+        },
+        {
+          "speed": "0.25",
+          "reportSha256": "92b6d4dd33c7c9d6cb168bea3a352a494d3ac5e48dea201cdc4e12a284dd1a3c",
+          "modelSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+          "bundleHashes": {
+            "stdin.js": "01678628d4006792c1b2ff987439104ed13da867eba86ee6d60f6d975dddf3c4",
+            "stdin.css": "2a13d4bc0e4ea3d6ee502322fc91df21c40fecc11125f892db48fee0054e1426"
+          },
+          "stageEligibility": [
+            {
+              "viewport": {
+                "width": 1280,
+                "height": 900
+              },
+              "action": "meshy:696",
+              "phase": "before-approved-prelude",
+              "eligible": false
+            },
+            {
+              "viewport": {
+                "width": 1280,
+                "height": 900
+              },
+              "action": "meshy:40",
+              "phase": "before-playback",
+              "eligible": true
+            },
+            {
+              "viewport": {
+                "width": 1280,
+                "height": 900
+              },
+              "action": "meshy:696",
+              "phase": "before-playback",
+              "eligible": true
+            },
+            {
+              "viewport": {
+                "width": 390,
+                "height": 844
+              },
+              "action": "meshy:696",
+              "phase": "before-approved-prelude",
+              "eligible": false
+            },
+            {
+              "viewport": {
+                "width": 390,
+                "height": 844
+              },
+              "action": "meshy:40",
+              "phase": "before-playback",
+              "eligible": true
+            },
+            {
+              "viewport": {
+                "width": 390,
+                "height": 844
+              },
+              "action": "meshy:696",
+              "phase": "before-playback",
+              "eligible": true
+            }
+          ],
+          "stagePrelude": 40,
+          "samples": [
+            {
+              "viewport": {
+                "width": 1280,
+                "height": 900
+              },
+              "action": "meshy:696",
+              "reason": "idle",
+              "completePlayback": true,
+              "stopDecisions": [],
+              "contactBasis": {
+                "version": 1,
+                "basis": "source-and-target-skin",
+                "mesh": "Doreumi",
+                "vertexCount": 78799,
+                "sourceFloor": -0.0004179743125155861,
+                "sourceTolerance": 0.04,
+                "targetFloor": 0.002,
+                "targetTolerance": 0.012,
+                "stationarySpeed": 0.15,
+                "supportedPairs": 112,
+                "movingContactPairs": 0,
+                "sourcePlantedPairs": 173,
+                "missingTargetContactPairs": 0,
+                "airbornePairs": 0,
+                "maxStageSpeed": 0.2746803311096716,
+                "phases": 22,
+                "endpoints": "same-source-contact-phase",
+                "feet": "each-confirmed-foot-independently"
+              },
+              "contactEvidence": "measured",
+              "contactFrames": 320,
+              "distancePx": 3.890625,
+              "maxContactSlipPx": 0.07088695836887382,
+              "maxContactSlipRatio": 0.0008954569196572161,
+              "endedYaw": -0.00695545335664813,
+              "endedX": 1121.5625,
+              "settledX": 1121.5625
+            },
+            {
+              "viewport": {
+                "width": 390,
+                "height": 844
+              },
+              "action": "meshy:696",
+              "reason": "idle",
+              "completePlayback": true,
+              "stopDecisions": [],
+              "contactBasis": {
+                "version": 1,
+                "basis": "source-and-target-skin",
+                "mesh": "Doreumi",
+                "vertexCount": 78799,
+                "sourceFloor": -0.0004179743125155861,
+                "sourceTolerance": 0.04,
+                "targetFloor": 0.002,
+                "targetTolerance": 0.012,
+                "stationarySpeed": 0.15,
+                "supportedPairs": 112,
+                "movingContactPairs": 0,
+                "sourcePlantedPairs": 173,
+                "missingTargetContactPairs": 0,
+                "airbornePairs": 0,
+                "maxStageSpeed": 0.2746803311096716,
+                "phases": 22,
+                "endpoints": "same-source-contact-phase",
+                "feet": "each-confirmed-foot-independently"
+              },
+              "contactEvidence": "measured",
+              "contactFrames": 344,
+              "distancePx": 2.9375,
+              "maxContactSlipPx": 0.05188453337126475,
+              "maxContactSlipRatio": 0.0008747937596578234,
+              "endedYaw": -0.0069803386731071854,
+              "endedX": 258.109375,
+              "settledX": 258.109375
+            }
+          ],
+          "images": [
+            {
+              "path": "/tmp/doreumi-stage-host-696-prelude40-0.25/1280x900-stage-696-moving.png",
+              "sha256": "f74aecbc220cf24b8eab2a9683051dd58345eae1efcd2ef2efea13ae88561d4d",
+              "rootViewed": true
+            },
+            {
+              "path": "/tmp/doreumi-stage-host-696-prelude40-0.25/1280x900-stage-696-rest.png",
+              "sha256": "12025c213dd3375e5636aca44f7d50a49429f3f11e3c685697c96c1c94f599ae",
+              "rootViewed": true
+            },
+            {
+              "path": "/tmp/doreumi-stage-host-696-prelude40-0.25/390x844-stage-696-moving.png",
+              "sha256": "de2fee5298c5c4c0dc52e7e24b3d62f00a6717a6255567a39f96ed6473b330f5",
+              "rootViewed": true
+            },
+            {
+              "path": "/tmp/doreumi-stage-host-696-prelude40-0.25/390x844-stage-696-rest.png",
+              "sha256": "665971f8c5b43983dee0b10b3e6169b682604b4fd1344ed6df55fd9543a6f7c3",
+              "rootViewed": true
+            }
+          ]
+        }
+      ],
+      "hostObservation": "Actual Host completed on desktop and mobile at normal and quarter speed. Approved motion40 first creates runway through its actual playback; production canPlayMotion rejects696 before prelude and accepts after. All8 target moving/rest images root-viewed; no visible clipping or end-position reset. New master skin regression remains pending."
+    }
+  ]
+}

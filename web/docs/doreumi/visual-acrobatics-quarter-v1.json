@@ -1,0 +1,83 @@
+{
+  "checkedAt": "2026-09-24T03:39:35.713876+00:00",
+  "runtimeBundleSha256": "aaa257e0ce7c4e76490140d4b5fd883cc6bb6b0d98d48d74d193799f18c071f7",
+  "masterSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+  "method": "All5 individually inspected five-angle/nine-pose joint-overlay sheets and1fps sampled actual quarter-speed playback, paired with normal128px review. Not every video frame and not blanket approval.",
+  "items": [
+    {
+      "id": "meshy:48",
+      "clipSha256": "654675e5c3d87bc0b88f235a8f5e76f90a4aebfb732ac8adb80fedb090af6363",
+      "observation": "Face and body now visible in default45-degree camera and all framing samples pass. Mirror is edge-on in45-degree view. Separate source-foot audit has11 excessive drift pairs, so remains pending.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-acrobatics-quarter-v1/motion-meshy-48.jpg",
+          "sha256": "17ecd0cd74e9cc0838a6f41c4e24fe2e13528531fd9873a833f679e40cd8c97c"
+        },
+        {
+          "file": "/tmp/doreumi-acrobatics-quarter-v1/temporal-meshy-48.jpg",
+          "sha256": "20420120f88c7b874f0eee3fdd694eab4324060938894179094964e6dce180fb"
+        }
+      ]
+    },
+    {
+      "id": "meshy:375",
+      "clipSha256": "cc56bb4be1baae442d350a55773d5e5b65f3bd5e805883fb1efce35056152994",
+      "observation": "Visible sit, recline, supported tucked side-roll, sit and stand sequence. No silhouette snap evident in sampled quarter playback.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-acrobatics-quarter-v1/motion-meshy-375.jpg",
+          "sha256": "86cc71bee61a1f20fcadf3006e9a4a1ed86c977ced40d38f99cc13261f374228"
+        },
+        {
+          "file": "/tmp/doreumi-acrobatics-quarter-v1/temporal-meshy-375.jpg",
+          "sha256": "87768b61b557a2101a7542038b8c9e1f56f7518060267b88ca3df8ef8d01060f"
+        }
+      ]
+    },
+    {
+      "id": "meshy:395",
+      "clipSha256": "cec8d712f07609e91b52aa4c12d9f5563ea57011d5a6a2c636f3b825e56397ba",
+      "observation": "Entry/recovery readable, but horizontal backspin reads as a rigid reclined body turning with little limb anticipation. Needs source-timed arm/knee motion.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-acrobatics-quarter-v1/motion-meshy-395.jpg",
+          "sha256": "c56c3f06a3af4429e2f5c2c8ff79b50a1b74f88a74009aefa0a993a58adaffb8"
+        },
+        {
+          "file": "/tmp/doreumi-acrobatics-quarter-v1/temporal-meshy-395.jpg",
+          "sha256": "c2411157f1b1677a7599833eeb7fbf131261a5a4af957ccafbbb629f44551751"
+        }
+      ]
+    },
+    {
+      "id": "meshy:406",
+      "clipSha256": "28aa189ec728aca88ba6c5724a7fa2d4c447c4dfe468cf2feb4c4f2a8a398f17",
+      "observation": "Fast flair and kick-up continue into a crouched landing; source rotation preserved. Palm support and floor clearance need exact numeric evidence alongside these images.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-acrobatics-quarter-v1/motion-meshy-406.jpg",
+          "sha256": "e5655cb0170c2e7be3aa8826f990d88250ab740da8c96d8479aad367ca9cb35b"
+        },
+        {
+          "file": "/tmp/doreumi-acrobatics-quarter-v1/temporal-meshy-406.jpg",
+          "sha256": "61b351dee77e7dfa6145e0a5e42981e98163781fc1c1d3142134bc69eaccc5d7"
+        }
+      ]
+    },
+    {
+      "id": "meshy:451",
+      "clipSha256": "7a4081f6afa43840e9fcff3474df196d11a2a9e0e4c50f66526f403416ac290a",
+      "observation": "One-hand seated brace, body lean and opposite raised arm read clearly; supported hand stays by floor during hold.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-acrobatics-quarter-v1/motion-meshy-451.jpg",
+          "sha256": "c03c3fd02ee4a8e6a90346f3c3f9afd67649e6667a2ca12d208c39118a560ed3"
+        },
+        {
+          "file": "/tmp/doreumi-acrobatics-quarter-v1/temporal-meshy-451.jpg",
+          "sha256": "0c5483644fda3f4bc0da79946f445cb2c3cb5f1dbc24e921d3428a7d2b97cbe6"
+        }
+      ]
+    }
+  ]
+}

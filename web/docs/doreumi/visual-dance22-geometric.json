@@ -1,0 +1,99 @@
+{
+  "checkedAt": "2026-09-24T04:47:04.484Z",
+  "id": "meshy:22",
+  "clipSha256": "6edb0e3e5413e3be891a1d45f16272bd096efef975d0a1d77d24a681b0c97815",
+  "masterSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+  "sourceSha256": "b0fed7aff4be2fe705dfeba4275f9ad574f0b76f15f38aac17e1b23a21ca512c",
+  "metadataSha256": "4d5258b57077bd81f8ad19a85e96f4283c1b944acbd16407dec5fe7797aa570a",
+  "contactPlan": {
+    "version": 1,
+    "planSha256": "5f4683b9a8c96981df69c2821c56a4b49b84a6bc8390cb788006b043b35590e7",
+    "reproducedClipSha256": "6edb0e3e5413e3be891a1d45f16272bd096efef975d0a1d77d24a681b0c97815"
+  },
+  "review": "passed",
+  "reviewer": "root visual lane",
+  "scope": "Root individually inspected normal 128px and quarter-speed five-view nine-pose sheets and actual temporal playback at 4fps/1fps. Source 1.8 and 4.15 second windows each contain 19 consecutive 60Hz poses at 0/45/90 degrees. Exact production donor/master replay and full source-planted denominator reaudited.",
+  "observation": "Natural sideways weight shift, compact knee steps and coherent head/arm response. Focus windows show continuous knee folding and unfolding, continuous heel silhouette and following torso lean, without reversed knee or abrupt under-body tuck.",
+  "contact": {
+    "actionId": 22,
+    "sourceActionId": 22,
+    "derivation": null,
+    "sourceName": "FunnyDancing_01",
+    "sourceSha256": "b0fed7aff4be2fe705dfeba4275f9ad574f0b76f15f38aac17e1b23a21ca512c",
+    "clipSha256": "6edb0e3e5413e3be891a1d45f16272bd096efef975d0a1d77d24a681b0c97815",
+    "sourceFloor": 0.06460253060979881,
+    "sourcePlantedPairs": 132,
+    "missingTargetContactPairs": 0,
+    "excessiveDriftPairs": 0,
+    "sourceMovingContactPairs": 65,
+    "pivotCompatiblePairs": 19,
+    "maxDriftByHeight": 0.005012747701400736,
+    "failures": []
+  },
+  "joints": {
+    "largestIntroducedWorld": {
+      "bone": "kneeL",
+      "from": 2.466666666666667,
+      "time": 2.4833333333333334,
+      "sourceTime": 1.7833333333333334,
+      "targetLocalDegrees": 10.862133453982466,
+      "targetWorldDegrees": 11.383214166111113,
+      "sourceLocalDegrees": 4.122074540741652,
+      "sourceWorldDegrees": 3.8837952569617387,
+      "jointDistance": 0.01674264704358937
+    },
+    "largestIntroducedLocal": {
+      "bone": "kneeL",
+      "from": 4.833333333333333,
+      "time": 4.85,
+      "sourceTime": 4.1499999999999995,
+      "targetLocalDegrees": 12.714666035572764,
+      "targetWorldDegrees": 6.7168805863555505,
+      "sourceLocalDegrees": 2.3702172680689593,
+      "sourceWorldDegrees": 2.0253838596964036,
+      "jointDistance": 0.022520871022165042
+    }
+  },
+  "evidence": [
+    {
+      "file": "/tmp/doreumi-geometric-22-1/motion-meshy-22.jpg",
+      "sha256": "6dc906fcac9d10bdd63e75571dce98a4a1158ca9b02dc8ed5707a4bbbd155d5d"
+    },
+    {
+      "file": "/tmp/doreumi-geometric-22-1/report.json",
+      "sha256": "d285b8738812b413a2b1f0136de82327b6f9d299ffd867b0c976b50844ee4ccb"
+    },
+    {
+      "file": "/tmp/doreumi-geometric-22-1/temporal-meshy-22.jpg",
+      "sha256": "120626a6d718a46700442fbbc633308275953ee6497dd15cd71b75168a29b195"
+    },
+    {
+      "file": "/tmp/doreumi-geometric-22-0.25/motion-meshy-22.jpg",
+      "sha256": "301efdd42e580c5ed07491632dcec711b3210b03ea80913da82612912db8c8e7"
+    },
+    {
+      "file": "/tmp/doreumi-geometric-22-0.25/report.json",
+      "sha256": "78bc4e23ae51ec599a27e089dfb4e37937760e00d39040a630ea04aadfc15c40"
+    },
+    {
+      "file": "/tmp/doreumi-geometric-22-0.25/temporal-meshy-22.jpg",
+      "sha256": "1937a30fb878d25be5f462d32178d7ea24573256b7a9f9dfc055db1378e35216"
+    },
+    {
+      "file": "/tmp/doreumi22-focus-0/motion-meshy-22.jpg",
+      "sha256": "d94f04a9f18eac648d623c117e6a7945a85a05703fde5a20bc2cd79eaf6ae6e3"
+    },
+    {
+      "file": "/tmp/doreumi22-focus-0/report.json",
+      "sha256": "6d161743f68979c41f4a72a94b9c536c673219349029cf813c96752e027b30f6"
+    },
+    {
+      "file": "/tmp/doreumi22-focus-1/motion-meshy-22.jpg",
+      "sha256": "24a882f26be2c691755aa1035892de328675102c73855a4a9768bff72aad129f"
+    },
+    {
+      "file": "/tmp/doreumi22-focus-1/report.json",
+      "sha256": "ed153157f47d5f677b44bc2df5e019b43020de48533bbb1c4cc5c7e8b8bbeec6"
+    }
+  ]
+}

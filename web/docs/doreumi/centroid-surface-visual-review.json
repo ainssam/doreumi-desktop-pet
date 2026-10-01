@@ -1,0 +1,88 @@
+{
+  "status": "centroid-visual-regression-passed-independent-review-pending",
+  "modelSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+  "reportSha256": "6824c6c9e330e71630bb06b7fc1ce41a32d5e5a40bb8bf3d2538e3f6db02758a",
+  "rootObservations": [
+    "Original curl speckles persist with specular removed and atlas-only shading.",
+    "Centroid UV interpolation removes the curl and chest-logo interior speckles in both lit and atlas-only renders.",
+    "Production default now matches the successful centroid diagnostic. Shoulder surface foldover remains a separate pending rig defect.",
+    "Root inspected all34 expressions on the rendered expression sheet, four base actions at three angles/five fractions, and Sit/Lie/Code/Read to Run transition sheets. Face artwork and lap props remain intact. These are static/transition regression captures, not a new full-cycle motion approval."
+  ],
+  "images": [
+    {
+      "path": "/tmp/doreumi-centroid-base-regression/motion-Idle.jpg",
+      "sha256": "1902d345362bf564f0376bb98577612e12cf70484439a91cdf4f687a04da882c",
+      "rootViewed": true
+    },
+    {
+      "path": "/tmp/doreumi-centroid-base-regression/motion-Walk.jpg",
+      "sha256": "12b7d4b2ab4ae10f6293655cdc73e58e15aec73d0bb4f3c9bcbcfaa2b8cc1526",
+      "rootViewed": true
+    },
+    {
+      "path": "/tmp/doreumi-centroid-base-regression/motion-Wave.jpg",
+      "sha256": "b9098a9c40df8b4f848eb3b3a49d3d2e82deb3d0065ec428e3c43ea03198c0c3",
+      "rootViewed": true
+    },
+    {
+      "path": "/tmp/doreumi-centroid-base-regression/motion-Code.jpg",
+      "sha256": "6ff60bb113b1849d1cf5d9e3eda100cc1ae89d909f3cefffaf39879eb0608e1e",
+      "rootViewed": true
+    },
+    {
+      "path": "/tmp/doreumi-centroid-base-regression/expressions-all.jpg",
+      "sha256": "0cfb33b247b1e50281ecc69b93d38e0bbdeafcd23d327162f34f039fc6ecc35f",
+      "rootViewed": true
+    },
+    {
+      "path": "/tmp/doreumi-centroid-base-regression/transition-Sit-Run.jpg",
+      "sha256": "50f236166a73d8a5607b44fef958e77268f03366c9482dff4d6b84ac049c842d",
+      "rootViewed": true
+    },
+    {
+      "path": "/tmp/doreumi-centroid-base-regression/transition-Lie-Run.jpg",
+      "sha256": "73a0a153515a464610d2828b6c897c714593ce15594e4eb47630349e89d2c929",
+      "rootViewed": true
+    },
+    {
+      "path": "/tmp/doreumi-centroid-base-regression/transition-Code-Run.jpg",
+      "sha256": "13f01f177873a1a26ac7984e51832ddb12e77c434a770e17be47d2c6da163075",
+      "rootViewed": true
+    },
+    {
+      "path": "/tmp/doreumi-centroid-base-regression/transition-Read-Run.jpg",
+      "sha256": "e44a7a4e0f734f541303ff3a9a8b5356e6ab6a9bb586f12ffa3cdc9e48ea5668",
+      "rootViewed": true
+    },
+    {
+      "path": "/tmp/doreumi-curl-diagnostic-production/action-meshy-595-45-0.5779220832904166.png",
+      "sha256": "48f944285c228d3d9fa3561ecfcb1e7d2b8033c9315052080ba42958f4820a79",
+      "rootViewed": true
+    },
+    {
+      "path": "/tmp/doreumi-curl-diagnostic-diffuse-only/action-meshy-595-45-0.5779220832904166.png",
+      "sha256": "4a94c81c32cff65d6f9fc7d4809c1fb789aa8792d3cfb7e34a5cb0fa98fde4fa",
+      "rootViewed": true
+    },
+    {
+      "path": "/tmp/doreumi-curl-diagnostic-atlas-only/action-meshy-595-45-0.5779220832904166.png",
+      "sha256": "72e4cc71fddb6c0fb570b3bad783d981c44f1bc063462b20cc4d00abbdf4f5f0",
+      "rootViewed": true
+    },
+    {
+      "path": "/tmp/doreumi-curl-centroid-production/action-meshy-595-45-0.5779220832904166.png",
+      "sha256": "99d63ca0b3a96530e290bb666b86c9ee3887c67c9f42f55fc8617c3d648efcbe",
+      "rootViewed": true
+    },
+    {
+      "path": "/tmp/doreumi-curl-centroid-atlas-only/action-meshy-595-45-0.5779220832904166.png",
+      "sha256": "62831182c3ade18dca4fe53e36de191ddd67aba3052a3a3f4bc875690ea0339c",
+      "rootViewed": true
+    },
+    {
+      "path": "/tmp/doreumi-curl-production-fixed/action-meshy-595-45-0.5779220832904166.png",
+      "sha256": "99d63ca0b3a96530e290bb666b86c9ee3887c67c9f42f55fc8617c3d648efcbe",
+      "rootViewed": true
+    }
+  ]
+}

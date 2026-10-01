@@ -1,0 +1,52 @@
+{
+  "checkedAt": "2026-09-24T05:07:36.535463+00:00",
+  "id": "meshy:406",
+  "clipSha256": "cbb08bd697319b42668ba694b24a7bea096ec9fa85b22d0285d6c03d08f52a1d",
+  "review": "pending",
+  "visualScope": "Root individually inspected normal128px and quarter-speed five-angle nine-pose sheets and temporal sequences. Focus source0.641667 plus/minus.15s,19 consecutive60Hz poses at0/45/90, with two full-size45degree frames.",
+  "observation": "Entry sits then reclines; the body rolls across its side and right palm before a crouched recovery. Shoulder/arm surface remains continuous through the high rest-relative arm orientation, with no abrupt visible pop. This does not yet prove full support through the entire roll.",
+  "remaining": [
+    "Correct vertical path from actual donor foot/palm rest floor; re-audit all phases and visually inspect new exact candidate.",
+    "Exact production replay and final source/master/clip metadata gate."
+  ],
+  "evidence": [
+    {
+      "file": "/tmp/doreumi-flair406-v3-1/report.json",
+      "sha256": "9ab0a5ccabef4f5084a8cfd0f6100d5bce0828ce3f11efb186d086ecba74b389"
+    },
+    {
+      "file": "/tmp/doreumi-flair406-v3-1/motion-meshy-406.jpg",
+      "sha256": "504ae4929fd7e69795ae4ef2b14a5246799c27c36349891557be0673f7e6da9d"
+    },
+    {
+      "file": "/tmp/doreumi-flair406-v3-1/temporal-meshy-406.jpg",
+      "sha256": "b16bfe326f4434092e76498ac8bef667af3e146f096198181dd05b2a54f85f67"
+    },
+    {
+      "file": "/tmp/doreumi-flair406-v3-0.25/report.json",
+      "sha256": "e899f5a0634efba6d9285c2874bde6ac5feb3667fc06bff535453371cb1cbe44"
+    },
+    {
+      "file": "/tmp/doreumi-flair406-v3-0.25/motion-meshy-406.jpg",
+      "sha256": "836118029cfeea290427d10901401e832e2092b635466e4764a18ad2b008a9ab"
+    },
+    {
+      "file": "/tmp/doreumi-flair406-v3-0.25/temporal-meshy-406.jpg",
+      "sha256": "0019a144cb69e206d0f93227be2871ed343f132b8b849617ca58709429488173"
+    },
+    {
+      "file": "/tmp/doreumi-flair406-v3-focus/report.json",
+      "sha256": "cc3681ee39a1aa5795a3b96f6e0815d1ccfd503f8c1d94f35a8044da09e25aea"
+    },
+    {
+      "file": "/tmp/doreumi-flair406-v3-focus/motion-meshy-406.jpg",
+      "sha256": "adfcb48d18c65dffbcda7519f37d4d81a672d5c00dfc16d19c2f39c1a9a52144"
+    }
+  ],
+  "supportAudit": {
+    "file": ".artifacts/doreumi-contact-audit/flair-palm-v3/full-support.json",
+    "sha256": "cc8094e5e6ae0fa1ddcf77b9951552f20c59ddc0805a77a16f794607b40634f7",
+    "result": "failed",
+    "finding": "Full-body skin audit at120Hz found109 source-near-floor frames with unsupported target gaps up to.0345; overall max.0614 and recovery entry.027. Source torso penetration corrupted p10 floor used for airborne height."
+  }
+}

@@ -1,0 +1,214 @@
+{
+  "version": 1,
+  "masterSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+  "evidence": "/tmp/doreumi-library-v3-normal",
+  "scope": "Per-motion visual findings, not automatic registry approval. Five views and nine phases per sheet; recorded normal playback. Small, quarter-speed, joint and integrated travel checks tracked separately.",
+  "motions": [
+    {
+      "id": 0,
+      "views": "reviewed",
+      "finding": "Looking around rather than quiet idle. Neck surface remains connected through yaw and forward lean."
+    },
+    {
+      "id": 1,
+      "views": "reviewed",
+      "finding": "Alternating short steps and relaxed arm swing remain readable. Requires integrated stage travel verification before ambient approval."
+    },
+    {
+      "id": 2,
+      "views": "reviewed",
+      "finding": "Alert head/body turns are readable; inspect support-foot pivot during the largest turn before approval."
+    },
+    {
+      "id": 3,
+      "views": "reviewed",
+      "finding": "Lies back, rolls sideways and gets up. Inspect the authored Idle-to-lying entry at quarter speed; source action starts lying."
+    },
+    {
+      "id": 5,
+      "views": "reviewed",
+      "finding": "Diagonal backward run has alternating knee lift and torso lean; integrated screen velocity and facing remain to verify."
+    },
+    {
+      "id": 6,
+      "views": "reviewed",
+      "finding": "Opposite diagonal backward run has coherent short-limb swing; integrated travel remains to verify."
+    },
+    {
+      "id": 11,
+      "views": "reviewed",
+      "finding": "Subtle forward lean and breathing idle; neck and shoulder surfaces remain connected."
+    },
+    {
+      "id": 12,
+      "views": "reviewed",
+      "finding": "Backward body stretch with raised arms returns upright; large hip hinge remains connected, requires slow transition inspection."
+    },
+    {
+      "id": 13,
+      "views": "reviewed",
+      "finding": "Running steps alternate with visible knee lift and arm swing; integrated stage travel pending."
+    },
+    {
+      "id": 14,
+      "views": "reviewed",
+      "finding": "Running steps alternate under a stable rounded torso; integrated stage travel pending."
+    },
+    {
+      "id": 15,
+      "views": "reviewed",
+      "finding": "Running variation shows airborne alternating steps and torso yaw; stage travel pending."
+    },
+    {
+      "id": 30,
+      "views": "reviewed",
+      "finding": "Small backward steps and close arm swing read clearly in side views; stage travel pending."
+    },
+    {
+      "id": 31,
+      "views": "reviewed",
+      "finding": "Alternating steps lead into a deep forward bend; inspect the late bend and recovery at quarter speed."
+    },
+    {
+      "id": 34,
+      "views": "reviewed",
+      "finding": "Side-to-side weight shift and small arm gestures keep shoulder and neck surfaces connected."
+    },
+    {
+      "id": 35,
+      "views": "reviewed",
+      "finding": "Conversational arm opening and closing reads clearly; palms reach the front without elongated arms."
+    },
+    {
+      "id": 36,
+      "views": "reviewed",
+      "finding": "Adapted scratch reaches lower cheek with head tilt. Original missing-head reach is improved; close contact and quarter-speed verification remain."
+    },
+    {
+      "id": 37,
+      "views": "reviewed",
+      "finding": "Subtle torso turn and shifting steps read as relaxed idle; verify planted-foot rotation in playback."
+    },
+    {
+      "id": 38,
+      "views": "reviewed",
+      "finding": "Seated idle with both feet forward and small head turns. Seat silhouette is grounded; entry and recovery need slow review."
+    },
+    {
+      "id": 39,
+      "views": "reviewed",
+      "finding": "Turning hop and bow remain readable in five views; large spin requires slow support/landing review."
+    },
+    {
+      "id": 40,
+      "views": "reviewed",
+      "finding": "Turning hops and forward lean stay connected; spin contact and slow landing review remain."
+    },
+    {
+      "id": 41,
+      "views": "reviewed",
+      "finding": "Deep formal bow has grounded short legs and no sampled surface gap; widened framing makes character small, inspect host-size readability."
+    },
+    {
+      "id": 42,
+      "views": "reviewed",
+      "finding": "One-arm gentleman bow reaches deep hip hinge without visible split; host-size readability and slow return remain."
+    },
+    {
+      "id": 43,
+      "views": "reviewed",
+      "finding": "Handbag walk has a missing bag in this captured bundle. Props and travel metadata are being corrected; this sheet cannot approve the motion."
+    },
+    {
+      "id": 44,
+      "views": "reviewed",
+      "finding": "Raised-arm celebratory hops have readable knees and shoulder lift; landing continuity requires slow playback."
+    },
+    {
+      "id": 45,
+      "views": "reviewed",
+      "finding": "Large torso rotations and sideways leans remain connected; support-foot slip must be checked on the planted phases."
+    },
+    {
+      "id": 46,
+      "views": "reviewed",
+      "finding": "Small repeated jumps open the arms at takeoff and lower them on landing; inspect impact compression in slow playback."
+    },
+    {
+      "id": 47,
+      "views": "reviewed",
+      "finding": "Relaxed weight shifts and small shoulder/head tilts remain connected without obvious sampled penetration."
+    },
+    {
+      "id": 48,
+      "views": "reviewed",
+      "finding": "Forward nod then small turn/steps; neck stays joined, planted turn playback pending."
+    },
+    {
+      "id": 49,
+      "views": "reviewed",
+      "finding": "Conversational open palms and a backward stretch remain readable; no sampled detached joint."
+    },
+    {
+      "id": 51,
+      "views": "reviewed",
+      "finding": "Deep sideways bend followed by raised arms; floor stance and large hinge need quarter-speed review."
+    },
+    {
+      "id": 52,
+      "views": "reviewed",
+      "finding": "Seated pose rises through knees to upright; no sampled split. Verify lift timing and floor contact in playback."
+    },
+    {
+      "id": 53,
+      "views": "reviewed",
+      "finding": "Crouched posture unfolds through torso and knees; entry/recovery need slow continuity review."
+    },
+    {
+      "id": 54,
+      "views": "reviewed",
+      "finding": "Very low turning crouch with hands near floor; support may involve palms, requires slow contact review rather than feet-only approval."
+    },
+    {
+      "id": 55,
+      "views": "reviewed",
+      "finding": "Small alternating steps, forward lean and late torso turn are visible; travel and support remain to verify."
+    },
+    {
+      "id": 56,
+      "views": "reviewed",
+      "finding": "Relaxed body turn with subtle arms/head motion; stationary-foot rotation needs playback check."
+    },
+    {
+      "id": 57,
+      "views": "reviewed",
+      "finding": "Multiple nods deepen into a bow/crouch; original silhouette remains joined, inspect late transition speed."
+    },
+    {
+      "id": 58,
+      "views": "reviewed",
+      "finding": "Steps turn into a seated posture. Mixed locomotion/sitting requires appropriate stage segment handling."
+    },
+    {
+      "id": 59,
+      "views": "reviewed",
+      "finding": "Alternating high arm lifts with shoulder and head turns read clearly; short arms reach cheek level without elongation."
+    },
+    {
+      "id": 60,
+      "views": "reviewed",
+      "finding": "Walk-and-turn transitions into sitting; locomotion section requires stage travel, seated segment must stay still."
+    },
+    {
+      "id": 61,
+      "views": "reviewed",
+      "finding": "Forward bow and sideways one-foot balance read clearly; inspect planted foot and balance transfer in playback."
+    },
+    {
+      "id": 62,
+      "views": "reviewed",
+      "finding": "Penguin-like waddling shows alternating feet and lateral body sway. Travel metadata missing in this frozen capture; corrected integration needs recapture."
+    }
+  ],
+  "captureStatus": "Interrupted after sheets through62 for stage/context integration; completeSheets recorded in evidence/incomplete-capture.json, no numeric report from this run."
+}

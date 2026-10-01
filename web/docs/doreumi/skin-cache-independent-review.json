@@ -1,0 +1,44 @@
+{
+  "scope": "Independent read-only production-code review of the exact CPU skin reader optimization",
+  "findings": [],
+  "reviewed": [
+    "Each chair update refreshes cached bone world×inverse products after parent/model world matrices update.",
+    "Morph influences, bind matrices, geometry position/index/weight attributes are read live.",
+    "Maps and scratch vectors are reader-instance-local; sharing a skeleton retains per-mesh bind transforms.",
+    "Chair support uses its own dense probes; skipped body-clearance probes are not consumed by updateChair. Switching to other props refreshes them before use.",
+    "The reader allocates plain CPU matrices/vectors only; existing idempotent prop disposal neither mutates nor disposes the master geometry."
+  ],
+  "tests": {
+    "skinReader": 2,
+    "contextLifecycle": 2,
+    "actualMasterPointComparisons": ">350000",
+    "contextClips": 51,
+    "contextPoseSamples": 153
+  },
+  "limitations": [
+    "No browser launched; root owns visual QA.",
+    "Independent review did not rerun the CPU benchmark; performance percentage belongs to the implementation benchmark."
+  ],
+  "files": [
+    {
+      "path": "src/lib/doreumi/motion-skin-probes.ts",
+      "sha256": "ebdb9edde32d6427a5c86bdaa24e3065baf0456389da7147a2641839e2b3387c"
+    },
+    {
+      "path": "src/lib/doreumi/motion-context-props.ts",
+      "sha256": "1b01bb808435c1d60277e8a808ae22dc7abadd7dba11fa5e9125263f0196d35c"
+    },
+    {
+      "path": "tests/doreumi-skin-probes.test.mjs",
+      "sha256": "0e63f13ff2d9298a004094adda914be3837e7ac8fac363f7fe436ce9a2fecb10"
+    },
+    {
+      "path": ".artifacts/doreumi-contact-audit/skin-cache-independent.tap",
+      "sha256": "6cd56dfe53fd396259b0c4e289003b2eb84876bda6ae1cba193fe3bf3cafd267"
+    },
+    {
+      "path": ".artifacts/doreumi-contact-audit/skin-cache-context-check.tap",
+      "sha256": "317a7a7be4930f2e85e690d3aa325f60eaaa11dc8949470aac54e5bddb0d25ed"
+    }
+  ]
+}

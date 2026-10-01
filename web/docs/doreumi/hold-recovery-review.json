@@ -1,0 +1,46 @@
+{
+  "checkedAt": "2026-09-24T04:04:37.969096+00:00",
+  "scope": "Actual runtime hold-start-to-Run recovery for Sit/Lie/Code/Read. Root individually inspected9-frame chronological transition sheets atquarter playback.",
+  "modelSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+  "runtimeBundleSha256": "1537462f2ef1e7e68dc28b8895b6b80f0ccc01d77437d4ad03718bab1d78f6f6",
+  "playbackRate": 0.25,
+  "pass": true,
+  "items": [
+    {
+      "from": "Sit",
+      "holdTime": 0,
+      "recoveringAtRequest": true,
+      "endAction": "Run",
+      "file": "/tmp/doreumi-hold-recovery-v2/transition-Sit-Run.jpg",
+      "sha256": "c5844c75dbc6c9c3599e1e7fe99fe446236f0089a6472082da86a61fd3804254",
+      "observation": "Visible gradual recovery, seated intermediate where needed, props close/fade before running."
+    },
+    {
+      "from": "Lie",
+      "holdTime": 0,
+      "recoveringAtRequest": true,
+      "endAction": "Run",
+      "file": "/tmp/doreumi-hold-recovery-v2/transition-Lie-Run.jpg",
+      "sha256": "5a37faf9b93e2d9876b4b354311ff8d526974a259c01337f1efc469c3d5872fe",
+      "observation": "Visible gradual recovery, seated intermediate where needed, props close/fade before running."
+    },
+    {
+      "from": "Code",
+      "holdTime": 0,
+      "recoveringAtRequest": true,
+      "endAction": "Run",
+      "file": "/tmp/doreumi-hold-recovery-v2/transition-Code-Run.jpg",
+      "sha256": "0b98561c8c563bd4cc5a285a7fe40b69143a99181fcb2faf61260ef4fb0cf8be",
+      "observation": "Visible gradual recovery, seated intermediate where needed, props close/fade before running."
+    },
+    {
+      "from": "Read",
+      "holdTime": 0,
+      "recoveringAtRequest": true,
+      "endAction": "Run",
+      "file": "/tmp/doreumi-hold-recovery-v2/transition-Read-Run.jpg",
+      "sha256": "455cfbaaf2242411c0243daa7c38907b0615a9ef9f6402523ef3de30ee064dbc",
+      "observation": "Visible gradual recovery, seated intermediate where needed, props close/fade before running."
+    }
+  ]
+}

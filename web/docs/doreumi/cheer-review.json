@@ -1,0 +1,57 @@
+{
+  "scope": "Root visual review of everyday character in a desktop browser, including 128px rendering. Temporal frames extracted at 4fps from normal playback and 1fps from quarter playback. Physical devices untested.",
+  "motions": [
+    {
+      "id": "meshy:295",
+      "review": "passed",
+      "ambient": true,
+      "masterSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+      "convertedSha256": "d81e02e4e5aa901b43bbc392c5c4e7387a9f15e5a6e5e1f1afd62aa331122244",
+      "metadataSha256": "a2da7a8ffec19104951bdaebdec9079326f3cb7b66eb551dfa331297f876a8d8",
+      "finding": "Both original short arms lift beside the face with visible elbow flexion, open outward, and return smoothly to Idle. Front, rear, both sides and 45-degree skeleton overlays keep joints inside their limb silhouettes. Normal 128px and quarter-speed temporal frames show readable raised hands, mild weight shift and no observed abrupt elbow reversal or unsupported body jump.",
+      "evidence": [
+        {
+          "directory": "/tmp/doreumi-library-290-319",
+          "runtimeBundleSha256": "06dd309a019810eef68a7fa5d397991f698a3b460f45cee8709e732b75f9f5c4",
+          "playbackRate": 1
+        },
+        {
+          "directory": "/tmp/doreumi-cheer-small-v1",
+          "runtimeBundleSha256": "a22ae930f2b040888087e67aa97af5f462994fc15273ffcda2ed97bd5302f1c0",
+          "playbackRate": 1
+        },
+        {
+          "directory": "/tmp/doreumi-cheer-quarter-v1",
+          "runtimeBundleSha256": "a22ae930f2b040888087e67aa97af5f462994fc15273ffcda2ed97bd5302f1c0",
+          "playbackRate": 0.25
+        }
+      ]
+    },
+    {
+      "id": "meshy:298",
+      "review": "passed",
+      "ambient": true,
+      "masterSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+      "convertedSha256": "eba0bc33a84a33c2eec49767f9835d3b916f058abbc03bd6b88d8a0f48ca650a",
+      "metadataSha256": "05ce34bdbaa0c1ba04f700258c0f83e7af132787d0f9eeb878427ca5bef9d22a",
+      "finding": "Both original short arms lift beside the face with visible elbow flexion, open outward, and return smoothly to Idle. Front, rear, both sides and 45-degree skeleton overlays keep joints inside their limb silhouettes. Normal 128px and quarter-speed temporal frames show readable raised hands, mild weight shift and no observed abrupt elbow reversal or unsupported body jump.",
+      "evidence": [
+        {
+          "directory": "/tmp/doreumi-library-290-319",
+          "runtimeBundleSha256": "06dd309a019810eef68a7fa5d397991f698a3b460f45cee8709e732b75f9f5c4",
+          "playbackRate": 1
+        },
+        {
+          "directory": "/tmp/doreumi-cheer-small-v1",
+          "runtimeBundleSha256": "a22ae930f2b040888087e67aa97af5f462994fc15273ffcda2ed97bd5302f1c0",
+          "playbackRate": 1
+        },
+        {
+          "directory": "/tmp/doreumi-cheer-quarter-v1",
+          "runtimeBundleSha256": "a22ae930f2b040888087e67aa97af5f462994fc15273ffcda2ed97bd5302f1c0",
+          "playbackRate": 0.25
+        }
+      ]
+    }
+  ]
+}

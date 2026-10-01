@@ -1,0 +1,626 @@
+{
+  "version": 1,
+  "source": {
+    "repository": "ainssam/doreumi-desktop-pet",
+    "revision": "b2cb2a6f7646a298c577a2dbe510a2a75cb9161b",
+    "modelSHA256": "00969b87595ee949d44fbe3f738ad028ee466c215cd64c825268bc01a2ec17d2",
+    "corrections": {
+      "model": "00969b87595ee949d44fbe3f738ad028ee466c215cd64c825268bc01a2ec17d2",
+      "position": "20e8b80c7f5f3d2c62db8aa41b60511c4a52190a6d93b0f65af177c8d739f540",
+      "normal": "48dcad24ead205fd43194efa9897d7a1fcc91261ba93da91eebf11c832670799"
+    }
+  },
+  "model": {
+    "bytes": 4289892,
+    "sha256": "34fc1e2d7c127ab693633742598404686d7cb87d0cff6deb6f1f33a3c94d7e67"
+  },
+  "geometryExact": true,
+  "textureSize": 2048,
+  "faceResolution": 768,
+  "faceBounds": [
+    -0.4,
+    -0.12,
+    0.4,
+    0.64
+  ],
+  "actions": [
+    {
+      "id": "Idle",
+      "duration": 4,
+      "approval": "approved"
+    },
+    {
+      "id": "Walk",
+      "duration": 2.299999952316284,
+      "approval": "approved"
+    },
+    {
+      "id": "Run",
+      "duration": 0.8999999761581421,
+      "approval": "approved"
+    },
+    {
+      "id": "Wave",
+      "duration": 3.5999999046325684,
+      "approval": "approved"
+    },
+    {
+      "id": "Showcase",
+      "duration": 7.800000190734863,
+      "approval": "approved"
+    },
+    {
+      "id": "HeadTilt",
+      "duration": 4,
+      "approval": "approved"
+    },
+    {
+      "id": "Sit",
+      "duration": 6,
+      "approval": "approved"
+    },
+    {
+      "id": "Think",
+      "duration": 6,
+      "approval": "approved"
+    },
+    {
+      "id": "Bow",
+      "duration": 4,
+      "approval": "approved"
+    },
+    {
+      "id": "Stretch",
+      "duration": 5,
+      "approval": "approved"
+    },
+    {
+      "id": "Lie",
+      "duration": 6,
+      "approval": "approved"
+    },
+    {
+      "id": "Roll",
+      "duration": 4,
+      "approval": "approved"
+    },
+    {
+      "id": "Jump",
+      "duration": 2.799999952316284,
+      "approval": "approved"
+    },
+    {
+      "id": "Joy",
+      "duration": 4,
+      "approval": "approved"
+    },
+    {
+      "id": "Code",
+      "duration": 6,
+      "approval": "approved"
+    },
+    {
+      "id": "Read",
+      "duration": 6,
+      "approval": "approved"
+    },
+    {
+      "id": "Cheer",
+      "duration": 4,
+      "approval": "approved"
+    },
+    {
+      "id": "PeekLeft",
+      "duration": 5,
+      "approval": "approved"
+    },
+    {
+      "id": "PeekRight",
+      "duration": 5,
+      "approval": "approved"
+    },
+    {
+      "id": "NewYearBow",
+      "duration": 7,
+      "approval": "approved"
+    },
+    {
+      "id": "Snowman",
+      "duration": 7,
+      "approval": "approved"
+    },
+    {
+      "id": "MegaphoneSpeak",
+      "duration": 6,
+      "approval": "candidate"
+    },
+    {
+      "id": "CarryBag",
+      "duration": 6,
+      "approval": "candidate"
+    },
+    {
+      "id": "Dragged",
+      "duration": 1.8,
+      "approval": "candidate"
+    },
+    {
+      "id": "Falling",
+      "duration": 0.8,
+      "approval": "candidate"
+    },
+    {
+      "id": "Landing",
+      "duration": 0.65,
+      "approval": "candidate"
+    }
+  ],
+  "expressions": [
+    {
+      "id": "neutral",
+      "label": "기본",
+      "sourceVersion": "V67",
+      "sourceSHA256": "30844d4a18d503463f5137cb8838d3a755ed0c755daf652dc8555658af6ac49f",
+      "sha256": "4ba04a6a6808448b77ec3e1809d802e8a736923364e00b9e5253517ee9bbe7c9",
+      "bytes": 9634,
+      "inkPixels": 7973
+    },
+    {
+      "id": "smile",
+      "label": "미소",
+      "sourceVersion": "V68",
+      "sourceSHA256": "3e45390b0bf4191c96c36e458a310a1be3d57b4c06511212e7b43a798a04d44b",
+      "sha256": "461d4913b05a1c29a08e26ebe1358b473b0184e3b465a5b5b8ce4a6e973b625d",
+      "bytes": 11716,
+      "inkPixels": 9271
+    },
+    {
+      "id": "wink",
+      "label": "윙크",
+      "sourceVersion": "V69",
+      "sourceSHA256": "db6b2fc1fbc86bd0a01a355dc461766b37727bc8f708129bae2566187f20c50b",
+      "sha256": "6d2c17790a13638d2002f194e3d997fdc62a938fb5410615bd554dfbae6458ee",
+      "bytes": 14430,
+      "inkPixels": 14163
+    },
+    {
+      "id": "laugh",
+      "label": "활짝 웃음",
+      "sourceVersion": "V69",
+      "sourceSHA256": "50a1df90dab56f9d4ab2968053d2af809761381a551006c980fe7edbc253ee68",
+      "sha256": "5da5ad5c20745867a8169c0be4ebe7375ffca65fc77bd132ae622039cd0eaa7f",
+      "bytes": 15290,
+      "inkPixels": 14797
+    },
+    {
+      "id": "surprise",
+      "label": "놀람",
+      "sourceVersion": "V69",
+      "sourceSHA256": "631ca84121b7cc65b579ab159c0e43d1e883328f8765940f774a66f3fe6728f9",
+      "sha256": "fd25456e7ac023533ca2031811564fa60a9214679d6c234567f44f63320e7d99",
+      "bytes": 11592,
+      "inkPixels": 11482
+    },
+    {
+      "id": "thinking",
+      "label": "생각",
+      "sourceVersion": "V84",
+      "sourceSHA256": "7469c44bcb206b9068694801aa2f64f00e50cac583d6803fb81e8dede2e62bfe",
+      "sha256": "f698ba146593ac6d7de4420589d1f593208f3869863faab5654543f81e55c6b5",
+      "bytes": 9934,
+      "inkPixels": 7359
+    },
+    {
+      "id": "sleepy",
+      "label": "졸림",
+      "sourceVersion": "V69",
+      "sourceSHA256": "7b719193aac7fb6773a1555a21986faa8113ff173b5d8849d77595b4ee0fd226",
+      "sha256": "f34009c8a6582d804a955329f7a9a24d37ea3a41e191e1c57162aed0bbf2b776",
+      "bytes": 10844,
+      "inkPixels": 12612
+    },
+    {
+      "id": "aa",
+      "label": "말하기 아",
+      "sourceVersion": "V69",
+      "sourceSHA256": "d21372f05dc8a81a877bb411f0e2e4da837f718ed7fe99003018c6040788b603",
+      "sha256": "a1e35459b4971223e356ef4d2c50c843d1fd812748630b13ff5fcc500a11c5ee",
+      "bytes": 13658,
+      "inkPixels": 13743
+    },
+    {
+      "id": "oh",
+      "label": "말하기 오",
+      "sourceVersion": "V69",
+      "sourceSHA256": "7b3dc1deb28d39738b5c9428f49191510d91be5c3fa98b29a3505310b899f46e",
+      "sha256": "73b1d781babf587ab28be2cff8cdbef9a4ccdf999029f1779176716988a13d19",
+      "bytes": 11802,
+      "inkPixels": 11564
+    },
+    {
+      "id": "oo",
+      "label": "말하기 우",
+      "sourceVersion": "V84",
+      "sourceSHA256": "67d2360277a395d2e0d1a447e13860db4277380e8aeb82307ac138855756bbab",
+      "sha256": "7432e7c208079169d4025667a039c1ac935d33d15ea012292c2c7da7d4165acf",
+      "bytes": 10606,
+      "inkPixels": 8654
+    },
+    {
+      "id": "blink_closed",
+      "label": "깜빡임용 감은 눈",
+      "sourceVersion": "V71",
+      "sourceSHA256": "3ec9f93ff2e666ee390715e7680f017f8e277ceb064afad096e9d6ca4ab027c4",
+      "sha256": "4b03daa103d1e2ab2940d4a2646ea6512653f8c9e55add954f5d4f427ab1e11c",
+      "bytes": 9680,
+      "inkPixels": 9154
+    },
+    {
+      "id": "relieved",
+      "label": "기쁨",
+      "sourceVersion": "V71",
+      "sourceSHA256": "c2841ce535812610c7eba0c722c896f8c7b29b99cacf7fcb8ede7ad40eb48436",
+      "sha256": "72e4149ddfac239f5b3a01bdae344bcf5b282f8ae07c3ad7f7e853c1b98e4157",
+      "bytes": 12348,
+      "inkPixels": 14723
+    },
+    {
+      "id": "half_sleepy",
+      "label": "반쯤 졸림",
+      "sourceVersion": "V71",
+      "sourceSHA256": "9509e40e79d24e6bc008a48bfb9b7bddea671c645efe14acfd3b90ce3d1add56",
+      "sha256": "c2d2c85af9b7680a09a3341790b61baa6cb1011b0df136240d6d517d2462fd2c",
+      "bytes": 9872,
+      "inkPixels": 10117
+    },
+    {
+      "id": "soft_sad",
+      "label": "살짝 슬픔",
+      "sourceVersion": "V71",
+      "sourceSHA256": "11f07c5975b6d9df06485fee6dc5d56ec167fdf3c154559885d3da0e3aebe6f4",
+      "sha256": "150eddd38c464a70b9801da8c6f8febd4d5b732009c7663679e216af17ef7fff",
+      "bytes": 14340,
+      "inkPixels": 12038
+    },
+    {
+      "id": "curious",
+      "label": "호기심",
+      "sourceVersion": "V73",
+      "sourceSHA256": "889fd7f8eef1c9748f326adbbddd3ff3dde8ed828b49e5b1f154b549b4770bb2",
+      "sha256": "870e1672028fa928a3e8534e38f44cde76bc8ab516fb2d4cca70d1277fdac6db",
+      "bytes": 14206,
+      "inkPixels": 12394
+    },
+    {
+      "id": "shy",
+      "label": "부끄러움",
+      "sourceVersion": "V73",
+      "sourceSHA256": "1df714bcf7431ecf1c06b9b8cdfeb0145c6088d511b92893d5198c712b14d1e3",
+      "sha256": "c7010fbd6b80006725ac58706bc8ea35426aaec783ab71a075ef610745ea4131",
+      "bytes": 19396,
+      "inkPixels": 13780
+    },
+    {
+      "id": "proud",
+      "label": "뿌듯함",
+      "sourceVersion": "V73",
+      "sourceSHA256": "596e4cde06fd48f14b38c8a878843803018219d270e16189073c7e6f09dbfbca",
+      "sha256": "4a18560116c063a205d87c84e81a73e1f27a25ea5fc8a664e96f7639730130d7",
+      "bytes": 17840,
+      "inkPixels": 15570
+    },
+    {
+      "id": "teary",
+      "label": "울먹임",
+      "sourceVersion": "V73",
+      "sourceSHA256": "c5fb107d37f194fcd02624b4c87cd956080bdff3fd1bcdc9951855b992ee7d83",
+      "sha256": "74aec810b6f70ba9c6db03c9e42d28628a3ec2c3639d7d1d96c144ce4216a294",
+      "bytes": 17562,
+      "inkPixels": 15084
+    },
+    {
+      "id": "annoyed",
+      "label": "살짝 짜증",
+      "sourceVersion": "V75",
+      "sourceSHA256": "42fa94e12d84809e32b7ea95c32e3c555176c554b28cf1d379da8113c5ef706f",
+      "sha256": "bf6bcd1578bb1aac4ed8a4b1c99d7b3af021df36d39170e1380131ec9c4d001e",
+      "bytes": 10210,
+      "inkPixels": 9651
+    },
+    {
+      "id": "determined",
+      "label": "결의",
+      "sourceVersion": "V75",
+      "sourceSHA256": "598e6f1ecf85298054e9007a277ee9081b6545d4cbcc1ed36cdb51fe3d9d009f",
+      "sha256": "6f4f1b60a9725896ca7b362a16e5f5a167952e435898d56ac5fc8de3c6ca0d03",
+      "bytes": 16000,
+      "inkPixels": 11248
+    },
+    {
+      "id": "confused",
+      "label": "갸우뚱/혼란",
+      "sourceVersion": "V75",
+      "sourceSHA256": "ab324706b9c4e687daf20cfb09b3da52c7a7b1360b3c2438f18f1cc798e280fb",
+      "sha256": "0ff86f8b4347d67d4cf729b10ea39b0e9df4fb0cfabe4005c8143d29f615423d",
+      "bytes": 15472,
+      "inkPixels": 12911
+    },
+    {
+      "id": "worried",
+      "label": "걱정",
+      "sourceVersion": "V75",
+      "sourceSHA256": "ebab781bc89461849e00e4aaee6a5effb964f867a029f8d692b2eea1c122de61",
+      "sha256": "9b3959a4fbe82d02862f0d5c7916da93890dd1b7c7191198badaa826bdce3703",
+      "bytes": 15626,
+      "inkPixels": 12909
+    },
+    {
+      "id": "love",
+      "label": "반함",
+      "sourceVersion": "V77",
+      "sourceSHA256": "c18bfe4f5b9fddbbb61c940ece205c5b005cc0019597d458f0836072877c8a29",
+      "sha256": "ec6c5e88afa89da078255e3d4cb03dd61ff9f83a61822315c3a3cad7f08a36c5",
+      "bytes": 14700,
+      "inkPixels": 13678
+    },
+    {
+      "id": "sparkly",
+      "label": "초롱초롱",
+      "sourceVersion": "V77",
+      "sourceSHA256": "09e109a97d80215fbe3dbb88170555b24b5860f20c53591c7e81087ae113e4d2",
+      "sha256": "a7eaaae4e0d465257023fce64eb9c8469ffa8bd78a358cb17dee9da3355dea0d",
+      "bytes": 15084,
+      "inkPixels": 13011
+    },
+    {
+      "id": "listening",
+      "label": "경청",
+      "sourceVersion": "V77",
+      "sourceSHA256": "76bfcdd2576302c1dd0bca39ee624faece0695ea1fc756f78c69f19999adc601",
+      "sha256": "eb163b32762c1381bb4f881465f2d2d05aa0c8012665bf2c47f0cc9a443031d7",
+      "bytes": 14826,
+      "inkPixels": 13742
+    },
+    {
+      "id": "focused",
+      "label": "집중",
+      "sourceVersion": "V77",
+      "sourceSHA256": "afca0f5520699cabbe67a8e60d2249e10dacb82a21c3c6d987414ae65f32dc5b",
+      "sha256": "2bb7aa8fe7f34693781ebc5951cc85df9f242c31e907b5d007951102bb0995c8",
+      "bytes": 14006,
+      "inkPixels": 10122
+    },
+    {
+      "id": "aha",
+      "label": "아하",
+      "sourceVersion": "V79",
+      "sourceSHA256": "0e31e6f4582e8e7848b52ff0c5ebd57ea11297a520200802bbc3fdef88a990b4",
+      "sha256": "55c1746e8e63720b0dac2c0b9ada4117ce95d1bed5d801e4dbc703ea9856eccb",
+      "bytes": 15766,
+      "inkPixels": 14854
+    },
+    {
+      "id": "skeptical",
+      "label": "의심",
+      "sourceVersion": "V79",
+      "sourceSHA256": "e4dece706c4538c854e955fac2a01e3b57c22a67a3640fe3400170b51aa26fca",
+      "sha256": "058171ba925811dd0d38dc492aac7124757ab0a9b5f69e2df9e3f2954d8a4e9a",
+      "bytes": 9000,
+      "inkPixels": 9427
+    },
+    {
+      "id": "apologetic",
+      "label": "미안함",
+      "sourceVersion": "V79",
+      "sourceSHA256": "95c13cd255c625a824945e1e105628a75915ca709a4153182a29c73de1fd763d",
+      "sha256": "68961d0340833e692abd51c31acbbf25f64c55c53a3b781ac9a62223142b257f",
+      "bytes": 15610,
+      "inkPixels": 10478
+    },
+    {
+      "id": "cheering",
+      "label": "응원",
+      "sourceVersion": "V79",
+      "sourceSHA256": "3aa6aaf46f88f93fe197c9fd308e511d25f23b2232386245a452ab6a3f285db3",
+      "sha256": "01c5afadfbad7b5daa10989d0f43757e0c2e73249c63b702ebad6a9626349a81",
+      "bytes": 11760,
+      "inkPixels": 14329
+    },
+    {
+      "id": "greeting_smile",
+      "label": "인사 미소",
+      "sourceVersion": "V81",
+      "sourceSHA256": "a89b94ceccb31e64a8f444cfab9089b59d5597c64b6ad6fcaa3e50b09bf4e9b8",
+      "sha256": "a9e675fe5bb4617147b9e1c89b8b4bb5440bec1d358db8b7c64f02cee442272a",
+      "bytes": 14006,
+      "inkPixels": 14080
+    },
+    {
+      "id": "yawning",
+      "label": "하품",
+      "sourceVersion": "V81",
+      "sourceSHA256": "dce0e3afc28a6422ac18046d935527fc88e4bb73ab4fbef1eda54644ee32ee9d",
+      "sha256": "9026864ebaee6b73ba5be8ed059f179221fb9c9d764344416f8f31e3aa1d96f3",
+      "bytes": 13558,
+      "inkPixels": 12885
+    },
+    {
+      "id": "ee",
+      "label": "말하기 이",
+      "sourceVersion": "V81",
+      "sourceSHA256": "06ac6dd029805357e72da0c0f931cdf2c2c178fca81fc075e8df0e645361483e",
+      "sha256": "6b9f902eb11dd3217f1ad7159319fe75a1a83b6e12a4bb5a32900afd1fe3480a",
+      "bytes": 13586,
+      "inkPixels": 13490
+    },
+    {
+      "id": "mm",
+      "label": "말하기 음",
+      "sourceVersion": "V81",
+      "sourceSHA256": "1f5c6d5c1be5188faca30e3881ee6b15f81bafea82db2320e9c3e6c596a78fdc",
+      "sha256": "39a519e836ce329e986d95636359d2e98d7726248e654737b689961ba4eced71",
+      "bytes": 12228,
+      "inkPixels": 9022
+    }
+  ],
+  "props": [
+    {
+      "id": "megaphone",
+      "sourceSHA256": "70271b2c5244bc5148874a868cbe156d7d0ac2cdc81d7de4bf50a1cfec84b25a",
+      "bytes": 2128792,
+      "sha256": "ca58e9b6b918b289e5b60d16a337582ce2a5e567238cb0ff14d4e762990a66cc",
+      "attachment": {
+        "id": "megaphone",
+        "slot": "hand",
+        "target": [
+          0.78,
+          0.66,
+          0.12
+        ],
+        "propContact": [
+          0.35,
+          -0.8,
+          0.15
+        ],
+        "rotation": [
+          0.65,
+          2.2,
+          0
+        ],
+        "scale": 0.32,
+        "meshName": "Doreumi",
+        "triangle": [
+          77290,
+          77156,
+          77043
+        ],
+        "barycentric": [
+          0.4592176440809286,
+          0.188639536544841,
+          0.3521428193742304
+        ],
+        "position": [
+          0.7845280299702214,
+          0.659155942425175,
+          0.13241418863127621
+        ],
+        "bindFrame": [
+          -0.8250322531632224,
+          0.45725961644073126,
+          0.3320172049953009,
+          0,
+          -0.44986704430185576,
+          -0.887045772433504,
+          0.10377591271080266,
+          0,
+          0.34196699210819825,
+          -0.06374512358073596,
+          0.9375474044165171,
+          0,
+          0.7845280299702213,
+          0.659155942425175,
+          0.13241418863127621,
+          1
+        ],
+        "allowedActions": [
+          "Idle",
+          "MegaphoneSpeak"
+        ],
+        "status": "fitting",
+        "fitDistance": 0.013241131672698919,
+        "orientationMode": "upright"
+      }
+    },
+    {
+      "id": "christmas-gift-sack",
+      "sourceSHA256": "805c7d475c9fc3d5bb0d6fbbb713eca0959bdf6d1727e371af81c2252f07c03e",
+      "bytes": 2370492,
+      "sha256": "02b96df3d7de1c16d0756915c4bcf278964391bc57b8ade5fdc1d1f0c90636ac",
+      "attachment": {
+        "id": "christmas-gift-sack",
+        "slot": "hand",
+        "target": [
+          0.78,
+          0.66,
+          0.12
+        ],
+        "propContact": [
+          -0.3,
+          0.28,
+          0.1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": 0.28,
+        "meshName": "Doreumi",
+        "triangle": [
+          77290,
+          77156,
+          77043
+        ],
+        "barycentric": [
+          0.4592176440809286,
+          0.188639536544841,
+          0.3521428193742304
+        ],
+        "position": [
+          0.7845280299702214,
+          0.659155942425175,
+          0.13241418863127621
+        ],
+        "bindFrame": [
+          -0.8250322531632224,
+          0.45725961644073126,
+          0.3320172049953009,
+          0,
+          -0.44986704430185576,
+          -0.887045772433504,
+          0.10377591271080266,
+          0,
+          0.34196699210819825,
+          -0.06374512358073596,
+          0.9375474044165171,
+          0,
+          0.7845280299702213,
+          0.659155942425175,
+          0.13241418863127621,
+          1
+        ],
+        "allowedActions": [
+          "Idle",
+          "Walk",
+          "CarryBag"
+        ],
+        "status": "fitting",
+        "fitDistance": 0.013241131672698919,
+        "orientationMode": "upright"
+      }
+    }
+  ],
+  "transferSourceHashes": {
+    "projection": "b75382f004228b650ec14e1a02ea8a504ea4cf2eb1e3511aaf9e5bc7752d7581",
+    "expression": "28b2325f5f3b21c5784ac7e3dbf5bbdc3296cec470d5c6f6e1e538bf6a3514ac",
+    "thinking": "be9cbda5012d7d943280a2ccfeb63e5b5770854e1db5e033c0a739605ead0a41"
+  },
+  "runtimeRig": {
+    "version": 2,
+    "bones": 20,
+    "addedJoints": [
+      "elbowL",
+      "wristL",
+      "elbowR",
+      "wristR",
+      "kneeL",
+      "kneeR"
+    ],
+    "preserves": [
+      "geometry",
+      "uv",
+      "textures",
+      "shoulder weights"
+    ]
+  }
+}

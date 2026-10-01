@@ -1,0 +1,124 @@
+{
+  "checkedAt": "2026-09-24T05:12:24.060Z",
+  "review": "passed",
+  "masterSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+  "scope": "Root visual review bound to exact production donor/master replay. Complete source-planted denominator and all-joint 60Hz shipping audits retained.",
+  "visualEvidence": {
+    "file": "docs/doreumi/visual-geometric27-63-candidate.json",
+    "sha256": "e9769f25db62a4c013bf355b4ea3775ded61ec3de97ae5f3ec9553051ca9ba53"
+  },
+  "motions": [
+    {
+      "id": "meshy:27",
+      "clipSha256": "78b956bea8c19583ef4ff890785b1a3ea2e0a5520bd40dc1f9d7b10946669065",
+      "sourceSha256": "de81ca5204d13474f28cbc3eef8f9eba0f2641d0b2e1c16d50bfc7f93d9bd384",
+      "metadataSha256": "78600b2ce1da63986e0fca0224c11ec990c8c8cec0d98f0f32033411ff57f781",
+      "contactPlan": {
+        "version": 1,
+        "planSha256": "2346298be15d5fac1320c33e885bebb0be677032d8c509dfe8db50e26208f122",
+        "reproducedClipSha256": "78b956bea8c19583ef4ff890785b1a3ea2e0a5520bd40dc1f9d7b10946669065"
+      },
+      "contact": {
+        "actionId": 27,
+        "sourceActionId": 27,
+        "derivation": null,
+        "sourceName": "Big_Heart_Gesture",
+        "sourceSha256": "de81ca5204d13474f28cbc3eef8f9eba0f2641d0b2e1c16d50bfc7f93d9bd384",
+        "clipSha256": "78b956bea8c19583ef4ff890785b1a3ea2e0a5520bd40dc1f9d7b10946669065",
+        "sourceFloor": 0.10232243703532082,
+        "sourcePlantedPairs": 229,
+        "missingTargetContactPairs": 0,
+        "excessiveDriftPairs": 0,
+        "sourceMovingContactPairs": 4,
+        "pivotCompatiblePairs": 0,
+        "maxDriftByHeight": 0.0009358605685984694,
+        "failures": []
+      },
+      "joints": {
+        "largestIntroducedLocal": {
+          "bone": "kneeR",
+          "from": 1.5833333333333333,
+          "time": 1.6,
+          "sourceTime": 0.9000000000000001,
+          "targetLocalDegrees": 11.027144481813815,
+          "targetWorldDegrees": 3.917343574400697,
+          "sourceLocalDegrees": 0.8421924259175081,
+          "sourceWorldDegrees": 2.9544810484403006,
+          "jointDistance": 0.02132964174347218
+        },
+        "largestIntroducedWorld": {
+          "bone": "thighR",
+          "from": 1.5833333333333333,
+          "time": 1.6,
+          "sourceTime": 0.9000000000000001,
+          "targetLocalDegrees": 7.863794717598715,
+          "targetWorldDegrees": 7.946789020915551,
+          "sourceLocalDegrees": 2.513019999792938,
+          "sourceWorldDegrees": 2.413882401794359,
+          "jointDistance": 0.002350146506602137
+        }
+      }
+    },
+    {
+      "id": "meshy:63",
+      "clipSha256": "8fc9d1e161364dedce3c1400b2eace811995f2550b72fd19811ae3baefb2a947",
+      "sourceSha256": "6d1556b1893db0a95ce4827fe8c22a56f6ab7dddb0e6aba675d367a87a3c504d",
+      "metadataSha256": "0a78d978a8373758a8b3b5033275ef12c7fd3df5444258c02b54adce29ca2882",
+      "contactPlan": {
+        "version": 1,
+        "planSha256": "1e2353ee2b1d4bd456f9e1b23c27f04e220ea238103e072624c48c5fff77129e",
+        "reproducedClipSha256": "8fc9d1e161364dedce3c1400b2eace811995f2550b72fd19811ae3baefb2a947"
+      },
+      "contact": {
+        "actionId": 63,
+        "sourceActionId": 63,
+        "derivation": null,
+        "sourceName": "Arm_Circle_Shuffle",
+        "sourceSha256": "6d1556b1893db0a95ce4827fe8c22a56f6ab7dddb0e6aba675d367a87a3c504d",
+        "clipSha256": "8fc9d1e161364dedce3c1400b2eace811995f2550b72fd19811ae3baefb2a947",
+        "sourceFloor": 0.020871950140051124,
+        "sourcePlantedPairs": 140,
+        "missingTargetContactPairs": 0,
+        "excessiveDriftPairs": 0,
+        "sourceMovingContactPairs": 117,
+        "pivotCompatiblePairs": 1,
+        "maxDriftByHeight": 0.0014933516727033502,
+        "failures": []
+      },
+      "joints": {
+        "largestIntroducedLocal": {
+          "bone": "kneeL",
+          "from": 5.683333333333334,
+          "time": 5.7,
+          "sourceTime": 4.966666666666667,
+          "targetLocalDegrees": 8.132653692874271,
+          "targetWorldDegrees": 4.918346761063557,
+          "sourceLocalDegrees": 0.37519612966939236,
+          "sourceWorldDegrees": 1.3026310389126703,
+          "jointDistance": 0.015618106570653992
+        },
+        "largestIntroducedWorld": {
+          "bone": "thighL",
+          "from": 4.3,
+          "time": 4.316666666666666,
+          "sourceTime": 3.583333333333333,
+          "targetLocalDegrees": 9.796039518561482,
+          "targetWorldDegrees": 9.916366470231202,
+          "sourceLocalDegrees": 3.3246051094551583,
+          "sourceWorldDegrees": 3.320672769592647,
+          "jointDistance": 0.01063223735839107
+        }
+      }
+    }
+  ],
+  "artifacts": [
+    {
+      "file": ".artifacts/doreumi-contact-audit/promotion-27-63/contact.json",
+      "sha256": "6327aa5ef6883d7d46c91b42696431f9e4f918da63c5a2dfda0daa7568cf243b"
+    },
+    {
+      "file": ".artifacts/doreumi-contact-audit/promotion-27-63/joints.json",
+      "sha256": "416c0131ce8388441f4a88d079edb8bfc08d0455646ee7b6db34bf0ad6449fba"
+    }
+  ]
+}

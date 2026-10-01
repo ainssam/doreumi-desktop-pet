@@ -1,0 +1,119 @@
+{
+  "scope": "Root individually inspected all 18 five-view/nine-phase sheets. All pending; numeric geometry checks do not establish semantic prop contact.",
+  "evidence": "/tmp/doreumi-portable-v1",
+  "numericPass": true,
+  "modelSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+  "runtimeBundleSha256": "8875caff78b87a6b2c244aed1b95fa38822526eed040611f586e33ddff0100a2",
+  "clipHashes": {
+    "meshy:46": "f7d31e5c8821c6e8d0f080c574c03adb5ae097a1463946ae45ada85389fd26f2",
+    "meshy:48": "654675e5c3d87bc0b88f235a8f5e76f90a4aebfb732ac8adb80fedb090af6363",
+    "meshy:273": "d6f2743bf2930e98de90064cdcc8398e18a77d2ff2a12f84d5789ae79d65752a",
+    "meshy:274": "23f14e6a50fc4c082eab38604f82b3dc534fb1e8d7e435f56773153dd23bc54a",
+    "meshy:275": "d7c7cb123c66708ebd6d048f79e31e03d73c6ca43c019710b346be5367cab3b1",
+    "meshy:276": "c495955a908f5f1f3dfd2bcd1ecd5383807c3d5a473abe723375c6c62ad73386",
+    "meshy:277": "e7ab1f8bdfdcd3d15d5cce2030eb16b1f595e2089ca15ba33216bddd77d5fe91",
+    "meshy:278": "5ecce6fdf0bf07c2b23a2813262b0042111b372d5983de23ed72fb8e00a5d8ca",
+    "meshy:280": "f37006bbe291f743094a94b67048622e772bdf11a3121829adfa5e92de72b7ce",
+    "meshy:281": "745071cbfeba426b0f14886e5620d7eea29e4bf30f5b24fbd8a0158269517e58",
+    "meshy:282": "5da19b8033f85aabd5995bc74dd6792a8cd17c39a5bf2dad732fa01ec68d480d",
+    "meshy:283": "9db83cbc0e61a47888236d59fcf1e95ebea3502a282ab0b371a8b550a13061a0",
+    "meshy:320": "034d72d368b984100a5d663f8f2bbe53e98a82f352dad2592ac10e4f1474c187",
+    "meshy:331": "43952e6e6aa9f2d2baa251c72da7ea3cdd11f25005c463417b0cb3ff0ccb6d97",
+    "meshy:342": "a3dd4f37411afa8b5672bc65a4689615e85ec491d5c6ed6fd468d8c2ab3a3a2c",
+    "meshy:343": "007262c7953391eb3ba6d7a95624a4f0313de685599a22ac201bc440029f4da7",
+    "meshy:393": "0aee46ed1d69856b7052c398b323e497d0e9732731ea36c26bff55db827ffc06",
+    "meshy:410": "55649ed18a97bd548b925fce78f3c9023c9975b5ac8e3fe96f5b9d9e681eb68e"
+  },
+  "motions": [
+    {
+      "id": 46,
+      "finding": "Rope/handles visible. Some phases appear to cross head or torso; actual skin collision audit and trajectory correction requested.",
+      "review": "pending"
+    },
+    {
+      "id": 48,
+      "finding": "Standing mirror surface disappears from reverse-facing views because the disk is single-sided; add visible backing and re-review.",
+      "review": "pending"
+    },
+    {
+      "id": 273,
+      "finding": "Small parcel reaches the raised hand after floor pickup; small-size visibility and continuous grab pending.",
+      "review": "pending"
+    },
+    {
+      "id": 274,
+      "finding": "Very thin floor note and release are hard to distinguish in the sheet; continuous close-up and small-size readability pending.",
+      "review": "pending"
+    },
+    {
+      "id": 275,
+      "finding": "Taller small parcel remains visible from five views; grab transition pending.",
+      "review": "pending"
+    },
+    {
+      "id": 276,
+      "finding": "Thin note is nearly invisible in these samples; small-size readability and grip transition pending.",
+      "review": "pending"
+    },
+    {
+      "id": 277,
+      "finding": "Basket and scattered fruit visible; continuous pickup-to-basket handoff remains pending.",
+      "review": "pending"
+    },
+    {
+      "id": 278,
+      "finding": "Potted miniature tree and basket visible; fruit handoff and skin clearance need continuous review.",
+      "review": "pending"
+    },
+    {
+      "id": 280,
+      "finding": "Note becomes airborne in the throw samples; release trajectory and small-size readability pending.",
+      "review": "pending"
+    },
+    {
+      "id": 281,
+      "finding": "Thin pickup note remains difficult to distinguish; actual pickup/contact and small-size readability pending.",
+      "review": "pending"
+    },
+    {
+      "id": 282,
+      "finding": "Hip pouch visible, but pickup/containment timing requires continuous review.",
+      "review": "pending"
+    },
+    {
+      "id": 283,
+      "finding": "Radish emerges from the soil and stays near the hand; emergence/contact timing pending.",
+      "review": "pending"
+    },
+    {
+      "id": 320,
+      "finding": "Two dumbbells readable at normal review size; small-size and wrist clearance pending.",
+      "review": "pending"
+    },
+    {
+      "id": 331,
+      "finding": "Squat/pull with two small dumbbells remains distinguishable; continuous support and wrist clearance pending.",
+      "review": "pending"
+    },
+    {
+      "id": 342,
+      "finding": "Cup follows hand but remains upright and beside the face at drinking phases. Source sip alignment, arm IK and cup tilt correction requested.",
+      "review": "pending"
+    },
+    {
+      "id": 343,
+      "finding": "Cup stays beside the face instead of reaching mouth; seat appears as a thin line. Sip contact and cushion support correction requested.",
+      "review": "pending"
+    },
+    {
+      "id": 393,
+      "finding": "Ball visible at raised throwing hand then absent after release; continuous release and trajectory pending.",
+      "review": "pending"
+    },
+    {
+      "id": 410,
+      "finding": "Ball moves away from the foot at kick phase; continuous actual foot-ball contact and trajectory pending.",
+      "review": "pending"
+    }
+  ]
+}

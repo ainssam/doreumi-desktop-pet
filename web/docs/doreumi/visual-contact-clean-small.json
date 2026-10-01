@@ -1,0 +1,44 @@
+{
+  "review": "pending",
+  "evidenceDirectory": "/tmp/doreumi-contact-clean-small",
+  "runStatus": "gracefully-stopped-after-six-actions-to-prioritize-floor-fix",
+  "method": "128px actual component; five views nine poses plus 4fps normal45degree temporal sequences individually inspected. Whole-joint/source-foot numeric audits separate. Quarter-speed skeleton still pending.",
+  "observations": [
+    {
+      "id": "meshy:2",
+      "clipSha256": "08d0f198355209a120858a794ce5301ee142efd21599a08f5588415838979de5",
+      "finding": "Alert looks side to side with coordinated upper-body turn; readable at 128px and connected through sequence.",
+      "review": "pending"
+    },
+    {
+      "id": "meshy:11",
+      "clipSha256": "5c7203ec43e2d74bda4d273b7e9b60ba55527aab84e1de92e6f46f49da3d26f9",
+      "finding": "Quiet idle has small head tilt and weight shift; subtle by design, no visible snap.",
+      "review": "pending"
+    },
+    {
+      "id": "meshy:12",
+      "clipSha256": "3fed289233000aec115841b68d52495acacb4dd2cfc4658173ba1eadb7d48ad3",
+      "finding": "Exaggerated backward stretch with arms raised; feet remain fixed, head/torso silhouette connected; quarter-speed joints needed.",
+      "review": "pending"
+    },
+    {
+      "id": "meshy:38",
+      "clipSha256": "60cf7486c85a73e0bf935f8927d6cee3d9ff9c75f69c02de6218c1533dcd4d65",
+      "finding": "Seated dozing dips head left/right and returns upright; foot and seated silhouette readable, no chair dependency visible.",
+      "review": "pending"
+    },
+    {
+      "id": "meshy:243",
+      "clipSha256": "27c4d203caf5005018c885abcd8b232eed740361bcb8221498091ac3fd198612",
+      "finding": "Neutral idle subtly shifts arms and head; continuous entry and return visible.",
+      "review": "pending"
+    },
+    {
+      "id": "meshy:244",
+      "clipSha256": "9be1c76fe67396492a04cba74c41aa7aa86c07ba4245baed3a3eabcda9ce5aa2",
+      "finding": "Neutral idle has gradual gaze and body sway, no apparent discontinuity.",
+      "review": "pending"
+    }
+  ]
+}

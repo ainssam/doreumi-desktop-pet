@@ -1,0 +1,38 @@
+{
+  "checkedAt": "2026-09-24T04:19:45.138487+00:00",
+  "id": "meshy:67",
+  "clipSha256": "388d5413046507fc35f9e5e82f1085d16d88a9ce9a7434e01cc77fc77eeb503d",
+  "scope": "skin-preferred-interval candidate only, public unchanged. Individually inspected normal128/quarter five-view sheets and4fps/1fps playback, plus three13-frame60Hz focus windows.",
+  "review": "pending",
+  "observation": "Full dance has coherent torso turn and visible alternating support. Focus5.85 still folds the rear leg under the body quickly; compare flex-landing candidate before approval. Source7.333 inward curl is reduced from the earlier coherent-floor-pole candidate.",
+  "evidence": [
+    {
+      "file": "/tmp/doreumi-67-preferred-1/motion-meshy-67.jpg",
+      "sha256": "8cc82c06b51d2a0ec78c09a8e4012264edc672fc2883dd0a3e7c7d2109fd5311"
+    },
+    {
+      "file": "/tmp/doreumi-67-preferred-1/temporal-meshy-67.jpg",
+      "sha256": "50563942f289b79bc09b72f26adc8f2e17831832a0b0ef1d35f3d59b9d55d424"
+    },
+    {
+      "file": "/tmp/doreumi-67-preferred-0.25/motion-meshy-67.jpg",
+      "sha256": "68f5a57aab43752a965f1c38c9849ae1b3be49d3309e9445c3755e4c9c5bac66"
+    },
+    {
+      "file": "/tmp/doreumi-67-preferred-0.25/temporal-meshy-67.jpg",
+      "sha256": "97e2a2ae5b8f952049b9e082110b9082ca7da7031487ae4f957cc19e202204c7"
+    },
+    {
+      "file": "/tmp/doreumi-67-preferred-focus-0/motion-meshy-67.jpg",
+      "sha256": "eb15d450c7338b2386c5db54e030dfa317026cdd7f8f7b0107c61510896dd5ec"
+    },
+    {
+      "file": "/tmp/doreumi-67-preferred-focus-1/motion-meshy-67.jpg",
+      "sha256": "29772017357c3539d925fe96360cde82bf8154beaddcead2d69320b226466afb"
+    },
+    {
+      "file": "/tmp/doreumi-67-preferred-focus-2/motion-meshy-67.jpg",
+      "sha256": "fb03bd4e1f886f0ecd79527310fc84ac40422c40867fa0d777e0583b6123d588"
+    }
+  ]
+}

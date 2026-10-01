@@ -1,0 +1,950 @@
+{
+  "checkedAt": "2026-09-24T04:28:29.163953+00:00",
+  "scope": "Individual normal-speed128px five-view nine-pose sheets plus 4fps actual playback inspection. No ambient approvals; quarter-speed, support, and stage travel gates remain.",
+  "modelSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+  "runtimeBundleSha256": "3642ce7021b5ad05ef35703db5523e4f1458ccf9d99545da3fc231575350bf42",
+  "motions": [
+    {
+      "id": "meshy:509",
+      "label": "Lean_Forward_Sprint",
+      "clipSha256": "f14aee7f3ebc44c6c5cb75d7c3dc7b10c652ac231e3276d3d0b3416216f4c35a",
+      "review": "pending",
+      "observation": "Forward lean and alternating small foot lifts read as sprint; isolated playback does not validate stage travel or planted-foot slip.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-509-563/motion-meshy-509.jpg",
+          "sha256": "5570a99b81d9a947086c483e97d00f89fef8ef12c33aa1b983d197a32f10d8c6"
+        },
+        {
+          "file": "/tmp/doreumi-library-509-563/temporal-meshy-509.jpg",
+          "sha256": "63aaab49d1bc4716cf325bd571e491f7b5713e94a8feda2359a3a439fccc2ff2"
+        }
+      ]
+    },
+    {
+      "id": "meshy:510",
+      "label": "Standard_Forward_Charge",
+      "clipSha256": "960d408f078e1ef5ce79edb513fd122c038f385ee7d39f4f5c2862f5a7464f01",
+      "review": "pending",
+      "observation": "Shoulder counter-swing and larger alternating stride are visible; needs actual stage travel contact and quarter-speed review.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-509-563/motion-meshy-510.jpg",
+          "sha256": "c53e9860f4bfcb129aea276c85c5f8e87def94132db0ed7fb9a016f8ac08b85d"
+        },
+        {
+          "file": "/tmp/doreumi-library-509-563/temporal-meshy-510.jpg",
+          "sha256": "5fb4472539af349cf2da52c03dfd5dfc10493cba4882c13a88772f41f82d2f6f"
+        }
+      ]
+    },
+    {
+      "id": "meshy:511",
+      "label": "Rifle_Charge",
+      "clipSha256": "6c4693609ff9ff0441602c4fc7cf4906b22cc0200f49bc922cdd8fb149a7e8cd",
+      "review": "pending",
+      "observation": "Bent arms and lean resemble a carried weapon stance with no prop. Context gate intentionally excludes weapon ambient behavior.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-509-563/motion-meshy-511.jpg",
+          "sha256": "496d4580600ac0a0a43d210ce4c94f9c3b29828f24bd5fcf0ee2018609d12fad"
+        },
+        {
+          "file": "/tmp/doreumi-library-509-563/temporal-meshy-511.jpg",
+          "sha256": "0a0837b36be531430d5fc3ead8de10d92546def614a99230cb1e684f35809fd1"
+        }
+      ]
+    },
+    {
+      "id": "meshy:512",
+      "label": "Male_Head_Down_Charge",
+      "clipSha256": "658488aa6cac50a75c73b0015969e3d57f2866ed7a387334c0a49cc646a01796",
+      "review": "pending",
+      "observation": "Deep head-down lean keeps silhouette connected; very short stride needs actual stage travel and contact review.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-509-563/motion-meshy-512.jpg",
+          "sha256": "930e6b9e99ceb5f2d0651e9fa68b87993f72180b660e35b916521867dd68ec5a"
+        },
+        {
+          "file": "/tmp/doreumi-library-509-563/temporal-meshy-512.jpg",
+          "sha256": "d9e81619da60a9269ce9934a5db64cbab4a2054c3d63e06754e7216a38a67ed4"
+        }
+      ]
+    },
+    {
+      "id": "meshy:513",
+      "label": "Female_Head_Down_Charge",
+      "clipSha256": "2f779560fb238c68b77ac054daeb833eb6a545001db64fd286046252f00e88da",
+      "review": "pending",
+      "observation": "Head-down running retains alternating feet and torso motion; stage travel/contact and quarter-speed still pending.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-509-563/motion-meshy-513.jpg",
+          "sha256": "b387df21a5cc871535146985dc841f96ab4bf8733f11b3270111ae1431fcb900"
+        },
+        {
+          "file": "/tmp/doreumi-library-509-563/temporal-meshy-513.jpg",
+          "sha256": "2cceda52731c29f7f641891a67d851fe2fdb47dc89f0a1a30f72fd35b0612712"
+        }
+      ]
+    },
+    {
+      "id": "meshy:514",
+      "label": "Female_Bow_Charge_Left_Hand",
+      "clipSha256": "f63a067d2df726339ceb1fa030b9da3f0fc51558b17a49fa6ff6082780824c17",
+      "review": "pending",
+      "observation": "Pronounced low forward lean and asymmetric carry arm are readable but bow context is missing; keep context gate.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-509-563/motion-meshy-514.jpg",
+          "sha256": "04c26fd258db48efee9fa5e24c11d9dcedc75b52bf9de4447c14bfd7b0588a65"
+        },
+        {
+          "file": "/tmp/doreumi-library-509-563/temporal-meshy-514.jpg",
+          "sha256": "6508ad9a67b9c3f296b881b74065032f8b4cf3af633c00fea93f0bbc0126b435"
+        }
+      ]
+    },
+    {
+      "id": "meshy:515",
+      "label": "Female_Throwing_Stance_Charge",
+      "clipSha256": "35d3c61a376883c2f1f23b263907cad783582c1a75183aecac4c9793c62eb701",
+      "review": "pending",
+      "observation": "Asymmetric throwing-ready run with alternating feet is readable; source prop/context and travel still require review.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-509-563/motion-meshy-515.jpg",
+          "sha256": "eab7b0f210ffd0b8c7d9b87a83fab36c79c3dd743e72d7a3747b1029c5379c87"
+        },
+        {
+          "file": "/tmp/doreumi-library-509-563/temporal-meshy-515.jpg",
+          "sha256": "ee636b1d92679dcff79dfcb88037627260e02945e1161561b7f6ee1bed64257f"
+        }
+      ]
+    },
+    {
+      "id": "meshy:516",
+      "label": "slide_light",
+      "clipSha256": "ea32804254a18a92002bbde989c6a69fac1242d8fdf2396b47e1e94f4a152315",
+      "review": "pending",
+      "observation": "Side slide lowers torso coherently; full-body upright recovery appears brisk and needs slow-motion support/contact review.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-509-563/motion-meshy-516.jpg",
+          "sha256": "4476bd374f419cdb531b186f0192e76a0bf89f7993579cb7e489dd5ea9a20035"
+        },
+        {
+          "file": "/tmp/doreumi-library-509-563/temporal-meshy-516.jpg",
+          "sha256": "aa52eef3e74fab1b7cf141e85c6397079c36500d5646b2a75dab4d1c6399298f"
+        }
+      ]
+    },
+    {
+      "id": "meshy:517",
+      "label": "slide_right",
+      "clipSha256": "6b43a38922cdc2277853f716b172ecd182f312252eb9cc6eb077b68b9ec7730c",
+      "review": "pending",
+      "observation": "Opposite side slide visibly rolls shoulder toward floor; recovery needs slow-motion support/contact review.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-509-563/motion-meshy-517.jpg",
+          "sha256": "3f3b154904e1fe2e5c2ae53c8b0e7fb2d1b2e60c5d82e6526d22677a2e5487b9"
+        },
+        {
+          "file": "/tmp/doreumi-library-509-563/temporal-meshy-517.jpg",
+          "sha256": "d2b9f8c9169b356bbc5cf95dba9212ed01c14f3f4a18896cf403fa9407eb3782"
+        }
+      ]
+    },
+    {
+      "id": "meshy:518",
+      "label": "sliding_rool",
+      "clipSha256": "f956a1a9c50f1148e08837232f739f6684b14928a0ad27b06f4e27c79dd30482",
+      "review": "pending",
+      "observation": "Slide into sideways roll retains visible tuck and sequential body rotation; travel floor contact and quarter-speed host playback remain pending.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-509-563/motion-meshy-518.jpg",
+          "sha256": "4f15420223f4cad5216e9a91d21a7ea9a003dcfcf7ae7c8cdb2b1c7a64587b97"
+        },
+        {
+          "file": "/tmp/doreumi-library-509-563/temporal-meshy-518.jpg",
+          "sha256": "99602f90b0fca573fcdb5515ebd65595a3b34cad8f6677a58b6850ab036fd510"
+        }
+      ]
+    },
+    {
+      "id": "meshy:519",
+      "label": "sliding_stumble",
+      "clipSha256": "a7103352304671f1126211172948ced82659b4fc41d1fb1dceee6921422fb050",
+      "review": "pending",
+      "observation": "Long backward-leaning slip hold transitions to forward folded floor hold. The floor support and hands are not convincingly visible; inspect original support and slow recovery before use.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-509-563/motion-meshy-519.jpg",
+          "sha256": "4c3772c9e53da8916dcd6b63b8727024b74f1454d591ed1938d5b941180ba3d0"
+        },
+        {
+          "file": "/tmp/doreumi-library-509-563/temporal-meshy-519.jpg",
+          "sha256": "2cd5bd29f3220686f4f8a19bb8be314d74dc0e87c6b08199260f7bc03c789a95"
+        }
+      ]
+    },
+    {
+      "id": "meshy:520",
+      "label": "Crouch_Walk_with_Torch",
+      "clipSha256": "35385fc0817545ef626b2abf11943692e4f82faea2dd53e39ea53d1952bfac96",
+      "review": "pending",
+      "observation": "Low alternating crouch walk is readable, but the raised carrying hand has no torch. Needs prop support plus stage contact.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-509-563/motion-meshy-520.jpg",
+          "sha256": "984c21e5ba69a4c4f295a3c1371deafe298868550c057227c7cffcbafc5e8e42"
+        },
+        {
+          "file": "/tmp/doreumi-library-509-563/temporal-meshy-520.jpg",
+          "sha256": "f780eba75e069e30ba4e31dbe64263d558c4207fdccd05ee7b4cf6fdf818f963"
+        }
+      ]
+    },
+    {
+      "id": "meshy:521",
+      "label": "Crouch_Walk_Left_with_Torch",
+      "clipSha256": "cf1ce2027c59171ab503be93fc1b41464f5b3aa2a64b876f92ca760fe5357ffc",
+      "review": "pending",
+      "observation": "Leftward crouch stride remains compact with clear weight shifts; missing torch and stage contact pending.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-509-563/motion-meshy-521.jpg",
+          "sha256": "41ac3a1dc36a329afcb074e715d2cfd7564c2a72b3087ae91614653341acfa65"
+        },
+        {
+          "file": "/tmp/doreumi-library-509-563/temporal-meshy-521.jpg",
+          "sha256": "e6d439155d23e0f991d64824eaec39482e2eced0e882b1bf2cb2435357aeb1ca"
+        }
+      ]
+    },
+    {
+      "id": "meshy:522",
+      "label": "Crouch_Walk_Right_with_Torch",
+      "clipSha256": "a820d40577da14925e772058ca99549b44aa83fac6d9041d8b8d161a4d54a9e4",
+      "review": "pending",
+      "observation": "Rightward crouch stride remains compact with clear weight shifts; missing torch and stage contact pending.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-509-563/motion-meshy-522.jpg",
+          "sha256": "7de456337fa2f58bf36bc5c60aeec48bfa7ed37e8578011b66cf165ad72ae3e6"
+        },
+        {
+          "file": "/tmp/doreumi-library-509-563/temporal-meshy-522.jpg",
+          "sha256": "540d919e860315b50dd73c1d43ddcfa726ae732d3e999cb7f1578725b69d514d"
+        }
+      ]
+    },
+    {
+      "id": "meshy:523",
+      "label": "Cautious_Crouch_Walk_Backward",
+      "clipSha256": "d7b917473267409789f4dcffd72dfa237b384b99d74cf66c89f6b7eb34b53cfd",
+      "review": "pending",
+      "observation": "Cautious backward crouch shows alternating small steps and protective arms; silhouette coherent, stage contact and quarter-speed pending.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-509-563/motion-meshy-523.jpg",
+          "sha256": "0f0403d516425d653d59e5c2dc82ee6bc550a2fae551e5a48a6aaf0284f46ae8"
+        },
+        {
+          "file": "/tmp/doreumi-library-509-563/temporal-meshy-523.jpg",
+          "sha256": "4aba0ba2a2bcb086a0b3a96c7acde2c6a06593b1cd69005fa142be8db08bbb84"
+        }
+      ]
+    },
+    {
+      "id": "meshy:524",
+      "label": "Cautious_Crouch_Walk_Forward",
+      "clipSha256": "79169f8e3fccaa52c42b318bd6174bdde4433b6103c4dc81f89563ec9aee5e55",
+      "review": "pending",
+      "observation": "Forward cautious crouch retains distinct foot alternation and body lean; stage contact and quarter-speed pending.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-509-563/motion-meshy-524.jpg",
+          "sha256": "01db30520c4604dc1b4e785c4396ce5a2eb7441b63ead3a5507a7fe4e7f77798"
+        },
+        {
+          "file": "/tmp/doreumi-library-509-563/temporal-meshy-524.jpg",
+          "sha256": "b6b102b5e75c7126045dc94855b1a2d74ae4c8ba920086c29faa553061ade24a"
+        }
+      ]
+    },
+    {
+      "id": "meshy:525",
+      "label": "Cautious_Crouch_Walk_Left",
+      "clipSha256": "6628b1bcf9fed9a5f432e3d67fea237050f2c0d9c75a3495f2e5662ac2b351a6",
+      "review": "pending",
+      "observation": "Left crouch shuffle has visible alternating separation and small vertical body shifts; stage contact and quarter-speed pending.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-509-563/motion-meshy-525.jpg",
+          "sha256": "2e0089756f13fe10f52a744db4c77395a5470e45e2c754f58b06713e7259bd44"
+        },
+        {
+          "file": "/tmp/doreumi-library-509-563/temporal-meshy-525.jpg",
+          "sha256": "3c37629cee7fa8982f06743510e996ecfa48fbd04b022b534f631ef031cf5c03"
+        }
+      ]
+    },
+    {
+      "id": "meshy:526",
+      "label": "Cautious_Crouch_Walk_Right",
+      "clipSha256": "5f77e650a3ebbf0b2d549a87801bda822b29771e7d3693441ed258c7302c38b7",
+      "review": "pending",
+      "observation": "Right crouch shuffle keeps bent-knee silhouette without visible limb detachment; stage contact and quarter-speed pending.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-509-563/motion-meshy-526.jpg",
+          "sha256": "2e15c802ef36fdcd43eadb7a6cbb191162da8ae2e86c02bb291b7a4cd0226315"
+        },
+        {
+          "file": "/tmp/doreumi-library-509-563/temporal-meshy-526.jpg",
+          "sha256": "7eaf6c6e34486ee913d9088821611e85309bfd185eaa22b5abab890b1ef8de38"
+        }
+      ]
+    },
+    {
+      "id": "meshy:527",
+      "label": "Crouch_Walk_Left_with_Gun",
+      "clipSha256": "9aa62bfe435fadcfaf2e727dab7cb5d2da66806f0b4d82067fe116adcc661516",
+      "review": "pending",
+      "observation": "Crouch weapon-carry stance lacks the weapon and remains intentionally excluded by ambient context gate.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-509-563/motion-meshy-527.jpg",
+          "sha256": "de0f9ddbc2c4a8ccada0e87f38026123d79e75effb1d961b18fe8d5fe9a1d3f4"
+        },
+        {
+          "file": "/tmp/doreumi-library-509-563/temporal-meshy-527.jpg",
+          "sha256": "bf8ae9dd4a9bb44d394401d265754156615befe1ff68439bdf9f5db9546253f4"
+        }
+      ]
+    },
+    {
+      "id": "meshy:528",
+      "label": "Walk_Left_with_Gun",
+      "clipSha256": "2822c007b0853f4147551f73052fd574f18fb8a786978f0bd7f7a03730d72c97",
+      "review": "pending",
+      "observation": "Forward-folded leftward weapon walk remains intentionally excluded by ambient context gate.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-509-563/motion-meshy-528.jpg",
+          "sha256": "2949accd67c227909e6b49a9e6e1de2868fa3d2d3e806e5ac884cfe06d98ad6b"
+        },
+        {
+          "file": "/tmp/doreumi-library-509-563/temporal-meshy-528.jpg",
+          "sha256": "b0baba2b6a28d90dffd0a403b7fde48c4363976d320037d72a092f4ea756854f"
+        }
+      ]
+    },
+    {
+      "id": "meshy:529",
+      "label": "Walk_Backward_with_Gun",
+      "clipSha256": "b0632eba7a8c98cb1b3e1fec65587185a53752b34168dcbb4bce00425935ae89",
+      "review": "pending",
+      "observation": "Bent torso and close carrying arms remain intentionally excluded by weapon context gate.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-509-563/motion-meshy-529.jpg",
+          "sha256": "983cf8e143964b373393774faa1ec7483a4e4e657b82ad315db0acd6e4252102"
+        },
+        {
+          "file": "/tmp/doreumi-library-509-563/temporal-meshy-529.jpg",
+          "sha256": "cb5b705a4bbe97f6ab2be30a8d3579a4678c16ec65d660015e0b4ead598fe351"
+        }
+      ]
+    },
+    {
+      "id": "meshy:530",
+      "label": "run_fast_3",
+      "clipSha256": "e7ab9e3a9b416bba0151b16e2241febd46c0117a9daf070d72826304ca67d538",
+      "review": "pending",
+      "observation": "Upright run has compact alternating stride and arm counter-swing; isolated view does not prove stage speed/contact.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-509-563/motion-meshy-530.jpg",
+          "sha256": "f1458af5d1068d1d3844eb96e206740970ab586c636ae4f8ad2f610d85852ca8"
+        },
+        {
+          "file": "/tmp/doreumi-library-509-563/temporal-meshy-530.jpg",
+          "sha256": "1b5bbcfe1542a12bc7523cc901813f4576ee7006c128ffdf2fc8a62b2b21b9b9"
+        }
+      ]
+    },
+    {
+      "id": "meshy:531",
+      "label": "Sprint_and_Sudden_Stop",
+      "clipSha256": "803f0b7a09c15b95d1e028f92127a5001fa7c3babf07c20e9cf73a7e8a31f048",
+      "review": "pending",
+      "observation": "Visible backward braking lean and feet moving forward distinguish stop from running; requires travel deceleration/contact verification.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-509-563/motion-meshy-531.jpg",
+          "sha256": "7a54cc8157934b5ad1c7a66ddcb296eb59c625cebc43d1194971c39589fe2d18"
+        },
+        {
+          "file": "/tmp/doreumi-library-509-563/temporal-meshy-531.jpg",
+          "sha256": "adb34985ffa935179c0b7889acdaa1ea185defaa5a6fabb305b29d403c854a20"
+        }
+      ]
+    },
+    {
+      "id": "meshy:532",
+      "label": "run_fast_4",
+      "clipSha256": "a011881afcebc3ad168a71145bfa6edfdbac6a2f8e27e0dc2d58cf6b88a2a67a",
+      "review": "pending",
+      "observation": "Lively upright run shows clear alternating steps and lateral arm swing; stage contact pending.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-509-563/motion-meshy-532.jpg",
+          "sha256": "d51e00cfea6a664bbfa932e14b1df5a6981c72b3a1ea1c5788734cdd5bcaf5aa"
+        },
+        {
+          "file": "/tmp/doreumi-library-509-563/temporal-meshy-532.jpg",
+          "sha256": "9643a371b992a6970ed66c6157fd0fc48284d597fa65b9ee3f6a1f324b166f06"
+        }
+      ]
+    },
+    {
+      "id": "meshy:533",
+      "label": "run_fast_5",
+      "clipSha256": "2ae294418a6a04a32008e40e0d26dc6a507bde030c6b6d56d3940694cbcbcf67",
+      "review": "pending",
+      "observation": "Forward-running lean and diagonal arm swing stay connected; needs stage travel and slow foot-release inspection.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-509-563/motion-meshy-533.jpg",
+          "sha256": "7b3ca13446a773a07f68a8cd0a4becfb0252a6e5fed212004df58d4affe8aa26"
+        },
+        {
+          "file": "/tmp/doreumi-library-509-563/temporal-meshy-533.jpg",
+          "sha256": "d70eec1f8cee414f049b281b47880581d062c568839e24262ddce7fa7956bfb5"
+        }
+      ]
+    },
+    {
+      "id": "meshy:534",
+      "label": "run_fast_6",
+      "clipSha256": "f3ff55665d03e6a4188528b370ef124275abed72247dd3840a33365f2dc4d86a",
+      "review": "pending",
+      "observation": "Moderate forward lean with alternating planted/lifted feet reads coherently; stage contact pending.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-509-563/motion-meshy-534.jpg",
+          "sha256": "b09de0923a1e0cb2b30bd094675e66c5fe1b47cf0dc668d8a65d9bf8de5a8453"
+        },
+        {
+          "file": "/tmp/doreumi-library-509-563/temporal-meshy-534.jpg",
+          "sha256": "343bea9eea82aebea1ed686e4e26728f30c2613ac78e8c88e1a29d497e41df5a"
+        }
+      ]
+    },
+    {
+      "id": "meshy:535",
+      "label": "run_fast_7",
+      "clipSha256": "6f7b72948a0161b83f34c7cfc630b86b7508e49b1634df4551830412a71b6cdc",
+      "review": "pending",
+      "observation": "Forward-leaning sprint has distinct alternating feet and shoulder rhythm; no visible detached silhouette in sampled playback; stage contact and quarter-speed pending.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-509-563/motion-meshy-535.jpg",
+          "sha256": "e2c37eb8ff94bc7af24130bb67b86cdb3fd83674a3b1db2f3e8e5ef3ce86583b"
+        },
+        {
+          "file": "/tmp/doreumi-library-509-563/temporal-meshy-535.jpg",
+          "sha256": "977ae3bc4c2472cde335bbc660e93c9e10ff163c328af6db51103585e2a64e97"
+        }
+      ]
+    },
+    {
+      "id": "meshy:536",
+      "label": "run_fast_8",
+      "clipSha256": "699dbfb2a5fff0eb3f92e6bcba08e1479e2791229e0e6cadbe3f7a14227f395d",
+      "review": "pending",
+      "observation": "Deep sprint lean remains connected, with compact folded swing leg; actual travel contact and slow release inspection pending.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-509-563/motion-meshy-536.jpg",
+          "sha256": "963eb7893bd00adbf52ffd44a2165ed945591fb6660ba79610db0e7b03fd0169"
+        },
+        {
+          "file": "/tmp/doreumi-library-509-563/temporal-meshy-536.jpg",
+          "sha256": "e7a22b85506698a854a23f6fc056682428603d4ea5d0a01cba4d65d93e6f9400"
+        }
+      ]
+    },
+    {
+      "id": "meshy:537",
+      "label": "run_fast_9",
+      "clipSha256": "fc789220341b298c908a15563f0bee05caa8ee19e232128fa3b06c53c7e461d8",
+      "review": "pending",
+      "observation": "Compact running cycle retains arm counter-swing and alternating feet; stage travel/contact and quarter-speed pending.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-509-563/motion-meshy-537.jpg",
+          "sha256": "b74a9c1e4cfc7808648573cfb9b4868831841972ef01b0181279b5557292893d"
+        },
+        {
+          "file": "/tmp/doreumi-library-509-563/temporal-meshy-537.jpg",
+          "sha256": "13ce209f5e40af89e7736ca8f1f9577e2eb2231a2112e5dd17e5f564b46abc81"
+        }
+      ]
+    },
+    {
+      "id": "meshy:538",
+      "label": "run_fast_10",
+      "clipSha256": "485a95f7f6177ef05dd9010aadfce6530986ddd179c7b22ba746e3f3556c3546",
+      "review": "pending",
+      "observation": "Slight forward lean and upright shoulder rhythm connect visibly; stage travel/contact and quarter-speed pending.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-509-563/motion-meshy-538.jpg",
+          "sha256": "1cb2ffeaea551658f0ca2d59aab50f21171e494df152ed3157bb4e503db17767"
+        },
+        {
+          "file": "/tmp/doreumi-library-509-563/temporal-meshy-538.jpg",
+          "sha256": "ff9e9e5629bd2c198d6f66f4bf22d46fae3f1a140224a064d64a7a5b9aac3c58"
+        }
+      ]
+    },
+    {
+      "id": "meshy:539",
+      "label": "run_fast_2",
+      "clipSha256": "151c44f244e4544512e6e621ed02e6c9e0dd0e7c23e1f6e78d585ed5692c684e",
+      "review": "pending",
+      "observation": "Faster upright run retains distinct stride and forward/back arm opposition; stage travel/contact and quarter-speed pending.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-509-563/motion-meshy-539.jpg",
+          "sha256": "edf1385db6cabe49b4df6ef50dc9445f60e3fe2b15a6d2a8aa49c57df354257c"
+        },
+        {
+          "file": "/tmp/doreumi-library-509-563/temporal-meshy-539.jpg",
+          "sha256": "7b7dcdf80a203a1a587f5915688d9a337c4a77ebedbcf55e8cf9be8a3c496f9d"
+        }
+      ]
+    },
+    {
+      "id": "meshy:540",
+      "label": "Injured_Walk_Backward",
+      "clipSha256": "b82be38932f10ce722f0e9ef51cf2da7ae06d9dc117b40d80d9c78416163d64e",
+      "review": "pending",
+      "observation": "Uneven hunched backward steps read as limping with small body dips; stage support and slow-motion verification pending.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-509-563/motion-meshy-540.jpg",
+          "sha256": "f4db1fa56184effff74605a5b47f578683cbe5fb233282960a931ee2cfd30e1f"
+        },
+        {
+          "file": "/tmp/doreumi-library-509-563/temporal-meshy-540.jpg",
+          "sha256": "fb7ebf0257dbe785255ca0b8bcd4b216cce17e23219f49ff0b6bdacfc5820557"
+        }
+      ]
+    },
+    {
+      "id": "meshy:541",
+      "label": "Walk_Backward_with_Gun_1",
+      "clipSha256": "ee699d297c3f7441453ec0648f3c6b4587ba521585784b8bdd1290e200fbad3a",
+      "review": "pending",
+      "observation": "Both arms held forward for a weapon; intentionally excluded by weapon context gate.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-509-563/motion-meshy-541.jpg",
+          "sha256": "a9e3c28f744627eea923c4dd4c0718cf8a05831db647c52a08948d1d329a7ae0"
+        },
+        {
+          "file": "/tmp/doreumi-library-509-563/temporal-meshy-541.jpg",
+          "sha256": "74fede2339242fd23a10818e6316fef8c98dd0d4129742242a2593cca68fba94"
+        }
+      ]
+    },
+    {
+      "id": "meshy:542",
+      "label": "Walk_Backward_with_Grenade",
+      "clipSha256": "1e860c07110e319090fe16bfb896e9e772e7c57f88a30ba9a70830f34db16da6",
+      "review": "pending",
+      "observation": "One raised rear hand carries a missing grenade; intentionally excluded by weapon context gate.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-509-563/motion-meshy-542.jpg",
+          "sha256": "0b982d6d6d1a6c40d2e0f3ae2c0cdf6868e37ed5ffc3eab22251656aff7434e6"
+        },
+        {
+          "file": "/tmp/doreumi-library-509-563/temporal-meshy-542.jpg",
+          "sha256": "1ce03b1cf44465e380769eeb7c7b904a21a35c94de9d582dd7e18012415be5fb"
+        }
+      ]
+    },
+    {
+      "id": "meshy:543",
+      "label": "Step_Back",
+      "clipSha256": "a3900598e31cbfe93419f5fcb621de38d3ecd112201371c092400a5032e27682",
+      "review": "pending",
+      "observation": "Backward step keeps modest torso lean and clear foot exchange; stage displacement/contact still pending.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-509-563/motion-meshy-543.jpg",
+          "sha256": "faa267e3c915628404e6c9f566ad33d222a3f8c6b9b0f5de34dcdf3524fa8d46"
+        },
+        {
+          "file": "/tmp/doreumi-library-509-563/temporal-meshy-543.jpg",
+          "sha256": "971e1fa8275d779d20e438dfc3ba331a033d5fb49cfbc579fd0d06d19b07d8fd"
+        }
+      ]
+    },
+    {
+      "id": "meshy:544",
+      "label": "Walk_Backward",
+      "clipSha256": "ed8e4c772553d0dc0becfd4fd0b28ca04762a55109e9f415ad94930feed37ff2",
+      "review": "pending",
+      "observation": "Upright backward walk has restrained arm swing and alternate foot movement; stage speed/contact still pending.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-509-563/motion-meshy-544.jpg",
+          "sha256": "91094f6d2ca89594fdb7dd814c3c28ec649bf080d0ce69f2201fed6179e43c3a"
+        },
+        {
+          "file": "/tmp/doreumi-library-509-563/temporal-meshy-544.jpg",
+          "sha256": "c146e73ebd38a51d697401ca079b08b9869be609d5250535ab97843e884f0b68"
+        }
+      ]
+    },
+    {
+      "id": "meshy:545",
+      "label": "Walk_Backward_with_Bow",
+      "clipSha256": "f1c69ca2d2504bb3915fb55351049b8cd48ca6556d0f69417170ca759532db88",
+      "review": "pending",
+      "observation": "Asymmetric bow-carry backward walk remains intentionally excluded by weapon context gate.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-509-563/motion-meshy-545.jpg",
+          "sha256": "6970f28dc1407cdacf03bd20ac5d8b031c4b60c2d8db7dd72f6b4fcc2133de4d"
+        },
+        {
+          "file": "/tmp/doreumi-library-509-563/temporal-meshy-545.jpg",
+          "sha256": "3369848a6d4ab4527f51ea81a329711d46f8f00fc12f63587fdebe4199166235"
+        }
+      ]
+    },
+    {
+      "id": "meshy:546",
+      "label": "Walk_Backward_with_Sword",
+      "clipSha256": "6e709d310859fca3bb6cb5f6f90c21b23d09fe27945f82e01ba05c573e47f712",
+      "review": "pending",
+      "observation": "Sideways sword-carry hand and cautious backward step remain intentionally excluded by weapon context gate.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-509-563/motion-meshy-546.jpg",
+          "sha256": "39a234e9ed9f339d5990d599e1dd5cbfe0cc83cff47ff80bbbaf266f0471cdd3"
+        },
+        {
+          "file": "/tmp/doreumi-library-509-563/temporal-meshy-546.jpg",
+          "sha256": "bc431566d3aabd2ed69fc2f0a95e70d7f171e6d79c715994241e0d4c8ec25ab3"
+        }
+      ]
+    },
+    {
+      "id": "meshy:547",
+      "label": "Walk_Backward_with_Bow_1",
+      "clipSha256": "b0999415c48b8e40735397796df019034d8d4421404cf968565eb862441b3963",
+      "review": "pending",
+      "observation": "Raised bow-carry arm and sideways body heading remain intentionally excluded by weapon context gate.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-509-563/motion-meshy-547.jpg",
+          "sha256": "b936c06027c489d3c1e113ac5bd5d899b45d498135b6b4a87568ef25c99b1a92"
+        },
+        {
+          "file": "/tmp/doreumi-library-509-563/temporal-meshy-547.jpg",
+          "sha256": "c85a26ddb5ef7c075f3eced061bd88fc3039d9a09c2470d8f4a6f317a1c52ca5"
+        }
+      ]
+    },
+    {
+      "id": "meshy:548",
+      "label": "Walk_Backward_with_Sword_Shield",
+      "clipSha256": "115daf1135742ac93b7e95d3fd0189cf7a8e2972615d038127713b6038c15187",
+      "review": "pending",
+      "observation": "Sword/shield carrying stance remains intentionally excluded by weapon context gate.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-509-563/motion-meshy-548.jpg",
+          "sha256": "87ccc27da4d61a6e22b510d6454d9119a2a79e412bced2fdf52b57641aea1c6f"
+        },
+        {
+          "file": "/tmp/doreumi-library-509-563/temporal-meshy-548.jpg",
+          "sha256": "04bc85cec47ddc4a3a3c94a5ee9ba4660a9d0c218a5c0230ef005247ec91aa35"
+        }
+      ]
+    },
+    {
+      "id": "meshy:549",
+      "label": "Crawl_Backward",
+      "clipSha256": "ecf3dc6a93b789d26f30b9db5f3c1c940970b632f4b11d568a8f08f1f05ec68f",
+      "review": "pending",
+      "observation": "Kneel-to-prone entry and recovery are staged, but crawling hands/feet need measured same-skin support and actual backward travel verification.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-509-563/motion-meshy-549.jpg",
+          "sha256": "eea0e181e27a3c415124712cf5f7ea5637c9d845d06d8cb7c0d5215ed38f7b7d"
+        },
+        {
+          "file": "/tmp/doreumi-library-509-563/temporal-meshy-549.jpg",
+          "sha256": "ec55295bdf99076db868b8be30685af2de8a80e738f32dbc865a6f744199e911"
+        }
+      ]
+    },
+    {
+      "id": "meshy:550",
+      "label": "Carry_Heavy_Cannon_Forward",
+      "clipSha256": "730c79b89e028a945721a4e7dc6a21861001cfdb1028f604d4272a2a822e852f",
+      "review": "pending",
+      "observation": "Empty low carrying arms do not communicate heavy cannon load; weapon context stays excluded.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-509-563/motion-meshy-550.jpg",
+          "sha256": "67138b251179002f6436153335bb9567804a0ddf3b8c83d8283d354967640f24"
+        },
+        {
+          "file": "/tmp/doreumi-library-509-563/temporal-meshy-550.jpg",
+          "sha256": "905ac21daa308c01390f3a0e9b3b9a1463f5b34b4e48723f8fc05bbb1f5c9620"
+        }
+      ]
+    },
+    {
+      "id": "meshy:551",
+      "label": "Carry_Heavy_Object_Walk",
+      "clipSha256": "3d1cdfa99d71ec5b0278f0e00dd09c767d6567b4618841dc78f8565569ccf296",
+      "review": "pending",
+      "observation": "Box stays visibly between both hands while the feet alternate; prop release fades before idle. Full stage contact and quarter-speed remain required.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-509-563/motion-meshy-551.jpg",
+          "sha256": "73fc5d3ce2d3ce7d59c36123084bad356e2534b82b542c9a1132d476fc7a731e"
+        },
+        {
+          "file": "/tmp/doreumi-library-509-563/temporal-meshy-551.jpg",
+          "sha256": "17c547790e2dd19c99132a9a7cdf9a8e486eb7fed879e212656e4847cd8d296a"
+        }
+      ]
+    },
+    {
+      "id": "meshy:552",
+      "label": "Carry_Water_Bucket_Walk",
+      "clipSha256": "10dede87e4379853c67ee2154cc8b7a794129e3a43066af0dd10c61da4fc7f70",
+      "review": "pending",
+      "observation": "Two buckets remain upright and follow the mittens during deep pickup-like bends and small steps. Need exact floor/handle clearance, source context, stage travel and quarter-speed checks.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-509-563/motion-meshy-552.jpg",
+          "sha256": "5766da87b83d6c2c3d14dd077e32e96513fa301548da575c7321359b8e422915"
+        },
+        {
+          "file": "/tmp/doreumi-library-509-563/temporal-meshy-552.jpg",
+          "sha256": "056c529dbd954c342426ee7581a5f89a18e4137b2f3d7130702987f2e272e0a7"
+        }
+      ]
+    },
+    {
+      "id": "meshy:553",
+      "label": "Elderly_Shaky_Walk",
+      "clipSha256": "fe9bc1e22dc12d7de1ae00392bc0401df756af08439a000e54f345f2f82ab556",
+      "review": "pending",
+      "observation": "Subtle uneven shuffling with torso wobble remains coherent; needs full stage contact and quarter-speed review.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-509-563/motion-meshy-553.jpg",
+          "sha256": "5a026438e352e9f69dfcd509bcd851f4982582d3662779259f2b38e6d8ae491a"
+        },
+        {
+          "file": "/tmp/doreumi-library-509-563/temporal-meshy-553.jpg",
+          "sha256": "cee3025c39dabe10a6fa43e1824b42cb17dd8b6a7f41b88618af84c6230b4842"
+        }
+      ]
+    },
+    {
+      "id": "meshy:554",
+      "label": "Funky_Walk",
+      "clipSha256": "7dec01240945a0291a37ce6d07f82d834c3aa75f234139915144ad1ec4f42059",
+      "review": "pending",
+      "observation": "Backward-leaning swagger has small alternating steps and body bounce; stage support and slow-motion review pending.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-509-563/motion-meshy-554.jpg",
+          "sha256": "695dc823239758ef12e0285a08b49304e14fd8da121f5de73264404e2adab8df"
+        },
+        {
+          "file": "/tmp/doreumi-library-509-563/temporal-meshy-554.jpg",
+          "sha256": "7b40f7811961a10db97a03b5de1a41370f08fdd3ad55047221c93e364a1122e6"
+        }
+      ]
+    },
+    {
+      "id": "meshy:555",
+      "label": "Limping_Walk_1",
+      "clipSha256": "3d825cd5d919aa8f8b240d661ec95aaf3cdfb35ccc21798ade6f49053a92de4b",
+      "review": "pending",
+      "observation": "Irregular stride and body dip preserve the limp; arms remain attached and alternate subtly. Stage support and slow review pending.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-509-563/motion-meshy-555.jpg",
+          "sha256": "a0645189c0b165f6b8ad3790cfd94d9e9bf077bd20ee3875f0453ad67c35a5c3"
+        },
+        {
+          "file": "/tmp/doreumi-library-509-563/temporal-meshy-555.jpg",
+          "sha256": "660440852792a05523127d0e00b23ea5ceedc6e31cfc9be8a17f20442a77a0d6"
+        }
+      ]
+    },
+    {
+      "id": "meshy:556",
+      "label": "Limping_Walk_2",
+      "clipSha256": "dc285e292f0beb69ad09bb24a6b0c055b095585df06fb4ff60fa6dd871660cee",
+      "review": "pending",
+      "observation": "Inward/crossing swing foot approaches opposite leg in front view; focus skin clearance and quarter-speed needed alongside stage support.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-509-563/motion-meshy-556.jpg",
+          "sha256": "7b60e63118d7b582f13d8c3f853c3db99e9b168d547ead7ed07c82d96d9f5e6a"
+        },
+        {
+          "file": "/tmp/doreumi-library-509-563/temporal-meshy-556.jpg",
+          "sha256": "5a46a55d4cbb5b270ca822b6be3c9536453060fcd47e2499288d4f7f3733749f"
+        }
+      ]
+    },
+    {
+      "id": "meshy:557",
+      "label": "Limping_Walk_3",
+      "clipSha256": "04e1558d2918fb790afee00c8f4201779e63cab8ae2b948096387c698a2f65ed",
+      "review": "pending",
+      "observation": "More pronounced uneven steps and open arm counterbalance remain readable; stage contact and quarter-speed review pending.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-509-563/motion-meshy-557.jpg",
+          "sha256": "5eb8103b32dffd028a801813b2a73ff65bffebd3730ee7dd45915d21a5284a72"
+        },
+        {
+          "file": "/tmp/doreumi-library-509-563/temporal-meshy-557.jpg",
+          "sha256": "6747f5b4668427dc17271fae8b8d4910a829ffd5877426737cbf981c86482990"
+        }
+      ]
+    },
+    {
+      "id": "meshy:558",
+      "label": "Limping_Walk",
+      "clipSha256": "5e9f8cf90fbe4d293d16666ce35ff6462092f54fa0e81e8f61987a03028e653e",
+      "review": "pending",
+      "observation": "Asymmetric limp shifts torso with alternating small steps; exact foot support and quarter-speed still pending.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-509-563/motion-meshy-558.jpg",
+          "sha256": "d00101c86717146ba62726a31555f584c79b25a37e0cb603c82ce4c5369d5bf0"
+        },
+        {
+          "file": "/tmp/doreumi-library-509-563/temporal-meshy-558.jpg",
+          "sha256": "af34f53cda560ffdbf23dab52f287463c1443ff9fbb3103d2081f05e9298b09a"
+        }
+      ]
+    },
+    {
+      "id": "meshy:559",
+      "label": "Sneaky_Walk",
+      "clipSha256": "967df43ece94166e3a2f02461e00368bb9e06fb9aa7bd346fbe99f0125a4b587",
+      "review": "pending",
+      "observation": "Sneaky crouch includes broad lateral body shifts, lifted feet and opposing arms. Coherent silhouette; actual travel support and quarter-speed pending.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-509-563/motion-meshy-559.jpg",
+          "sha256": "a772fae95f4c14ea0d3319b9fb315e34dd2cfc3c9afbf92d13c1c46e5d8417a4"
+        },
+        {
+          "file": "/tmp/doreumi-library-509-563/temporal-meshy-559.jpg",
+          "sha256": "7a536aa7060d8c68e7a22b7e798c4ef89be522e7be99513a2a8098f98615534e"
+        }
+      ]
+    },
+    {
+      "id": "meshy:560",
+      "label": "Spear_Walk",
+      "clipSha256": "d53d2b006439b04b14f0e5df685eb5d836ef7947a4e38add8829d3f6ae18903a",
+      "review": "pending",
+      "observation": "Spear-carry walk remains intentionally excluded by weapon context gate.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-509-563/motion-meshy-560.jpg",
+          "sha256": "2a158a28ae848f997c7b50a3292195e8c11284181adb84e64ea2a411bf66ad59"
+        },
+        {
+          "file": "/tmp/doreumi-library-509-563/temporal-meshy-560.jpg",
+          "sha256": "5323b1fb4ad3d70bb3fadc3a40bfd5a642aaac111b8ec6d47e9287e2c8e46230"
+        }
+      ]
+    },
+    {
+      "id": "meshy:561",
+      "label": "Step_Hip_Hop_Dance",
+      "clipSha256": "a639be78d2e2a3a0be9fc23f974d71b49604ded2a1f1e4bc0ab6e01ea322a8c0",
+      "review": "pending",
+      "observation": "Small hip-hop stepping keeps head nod and shoulder bounce distinct; foot contact and quarter-speed remain pending.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-509-563/motion-meshy-561.jpg",
+          "sha256": "3fdb9dd70f744365dd0445bbe000a73184753bf646dc51381cb7343afb0ed3c3"
+        },
+        {
+          "file": "/tmp/doreumi-library-509-563/temporal-meshy-561.jpg",
+          "sha256": "7b9c9df830a1713b3289c34125ba233e6b9adf3868c3edecb9a8b306a2f35016"
+        }
+      ]
+    },
+    {
+      "id": "meshy:562",
+      "label": "Stumble_Walk",
+      "clipSha256": "1e6d4a55fb96839a5bfdccfc15fa58e4e8b760f64d8de16643b0148556f7ce39",
+      "review": "pending",
+      "observation": "Forward stumble has clear torso overshoot and corrective step; verify travel deceleration and support before ambient use.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-509-563/motion-meshy-562.jpg",
+          "sha256": "474fb5a1290e89d6d4fa3b9710ccc75175f3329ba03f51e7cc1c41c9466e3295"
+        },
+        {
+          "file": "/tmp/doreumi-library-509-563/temporal-meshy-562.jpg",
+          "sha256": "4007d36b05d8c08188883b08220587c16f2789334b915ed457a120102243e3cf"
+        }
+      ]
+    },
+    {
+      "id": "meshy:563",
+      "label": "Stylish_Walk",
+      "clipSha256": "ef8d32a4b97e76c14f2a5fd20e53c64bf331f1076ce1cd42473dfb56fd834e90",
+      "review": "pending",
+      "observation": "Upright swagger with chin-up lean and alternating feet stays coherent; full stage contact and quarter-speed pending.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-509-563/motion-meshy-563.jpg",
+          "sha256": "824149cf8662be3c41ce2f93db6ac39c243d9f67d3d32bf1342a85f45a4ced41"
+        },
+        {
+          "file": "/tmp/doreumi-library-509-563/temporal-meshy-563.jpg",
+          "sha256": "7e3c2259cdac4fcfe9019b149987a2946d3bd3c286de00e233389b9de588e2a3"
+        }
+      ]
+    }
+  ],
+  "normalVisualInspectionComplete": true,
+  "automatedBoundsPass": true,
+  "quarterSpeedInspectionComplete": false,
+  "report": {
+    "file": "/tmp/doreumi-library-509-563/report.json",
+    "sha256": "4b753d8468803fe6a9e08173a75bf65c9ac4f119a12ce118254139d2a8fa8b22"
+  }
+}

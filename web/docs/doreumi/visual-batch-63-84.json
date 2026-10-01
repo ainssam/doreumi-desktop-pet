@@ -1,0 +1,120 @@
+{
+  "version": 1,
+  "evidence": "/tmp/doreumi-library-63-99",
+  "scope": "Five-view/nine-phase static sheet observations. Normal playback recorded; small, quarter-speed and support continuity review remain. No automatic ambient approval.",
+  "motions": [
+    {
+      "id": 63,
+      "finding": "Arm-circle shuffle has readable alternating feet, elbow flexion and turns; shoulder geometry stays joined.",
+      "views": "reviewed",
+      "followup": "Source-confirmed planted-foot drift found by continuous skin-point comparison. Planar support correction in progress; this old static evidence cannot approve the revised clip."
+    },
+    {
+      "id": 64,
+      "finding": "Alternating raised knees and quarter turn show distinct dance poses; original short limbs stay intact.",
+      "views": "reviewed"
+    },
+    {
+      "id": 65,
+      "finding": "Side-step dance opens both forearms and turns the torso; no sampled split at hips or neck.",
+      "views": "reviewed"
+    },
+    {
+      "id": 66,
+      "finding": "Weight-shift dance leans side to side with small arm gestures; keep extra check on planted-foot rotation.",
+      "views": "reviewed"
+    },
+    {
+      "id": 67,
+      "finding": "Bubble dance includes a large half-turn late in the clip; joints remain joined, spin support needs slow review.",
+      "views": "reviewed",
+      "followup": "Source-confirmed planted-foot drift found by continuous skin-point comparison. Planar support correction in progress; this old static evidence cannot approve the revised clip."
+    },
+    {
+      "id": 68,
+      "finding": "Wide arm opening, hip shift and head tilt remain readable without elongated arms.",
+      "views": "reviewed"
+    },
+    {
+      "id": 69,
+      "finding": "Knee lifts and arm swings have clear alternating poses; late small steps need continuous rhythm inspection.",
+      "views": "reviewed"
+    },
+    {
+      "id": 70,
+      "finding": "Cardio dance alternates knee lift, forward lean and arm opening; no sampled torso seam gap, support/landing review remains.",
+      "views": "reviewed"
+    },
+    {
+      "id": 71,
+      "finding": "Hip and shoulder turns have varied raised-arm poses; late half-turn requires planted-foot continuity inspection.",
+      "views": "reviewed"
+    },
+    {
+      "id": 72,
+      "finding": "Repeated forward hand gestures lead into a deep body lean; elbows and neck stay connected, hinge timing pending.",
+      "views": "reviewed"
+    },
+    {
+      "id": 73,
+      "finding": "Fast dance holds a three-quarter facing with alternating feet and cheek-height hand gestures; cadence requires playback review.",
+      "views": "reviewed"
+    },
+    {
+      "id": 74,
+      "finding": "Gangnam groove has recognizable raised forearm and bouncing one-leg poses; short-arm silhouette stays original, foot support/tempo pending.",
+      "views": "reviewed"
+    },
+    {
+      "id": 75,
+      "finding": "Swing dance turns through the back and leans on one leg. Elbows flex without separation; planted-foot turns need original-source comparison.",
+      "views": "reviewed"
+    },
+    {
+      "id": 76,
+      "finding": "Raised-arm pop dance alternates knees and tilts head/hips; short arms retain their shape.",
+      "views": "reviewed"
+    },
+    {
+      "id": 77,
+      "finding": "Genie dance presents sideways/backward poses with small steps and raised forearms; no sampled joint gap.",
+      "views": "reviewed"
+    },
+    {
+      "id": 78,
+      "finding": "Rhythmic side turns and chest-height arms are readable; no sampled stretched limb or mesh split.",
+      "views": "reviewed"
+    },
+    {
+      "id": 79,
+      "finding": "Both arms lift during a backward lean then move forward with steps; source support and playback rhythm pending.",
+      "views": "reviewed"
+    },
+    {
+      "id": 80,
+      "finding": "Pop dance combines head tilt, cheek-height gestures, knee lifts and hand opening; all five views remain within frame.",
+      "views": "reviewed"
+    },
+    {
+      "id": 81,
+      "finding": "Turns, arm opening and small steps remain coherent in silhouette. Continuous rotation/support inspection pending.",
+      "views": "reviewed"
+    },
+    {
+      "id": 82,
+      "finding": "Alternating broad arm lifts, side lean and stepping maintain a connected neck/shoulder silhouette.",
+      "views": "reviewed"
+    },
+    {
+      "id": 83,
+      "finding": "Late half-turn follows open arms and alternating knees; no sampled penetration, slow spin/recovery pending.",
+      "views": "reviewed"
+    },
+    {
+      "id": 84,
+      "finding": "Side-to-side torso lean and a late turn preserve short-limb proportions; hand gestures remain visible.",
+      "views": "reviewed"
+    }
+  ],
+  "technicalReport": "report.json: pass; 22 actions, 990 pose samples, normal playback recorded. Does not substitute for remaining naturalness checks."
+}

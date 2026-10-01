@@ -1,0 +1,91 @@
+{
+  "checkedAt": "2026-09-24T04:04:09.011356+00:00",
+  "masterSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+  "review": "passed",
+  "scope": "One explicitly adapted seated one-palm balance. Original one-arm inverted handstand is not physically reachable with this body. Root inspected normal128 and quarter-speed five-view/nine-pose sheets plus temporal4fps/1fps samples. Exact shipping120Hz fullskin/joint and independent same-material-point palm support audit. No claim of foot planting when original feet are airborne.",
+  "motions": [
+    {
+      "id": "meshy:451",
+      "review": "passed",
+      "ambient": true,
+      "clipSha256": "7a4081f6afa43840e9fcff3474df196d11a2a9e0e4c50f66526f403416ac290a",
+      "metadataSha256": "72601987f1f8b430a09572827865e0de1956d44c8a2117184aa42ec3707b3f54",
+      "visualEvidence": [
+        {
+          "file": "/tmp/doreumi-acrobatics-small-v1/motion-meshy-451.jpg",
+          "sha256": "639ecbbbf2673b2221fd33f2f320339c0ef2d4d08f802126608ce9beeded2e94"
+        },
+        {
+          "file": "/tmp/doreumi-acrobatics-small-v1/temporal-meshy-451.jpg",
+          "sha256": "d5a32d44bc8f81feacf554cad0fe9dca46c2a1183687d40a501c8ab297a4b461"
+        },
+        {
+          "file": "/tmp/doreumi-acrobatics-quarter-v1/motion-meshy-451.jpg",
+          "sha256": "c03c3fd02ee4a8e6a90346f3c3f9afd67649e6667a2ca12d208c39118a560ed3"
+        },
+        {
+          "file": "/tmp/doreumi-acrobatics-quarter-v1/temporal-meshy-451.jpg",
+          "sha256": "0c5483644fda3f4bc0da79946f445cb2c3cb5f1dbc24e921d3428a7d2b97cbe6"
+        }
+      ],
+      "minimumSkinY": {
+        "minY": 0.003951060328605191,
+        "time": 1.1416666666666666
+      },
+      "palmHold": {
+        "side": "R",
+        "fps": 120,
+        "sourceInterval": [
+          1.15,
+          2.683333333333333
+        ],
+        "selection": "Lowest right-palm actual skin point at hold start; same material vertex retained throughout hold",
+        "samplerIndex": 897,
+        "primitiveVertexId": 965,
+        "maxStepXZ": 1.292418850114781e-05,
+        "maxStepXZByHeight": 6.039340251203433e-06,
+        "maxTotalXZ": 0.00019708880679019614,
+        "maxTotal3D": 0.00019708881269936293,
+        "heightRange": {
+          "minimum": 0.0039995400916831535,
+          "maximum": 0.0040016653339694525
+        }
+      },
+      "jointAudit": {
+        "id": 451,
+        "sourceName": "One_Arm_Handstand",
+        "clipFile": "public/doreumi/motions/meshy-451.json",
+        "clipSha256": "7a4081f6afa43840e9fcff3474df196d11a2a9e0e4c50f66526f403416ac290a",
+        "manifestShaMatches": true,
+        "variant": "source-inversion-timing-remapped-to-one-palm-and-hip-balance",
+        "duration": 5.39999992052714,
+        "entryDuration": 0.7,
+        "sourceDuration": 3.8333332538604736,
+        "exitDuration": 0.8666666666666667,
+        "minimumFullSkinY": 0.003951060328605191,
+        "maxLocalDegreesPerSample": 1.6019772908996706,
+        "worstLocal": {
+          "bone": "armL",
+          "time": 3.6333333333333333
+        },
+        "maxWorldDegreesPerSample": 3.776080065242994,
+        "worstWorld": {
+          "bone": "wristL",
+          "time": 3.625
+        },
+        "palmSupport": {
+          "side": "R",
+          "sourceInterval": [
+            1.15,
+            2.683333333333333
+          ],
+          "samples": 184,
+          "minimumY": 0.0039995400916831535,
+          "maximumY": 0.003999990968596122,
+          "reachClamp": 0,
+          "scope": "skin-height-contact-only; not a source-confirmed planar-slip audit"
+        }
+      }
+    }
+  ]
+}

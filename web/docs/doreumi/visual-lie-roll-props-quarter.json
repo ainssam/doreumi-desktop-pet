@@ -1,0 +1,48 @@
+{
+  "scope": "Individually viewed five-angle/nine-pose sheets and1fps temporal samples of actual quarter-speed playback. Does not claim every video frame.",
+  "evidenceDirectory": "/tmp/doreumi-contact-clean-quarter-b",
+  "masterSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+  "runtimeBundleSha256": "bf0dc022cabf3ea9b05151b92951d364091721c0caf027ddb1097ced26bb055b",
+  "items": [
+    {
+      "id": "Lie",
+      "observation": "Sitting entry then recline and held resting pose; all views remain framed. This capture holds Lie and does not verify a separate exit request.",
+      "clipSha256": null,
+      "staticSha256": "74c722593ce47c85b0a36a6f9c0af400904c695a34d35e0f5dbc841a4901a2c8",
+      "temporalSha256": "fe4cd698b945efc40400353ac247917c528156160392c22314bc8ee4e726e0db",
+      "sampleCount": 45,
+      "expression": "neutral",
+      "review": "observed-not-ambient-approval"
+    },
+    {
+      "id": "Roll",
+      "observation": "Recline, complete body roll and upright return stay in frame with connected joints.",
+      "clipSha256": null,
+      "staticSha256": "0bdee83a1d9ea8bc88cd215f060c94c325e168b6347fe0c9971d31339a16e9c3",
+      "temporalSha256": "b22f88a650935ebc53119aa3de07eef8199cc7af5850c9089ab50e91c7d6667c",
+      "sampleCount": 45,
+      "expression": "neutral",
+      "review": "observed-not-ambient-approval"
+    },
+    {
+      "id": "meshy:46",
+      "observation": "Rope rotation clears visible body silhouette; numeric jump/rope phase coordination still pending.",
+      "clipSha256": "f7d31e5c8821c6e8d0f080c574c03adb5ae097a1463946ae45ada85389fd26f2",
+      "staticSha256": "6da179c5bc22347ebaac991fa67387935f1596acbd78fe180539acc2c127e78f",
+      "temporalSha256": "82ace3a82104b7c0000010f72623f4aa1017899a288b587b1ef0db9844337c5c",
+      "sampleCount": 45,
+      "expression": "smile",
+      "review": "observed-not-ambient-approval"
+    },
+    {
+      "id": "meshy:48",
+      "observation": "Face occlusion at45deg fixed, but mirror lies off the direction of gaze; needs placement correction.",
+      "clipSha256": "654675e5c3d87bc0b88f235a8f5e76f90a4aebfb732ac8adb80fedb090af6363",
+      "staticSha256": "1da2fea0a700578b1d87ccb33d7f9c0f3aedc08ea84ba84a1c7b8b6054341df0",
+      "temporalSha256": "548543d521f72b6fd908492f7cec64b2a382b81a904919d93cf7aa0d94f07177",
+      "sampleCount": 45,
+      "expression": "smile",
+      "review": "observed-not-ambient-approval"
+    }
+  ]
+}

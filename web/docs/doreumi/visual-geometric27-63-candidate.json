@@ -1,0 +1,172 @@
+{
+  "checkedAt": "2026-09-24T05:10:11.237500+00:00",
+  "review": "visual-passed-awaiting-production-replay",
+  "masterSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+  "scope": "Root individually inspected normal128px and quarter-speed five-view nine-pose and temporal sheets;19 consecutive60Hz focus poses from0/45/90.",
+  "motions": [
+    {
+      "id": "meshy:27",
+      "clipSha256": "78b956bea8c19583ef4ff890785b1a3ea2e0a5520bd40dc1f9d7b10946669065",
+      "sourceSha256": "de81ca5204d13474f28cbc3eef8f9eba0f2641d0b2e1c16d50bfc7f93d9bd384",
+      "observation": "Compact knee lift is continuous into bent-knee pose; arms lift beside cheeks without detachment. Focus source.9s shows no abrupt knee tuck or sole flip.",
+      "sourceContact": {
+        "actionId": 27,
+        "sourceActionId": 27,
+        "derivation": null,
+        "sourceName": "Big_Heart_Gesture",
+        "sourceSha256": "de81ca5204d13474f28cbc3eef8f9eba0f2641d0b2e1c16d50bfc7f93d9bd384",
+        "clipSha256": "78b956bea8c19583ef4ff890785b1a3ea2e0a5520bd40dc1f9d7b10946669065",
+        "sourceFloor": 0.10232243703532082,
+        "sourcePlantedPairs": 229,
+        "missingTargetContactPairs": 0,
+        "excessiveDriftPairs": 0,
+        "sourceMovingContactPairs": 4,
+        "pivotCompatiblePairs": 0,
+        "maxDriftByHeight": 0.0009358605685984694,
+        "failures": []
+      },
+      "largestIntroducedWorld": {
+        "bone": "thighR",
+        "from": 1.5833333333333333,
+        "time": 1.6,
+        "sourceTime": 0.9000000000000001,
+        "targetLocalDegrees": 7.863794717598715,
+        "targetWorldDegrees": 7.946789020915551,
+        "sourceLocalDegrees": 2.513019999792938,
+        "sourceWorldDegrees": 2.413882401794359,
+        "jointDistance": 0.002350146506602137
+      },
+      "largestIntroducedLocal": {
+        "bone": "kneeR",
+        "from": 1.5833333333333333,
+        "time": 1.6,
+        "sourceTime": 0.9000000000000001,
+        "targetLocalDegrees": 11.027144481813815,
+        "targetWorldDegrees": 3.917343574400697,
+        "sourceLocalDegrees": 0.8421924259175081,
+        "sourceWorldDegrees": 2.9544810484403006,
+        "jointDistance": 0.02132964174347218
+      },
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-geometric-27-1/report.json",
+          "sha256": "dab62c5da3279e2af41cc773bacc840f6689b1598d1b2f93a5ee06e407b7c67e"
+        },
+        {
+          "file": "/tmp/doreumi-geometric-27-1/motion-meshy-27.jpg",
+          "sha256": "56a23d0f00b2b7ded3106293e1413e0be1584309716b561719aaad68775ff55d"
+        },
+        {
+          "file": "/tmp/doreumi-geometric-27-1/temporal-meshy-27.jpg",
+          "sha256": "5722d88d3f2d1b30d8a0e669748766ccac530255f6097357147b949b7d7e5136"
+        },
+        {
+          "file": "/tmp/doreumi-geometric-27-0.25/report.json",
+          "sha256": "4e8c2bd5a32cbc73495ddd58c305d71dec634f5a74113eeab08dfea19870ebda"
+        },
+        {
+          "file": "/tmp/doreumi-geometric-27-0.25/motion-meshy-27.jpg",
+          "sha256": "cc114a2d53e5cf36eb5fd0ea6d17872bb3d1f9501f1a76d66deb5c073e6fecf5"
+        },
+        {
+          "file": "/tmp/doreumi-geometric-27-0.25/temporal-meshy-27.jpg",
+          "sha256": "85bc15dd8d5ed8da809dfe6994e04817fbf65d09800e1e55ab99068d883ab247"
+        },
+        {
+          "file": "/tmp/doreumi-geometric-27-focus-0/report.json",
+          "sha256": "1b7d01e3f95be317020452a887191bb130b929ffab51a3bf956552488a922b3c"
+        },
+        {
+          "file": "/tmp/doreumi-geometric-27-focus-0/motion-meshy-27.jpg",
+          "sha256": "cd9f0b8e74f2cc2f8bd1f080362a8305ba57ca9fb506b7d0e49c80b2559cfbfb"
+        }
+      ]
+    },
+    {
+      "id": "meshy:63",
+      "clipSha256": "8fc9d1e161364dedce3c1400b2eace811995f2550b72fd19811ae3baefb2a947",
+      "sourceSha256": "6d1556b1893db0a95ce4827fe8c22a56f6ab7dddb0e6aba675d367a87a3c504d",
+      "observation": "Alternating shuffle steps, arm circles and torso turns remain readable; feet retain distinct outlines through crossing. Focus source3.5833 and4.9667 shows continuous thigh and knee flex without pole flip.",
+      "sourceContact": {
+        "actionId": 63,
+        "sourceActionId": 63,
+        "derivation": null,
+        "sourceName": "Arm_Circle_Shuffle",
+        "sourceSha256": "6d1556b1893db0a95ce4827fe8c22a56f6ab7dddb0e6aba675d367a87a3c504d",
+        "clipSha256": "8fc9d1e161364dedce3c1400b2eace811995f2550b72fd19811ae3baefb2a947",
+        "sourceFloor": 0.020871950140051124,
+        "sourcePlantedPairs": 140,
+        "missingTargetContactPairs": 0,
+        "excessiveDriftPairs": 0,
+        "sourceMovingContactPairs": 117,
+        "pivotCompatiblePairs": 1,
+        "maxDriftByHeight": 0.0014933516727033502,
+        "failures": []
+      },
+      "largestIntroducedWorld": {
+        "bone": "thighL",
+        "from": 4.3,
+        "time": 4.316666666666666,
+        "sourceTime": 3.583333333333333,
+        "targetLocalDegrees": 9.796039518561482,
+        "targetWorldDegrees": 9.916366470231202,
+        "sourceLocalDegrees": 3.3246051094551583,
+        "sourceWorldDegrees": 3.320672769592647,
+        "jointDistance": 0.01063223735839107
+      },
+      "largestIntroducedLocal": {
+        "bone": "kneeL",
+        "from": 5.683333333333334,
+        "time": 5.7,
+        "sourceTime": 4.966666666666667,
+        "targetLocalDegrees": 8.132653692874271,
+        "targetWorldDegrees": 4.918346761063557,
+        "sourceLocalDegrees": 0.37519612966939236,
+        "sourceWorldDegrees": 1.3026310389126703,
+        "jointDistance": 0.015618106570653992
+      },
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-geometric-63-1/report.json",
+          "sha256": "2b15e66140ba7025e9d61bc6cd649847a96383de91ddcd6638b67b07c3debee6"
+        },
+        {
+          "file": "/tmp/doreumi-geometric-63-1/motion-meshy-63.jpg",
+          "sha256": "9db47878c3d2b292dd291af64b5f3cd788ed4b945a45fd484d15a542595d2e0c"
+        },
+        {
+          "file": "/tmp/doreumi-geometric-63-1/temporal-meshy-63.jpg",
+          "sha256": "19325a7cfb54ebcdb9f70988b799e546ad91ec9115ce3bdfc4c83150e2e65bb9"
+        },
+        {
+          "file": "/tmp/doreumi-geometric-63-0.25/report.json",
+          "sha256": "e63391c858b02eb8b84636ce2f63b92370e70135556154f9bfb53bd8919322ff"
+        },
+        {
+          "file": "/tmp/doreumi-geometric-63-0.25/motion-meshy-63.jpg",
+          "sha256": "84d423734131bc7e5e82b1aaab6ba6bc80c0b472969d4582a7eeab5f69a91ce6"
+        },
+        {
+          "file": "/tmp/doreumi-geometric-63-0.25/temporal-meshy-63.jpg",
+          "sha256": "cda5055bc6198ed47163e072c689a62da19dbfb6b390d7564f5cb8e2a89d8a5f"
+        },
+        {
+          "file": "/tmp/doreumi-geometric-63-focus-0/report.json",
+          "sha256": "00fad80dc9ffa98a2a6078d46909bcab4c0ad3068023d3f19704ebc1394b2e53"
+        },
+        {
+          "file": "/tmp/doreumi-geometric-63-focus-0/motion-meshy-63.jpg",
+          "sha256": "994a21ed880da8cd6db1068c14247f553f952b5c9541d4ed548c3425e8de9868"
+        },
+        {
+          "file": "/tmp/doreumi-geometric-63-focus-1/report.json",
+          "sha256": "d1cda8b16683e5cc2952a85d67da12e63b454c6edebdd61ee4fc0466d494cd16"
+        },
+        {
+          "file": "/tmp/doreumi-geometric-63-focus-1/motion-meshy-63.jpg",
+          "sha256": "32e0e71357a247d42bcdcfeb7cf17c45bd52ee42110019b7015304d105ceb70c"
+        }
+      ]
+    }
+  ]
+}

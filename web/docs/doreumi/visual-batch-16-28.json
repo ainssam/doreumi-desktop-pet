@@ -1,0 +1,152 @@
+{
+  "version": 1,
+  "reviewType": "static-contact-sheet-observation",
+  "captureDirectory": "/tmp/doreumi-library-v3-normal",
+  "reviewedIds": [16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28],
+  "views": [0, -90, 90, 180, 45],
+  "phaseFractions": [0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1],
+  "eachSheetOpenedIndividually": true,
+  "browserUsed": false,
+  "registryChanged": false,
+  "playbackApproval": false,
+  "limits": [
+    "Each sheet contains five views and nine still samples, with each image reduced to a 180px tile.",
+    "Still samples cannot prove timing, acceleration, foot locking, short-lived intersections or smooth action interruption.",
+    "The plain background has no calibrated floor grid; support is described as visible pose evidence, not a measured clearance verdict.",
+    "The capture uses a neutral expression, so expression appropriateness was not scored as a body-motion defect.",
+    "Every action remains pending full normal-speed, quarter-speed and actual small-avatar playback review."
+  ],
+  "actions": [
+    {
+      "id": "meshy:16",
+      "sourceName": "RunFast",
+      "sheet": "motion-meshy-16.jpg",
+      "staticAssessment": "no-obvious-static-break; stage-check-required",
+      "observed": "Middle samples show alternating knees and feet, bent elbows and a strong forward trunk lean. Side views expose fore/aft limb separation that the front view hides. No open neck seam or detached limb is visible.",
+      "supportAndTransition": "A lower foot and raised trailing foot can be distinguished in the active samples; first and last samples return to the same upright silhouette.",
+      "concern": "The large trunk lean could read as a hunched dash at small size. Still samples cannot decide whether the short active run interval is naturally timed.",
+      "remaining": ["Normal and quarter-speed gait playback", "Actual Host travel and foot-lock measurement", "Small-avatar side and front readability"]
+    },
+    {
+      "id": "meshy:17",
+      "sourceName": "Skill_01",
+      "sheet": "motion-meshy-17.jpg",
+      "staticAssessment": "targeted-motion-review-required",
+      "observed": "The middle samples move from a deep forward fold into an extreme backward arch. At fractions 0.5 and 0.625 the face points upward and is largely hidden from the front. Both side views make the arch much more apparent than the front view.",
+      "supportAndTransition": "The feet remain beneath a bent lower body in the sampled arch. First and last samples recover the neutral silhouette; the intervening acceleration and load transfer are unknown.",
+      "concern": "The head/chest relationship is visibly extreme for this short body and may read as a contortion instead of a cute flourish. No definite open seam is visible; this is a pose and timing concern, not a proven skin tear.",
+      "remaining": ["Quarter-speed review of fractions 0.3 through 0.75", "Check head/torso fold and hand/body intersections in full-resolution side views", "Inspect planted-foot support and recovery during actual playback", "Keep source action ID if reducing the extreme arch"]
+    },
+    {
+      "id": "meshy:18",
+      "sourceName": "Skill_02",
+      "sheet": "motion-meshy-18.jpg",
+      "staticAssessment": "no-obvious-static-break; spin-support-check-required",
+      "observed": "The character turns through front, side and back while lifting a knee, bending the elbows and counter-tilting the body. The turn reads as an articulated hop or spin rather than one rigid upright cutout. The silhouette stays connected.",
+      "supportAndTransition": "Several active samples show a raised foot and a lower support candidate; first and last poses match. Contact through the turning interval is not measurable from the sheet.",
+      "concern": "The turning foot and close-to-belly hand can be occluded. A short unsupported or intersecting interval may fall between the samples.",
+      "remaining": ["Normal and quarter-speed turning playback", "Support-foot pivot and landing check", "Small-avatar silhouette and hand/body overlap check"]
+    },
+    {
+      "id": "meshy:19",
+      "sourceName": "Skill_03",
+      "sheet": "motion-meshy-19.jpg",
+      "staticAssessment": "targeted-airborne-support-review-required",
+      "observed": "Middle samples combine a large body tilt, whole-body turn and raised feet. Fractions 0.625 and 0.75 look airborne or strongly tipped in both side views. Arms and knees change pose, and the skin remains visibly connected.",
+      "supportAndTransition": "A readable supporting foot or landing compression is not established by these sparse middle samples. The final upright pose is restored.",
+      "concern": "Playback must distinguish an intentional hopping turn from hovering or a body that rolls without support. The sheet alone does not prove a floating defect.",
+      "remaining": ["Quarter-speed takeoff, turning and landing review", "Foot/body floor-height trace during the tipped interval", "Small-avatar normal-speed reading", "Action interruption back to Idle"]
+    },
+    {
+      "id": "meshy:20",
+      "sourceName": "Walk_Fight_Back",
+      "sheet": "motion-meshy-20.jpg",
+      "staticAssessment": "no-obvious-static-break; backward-stage-check-required",
+      "observed": "The knees and feet alternate beneath a mostly upright body. Both elbows are bent and the hands remain forward near the belly. No detached joints or open neck seam is visible.",
+      "supportAndTransition": "The sampled foot alternation and neutral endpoints are coherent. Backward travel itself is absent from a centered contact sheet.",
+      "concern": "At small size the low hands may read as an ordinary shuffle rather than a guarded backward walk. This is a readability check, not a reason to drop the source motion.",
+      "remaining": ["Actual Host backward travel with facing preserved", "Planted-foot screen residual", "Quarter-speed toe and knee transitions", "Small-avatar guarded-pose readability"]
+    },
+    {
+      "id": "meshy:21",
+      "sourceName": "Walk_Fight_Forward",
+      "sheet": "motion-meshy-21.jpg",
+      "staticAssessment": "no-obvious-static-break; forward-stage-check-required",
+      "observed": "The active samples show a modest forward lean, bent elbows held near the body and alternating knee lifts. Side views reveal stepping that is subtle from the front. No clear surface tear or limb detachment is visible.",
+      "supportAndTransition": "A lower foot and a lifted foot alternate; upright first and last poses agree. Static images do not establish toe contact or sliding.",
+      "concern": "The close hand posture and coupled head/body lean can look stiff at small size if the actual timing has little weight transfer.",
+      "remaining": ["Actual Host forward travel and support locking", "Quarter-speed weight transfer and foot roll", "Small-avatar front and side playback"]
+    },
+    {
+      "id": "meshy:22",
+      "sourceName": "FunnyDancing_01",
+      "sheet": "motion-meshy-22.jpg",
+      "staticAssessment": "no-obvious-static-break; dance-playback-required",
+      "observed": "The sheet includes alternating arm bends, side tilts, a lifted foot, a larger arm raise and a forward fold. The previously problematic independent head/torso region is continuous in these samples; no open horizontal gap is visible.",
+      "supportAndTransition": "Standing and one-foot poses are visible; the deeper bend and return are sampled but their balance and timing remain unknown. Endpoints match the neutral stance.",
+      "concern": "Only sparse instants of a long dance are shown. The neck fold, arm/body occlusion and transfer after the large lean need moving inspection.",
+      "remaining": ["Complete normal and quarter-speed dance", "Full-resolution bend and neck continuity", "Small-avatar rhythmic readability", "Interruptions during a raised-foot pose"]
+    },
+    {
+      "id": "meshy:23",
+      "sourceName": "FunnyDancing_02",
+      "sheet": "motion-meshy-23.jpg",
+      "staticAssessment": "no-obvious-static-break; deep-bend-review-required",
+      "observed": "Arm raises, side leans, knee lifts and a later deep forward bend are clearly different poses. The side and back views show a pronounced head/upper-body fold during fractions 0.625 through 0.875, but no definite open seam.",
+      "supportAndTransition": "Feet remain distinguishable through the lower poses. Static height alone cannot establish a planted sole or smooth recovery.",
+      "concern": "The deep bend creates a broad fold and hides the near arm against the torso. Check whether this is a clean compressing silhouette or a brief intersection in motion.",
+      "remaining": ["Quarter-speed fractions 0.5 through 0.9", "Side-view neck fold and arm/body clearance", "Normal-speed dance rhythm", "Small-avatar silhouette"]
+    },
+    {
+      "id": "meshy:24",
+      "sourceName": "FunnyDancing_03",
+      "sheet": "motion-meshy-24.jpg",
+      "staticAssessment": "no-obvious-static-break; dance-readability-check-required",
+      "observed": "Early samples show a sideways arm extension, knee bend and torso turn. Later samples settle into smaller arm and body offsets. The skeleton appears articulated, with no visible stretched limb or disconnected surface.",
+      "supportAndTransition": "Feet alternate and settle; first and last silhouettes match. The contact sheet does not resolve the cadence between the quieter late samples.",
+      "concern": "The long late interval could read as idle bobbing at actual avatar size, or could be a sampling alias of a repeated dance beat.",
+      "remaining": ["Complete normal-speed dance to resolve temporal aliasing", "Quarter-speed foot changes", "Actual small-avatar readability", "Quiet ending and interruption check"]
+    },
+    {
+      "id": "meshy:25",
+      "sourceName": "Agree_Gesture",
+      "sheet": "motion-meshy-25.jpg",
+      "staticAssessment": "gesture-meaning-playback-check-required",
+      "observed": "Small body turns, head inclinations and forearm presentations form a conversational gesture. Side views make the forward hands more legible than the front. No obvious structural break appears.",
+      "supportAndTransition": "Most sampled poses are supported on both feet, with small weight shifts. Neutral entry and exit are preserved.",
+      "concern": "These stills do not clearly communicate agreement or a decisive nod. The 13-second source duration makes full timing inspection necessary; sparse images cannot establish whether the motion is meaningfully active throughout.",
+      "remaining": ["Full normal-speed agreement/nod reading", "Quarter-speed head and wrist timing", "Small-avatar gesture visibility", "Expression pairing reviewed separately from the neutral capture"]
+    },
+    {
+      "id": "meshy:26",
+      "sourceName": "Angry_Stomp",
+      "sheet": "motion-meshy-26.jpg",
+      "staticAssessment": "stomp-meaning-and-contact-review-required",
+      "observed": "A knee lift and body turn are visible early, with smaller foot and arm changes later. Most samples remain close to an upright stance. No obvious detached limb or open neck seam is visible.",
+      "supportAndTransition": "The sheet does not capture a sufficiently clear downward stomp impact or compression to establish that behavior. First and last poses return to neutral.",
+      "concern": "The intended stomp may occur between samples, or may be too small on the short legs. Do not approve or reject based only on the quiet sampled frames.",
+      "remaining": ["Normal and quarter-speed stomp lift, impact and recovery", "Sole/floor contact at impact", "Small-avatar force and rhythm readability", "Expression pairing reviewed separately"]
+    },
+    {
+      "id": "meshy:27",
+      "sourceName": "Big_Heart_Gesture",
+      "sheet": "motion-meshy-27.jpg",
+      "staticAssessment": "semantic-adaptation-needed",
+      "observed": "Fractions 0.25 through 0.625 hold one hand beside the head and the other farther out while the body tilts and one knee rises. The two hands do not meet and no heart outline is readable from the front or either side. The surfaces remain connected.",
+      "supportAndTransition": "The held tilted pose has a lower-foot support candidate and recovers to neutral. Sustained balance and the entry/exit speed remain unverified.",
+      "concern": "The main source gesture currently reads as a tilted cheer or cheek pose, not a big heart. Preserve the approved short arm lengths; do not stretch the body to imitate human overhead reach.",
+      "adaptationDirection": "Retain this source ID and adapt its intent to a feasible two-hand cheek-heart presentation; evaluate whether a small separate heart effect is needed for clear meaning. This is a proposed direction, not an implemented or approved change.",
+      "remaining": ["Resolve feasible heart presentation without changing proportions", "Quarter-speed held-pose entry and exit", "Small-avatar recognition", "Support and hand/head clearance"]
+    },
+    {
+      "id": "meshy:28",
+      "sourceName": "Big_Wave_Hello",
+      "sheet": "motion-meshy-28.jpg",
+      "staticAssessment": "clear-static-gesture; playback-still-required",
+      "observed": "The raised hand reaches beside/above the cheek with a bent elbow and clear body counter-lean. The large wave is readable from the front and quarter view; side views show connected shoulder and elbow motion. No obvious clipping or open skin seam is visible.",
+      "supportAndTransition": "The early tilted pose lifts the opposite side of the body and then returns to an upright stance. First and last silhouettes agree.",
+      "concern": "The hold and waving rhythm cannot be inferred from these samples, and the source spends several late samples near idle.",
+      "remaining": ["Normal and quarter-speed wave rhythm", "Balance during the largest counter-lean", "Small-avatar hand silhouette", "Greeting interruption back to Idle"]
+    }
+  ]
+}

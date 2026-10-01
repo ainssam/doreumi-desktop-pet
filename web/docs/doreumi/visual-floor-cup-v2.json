@@ -1,0 +1,67 @@
+{
+  "review": "pending",
+  "evidenceDirectory": "/tmp/doreumi-floor-cup-v2-quarter",
+  "runStatus": "interrupted-on-344-duplicate-track-time",
+  "observations": [
+    {
+      "id": "meshy:48",
+      "clipSha256": "654675e5c3d87bc0b88f235a8f5e76f90a4aebfb732ac8adb80fedb090af6363",
+      "finding": "Mirror no longer has a hollow back. At 45 degrees it obscures much of the face/body throughout motion; adjust offset/orientation before approval.",
+      "review": "pending",
+      "views": [
+        0,
+        90,
+        180,
+        -90,
+        45
+      ],
+      "posesPerView": 9,
+      "temporal": "1fps quarter-speed45degree frames individually inspected"
+    },
+    {
+      "id": "meshy:329",
+      "clipSha256": "36236cfe68016ed54a718ecb558ce26ac3f6599f99dd2a1a26812b76831a4479",
+      "finding": "Kneeling and hand-supported entry/recovery improved. Source core still folds arms beside torso with insufficient palm floor support. Needs core adaptation.",
+      "review": "pending",
+      "views": [
+        0,
+        90,
+        180,
+        -90,
+        45
+      ],
+      "posesPerView": 9,
+      "temporal": "1fps quarter-speed45degree frames individually inspected"
+    },
+    {
+      "id": "meshy:342",
+      "clipSha256": "9b48964b505b51364967186976d93adecda80612c391a064dc936838ae272175",
+      "finding": "Cup reaches lips, tips, and lowers continuously. Standing lean and hand connection read well in quarter-speed sequence. Normal128 and source-contact audits still required.",
+      "review": "pending",
+      "views": [
+        0,
+        90,
+        180,
+        -90,
+        45
+      ],
+      "posesPerView": 9,
+      "temporal": "1fps quarter-speed45degree frames individually inspected"
+    },
+    {
+      "id": "meshy:343",
+      "clipSha256": "1613f68e78a2aa3b77c70104d52f438ab2252a09dc33e7a37e23940f9b5fa2df",
+      "finding": "Seated cup reaches mouth and lowers coherently. Raw90-degree .5 image suggests butt touches cushion, unlike misleading small-sheet gap; independent butt-surface measurement requested.",
+      "review": "pending",
+      "views": [
+        0,
+        90,
+        180,
+        -90,
+        45
+      ],
+      "posesPerView": 9,
+      "temporal": "1fps quarter-speed45degree frames individually inspected"
+    }
+  ]
+}

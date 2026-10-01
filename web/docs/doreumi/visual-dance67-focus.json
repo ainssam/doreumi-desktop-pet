@@ -1,0 +1,15 @@
+{
+  "review": "needs-correction",
+  "candidate": {
+    "meshy:67": "4c8b4865c3f146e4db8e12f45138d5f117493b1b198140ca31d0de1be906c740"
+  },
+  "method": "Two explicit60Hz source windows\u00b10.1sec at45/90deg, plus full-size adjacent source7.3167/7.3333 frames. Isolated candidate override; no public clip changed.",
+  "findings": [
+    "6.8sec torso rotation is coherent in sampled silhouette.",
+    "7.33sec stance foot and knee curl inward abruptly under belly while torso is stable; numeric14deg world change remains visible at large scale. Continue feasible-pole path correction."
+  ],
+  "reports": [
+    "/tmp/doreumi-67-focus-0/report.json",
+    "/tmp/doreumi-67-focus-1/report.json"
+  ]
+}

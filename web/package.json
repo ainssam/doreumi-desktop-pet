@@ -1,0 +1,36 @@
+{
+  "name": "doreumi-web",
+  "version": "0.1.0",
+  "private": true,
+  "description": "도름스(DoRms)에서 다듬은 도름이 웹판: 마스터 리그, 동작, 표정, 런타임 코드",
+  "license": "SEE LICENSE IN README.md",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "test": "node --experimental-transform-types --conditions=react-server --import ./tests/register-alias.mjs --test tests/doreumi-*.test.mjs tests/doreumi-*.test.mts"
+  },
+  "dependencies": {
+    "server-only": "^0.0.1",
+    "sharp": "0.35.4",
+    "three": "0.180.0"
+  },
+  "peerDependencies": {
+    "react": "19.1.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@gltf-transform/core": "^4.5.0",
+    "@gltf-transform/extensions": "^4.5.0",
+    "esbuild": "^0.28.2",
+    "meshoptimizer": "^1.2.0",
+    "playwright": "^1.62.0",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "typescript": "^5"
+  }
+}

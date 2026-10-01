@@ -1,0 +1,707 @@
+{
+  "checkedAt": "2026-09-24T05:36:46.353353+00:00",
+  "scope": "Root individually viewed all 15 normal128 and quarter-speed five-angle/nine-pose and actual-rendered whole-cycle sheets (60 sheets total). All cycles reached Idle with one active action. No new ambient approval; contacts/context remain as listed.",
+  "items": [
+    {
+      "id": "meshy:601",
+      "clipSha256": "b2954026c33be3cfc4ea98dfd43b6cab5fa47aa6304665f3d86aff8671e4045f",
+      "normalViewed": true,
+      "quarterViewed": true,
+      "observation": "Backflip has a visible crouch, inversion, landing bow and recovery. This is an additional whole-cycle playback check of an existing approval.",
+      "review": "existing-approval-normal-rechecked",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-600-620-1/motion-meshy-601.jpg",
+          "sha256": "d9a2a5f77d7e6769f7780eee1d6272b0d7523d684f8a1bc4c3033e062a3a1ccc"
+        },
+        {
+          "file": "/tmp/doreumi-library-600-620-1/playback-meshy-601.jpg",
+          "sha256": "660ee0e580d6c87ad3c9661dcd0ccfccefc116989de30e68fee710aab92fe7e6"
+        },
+        {
+          "file": "/tmp/doreumi-library-600-620-0.25/motion-meshy-601.jpg",
+          "sha256": "aa6752500994c2f6059c5c2b91018fecf1993cb620a9ed368117325e7f92625c"
+        },
+        {
+          "file": "/tmp/doreumi-library-600-620-0.25/playback-meshy-601.jpg",
+          "sha256": "dd60ad6e1bc75988ee690092eabcc7346a8ff3bb3c0271be08c0f941692549d8"
+        }
+      ],
+      "normalPlaybackCoverage": {
+        "firstTime": 0,
+        "lastTime": 3.6169999999999938,
+        "duration": 3.700000111262004,
+        "tolerance": 0.35,
+        "observedFrames": 14,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1
+      },
+      "quarterPlaybackCoverage": {
+        "firstTime": 0,
+        "lastTime": 3.5920750000000012,
+        "duration": 3.700000111262004,
+        "tolerance": 0.35,
+        "observedFrames": 15,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1
+      }
+    },
+    {
+      "id": "meshy:604",
+      "clipSha256": "846d2e89ceb3d0fecafd3278820123765fe2d37024ef77c4b0d3cfa2220cc6ae",
+      "normalViewed": true,
+      "quarterViewed": true,
+      "observation": "Repeated backward inversion and sweep kick read clearly, but support during low torso/side transitions and combat-context eligibility need review before approval.",
+      "review": "pending",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-600-620-1/motion-meshy-604.jpg",
+          "sha256": "ba5658e7d223abd5cd3cda103689864399a9784f7f07b07b64f4d2c7c28866e6"
+        },
+        {
+          "file": "/tmp/doreumi-library-600-620-1/playback-meshy-604.jpg",
+          "sha256": "50caefe14e96c5ded247efb5f30947d673032fd6ce16d8966bb5103bfae96c3f"
+        },
+        {
+          "file": "/tmp/doreumi-library-600-620-0.25/motion-meshy-604.jpg",
+          "sha256": "e5247ad702f2e8cbee770a377669048435a484155a0b74d03213e456226f5bf9"
+        },
+        {
+          "file": "/tmp/doreumi-library-600-620-0.25/playback-meshy-604.jpg",
+          "sha256": "d86c6837aef276d107d1cc3e6f2bf3ebed5bfb2706fb2bd8471b5303316c6344"
+        }
+      ],
+      "normalPlaybackCoverage": {
+        "firstTime": 0,
+        "lastTime": 6.2296999999999825,
+        "duration": 6.400000158945719,
+        "tolerance": 0.35,
+        "observedFrames": 23,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1
+      },
+      "quarterPlaybackCoverage": {
+        "firstTime": 0,
+        "lastTime": 6.364700000000009,
+        "duration": 6.400000158945719,
+        "tolerance": 0.35,
+        "observedFrames": 26,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1
+      }
+    },
+    {
+      "id": "meshy:605",
+      "clipSha256": "ff4d5100168a6beabc54d3b2b380692944b573dc91577df4c552448e9da9aebb",
+      "normalViewed": true,
+      "quarterViewed": true,
+      "observation": "Compact backward hop with arm spread and crouched landing; source landing contact and quarter-speed check remain.",
+      "review": "pending",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-600-620-1/motion-meshy-605.jpg",
+          "sha256": "954d9fafe0ab6faf38a36e469b8a1136bae7899bce3bc8ed62f375eaff596612"
+        },
+        {
+          "file": "/tmp/doreumi-library-600-620-1/playback-meshy-605.jpg",
+          "sha256": "db69c420b6719a2baba2ccfee5a166850150e1f3302df900ba1abb29cef2dada"
+        },
+        {
+          "file": "/tmp/doreumi-library-600-620-0.25/motion-meshy-605.jpg",
+          "sha256": "f62356d7111c5ab7d3bb4872b3ec06fa1dbf6df0d0f9d6b5c5b042ed50a4b41d"
+        },
+        {
+          "file": "/tmp/doreumi-library-600-620-0.25/playback-meshy-605.jpg",
+          "sha256": "f4b6525adf4bfc1ee6dd763871f06bc90edef2be74240d89bacbca77e0bbefb9"
+        }
+      ],
+      "normalPlaybackCoverage": {
+        "firstTime": 0,
+        "lastTime": 2.3194999999999983,
+        "duration": 2.5000000039736427,
+        "tolerance": 0.35,
+        "observedFrames": 10,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1
+      },
+      "quarterPlaybackCoverage": {
+        "firstTime": 0,
+        "lastTime": 2.319475,
+        "duration": 2.5000000039736427,
+        "tolerance": 0.35,
+        "observedFrames": 10,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1
+      }
+    },
+    {
+      "id": "meshy:606",
+      "clipSha256": "01304be5fcff350d9a0af867499466e458aa5c1e98d21c32dc27c04e81ad7fc9",
+      "normalViewed": true,
+      "quarterViewed": true,
+      "observation": "Backward-left running steps alternate with restrained arms and clear short-leg silhouette; actual Host displacement/support remains.",
+      "review": "pending",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-600-620-1/motion-meshy-606.jpg",
+          "sha256": "60b1005e5ea79d5d3de17f74b2098b17818fd0f9d5949512d6abb92880c6ce88"
+        },
+        {
+          "file": "/tmp/doreumi-library-600-620-1/playback-meshy-606.jpg",
+          "sha256": "c0e9f4eca39b3e8a8b7d5164ee80b3a3b91573ad00f67051a027d4afb5b03c6f"
+        },
+        {
+          "file": "/tmp/doreumi-library-600-620-0.25/motion-meshy-606.jpg",
+          "sha256": "73debef66fcd2b63a634c7e3c84b0bab116542f0273857456b1fb7ea032a9b1f"
+        },
+        {
+          "file": "/tmp/doreumi-library-600-620-0.25/playback-meshy-606.jpg",
+          "sha256": "9a379848e63d24b0f37245cb96f381d4a90796ac33c1b0546e344a59181c8d28"
+        }
+      ],
+      "normalPlaybackCoverage": {
+        "firstTime": 0,
+        "lastTime": 2.1458000000000017,
+        "duration": 2.3666666785875954,
+        "tolerance": 0.35,
+        "observedFrames": 9,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1
+      },
+      "quarterPlaybackCoverage": {
+        "firstTime": 0,
+        "lastTime": 2.3248250000000006,
+        "duration": 2.3666666785875954,
+        "tolerance": 0.35,
+        "observedFrames": 10,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1
+      }
+    },
+    {
+      "id": "meshy:607",
+      "clipSha256": "03a01579d3bb246d5b4fc31eabd5369492d6d7ecfde414694efa41387d2fc009",
+      "normalViewed": true,
+      "quarterViewed": true,
+      "observation": "Backward-right running steps alternate without visible knee pop at normal speed; actual Host displacement/support remains.",
+      "review": "pending",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-600-620-1/motion-meshy-607.jpg",
+          "sha256": "4cd07a0491961927745871fabe23aa17e2433405720bd4dfc01043bb2f41d77f"
+        },
+        {
+          "file": "/tmp/doreumi-library-600-620-1/playback-meshy-607.jpg",
+          "sha256": "cccb7ada83d2fa699a6dc110d114317c98737b37f28e1ca3ae7fff9938e74d55"
+        },
+        {
+          "file": "/tmp/doreumi-library-600-620-0.25/motion-meshy-607.jpg",
+          "sha256": "04cf7aedaa51a11b0bc53065b212eaab80f11984465ac0ec4591e61d2b22dd5a"
+        },
+        {
+          "file": "/tmp/doreumi-library-600-620-0.25/playback-meshy-607.jpg",
+          "sha256": "bb02e3a22810213f15bcbc8e7bc3e6c0cb918244845faae1d808f82cb1f24bf5"
+        }
+      ],
+      "normalPlaybackCoverage": {
+        "firstTime": 0,
+        "lastTime": 2.0694999999999992,
+        "duration": 2.199999992052714,
+        "tolerance": 0.35,
+        "observedFrames": 9,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1
+      },
+      "quarterPlaybackCoverage": {
+        "firstTime": 0,
+        "lastTime": 2.055599999999999,
+        "duration": 2.199999992052714,
+        "tolerance": 0.35,
+        "observedFrames": 9,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1
+      }
+    },
+    {
+      "id": "meshy:610",
+      "clipSha256": "4c43acd75173e4e5686605b1998e7583515bd856555829c71be391860cbfcb9b",
+      "normalViewed": true,
+      "quarterViewed": true,
+      "observation": "Cannon-carry source context is explicitly inappropriate for ambient use. Empty hands in the current render do not satisfy the source action; preserve exclusion.",
+      "review": "pending",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-600-620-1/motion-meshy-610.jpg",
+          "sha256": "d3df68953f3b3bedc5205e1e2f68ff444797d4b65ad7058332a85cbc6401fae8"
+        },
+        {
+          "file": "/tmp/doreumi-library-600-620-1/playback-meshy-610.jpg",
+          "sha256": "318de9b3d332a582ac5b3e52e56b3ff333fac578dbf933f684b23b7eedb18c97"
+        },
+        {
+          "file": "/tmp/doreumi-library-600-620-0.25/motion-meshy-610.jpg",
+          "sha256": "08f9dd93fd187ebfc88b73be5fe379fb553aaa3acf8c250aa363bb363f0e1307"
+        },
+        {
+          "file": "/tmp/doreumi-library-600-620-0.25/playback-meshy-610.jpg",
+          "sha256": "489c1752e4e09274c5618d19476544b1ad81eb3eeb9ca62aeeef1be004aa38d3"
+        }
+      ],
+      "normalPlaybackCoverage": {
+        "firstTime": 0,
+        "lastTime": 2.2916999999999956,
+        "duration": 2.533333305517832,
+        "tolerance": 0.35,
+        "observedFrames": 10,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1
+      },
+      "quarterPlaybackCoverage": {
+        "firstTime": 0,
+        "lastTime": 2.325049999999999,
+        "duration": 2.533333305517832,
+        "tolerance": 0.35,
+        "observedFrames": 10,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1
+      }
+    },
+    {
+      "id": "meshy:611",
+      "clipSha256": "326f5c063e2d250a467370d5ffa6b73f25254a6264588efe9edde6e9d657ea1d",
+      "normalViewed": true,
+      "quarterViewed": true,
+      "observation": "Box rests between both hands throughout alternating carry steps, then fades during recovery; audit actual grip, box clearance and Host travel before approval.",
+      "review": "pending",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-600-620-1/motion-meshy-611.jpg",
+          "sha256": "54f6b226b4608b6920a83fe8ae8181e7e3a3ca7887224910a1ee06a6af9bb1d9"
+        },
+        {
+          "file": "/tmp/doreumi-library-600-620-1/playback-meshy-611.jpg",
+          "sha256": "cbf6cea40ad292066c036ad6b5f8a252b437eb507c0344c392ec7adbd2d7ae77"
+        },
+        {
+          "file": "/tmp/doreumi-library-600-620-0.25/motion-meshy-611.jpg",
+          "sha256": "86313aa24fea0ecb3db16bcfe1355ed120d1f927f102a97dcdc0489d6d500cc9"
+        },
+        {
+          "file": "/tmp/doreumi-library-600-620-0.25/playback-meshy-611.jpg",
+          "sha256": "1210693ddef426d65dec731a42e8b1de4bd369ac2a1220e2ccea8de57343c691"
+        }
+      ],
+      "normalPlaybackCoverage": {
+        "firstTime": 0,
+        "lastTime": 7.841799999999972,
+        "duration": 8.099999968210856,
+        "tolerance": 0.35,
+        "observedFrames": 29,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1
+      },
+      "quarterPlaybackCoverage": {
+        "firstTime": 0,
+        "lastTime": 8.000350000000028,
+        "duration": 8.099999968210856,
+        "tolerance": 0.35,
+        "observedFrames": 32,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1
+      }
+    },
+    {
+      "id": "meshy:612",
+      "clipSha256": "cda7982364e15fe03d1e00bfc712128f18f2059480995e31a4c2bb8c1ec6a388",
+      "normalViewed": true,
+      "quarterViewed": true,
+      "observation": "Both bucket handles remain with hands, but deep pickup/set-down bows bring containers toward the floor. Verify fixed ground placement and release phases rather than hand-following during pickup.",
+      "review": "pending",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-600-620-1/motion-meshy-612.jpg",
+          "sha256": "5766da87b83d6c2c3d14dd077e32e96513fa301548da575c7321359b8e422915"
+        },
+        {
+          "file": "/tmp/doreumi-library-600-620-1/playback-meshy-612.jpg",
+          "sha256": "84966be4beddc34f768b9ab01ea5782ab979f61e5597c9b7cb55102b5057d2fd"
+        },
+        {
+          "file": "/tmp/doreumi-library-600-620-0.25/motion-meshy-612.jpg",
+          "sha256": "3f3de87eb7cd6b0b02f938f5224703059fb9aeea0742f5c44349ecd245bbef39"
+        },
+        {
+          "file": "/tmp/doreumi-library-600-620-0.25/playback-meshy-612.jpg",
+          "sha256": "e1ae47c4eb92e883aa40ede07027b6fa0cbd5728f69e389b3715bba8e55a0c87"
+        }
+      ],
+      "normalPlaybackCoverage": {
+        "firstTime": 0,
+        "lastTime": 10.771200000000093,
+        "duration": 10.833333079020182,
+        "tolerance": 0.35,
+        "observedFrames": 39,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1
+      },
+      "quarterPlaybackCoverage": {
+        "firstTime": 0,
+        "lastTime": 10.80747500000003,
+        "duration": 10.833333079020182,
+        "tolerance": 0.35,
+        "observedFrames": 43,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1
+      }
+    },
+    {
+      "id": "meshy:613",
+      "clipSha256": "36751c487b75d156c7aa7a41897a36699197dc8bf3cb35981e5427498ac6fbc6",
+      "normalViewed": true,
+      "quarterViewed": true,
+      "observation": "Relaxed short walking steps with subtle arm swing and continuous recovery; source support and Host travel remain.",
+      "review": "pending",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-600-620-1/motion-meshy-613.jpg",
+          "sha256": "c31723170d78ee208b803556d24eb5280d6391a5a53d29343f4fec998c6feb6b"
+        },
+        {
+          "file": "/tmp/doreumi-library-600-620-1/playback-meshy-613.jpg",
+          "sha256": "5c859ebfabab7030c308fcc663bda5b123377c23fe2f5c6cf63b7128b680a528"
+        },
+        {
+          "file": "/tmp/doreumi-library-600-620-0.25/motion-meshy-613.jpg",
+          "sha256": "229b2885d37a283f54882744c54006bcbff713c60db8d98b00742a2f00dea088"
+        },
+        {
+          "file": "/tmp/doreumi-library-600-620-0.25/playback-meshy-613.jpg",
+          "sha256": "a24db1d35de2f665b651bd366f496693205d994bde412808bfd9497d9ac86fce"
+        }
+      ],
+      "normalPlaybackCoverage": {
+        "firstTime": 0,
+        "lastTime": 5.633199999999987,
+        "duration": 5.799999777475993,
+        "tolerance": 0.35,
+        "observedFrames": 21,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1
+      },
+      "quarterPlaybackCoverage": {
+        "firstTime": 0,
+        "lastTime": 5.675450000000015,
+        "duration": 5.799999777475993,
+        "tolerance": 0.35,
+        "observedFrames": 23,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1
+      }
+    },
+    {
+      "id": "meshy:615",
+      "clipSha256": "9f5c1a2e1f603118386da2e45f4fc8f79b3aeea51f4f576bbdd3bfe82f68e01f",
+      "normalViewed": true,
+      "quarterViewed": true,
+      "observation": "Cautious backward crouched stepping has visible alternating feet and continuous torso bend/recovery; actual stage trajectory and source ground contacts remain.",
+      "review": "pending",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-600-620-1/motion-meshy-615.jpg",
+          "sha256": "50eba23ce558038a7e9ab458b731abde957872cfb42c05efa9ab7917fa49868b"
+        },
+        {
+          "file": "/tmp/doreumi-library-600-620-1/playback-meshy-615.jpg",
+          "sha256": "f138871711d4bedd2523e35a1ec0f170f46396df95a9881b6a0a87ab367e02a5"
+        },
+        {
+          "file": "/tmp/doreumi-library-600-620-0.25/motion-meshy-615.jpg",
+          "sha256": "e7dbdb41ccf78392a213414b92cf67b24632606ac936f6184a711c109a70fef0"
+        },
+        {
+          "file": "/tmp/doreumi-library-600-620-0.25/playback-meshy-615.jpg",
+          "sha256": "97596fdcf8426b0f315376863f13d9fce8e88e9d0912379ee3edd7001d3a3313"
+        }
+      ],
+      "normalPlaybackCoverage": {
+        "firstTime": 0,
+        "lastTime": 2.825299999999999,
+        "duration": 2.8666666189829506,
+        "tolerance": 0.35,
+        "observedFrames": 11,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1
+      },
+      "quarterPlaybackCoverage": {
+        "firstTime": 0,
+        "lastTime": 2.8108249999999955,
+        "duration": 2.8666666189829506,
+        "tolerance": 0.35,
+        "observedFrames": 12,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1
+      }
+    },
+    {
+      "id": "meshy:616",
+      "clipSha256": "a308bf242e292ec2a9805487b4835399d76df0d48ce6a3c9d1640136e20abf4e",
+      "normalViewed": true,
+      "quarterViewed": true,
+      "observation": "Cautious forward crouched stepping has visible alternating feet and continuous torso bend/recovery; actual stage trajectory and source ground contacts remain.",
+      "review": "pending",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-600-620-1/motion-meshy-616.jpg",
+          "sha256": "b4615a1d73d118789a0b347960d1b934efca40b95662df1a3060d1030872ae32"
+        },
+        {
+          "file": "/tmp/doreumi-library-600-620-1/playback-meshy-616.jpg",
+          "sha256": "24d9447341dc1c12757039c75b2f9402afb2ffa0e78eb451893da90eb4b9df52"
+        },
+        {
+          "file": "/tmp/doreumi-library-600-620-0.25/motion-meshy-616.jpg",
+          "sha256": "e8f664521ee0a2803224a9f96ad6d6df658dc449e72e47eaafbba63773d17f91"
+        },
+        {
+          "file": "/tmp/doreumi-library-600-620-0.25/playback-meshy-616.jpg",
+          "sha256": "faa6bbbf0bdceb6696939d2ac57dc9f1b6dcdd512d43ad847f5dbfe94f49ca31"
+        }
+      ],
+      "normalPlaybackCoverage": {
+        "firstTime": 0,
+        "lastTime": 2.6249999999999964,
+        "duration": 2.7333332935969032,
+        "tolerance": 0.35,
+        "observedFrames": 11,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1
+      },
+      "quarterPlaybackCoverage": {
+        "firstTime": 0,
+        "lastTime": 2.546874999999999,
+        "duration": 2.7333332935969032,
+        "tolerance": 0.35,
+        "observedFrames": 11,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1
+      }
+    },
+    {
+      "id": "meshy:617",
+      "clipSha256": "fbb68bb74f5c99a58761ca92db5149f5fdc2b07e432f0659eb91279955f5eda7",
+      "normalViewed": true,
+      "quarterViewed": true,
+      "observation": "Cautious left crouched stepping has visible alternating feet and continuous torso bend/recovery; actual stage trajectory and source ground contacts remain.",
+      "review": "pending",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-600-620-1/motion-meshy-617.jpg",
+          "sha256": "3ffe28b26745888fe06129bae4991e8bf4d2c5423a9fda46da6d651dc1c3e7bf"
+        },
+        {
+          "file": "/tmp/doreumi-library-600-620-1/playback-meshy-617.jpg",
+          "sha256": "65151efe55a61ec204da00ee69ab60cf1331a63d27fb8368b3079c6c5987ef37"
+        },
+        {
+          "file": "/tmp/doreumi-library-600-620-0.25/motion-meshy-617.jpg",
+          "sha256": "34cf44e3a2f10bb639b686839d972a1cfd5efb95c9fabd27ef3e2da893338f22"
+        },
+        {
+          "file": "/tmp/doreumi-library-600-620-0.25/playback-meshy-617.jpg",
+          "sha256": "e6acb060d0f5cc54db475952784a1b278524c4ea046ef559c7c09079134c0c70"
+        }
+      ],
+      "normalPlaybackCoverage": {
+        "firstTime": 0,
+        "lastTime": 2.749899999999992,
+        "duration": 2.7666667143503823,
+        "tolerance": 0.35,
+        "observedFrames": 11,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1
+      },
+      "quarterPlaybackCoverage": {
+        "firstTime": 0,
+        "lastTime": 2.588600000000006,
+        "duration": 2.7666667143503823,
+        "tolerance": 0.35,
+        "observedFrames": 11,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1
+      }
+    },
+    {
+      "id": "meshy:618",
+      "clipSha256": "5394b4890c9c2bac5e3394a20b38c476311e6760d348c22f69f60a53b32a8efa",
+      "normalViewed": true,
+      "quarterViewed": true,
+      "observation": "Cautious right crouched stepping has visible alternating feet and continuous torso bend/recovery; actual stage trajectory and source ground contacts remain.",
+      "review": "pending",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-600-620-1/motion-meshy-618.jpg",
+          "sha256": "766b341f771dd9d79e4c9a393da115ed51c0b97bc900904e36527e2ab47545b4"
+        },
+        {
+          "file": "/tmp/doreumi-library-600-620-1/playback-meshy-618.jpg",
+          "sha256": "aff82b02c7b7d2d55b9f24964871cc29b2237e86b13f5233dc1e1f5812914c25"
+        },
+        {
+          "file": "/tmp/doreumi-library-600-620-0.25/motion-meshy-618.jpg",
+          "sha256": "8027b0649fe33c83ba47295a841e4a9196a7b2acbb144559c84371838ddd0358"
+        },
+        {
+          "file": "/tmp/doreumi-library-600-620-0.25/playback-meshy-618.jpg",
+          "sha256": "eb00ff3e2d7cb2ce29de7dfbd1b5cb84cb37c33b2b184ac0796626be237748bd"
+        }
+      ],
+      "normalPlaybackCoverage": {
+        "firstTime": 0,
+        "lastTime": 2.833300000000014,
+        "duration": 2.8666666189829506,
+        "tolerance": 0.35,
+        "observedFrames": 11,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1
+      },
+      "quarterPlaybackCoverage": {
+        "firstTime": 0,
+        "lastTime": 2.8281749999999843,
+        "duration": 2.8666666189829506,
+        "tolerance": 0.35,
+        "observedFrames": 12,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1
+      }
+    },
+    {
+      "id": "meshy:619",
+      "clipSha256": "1fdddf7fe0d0ed9bd16bb53ba4c36d8e9ca1bd40dba45f9bb64096a08e47d299",
+      "normalViewed": true,
+      "quarterViewed": true,
+      "observation": "Left climb currently reads as a hovering seated shuffle because the required wall/handholds are absent. Add actual fixed support and reconcile hand/foot reach before approval.",
+      "review": "pending",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-600-620-1/motion-meshy-619.jpg",
+          "sha256": "465e6a4fbc8fb8591eba523bd4eaccb0fac89706eb164ceec080a70de1014aac"
+        },
+        {
+          "file": "/tmp/doreumi-library-600-620-1/playback-meshy-619.jpg",
+          "sha256": "4e0b503a316caf459628f9d39ea803a452ca63284ada62bf06e2e40a0515814d"
+        },
+        {
+          "file": "/tmp/doreumi-library-600-620-0.25/motion-meshy-619.jpg",
+          "sha256": "8b8d09fd386b19351457281eab3ed50dbcd897da04af38dbab7f59966fc0409a"
+        },
+        {
+          "file": "/tmp/doreumi-library-600-620-0.25/playback-meshy-619.jpg",
+          "sha256": "fab4dab86d339581521d6f460aa28e6dfe3e76ec6432241c884a6e07287b00fe"
+        }
+      ],
+      "normalPlaybackCoverage": {
+        "firstTime": 0,
+        "lastTime": 2.8471000000000033,
+        "duration": 3.0333333810170493,
+        "tolerance": 0.35,
+        "observedFrames": 11,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1
+      },
+      "quarterPlaybackCoverage": {
+        "firstTime": 0,
+        "lastTime": 2.8231750000000004,
+        "duration": 3.0333333810170493,
+        "tolerance": 0.35,
+        "observedFrames": 12,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1
+      }
+    },
+    {
+      "id": "meshy:620",
+      "clipSha256": "0cc3ae5ceb3fd140b17faef911ed26121f20c23361247feb7888b4127d03f468",
+      "normalViewed": true,
+      "quarterViewed": true,
+      "observation": "Right climb currently reads as a hovering seated shuffle because the required wall/handholds are absent. Add actual fixed support and reconcile hand/foot reach before approval.",
+      "review": "pending",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-library-600-620-1/motion-meshy-620.jpg",
+          "sha256": "cce569aba817d165de2690babd8bad06d6b458ec551fffd8a3b71677d8048831"
+        },
+        {
+          "file": "/tmp/doreumi-library-600-620-1/playback-meshy-620.jpg",
+          "sha256": "aef15a136c04bb9ab478e07fa82c24a8e7d81ee9998ef1c19dc345c3111b522e"
+        },
+        {
+          "file": "/tmp/doreumi-library-600-620-0.25/motion-meshy-620.jpg",
+          "sha256": "47fa6ba25d8ea9d64ad9d0fb6d00daaa1a12d0f39a3815ca67a2809fa8bb9a67"
+        },
+        {
+          "file": "/tmp/doreumi-library-600-620-0.25/playback-meshy-620.jpg",
+          "sha256": "79262eba01b3db2a66e402c9ddd52d232d86e3137e4728ea0874bab4ff1a45f4"
+        }
+      ],
+      "normalPlaybackCoverage": {
+        "firstTime": 0,
+        "lastTime": 2.7994999999999974,
+        "duration": 3.0666667143503825,
+        "tolerance": 0.35,
+        "observedFrames": 11,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1
+      },
+      "quarterPlaybackCoverage": {
+        "firstTime": 0,
+        "lastTime": 2.8076749999999993,
+        "duration": 3.0666667143503825,
+        "tolerance": 0.35,
+        "observedFrames": 12,
+        "monotonic": true,
+        "finalAction": "Idle",
+        "finalActiveActions": 1
+      }
+    }
+  ],
+  "normalComplete": true,
+  "normalReport": {
+    "file": "/tmp/doreumi-library-600-620-1/report.json",
+    "sha256": "8ce52f39fa5596d1d091132bc5d895c62f4ef1dfaac2666e5b1060c9330b9aba"
+  },
+  "quarterComplete": true,
+  "quarterReport": {
+    "file": "/tmp/doreumi-library-600-620-0.25/report.json",
+    "sha256": "1804f81cde8803c60bc86570e0ac91341f287854d78672a05002aa56820df88c"
+  },
+  "cameraLimit": "Captured before the follow-up camera exit shrink fix discovered on502. Pose/support observations stand; final camera exit verification remains."
+}

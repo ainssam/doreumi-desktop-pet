@@ -1,0 +1,108 @@
+{
+  "checkedAt": "2026-09-24T04:13:23.617435+00:00",
+  "masterSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+  "review": "passed",
+  "method": "Exact ignored candidate bytes reviewed, promoted, reaudited from shipping and reproduced through main converter with source/master-bound contact plan. Root inspected each5-angle9-pose sheet and actual playback4fps normal128/1fps quarter. Source-foot full-contact and21-joint60Hz measurements match.",
+  "motions": [
+    {
+      "id": "meshy:23",
+      "review": "passed",
+      "ambient": true,
+      "clipSha256": "8f4af4a3d9089b158749a5fd47774c6886b55397ad22778bb67ff731c4006048",
+      "metadataSha256": "12a571ed33e157fc7fe759dde3fbef9fb031a7296961f6cb2be0ba5e4096124f",
+      "visualFinding": "Alternating foot support, torso sway and turns connect without the old visible sliding or silhouette snap in normal128px and quarter-speed sequences.",
+      "sourcePlantedPairs": 226,
+      "maximumSourceConfirmedSlipFractionHeight": 0.0009494932675016874,
+      "largestIntroducedWorld": {
+        "bone": "thighR",
+        "from": 4.633333333333334,
+        "time": 4.65,
+        "sourceTime": 3.95,
+        "targetLocalDegrees": 6.417070767642306,
+        "targetWorldDegrees": 6.330622981638764,
+        "sourceLocalDegrees": 2.119746434414819,
+        "sourceWorldDegrees": 3.3230483804563944,
+        "jointDistance": 0.009331185224140484
+      },
+      "largestAbsoluteWorld": {
+        "bone": "wristR",
+        "from": 2.683333333333333,
+        "time": 2.7,
+        "sourceTime": 2,
+        "targetLocalDegrees": 10.428767214815503,
+        "targetWorldDegrees": 13.981117890120158,
+        "sourceLocalDegrees": 10.428635779454897,
+        "sourceWorldDegrees": 14.029562801194405,
+        "jointDistance": 0.016483128182263024
+      },
+      "visualEvidence": [
+        {
+          "file": "/tmp/doreumi-geometric-23-1/motion-meshy-23.jpg",
+          "sha256": "50c1e2ef9defafdeb7801f8ccb5e41a1c9e359221b1dfd30274d77a22f301c53"
+        },
+        {
+          "file": "/tmp/doreumi-geometric-23-1/temporal-meshy-23.jpg",
+          "sha256": "5e14993ba30ba1539cb23846b2e6ee73ae91ffdb650a00db1cecafc1ad14dc23"
+        },
+        {
+          "file": "/tmp/doreumi-geometric-23-0.25/motion-meshy-23.jpg",
+          "sha256": "1a7012e6bdc4ba8e7023f684f39f2bc246879ca6d10e8885198b4afc791ea525"
+        },
+        {
+          "file": "/tmp/doreumi-geometric-23-0.25/temporal-meshy-23.jpg",
+          "sha256": "9f0c6d2f8019900fd008c189de0ed89a5ad01d8bd3f491463dca0d51d4c06b29"
+        }
+      ]
+    },
+    {
+      "id": "meshy:24",
+      "review": "passed",
+      "ambient": true,
+      "clipSha256": "96d8aa8a7591f25ea708642d10690111c4849f9716abfec6840864a9f44b37f7",
+      "metadataSha256": "d8e594a94859f038ad05a941e888ab4a11563db56a1427e81470da1eb825cbc5",
+      "visualFinding": "Alternating foot support, torso sway and turns connect without the old visible sliding or silhouette snap in normal128px and quarter-speed sequences.",
+      "sourcePlantedPairs": 277,
+      "maximumSourceConfirmedSlipFractionHeight": 0.0008848512206273052,
+      "largestIntroducedWorld": {
+        "bone": "thighR",
+        "from": 1.0833333333333333,
+        "time": 1.1,
+        "sourceTime": 0.40000000000000013,
+        "targetLocalDegrees": 4.299104329271222,
+        "targetWorldDegrees": 4.493694391892357,
+        "sourceLocalDegrees": 0.936978102489733,
+        "sourceWorldDegrees": 0.3552538727154824,
+        "jointDistance": 0.002348380625377475
+      },
+      "largestAbsoluteWorld": {
+        "bone": "wristR",
+        "from": 6.483333333333333,
+        "time": 6.5,
+        "sourceTime": 5.8,
+        "targetLocalDegrees": 2.52352716692933,
+        "targetWorldDegrees": 13.488653460398801,
+        "sourceLocalDegrees": 2.522835262107051,
+        "sourceWorldDegrees": 13.572414782123918,
+        "jointDistance": 0.04034313792130068
+      },
+      "visualEvidence": [
+        {
+          "file": "/tmp/doreumi-geometric-24-1/motion-meshy-24.jpg",
+          "sha256": "43ee39ef5e58fb83d7251de23f3dc752ed7ce7c7ecfa4b707382b55c30f249fc"
+        },
+        {
+          "file": "/tmp/doreumi-geometric-24-1/temporal-meshy-24.jpg",
+          "sha256": "5181a23efb7de919c1e7c2c60dc1db699eb38e03bf33bbed3fde5adb7fe0bf69"
+        },
+        {
+          "file": "/tmp/doreumi-geometric-24-0.25/motion-meshy-24.jpg",
+          "sha256": "adc8e3695593fa4c42e0ef561a285099b4271954598a7b5705e709751869c842"
+        },
+        {
+          "file": "/tmp/doreumi-geometric-24-0.25/temporal-meshy-24.jpg",
+          "sha256": "aca2caad0321770d1b052e0aeedc89426aecbe17af060a45341e888e234f982d"
+        }
+      ]
+    }
+  ]
+}

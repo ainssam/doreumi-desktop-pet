@@ -1,0 +1,78 @@
+{
+  "checkedAt": "2026-09-24T04:00:08.943596+00:00",
+  "scope": "Three candidate windows,13 frames at60Hz,45/90 degree views, individually inspected. No public clip change or approval.",
+  "review": "pending",
+  "observations": [
+    "4.8167: rear knee release visible, needs full-motion comparison.",
+    "5.85: side-view rear leg folds under body abruptly; remains pending.",
+    "7.3333: reduced visible inward curl versus old coherent-floor-pole, but partly obscured by body."
+  ],
+  "items": [
+    {
+      "sourceCenter": 4.816666666666666,
+      "fractions": [
+        0.5622837407351943,
+        0.564013844552841,
+        0.5657439483704877,
+        0.5674740521881345,
+        0.5692041560057812,
+        0.5709342598234279,
+        0.5726643636410748,
+        0.5743944674587215,
+        0.5761245712763682,
+        0.577854675094015,
+        0.5795847789116617,
+        0.5813148827293084,
+        0.5830449865469551
+      ],
+      "clipSha256": "68161756d4453c48ba89a62e9b1693f845b1adaf0532abe8d651f1728a348908",
+      "numericPass": true,
+      "file": "/tmp/doreumi-67-geometric-focus-0/motion-meshy-67.jpg",
+      "sha256": "ca2b02e965874998b6248996fb37d26465ec89dbf2808a20771988dbc2c11eb6"
+    },
+    {
+      "sourceCenter": 5.85,
+      "fractions": [
+        0.6695501774292928,
+        0.6712802812469396,
+        0.6730103850645863,
+        0.674740488882233,
+        0.6764705926998799,
+        0.6782006965175266,
+        0.6799308003351733,
+        0.68166090415282,
+        0.6833910079704668,
+        0.6851211117881135,
+        0.6868512156057602,
+        0.6885813194234071,
+        0.6903114232410538
+      ],
+      "clipSha256": "68161756d4453c48ba89a62e9b1693f845b1adaf0532abe8d651f1728a348908",
+      "numericPass": true,
+      "file": "/tmp/doreumi-67-geometric-focus-1/motion-meshy-67.jpg",
+      "sha256": "2c487b75d3ff1f96821e3c903064341729417689f871cddc4a84d3774ae34ace"
+    },
+    {
+      "sourceCenter": 7.333333333333333,
+      "fractions": [
+        0.8235294171998537,
+        0.8252595210175004,
+        0.8269896248351472,
+        0.828719728652794,
+        0.8304498324704407,
+        0.8321799362880873,
+        0.8339100401057342,
+        0.8356401439233808,
+        0.8373702477410276,
+        0.8391003515586744,
+        0.8408304553763212,
+        0.8425605591939678,
+        0.8442906630116146
+      ],
+      "clipSha256": "68161756d4453c48ba89a62e9b1693f845b1adaf0532abe8d651f1728a348908",
+      "numericPass": true,
+      "file": "/tmp/doreumi-67-geometric-focus-2/motion-meshy-67.jpg",
+      "sha256": "ec4493433c06d5d4a5af81646de20e7cf9b38e890402a3efe7677f7099aa4553"
+    }
+  ]
+}

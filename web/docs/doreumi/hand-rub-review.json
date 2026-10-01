@@ -1,0 +1,47 @@
+{
+  "id": "meshy:318",
+  "review": "passed",
+  "ambient": true,
+  "convertedSha256": "241003805b82fdd8987118995a986bd412cf00359c5cebd0926a44be8c8a7574",
+  "masterSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+  "metadataSha256": "cf3d515985b2a8a81e96bf0bde6466d2d326e5f5a0656d2b7bcab5c7f0f6000f",
+  "checkedAt": "2026-09-24T02:38:01.741944+00:00",
+  "visualEvidence": [
+    "/tmp/doreumi-hand-318-v3-small",
+    "/tmp/doreumi-hand-318-v3-quarter"
+  ],
+  "inspection": {
+    "angles": [
+      0,
+      90,
+      180,
+      -90,
+      45
+    ],
+    "posesPerAngle": 9,
+    "normalStagePixels": 128,
+    "slowPlaybackRate": 0.25,
+    "slowSkeletonVisible": true,
+    "temporalReview": "Individually inspected 4 fps normal and 2 fps quarter-speed temporal contact sheets at 45 degrees. Not a claim of inspecting every video frame.",
+    "findings": [
+      "Hands visibly meet in front of belly while rubbing; readable at 128 px.",
+      "Short upper arms, elbow bends and wrists remain coherent in front, side, back and quarter views.",
+      "Forward lean, hand release and recovery visibly transition without the previous abrupt arm pop."
+    ]
+  },
+  "numericEvidence": {
+    "sourceFootContactPairs": 198,
+    "missingTargetContactPairs": 0,
+    "excessSlipPairs": 0,
+    "maximumFootDriftPercentHeight": 0.24696,
+    "maximumHandGap": 0.01855,
+    "minimumHandSeparatingPlaneDistance": 0.011337,
+    "armContinuity60Hz": {
+      "localMaximumDegrees": 5.03,
+      "sourceLocalMaximumDegrees": 5.25,
+      "worldMaximumDegrees": 5.77,
+      "sourceWorldMaximumDegrees": 3.29
+    }
+  },
+  "scope": "Approval of this exact clip and metadata only. Other library entries remain independently gated."
+}

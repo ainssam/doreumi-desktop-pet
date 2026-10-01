@@ -1,0 +1,109 @@
+{
+  "review": "passed",
+  "checkedAt": "2026-09-24T03:30:47.416146+00:00",
+  "masterSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+  "method": "Two individually inspected five-angle/nine-pose normal128px and quarter-speed joint-overlay sheets. Actual playback temporal samples4fps normal/1fps quarter. Quarter uses production expressionForMotion mood mapping. Matching full-source physical-foot contact and21-joint60Hz audits. Not every rendered video frame.",
+  "scope": "Two completed actions only, each45quarter samples with no failures. Completed batch has14 unrelated48 mirror framing failures;48 remains pending. No approval of other entries.",
+  "motions": [
+    {
+      "id": "meshy:601",
+      "review": "passed",
+      "ambient": true,
+      "clipSha256": "b2954026c33be3cfc4ea98dfd43b6cab5fa47aa6304665f3d86aff8671e4045f",
+      "metadataSha256": "8e603d177e703ab8364f707670a967387c2ff303a6f4362c593548ff8e9247f2",
+      "visualFinding": "Backflip derivative matches452.",
+      "sourcePlantedPairs": 51,
+      "maximumSourceConfirmedSlipFractionHeight": 0.008795960870122226,
+      "largestIntroducedWorld": {
+        "bone": "footR",
+        "from": 2.65,
+        "time": 2.6666666666666665,
+        "sourceTime": 1.9666666666666666,
+        "targetLocalDegrees": 0.951355403108466,
+        "targetWorldDegrees": 0.1705280172874502,
+        "sourceLocalDegrees": 0.9275315482988887,
+        "sourceWorldDegrees": 0.008530218409527716,
+        "jointDistance": 0.005763467966492622
+      },
+      "largestIntroducedLocal": {
+        "bone": "torso",
+        "from": 1.7,
+        "time": 1.7166666666666666,
+        "sourceTime": 1.0166666666666666,
+        "targetLocalDegrees": 3.0517299723642832,
+        "targetWorldDegrees": 7.191492224499967,
+        "sourceLocalDegrees": 0.022978143873602187,
+        "sourceWorldDegrees": 7.191639376454784,
+        "jointDistance": 0.07059975845020147
+      },
+      "visualEvidence": [
+        {
+          "file": "/tmp/doreumi-contact-clean-small-b/motion-meshy-601.jpg",
+          "sha256": "9dcce96c82198cfc24d8111a7220460364e1bafc24e919caf1ce0ed641e94243"
+        },
+        {
+          "file": "/tmp/doreumi-contact-clean-small-b/temporal-601.jpg",
+          "sha256": "e458f09815f714e46f617cc9fd44d5c098c2a9fba8f2f77d22fc0e23866bbbe7"
+        },
+        {
+          "file": "/tmp/doreumi-contact-clean-quarter-b/motion-meshy-601.jpg",
+          "sha256": "2f4c40d0b28bbdba7f943afdea1cf2a3c1dd420628955f2d79c32a39de4d7e5a"
+        },
+        {
+          "file": "/tmp/doreumi-contact-clean-quarter-b/temporal-meshy-601.jpg",
+          "sha256": "fe3c0a6b360d550021db7c73d1219e6ea8912fc7f1197b12fce3b31ed4c0a552"
+        }
+      ]
+    },
+    {
+      "id": "meshy:639",
+      "review": "passed",
+      "ambient": true,
+      "clipSha256": "42beed94ff90692c0190c35b35a7a2d64f6a7793f74b8773878e265c24673af8",
+      "metadataSha256": "46f76d9810fe3c244c5e622b6138894bc12b029fd966ee9ea9f2427f65cf8b2a",
+      "visualFinding": "Raised arms with alternating knees, lively silhouette.",
+      "sourcePlantedPairs": 2,
+      "maximumSourceConfirmedSlipFractionHeight": 0.009809184929671363,
+      "largestIntroducedWorld": {
+        "bone": "wristR",
+        "from": 3.683333333333333,
+        "time": 3.7,
+        "sourceTime": 2.7666666666666666,
+        "targetLocalDegrees": 2.2659815240427,
+        "targetWorldDegrees": 5.619241280470107,
+        "sourceLocalDegrees": 2.2656981489819175,
+        "sourceWorldDegrees": 5.365048540813256,
+        "jointDistance": 0.027263376086759498
+      },
+      "largestIntroducedLocal": {
+        "bone": "torso",
+        "from": 3.55,
+        "time": 3.566666666666667,
+        "sourceTime": 2.6333333333333337,
+        "targetLocalDegrees": 1.0283979081307568,
+        "targetWorldDegrees": 0.13946451852109312,
+        "sourceLocalDegrees": 0.034609349166826675,
+        "sourceWorldDegrees": 0.14048515431901257,
+        "jointDistance": 0.008778993057880392
+      },
+      "visualEvidence": [
+        {
+          "file": "/tmp/doreumi-contact-clean-small-b/motion-meshy-639.jpg",
+          "sha256": "f31af9bfa5cd45546e84d9cb1ef54edd7043594dc078c7cdafd8192034b54118"
+        },
+        {
+          "file": "/tmp/doreumi-contact-clean-small-b/temporal-639.jpg",
+          "sha256": "2a28c76511a7b9029b0444bde94869c63d76ea4ff9f6507b923534e7682de510"
+        },
+        {
+          "file": "/tmp/doreumi-contact-clean-quarter-b/motion-meshy-639.jpg",
+          "sha256": "d08639f19c8130374dfbcc1af675a2b4f53e92932f4898af7b07aae46653e418"
+        },
+        {
+          "file": "/tmp/doreumi-contact-clean-quarter-b/temporal-meshy-639.jpg",
+          "sha256": "5c41911e4e48562ed6b813393ba33c8024ee17c83c9485488d0ae553897bcbda"
+        }
+      ]
+    }
+  ]
+}

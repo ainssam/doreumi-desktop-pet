@@ -1,0 +1,41 @@
+{
+  "id": "meshy:27",
+  "review": "pending",
+  "ambient": false,
+  "masterSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+  "convertedSha256": "36f416908c2086202cf351b8ad7914ee8de1779aa80139cc32c91f08238a90d1",
+  "metadataSha256": "39502f1dc39f72af8668927831fd9b5aa04916aaf96aea36b40fbedff2bb7eb1",
+  "scope": "Cheek-heart adaptation on the original short-arm character, everyday wardrobe. Desktop browser rendering, not physical-device testing.",
+  "reviewer": "root",
+  "findings": [
+    "Both hands reach the cheeks without stretching the original arm lengths. Elbows and wrists sit within the arm silhouette in front, both side, rear and 45-degree overlays.",
+    "Entry raises hands with a slight torso dip, the held pose retains small body motion, and release lowers the arms before Idle. Normal playback and quarter-speed video-derived temporal frames were inspected.",
+    "The 128px normal playback keeps hands/face readable. No sampled clipping, floor penetration, neck split or abrupt limb reversal. Love expression remains visible."
+  ],
+  "evidence": [
+    {
+      "directory": "/tmp/doreumi-heart-v1",
+      "runtimeBundleSha256": "e5558ab3da1e00b373360cd496e318ae7c6754efb00f19d6a62993b5e7b41f3a",
+      "playbackRate": 0.25,
+      "pass": true
+    },
+    {
+      "directory": "/tmp/doreumi-heart-small-v2",
+      "runtimeBundleSha256": "95c23725f3d8de6351c9ee9bb4c3774f0de1f94ca7ff5ed7c116c60eb2af0d9f",
+      "playbackRate": 1,
+      "pass": true
+    },
+    {
+      "directory": "/tmp/doreumi-heart-joints-v2",
+      "runtimeBundleSha256": "95c23725f3d8de6351c9ee9bb4c3774f0de1f94ca7ff5ed7c116c60eb2af0d9f",
+      "playbackRate": 0.25,
+      "pass": true
+    }
+  ],
+  "contactVerification": "tests/doreumi-meshy-heart.test.mjs: decoded shipping clip surface-to-cheek contact and unchanged bone lengths.",
+  "superseded": {
+    "reason": "Source-confirmed actual foot-skin audit found 93 of 229 planted pairs missing left-foot contact, soleY up to .0694. Prior visual approval revoked; lower-body correction and renewed visual evidence required.",
+    "review": "pending",
+    "ambient": false
+  }
+}

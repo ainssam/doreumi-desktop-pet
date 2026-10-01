@@ -1,0 +1,131 @@
+{
+  "version": 1,
+  "date": "2026-09-25",
+  "reviewer": "Claude (main visual lane)",
+  "masterSha256": "ff950b38e254c5a92c4d198bc333cf9b5763883f5f824de06b8c688019f0afa1",
+  "method": "Batch = pending motions with no numeric work group flags in pending-motion-inventory.json (contact, travel, prop, joint continuity, replay, character-fit). Random samples of 6 rendered in the real isolated renderer at 0/45/90/-90/180 deg and 8-11 phases; suspicious windows re-rendered at ~10 fps. Approve the batch after two consecutive clean samples, per user instruction to sample, fix, resample.",
+  "batch": [
+    3,
+    264,
+    265,
+    266,
+    267,
+    270,
+    271,
+    321,
+    322,
+    324,
+    325,
+    328,
+    329,
+    330,
+    340,
+    344,
+    345,
+    346,
+    347,
+    348,
+    349,
+    350,
+    351,
+    352,
+    353,
+    362,
+    363,
+    365,
+    366,
+    367,
+    368,
+    369,
+    370,
+    372,
+    396,
+    490,
+    504
+  ],
+  "rounds": [
+    {
+      "seed": 20260925,
+      "sample": [
+        350,
+        322,
+        370,
+        321,
+        365,
+        344
+      ],
+      "captures": {
+        "350": {
+          "frames": 40,
+          "sha256": "0ff831b103577f216e500be7da924521efae6012f34894898018f1af184a6f6e"
+        },
+        "322": {
+          "frames": 40,
+          "sha256": "70248e59f95160826fa2b48974b6b8368bd258d779a8eb3a57c379ed0280cbeb"
+        },
+        "370": {
+          "frames": 40,
+          "sha256": "bf287419987108a9cb5c85cf7d4f7fae1a7a31cb41c0e243d7ec4e715a26b872"
+        },
+        "321": {
+          "frames": 40,
+          "sha256": "d6a16dd985f8c0725dd42046c4510412cee658cc63e4ec19aec6dcae2ac10d9e"
+        },
+        "365": {
+          "frames": 40,
+          "sha256": "55b8c4b91d4ee73c688ce4011e054b5ea26d22ceee1459b216c1235afa9ebe43"
+        },
+        "344": {
+          "frames": 40,
+          "sha256": "d77aab2b3c20821e07c852209bcd65812cc623753a4d967e139c3cfd74565027"
+        }
+      },
+      "verdict": "6/6 natural. 344 entry uses the approved master Lie path (sit then recline). 370 exit rolls from side to back over ~0.9 s without a snap (10 fps recheck)."
+    },
+    {
+      "seed": 925,
+      "sample": [
+        396,
+        265,
+        264,
+        372,
+        363,
+        325
+      ],
+      "captures": {
+        "396": {
+          "frames": 55,
+          "sha256": "d6595454b8ca58697475a233d621f19eb20659c7e2ee9cf8a9944c6e36cec41e"
+        },
+        "265": {
+          "frames": 55,
+          "sha256": "420ed8c2bde6bb0d6472421ac491e6955da0bb05da380a9373617cc0f264c2e0"
+        },
+        "264": {
+          "frames": 55,
+          "sha256": "1d9c2877416b98045542fa0e43580c04845c8693811d2f024e90dccb897683c1"
+        },
+        "372": {
+          "frames": 55,
+          "sha256": "bc418caf67b4a4fbc6e3b143c4909b7e2145cc8df63502f4bfbf6594d3ae917b"
+        },
+        "363": {
+          "frames": 55,
+          "sha256": "ef54da89b6fb9dcefbfdccd5ae67c9a419289b483c45e39b615e8bdd459af209"
+        },
+        "325": {
+          "frames": 55,
+          "sha256": "effb6746bf85dd80fd0773bfcd1add405222128162473941828a5eb496fc871b"
+        }
+      },
+      "verdict": "6/6 natural. Prone entries follow kneel, brace, lower over ~3 s."
+    }
+  ],
+  "characterFitExclusions": {
+    "264": "자다가 기침",
+    "265": "배를 잡고 끙끙",
+    "367": "옆으로 누워 도와달라고 손 뻗기",
+    "372": "엎드려 도와달라고 손 뻗기"
+  },
+  "note": "Sampling approves the unsampled members of this numerically clean batch; it does not replace per-motion review for flagged groups."
+}

@@ -1,0 +1,1941 @@
+{
+  "version": 2,
+  "actionId": 502,
+  "status": "passed-source-bound-authored-cartoon-hop-dive",
+  "masterSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+  "sourceSha256": "d4eeaeea8e16dc1ec703aeb13f42eaf7fd638923258ef4923efdd5efa847990b",
+  "clipSha256": "c1a29fe35a74c0e51b563c5d16accfb4102d20b956925451347ccfdaea7b4ba0",
+  "problem": "The acquired 4.5-second source is an in-place prone freefall cycle. Its full skin stays .654–.827 above the donor rest floor. Using its airborne foot p10=.677 as a ground plane falsely rebased the whole source next to the floor.",
+  "rejectedCandidate": {
+    "clipSha256": "12f0b878434d0eaf3f2a0c6bbf01329293e59cef6ad03b97fa647b8f60649747",
+    "archive": ".artifacts/doreumi-contact-audit/airborne-502-v1",
+    "reason": "Root visually rejected the six-second flight: the tracking camera cancelled the visible trajectory and the long prone interval read as stationary hovering.",
+    "visualReport": "/tmp/doreumi-candidate-502-1/report.json",
+    "reportSha256": "e37ca7111dd0f1e5aaab082948c94d1ca3768df644f60a1a72ad3e5e398e241b"
+  },
+  "adaptation": {
+    "sourceDuration": 4.5,
+    "playbackSourceDuration": 0.9,
+    "sourceTimeScale": 5,
+    "sourceSequencePreserved": true,
+    "originalSourceTimingPreserved": false,
+    "originalSourceRootIsBallistic": false,
+    "authoredRoot": true,
+    "flightDuration": 1.4,
+    "camera": "fixed-ground",
+    "duration": 2.7286686089494943,
+    "entryDuration": 0.9267770601641712,
+    "exitDuration": 0.9018915487853231,
+    "footSupport": "Frozen-master crouch and leg extension followed by airborne folding, retimed source sequence, feet-down unfolding, compression, recovery.",
+    "palmSupportClaimed": false,
+    "bodyGeometryAndBoneLengthsUnchanged": true
+  },
+  "numeric": {
+    "actionId": 502,
+    "clipSha256": "c1a29fe35a74c0e51b563c5d16accfb4102d20b956925451347ccfdaea7b4ba0",
+    "sourceSha256": "d4eeaeea8e16dc1ec703aeb13f42eaf7fd638923258ef4923efdd5efa847990b",
+    "version": 1,
+    "fps": 120,
+    "method": "Serialized candidate; every joint local/world quaternion; exact deformed skin envelope; fixed material-point foot vertices per authored support phase.",
+    "bounds": {
+      "minY": 0.0019718628515162234,
+      "maxY": 2.200738466852494,
+      "radius": 1.6934975929800418
+    },
+    "minimumCoreSkinY": 0.3070427366443355,
+    "maximumRootBallisticError": 5.33384194811859e-7,
+    "maximumPreservedCoreQuaternionError": 0.0005095219262101771,
+    "maximumLocalStep": {
+      "bone": "kneeL",
+      "degrees": 11.185216471822754,
+      "from": 0.6666666666666666,
+      "time": 0.675
+    },
+    "maximumWorldStep": {
+      "bone": "elbowL",
+      "degrees": 12.021034549313962,
+      "from": 0.8,
+      "time": 0.8083333333333333
+    },
+    "velocityContinuity": [
+      {
+        "time": 0.6767770601641712,
+        "incoming": 1.1344671249389648,
+        "outgoing": 1.1754941940307617
+      },
+      {
+        "time": 2.0767770601641713,
+        "incoming": -1.1892271041870117,
+        "outgoing": -1.155409812927246
+      }
+    ],
+    "supportPhases": [
+      {
+        "name": "feet-supported-takeoff",
+        "from": 0,
+        "to": 0.6767770601641712,
+        "samples": 83,
+        "minimumFootY": 0.0023396159963050833,
+        "maximumFootMinimumY": 0.004006108320553578,
+        "maximumMaterialPointDrift": 0.0009613404669100989,
+        "anchors": {
+          "L": {
+            "vertexId": 62343,
+            "index": 1027,
+            "position": [
+              0.2454804827910108,
+              0.002385661008228901,
+              0.07364810514578389
+            ]
+          },
+          "R": {
+            "vertexId": 13171,
+            "index": 1199,
+            "position": [
+              -0.27847926549054247,
+              0.0023397374153129036,
+              0.033988555008275925
+            ]
+          }
+        }
+      },
+      {
+        "name": "feet-supported-landing",
+        "from": 2.0767770601641713,
+        "to": 2.7286686089494943,
+        "samples": 80,
+        "minimumFootY": 0.0019718628515162234,
+        "maximumFootMinimumY": 0.002639471976273497,
+        "maximumMaterialPointDrift": 0.0033592619657911438,
+        "anchors": {
+          "L": {
+            "vertexId": 62343,
+            "index": 1027,
+            "position": [
+              0.2454804827910108,
+              0.0023856102912239996,
+              0.07377061248439004
+            ]
+          },
+          "R": {
+            "vertexId": 13171,
+            "index": 1199,
+            "position": [
+              -0.27847926549054247,
+              0.0023396869689575744,
+              0.03411106234656869
+            ]
+          }
+        }
+      }
+    ],
+    "airborneSupport": "none",
+    "palmContactClaimed": false,
+    "sourceAirborne": {
+      "restFloor": -7.224277439460414e-8,
+      "minimumSkinY": 0.654270158726361,
+      "maximumSkinMinimumY": 0.82656562639924,
+      "confirmed": true,
+      "originalRootIsBallistic": false,
+      "donorContactPairsClaimed": 0
+    }
+  },
+  "allJoint60Hz": {
+    "actionId": 502,
+    "sourceActionId": 502,
+    "sourceName": "Fall1",
+    "clipSha256": "c1a29fe35a74c0e51b563c5d16accfb4102d20b956925451347ccfdaea7b4ba0",
+    "sourceSha256": "d4eeaeea8e16dc1ec703aeb13f42eaf7fd638923258ef4923efdd5efa847990b",
+    "sourceTimeScale": 5,
+    "localMaxima": {
+      "DoreumiRig": {
+        "bone": "DoreumiRig",
+        "from": 0.9333333333333333,
+        "time": 0.95,
+        "sourceTime": 0.11611469917914397,
+        "targetLocalDegrees": 0,
+        "targetWorldDegrees": 0,
+        "sourceLocalDegrees": null,
+        "sourceWorldDegrees": null,
+        "jointDistance": 0.01222372055053711
+      },
+      "root": {
+        "bone": "root",
+        "from": 0.9333333333333333,
+        "time": 0.95,
+        "sourceTime": 0.11611469917914397,
+        "targetLocalDegrees": 0,
+        "targetWorldDegrees": 0,
+        "sourceLocalDegrees": null,
+        "sourceWorldDegrees": null,
+        "jointDistance": 0.01222372055053711
+      },
+      "body": {
+        "bone": "body",
+        "from": 0.9333333333333333,
+        "time": 0.95,
+        "sourceTime": 0.11611469917914397,
+        "targetLocalDegrees": 2.6665576331191243,
+        "targetWorldDegrees": 2.6666033005651064,
+        "sourceLocalDegrees": 2.7587607520380333,
+        "sourceWorldDegrees": 2.7587607520359194,
+        "jointDistance": 0.01222372055053711
+      },
+      "torso": {
+        "bone": "torso",
+        "from": 1.8,
+        "time": 1.8166666666666667,
+        "sourceTime": 4.4494480325124774,
+        "targetLocalDegrees": 1.9962049994288191,
+        "targetWorldDegrees": 1.8607386704654336,
+        "sourceLocalDegrees": 0.21406898365873417,
+        "sourceWorldDegrees": 1.946934921707837,
+        "jointDistance": 0.008716980504725557
+      },
+      "head": {
+        "bone": "head",
+        "from": 1.7,
+        "time": 1.7166666666666666,
+        "sourceTime": 3.949448032512477,
+        "targetLocalDegrees": 2.491466968274048,
+        "targetWorldDegrees": 4.546682437431335,
+        "sourceLocalDegrees": 2.4677421569634053,
+        "sourceWorldDegrees": 4.68167803307915,
+        "jointDistance": 0.013988468824148012
+      },
+      "shoulderL": {
+        "bone": "shoulderL",
+        "from": 1.15,
+        "time": 1.1666666666666667,
+        "sourceTime": 1.199448032512478,
+        "targetLocalDegrees": 5.10165618981658,
+        "targetWorldDegrees": 6.15118181980243,
+        "sourceLocalDegrees": 5.105664637862816,
+        "sourceWorldDegrees": 6.298014505561899,
+        "jointDistance": 0.009815556760828107
+      },
+      "armL": {
+        "bone": "armL",
+        "from": 1.8,
+        "time": 1.8166666666666667,
+        "sourceTime": 4.4494480325124774,
+        "targetLocalDegrees": 10.837307412945567,
+        "targetWorldDegrees": 17.714123634328608,
+        "sourceLocalDegrees": 10.837493695298344,
+        "sourceWorldDegrees": 18.016597183616977,
+        "jointDistance": 0.027762103940831843
+      },
+      "elbowL": {
+        "bone": "elbowL",
+        "from": 1.3166666666666667,
+        "time": 1.3333333333333333,
+        "sourceTime": 2.0327813658458105,
+        "targetLocalDegrees": 8.963747706040246,
+        "targetWorldDegrees": 19.652116491721248,
+        "sourceLocalDegrees": 9.006881981772692,
+        "sourceWorldDegrees": 19.877389892293774,
+        "jointDistance": 0.05963306262401871
+      },
+      "wristL": {
+        "bone": "wristL",
+        "from": 1.15,
+        "time": 1.1666666666666667,
+        "sourceTime": 1.199448032512478,
+        "targetLocalDegrees": 7.703488943489037,
+        "targetWorldDegrees": 15.335263259300987,
+        "sourceLocalDegrees": 7.703531715014906,
+        "sourceWorldDegrees": 15.454136148016312,
+        "jointDistance": 0.07875021714228272
+      },
+      "shoulderR": {
+        "bone": "shoulderR",
+        "from": 0.9333333333333333,
+        "time": 0.95,
+        "sourceTime": 0.11611469917914397,
+        "targetLocalDegrees": 7.734208451650378,
+        "targetWorldDegrees": 8.086634243190309,
+        "sourceLocalDegrees": 7.614014569635611,
+        "sourceWorldDegrees": 8.03664487405292,
+        "jointDistance": 0.030451845535810304
+      },
+      "armR": {
+        "bone": "armR",
+        "from": 1.1,
+        "time": 1.1166666666666667,
+        "sourceTime": 0.9494480325124777,
+        "targetLocalDegrees": 14.705845350209367,
+        "targetWorldDegrees": 15.102614945291297,
+        "sourceLocalDegrees": 14.70608258352123,
+        "sourceWorldDegrees": 15.065024156869276,
+        "jointDistance": 0.016611262734880724
+      },
+      "elbowR": {
+        "bone": "elbowR",
+        "from": 0.9833333333333333,
+        "time": 1,
+        "sourceTime": 0.3661146991791442,
+        "targetLocalDegrees": 8.041885160271727,
+        "targetWorldDegrees": 20.057101951832024,
+        "sourceLocalDegrees": 8.041937732153343,
+        "sourceWorldDegrees": 20.120012745894687,
+        "jointDistance": 0.0732469603157592
+      },
+      "wristR": {
+        "bone": "wristR",
+        "from": 1.0833333333333333,
+        "time": 1.1,
+        "sourceTime": 0.8661146991791446,
+        "targetLocalDegrees": 5.585860852096986,
+        "targetWorldDegrees": 16.736481029864024,
+        "sourceLocalDegrees": 5.646204115528759,
+        "sourceWorldDegrees": 16.825272720555994,
+        "jointDistance": 0.08750758328097258
+      },
+      "thighL": {
+        "bone": "thighL",
+        "from": 1.1333333333333333,
+        "time": 1.15,
+        "sourceTime": 1.1161146991791437,
+        "targetLocalDegrees": 7.93677577657622,
+        "targetWorldDegrees": 6.588720524723308,
+        "sourceLocalDegrees": 8.214705211224878,
+        "sourceWorldDegrees": 6.846510678986587,
+        "jointDistance": 0.005933998492057316
+      },
+      "kneeL": {
+        "bone": "kneeL",
+        "from": 1.4166666666666667,
+        "time": 1.4333333333333333,
+        "sourceTime": 2.532781365845811,
+        "targetLocalDegrees": 13.173932768278451,
+        "targetWorldDegrees": 8.698376569860265,
+        "sourceLocalDegrees": 13.191572359649797,
+        "sourceWorldDegrees": 8.714241954896265,
+        "jointDistance": 0.013635179949333909
+      },
+      "shinL": {
+        "bone": "shinL",
+        "from": 0.9333333333333333,
+        "time": 0.95,
+        "sourceTime": 0.11611469917914397,
+        "targetLocalDegrees": 0,
+        "targetWorldDegrees": 4.028613022000325,
+        "sourceLocalDegrees": null,
+        "sourceWorldDegrees": null,
+        "jointDistance": 0.011100990943048611
+      },
+      "footL": {
+        "bone": "footL",
+        "from": 0.95,
+        "time": 0.9666666666666667,
+        "sourceTime": 0.19944803251247756,
+        "targetLocalDegrees": 20.32584171824401,
+        "targetWorldDegrees": 20.61045723979096,
+        "sourceLocalDegrees": 20.32565973044824,
+        "sourceWorldDegrees": 20.55279449271942,
+        "jointDistance": 0.006602073400876679
+      },
+      "thighR": {
+        "bone": "thighR",
+        "from": 1.7666666666666666,
+        "time": 1.7833333333333334,
+        "sourceTime": 4.282781365845811,
+        "targetLocalDegrees": 11.126121400401853,
+        "targetWorldDegrees": 12.209910241126945,
+        "sourceLocalDegrees": 11.125929829764287,
+        "sourceWorldDegrees": 12.346450458188615,
+        "jointDistance": 0.02176401984752574
+      },
+      "kneeR": {
+        "bone": "kneeR",
+        "from": 1.75,
+        "time": 1.7666666666666666,
+        "sourceTime": 4.1994480325124774,
+        "targetLocalDegrees": 16.928025493982265,
+        "targetWorldDegrees": 15.216762324942511,
+        "sourceLocalDegrees": 17.136818125454305,
+        "sourceWorldDegrees": 15.414943660122765,
+        "jointDistance": 0.04332218713476147
+      },
+      "shinR": {
+        "bone": "shinR",
+        "from": 0.9333333333333333,
+        "time": 0.95,
+        "sourceTime": 0.11611469917914397,
+        "targetLocalDegrees": 0,
+        "targetWorldDegrees": 2.669104404705022,
+        "sourceLocalDegrees": null,
+        "sourceWorldDegrees": null,
+        "jointDistance": 0.0236613129695549
+      },
+      "footR": {
+        "bone": "footR",
+        "from": 1.0666666666666667,
+        "time": 1.0833333333333333,
+        "sourceTime": 0.7827813658458105,
+        "targetLocalDegrees": 7.336176929077913,
+        "targetWorldDegrees": 10.522357897434263,
+        "sourceLocalDegrees": 7.417902317166725,
+        "sourceWorldDegrees": 10.448218743358765,
+        "jointDistance": 0.015234773380533705
+      }
+    },
+    "worldMaxima": {
+      "DoreumiRig": {
+        "bone": "DoreumiRig",
+        "from": 0.9333333333333333,
+        "time": 0.95,
+        "sourceTime": 0.11611469917914397,
+        "targetLocalDegrees": 0,
+        "targetWorldDegrees": 0,
+        "sourceLocalDegrees": null,
+        "sourceWorldDegrees": null,
+        "jointDistance": 0.01222372055053711
+      },
+      "root": {
+        "bone": "root",
+        "from": 0.9333333333333333,
+        "time": 0.95,
+        "sourceTime": 0.11611469917914397,
+        "targetLocalDegrees": 0,
+        "targetWorldDegrees": 0,
+        "sourceLocalDegrees": null,
+        "sourceWorldDegrees": null,
+        "jointDistance": 0.01222372055053711
+      },
+      "body": {
+        "bone": "body",
+        "from": 0.9333333333333333,
+        "time": 0.95,
+        "sourceTime": 0.11611469917914397,
+        "targetLocalDegrees": 2.6665576331191243,
+        "targetWorldDegrees": 2.6666033005651064,
+        "sourceLocalDegrees": 2.7587607520380333,
+        "sourceWorldDegrees": 2.7587607520359194,
+        "jointDistance": 0.01222372055053711
+      },
+      "torso": {
+        "bone": "torso",
+        "from": 1.7833333333333334,
+        "time": 1.8,
+        "sourceTime": 4.366114699179144,
+        "targetLocalDegrees": 1.6232390674416035,
+        "targetWorldDegrees": 3.021558479947756,
+        "sourceLocalDegrees": 0.3087233981325887,
+        "sourceWorldDegrees": 2.9495236527547224,
+        "jointDistance": 0.008587315133859436
+      },
+      "head": {
+        "bone": "head",
+        "from": 1.7,
+        "time": 1.7166666666666666,
+        "sourceTime": 3.949448032512477,
+        "targetLocalDegrees": 2.491466968274048,
+        "targetWorldDegrees": 4.546682437431335,
+        "sourceLocalDegrees": 2.4677421569634053,
+        "sourceWorldDegrees": 4.68167803307915,
+        "jointDistance": 0.013988468824148012
+      },
+      "shoulderL": {
+        "bone": "shoulderL",
+        "from": 1.2333333333333334,
+        "time": 1.25,
+        "sourceTime": 1.6161146991791442,
+        "targetLocalDegrees": 4.643936772840395,
+        "targetWorldDegrees": 7.143329360694761,
+        "sourceLocalDegrees": 4.717895837933896,
+        "sourceWorldDegrees": 7.424308654923771,
+        "jointDistance": 0.016451859829482298
+      },
+      "armL": {
+        "bone": "armL",
+        "from": 1.8,
+        "time": 1.8166666666666667,
+        "sourceTime": 4.4494480325124774,
+        "targetLocalDegrees": 10.837307412945567,
+        "targetWorldDegrees": 17.714123634328608,
+        "sourceLocalDegrees": 10.837493695298344,
+        "sourceWorldDegrees": 18.016597183616977,
+        "jointDistance": 0.027762103940831843
+      },
+      "elbowL": {
+        "bone": "elbowL",
+        "from": 1.3166666666666667,
+        "time": 1.3333333333333333,
+        "sourceTime": 2.0327813658458105,
+        "targetLocalDegrees": 8.963747706040246,
+        "targetWorldDegrees": 19.652116491721248,
+        "sourceLocalDegrees": 9.006881981772692,
+        "sourceWorldDegrees": 19.877389892293774,
+        "jointDistance": 0.05963306262401871
+      },
+      "wristL": {
+        "bone": "wristL",
+        "from": 1.3166666666666667,
+        "time": 1.3333333333333333,
+        "sourceTime": 2.0327813658458105,
+        "targetLocalDegrees": 2.2993931383521304,
+        "targetWorldDegrees": 20.7375782437371,
+        "sourceLocalDegrees": 2.290061227347597,
+        "sourceWorldDegrees": 20.960731324362495,
+        "jointDistance": 0.09497291264823471
+      },
+      "shoulderR": {
+        "bone": "shoulderR",
+        "from": 1.7833333333333334,
+        "time": 1.8,
+        "sourceTime": 4.366114699179144,
+        "targetLocalDegrees": 6.688887365023605,
+        "targetWorldDegrees": 9.694473599209028,
+        "sourceLocalDegrees": 6.6887896216077465,
+        "sourceWorldDegrees": 9.616643148392951,
+        "jointDistance": 0.028019479253925984
+      },
+      "armR": {
+        "bone": "armR",
+        "from": 1.7833333333333334,
+        "time": 1.8,
+        "sourceTime": 4.366114699179144,
+        "targetLocalDegrees": 11.527228759283691,
+        "targetWorldDegrees": 16.92912612464011,
+        "sourceLocalDegrees": 11.527213837155864,
+        "sourceWorldDegrees": 16.83527930882444,
+        "jointDistance": 0.05303148060151184
+      },
+      "elbowR": {
+        "bone": "elbowR",
+        "from": 1.2,
+        "time": 1.2166666666666666,
+        "sourceTime": 1.449448032512477,
+        "targetLocalDegrees": 5.713691123380042,
+        "targetWorldDegrees": 20.084705260434735,
+        "sourceLocalDegrees": 5.701375806354215,
+        "sourceWorldDegrees": 19.949932052816433,
+        "jointDistance": 0.07136647337732992
+      },
+      "wristR": {
+        "bone": "wristR",
+        "from": 1.2,
+        "time": 1.2166666666666666,
+        "sourceTime": 1.449448032512477,
+        "targetLocalDegrees": 1.8932063035851823,
+        "targetWorldDegrees": 19.438074350991148,
+        "sourceLocalDegrees": 1.8281218337813578,
+        "sourceWorldDegrees": 19.314484388057746,
+        "jointDistance": 0.09893781479944741
+      },
+      "thighL": {
+        "bone": "thighL",
+        "from": 1.7833333333333334,
+        "time": 1.8,
+        "sourceTime": 4.366114699179144,
+        "targetLocalDegrees": 6.988112860236373,
+        "targetWorldDegrees": 7.9730868601300235,
+        "sourceLocalDegrees": 7.134984278880833,
+        "sourceWorldDegrees": 8.142761683740241,
+        "jointDistance": 0.006618106103509759
+      },
+      "kneeL": {
+        "bone": "kneeL",
+        "from": 1.5333333333333334,
+        "time": 1.55,
+        "sourceTime": 3.1161146991791444,
+        "targetLocalDegrees": 10.44222856057526,
+        "targetWorldDegrees": 9.585394766677595,
+        "sourceLocalDegrees": 10.398175581343787,
+        "sourceWorldDegrees": 9.612408210348214,
+        "jointDistance": 0.012902790274105356
+      },
+      "shinL": {
+        "bone": "shinL",
+        "from": 1.5333333333333334,
+        "time": 1.55,
+        "sourceTime": 3.1161146991791444,
+        "targetLocalDegrees": 0,
+        "targetWorldDegrees": 9.58539476667729,
+        "sourceLocalDegrees": null,
+        "sourceWorldDegrees": null,
+        "jointDistance": 0.012902790274105356
+      },
+      "footL": {
+        "bone": "footL",
+        "from": 0.95,
+        "time": 0.9666666666666667,
+        "sourceTime": 0.19944803251247756,
+        "targetLocalDegrees": 20.32584171824401,
+        "targetWorldDegrees": 20.61045723979096,
+        "sourceLocalDegrees": 20.32565973044824,
+        "sourceWorldDegrees": 20.55279449271942,
+        "jointDistance": 0.006602073400876679
+      },
+      "thighR": {
+        "bone": "thighR",
+        "from": 1.7666666666666666,
+        "time": 1.7833333333333334,
+        "sourceTime": 4.282781365845811,
+        "targetLocalDegrees": 11.126121400401853,
+        "targetWorldDegrees": 12.209910241126945,
+        "sourceLocalDegrees": 11.125929829764287,
+        "sourceWorldDegrees": 12.346450458188615,
+        "jointDistance": 0.02176401984752574
+      },
+      "kneeR": {
+        "bone": "kneeR",
+        "from": 1.75,
+        "time": 1.7666666666666666,
+        "sourceTime": 4.1994480325124774,
+        "targetLocalDegrees": 16.928025493982265,
+        "targetWorldDegrees": 15.216762324942511,
+        "sourceLocalDegrees": 17.136818125454305,
+        "sourceWorldDegrees": 15.414943660122765,
+        "jointDistance": 0.04332218713476147
+      },
+      "shinR": {
+        "bone": "shinR",
+        "from": 1.75,
+        "time": 1.7666666666666666,
+        "sourceTime": 4.1994480325124774,
+        "targetLocalDegrees": 0,
+        "targetWorldDegrees": 15.21676232494232,
+        "sourceLocalDegrees": null,
+        "sourceWorldDegrees": null,
+        "jointDistance": 0.04332218713476147
+      },
+      "footR": {
+        "bone": "footR",
+        "from": 1.7666666666666666,
+        "time": 1.7833333333333334,
+        "sourceTime": 4.282781365845811,
+        "targetLocalDegrees": 2.0444927399106945,
+        "targetWorldDegrees": 13.51241347044984,
+        "sourceLocalDegrees": 2.0444989538058205,
+        "sourceWorldDegrees": 13.57095625459835,
+        "jointDistance": 0.05446860167777716
+      }
+    },
+    "transitionLocalMaxima": {
+      "DoreumiRig": {
+        "bone": "DoreumiRig",
+        "from": 0,
+        "time": 0.016666666666666666,
+        "sourceTime": 0,
+        "targetLocalDegrees": 0,
+        "targetWorldDegrees": 0,
+        "sourceLocalDegrees": null,
+        "sourceWorldDegrees": null,
+        "jointDistance": 0.000041484832763671875
+      },
+      "root": {
+        "bone": "root",
+        "from": 0,
+        "time": 0.016666666666666666,
+        "sourceTime": 0,
+        "targetLocalDegrees": 0,
+        "targetWorldDegrees": 0,
+        "sourceLocalDegrees": null,
+        "sourceWorldDegrees": null,
+        "jointDistance": 0.000041484832763671875
+      },
+      "body": {
+        "bone": "body",
+        "from": 0.8,
+        "time": 0.8166666666666667,
+        "sourceTime": 0,
+        "targetLocalDegrees": 9.5694356204296,
+        "targetWorldDegrees": 9.569318395698934,
+        "sourceLocalDegrees": 0,
+        "sourceWorldDegrees": 0,
+        "jointDistance": 0.016001343727111816
+      },
+      "torso": {
+        "bone": "torso",
+        "from": 2.0833333333333335,
+        "time": 2.1,
+        "sourceTime": 4.5,
+        "targetLocalDegrees": 2.583967888728108,
+        "targetWorldDegrees": 2.583663016241428,
+        "sourceLocalDegrees": 0,
+        "sourceWorldDegrees": 0,
+        "jointDistance": 0.0175018310546875
+      },
+      "head": {
+        "bone": "head",
+        "from": 0.65,
+        "time": 0.6666666666666666,
+        "sourceTime": 0,
+        "targetLocalDegrees": 1.1510737330105352,
+        "targetWorldDegrees": 1.1160241232434254,
+        "sourceLocalDegrees": 0,
+        "sourceWorldDegrees": 0,
+        "jointDistance": 0.02422754363253459
+      },
+      "shoulderL": {
+        "bone": "shoulderL",
+        "from": 1.8166666666666667,
+        "time": 1.8333333333333333,
+        "sourceTime": 4.5,
+        "targetLocalDegrees": 3.075739347551207,
+        "targetWorldDegrees": 3.9815254293150466,
+        "sourceLocalDegrees": 2.9412925247392057,
+        "sourceWorldDegrees": 3.7038246430366955,
+        "jointDistance": 0.005498591503683372
+      },
+      "armL": {
+        "bone": "armL",
+        "from": 0.8,
+        "time": 0.8166666666666667,
+        "sourceTime": 0,
+        "targetLocalDegrees": 12.683326843947032,
+        "targetWorldDegrees": 13.881849716588146,
+        "sourceLocalDegrees": 0,
+        "sourceWorldDegrees": 0,
+        "jointDistance": 0.0802299910713799
+      },
+      "elbowL": {
+        "bone": "elbowL",
+        "from": 0.8,
+        "time": 0.8166666666666667,
+        "sourceTime": 0,
+        "targetLocalDegrees": 10.237110447892782,
+        "targetWorldDegrees": 23.88394619186092,
+        "sourceLocalDegrees": 0,
+        "sourceWorldDegrees": 0,
+        "jointDistance": 0.07816344567884456
+      },
+      "wristL": {
+        "bone": "wristL",
+        "from": 1.95,
+        "time": 1.9666666666666666,
+        "sourceTime": 4.5,
+        "targetLocalDegrees": 3.320459085579128,
+        "targetWorldDegrees": 3.354235988526927,
+        "sourceLocalDegrees": 0,
+        "sourceWorldDegrees": 0,
+        "jointDistance": 0.02945388295363786
+      },
+      "shoulderR": {
+        "bone": "shoulderR",
+        "from": 1.95,
+        "time": 1.9666666666666666,
+        "sourceTime": 4.5,
+        "targetLocalDegrees": 3.439547281178027,
+        "targetWorldDegrees": 10.093886360085184,
+        "sourceLocalDegrees": 0.0000017075472925031877,
+        "sourceWorldDegrees": 0,
+        "jointDistance": 0.0720035263722528
+      },
+      "armR": {
+        "bone": "armR",
+        "from": 0.8,
+        "time": 0.8166666666666667,
+        "sourceTime": 0,
+        "targetLocalDegrees": 10.653997432607214,
+        "targetWorldDegrees": 6.864470578730026,
+        "sourceLocalDegrees": 0,
+        "sourceWorldDegrees": 0,
+        "jointDistance": 0.08596322310848864
+      },
+      "elbowR": {
+        "bone": "elbowR",
+        "from": 0.8,
+        "time": 0.8166666666666667,
+        "sourceTime": 0,
+        "targetLocalDegrees": 9.955143650961556,
+        "targetWorldDegrees": 16.045959949577263,
+        "sourceLocalDegrees": 0,
+        "sourceWorldDegrees": 0,
+        "jointDistance": 0.10023223433331782
+      },
+      "wristR": {
+        "bone": "wristR",
+        "from": 0.8,
+        "time": 0.8166666666666667,
+        "sourceTime": 0,
+        "targetLocalDegrees": 4.295377595203118,
+        "targetWorldDegrees": 13.056663034621046,
+        "sourceLocalDegrees": 0,
+        "sourceWorldDegrees": 0,
+        "jointDistance": 0.12388553876243046
+      },
+      "thighL": {
+        "bone": "thighL",
+        "from": 0.65,
+        "time": 0.6666666666666666,
+        "sourceTime": 0,
+        "targetLocalDegrees": 7.67292059677048,
+        "targetWorldDegrees": 7.672965840786339,
+        "sourceLocalDegrees": 0.0000029575586669421963,
+        "sourceWorldDegrees": 0,
+        "jointDistance": 0.016612648963928223
+      },
+      "kneeL": {
+        "bone": "kneeL",
+        "from": 0.65,
+        "time": 0.6666666666666666,
+        "sourceTime": 0,
+        "targetLocalDegrees": 14.409932756968852,
+        "targetWorldDegrees": 6.736983810940345,
+        "sourceLocalDegrees": 0.0000017075472925031877,
+        "sourceWorldDegrees": 0,
+        "jointDistance": 0.019186356488254664
+      },
+      "shinL": {
+        "bone": "shinL",
+        "from": 0,
+        "time": 0.016666666666666666,
+        "sourceTime": 0,
+        "targetLocalDegrees": 0,
+        "targetWorldDegrees": 0.06703376282436427,
+        "sourceLocalDegrees": null,
+        "sourceWorldDegrees": null,
+        "jointDistance": 0.0001985693717376623
+      },
+      "footL": {
+        "bone": "footL",
+        "from": 1.95,
+        "time": 1.9666666666666666,
+        "sourceTime": 4.5,
+        "targetLocalDegrees": 8.756027274372734,
+        "targetWorldDegrees": 17.90251539627882,
+        "sourceLocalDegrees": 0,
+        "sourceWorldDegrees": 0,
+        "jointDistance": 0.05815345761726168
+      },
+      "thighR": {
+        "bone": "thighR",
+        "from": 0.65,
+        "time": 0.6666666666666666,
+        "sourceTime": 0,
+        "targetLocalDegrees": 7.67292059677048,
+        "targetWorldDegrees": 7.672965840786339,
+        "sourceLocalDegrees": 0.0000017075472925031877,
+        "sourceWorldDegrees": 0,
+        "jointDistance": 0.016612648963928223
+      },
+      "kneeR": {
+        "bone": "kneeR",
+        "from": 0.65,
+        "time": 0.6666666666666666,
+        "sourceTime": 0,
+        "targetLocalDegrees": 14.409932756968852,
+        "targetWorldDegrees": 6.736983810940345,
+        "sourceLocalDegrees": 0,
+        "sourceWorldDegrees": 0,
+        "jointDistance": 0.019186356488254664
+      },
+      "shinR": {
+        "bone": "shinR",
+        "from": 0,
+        "time": 0.016666666666666666,
+        "sourceTime": 0,
+        "targetLocalDegrees": 0,
+        "targetWorldDegrees": 0.06703376282436427,
+        "sourceLocalDegrees": null,
+        "sourceWorldDegrees": null,
+        "jointDistance": 0.0001985693717376623
+      },
+      "footR": {
+        "bone": "footR",
+        "from": 0.6666666666666666,
+        "time": 0.6833333333333333,
+        "sourceTime": 0,
+        "targetLocalDegrees": 6.951954658088184,
+        "targetWorldDegrees": 0.018740889398449742,
+        "sourceLocalDegrees": 0,
+        "sourceWorldDegrees": 0,
+        "jointDistance": 0.00770946330051946
+      }
+    },
+    "transitionWorldMaxima": {
+      "DoreumiRig": {
+        "bone": "DoreumiRig",
+        "from": 0,
+        "time": 0.016666666666666666,
+        "sourceTime": 0,
+        "targetLocalDegrees": 0,
+        "targetWorldDegrees": 0,
+        "sourceLocalDegrees": null,
+        "sourceWorldDegrees": null,
+        "jointDistance": 0.000041484832763671875
+      },
+      "root": {
+        "bone": "root",
+        "from": 0,
+        "time": 0.016666666666666666,
+        "sourceTime": 0,
+        "targetLocalDegrees": 0,
+        "targetWorldDegrees": 0,
+        "sourceLocalDegrees": null,
+        "sourceWorldDegrees": null,
+        "jointDistance": 0.000041484832763671875
+      },
+      "body": {
+        "bone": "body",
+        "from": 0.8,
+        "time": 0.8166666666666667,
+        "sourceTime": 0,
+        "targetLocalDegrees": 9.5694356204296,
+        "targetWorldDegrees": 9.569318395698934,
+        "sourceLocalDegrees": 0,
+        "sourceWorldDegrees": 0,
+        "jointDistance": 0.016001343727111816
+      },
+      "torso": {
+        "bone": "torso",
+        "from": 0.8,
+        "time": 0.8166666666666667,
+        "sourceTime": 0,
+        "targetLocalDegrees": 0.3973355432005382,
+        "targetWorldDegrees": 9.652148440249496,
+        "sourceLocalDegrees": 0.0000017075472925031877,
+        "sourceWorldDegrees": 0,
+        "jointDistance": 0.034553910567574585
+      },
+      "head": {
+        "bone": "head",
+        "from": 0.8,
+        "time": 0.8166666666666667,
+        "sourceTime": 0,
+        "targetLocalDegrees": 0.7037285807795004,
+        "targetWorldDegrees": 9.902127094434977,
+        "sourceLocalDegrees": 0,
+        "sourceWorldDegrees": 0,
+        "jointDistance": 0.10272154251822677
+      },
+      "shoulderL": {
+        "bone": "shoulderL",
+        "from": 0.8,
+        "time": 0.8166666666666667,
+        "sourceTime": 0,
+        "targetLocalDegrees": 2.2394943683799307,
+        "targetWorldDegrees": 10.484145198253085,
+        "sourceLocalDegrees": 0,
+        "sourceWorldDegrees": 0,
+        "jointDistance": 0.06700203318278397
+      },
+      "armL": {
+        "bone": "armL",
+        "from": 0.8,
+        "time": 0.8166666666666667,
+        "sourceTime": 0,
+        "targetLocalDegrees": 12.683326843947032,
+        "targetWorldDegrees": 13.881849716588146,
+        "sourceLocalDegrees": 0,
+        "sourceWorldDegrees": 0,
+        "jointDistance": 0.0802299910713799
+      },
+      "elbowL": {
+        "bone": "elbowL",
+        "from": 0.8,
+        "time": 0.8166666666666667,
+        "sourceTime": 0,
+        "targetLocalDegrees": 10.237110447892782,
+        "targetWorldDegrees": 23.88394619186092,
+        "sourceLocalDegrees": 0,
+        "sourceWorldDegrees": 0,
+        "jointDistance": 0.07816344567884456
+      },
+      "wristL": {
+        "bone": "wristL",
+        "from": 0.8,
+        "time": 0.8166666666666667,
+        "sourceTime": 0,
+        "targetLocalDegrees": 2.8418981833006436,
+        "targetWorldDegrees": 21.76579948658563,
+        "sourceLocalDegrees": 0,
+        "sourceWorldDegrees": 0.0000017075472925031877,
+        "jointDistance": 0.11464972168358524
+      },
+      "shoulderR": {
+        "bone": "shoulderR",
+        "from": 0.8,
+        "time": 0.8166666666666667,
+        "sourceTime": 0,
+        "targetLocalDegrees": 0.8882647151094254,
+        "targetWorldDegrees": 10.312353724905435,
+        "sourceLocalDegrees": 0.0000017075472925031877,
+        "sourceWorldDegrees": 0,
+        "jointDistance": 0.07254674529726275
+      },
+      "armR": {
+        "bone": "armR",
+        "from": 0.7833333333333333,
+        "time": 0.8,
+        "sourceTime": 0,
+        "targetLocalDegrees": 10.573375564134858,
+        "targetWorldDegrees": 6.905875893049224,
+        "sourceLocalDegrees": 0,
+        "sourceWorldDegrees": 0,
+        "jointDistance": 0.0873037085926237
+      },
+      "elbowR": {
+        "bone": "elbowR",
+        "from": 0.8,
+        "time": 0.8166666666666667,
+        "sourceTime": 0,
+        "targetLocalDegrees": 9.955143650961556,
+        "targetWorldDegrees": 16.045959949577263,
+        "sourceLocalDegrees": 0,
+        "sourceWorldDegrees": 0,
+        "jointDistance": 0.10023223433331782
+      },
+      "wristR": {
+        "bone": "wristR",
+        "from": 0.8,
+        "time": 0.8166666666666667,
+        "sourceTime": 0,
+        "targetLocalDegrees": 4.295377595203118,
+        "targetWorldDegrees": 13.056663034621046,
+        "sourceLocalDegrees": 0,
+        "sourceWorldDegrees": 0,
+        "jointDistance": 0.12388553876243046
+      },
+      "thighL": {
+        "bone": "thighL",
+        "from": 0.65,
+        "time": 0.6666666666666666,
+        "sourceTime": 0,
+        "targetLocalDegrees": 7.67292059677048,
+        "targetWorldDegrees": 7.672965840786339,
+        "sourceLocalDegrees": 0.0000029575586669421963,
+        "sourceWorldDegrees": 0,
+        "jointDistance": 0.016612648963928223
+      },
+      "kneeL": {
+        "bone": "kneeL",
+        "from": 0.7833333333333333,
+        "time": 0.8,
+        "sourceTime": 0,
+        "targetLocalDegrees": 5.449552608756199,
+        "targetWorldDegrees": 11.705178115267808,
+        "sourceLocalDegrees": 0.0000017075472925031877,
+        "sourceWorldDegrees": 0,
+        "jointDistance": 0.03158220695171599
+      },
+      "shinL": {
+        "bone": "shinL",
+        "from": 0.7833333333333333,
+        "time": 0.8,
+        "sourceTime": 0,
+        "targetLocalDegrees": 0,
+        "targetWorldDegrees": 11.705178115267183,
+        "sourceLocalDegrees": null,
+        "sourceWorldDegrees": null,
+        "jointDistance": 0.03158220695171599
+      },
+      "footL": {
+        "bone": "footL",
+        "from": 1.95,
+        "time": 1.9666666666666666,
+        "sourceTime": 4.5,
+        "targetLocalDegrees": 8.756027274372734,
+        "targetWorldDegrees": 17.90251539627882,
+        "sourceLocalDegrees": 0,
+        "sourceWorldDegrees": 0,
+        "jointDistance": 0.05815345761726168
+      },
+      "thighR": {
+        "bone": "thighR",
+        "from": 1.95,
+        "time": 1.9666666666666666,
+        "sourceTime": 4.5,
+        "targetLocalDegrees": 5.127896036852519,
+        "targetWorldDegrees": 10.035211862368678,
+        "sourceLocalDegrees": 0,
+        "sourceWorldDegrees": 0,
+        "jointDistance": 0.01336447829947294
+      },
+      "kneeR": {
+        "bone": "kneeR",
+        "from": 0.8,
+        "time": 0.8166666666666667,
+        "sourceTime": 0,
+        "targetLocalDegrees": 0.9878546117779372,
+        "targetWorldDegrees": 8.84281517850869,
+        "sourceLocalDegrees": 0,
+        "sourceWorldDegrees": 0,
+        "jointDistance": 0.032793526431248006
+      },
+      "shinR": {
+        "bone": "shinR",
+        "from": 0.8,
+        "time": 0.8166666666666667,
+        "sourceTime": 0,
+        "targetLocalDegrees": 0,
+        "targetWorldDegrees": 8.84281517850869,
+        "sourceLocalDegrees": null,
+        "sourceWorldDegrees": null,
+        "jointDistance": 0.032793526431248006
+      },
+      "footR": {
+        "bone": "footR",
+        "from": 0.7833333333333333,
+        "time": 0.8,
+        "sourceTime": 0,
+        "targetLocalDegrees": 6.363473126431688,
+        "targetWorldDegrees": 12.147656930168164,
+        "sourceLocalDegrees": 0,
+        "sourceWorldDegrees": 0,
+        "jointDistance": 0.05488815167889779
+      }
+    },
+    "largestIntroducedLocal": [
+      {
+        "bone": "torso",
+        "from": 1.8,
+        "time": 1.8166666666666667,
+        "sourceTime": 4.4494480325124774,
+        "targetLocalDegrees": 1.9962049994288191,
+        "targetWorldDegrees": 1.8607386704654336,
+        "sourceLocalDegrees": 0.21406898365873417,
+        "sourceWorldDegrees": 1.946934921707837,
+        "jointDistance": 0.008716980504725557
+      },
+      {
+        "bone": "torso",
+        "from": 1.0166666666666666,
+        "time": 1.0333333333333334,
+        "sourceTime": 0.5327813658458114,
+        "targetLocalDegrees": 1.8682176735504448,
+        "targetWorldDegrees": 1.648860575449871,
+        "sourceLocalDegrees": 0.16407799388923208,
+        "sourceWorldDegrees": 1.7404489122372928,
+        "jointDistance": 0.009721887423420587
+      },
+      {
+        "bone": "torso",
+        "from": 1.15,
+        "time": 1.1666666666666667,
+        "sourceTime": 1.199448032512478,
+        "targetLocalDegrees": 1.8951344483467834,
+        "targetWorldDegrees": 1.5733773049414272,
+        "sourceLocalDegrees": 0.2431941863231221,
+        "sourceWorldDegrees": 1.7123902196394771,
+        "jointDistance": 0.006023369293901906
+      },
+      {
+        "bone": "torso",
+        "from": 0.9333333333333333,
+        "time": 0.95,
+        "sourceTime": 0.11611469917914397,
+        "targetLocalDegrees": 1.8571256537762113,
+        "targetWorldDegrees": 2.2869573416094044,
+        "sourceLocalDegrees": 0.2129433396143123,
+        "sourceWorldDegrees": 2.3669053018367237,
+        "jointDistance": 0.021475492904503107
+      },
+      {
+        "bone": "torso",
+        "from": 1.0333333333333334,
+        "time": 1.05,
+        "sourceTime": 0.6161146991791444,
+        "targetLocalDegrees": 1.8682123695720172,
+        "targetWorldDegrees": 1.2743548866109637,
+        "sourceLocalDegrees": 0.22725946198430136,
+        "sourceWorldDegrees": 1.1539932796897654,
+        "jointDistance": 0.0055402769120923715
+      },
+      {
+        "bone": "torso",
+        "from": 1.2333333333333334,
+        "time": 1.25,
+        "sourceTime": 1.6161146991791442,
+        "targetLocalDegrees": 1.7522381397282825,
+        "targetWorldDegrees": 2.5591845596816944,
+        "sourceLocalDegrees": 0.17988050927880628,
+        "sourceWorldDegrees": 2.7714315119840616,
+        "jointDistance": 0.006774417737302299
+      },
+      {
+        "bone": "torso",
+        "from": 1.2166666666666666,
+        "time": 1.2333333333333334,
+        "sourceTime": 1.5327813658458112,
+        "targetLocalDegrees": 1.5715135347456373,
+        "targetWorldDegrees": 2.342043460665153,
+        "sourceLocalDegrees": 0.13260959450412876,
+        "sourceWorldDegrees": 2.215216559612377,
+        "jointDistance": 0.006649716580766328
+      },
+      {
+        "bone": "torso",
+        "from": 1.7166666666666666,
+        "time": 1.7333333333333334,
+        "sourceTime": 4.032781365845811,
+        "targetLocalDegrees": 1.5891007117424405,
+        "targetWorldDegrees": 1.408053113917864,
+        "sourceLocalDegrees": 0.15335056996015917,
+        "sourceWorldDegrees": 1.5170860017773669,
+        "jointDistance": 0.012923988168752133
+      },
+      {
+        "bone": "torso",
+        "from": 1.25,
+        "time": 1.2666666666666666,
+        "sourceTime": 1.6994480325124772,
+        "targetLocalDegrees": 1.5511368758077053,
+        "targetWorldDegrees": 1.5712580373307543,
+        "sourceLocalDegrees": 0.17668253410802337,
+        "sourceWorldDegrees": 1.7247394112247845,
+        "jointDistance": 0.0049211714455232175
+      },
+      {
+        "bone": "torso",
+        "from": 1.5666666666666667,
+        "time": 1.5833333333333333,
+        "sourceTime": 3.2827813658458105,
+        "targetLocalDegrees": 1.538448022345361,
+        "targetWorldDegrees": 1.973479818682796,
+        "sourceLocalDegrees": 0.19642715953609038,
+        "sourceWorldDegrees": 2.1082322649810226,
+        "jointDistance": 0.004795896134968128
+      },
+      {
+        "bone": "torso",
+        "from": 0.95,
+        "time": 0.9666666666666667,
+        "sourceTime": 0.19944803251247756,
+        "targetLocalDegrees": 1.521549442625918,
+        "targetWorldDegrees": 2.2465528997976123,
+        "sourceLocalDegrees": 0.19063491359348222,
+        "sourceWorldDegrees": 2.4011248240758407,
+        "jointDistance": 0.019861054855479503
+      },
+      {
+        "bone": "torso",
+        "from": 1.7833333333333334,
+        "time": 1.8,
+        "sourceTime": 4.366114699179144,
+        "targetLocalDegrees": 1.6232390674416035,
+        "targetWorldDegrees": 3.021558479947756,
+        "sourceLocalDegrees": 0.3087233981325887,
+        "sourceWorldDegrees": 2.9495236527547224,
+        "jointDistance": 0.008587315133859436
+      },
+      {
+        "bone": "torso",
+        "from": 1.1333333333333333,
+        "time": 1.15,
+        "sourceTime": 1.1161146991791437,
+        "targetLocalDegrees": 1.6397858320471344,
+        "targetWorldDegrees": 2.1343991146482493,
+        "sourceLocalDegrees": 0.34668750190597564,
+        "sourceWorldDegrees": 2.2372414445163433,
+        "jointDistance": 0.004049755002635447
+      },
+      {
+        "bone": "torso",
+        "from": 1.7,
+        "time": 1.7166666666666666,
+        "sourceTime": 3.949448032512477,
+        "targetLocalDegrees": 1.3596206383903189,
+        "targetWorldDegrees": 2.5139401246152637,
+        "sourceLocalDegrees": 0.14157023029948804,
+        "sourceWorldDegrees": 2.6113140317220074,
+        "jointDistance": 0.011688181878188084
+      },
+      {
+        "bone": "torso",
+        "from": 1.5833333333333333,
+        "time": 1.6,
+        "sourceTime": 3.3661146991791444,
+        "targetLocalDegrees": 1.3416394258320725,
+        "targetWorldDegrees": 0.7817118627912656,
+        "sourceLocalDegrees": 0.18282950663639186,
+        "sourceWorldDegrees": 0.8171226470937155,
+        "jointDistance": 0.005161683329054201
+      },
+      {
+        "bone": "torso",
+        "from": 1.35,
+        "time": 1.3666666666666667,
+        "sourceTime": 2.1994480325124774,
+        "targetLocalDegrees": 1.288431623361456,
+        "targetWorldDegrees": 1.8045362687896116,
+        "sourceLocalDegrees": 0.1591070691399559,
+        "sourceWorldDegrees": 1.8301367400216202,
+        "jointDistance": 0.005298218282244263
+      },
+      {
+        "bone": "torso",
+        "from": 1.1666666666666667,
+        "time": 1.1833333333333333,
+        "sourceTime": 1.282781365845811,
+        "targetLocalDegrees": 1.423245261874793,
+        "targetWorldDegrees": 0.5666227925975292,
+        "sourceLocalDegrees": 0.2970988831887633,
+        "sourceWorldDegrees": 0.36884556792977263,
+        "jointDistance": 0.005582719211447724
+      },
+      {
+        "bone": "torso",
+        "from": 1.3333333333333333,
+        "time": 1.35,
+        "sourceTime": 2.1161146991791444,
+        "targetLocalDegrees": 1.290929827092526,
+        "targetWorldDegrees": 2.1634817015523113,
+        "sourceLocalDegrees": 0.1752083803327003,
+        "sourceWorldDegrees": 2.149542544457981,
+        "jointDistance": 0.003474775621496999
+      },
+      {
+        "bone": "torso",
+        "from": 1.7333333333333334,
+        "time": 1.75,
+        "sourceTime": 4.116114699179144,
+        "targetLocalDegrees": 1.2488673132349672,
+        "targetWorldDegrees": 0.7447085603666688,
+        "sourceLocalDegrees": 0.15501225293370666,
+        "sourceWorldDegrees": 0.8617003245476484,
+        "jointDistance": 0.011945201902764196
+      },
+      {
+        "bone": "torso",
+        "from": 1.3666666666666667,
+        "time": 1.3833333333333333,
+        "sourceTime": 2.2827813658458105,
+        "targetLocalDegrees": 1.2162635503402273,
+        "targetWorldDegrees": 1.0134302711273568,
+        "sourceLocalDegrees": 0.1574824855880287,
+        "sourceWorldDegrees": 1.0363882292434032,
+        "jointDistance": 0.0028449675866925378
+      }
+    ],
+    "largestIntroducedWorld": [
+      {
+        "bone": "footL",
+        "from": 1.75,
+        "time": 1.7666666666666666,
+        "sourceTime": 4.1994480325124774,
+        "targetLocalDegrees": 2.4156973026453112,
+        "targetWorldDegrees": 6.987983539022634,
+        "sourceLocalDegrees": 2.445378468391474,
+        "sourceWorldDegrees": 6.690063512324026,
+        "jointDistance": 0.019369396840533754
+      },
+      {
+        "bone": "kneeL",
+        "from": 1.0666666666666667,
+        "time": 1.0833333333333333,
+        "sourceTime": 0.7827813658458105,
+        "targetLocalDegrees": 7.5972242991342585,
+        "targetWorldDegrees": 4.51880063667849,
+        "sourceLocalDegrees": 7.434684107387037,
+        "sourceWorldDegrees": 4.223803168431242,
+        "jointDistance": 0.026611195476221323
+      },
+      {
+        "bone": "footR",
+        "from": 1.65,
+        "time": 1.6666666666666667,
+        "sourceTime": 3.699448032512478,
+        "targetLocalDegrees": 3.2339198805141276,
+        "targetWorldDegrees": 10.204168489080512,
+        "sourceLocalDegrees": 3.2832075848983027,
+        "sourceWorldDegrees": 9.923417744272564,
+        "jointDistance": 0.02265273036326684
+      },
+      {
+        "bone": "kneeR",
+        "from": 1.65,
+        "time": 1.6666666666666667,
+        "sourceTime": 3.699448032512478,
+        "targetLocalDegrees": 8.291447530726352,
+        "targetWorldDegrees": 8.747751517913127,
+        "sourceLocalDegrees": 8.079522225366082,
+        "sourceWorldDegrees": 8.482820504845193,
+        "jointDistance": 0.011125693704436506
+      },
+      {
+        "bone": "wristR",
+        "from": 1.1,
+        "time": 1.1166666666666667,
+        "sourceTime": 0.9494480325124777,
+        "targetLocalDegrees": 5.376357307793949,
+        "targetWorldDegrees": 15.646352237210033,
+        "sourceLocalDegrees": 5.433350720636867,
+        "sourceWorldDegrees": 15.381493366217747,
+        "jointDistance": 0.09682540419851443
+      },
+      {
+        "bone": "wristR",
+        "from": 1.3666666666666667,
+        "time": 1.3833333333333333,
+        "sourceTime": 2.2827813658458105,
+        "targetLocalDegrees": 1.3401597391965094,
+        "targetWorldDegrees": 5.776866109028294,
+        "sourceLocalDegrees": 1.5556763552828308,
+        "sourceWorldDegrees": 5.540280589134882,
+        "jointDistance": 0.04706813259268723
+      },
+      {
+        "bone": "head",
+        "from": 1.1666666666666667,
+        "time": 1.1833333333333333,
+        "sourceTime": 1.282781365845811,
+        "targetLocalDegrees": 1.0961270369910576,
+        "targetWorldDegrees": 1.6488564565206993,
+        "sourceLocalDegrees": 0.8969673706917888,
+        "sourceWorldDegrees": 1.4148975990177575,
+        "jointDistance": 0.0038722974309824154
+      },
+      {
+        "bone": "kneeL",
+        "from": 1.75,
+        "time": 1.7666666666666666,
+        "sourceTime": 4.1994480325124774,
+        "targetLocalDegrees": 6.286149762266747,
+        "targetWorldDegrees": 6.9658498913191185,
+        "sourceLocalDegrees": 6.062669471541042,
+        "sourceWorldDegrees": 6.739135734230088,
+        "jointDistance": 0.011866831985021885
+      },
+      {
+        "bone": "footR",
+        "from": 1.4333333333333333,
+        "time": 1.45,
+        "sourceTime": 2.616114699179144,
+        "targetLocalDegrees": 3.1645566542319084,
+        "targetWorldDegrees": 8.077534194313941,
+        "sourceLocalDegrees": 3.065761438320916,
+        "sourceWorldDegrees": 7.866656363855991,
+        "jointDistance": 0.012084196244362985
+      },
+      {
+        "bone": "armL",
+        "from": 1.6666666666666667,
+        "time": 1.6833333333333333,
+        "sourceTime": 3.782781365845811,
+        "targetLocalDegrees": 9.077012374370108,
+        "targetWorldDegrees": 12.390433150460977,
+        "sourceLocalDegrees": 9.065766554858477,
+        "sourceWorldDegrees": 12.190133892297572,
+        "jointDistance": 0.03660435273628102
+      },
+      {
+        "bone": "elbowR",
+        "from": 1.1,
+        "time": 1.1166666666666667,
+        "sourceTime": 0.9494480325124777,
+        "targetLocalDegrees": 3.1022357856900737,
+        "targetWorldDegrees": 17.556350925344734,
+        "sourceLocalDegrees": 2.9131292081453646,
+        "sourceWorldDegrees": 17.358466453514257,
+        "jointDistance": 0.07558228461666247
+      },
+      {
+        "bone": "torso",
+        "from": 1.1666666666666667,
+        "time": 1.1833333333333333,
+        "sourceTime": 1.282781365845811,
+        "targetLocalDegrees": 1.423245261874793,
+        "targetWorldDegrees": 0.5666227925975292,
+        "sourceLocalDegrees": 0.2970988831887633,
+        "sourceWorldDegrees": 0.36884556792977263,
+        "jointDistance": 0.005582719211447724
+      },
+      {
+        "bone": "thighL",
+        "from": 1.1166666666666667,
+        "time": 1.1333333333333333,
+        "sourceTime": 1.0327813658458107,
+        "targetLocalDegrees": 6.817131195647164,
+        "targetWorldDegrees": 5.308522045299553,
+        "sourceLocalDegrees": 6.622995948374891,
+        "sourceWorldDegrees": 5.130209460868582,
+        "jointDistance": 0.007071339266946225
+      },
+      {
+        "bone": "footL",
+        "from": 1.0833333333333333,
+        "time": 1.1,
+        "sourceTime": 0.8661146991791446,
+        "targetLocalDegrees": 6.837079012234585,
+        "targetWorldDegrees": 5.059048152177622,
+        "sourceLocalDegrees": 6.70534831019727,
+        "sourceWorldDegrees": 4.8819641139065,
+        "jointDistance": 0.021623150561567224
+      },
+      {
+        "bone": "thighR",
+        "from": 0.9666666666666667,
+        "time": 0.9833333333333333,
+        "sourceTime": 0.2827813658458106,
+        "targetLocalDegrees": 0.6345471774082813,
+        "targetWorldDegrees": 2.367815043657092,
+        "sourceLocalDegrees": 0.5897189691594753,
+        "sourceWorldDegrees": 2.191402705510604,
+        "jointDistance": 0.017042429839681378
+      },
+      {
+        "bone": "kneeR",
+        "from": 0.9666666666666667,
+        "time": 0.9833333333333333,
+        "sourceTime": 0.2827813658458106,
+        "targetLocalDegrees": 4.238316589275565,
+        "targetWorldDegrees": 5.166978888718133,
+        "sourceLocalDegrees": 4.182654908340563,
+        "sourceWorldDegrees": 4.991864118687996,
+        "jointDistance": 0.016807892391852472
+      },
+      {
+        "bone": "armL",
+        "from": 1.05,
+        "time": 1.0666666666666667,
+        "sourceTime": 0.6994480325124774,
+        "targetLocalDegrees": 4.762060156193856,
+        "targetWorldDegrees": 9.056357227471706,
+        "sourceLocalDegrees": 4.745145188856854,
+        "sourceWorldDegrees": 8.882722745917967,
+        "jointDistance": 0.01239945632537824
+      },
+      {
+        "bone": "armR",
+        "from": 1.2833333333333334,
+        "time": 1.3,
+        "sourceTime": 1.8661146991791444,
+        "targetLocalDegrees": 9.348124392807451,
+        "targetWorldDegrees": 11.54301690393233,
+        "sourceLocalDegrees": 9.348032526283106,
+        "sourceWorldDegrees": 11.373430194210576,
+        "jointDistance": 0.013891513623148496
+      },
+      {
+        "bone": "footR",
+        "from": 0.9666666666666667,
+        "time": 0.9833333333333333,
+        "sourceTime": 0.2827813658458106,
+        "targetLocalDegrees": 5.566326368692729,
+        "targetWorldDegrees": 8.811841998876458,
+        "sourceLocalDegrees": 5.474146204993986,
+        "sourceWorldDegrees": 8.64360969511301,
+        "jointDistance": 0.022446324185893683
+      },
+      {
+        "bone": "kneeR",
+        "from": 1.4333333333333333,
+        "time": 1.45,
+        "sourceTime": 2.616114699179144,
+        "targetLocalDegrees": 7.072723664113711,
+        "targetWorldDegrees": 6.256242006292385,
+        "sourceLocalDegrees": 7.020128733124527,
+        "sourceWorldDegrees": 6.092093078054558,
+        "jointDistance": 0.007522995319457164
+      }
+    ]
+  },
+  "tests": {
+    "command": "node --import ./tests/register-alias.mjs --test tests/doreumi-airborne-fall.test.mjs tests/doreumi-preview-provenance.test.mjs tests/doreumi-reviewed-contact.test.mjs",
+    "passed": 14,
+    "actualRuntimeSkinFrames": 791,
+    "cameraWorstOverflow": 0,
+    "sourceDonorReproductionIds": [
+      22,
+      23,
+      24,
+      27,
+      40,
+      63,
+      67
+    ],
+    "cameraFollowup": {
+      "command": "node --import ./tests/register-alias.mjs --test tests/doreumi-camera.test.mjs tests/doreumi-airborne-fall.test.mjs tests/doreumi-contact-audit.test.mjs",
+      "passed": 12,
+      "airborneSkinFrames": 1331,
+      "trackedInterruptSkinFrames": 2331,
+      "worstOverflow": 0,
+      "maximumExitScaleStep": 0.020201340026756
+    },
+    "playbackCapture": {
+      "command": "node --test tests/doreumi-playback-capture.test.mjs",
+      "passed": 5
+    }
+  },
+  "visualFocus": [
+    {
+      "from": 0.8,
+      "to": 0.817,
+      "bone": "elbowL",
+      "reason": "Fast authored fold: 23.88 world degrees per 60Hz frame."
+    },
+    {
+      "from": 1.317,
+      "to": 1.333,
+      "bone": "wristL",
+      "reason": "5x retimed source flail: 20.74 world degrees, matching 20.96 degrees in the source at its mapped time."
+    }
+  ],
+  "files": {
+    "scripts/doreumi/meshy-airborne-fall.mjs": "0d4094f7238d1602c6e610cdb7518d56c4b9813d53ccf0af0ebc11183dadf689",
+    "scripts/doreumi/meshy-airborne-audit.mjs": "5d1be486cfb0151a0af0dcfc32483f97410240b367b9011c55f3a9f5e7bbea8d",
+    "scripts/doreumi/meshy-joint-audit.mjs": "f7b15cd726c0ad26b051d46484f534229e28f2bfce855bee307118a76c72be99",
+    "scripts/doreumi/meshy-contact-audit.mjs": "428d2248aa5c8c3cc532f4b3fb2cb0a43c7ffa7fc3730868e2badd3f2092b241",
+    "tests/doreumi-airborne-fall.test.mjs": "b9d060d7d0246cbbcc0052d962451f0b838fc79ad284994c082dd1fb9b929e34",
+    ".artifacts/doreumi-contact-audit/airborne-502/meshy-502.json": "c1a29fe35a74c0e51b563c5d16accfb4102d20b956925451347ccfdaea7b4ba0",
+    ".artifacts/doreumi-contact-audit/airborne-502/manifest.json": "e75e2434bae50102db1b6f05e61f987bb1b79448cd50d9766730c1cab96b2d0c",
+    ".artifacts/doreumi-contact-audit/airborne-502/contact.json": "c8164e97365a8f0f91dff4c9cc0962f4a1e79b429f824a5e16603c36a8d8d8b8",
+    ".artifacts/doreumi-contact-audit/airborne-502/joints.json": "b4d83729f4524b84141fb66e51b583d04bff54d3214e4701850f6fefa76413f3",
+    ".artifacts/doreumi-contact-audit/airborne-502/source-diagnosis.json": "d4f95b43aa22a5b5cc2570ae8a0d34506f99c91f4a8ba923c43c13d10c823591",
+    "src/lib/doreumi/motion-camera.ts": "54bb6bc2f7b709b60e02b828ebed88a3166d17add3626f60c2dd4e3110f56b37",
+    "scripts/doreumi/motion-qa.mjs": "8eab862f6fd3d0ad0ca2daabc91cf5e8c6100a0bd3c6ca640050943f1c005338",
+    "tests/doreumi-camera.test.mjs": "485cf602f22043197690af1bab746a5b3052f6cf18fd687636cf5cb7b0b5d374",
+    "tests/doreumi-playback-capture.test.mjs": "14d324abb33ad128770fd99d404322b418233639463338dfd10e3d4e639e9075",
+    "tests/doreumi-contact-audit.test.mjs": "0d59f116eff1c1a4f5c0fd4ade76c5b567630040dc56b65573ab887b5ba39ca2",
+    ".artifacts/doreumi-contact-audit/airborne-502/camera-exit-before.json": "6343b8b1810037eeb45f1df3716f612724dd23547b5ea4d7685987560a10cd14",
+    ".artifacts/doreumi-contact-audit/airborne-502/camera-exit-after.json": "7cfd337a0050837a2417e337f398a05735667f7ca608897d8e348154e620248a",
+    ".artifacts/doreumi-contact-audit/airborne-502/production-replay/replay.json": "1db9484d5aaff645440055f17afec99e00f80e0fd14eba4bb087922912d2db60"
+  },
+  "productionReplay": {
+    "version": 2,
+    "sourceFile": ".artifacts/doreumi-meshy/raw/batch-034.glb",
+    "sourceSha256": "d4eeaeea8e16dc1ec703aeb13f42eaf7fd638923258ef4923efdd5efa847990b",
+    "masterSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+    "rigSignature": "21af64ae682478f53aeb5e96e987efd394744bb695c3a34bc0e6f7be99e6c94f",
+    "expectedClipSha256": "c1a29fe35a74c0e51b563c5d16accfb4102d20b956925451347ccfdaea7b4ba0",
+    "reproducedClipSha256": "c1a29fe35a74c0e51b563c5d16accfb4102d20b956925451347ccfdaea7b4ba0",
+    "exact": true,
+    "method": "Actual cached donor animation -> production retarget -> supported floor transitions -> source-bound retimed authored flight. No published clip is sampled as a motion input.",
+    "helperSha256": "0d4094f7238d1602c6e610cdb7518d56c4b9813d53ccf0af0ebc11183dadf689",
+    "publishedClipSha256": "c1a29fe35a74c0e51b563c5d16accfb4102d20b956925451347ccfdaea7b4ba0",
+    "metadataSha256": "d3a9ddfd6237635f11c6f102b724d5e107b9ac320d2bc2c264322367e7f81133"
+  },
+  "visualReview": {
+    "reviewer": "root",
+    "status": "passed",
+    "observations": [
+      "The prone transition is continuous; the shortened arc and recovery read as a playful hop and dive.",
+      "Two 19-frame focus sequences showed no limb pop.",
+      "This is an explicit authored cartoon hop/dive with 5x source-time retiming, not unmodified natural freefall.",
+      "The final Idle appeared larger; followup measurement found a rapid camera shrink after the outgoing action disappeared. Camera shrink was corrected, and the final two real seconds now require renewed browser review.",
+      "Root subsequently viewed all ten camera-v3 sheets. The two-second real-time Idle tail shows a gradual zoom; all eight flight interruption sheets remain contained without a visible jerk. The camera-exit concern is resolved by this separate followup."
+    ],
+    "captures": [
+      {
+        "report": "/tmp/doreumi-complete-502-1/report.json",
+        "reportSha256": "eb7919aab85943650548adc4ba1923c8273e43bda622b1167e91a976aa92f177",
+        "runtimeBundleSha256": "8cc808759dd5294bdd560a2737218a6d3b3031a24c426033466848fef97cfecc",
+        "modelSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+        "clipSha256": "c1a29fe35a74c0e51b563c5d16accfb4102d20b956925451347ccfdaea7b4ba0",
+        "angles": [
+          0,
+          90,
+          180,
+          -90,
+          45
+        ],
+        "samples": 45,
+        "playbackRate": 1,
+        "technicalPass": true,
+        "playbackCoverage": [
+          {
+            "firstTime": 0,
+            "lastTime": 2.5066999999999977,
+            "duration": 2.7286686089494943,
+            "tolerance": 0.35,
+            "observedFrames": 10,
+            "monotonic": true,
+            "finalAction": "Idle",
+            "finalActiveActions": 1
+          }
+        ],
+        "images": [
+          {
+            "path": "/tmp/doreumi-complete-502-1/motion-meshy-502.jpg",
+            "sha256": "1e77458caa16f029adcfb61c16006d575305384db2d2b45855334b34c2f3f398"
+          },
+          {
+            "path": "/tmp/doreumi-complete-502-1/playback-meshy-502.jpg",
+            "sha256": "a50722dd4bce94b77d0521d1dbec303102d0da97c0f42fa3d0ec460ff7ceedc5"
+          }
+        ]
+      },
+      {
+        "report": "/tmp/doreumi-complete-502-0.25/report.json",
+        "reportSha256": "a83098307c4a7918d64e94b1b2ae825c39bf30b9ec4656332ea81a069899a534",
+        "runtimeBundleSha256": "8cc808759dd5294bdd560a2737218a6d3b3031a24c426033466848fef97cfecc",
+        "modelSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+        "clipSha256": "c1a29fe35a74c0e51b563c5d16accfb4102d20b956925451347ccfdaea7b4ba0",
+        "angles": [
+          0,
+          90,
+          180,
+          -90,
+          45
+        ],
+        "samples": 45,
+        "playbackRate": 0.25,
+        "technicalPass": true,
+        "playbackCoverage": [
+          {
+            "firstTime": 0,
+            "lastTime": 2.545175,
+            "duration": 2.7286686089494943,
+            "tolerance": 0.35,
+            "observedFrames": 11,
+            "monotonic": true,
+            "finalAction": "Idle",
+            "finalActiveActions": 1
+          }
+        ],
+        "images": [
+          {
+            "path": "/tmp/doreumi-complete-502-0.25/motion-meshy-502.jpg",
+            "sha256": "f4433b81864821de05d2c4e07a865838ba7d063ef381385b48175ec7a418e5b7"
+          },
+          {
+            "path": "/tmp/doreumi-complete-502-0.25/playback-meshy-502.jpg",
+            "sha256": "05fbc7d95c784ce924f598ff1ae5e86feee3add811a0caabb9b5183bc4cc7be8"
+          }
+        ]
+      },
+      {
+        "report": "/tmp/doreumi-complete-502-focus-0/report.json",
+        "reportSha256": "6e18ccc30a3df0e961b61b2b9ebcc7a900de9381041b3bcad9c18449764cdbd8",
+        "runtimeBundleSha256": "63e58569fe80678a667392cd8e112133b5ac86030291381676b060b4d3cac628",
+        "modelSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+        "clipSha256": "c1a29fe35a74c0e51b563c5d16accfb4102d20b956925451347ccfdaea7b4ba0",
+        "angles": [
+          0,
+          45,
+          90
+        ],
+        "samples": 57,
+        "playbackRate": 1,
+        "technicalPass": true,
+        "playbackCoverage": [],
+        "images": [
+          {
+            "path": "/tmp/doreumi-complete-502-focus-0/motion-meshy-502.jpg",
+            "sha256": "a1fc325abd7b2b266859b2a033c47ec5a2a5a1c7659c31621337e52f6c708a6a"
+          }
+        ]
+      },
+      {
+        "report": "/tmp/doreumi-complete-502-focus-1/report.json",
+        "reportSha256": "7690d33e388d6dea950dd22046d8657814ae5d42cdfbb422b0fc455a33711e3c",
+        "runtimeBundleSha256": "63e58569fe80678a667392cd8e112133b5ac86030291381676b060b4d3cac628",
+        "modelSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+        "clipSha256": "c1a29fe35a74c0e51b563c5d16accfb4102d20b956925451347ccfdaea7b4ba0",
+        "angles": [
+          0,
+          45,
+          90
+        ],
+        "samples": 57,
+        "playbackRate": 1,
+        "technicalPass": true,
+        "playbackCoverage": [],
+        "images": [
+          {
+            "path": "/tmp/doreumi-complete-502-focus-1/motion-meshy-502.jpg",
+            "sha256": "6f66606b2a2106a9e2582147194f5a6df12d1b4b85d92537b1561e7599e65565"
+          }
+        ]
+      }
+    ]
+  },
+  "cameraExit": {
+    "status": "passed-root-browser-and-independent-code",
+    "before": ".artifacts/doreumi-contact-audit/airborne-502/camera-exit-before.json",
+    "after": ".artifacts/doreumi-contact-audit/airborne-502/camera-exit-after.json",
+    "priorMaxSizeStep": {
+      "at60Hz": 0.04442033045480254,
+      "at173ms": 0.29570768766599365
+    },
+    "currentMaxSizeStep": {
+      "at60Hz": 0.010050167084168171,
+      "at173ms": 0.020201340026756
+    },
+    "policy": "Keep safe expansion and tracked centers. Limit shrinking apparent scale in log space, including a visual step bound after slow RAF. Capture at least two real seconds after stable Idle.",
+    "captures": [
+      {
+        "report": "/tmp/doreumi-camera-exit-v3-502-1/report.json",
+        "reportSha256": "e09427725aa5e13a9be007aa37e6f4b2857ae3988ebad63eb0bfc83117903e34",
+        "runtimeBundleSha256": "676fbe53c073dbc7ef9d71ee10f12dfb4a8ced9d0da0fb171d522582c6ed89c3",
+        "modelSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+        "clipHashes": {
+          "meshy:502": "c1a29fe35a74c0e51b563c5d16accfb4102d20b956925451347ccfdaea7b4ba0"
+        },
+        "playbackRate": 1,
+        "technicalPass": true,
+        "playbackCoverage": [
+          {
+            "firstTime": 0,
+            "lastTime": 2.486099999999997,
+            "duration": 2.7286686089494943,
+            "tolerance": 0.35,
+            "observedFrames": 10,
+            "monotonic": true,
+            "finalAction": "Idle",
+            "finalActiveActions": 1,
+            "stableIdleAt": 3.3518999999985097,
+            "settledIdleSeconds": 2.2288999999985104
+          }
+        ],
+        "transitions": [],
+        "images": [
+          {
+            "path": "/tmp/doreumi-camera-exit-v3-502-1/playback-meshy-502.jpg",
+            "sha256": "3768d7b9a18feaab9b86f6edc4afed0f76f6f160c5a3e0a9435285744f25b936"
+          }
+        ]
+      },
+      {
+        "report": "/tmp/doreumi-camera-exit-v3-502-0.25/report.json",
+        "reportSha256": "93a0ba934181abcd3c2aa380b8a4ff974f1c919f349669bbfb5cd97f98a13dfb",
+        "runtimeBundleSha256": "e3f0d2f08e72c5ae7af717f54db6b4e32db9fc1649d1e3a4a32e5c306e3a1d5a",
+        "modelSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+        "clipHashes": {
+          "meshy:502": "c1a29fe35a74c0e51b563c5d16accfb4102d20b956925451347ccfdaea7b4ba0"
+        },
+        "playbackRate": 0.25,
+        "technicalPass": true,
+        "playbackCoverage": [
+          {
+            "firstTime": 0,
+            "lastTime": 2.5452000000000004,
+            "duration": 2.7286686089494943,
+            "tolerance": 0.35,
+            "observedFrames": 11,
+            "monotonic": true,
+            "finalAction": "Idle",
+            "finalActiveActions": 1,
+            "stableIdleAt": 13.248,
+            "settledIdleSeconds": 2.156400000005961
+          }
+        ],
+        "transitions": [],
+        "images": [
+          {
+            "path": "/tmp/doreumi-camera-exit-v3-502-0.25/playback-meshy-502.jpg",
+            "sha256": "1c3a0dde5ec4029a6cbf0b527244c18bcf523c4cb511b95b2c51e028af0cdc04"
+          }
+        ]
+      },
+      {
+        "report": "/tmp/doreumi-camera-interrupt-v3-1/report.json",
+        "reportSha256": "75697183423ee175575d5e537fd85f45215ab3786c01a687224ee00b40d9a462",
+        "runtimeBundleSha256": "e3f0d2f08e72c5ae7af717f54db6b4e32db9fc1649d1e3a4a32e5c306e3a1d5a",
+        "modelSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+        "clipHashes": {
+          "meshy:501": "f57dfa782e546fcb502c916a1310cbaf83ec7bb903f7925ee2136f8df321a22f",
+          "meshy:508": "0add9b3931372b7bfdbad074315e697632b03215ab68dfb5b1031aedc5dc5a32"
+        },
+        "playbackRate": 1,
+        "technicalPass": true,
+        "playbackCoverage": [],
+        "transitions": [
+          {
+            "from": "meshy:501",
+            "to": "Think",
+            "frames": 16
+          },
+          {
+            "from": "meshy:501",
+            "to": "Dragged",
+            "frames": 16
+          },
+          {
+            "from": "meshy:508",
+            "to": "Think",
+            "frames": 16
+          },
+          {
+            "from": "meshy:508",
+            "to": "Dragged",
+            "frames": 16
+          }
+        ],
+        "images": [
+          {
+            "path": "/tmp/doreumi-camera-interrupt-v3-1/camera-meshy-501-Think.jpg",
+            "sha256": "c6625f1f9aacecce36ab6dce5c1028633418daf6bbc9ac94f832ee7f064b212f"
+          },
+          {
+            "path": "/tmp/doreumi-camera-interrupt-v3-1/camera-meshy-501-Dragged.jpg",
+            "sha256": "7f904c935de098f89214e8daeca535155693ddd62153d4ee5a8d7257a4ef3d73"
+          },
+          {
+            "path": "/tmp/doreumi-camera-interrupt-v3-1/camera-meshy-508-Think.jpg",
+            "sha256": "5ed5838e3f7da4932e78035e6658a6857c7bb23e503c648c2af3f9c26fcc393f"
+          },
+          {
+            "path": "/tmp/doreumi-camera-interrupt-v3-1/camera-meshy-508-Dragged.jpg",
+            "sha256": "28c1a409d55610d050910475ca48010a897ac17c4c3f01325088d879b1f6abf8"
+          }
+        ]
+      },
+      {
+        "report": "/tmp/doreumi-camera-interrupt-v3-0.25/report.json",
+        "reportSha256": "4522c7a78d2bc64bd7947630934e4dddbad21b0716d32c462b64705d11b3c085",
+        "runtimeBundleSha256": "e3f0d2f08e72c5ae7af717f54db6b4e32db9fc1649d1e3a4a32e5c306e3a1d5a",
+        "modelSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+        "clipHashes": {
+          "meshy:501": "f57dfa782e546fcb502c916a1310cbaf83ec7bb903f7925ee2136f8df321a22f",
+          "meshy:508": "0add9b3931372b7bfdbad074315e697632b03215ab68dfb5b1031aedc5dc5a32"
+        },
+        "playbackRate": 0.25,
+        "technicalPass": true,
+        "playbackCoverage": [],
+        "transitions": [
+          {
+            "from": "meshy:501",
+            "to": "Think",
+            "frames": 54
+          },
+          {
+            "from": "meshy:501",
+            "to": "Dragged",
+            "frames": 54
+          },
+          {
+            "from": "meshy:508",
+            "to": "Think",
+            "frames": 54
+          },
+          {
+            "from": "meshy:508",
+            "to": "Dragged",
+            "frames": 54
+          }
+        ],
+        "images": [
+          {
+            "path": "/tmp/doreumi-camera-interrupt-v3-0.25/camera-meshy-501-Think.jpg",
+            "sha256": "dfda1ad6768106b83e6dd2505938ac027d705cf71de2c3f809a23e9dabb858da"
+          },
+          {
+            "path": "/tmp/doreumi-camera-interrupt-v3-0.25/camera-meshy-501-Dragged.jpg",
+            "sha256": "fdf9ac2ddc83beeeee9de6338ea663c52846e2f36745a6421b3dd479663d8928"
+          },
+          {
+            "path": "/tmp/doreumi-camera-interrupt-v3-0.25/camera-meshy-508-Think.jpg",
+            "sha256": "941a84cd274bb5fd428e19c2b41aa8a241a666162b5955f936f6aae822781231"
+          },
+          {
+            "path": "/tmp/doreumi-camera-interrupt-v3-0.25/camera-meshy-508-Dragged.jpg",
+            "sha256": "03029d4ba4ffae1672d5afdae7d6eecd74ae10b45382c6e85838935face4bff6"
+          }
+        ]
+      }
+    ],
+    "independentReview": "code_review independently ran camera, playback capture and contact-audit regression tests; root confirmed ten camera-v3 sheets."
+  },
+  "independentReview": {
+    "reviewer": "code_review",
+    "airborneAndPreview": "No P1/P2 in the source-bound airborne adaptation, independent audit, clock mapping or preview provenance.",
+    "reproduced": {
+      "testsPassed": 9,
+      "actualRuntimeSkinFrames": 791,
+      "worstOverflow": 0,
+      "minimumSkinY": 0.0019718628515162234,
+      "maximumFootMaterialPointDrift": 0.0033592619657911438
+    },
+    "sharedAuditorFinding": {
+      "severity": "P2",
+      "finding": "Source30Hz samples become target150Hz after5x retiming; raw per-pair drift understated playback speed.",
+      "resolution": "Normalize target drift by sourceTimeScale to equivalent30Hz displacement/height. Preserve source-contact classification and denominator. Regression explicitly proves a .006/150Hz displacement becomes .03/30Hz and fails the original .01 height limit.",
+      "testsPassed": 4
+    }
+  }
+}

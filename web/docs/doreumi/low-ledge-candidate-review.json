@@ -1,0 +1,640 @@
+{
+  "version": 1,
+  "masterSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+  "status": "numeric-candidates-awaiting-root-visual-and-world-anchor-review",
+  "notes": [
+    "Original model geometry, skeleton translations and scales remain unchanged within Float32 precision. Public master and all public clips/registry entries were not modified.",
+    "These are explicit low-ledge adaptations of Meshy lateral climbing. Missing donor environment geometry is not invented as source-ground parity. The same physical material points are measured against authored fixed surfaces.",
+    "Holder grounding offset is -0.0023397356271734893. Reported full-support minima are model coordinates; actual world minima include that shared offset. Relative model/wall contact and collision tests share the same transform.",
+    "Runtime geometry is fixed within a holder. Root owns locking initial Host origin and yaw. Existing audit fixes yaw within each case and does not prove moving-Host anchoring.",
+    "439/619 first visual pass lacked the wall because an empty generic socket-probe list hid it. This was fixed by resolving the explicitly bound Doreumi mesh; root is recapturing a new bundle.",
+    "440/620 v15 repair the normal-right donor final 33ms right-leg collapse only in the physical-foot reference. The original upper body, hips and total source duration remain intact. The repair is bound to the source file SHA and recorded in environmentSupport.referenceTailRepair.",
+    "No new API requests or purchases. No automatic ambient promotion."
+  ],
+  "motions": [
+    {
+      "actionId": 439,
+      "directory": ".artifacts/doreumi-contact-audit/climb-ledge-439-v13",
+      "clipSha256": "0e7f782c43265ec111e7f3b34dc0a865bb541e49029388f51a62664e9f85f1bb",
+      "sourceSha256": "0626ff7f4e6478eeb022e0ccfc408096ad4e64fc409fbe1d476145c28ab27d1e",
+      "review": "pending",
+      "publicFilesWritten": false,
+      "exactDonorReplay": true,
+      "duration": 7.366666626930237,
+      "environmentSupport": {
+        "version": 1,
+        "kind": "low-ledge",
+        "sourceReferenceActionId": 439,
+        "sourceReferenceSha256": "0626ff7f4e6478eeb022e0ccfc408096ad4e64fc409fbe1d476145c28ab27d1e",
+        "geometry": {
+          "width": 2.25,
+          "frontZ": 0.68,
+          "depth": 0.22,
+          "wallTop": 0.75,
+          "top": 0.8,
+          "railZ": 0.545,
+          "railRadius": 0.024,
+          "footstepTop": 0.154,
+          "footstepFrontZ": 0.3,
+          "footstepBackZ": 0.75,
+          "rails": [
+            [
+              -0.98,
+              -0.24
+            ],
+            [
+              0.42,
+              0.98
+            ]
+          ]
+        },
+        "basis": {
+          "travel": 0.28,
+          "vertical": 0.29,
+          "palmX": 0.55,
+          "palmZ": 0.545,
+          "soleZ": 0.345
+        },
+        "sourceDurationMapping": [
+          1.1666666269302368,
+          1.1666666269302368
+        ],
+        "transferPhases": {
+          "L": [
+            {
+              "from": 0.060000000000000005,
+              "to": 0.4066666666666666
+            }
+          ],
+          "R": [
+            {
+              "from": 0.6599999999999999,
+              "to": 1.1066666666666667
+            }
+          ]
+        },
+        "maximumHandClearanceLift": 0.014955169842839067,
+        "rightPelvisPitchCorrectionRadians": 0,
+        "targetHandVertices": {
+          "L": 78037,
+          "R": 850
+        },
+        "targetFootVertices": {
+          "L": 65106,
+          "R": 13384
+        }
+      },
+      "fullSupport": {
+        "fps": 120,
+        "samples": 885,
+        "minimumModelSkinY": 0.0012514168968484896,
+        "maximumUnsupportedDistance": 0.008776887400236216,
+        "intersectedSkinTriangles": 0,
+        "adaptedCoreMaterialPairs": 412,
+        "maximumCoreContactDriftEquivalent30Hz": 0.020765153233712898,
+        "contactDriftExceedingOnePercent": 0
+      },
+      "largestIntroducedWorld": {
+        "bone": "thighL",
+        "from": 2.9166666666666665,
+        "time": 2.933333333333333,
+        "sourceTime": 0.33333333333333304,
+        "targetLocalDegrees": 3.6532912658587735,
+        "targetWorldDegrees": 4.106326568318306,
+        "sourceLocalDegrees": 1.196074653462166,
+        "sourceWorldDegrees": 1.47061751505691,
+        "jointDistance": 0.0043642365077236015
+      },
+      "runtime": {
+        "actionId": 439,
+        "clipSha256": "0e7f782c43265ec111e7f3b34dc0a865bb541e49029388f51a62664e9f85f1bb",
+        "modelSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+        "contextModuleSha256": "d2fe03f0de047abb0f1f35c9131408e1028cf1d1e752e4d13cb70c75480d3010",
+        "environmentModuleSha256": "0cc8ee429ce4ef3d6164f9089393f32772250a2f2c1ae2a433148e68d51949cf",
+        "holderGroundingOffset": -0.0023397356271734893,
+        "angles": [
+          0,
+          45,
+          90,
+          180,
+          -90
+        ],
+        "poses": 45,
+        "visiblePoses": 35,
+        "maximumSkinProbeError": 1.1857187100668868e-16,
+        "maximumWallMatrixChange": 0,
+        "maximumLocalPositionDelta": 1.4305114648394124e-8,
+        "maximumVertexRadius": 1.4265062459435562,
+        "maximumConservativeAabbRadius": 2.024999999403954,
+        "minimumVisibleEnvironmentY": -0.0023397356271734893,
+        "placement": "Model and wall share the one initial holder grounding transform. Holder yaw is fixed within each test, with no Host travel. This does not prove a moving Host keeps its origin fixed.",
+        "contacts": "The report includes reaching and released limbs. These distances alone are not an assertion that every listed limb is currently planted.",
+        "positionsPreservedWithinFloat32Precision": true,
+        "scalesUnchanged": true,
+        "geometryUnchanged": true,
+        "runtimeRegisterClipPassed": true
+      },
+      "artifacts": {
+        "contact.json": {
+          "path": ".artifacts/doreumi-contact-audit/climb-ledge-439-v13/contact.json",
+          "sha256": "c3c05f96bc3a5876a1c705a9f89b06d94c5d84984b34bfb9d9c673c1cf42b4cd"
+        },
+        "full-support.json": {
+          "path": ".artifacts/doreumi-contact-audit/climb-ledge-439-v13/full-support.json",
+          "sha256": "02264caa7553e3f7dc001810438f6a0b007776e577250ad8fbc3675556e4a7b4"
+        },
+        "runtime-support.json": {
+          "path": ".artifacts/doreumi-contact-audit/climb-ledge-439-v13/runtime-support.json",
+          "sha256": "c76e19048dfb63a2f95029e33783a939fc6df13f2f66ac08e0957f4016a64a1a"
+        },
+        "joints.json": {
+          "path": ".artifacts/doreumi-contact-audit/climb-ledge-439-v13/joints.json",
+          "sha256": "d09ed91fd888c23efa9127fe661ff8f9ef7d256d0fd7fb8dfe96be20743d525f"
+        },
+        "focus.json": {
+          "path": ".artifacts/doreumi-contact-audit/climb-ledge-439-v13/focus.json",
+          "sha256": "16b97d48ed0bc72322f426efc30002de189e7b58b3afe6d80b8ceea42656b069"
+        },
+        "manifest.json": {
+          "path": ".artifacts/doreumi-contact-audit/climb-ledge-439-v13/manifest.json",
+          "sha256": "0606d127bccb1cf84750318729d8637fa9f672b93fa3905c7f78ef325dc46950"
+        }
+      }
+    },
+    {
+      "actionId": 619,
+      "directory": ".artifacts/doreumi-contact-audit/climb-ledge-619-v13",
+      "clipSha256": "fb8c3f9fe1fd0bd151daa5af98be6d85c91a59e3735a57792c2f501d59a9b473",
+      "sourceSha256": "f2d0864c963392e4c49cdc470d0efdbfb17c2c8047c359cb722e68e43c73c110",
+      "review": "pending",
+      "publicFilesWritten": false,
+      "exactDonorReplay": true,
+      "duration": 7.400000047683716,
+      "environmentSupport": {
+        "version": 1,
+        "kind": "low-ledge",
+        "sourceReferenceActionId": 439,
+        "sourceReferenceSha256": "0626ff7f4e6478eeb022e0ccfc408096ad4e64fc409fbe1d476145c28ab27d1e",
+        "geometry": {
+          "width": 2.25,
+          "frontZ": 0.68,
+          "depth": 0.22,
+          "wallTop": 0.75,
+          "top": 0.8,
+          "railZ": 0.545,
+          "railRadius": 0.024,
+          "footstepTop": 0.154,
+          "footstepFrontZ": 0.3,
+          "footstepBackZ": 0.75,
+          "rails": [
+            [
+              -0.98,
+              -0.24
+            ],
+            [
+              0.42,
+              0.98
+            ]
+          ]
+        },
+        "basis": {
+          "travel": 0.28,
+          "vertical": 0.29,
+          "palmX": 0.55,
+          "palmZ": 0.545,
+          "soleZ": 0.345
+        },
+        "sourceDurationMapping": [
+          1.2000000476837158,
+          1.1666666269302368
+        ],
+        "transferPhases": {
+          "L": [
+            {
+              "from": 0.060000000000000005,
+              "to": 0.4066666666666666
+            }
+          ],
+          "R": [
+            {
+              "from": 0.6766666666666666,
+              "to": 1.1066666666666667
+            }
+          ]
+        },
+        "maximumHandClearanceLift": 0.01514521453756934,
+        "rightPelvisPitchCorrectionRadians": 0,
+        "targetHandVertices": {
+          "L": 78037,
+          "R": 850
+        },
+        "targetFootVertices": {
+          "L": 65106,
+          "R": 13384
+        }
+      },
+      "fullSupport": {
+        "fps": 120,
+        "samples": 890,
+        "minimumModelSkinY": 0.001242201382174235,
+        "maximumUnsupportedDistance": 0.008776894541085906,
+        "intersectedSkinTriangles": 0,
+        "adaptedCoreMaterialPairs": 442,
+        "maximumCoreContactDriftEquivalent30Hz": 0.020392715194272472,
+        "contactDriftExceedingOnePercent": 0
+      },
+      "largestIntroducedWorld": {
+        "bone": "elbowL",
+        "from": 2.9,
+        "time": 2.9166666666666665,
+        "sourceTime": 0.31666666666666643,
+        "targetLocalDegrees": 5.530934816333249,
+        "targetWorldDegrees": 4.109537117483511,
+        "sourceLocalDegrees": 2.1596197846565315,
+        "sourceWorldDegrees": 1.7039899508216643,
+        "jointDistance": 0.01180167019613071
+      },
+      "runtime": {
+        "actionId": 619,
+        "clipSha256": "fb8c3f9fe1fd0bd151daa5af98be6d85c91a59e3735a57792c2f501d59a9b473",
+        "modelSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+        "contextModuleSha256": "d2fe03f0de047abb0f1f35c9131408e1028cf1d1e752e4d13cb70c75480d3010",
+        "environmentModuleSha256": "0cc8ee429ce4ef3d6164f9089393f32772250a2f2c1ae2a433148e68d51949cf",
+        "holderGroundingOffset": -0.0023397356271734893,
+        "angles": [
+          0,
+          45,
+          90,
+          180,
+          -90
+        ],
+        "poses": 45,
+        "visiblePoses": 35,
+        "maximumSkinProbeError": 1.3877787807814457e-16,
+        "maximumWallMatrixChange": 0,
+        "maximumLocalPositionDelta": 1.4305114648394124e-8,
+        "maximumVertexRadius": 1.4265062459435562,
+        "maximumConservativeAabbRadius": 2.024999999403954,
+        "minimumVisibleEnvironmentY": -0.0023397356271734893,
+        "placement": "Model and wall share the one initial holder grounding transform. Holder yaw is fixed within each test, with no Host travel. This does not prove a moving Host keeps its origin fixed.",
+        "contacts": "The report includes reaching and released limbs. These distances alone are not an assertion that every listed limb is currently planted.",
+        "positionsPreservedWithinFloat32Precision": true,
+        "scalesUnchanged": true,
+        "geometryUnchanged": true,
+        "runtimeRegisterClipPassed": true
+      },
+      "artifacts": {
+        "contact.json": {
+          "path": ".artifacts/doreumi-contact-audit/climb-ledge-619-v13/contact.json",
+          "sha256": "9ec9c204e3fcd6b139363ca528e24ee770869e310f9607e934df7b4908d5c53e"
+        },
+        "full-support.json": {
+          "path": ".artifacts/doreumi-contact-audit/climb-ledge-619-v13/full-support.json",
+          "sha256": "213c9f095fe42f7085b09304174e0b8f57997eee211ca7d06dd78ffa6c40694c"
+        },
+        "runtime-support.json": {
+          "path": ".artifacts/doreumi-contact-audit/climb-ledge-619-v13/runtime-support.json",
+          "sha256": "ec04f8ca01adc321af351e3a99cd18a51e313c1456ace514d60292b2edc7f697"
+        },
+        "joints.json": {
+          "path": ".artifacts/doreumi-contact-audit/climb-ledge-619-v13/joints.json",
+          "sha256": "e97b6b58298b371d380fcb878c696037e551411d3dee5af3af89dff6f0915104"
+        },
+        "focus.json": {
+          "path": ".artifacts/doreumi-contact-audit/climb-ledge-619-v13/focus.json",
+          "sha256": "4c7ecb2c10cd22b5ed1ffccfe67d6beac47bb5ad3f18a517c8ebbf78b8c00ee5"
+        },
+        "manifest.json": {
+          "path": ".artifacts/doreumi-contact-audit/climb-ledge-619-v13/manifest.json",
+          "sha256": "60cf45dad75fb02ef2806dd8d7595b21dff92d319b5e8e2c7415749a48cd8cab"
+        }
+      }
+    },
+    {
+      "actionId": 440,
+      "directory": ".artifacts/doreumi-contact-audit/climb-ledge-440-v15",
+      "clipSha256": "2af9ab5cab68dc21b294879117fa0bcff33860db4e59e88190fb8c27ed44ecb2",
+      "sourceSha256": "0626ff7f4e6478eeb022e0ccfc408096ad4e64fc409fbe1d476145c28ab27d1e",
+      "review": "pending",
+      "publicFilesWritten": false,
+      "exactDonorReplay": true,
+      "duration": 7.366666626930237,
+      "environmentSupport": {
+        "version": 1,
+        "kind": "low-ledge",
+        "sourceReferenceActionId": 440,
+        "sourceReferenceSha256": "0626ff7f4e6478eeb022e0ccfc408096ad4e64fc409fbe1d476145c28ab27d1e",
+        "geometry": {
+          "width": 2.25,
+          "frontZ": 0.68,
+          "depth": 0.22,
+          "wallTop": 0.75,
+          "top": 0.8,
+          "railZ": 0.545,
+          "railRadius": 0.024,
+          "footstepTop": 0.154,
+          "footstepFrontZ": 0.3,
+          "footstepBackZ": 0.75,
+          "rails": [
+            [
+              -0.98,
+              -0.42
+            ],
+            [
+              0.24,
+              0.98
+            ]
+          ]
+        },
+        "basis": {
+          "travel": 0.28,
+          "vertical": 0.29,
+          "palmX": 0.55,
+          "palmZ": 0.545,
+          "soleZ": 0.345
+        },
+        "sourceDurationMapping": [
+          1.1666666269302368,
+          1.1666666269302368
+        ],
+        "transferPhases": {
+          "L": [
+            {
+              "from": 0.6599999999999999,
+              "to": 1.0733333333333335
+            }
+          ],
+          "R": [
+            {
+              "from": 0.060000000000000005,
+              "to": 0.44
+            }
+          ]
+        },
+        "maximumHandClearanceLift": 0.014968699469403934,
+        "rightPelvisPitchCorrectionRadians": 0.17,
+        "referenceTailRepair": {
+          "affectedBones": [
+            "RightUpLeg",
+            "RightLeg",
+            "RightFoot",
+            "RightToeBase"
+          ],
+          "affectedPath": "rotation",
+          "verifiedSourceSha256": "0626ff7f4e6478eeb022e0ccfc408096ad4e64fc409fbe1d476145c28ab27d1e",
+          "from": 1.0999999602635702,
+          "retainedUntil": 1.1333332935969034,
+          "removedKeyTime": 1.1666666269302368,
+          "method": "C1-last-valid-rotation-deceleration"
+        },
+        "targetHandVertices": {
+          "L": 78037,
+          "R": 850
+        },
+        "targetFootVertices": {
+          "L": 65106,
+          "R": 13384
+        }
+      },
+      "fullSupport": {
+        "fps": 120,
+        "samples": 885,
+        "minimumModelSkinY": 0.00028480556615750885,
+        "maximumUnsupportedDistance": 0.008778869318615184,
+        "intersectedSkinTriangles": 0,
+        "adaptedCoreMaterialPairs": 409,
+        "maximumCoreContactDriftEquivalent30Hz": 0.01856710860903793,
+        "contactDriftExceedingOnePercent": 0
+      },
+      "largestIntroducedWorld": {
+        "bone": "elbowR",
+        "from": 2.8666666666666667,
+        "time": 2.8833333333333333,
+        "sourceTime": 0.2833333333333332,
+        "targetLocalDegrees": 6.324757155590158,
+        "targetWorldDegrees": 4.290098208016346,
+        "sourceLocalDegrees": 1.398413567072234,
+        "sourceWorldDegrees": 1.601154264167197,
+        "jointDistance": 0.01388634089209632
+      },
+      "runtime": {
+        "actionId": 440,
+        "clipSha256": "2af9ab5cab68dc21b294879117fa0bcff33860db4e59e88190fb8c27ed44ecb2",
+        "modelSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+        "contextModuleSha256": "d2fe03f0de047abb0f1f35c9131408e1028cf1d1e752e4d13cb70c75480d3010",
+        "environmentModuleSha256": "0cc8ee429ce4ef3d6164f9089393f32772250a2f2c1ae2a433148e68d51949cf",
+        "holderGroundingOffset": -0.0023397356271734893,
+        "angles": [
+          0,
+          45,
+          90,
+          180,
+          -90
+        ],
+        "poses": 45,
+        "visiblePoses": 35,
+        "maximumSkinProbeError": 9.71445146547012e-17,
+        "maximumWallMatrixChange": 0,
+        "maximumLocalPositionDelta": 1.4305114648394124e-8,
+        "maximumVertexRadius": 1.4265062459435562,
+        "maximumConservativeAabbRadius": 2.024999999403954,
+        "minimumVisibleEnvironmentY": -0.0023397356271734893,
+        "placement": "Model and wall share the one initial holder grounding transform. Holder yaw is fixed within each test, with no Host travel. This does not prove a moving Host keeps its origin fixed.",
+        "contacts": "The report includes reaching and released limbs. These distances alone are not an assertion that every listed limb is currently planted.",
+        "positionsPreservedWithinFloat32Precision": true,
+        "scalesUnchanged": true,
+        "geometryUnchanged": true,
+        "runtimeRegisterClipPassed": true
+      },
+      "artifacts": {
+        "contact.json": {
+          "path": ".artifacts/doreumi-contact-audit/climb-ledge-440-v15/contact.json",
+          "sha256": "487e6a9f3f5f22bc23eeaa2589f6831df928926695a98670bf89fc532c8e3535"
+        },
+        "full-support.json": {
+          "path": ".artifacts/doreumi-contact-audit/climb-ledge-440-v15/full-support.json",
+          "sha256": "e04a5b1ea830a1051964523c27c783ec0a0eb02c8f0cca5145918c6ee229aad8"
+        },
+        "runtime-support.json": {
+          "path": ".artifacts/doreumi-contact-audit/climb-ledge-440-v15/runtime-support.json",
+          "sha256": "e61fbdbade9b4b84155c27dd4f2d5dea7b030daa40e8f090663fab0442b57a02"
+        },
+        "joints.json": {
+          "path": ".artifacts/doreumi-contact-audit/climb-ledge-440-v15/joints.json",
+          "sha256": "8109a8b54b236b26a66adbe051a86b6528f4b80a98d539514951bdbeb35f59c5"
+        },
+        "focus.json": {
+          "path": ".artifacts/doreumi-contact-audit/climb-ledge-440-v15/focus.json",
+          "sha256": "7ccde14dbc7aaa8c7906f4e590cca093e1cb7223c78c78897579a95b983a7e29"
+        },
+        "manifest.json": {
+          "path": ".artifacts/doreumi-contact-audit/climb-ledge-440-v15/manifest.json",
+          "sha256": "423838adbec4f649618611e4b966822e0ed6840c6e4fe394a03075c3102f0923"
+        }
+      }
+    },
+    {
+      "actionId": 620,
+      "directory": ".artifacts/doreumi-contact-audit/climb-ledge-620-v15",
+      "clipSha256": "df916c975c6df20a48cf1cc9635cbe59a27a40fa6ac8aa1562b6269a54765a17",
+      "sourceSha256": "57a45a95c251cd4470dd05ec374bdd833186cfa9c582cb7c9e2a8edf92f2dc25",
+      "review": "pending",
+      "publicFilesWritten": false,
+      "exactDonorReplay": true,
+      "duration": 7.400000047683716,
+      "environmentSupport": {
+        "version": 1,
+        "kind": "low-ledge",
+        "sourceReferenceActionId": 440,
+        "sourceReferenceSha256": "0626ff7f4e6478eeb022e0ccfc408096ad4e64fc409fbe1d476145c28ab27d1e",
+        "geometry": {
+          "width": 2.25,
+          "frontZ": 0.68,
+          "depth": 0.22,
+          "wallTop": 0.75,
+          "top": 0.8,
+          "railZ": 0.545,
+          "railRadius": 0.024,
+          "footstepTop": 0.154,
+          "footstepFrontZ": 0.3,
+          "footstepBackZ": 0.75,
+          "rails": [
+            [
+              -0.98,
+              -0.42
+            ],
+            [
+              0.24,
+              0.98
+            ]
+          ]
+        },
+        "basis": {
+          "travel": 0.28,
+          "vertical": 0.29,
+          "palmX": 0.55,
+          "palmZ": 0.545,
+          "soleZ": 0.345
+        },
+        "sourceDurationMapping": [
+          1.2000000476837158,
+          1.1666666269302368
+        ],
+        "transferPhases": {
+          "L": [
+            {
+              "from": 0.6766666666666666,
+              "to": 1.1066666666666667
+            }
+          ],
+          "R": [
+            {
+              "from": 0.060000000000000005,
+              "to": 0.45666666666666667
+            }
+          ]
+        },
+        "maximumHandClearanceLift": 0.01664720101041628,
+        "rightPelvisPitchCorrectionRadians": 0.17,
+        "referenceTailRepair": {
+          "affectedBones": [
+            "RightUpLeg",
+            "RightLeg",
+            "RightFoot",
+            "RightToeBase"
+          ],
+          "affectedPath": "rotation",
+          "verifiedSourceSha256": "0626ff7f4e6478eeb022e0ccfc408096ad4e64fc409fbe1d476145c28ab27d1e",
+          "from": 1.0999999602635702,
+          "retainedUntil": 1.1333332935969034,
+          "removedKeyTime": 1.1666666269302368,
+          "method": "C1-last-valid-rotation-deceleration"
+        },
+        "targetHandVertices": {
+          "L": 78037,
+          "R": 850
+        },
+        "targetFootVertices": {
+          "L": 65106,
+          "R": 13384
+        }
+      },
+      "fullSupport": {
+        "fps": 120,
+        "samples": 890,
+        "minimumModelSkinY": 0.0008037800654405736,
+        "maximumUnsupportedDistance": 0.00877887553781545,
+        "intersectedSkinTriangles": 0,
+        "adaptedCoreMaterialPairs": 422,
+        "maximumCoreContactDriftEquivalent30Hz": 0.01813595670299338,
+        "contactDriftExceedingOnePercent": 0
+      },
+      "largestIntroducedWorld": {
+        "bone": "thighR",
+        "from": 2.783333333333333,
+        "time": 2.8,
+        "sourceTime": 0.19999999999999973,
+        "targetLocalDegrees": 4.35784741748227,
+        "targetWorldDegrees": 4.528090125983038,
+        "sourceLocalDegrees": 1.300768900645563,
+        "sourceWorldDegrees": 1.1218484080858464,
+        "jointDistance": 0.005714795049996856
+      },
+      "runtime": {
+        "actionId": 620,
+        "clipSha256": "df916c975c6df20a48cf1cc9635cbe59a27a40fa6ac8aa1562b6269a54765a17",
+        "modelSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+        "contextModuleSha256": "d2fe03f0de047abb0f1f35c9131408e1028cf1d1e752e4d13cb70c75480d3010",
+        "environmentModuleSha256": "0cc8ee429ce4ef3d6164f9089393f32772250a2f2c1ae2a433148e68d51949cf",
+        "holderGroundingOffset": -0.0023397356271734893,
+        "angles": [
+          0,
+          45,
+          90,
+          180,
+          -90
+        ],
+        "poses": 45,
+        "visiblePoses": 35,
+        "maximumSkinProbeError": 1.1857187100668868e-16,
+        "maximumWallMatrixChange": 0,
+        "maximumLocalPositionDelta": 1.4305114648394124e-8,
+        "maximumVertexRadius": 1.4265062459435562,
+        "maximumConservativeAabbRadius": 2.024999999403954,
+        "minimumVisibleEnvironmentY": -0.0023397356271734893,
+        "placement": "Model and wall share the one initial holder grounding transform. Holder yaw is fixed within each test, with no Host travel. This does not prove a moving Host keeps its origin fixed.",
+        "contacts": "The report includes reaching and released limbs. These distances alone are not an assertion that every listed limb is currently planted.",
+        "positionsPreservedWithinFloat32Precision": true,
+        "scalesUnchanged": true,
+        "geometryUnchanged": true,
+        "runtimeRegisterClipPassed": true
+      },
+      "artifacts": {
+        "contact.json": {
+          "path": ".artifacts/doreumi-contact-audit/climb-ledge-620-v15/contact.json",
+          "sha256": "aa4e43985733b0a570dee6ceb8411979d6252454c77ba9eb674a1ff7c0cb894a"
+        },
+        "full-support.json": {
+          "path": ".artifacts/doreumi-contact-audit/climb-ledge-620-v15/full-support.json",
+          "sha256": "73bf4b96bfce057c999afb76a21877fd0e0bc2c16bcff54943eb0295fae7137f"
+        },
+        "runtime-support.json": {
+          "path": ".artifacts/doreumi-contact-audit/climb-ledge-620-v15/runtime-support.json",
+          "sha256": "703b49df084729e6106cd01c1d6102a1219555d20326da21b0a4b8e8be2289fd"
+        },
+        "joints.json": {
+          "path": ".artifacts/doreumi-contact-audit/climb-ledge-620-v15/joints.json",
+          "sha256": "213d4d602046b4999160fb2eb4bbb6eedf0f95316ea2c37fd5822eb27188b442"
+        },
+        "focus.json": {
+          "path": ".artifacts/doreumi-contact-audit/climb-ledge-620-v15/focus.json",
+          "sha256": "294d4d99b11d9daa85c9fbaed2ae41271944df8e3992830ded47c1dbd7f4a950"
+        },
+        "manifest.json": {
+          "path": ".artifacts/doreumi-contact-audit/climb-ledge-620-v15/manifest.json",
+          "sha256": "6c838716b0c9e4c4b223818b22184a6b44dd1a319cb034404e94314e353a96b2"
+        }
+      }
+    }
+  ]
+}

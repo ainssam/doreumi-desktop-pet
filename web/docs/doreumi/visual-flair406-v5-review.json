@@ -1,0 +1,268 @@
+{
+  "checkedAt": "2026-09-24T05:35:45.142Z",
+  "id": "meshy:406",
+  "review": "passed",
+  "ambient": true,
+  "visualReviewer": "/root",
+  "clipSha256": "42bfddc199c332a2ee2ce4076d5aaa140bd950b8f7e1e14e9664c5dfc52e076e",
+  "sourceSha256": "f0b484f4bf1fe3f7113cd0be005e6306c5cc6a908e88b3e17088a41ea1aa77ba",
+  "masterSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+  "scope": "Root individually inspected normal 128-pixel and quarter-speed five-angle nine-pose sheets, plus actual rendered continuous playback through recovery into Idle. Source-bound numerical audits use the exact final serialized clip.",
+  "observation": "The character sits and reclines, rolls across the right palm and side/head, then crouches and recovers. The visible arm surface remains continuous without an abrupt pop. The small source airborne interval remains visible.",
+  "explicitAdaptations": [
+    "Right-palm material-point support ends at source 0.433333 seconds, 0.1 seconds before the raw donor hand lifts. The early release accommodates the unchanged short arm without stretching.",
+    "Actual stable landing-foot height calibrates the source floor; early donor palm penetration is not used as a whole-clip airborne baseline.",
+    "120 Hz root-height keys keep the unchanged quaternion animation supported as the contact surface switches between palm, head, side and feet."
+  ],
+  "reports": [
+    {
+      "file": "/tmp/doreumi-direct-406-1/report.json",
+      "sha256": "4936765f4b7ef41ef309e4e65b7f4f64b67b4aea6901d1613ca358f84dfe4a56",
+      "runtimeBundleSha256": "8cc808759dd5294bdd560a2737218a6d3b3031a24c426033466848fef97cfecc",
+      "playbackRate": 1,
+      "angles": [
+        0,
+        90,
+        180,
+        -90,
+        45
+      ],
+      "fractions": [
+        0,
+        0.125,
+        0.25,
+        0.375,
+        0.5,
+        0.625,
+        0.75,
+        0.875,
+        1
+      ],
+      "samples": 45,
+      "failures": 0,
+      "playback": {
+        "basis": "actual-rendered-frame-and-runtime-state",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 6.153099999999985,
+          "duration": 6.316666634877523,
+          "tolerance": 0.35,
+          "observedFrames": 23,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1
+        }
+      },
+      "images": [
+        {
+          "file": "/tmp/doreumi-direct-406-1/motion-meshy-406.jpg",
+          "sha256": "2b11a10ab706fce9d9393c2bc066f22a6f1a58ef45811804fd2036d2b7a2d22b"
+        },
+        {
+          "file": "/tmp/doreumi-direct-406-1/playback-meshy-406.jpg",
+          "sha256": "1d8ecb70186cc53550e0ebe2cd758c85a17e9f28b6c577218bbb64e90ef87676"
+        }
+      ]
+    },
+    {
+      "file": "/tmp/doreumi-direct-406-0.25/report.json",
+      "sha256": "2b68728b22b14023fdd77da51937c5bebcac77ed8c1e6aaa260b522047d3b695",
+      "runtimeBundleSha256": "8cc808759dd5294bdd560a2737218a6d3b3031a24c426033466848fef97cfecc",
+      "playbackRate": 0.25,
+      "angles": [
+        0,
+        90,
+        180,
+        -90,
+        45
+      ],
+      "fractions": [
+        0,
+        0.125,
+        0.25,
+        0.375,
+        0.5,
+        0.625,
+        0.75,
+        0.875,
+        1
+      ],
+      "samples": 45,
+      "failures": 0,
+      "playback": {
+        "basis": "actual-rendered-frame-and-runtime-state",
+        "coverage": {
+          "firstTime": 0,
+          "lastTime": 6.128575000000002,
+          "duration": 6.316666634877523,
+          "tolerance": 0.35,
+          "observedFrames": 25,
+          "monotonic": true,
+          "finalAction": "Idle",
+          "finalActiveActions": 1
+        }
+      },
+      "images": [
+        {
+          "file": "/tmp/doreumi-direct-406-0.25/motion-meshy-406.jpg",
+          "sha256": "ed47a9d719e74c5a2d70df1554fcb7f0e1e22e7c4890b01ad63bb5c82f1f7c27"
+        },
+        {
+          "file": "/tmp/doreumi-direct-406-0.25/playback-meshy-406.jpg",
+          "sha256": "8b58e5bbd85d67ecbd02bc56159e03d1c0cb531afa029f0d5ebcd082cde021dc"
+        }
+      ]
+    }
+  ],
+  "priorFocus": {
+    "file": "/tmp/doreumi-flair406-v3-focus/report.json",
+    "sha256": "cc3681ee39a1aa5795a3b96f6e0815d1ccfd503f8c1d94f35a8044da09e25aea",
+    "image": {
+      "file": "/tmp/doreumi-flair406-v3-focus/motion-meshy-406.jpg",
+      "sha256": "adfcb48d18c65dffbcda7519f37d4d81a672d5c00dfc16d19c2f39c1a9a52144"
+    },
+    "basis": "All 17 stored quaternion tracks remain byte-identical between v3 and v5; the 21-node joint audit also includes unchanged helper/root nodes. The v3 focus tests the same arm orientation and local rotation path.",
+    "quaternionTracks": 17,
+    "sourceFocusTime": 0.6416667
+  },
+  "fullBodySupport": {
+    "file": ".artifacts/doreumi-contact-audit/flair-palm-v5/full-support.json",
+    "sha256": "95e533ffc690d9b02cdfcbffa009cac8f2e40cdb195bcd921c8485563525372d",
+    "summary": {
+      "clipSha256": "42bfddc199c332a2ee2ce4076d5aaa140bd950b8f7e1e14e9664c5dfc52e076e",
+      "sourceSha256": "f0b484f4bf1fe3f7113cd0be005e6306c5cc6a908e88b3e17088a41ea1aa77ba",
+      "masterSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+      "fps": 120,
+      "frames": 759,
+      "sourceRestFloor": -7.224277439460414e-8,
+      "entryDuration": 2.8833333333333333,
+      "sourceDuration": 2.5333333015441895,
+      "exitDuration": 0.9,
+      "maximumEntryExitFloorGap": 0.004019454758467336,
+      "maximumWholeClipFloorGap": 0.03622978332421825,
+      "maximumSourceGroundedTargetGap": 0.008978181852350997,
+      "unsupportedWhileSourceGrounded": 0,
+      "basis": "Final serialized candidate at 120Hz; exact convex hull of identical-weight skin groups, including morph. Surface influence class names identify the actual lowest supporting skin, not bone origin. Source air is measured against original rest-floor, never inferred from target feet."
+    },
+    "limitations": "This audit measures actual lowest body-skin support height through rolling contacts. It does not claim that the changing body contact patch is a fixed stationary material point."
+  },
+  "palmSupport": {
+    "file": ".artifacts/doreumi-contact-audit/flair-palm-v5/contact.json",
+    "sha256": "85e271a0ed1a0abd7b923aa1d804187affd650789541a855976318e8c17cc1ba",
+    "summary": {
+      "actionId": 406,
+      "clipSha256": "42bfddc199c332a2ee2ce4076d5aaa140bd950b8f7e1e14e9664c5dfc52e076e",
+      "sourceSha256": "f0b484f4bf1fe3f7113cd0be005e6306c5cc6a908e88b3e17088a41ea1aa77ba",
+      "masterSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+      "fps": 60,
+      "sourceInterval": [
+        0,
+        0.43333333333333335
+      ],
+      "sourceFloor": -7.224277439460414e-8,
+      "targetVertex": 1037,
+      "sourceVertex": 12258,
+      "originalSourceContactEnd": 0.5333333333333333,
+      "supportRelease": "last-actual-reachable-palm-pose; short-limb-lift-off-adaptation-without-stretch",
+      "basis": "Original early right-palm support window, one fixed source and one fixed target material point; source motion is scaled only for comparison.",
+      "maximumDeltaXZ": 0.008245435311715982,
+      "maximumTotalXZ": 0.0301759996709881,
+      "maximumSourceDeltaXZ": 0.022197255858164622,
+      "maximumScaledResidualXZ": 3.8116616313630456e-7,
+      "maximumPalmHeight": 0.00400018050964326
+    }
+  },
+  "sourceFootSupport": {
+    "file": ".artifacts/doreumi-contact-audit/flair-palm-v5/feet.json",
+    "sha256": "bb75735d97a152996f08f66fce1d318227ec3d1f83bdd0b0582258add3e3a545",
+    "summary": {
+      "actionId": 406,
+      "sourceActionId": 406,
+      "derivation": null,
+      "sourceName": "Thomas_Flair_to_Jump_Up",
+      "sourceSha256": "f0b484f4bf1fe3f7113cd0be005e6306c5cc6a908e88b3e17088a41ea1aa77ba",
+      "clipSha256": "42bfddc199c332a2ee2ce4076d5aaa140bd950b8f7e1e14e9664c5dfc52e076e",
+      "sourceFloor": 0.01877731037057322,
+      "sourcePlantedPairs": 36,
+      "missingTargetContactPairs": 0,
+      "excessiveDriftPairs": 0,
+      "sourceMovingContactPairs": 20,
+      "pivotCompatiblePairs": 0,
+      "maxDriftByHeight": 0.005845666889267936
+    }
+  },
+  "joints": {
+    "file": ".artifacts/doreumi-contact-audit/flair-palm-v5/joints.json",
+    "sha256": "23f589baa4b531a152780654722715030dc691806fada74c4842db57c8ee7b1a",
+    "fps": 60,
+    "auditedNodes": 21,
+    "largestIntroducedWorld": {
+      "bone": "shoulderR",
+      "from": 2.8833333333333333,
+      "time": 2.9,
+      "sourceTime": 0.016666666666666607,
+      "targetLocalDegrees": 9.077569783777603,
+      "targetWorldDegrees": 5.396495759115677,
+      "sourceLocalDegrees": 5.082167999367133,
+      "sourceWorldDegrees": 3.050396448723324,
+      "jointDistance": 0.03383108827256628
+    },
+    "largestIntroducedLocal": {
+      "bone": "shoulderR",
+      "from": 3.85,
+      "time": 3.8666666666666667,
+      "sourceTime": 0.9833333333333334,
+      "targetLocalDegrees": 9.331366511417917,
+      "targetWorldDegrees": 0.34609829916035134,
+      "sourceLocalDegrees": 1.4398776358554628,
+      "sourceWorldDegrees": 9.254378470367252,
+      "jointDistance": 0.06845880846537804
+    },
+    "absoluteArmRestRelativeDegrees": {
+      "shoulderR": {
+        "max": 92.93754521195953,
+        "time": 0.7666666666666666
+      },
+      "armR": {
+        "max": 178.3127372104809,
+        "time": 0.6416666666666666
+      },
+      "elbowR": {
+        "max": 95.75149188877826,
+        "time": 0.08333333333333348
+      },
+      "wristR": {
+        "max": 57.37477952116241,
+        "time": 1.0083333333333333
+      }
+    },
+    "interpretation": "The 178.31-degree arm orientation is rest-relative, not a frame-to-frame jump. Original fast knee motion remains and was visually inspected at both speeds."
+  },
+  "exactReplay": {
+    "file": ".artifacts/doreumi-contact-audit/flair-production-replay/replay.json",
+    "sha256": "4369bf5d794c5e119afa9083ab42476525000e01cedd61e55ba538c57709fd33",
+    "version": 1,
+    "convertedSha256": "42bfddc199c332a2ee2ce4076d5aaa140bd950b8f7e1e14e9664c5dfc52e076e",
+    "metadataSha256": "86e6114745b016132f9e1c05151cae0468d9ecad02e6a274a4b2721478cad34d"
+  },
+  "supersedes": {
+    "document": "docs/doreumi/visual-flair406-candidate.json",
+    "clipSha256": "cbb08bd697319b42668ba694b24a7bea096ec9fa85b22d0285d6c03d08f52a1d",
+    "reason": "Rejected v3 had 109 unsupported source-near-floor frames. It was not approved; v5 corrects the vertical path and has zero such frames."
+  },
+  "sourceCodeHashes": {
+    "scripts/doreumi/meshy-floor-acrobatics.mjs": "02e2e345c839ffe46283e9c2efb7109e415d8c2b291843bbf80c187368e33595",
+    "scripts/doreumi/meshy-acrobatics-contract.mjs": "d13815420dc4fcd50666dfd3a0272be1a46e7e8fd767cbff8bd0c574540513a2",
+    "scripts/doreumi/meshy-retarget.mjs": "1be96a45969d8759881035b28c684fa6a82537a55d318cdfc990e28c3a8e257b"
+  },
+  "metadataSha256": "ca51c4a8a431ab397ee6baf72de634e750955130f44aa41567592e788431b5d5",
+  "productionPublished": {
+    "clipSha256": "42bfddc199c332a2ee2ce4076d5aaa140bd950b8f7e1e14e9664c5dfc52e076e",
+    "contract": {
+      "version": 1,
+      "convertedSha256": "42bfddc199c332a2ee2ce4076d5aaa140bd950b8f7e1e14e9664c5dfc52e076e",
+      "metadataSha256": "86e6114745b016132f9e1c05151cae0468d9ecad02e6a274a4b2721478cad34d"
+    },
+    "previousApprovedPreserved": 56
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "scope": "Root inspected each of 24 five-view nine-phase static sheets. No ambient approval; normal/slow continuous and small-size reviews remain.",
+  "evidence": "/tmp/doreumi-library-243-271",
+  "numericPass": true,
+  "modelSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+  "runtimeBundleSha256": "c74dee34fc9d1893455295a4031df13a12662549d3e0ed9b706a7191d1ab223b",
+  "clipHashes": {
+    "meshy:243": "27c4d203caf5005018c885abcd8b232eed740361bcb8221498091ac3fd198612",
+    "meshy:244": "9be1c76fe67396492a04cba74c41aa7aa86c07ba4245baed3a3eabcda9ce5aa2",
+    "meshy:245": "9594a3feff478f39273d4252c668780e82cb20da496d16795814de13cf36f616",
+    "meshy:246": "c9db340e09cb7f3ef46fcb98b4bedac61fb94bfadd66a976fc03dce4d5498562",
+    "meshy:247": "dab97165b90935540eedee7f160bc15a28ff4d6914e1f4a83675e9f7e59257bf",
+    "meshy:248": "5693475717ad9007720e7b52a8898703567a7bad9a1300e5cbdfd5d3a2ba0e3b",
+    "meshy:249": "6ee6877312a4563fda41cabf28468bfe7a3c97916f0751a35ba1081459b47222",
+    "meshy:250": "6aac4487139210c83fffa723ce1b0b4c7ac9b4ea77aa0f81128cdf0b67bc512d",
+    "meshy:251": "a67e05ee17f2c9741850cbba2dcd6397958888e009d1121e57d80621b11f4de0",
+    "meshy:252": "9a4be592385b3fcb986bba1f5c4f6f4fa05c56af02b5142fe45115c0ee8d9d33",
+    "meshy:253": "0daaf4ba2aabe353feda6a41503c5c517c86c3c8fa1e04c77fec1265aa3f532b",
+    "meshy:254": "7bda703932d382a6b66a2b2a3b31edf46f629b977b5bca4493d9a428c8c65578",
+    "meshy:255": "df0783da4eacf042671b558680f68c32786710af5be7546b9c8091dadfd84070",
+    "meshy:256": "726ee7bbed141c58b5a330499d407c6af7d0f7747be81ba0c617ecb700cd78bb",
+    "meshy:257": "7d70242f4dfa445f9f712de5f775a340bd4bf8669fc28b51504ef1c25c59897b",
+    "meshy:258": "1c24f3f644f7a6e31c77b2e75f1395cb4f87b886f8fafe660ca7197ac2eb9fb0",
+    "meshy:264": "d891d368fe8371da340e52d77e5e61ba508ab5a8ef72bb4720d86a5e2af60bd8",
+    "meshy:265": "9f17fe3d144e11e9b6f7165d0186c0a2c56ad2ff2195d74ed07144526228b821",
+    "meshy:266": "056b68dfe87b9cf6c2f92bb91339d0d7f96644f018cb6229f188d485ef3e5f7b",
+    "meshy:267": "66357118aa5d89ecf71c238f559c4ff499ddd61a840ad4df6747396343d5fc18",
+    "meshy:268": "6790d04efb33cf71a2adfd05789fa691f9a17c6b428da1e3a3a0b63c620fad2f",
+    "meshy:269": "cfd24324d63771795f16daa4c54579c233612cc80adac178238e6f0388ac8b0c",
+    "meshy:270": "127e7cd090a5d5df3f8f2c16e2ea9cdb4375247940a57de3de015d405c25931a",
+    "meshy:271": "4f6b32ae67a1fff2e75cadffa7ca9d6eeece8ad7a7324153c2133d067513aa00"
+  },
+  "motions": [
+    {
+      "id": 243,
+      "finding": "Subtle relaxed upright idle; all sampled joints stay connected.",
+      "review": "pending"
+    },
+    {
+      "id": 244,
+      "finding": "Small head and upper-body sway with feet close together; no sampled mesh split.",
+      "review": "pending"
+    },
+    {
+      "id": 245,
+      "finding": "Forward slouched idle keeps joined neck/shoulders; tempo and mood need continuous review.",
+      "review": "pending"
+    },
+    {
+      "id": 246,
+      "finding": "Small side weight shift and relaxed arms preserve the original silhouette.",
+      "review": "pending"
+    },
+    {
+      "id": 247,
+      "finding": "Backward-leaning relaxed idle remains within the frame.",
+      "review": "pending"
+    },
+    {
+      "id": 248,
+      "finding": "Forward bend and slight arm changes remain readable.",
+      "review": "pending"
+    },
+    {
+      "id": 249,
+      "finding": "Subtle upright idle with small head turn; continuous breathing motion needs playback review.",
+      "review": "pending"
+    },
+    {
+      "id": 250,
+      "finding": "Slouched idle with forearms slightly forward; no sampled split.",
+      "review": "pending"
+    },
+    {
+      "id": 251,
+      "finding": "Subtle upright breathing/weight shift remains framed.",
+      "review": "pending"
+    },
+    {
+      "id": 252,
+      "finding": "Relaxed stance with small head movement; no sampled mesh separation.",
+      "review": "pending"
+    },
+    {
+      "id": 253,
+      "finding": "Small forward hand gesture and head turn make the idle variation distinct.",
+      "review": "pending"
+    },
+    {
+      "id": 254,
+      "finding": "Large turning step and arm gesture require support/travel continuity review.",
+      "review": "pending"
+    },
+    {
+      "id": 255,
+      "finding": "Upper-body dip dominates the stomp sheet; foot lift/landing amplitude is unclear and requires source comparison.",
+      "review": "pending"
+    },
+    {
+      "id": 256,
+      "finding": "Similar to 255: stomp readability and actual foot lift require closer source/frame audit.",
+      "review": "pending"
+    },
+    {
+      "id": 257,
+      "finding": "One-sided compression and deep dip are distinct; stomp landing timing remains pending.",
+      "review": "pending"
+    },
+    {
+      "id": 258,
+      "finding": "Crouching head turns and bow preserve the original body shape.",
+      "review": "pending"
+    },
+    {
+      "id": 264,
+      "finding": "Lying cough raises torso/head while maintaining visible joined limbs; floor-support entry/exit timing pending.",
+      "review": "pending"
+    },
+    {
+      "id": 265,
+      "finding": "Lying stomach-hold rolls the upper torso to one side; grip/contact and transitions pending.",
+      "review": "pending"
+    },
+    {
+      "id": 266,
+      "finding": "Hands-out lying posture fits all views; entering and leaving the floor needs continuous review.",
+      "review": "pending"
+    },
+    {
+      "id": 267,
+      "finding": "Flat sleeping pose remains framed from both sides; entry/exit naturalness not approved by static sheets.",
+      "review": "pending"
+    },
+    {
+      "id": 268,
+      "finding": "Seated dozing has visible buttock-level support and forward knees; seated-context gate still requires explicit reviewed adaptation.",
+      "review": "pending"
+    },
+    {
+      "id": 269,
+      "finding": "Seated-to-lying sequence is distinct in side views; standing recovery needs slow playback.",
+      "review": "pending"
+    },
+    {
+      "id": 270,
+      "finding": "Tossing and turning rotates through side/back with connected limbs; contact continuity and recovery pending.",
+      "review": "pending"
+    },
+    {
+      "id": 271,
+      "finding": "Waking lifts the head/upper torso from lying; the full support/recovery sequence remains pending.",
+      "review": "pending"
+    }
+  ]
+}

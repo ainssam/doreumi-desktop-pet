@@ -1,0 +1,41 @@
+{
+  "scope": "Root inspected all five joint-overlay five-view/nine-phase sheets and temporal frames extracted at 1fps from quarter playback (equivalent .25 source seconds). 318 also inspected at 128px normal speed, temporal 4fps. Physical devices untested.",
+  "evidence": "/tmp/doreumi-contact-quarter-v3",
+  "numericPass": true,
+  "modelSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+  "runtimeBundleSha256": "a90e16d6ba5750cd208ef3e74cc611de6950688316079967e29739fca80b87c8",
+  "clipHashes": {
+    "meshy:22": "25cada7e8fb0333355ddad6cafe379902e7dbe73ec9c23ba51ee6aa4b59e74ef",
+    "meshy:23": "d32791dff52bb201c0f30177bc2b33bae16b4ae52dcb8d06f1b2962b80cd3dc3",
+    "meshy:24": "2cb4e66135de676d3497db2ed58d8739d7efe436e9e60de4774e106d4ae5f4ae",
+    "meshy:63": "6b17be69bb8544228fd48a3a86c1c0aab3341ca5fbf9a49c72b67be946afd8d8",
+    "meshy:318": "7e209fb0050f792a93268475e6ccbf31591093686e69509e712e19aad1e100a0"
+  },
+  "motions": [
+    {
+      "id": 22,
+      "review": "pending",
+      "finding": "Readable short-arm dance with weight shifts, limb-contained joint overlays and Idle recovery. Superseded by 60Hz audit detecting new knee/foot quaternion discontinuities between captured phases; pending continuous IK correction."
+    },
+    {
+      "id": 23,
+      "review": "pending",
+      "finding": "Readable short-arm dance with weight shifts, limb-contained joint overlays and Idle recovery. Superseded by 60Hz audit detecting new knee/foot quaternion discontinuities between captured phases; pending continuous IK correction."
+    },
+    {
+      "id": 24,
+      "review": "pending",
+      "finding": "Readable short-arm dance with weight shifts, limb-contained joint overlays and Idle recovery. Superseded by 60Hz audit detecting new knee/foot quaternion discontinuities between captured phases; pending continuous IK correction."
+    },
+    {
+      "id": 63,
+      "review": "pending",
+      "finding": "Readable short-arm dance with weight shifts, limb-contained joint overlays and Idle recovery. Superseded by 60Hz audit detecting new knee/foot quaternion discontinuities between captured phases; pending continuous IK correction."
+    },
+    {
+      "id": 318,
+      "review": "pending",
+      "finding": "Revised hands stay together at chest while bowing and rubbing, then separate into Idle. Small normal and quarter temporal frames retain readable hand gesture; full hand-joint continuity audit requested before approval. Subsequent full-arm 60Hz audit found a 17.36-degree/frame arm jump near source2.2s (source1.48 degrees), so this clip also requires a new contact-envelope revision before approval."
+    }
+  ]
+}

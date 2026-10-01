@@ -1,0 +1,130 @@
+{
+  "version": 1,
+  "evidence": "/tmp/doreumi-library-106-123",
+  "scope": "Root inspected every five-view nine-phase static sheet. This run did not record continuous playback and does not approve ambient use.",
+  "modelSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+  "clipHashes": {
+    "meshy:106": "f8dffe121f81e0136391e1bc2d5a9a802854cc892064bfaf28195bcab6ddc994",
+    "meshy:107": "07b25d869c5e8d1fb29deb85ed98ecba438ee9a6b03d78fa16206f0b55b2314e",
+    "meshy:108": "57ad651e9ac7128a69fd98854d36f97a3cfa7eea4db215443fc9a66fa961615d",
+    "meshy:109": "2a3d392b05c922eea17b30ea47c991aaa15e6bc5e226a32a496ea19bbaed0d48",
+    "meshy:110": "2e18131b64211811cd33cea6e4506925231472e32839567ba176571ec20061e7",
+    "meshy:111": "967a69a23366f6731e568b6d175042638f3841c2df843e81ff10e53e04a763d7",
+    "meshy:112": "f38fa16613e36089a85d8a798fb018983e8df7f2c36b9c0badc89daaa8a0d867",
+    "meshy:113": "36e3c129237acf31e3bd5f18f11c7ed4290c07a9b7c89e2342b1043ddc84dda7",
+    "meshy:114": "5a942c10805552ea011a433e8c92be2c9abfff4d59b943e28bf39a5191f5bd03",
+    "meshy:115": "1c0e2b53ab7f8b0659232b7adaad750172d2860cb17d6c186a5fc98559d7fc2b",
+    "meshy:116": "e46944efac1c3a51a3c4b7b99a05b3cddd7a442bb8dd86ed62d830db7084836e",
+    "meshy:117": "489db103223a1b673676cf7a341513f06b5e5fcbaeafc56d18d892ffdce6abbc",
+    "meshy:118": "3f6604bb21bab968d96d9ef5d68db55b6f362a831d644df3be48b33ad086dbff",
+    "meshy:119": "7bc27f7cae4bec2783fdf325b4246bdf88e8afa615443e65fbbadc5eb5c8bf03",
+    "meshy:120": "fd2bf5e55fddfda4418f640f653cadcd72b19d5a90811952083cb31cf7a7f316",
+    "meshy:121": "10656800ea642df935edb3846ebe8b1220573b988851a863c7fcb689d0b36618",
+    "meshy:123": "a3150275c859caec9ee95beb664f642efebd21c68c58a6f5dc85a258bad358a0"
+  },
+  "motions": [
+    {
+      "id": 106,
+      "finding": "Raised forearm reaches cheek/temple height; elbows flex and the original short-arm shape stays joined.",
+      "views": "reviewed",
+      "ambientReview": "pending"
+    },
+    {
+      "id": 107,
+      "finding": "Alternating knee lifts and outward forearms are distinct; continuous foot support still needs travel playback.",
+      "views": "reviewed",
+      "ambientReview": "pending"
+    },
+    {
+      "id": 108,
+      "finding": "Three-quarter lean and alternating steps remain readable; no sampled neck/hip split.",
+      "views": "reviewed",
+      "ambientReview": "pending"
+    },
+    {
+      "id": 109,
+      "finding": "Groovy walk includes large facing changes; static poses stay joined, integrated curved travel remains unreviewed.",
+      "views": "reviewed",
+      "ambientReview": "pending"
+    },
+    {
+      "id": 110,
+      "finding": "Raised hand and alternating knees are visible in all five views without stretched limbs.",
+      "views": "reviewed",
+      "ambientReview": "pending"
+    },
+    {
+      "id": 111,
+      "finding": "Forward-leaning gait preserves the head/torso connection; support and recovery tempo require continuous review.",
+      "views": "reviewed",
+      "ambientReview": "pending"
+    },
+    {
+      "id": 112,
+      "finding": "Small alternating steps with relaxed arms remain distinct; sampled limbs retain their original proportions.",
+      "views": "reviewed",
+      "ambientReview": "pending"
+    },
+    {
+      "id": 113,
+      "finding": "Front forearms and swaying torso are readable; no sampled seam separation.",
+      "views": "reviewed",
+      "ambientReview": "pending"
+    },
+    {
+      "id": 114,
+      "finding": "Backward head/torso lean is visible from the side; balance timing remains pending.",
+      "views": "reviewed",
+      "ambientReview": "pending"
+    },
+    {
+      "id": 115,
+      "finding": "Repeated alternating knee lifts retain connected hips and knees.",
+      "views": "reviewed",
+      "ambientReview": "pending"
+    },
+    {
+      "id": 116,
+      "finding": "Foot crossing and forward lean show distinct poses; continuous heel/toe contact remains pending.",
+      "views": "reviewed",
+      "ambientReview": "pending"
+    },
+    {
+      "id": 117,
+      "finding": "Turning steps and opening forearms stay joined; integrated travel review remains.",
+      "views": "reviewed",
+      "ambientReview": "pending"
+    },
+    {
+      "id": 118,
+      "finding": "High alternating knees and elbow bends are visible from front and side.",
+      "views": "reviewed",
+      "ambientReview": "pending"
+    },
+    {
+      "id": 119,
+      "finding": "Side-to-side deep lean remains connected, but the numeric camera check found minX -1.0226 at fraction .25. Framing fix required.",
+      "views": "reviewed",
+      "ambientReview": "pending",
+      "followup": "Resolved as a QA false positive: the old world AABB projected empty rotated corners. Independent 60Hz full-skin sampling and actual renderer vertex projection both pass. See /tmp/doreumi-119-exact-bounds. Clip and framing were unchanged; naturalness review remains pending."
+    },
+    {
+      "id": 120,
+      "finding": "Forward lean and small raised forearm preserve silhouette; normal and slow continuous timing remain pending.",
+      "views": "reviewed",
+      "ambientReview": "pending"
+    },
+    {
+      "id": 121,
+      "finding": "Subtle upper-body lean and low steps stay within frame; verify rhythm at small size.",
+      "views": "reviewed",
+      "ambientReview": "pending"
+    },
+    {
+      "id": 123,
+      "finding": "Repeated forward body dips keep the neck seam intact; support/weight timing remains pending.",
+      "views": "reviewed",
+      "ambientReview": "pending"
+    }
+  ]
+}

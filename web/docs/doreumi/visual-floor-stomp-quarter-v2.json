@@ -1,0 +1,90 @@
+{
+  "checkedAt": "2026-09-24T03:59:20.898991+00:00",
+  "scope": "Five latest clips, five angles/nine poses and individually inspected quarter-speed1fps temporal sequences. Visual review only, no ambient approval.",
+  "runtimeBundleSha256": "1537462f2ef1e7e68dc28b8895b6b80f0ccc01d77437d4ad03718bab1d78f6f6",
+  "modelSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+  "playbackRate": 0.25,
+  "automaticBoundsPass": true,
+  "items": [
+    {
+      "id": "meshy:255",
+      "clipSha256": "269bb3f433fcd9879138bef1f7fa10669a0ee8591c6bacf8d44a576b25616f85",
+      "observation": "Lifted foot projects forward; torso anticipates with forward bend, planted leg maintains visible support. Exact missing-source-pair audit pending.",
+      "review": "pending-contact-verification",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-floor-stomp-quarter-v2/motion-meshy-255.jpg",
+          "sha256": "6669702dca88c24b6a05dbab928a1a9e9ea5a0a3ccda2d1bc19e55a6a9624581"
+        },
+        {
+          "file": "/tmp/doreumi-floor-stomp-quarter-v2/temporal-meshy-255.jpg",
+          "sha256": "6d6242922b3315075f36c0e5fe60318d53922461355ea1d01c60f86ab5bd5a13"
+        }
+      ]
+    },
+    {
+      "id": "meshy:256",
+      "clipSha256": "7e85f5b4d168de3d4adbb11d342da3edeab47393023a4ca9ea8f0748422175a3",
+      "observation": "Forward stomp silhouette clear in five angles and temporal playback; exact source-contact interpretation pending.",
+      "review": "pending-contact-verification",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-floor-stomp-quarter-v2/motion-meshy-256.jpg",
+          "sha256": "db3e644bfb9330fd82edfeb50df1ec5ee6f5335da5d71fa42fff6cf2947e2f3e"
+        },
+        {
+          "file": "/tmp/doreumi-floor-stomp-quarter-v2/temporal-meshy-256.jpg",
+          "sha256": "aebf662e0a618b099c45c4af2d825c9947ade2a4c35dc867fe7f8b8ffc804ea9"
+        }
+      ]
+    },
+    {
+      "id": "meshy:269",
+      "clipSha256": "31aef9c4e7abd3b9e2861d05e85dc42d2f65202b7d2daf1f0f9c29288a591b4e",
+      "observation": "Seated entry, drowsy recline and seated recovery visually coherent; numeric support audit pending.",
+      "review": "pending-contact-verification",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-floor-stomp-quarter-v2/motion-meshy-269.jpg",
+          "sha256": "0d281a841bcdc36c6748ab806968a14523f9e1559e2f6a273e23b22a4c6ec6be"
+        },
+        {
+          "file": "/tmp/doreumi-floor-stomp-quarter-v2/temporal-meshy-269.jpg",
+          "sha256": "6a066d8ebe6ed3c34e8ebabc8396df3b2e7a10eb1c6d3343f3f52aa344539fa5"
+        }
+      ]
+    },
+    {
+      "id": "meshy:490",
+      "clipSha256": "6cb9538f971ec118ec06f10f0ad6122931dabd51191051ab2f0b53cfeb1751dc",
+      "observation": "Spin/fall retained; floor recovery rolls to seated then stands rather than rotating rigid body upright.",
+      "review": "pending-contact-verification",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-floor-stomp-quarter-v2/motion-meshy-490.jpg",
+          "sha256": "0d5fe07a2a5a626857a9e816a9c1d42eb398fa7ef02cef30c8e4d9f3ef9e203c"
+        },
+        {
+          "file": "/tmp/doreumi-floor-stomp-quarter-v2/temporal-meshy-490.jpg",
+          "sha256": "b83cebe6f3f5760b6fc709b0ab1b566e75b8242266f91abf88da2212a4c0bcf5"
+        }
+      ]
+    },
+    {
+      "id": "meshy:502",
+      "clipSha256": "7b0c8a41a122bc7390d56d48c4bffdee2281e7f8de00ed82253c6bcd6dc2e0f4",
+      "observation": "Prone airborne core retained; hand brace and kneeling recovery visible. Original floor reference requires independent audit.",
+      "review": "pending-contact-verification",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-floor-stomp-quarter-v2/motion-meshy-502.jpg",
+          "sha256": "252e1e9a401f6ac77905372ac3c8b7d238d3f981eb0a6ee4e80484fec894d2af"
+        },
+        {
+          "file": "/tmp/doreumi-floor-stomp-quarter-v2/temporal-meshy-502.jpg",
+          "sha256": "218b664bc5a35f7b4c65221af37516848b0007a0196ad3c5d64bb93741a15031"
+        }
+      ]
+    }
+  ]
+}

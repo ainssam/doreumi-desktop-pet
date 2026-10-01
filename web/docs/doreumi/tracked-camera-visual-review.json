@@ -1,0 +1,56 @@
+{
+  "checkedAt": "2026-09-24T04:16:48.721596+00:00",
+  "scope": "Two camera-only candidates, actual normal128 and quarter-speed five-angle/nine-pose sheets plus temporal4fps/1fps samples individually inspected. No ambient approval.",
+  "items": [
+    {
+      "id": "meshy:501",
+      "clipSha256": "f57dfa782e546fcb502c916a1310cbaf83ec7bb903f7925ee2136f8df321a22f",
+      "observation": "Camera follows full deformed-skin envelope at fixed motion scale; previously tiny character is readable at128px and throughout quarter-speed playback. Original root height remains unchanged. Pose/core naturalness and absolute joint peaks remain separate pending checks.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-camera-501-small/motion-meshy-501.jpg",
+          "sha256": "e13c508fbd1e02eb678a5db24d409bf052f18bc3a0d7910d8b0503630dbbdb18"
+        },
+        {
+          "file": "/tmp/doreumi-camera-501-small/temporal-meshy-501.jpg",
+          "sha256": "f3f05a88ac658883a5b7b5b54bdbc4717d16530dc9249b5e94ea708bc90b57db"
+        },
+        {
+          "file": "/tmp/doreumi-camera-501-quarter/motion-meshy-501.jpg",
+          "sha256": "32c51756d70ca4407042cc72f89a10616d6734acf5118cfee2fc3d187ac82f11"
+        },
+        {
+          "file": "/tmp/doreumi-camera-501-quarter/temporal-meshy-501.jpg",
+          "sha256": "7167745e7639da3c7742b4658eb6d3e8105cdadb6bdefabec4c29b9b072916e3"
+        }
+      ],
+      "metadataSha256": "23826ff09f09dc5499bef31bbbe759b4203188cfbd6c59955fc34bcc201cff7a",
+      "shippingFramingMatchesPreviewExactly": true
+    },
+    {
+      "id": "meshy:508",
+      "clipSha256": "0add9b3931372b7bfdbad074315e697632b03215ab68dfb5b1031aedc5dc5a32",
+      "observation": "Camera follows full deformed-skin envelope at fixed motion scale; previously tiny character is readable at128px and throughout quarter-speed playback. Original root height remains unchanged. Pose/core naturalness and absolute joint peaks remain separate pending checks.",
+      "evidence": [
+        {
+          "file": "/tmp/doreumi-camera-508-small/motion-meshy-508.jpg",
+          "sha256": "75370c17b50ed601e7d14ab14e22b732f87beb0943b8c8f6b01504abd635645f"
+        },
+        {
+          "file": "/tmp/doreumi-camera-508-small/temporal-meshy-508.jpg",
+          "sha256": "1221ae455ba9db682d9da7cb76f3b4eaa4f36fc0e1a03f39bf96feddac49896d"
+        },
+        {
+          "file": "/tmp/doreumi-camera-508-quarter/motion-meshy-508.jpg",
+          "sha256": "f4217e14a8c63ef9fb9ab6936fa469c2d4e517b7ef1e7bc34c0bbcedbb27dd17"
+        },
+        {
+          "file": "/tmp/doreumi-camera-508-quarter/temporal-meshy-508.jpg",
+          "sha256": "e5b85da89e37a799f09dff73aa5908fbb22e6b799389c43f1d5b32b6cd00e182"
+        }
+      ],
+      "metadataSha256": "b1e236d4bee9e815ceeee0818e11c4fb897ae37bea1a01aadb06be5aac7bf8f4",
+      "shippingFramingMatchesPreviewExactly": true
+    }
+  ]
+}

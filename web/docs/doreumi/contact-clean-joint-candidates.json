@@ -1,0 +1,1283 @@
+{
+  "scope": "44 source-contact-clean candidates, whole-joint 60Hz audit. Numeric findings only; no new ambient approval.",
+  "modelSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+  "complete": true,
+  "clips": [
+    {
+      "id": "meshy:2",
+      "label": "Alert",
+      "clipSha256": "08d0f198355209a120858a794ce5301ee142efd21599a08f5588415838979de5",
+      "largestIntroducedWorld": {
+        "bone": "elbowL",
+        "from": 2.533333333333333,
+        "time": 2.55,
+        "sourceTime": 1.8499999999999999,
+        "targetLocalDegrees": 0.8279817295697155,
+        "targetWorldDegrees": 1.57063538932409,
+        "sourceLocalDegrees": 0.9009009693661442,
+        "sourceWorldDegrees": 1.3652494816958902,
+        "jointDistance": 0.013560409800511396
+      },
+      "largestIntroducedLocal": {
+        "bone": "head",
+        "from": 3.1333333333333333,
+        "time": 3.15,
+        "sourceTime": 2.45,
+        "targetLocalDegrees": 3.704890427954715,
+        "targetWorldDegrees": 4.334352578364063,
+        "sourceLocalDegrees": 0.8299756399198417,
+        "sourceWorldDegrees": 4.3418122209754735,
+        "jointDistance": 0.0024859168810896603
+      },
+      "maximumTransitionWorldDegrees": 2.0410837751652107,
+      "status": "requires-visual-review"
+    },
+    {
+      "id": "meshy:11",
+      "label": "Idle_02",
+      "clipSha256": "5c7203ec43e2d74bda4d273b7e9b60ba55527aab84e1de92e6f46f49da3d26f9",
+      "largestIntroducedWorld": {
+        "bone": "wristL",
+        "from": 1.1166666666666667,
+        "time": 1.1333333333333333,
+        "sourceTime": 0.43333333333333335,
+        "targetLocalDegrees": 0.15659647994794051,
+        "targetWorldDegrees": 0.18121266001870423,
+        "sourceLocalDegrees": 0.17774773126666896,
+        "sourceWorldDegrees": 0.055413209569939274,
+        "jointDistance": 0.0010100759635600538
+      },
+      "largestIntroducedLocal": {
+        "bone": "torso",
+        "from": 0.8666666666666667,
+        "time": 0.8833333333333333,
+        "sourceTime": 0.18333333333333335,
+        "targetLocalDegrees": 0.21356096379136302,
+        "targetWorldDegrees": 0.16728676234348624,
+        "sourceLocalDegrees": 0.008247463323389442,
+        "sourceWorldDegrees": 0.15262694001739807,
+        "jointDistance": 0.00023166464765221018
+      },
+      "maximumTransitionWorldDegrees": 2.054442016668489,
+      "status": "requires-visual-review"
+    },
+    {
+      "id": "meshy:12",
+      "label": "Idle_03",
+      "clipSha256": "3fed289233000aec115841b68d52495acacb4dd2cfc4658173ba1eadb7d48ad3",
+      "largestIntroducedWorld": {
+        "bone": "footL",
+        "from": 3.683333333333333,
+        "time": 3.7,
+        "sourceTime": 3,
+        "targetLocalDegrees": 0.7077972637667328,
+        "targetWorldDegrees": 0.23383626097467555,
+        "sourceLocalDegrees": 0.8152758378020879,
+        "sourceWorldDegrees": 0.00780348571042587,
+        "jointDistance": 0.0006269257007426097
+      },
+      "largestIntroducedLocal": {
+        "bone": "head",
+        "from": 3.8333333333333335,
+        "time": 3.85,
+        "sourceTime": 3.1500000000000004,
+        "targetLocalDegrees": 3.1000510520014712,
+        "targetWorldDegrees": 1.213386150139918,
+        "sourceLocalDegrees": 1.385529703830379,
+        "sourceWorldDegrees": 1.136354778051585,
+        "jointDistance": 0.006622241435649424
+      },
+      "maximumTransitionWorldDegrees": 2.0483330898077075,
+      "status": "requires-visual-review"
+    },
+    {
+      "id": "meshy:36",
+      "label": "Confused_Scratch",
+      "clipSha256": "4f98928666aea54c378e8b5e1969811146459016f6f5daa94c5208091e26789f",
+      "largestIntroducedWorld": {
+        "bone": "armR",
+        "from": 10.15,
+        "time": 10.166666666666666,
+        "sourceTime": 9.466666666666667,
+        "targetLocalDegrees": 24.00729843043599,
+        "targetWorldDegrees": 25.5800889403408,
+        "sourceLocalDegrees": 5.6116945421196425,
+        "sourceWorldDegrees": 7.612937759322412,
+        "jointDistance": 0.013180025953280926
+      },
+      "largestIntroducedLocal": {
+        "bone": "armR",
+        "from": 10.15,
+        "time": 10.166666666666666,
+        "sourceTime": 9.466666666666667,
+        "targetLocalDegrees": 24.00729843043599,
+        "targetWorldDegrees": 25.5800889403408,
+        "sourceLocalDegrees": 5.6116945421196425,
+        "sourceWorldDegrees": 7.612937759322412,
+        "jointDistance": 0.013180025953280926
+      },
+      "maximumTransitionWorldDegrees": 1.793362142175727,
+      "status": "needs-scratch-IK-correction"
+    },
+    {
+      "id": "meshy:38",
+      "label": "Dozing_Elderly",
+      "clipSha256": "60cf7486c85a73e0bf935f8927d6cee3d9ff9c75f69c02de6218c1533dcd4d65",
+      "largestIntroducedWorld": {
+        "bone": "elbowR",
+        "from": 9.766666666666667,
+        "time": 9.783333333333333,
+        "sourceTime": 9.05,
+        "targetLocalDegrees": 0.5364063049492087,
+        "targetWorldDegrees": 0.3327547993383828,
+        "sourceLocalDegrees": 0.4536679864219827,
+        "sourceWorldDegrees": 0.18219568981688475,
+        "jointDistance": 0.0019185171233028259
+      },
+      "largestIntroducedLocal": {
+        "bone": "head",
+        "from": 9.633333333333333,
+        "time": 9.65,
+        "sourceTime": 8.916666666666668,
+        "targetLocalDegrees": 0.9699548136481323,
+        "targetWorldDegrees": 1.1765287035928642,
+        "sourceLocalDegrees": 0.3681222242846271,
+        "sourceWorldDegrees": 1.2177347804313314,
+        "jointDistance": 0.001555608965717271
+      },
+      "maximumTransitionWorldDegrees": 4.758079044280837,
+      "status": "requires-visual-review"
+    },
+    {
+      "id": "meshy:243",
+      "label": "Idle_3",
+      "clipSha256": "27c4d203caf5005018c885abcd8b232eed740361bcb8221498091ac3fd198612",
+      "largestIntroducedWorld": {
+        "bone": "footR",
+        "from": 4.2,
+        "time": 4.216666666666667,
+        "sourceTime": 3.5166666666666666,
+        "targetLocalDegrees": 0.05227281135332045,
+        "targetWorldDegrees": 0.18974754050971787,
+        "sourceLocalDegrees": 0.013721734669708614,
+        "sourceWorldDegrees": 0.024045999315824983,
+        "jointDistance": 0.00037901209953110474
+      },
+      "largestIntroducedLocal": {
+        "bone": "torso",
+        "from": 6.05,
+        "time": 6.066666666666666,
+        "sourceTime": 5.366666666666666,
+        "targetLocalDegrees": 0.13119133204979153,
+        "targetWorldDegrees": 0.15231431764880804,
+        "sourceLocalDegrees": 0,
+        "sourceWorldDegrees": 0.16172284183920885,
+        "jointDistance": 0.0003444398239272873
+      },
+      "maximumTransitionWorldDegrees": 2.0687485621358874,
+      "status": "requires-visual-review"
+    },
+    {
+      "id": "meshy:244",
+      "label": "Idle_4",
+      "clipSha256": "9be1c76fe67396492a04cba74c41aa7aa86c07ba4245baed3a3eabcda9ce5aa2",
+      "largestIntroducedWorld": {
+        "bone": "wristR",
+        "from": 10.45,
+        "time": 10.466666666666667,
+        "sourceTime": 9.766666666666667,
+        "targetLocalDegrees": 0.05247575271877449,
+        "targetWorldDegrees": 0.608359265271201,
+        "sourceLocalDegrees": 0.14780432467543736,
+        "sourceWorldDegrees": 0.4395083329286251,
+        "jointDistance": 0.0031509530788487424
+      },
+      "largestIntroducedLocal": {
+        "bone": "torso",
+        "from": 4,
+        "time": 4.016666666666667,
+        "sourceTime": 3.3166666666666664,
+        "targetLocalDegrees": 0.2613344156382862,
+        "targetWorldDegrees": 0.22939251152121623,
+        "sourceLocalDegrees": 0,
+        "sourceWorldDegrees": 0.2195953385003994,
+        "jointDistance": 0.00016467370478884792
+      },
+      "maximumTransitionWorldDegrees": 1.7910095398419985,
+      "status": "requires-visual-review"
+    },
+    {
+      "id": "meshy:246",
+      "label": "Idle_6",
+      "clipSha256": "c9db340e09cb7f3ef46fcb98b4bedac61fb94bfadd66a976fc03dce4d5498562",
+      "largestIntroducedWorld": {
+        "bone": "footL",
+        "from": 4.516666666666667,
+        "time": 4.533333333333333,
+        "sourceTime": 3.833333333333333,
+        "targetLocalDegrees": 0.04345509030484892,
+        "targetWorldDegrees": 0.15270398389346385,
+        "sourceLocalDegrees": 0.05914949267343963,
+        "sourceWorldDegrees": 0.023508012795997613,
+        "jointDistance": 0.0003063326882342655
+      },
+      "largestIntroducedLocal": {
+        "bone": "torso",
+        "from": 1.15,
+        "time": 1.1666666666666667,
+        "sourceTime": 0.4666666666666668,
+        "targetLocalDegrees": 0.25469756996334253,
+        "targetWorldDegrees": 0.20920551422017053,
+        "sourceLocalDegrees": 0,
+        "sourceWorldDegrees": 0.16635732519220883,
+        "jointDistance": 0.00021350045319953388
+      },
+      "maximumTransitionWorldDegrees": 1.9009146263278496,
+      "status": "requires-visual-review"
+    },
+    {
+      "id": "meshy:247",
+      "label": "Idle_7",
+      "clipSha256": "dab97165b90935540eedee7f160bc15a28ff4d6914e1f4a83675e9f7e59257bf",
+      "largestIntroducedWorld": {
+        "bone": "wristR",
+        "from": 3.716666666666667,
+        "time": 3.7333333333333334,
+        "sourceTime": 3.033333333333333,
+        "targetLocalDegrees": 0.03489385468925284,
+        "targetWorldDegrees": 0.3977845812760854,
+        "sourceLocalDegrees": 0.03979521313675146,
+        "sourceWorldDegrees": 0.2345814394684534,
+        "jointDistance": 0.0006776382372863467
+      },
+      "largestIntroducedLocal": {
+        "bone": "torso",
+        "from": 2.2,
+        "time": 2.216666666666667,
+        "sourceTime": 1.5166666666666668,
+        "targetLocalDegrees": 0.1689081380111089,
+        "targetWorldDegrees": 0.13318860878942754,
+        "sourceLocalDegrees": 0,
+        "sourceWorldDegrees": 0.12458999271495229,
+        "jointDistance": 0.00043493768139021084
+      },
+      "maximumTransitionWorldDegrees": 2.247343665173861,
+      "status": "requires-visual-review"
+    },
+    {
+      "id": "meshy:249",
+      "label": "Idle_9",
+      "clipSha256": "6ee6877312a4563fda41cabf28468bfe7a3c97916f0751a35ba1081459b47222",
+      "largestIntroducedWorld": {
+        "bone": "kneeL",
+        "from": 2.3333333333333335,
+        "time": 2.35,
+        "sourceTime": 1.6500000000000001,
+        "targetLocalDegrees": 0.4255629230456753,
+        "targetWorldDegrees": 0.29378803528361147,
+        "sourceLocalDegrees": 0.3200469543724927,
+        "sourceWorldDegrees": 0.15348257375599855,
+        "jointDistance": 0.00042775262690613095
+      },
+      "largestIntroducedLocal": {
+        "bone": "torso",
+        "from": 1.55,
+        "time": 1.5666666666666667,
+        "sourceTime": 0.8666666666666667,
+        "targetLocalDegrees": 0.16213218139444796,
+        "targetWorldDegrees": 0.15623740114625004,
+        "sourceLocalDegrees": 0,
+        "sourceWorldDegrees": 0.15311579572339046,
+        "jointDistance": 0.0002883949013225748
+      },
+      "maximumTransitionWorldDegrees": 1.933822679216273,
+      "status": "requires-visual-review"
+    },
+    {
+      "id": "meshy:250",
+      "label": "Idle_10",
+      "clipSha256": "6aac4487139210c83fffa723ce1b0b4c7ac9b4ea77aa0f81128cdf0b67bc512d",
+      "largestIntroducedWorld": {
+        "bone": "wristL",
+        "from": 1.9166666666666667,
+        "time": 1.9333333333333333,
+        "sourceTime": 1.2333333333333334,
+        "targetLocalDegrees": 0.27270627213696425,
+        "targetWorldDegrees": 1.5166870596089823,
+        "sourceLocalDegrees": 0.27430721149355847,
+        "sourceWorldDegrees": 1.262627664573008,
+        "jointDistance": 0.009499853018214986
+      },
+      "largestIntroducedLocal": {
+        "bone": "torso",
+        "from": 3.9166666666666665,
+        "time": 3.933333333333333,
+        "sourceTime": 3.2333333333333334,
+        "targetLocalDegrees": 0.7733441377741409,
+        "targetWorldDegrees": 0.32213915720871805,
+        "sourceLocalDegrees": 0.021812632487729973,
+        "sourceWorldDegrees": 0.3083790446432965,
+        "jointDistance": 0.0032855744013225944
+      },
+      "maximumTransitionWorldDegrees": 4.095784503247061,
+      "status": "requires-visual-review"
+    },
+    {
+      "id": "meshy:251",
+      "label": "Idle_11",
+      "clipSha256": "a67e05ee17f2c9741850cbba2dcd6397958888e009d1121e57d80621b11f4de0",
+      "largestIntroducedWorld": {
+        "bone": "wristR",
+        "from": 2.566666666666667,
+        "time": 2.5833333333333335,
+        "sourceTime": 1.8833333333333335,
+        "targetLocalDegrees": 0.0935184615030702,
+        "targetWorldDegrees": 0.2277519832857009,
+        "sourceLocalDegrees": 0.034800740358244105,
+        "sourceWorldDegrees": 0.06513734923321575,
+        "jointDistance": 0.0006196770050020283
+      },
+      "largestIntroducedLocal": {
+        "bone": "torso",
+        "from": 1.7333333333333334,
+        "time": 1.75,
+        "sourceTime": 1.05,
+        "targetLocalDegrees": 0.15232453805428214,
+        "targetWorldDegrees": 0.17449309550863032,
+        "sourceLocalDegrees": 0,
+        "sourceWorldDegrees": 0.17267346931178384,
+        "jointDistance": 0.00011776969831116813
+      },
+      "maximumTransitionWorldDegrees": 1.826606816688679,
+      "status": "requires-visual-review"
+    },
+    {
+      "id": "meshy:252",
+      "label": "Idle_12",
+      "clipSha256": "9a4be592385b3fcb986bba1f5c4f6f4fa05c56af02b5142fe45115c0ee8d9d33",
+      "largestIntroducedWorld": {
+        "bone": "wristR",
+        "from": 3.8833333333333333,
+        "time": 3.9,
+        "sourceTime": 3.2,
+        "targetLocalDegrees": 0,
+        "targetWorldDegrees": 0.09229877892061177,
+        "sourceLocalDegrees": 0.041220620976017204,
+        "sourceWorldDegrees": 0.019207941158219992,
+        "jointDistance": 0.00041537279147788557
+      },
+      "largestIntroducedLocal": {
+        "bone": "head",
+        "from": 1.9166666666666667,
+        "time": 1.9333333333333333,
+        "sourceTime": 1.2333333333333334,
+        "targetLocalDegrees": 0.07265151629008526,
+        "targetWorldDegrees": 0.03790849328228339,
+        "sourceLocalDegrees": 0,
+        "sourceWorldDegrees": 0.011096398698733327,
+        "jointDistance": 0.00012380766226090492
+      },
+      "maximumTransitionWorldDegrees": 1.8642720422353942,
+      "status": "requires-visual-review"
+    },
+    {
+      "id": "meshy:255",
+      "label": "Angry_Ground_Stomp",
+      "clipSha256": "df0783da4eacf042671b558680f68c32786710af5be7546b9c8091dadfd84070",
+      "largestIntroducedWorld": {
+        "bone": "kneeR",
+        "from": 1.1333333333333333,
+        "time": 1.15,
+        "sourceTime": 0.44999999999999996,
+        "targetLocalDegrees": 1.2748114461656996,
+        "targetWorldDegrees": 0.3331387465575762,
+        "sourceLocalDegrees": 1.2510411720825616,
+        "sourceWorldDegrees": 0.13406663311737216,
+        "jointDistance": 0.0027156615291667715
+      },
+      "largestIntroducedLocal": {
+        "bone": "torso",
+        "from": 0.8333333333333334,
+        "time": 0.85,
+        "sourceTime": 0.15000000000000002,
+        "targetLocalDegrees": 1.8605707037185983,
+        "targetWorldDegrees": 4.755193399045071,
+        "sourceLocalDegrees": 0.33993225500271806,
+        "sourceWorldDegrees": 4.75518637932936,
+        "jointDistance": 0.01191930844406576
+      },
+      "maximumTransitionWorldDegrees": 2.519109575603007,
+      "status": "requires-visual-review"
+    },
+    {
+      "id": "meshy:256",
+      "label": "Angry_Ground_Stomp_1",
+      "clipSha256": "726ee7bbed141c58b5a330499d407c6af7d0f7747be81ba0c617ecb700cd78bb",
+      "largestIntroducedWorld": {
+        "bone": "footR",
+        "from": 1.4666666666666666,
+        "time": 1.4833333333333334,
+        "sourceTime": 0.7833333333333334,
+        "targetLocalDegrees": 1.1590359667868113,
+        "targetWorldDegrees": 0.23134426043774473,
+        "sourceLocalDegrees": 1.1117461393068488,
+        "sourceWorldDegrees": 0.01813474113446242,
+        "jointDistance": 0.0038634591172723894
+      },
+      "largestIntroducedLocal": {
+        "bone": "torso",
+        "from": 0.85,
+        "time": 0.8666666666666667,
+        "sourceTime": 0.16666666666666674,
+        "targetLocalDegrees": 1.8594915959154825,
+        "targetWorldDegrees": 4.7810722193934,
+        "sourceLocalDegrees": 0.24402545237246878,
+        "sourceWorldDegrees": 4.781262126967065,
+        "jointDistance": 0.012190916072373258
+      },
+      "maximumTransitionWorldDegrees": 2.4651037745992808,
+      "status": "requires-visual-review"
+    },
+    {
+      "id": "meshy:269",
+      "label": "sleep",
+      "clipSha256": "cfd24324d63771795f16daa4c54579c233612cc80adac178238e6f0388ac8b0c",
+      "largestIntroducedWorld": {
+        "bone": "torso",
+        "from": 2.9833333333333334,
+        "time": 3,
+        "sourceTime": 2.3,
+        "targetLocalDegrees": 0.1612853551879695,
+        "targetWorldDegrees": 1.4108789536546156,
+        "sourceLocalDegrees": 0.009777038408500525,
+        "sourceWorldDegrees": 0.7653229133723927,
+        "jointDistance": 0.00500993353991746
+      },
+      "largestIntroducedLocal": {
+        "bone": "torso",
+        "from": 2.2333333333333334,
+        "time": 2.25,
+        "sourceTime": 1.55,
+        "targetLocalDegrees": 1.5203147932784205,
+        "targetWorldDegrees": 1.791287968514834,
+        "sourceLocalDegrees": 0,
+        "sourceWorldDegrees": 1.7268671284272292,
+        "jointDistance": 0.007571450418599655
+      },
+      "maximumTransitionWorldDegrees": 3.6334145370317894,
+      "status": "requires-visual-review"
+    },
+    {
+      "id": "meshy:290",
+      "label": "Wave_One_Hand",
+      "clipSha256": "de92f40c7a4bbde6673d267b70fd69d1aaa4c9c017bcb65a7c738c9be5928bb8",
+      "largestIntroducedWorld": {
+        "bone": "wristR",
+        "from": 2.1666666666666665,
+        "time": 2.183333333333333,
+        "sourceTime": 1.4833333333333332,
+        "targetLocalDegrees": 1.4917938571035538,
+        "targetWorldDegrees": 1.9296180510390046,
+        "sourceLocalDegrees": 1.4916472623605173,
+        "sourceWorldDegrees": 1.7365971245675764,
+        "jointDistance": 0.001757165736948376
+      },
+      "largestIntroducedLocal": {
+        "bone": "head",
+        "from": 3.7666666666666666,
+        "time": 3.783333333333333,
+        "sourceTime": 3.083333333333333,
+        "targetLocalDegrees": 0.3810611321795794,
+        "targetWorldDegrees": 0.2786018831636088,
+        "sourceLocalDegrees": 0.26115878971721773,
+        "sourceWorldDegrees": 0.20095315696922478,
+        "jointDistance": 0.0011337409843792403
+      },
+      "maximumTransitionWorldDegrees": 2.152340870002522,
+      "status": "requires-visual-review"
+    },
+    {
+      "id": "meshy:293",
+      "label": "Wave_for_Help_1",
+      "clipSha256": "38f650f454a0c563b29bfafe54d41edebaeea5be660949eeb5d1368702540d4b",
+      "largestIntroducedWorld": {
+        "bone": "footL",
+        "from": 1.05,
+        "time": 1.0666666666666667,
+        "sourceTime": 0.3666666666666667,
+        "targetLocalDegrees": 0.47453108197966243,
+        "targetWorldDegrees": 0.19836219957910414,
+        "sourceLocalDegrees": 0.47190558751421546,
+        "sourceWorldDegrees": 0.014214444395057221,
+        "jointDistance": 0.0011096758498098248
+      },
+      "largestIntroducedLocal": {
+        "bone": "torso",
+        "from": 0.8,
+        "time": 0.8166666666666667,
+        "sourceTime": 0.1166666666666667,
+        "targetLocalDegrees": 0.7288649484538097,
+        "targetWorldDegrees": 0.7769375527648175,
+        "sourceLocalDegrees": 0.06083024954101518,
+        "sourceWorldDegrees": 0.6961531032184134,
+        "jointDistance": 0.0007855473528797928
+      },
+      "maximumTransitionWorldDegrees": 5.001868658267212,
+      "status": "requires-visual-review"
+    },
+    {
+      "id": "meshy:295",
+      "label": "Wave_for_Help_3",
+      "clipSha256": "d81e02e4e5aa901b43bbc392c5c4e7387a9f15e5a6e5e1f1afd62aa331122244",
+      "largestIntroducedWorld": {
+        "bone": "wristR",
+        "from": 3.5,
+        "time": 3.5166666666666666,
+        "sourceTime": 2.8166666666666664,
+        "targetLocalDegrees": 0.234223036344446,
+        "targetWorldDegrees": 1.185014972249994,
+        "sourceLocalDegrees": 0.23248814384829058,
+        "sourceWorldDegrees": 1.000480747812085,
+        "jointDistance": 0.0050909931048612805
+      },
+      "largestIntroducedLocal": {
+        "bone": "torso",
+        "from": 1.05,
+        "time": 1.0666666666666667,
+        "sourceTime": 0.3666666666666667,
+        "targetLocalDegrees": 0.38843652890076746,
+        "targetWorldDegrees": 0.20892615335970927,
+        "sourceLocalDegrees": 0.016596166128350073,
+        "sourceWorldDegrees": 0.20442600751050047,
+        "jointDistance": 0.0009134753022935166
+      },
+      "maximumTransitionWorldDegrees": 1.8329549135577714,
+      "status": "requires-visual-review"
+    },
+    {
+      "id": "meshy:296",
+      "label": "Wave_for_Help_4",
+      "clipSha256": "4484a3aeb28cc58f6684b6bf6ed4b434d05f9ca47b65992575e80ad85a9db847",
+      "largestIntroducedWorld": {
+        "bone": "shoulderR",
+        "from": 2.4833333333333334,
+        "time": 2.5,
+        "sourceTime": 1.8,
+        "targetLocalDegrees": 0.38339029578111156,
+        "targetWorldDegrees": 0.4456899028577594,
+        "sourceLocalDegrees": 0.28257203848039936,
+        "sourceWorldDegrees": 0.23791418172573195,
+        "jointDistance": 0.0018796791082567807
+      },
+      "largestIntroducedLocal": {
+        "bone": "torso",
+        "from": 3.6166666666666667,
+        "time": 3.6333333333333333,
+        "sourceTime": 2.9333333333333336,
+        "targetLocalDegrees": 0.1912469441605537,
+        "targetWorldDegrees": 0.2560979092551794,
+        "sourceLocalDegrees": 0.01734299912624505,
+        "sourceWorldDegrees": 0.26993307166885605,
+        "jointDistance": 0.00032212730786572224
+      },
+      "maximumTransitionWorldDegrees": 1.8397818763259755,
+      "status": "requires-visual-review"
+    },
+    {
+      "id": "meshy:298",
+      "label": "Cheer_with_Both_Hands_Up",
+      "clipSha256": "eba0bc33a84a33c2eec49767f9835d3b916f058abbc03bd6b88d8a0f48ca650a",
+      "largestIntroducedWorld": {
+        "bone": "elbowR",
+        "from": 2.433333333333333,
+        "time": 2.45,
+        "sourceTime": 1.7500000000000002,
+        "targetLocalDegrees": 0.056927283156045276,
+        "targetWorldDegrees": 0.8293251033464805,
+        "sourceLocalDegrees": 0.040603897649961807,
+        "sourceWorldDegrees": 0.6626530652198411,
+        "jointDistance": 0.0027611507841899903
+      },
+      "largestIntroducedLocal": {
+        "bone": "torso",
+        "from": 1.2333333333333334,
+        "time": 1.25,
+        "sourceTime": 0.55,
+        "targetLocalDegrees": 2.3282421086559393,
+        "targetWorldDegrees": 1.75418769015512,
+        "sourceLocalDegrees": 0.022789532140399183,
+        "sourceWorldDegrees": 1.7546027399563429,
+        "jointDistance": 0.0031340550625449347
+      },
+      "maximumTransitionWorldDegrees": 1.4742033255913158,
+      "status": "requires-visual-review"
+    },
+    {
+      "id": "meshy:308",
+      "label": "Talk_Passionately",
+      "clipSha256": "0181e5d8e14d47450fa6c1fb7e9d2b3cdf19e1d552b488fbb0f1bf07cdd7f0b5",
+      "largestIntroducedWorld": {
+        "bone": "footR",
+        "from": 4.433333333333334,
+        "time": 4.45,
+        "sourceTime": 3.75,
+        "targetLocalDegrees": 0.12696494196787328,
+        "targetWorldDegrees": 0.2572097500231287,
+        "sourceLocalDegrees": 0.1365532635906892,
+        "sourceWorldDegrees": 0.00956761650399009,
+        "jointDistance": 0.0014501298922704087
+      },
+      "largestIntroducedLocal": {
+        "bone": "torso",
+        "from": 2,
+        "time": 2.0166666666666666,
+        "sourceTime": 1.3166666666666667,
+        "targetLocalDegrees": 0.513660913965902,
+        "targetWorldDegrees": 0.7109170117520788,
+        "sourceLocalDegrees": 0.04355442491783443,
+        "sourceWorldDegrees": 0.7488478262878752,
+        "jointDistance": 0.0011315832649146642
+      },
+      "maximumTransitionWorldDegrees": 2.1201132435094294,
+      "status": "requires-visual-review"
+    },
+    {
+      "id": "meshy:309",
+      "label": "Talk_with_Left_Hand_on_Hip",
+      "clipSha256": "a9394f87d2d4796263bda2c34828948b32db10c4d5cbf4626153423b07345a18",
+      "largestIntroducedWorld": {
+        "bone": "wristR",
+        "from": 5.683333333333334,
+        "time": 5.7,
+        "sourceTime": 5,
+        "targetLocalDegrees": 0.23065555346484387,
+        "targetWorldDegrees": 2.247478691094424,
+        "sourceLocalDegrees": 0.20646495344616092,
+        "sourceWorldDegrees": 2.0932852401755877,
+        "jointDistance": 0.005657370757001143
+      },
+      "largestIntroducedLocal": {
+        "bone": "torso",
+        "from": 2.3666666666666667,
+        "time": 2.3833333333333333,
+        "sourceTime": 1.6833333333333333,
+        "targetLocalDegrees": 0.1781442339902157,
+        "targetWorldDegrees": 0.2315137470938728,
+        "sourceLocalDegrees": 2.4148365394514667e-06,
+        "sourceWorldDegrees": 0.25518283458088376,
+        "jointDistance": 0.00018672863466857382
+      },
+      "maximumTransitionWorldDegrees": 3.1254781204539643,
+      "status": "requires-visual-review"
+    },
+    {
+      "id": "meshy:310",
+      "label": "Talk_with_Left_Hand_Raised",
+      "clipSha256": "26248fcf5c4e9d430bf1683ca2c54eed0c84b9db12646614227a148e3e16a25d",
+      "largestIntroducedWorld": {
+        "bone": "wristR",
+        "from": 4.483333333333333,
+        "time": 4.5,
+        "sourceTime": 3.7666666666666666,
+        "targetLocalDegrees": 0.2571401779078762,
+        "targetWorldDegrees": 5.631889709667989,
+        "sourceLocalDegrees": 1.067693535220914,
+        "sourceWorldDegrees": 5.163301307535967,
+        "jointDistance": 0.02912664298736709
+      },
+      "largestIntroducedLocal": {
+        "bone": "torso",
+        "from": 3.6666666666666665,
+        "time": 3.683333333333333,
+        "sourceTime": 2.9499999999999997,
+        "targetLocalDegrees": 1.5255517791552968,
+        "targetWorldDegrees": 0.6652084543972339,
+        "sourceLocalDegrees": 0.016862074746202875,
+        "sourceWorldDegrees": 0.7411513933133415,
+        "jointDistance": 0.003863389895905533
+      },
+      "maximumTransitionWorldDegrees": 4.87978999047453,
+      "status": "requires-visual-review"
+    },
+    {
+      "id": "meshy:313",
+      "label": "Talk_with_Hands_Open",
+      "clipSha256": "451fc33ca77a6ee7a4e5cf728b1e880f94deaf272c8fd6fc26d4ca82dc6d346c",
+      "largestIntroducedWorld": {
+        "bone": "footL",
+        "from": 3.05,
+        "time": 3.066666666666667,
+        "sourceTime": 2.366666666666667,
+        "targetLocalDegrees": 0.40728375287429996,
+        "targetWorldDegrees": 0.26016777704657007,
+        "sourceLocalDegrees": 0.3484664579918245,
+        "sourceWorldDegrees": 0.025989879995897528,
+        "jointDistance": 0.0007613404620718746
+      },
+      "largestIntroducedLocal": {
+        "bone": "torso",
+        "from": 1.1,
+        "time": 1.1166666666666667,
+        "sourceTime": 0.41666666666666674,
+        "targetLocalDegrees": 0.41359210029869137,
+        "targetWorldDegrees": 0.6017783037975857,
+        "sourceLocalDegrees": 0.050565112577744334,
+        "sourceWorldDegrees": 0.4964660327807919,
+        "jointDistance": 0.0007026422570307032
+      },
+      "maximumTransitionWorldDegrees": 1.6501458375694502,
+      "status": "requires-visual-review"
+    },
+    {
+      "id": "meshy:314",
+      "label": "Talk_with_Right_Hand_Open",
+      "clipSha256": "969532a13a42ef2d1b545b302c5c3816098e47371d419ab4d650019dafee58d4",
+      "largestIntroducedWorld": {
+        "bone": "armR",
+        "from": 3.3,
+        "time": 3.316666666666667,
+        "sourceTime": 2.616666666666667,
+        "targetLocalDegrees": 1.15476321406551,
+        "targetWorldDegrees": 1.7059704112126592,
+        "sourceLocalDegrees": 1.0633088665720871,
+        "sourceWorldDegrees": 1.553464482543992,
+        "jointDistance": 0.0036180190856859073
+      },
+      "largestIntroducedLocal": {
+        "bone": "torso",
+        "from": 2.9,
+        "time": 2.9166666666666665,
+        "sourceTime": 2.216666666666667,
+        "targetLocalDegrees": 0.3208418522933626,
+        "targetWorldDegrees": 0.34734478962079174,
+        "sourceLocalDegrees": 0.024865215542166728,
+        "sourceWorldDegrees": 0.3168099095640875,
+        "jointDistance": 0.0006566360064539066
+      },
+      "maximumTransitionWorldDegrees": 1.6459307793403009,
+      "status": "requires-visual-review"
+    },
+    {
+      "id": "meshy:317",
+      "label": "Shrug",
+      "clipSha256": "f90a5e5599292a62461e4f64df02d4b8ff10301b3acf6c3590ef97ddfcb816c4",
+      "largestIntroducedWorld": {
+        "bone": "wristR",
+        "from": 1.15,
+        "time": 1.1666666666666667,
+        "sourceTime": 0.4666666666666668,
+        "targetLocalDegrees": 1.9972468585913845,
+        "targetWorldDegrees": 1.2571146003370708,
+        "sourceLocalDegrees": 2.0434772651420965,
+        "sourceWorldDegrees": 1.069827595401839,
+        "jointDistance": 0.011422761992396484
+      },
+      "largestIntroducedLocal": {
+        "bone": "torso",
+        "from": 1.05,
+        "time": 1.0666666666666667,
+        "sourceTime": 0.3666666666666667,
+        "targetLocalDegrees": 0.2861209462201037,
+        "targetWorldDegrees": 0.4761437322370977,
+        "sourceLocalDegrees": 0.03126331019277051,
+        "sourceWorldDegrees": 0.43924214160342895,
+        "jointDistance": 0.0011020115932746548
+      },
+      "maximumTransitionWorldDegrees": 1.636085323925562,
+      "status": "requires-visual-review"
+    },
+    {
+      "id": "meshy:319",
+      "label": "air_squat",
+      "clipSha256": "3cd1c0f1b97203cb703b37b349f709e3a673c602fc5e0a9454cbe7329c8f7392",
+      "largestIntroducedWorld": {
+        "bone": "footR",
+        "from": 1.2833333333333334,
+        "time": 1.3,
+        "sourceTime": 0.6000000000000001,
+        "targetLocalDegrees": 0.5773354540157037,
+        "targetWorldDegrees": 0.2528780736120056,
+        "sourceLocalDegrees": 0.5037498700449062,
+        "sourceWorldDegrees": 0.017592168403063636,
+        "jointDistance": 0.0010846776484466365
+      },
+      "largestIntroducedLocal": {
+        "bone": "torso",
+        "from": 0.8666666666666667,
+        "time": 0.8833333333333333,
+        "sourceTime": 0.18333333333333335,
+        "targetLocalDegrees": 0.3452304507482624,
+        "targetWorldDegrees": 0.6454293216403053,
+        "sourceLocalDegrees": 2.9575586669421963e-06,
+        "sourceWorldDegrees": 0.6302373184138581,
+        "jointDistance": 0.001647430869044539
+      },
+      "maximumTransitionWorldDegrees": 1.8062789879464463,
+      "status": "requires-visual-review"
+    },
+    {
+      "id": "meshy:326",
+      "label": "jumping_jacks",
+      "clipSha256": "de79338f0f0bf737045027e88cdadbb729d98e540a2b5bf78d51073776f351ef",
+      "largestIntroducedWorld": {
+        "bone": "footL",
+        "from": 1.2166666666666666,
+        "time": 1.2333333333333334,
+        "sourceTime": 0.43333333333333335,
+        "targetLocalDegrees": 6.406111122004947,
+        "targetWorldDegrees": 4.555807241203225,
+        "sourceLocalDegrees": 6.4061494952063684,
+        "sourceWorldDegrees": 4.399999226178236,
+        "jointDistance": 0.012694749800753828
+      },
+      "largestIntroducedLocal": {
+        "bone": "torso",
+        "from": 1.35,
+        "time": 1.3666666666666667,
+        "sourceTime": 0.5666666666666667,
+        "targetLocalDegrees": 0.4696870109638165,
+        "targetWorldDegrees": 0.6192772211249873,
+        "sourceLocalDegrees": 0.03403471367965625,
+        "sourceWorldDegrees": 0.6265212072361733,
+        "jointDistance": 0.004241623850110262
+      },
+      "maximumTransitionWorldDegrees": 5.419830428796177,
+      "status": "requires-visual-review"
+    },
+    {
+      "id": "meshy:338",
+      "label": "Short_Breathe_and_Look_Around",
+      "clipSha256": "ef3a309606784b88c435c97fe95ad5834ddb2a7e527c7e3e30c64eab8daf6805",
+      "largestIntroducedWorld": {
+        "bone": "wristL",
+        "from": 5.216666666666667,
+        "time": 5.233333333333333,
+        "sourceTime": 4.533333333333333,
+        "targetLocalDegrees": 0.1259663574963697,
+        "targetWorldDegrees": 0.3426304975090388,
+        "sourceLocalDegrees": 0.1499217186567601,
+        "sourceWorldDegrees": 0.1918430184402756,
+        "jointDistance": 0.0010906468607299786
+      },
+      "largestIntroducedLocal": {
+        "bone": "torso",
+        "from": 3.95,
+        "time": 3.966666666666667,
+        "sourceTime": 3.2666666666666666,
+        "targetLocalDegrees": 0.2474864607356052,
+        "targetWorldDegrees": 0.2602795394858201,
+        "sourceLocalDegrees": 0.014695839000325069,
+        "sourceWorldDegrees": 0.23613541359974996,
+        "jointDistance": 0.00010667122994953227
+      },
+      "maximumTransitionWorldDegrees": 1.6272818422678292,
+      "status": "requires-visual-review"
+    },
+    {
+      "id": "meshy:362",
+      "label": "Sit_Cross_Legged",
+      "clipSha256": "0267c450c310483f43a13fc8865cd910e909856862aa32c561b2ce80a5e99bde",
+      "largestIntroducedWorld": {
+        "bone": "armR",
+        "from": 6.5,
+        "time": 6.516666666666667,
+        "sourceTime": 5.816666666666666,
+        "targetLocalDegrees": 0.1672824939088808,
+        "targetWorldDegrees": 0.2017334623065443,
+        "sourceLocalDegrees": 0.09089046868859905,
+        "sourceWorldDegrees": 0.06642041431868088,
+        "jointDistance": 9.69274966107266e-05
+      },
+      "largestIntroducedLocal": {
+        "bone": "head",
+        "from": 7.466666666666667,
+        "time": 7.483333333333333,
+        "sourceTime": 6.783333333333333,
+        "targetLocalDegrees": 0.13924882918735895,
+        "targetWorldDegrees": 0.1987717759101373,
+        "sourceLocalDegrees": 0.020172842979563368,
+        "sourceWorldDegrees": 0.15637712740969698,
+        "jointDistance": 0.0004953561987110348
+      },
+      "maximumTransitionWorldDegrees": 4.599348042013931,
+      "status": "requires-visual-review"
+    },
+    {
+      "id": "meshy:388",
+      "label": "Show_Both_Arm_Muscles",
+      "clipSha256": "6332ed94b57c807bee066455ef445bc695ebe59275bcb407bbdc3ec4f5fbcfbe",
+      "largestIntroducedWorld": {
+        "bone": "footR",
+        "from": 1.3,
+        "time": 1.3166666666666667,
+        "sourceTime": 0.6166666666666667,
+        "targetLocalDegrees": 0.41737221768051974,
+        "targetWorldDegrees": 0.2555952335681514,
+        "sourceLocalDegrees": 0.33993057381415037,
+        "sourceWorldDegrees": 0.015405013026373954,
+        "jointDistance": 0.003089744128445369
+      },
+      "largestIntroducedLocal": {
+        "bone": "torso",
+        "from": 1.0666666666666667,
+        "time": 1.0833333333333333,
+        "sourceTime": 0.3833333333333333,
+        "targetLocalDegrees": 2.8521800665074064,
+        "targetWorldDegrees": 3.167944908850915,
+        "sourceLocalDegrees": 0.22994333790915222,
+        "sourceWorldDegrees": 3.205788452468514,
+        "jointDistance": 0.001992975810459692
+      },
+      "maximumTransitionWorldDegrees": 1.610699947158233,
+      "status": "requires-visual-review"
+    },
+    {
+      "id": "meshy:403",
+      "label": "Victory_Fist_Pump",
+      "clipSha256": "2b140f5812e47496ba0279e89968873482d9289f48c3f0258bffb4ac8bafdbc9",
+      "largestIntroducedWorld": {
+        "bone": "footL",
+        "from": 1.0833333333333333,
+        "time": 1.1,
+        "sourceTime": 0.40000000000000013,
+        "targetLocalDegrees": 1.1793741455603493,
+        "targetWorldDegrees": 0.269765619222162,
+        "sourceLocalDegrees": 1.2690566379321724,
+        "sourceWorldDegrees": 0.020971276356641824,
+        "jointDistance": 0.0012739632753321116
+      },
+      "largestIntroducedLocal": {
+        "bone": "torso",
+        "from": 1.0833333333333333,
+        "time": 1.1,
+        "sourceTime": 0.40000000000000013,
+        "targetLocalDegrees": 1.8006698059375943,
+        "targetWorldDegrees": 1.3131183487664426,
+        "sourceLocalDegrees": 0.18532795377076697,
+        "sourceWorldDegrees": 1.2353883465321291,
+        "jointDistance": 0.002239302716182637
+      },
+      "maximumTransitionWorldDegrees": 2.402525466433764,
+      "status": "requires-visual-review"
+    },
+    {
+      "id": "meshy:412",
+      "label": "victory",
+      "clipSha256": "82718f16aa253a7877862d1fac4c945814fe4ff61decd53c1502ac963c05a7be",
+      "largestIntroducedWorld": {
+        "bone": "shoulderL",
+        "from": 6.283333333333333,
+        "time": 6.3,
+        "sourceTime": 5.6,
+        "targetLocalDegrees": 0.35154184455855836,
+        "targetWorldDegrees": 2.289677827587415,
+        "sourceLocalDegrees": 0.28271099983860887,
+        "sourceWorldDegrees": 2.068676296757115,
+        "jointDistance": 0.013921210998772264
+      },
+      "largestIntroducedLocal": {
+        "bone": "torso",
+        "from": 4.866666666666666,
+        "time": 4.883333333333334,
+        "sourceTime": 4.183333333333334,
+        "targetLocalDegrees": 0.4132706494276238,
+        "targetWorldDegrees": 2.0557800682331697,
+        "sourceLocalDegrees": 0,
+        "sourceWorldDegrees": 2.100618927061578,
+        "jointDistance": 0.0014382751121099116
+      },
+      "maximumTransitionWorldDegrees": 1.7204875915853806,
+      "status": "requires-visual-review"
+    },
+    {
+      "id": "meshy:452",
+      "label": "Backflip",
+      "clipSha256": "79e024d38ca4e45af2ea635cc39389efd320d55b8d96ef865df6b88f5ecaaa24",
+      "largestIntroducedWorld": {
+        "bone": "footR",
+        "from": 2.65,
+        "time": 2.6666666666666665,
+        "sourceTime": 1.9666666666666666,
+        "targetLocalDegrees": 0.951355403108466,
+        "targetWorldDegrees": 0.1705280172874502,
+        "sourceLocalDegrees": 0.9275315482988887,
+        "sourceWorldDegrees": 0.008530218409527716,
+        "jointDistance": 0.005763467966492622
+      },
+      "largestIntroducedLocal": {
+        "bone": "torso",
+        "from": 1.7,
+        "time": 1.7166666666666666,
+        "sourceTime": 1.0166666666666666,
+        "targetLocalDegrees": 3.0517299723642832,
+        "targetWorldDegrees": 7.191492224499967,
+        "sourceLocalDegrees": 0.022978143873602187,
+        "sourceWorldDegrees": 7.191639376454784,
+        "jointDistance": 0.07059975845020147
+      },
+      "maximumTransitionWorldDegrees": 2.5327658316115067,
+      "status": "requires-visual-review"
+    },
+    {
+      "id": "meshy:460",
+      "label": "Jump_with_Arms_Open",
+      "clipSha256": "9501cb4e30f1daf24109cf4a0bdb567b1d36219d26a640a2b3c585508b57fc3e",
+      "largestIntroducedWorld": {
+        "bone": "head",
+        "from": 3.216666666666667,
+        "time": 3.2333333333333334,
+        "sourceTime": 2.533333333333333,
+        "targetLocalDegrees": 0.37636728877412257,
+        "targetWorldDegrees": 1.2626720946426462,
+        "sourceLocalDegrees": 0.38517295020005893,
+        "sourceWorldDegrees": 1.0677393732265907,
+        "jointDistance": 0.01912994160549053
+      },
+      "largestIntroducedLocal": {
+        "bone": "torso",
+        "from": 2.3333333333333335,
+        "time": 2.35,
+        "sourceTime": 1.6500000000000001,
+        "targetLocalDegrees": 2.6166432791727314,
+        "targetWorldDegrees": 4.27166916807707,
+        "sourceLocalDegrees": 0.09501950116190336,
+        "sourceWorldDegrees": 4.271280720481518,
+        "jointDistance": 0.010607011502345599
+      },
+      "maximumTransitionWorldDegrees": 1.8735644524495476,
+      "status": "requires-visual-review"
+    },
+    {
+      "id": "meshy:461",
+      "label": "Jump_with_Arms_and_Legs_Open",
+      "clipSha256": "c44de1442c7f94c337e0d8c10d37830357bb16b796135066e99056d12f06610d",
+      "largestIntroducedWorld": {
+        "bone": "torso",
+        "from": 1.9,
+        "time": 1.9166666666666667,
+        "sourceTime": 1.2166666666666668,
+        "targetLocalDegrees": 0.07508906444665929,
+        "targetWorldDegrees": 0.6979343158015582,
+        "sourceLocalDegrees": 0.042017612680105496,
+        "sourceWorldDegrees": 0.36177583163823473,
+        "jointDistance": 0.0029943383555717045
+      },
+      "largestIntroducedLocal": {
+        "bone": "torso",
+        "from": 1.6333333333333333,
+        "time": 1.65,
+        "sourceTime": 0.95,
+        "targetLocalDegrees": 8.625539525003378,
+        "targetWorldDegrees": 7.835130696542867,
+        "sourceLocalDegrees": 0.9239793196885102,
+        "sourceWorldDegrees": 7.903910207729478,
+        "jointDistance": 0.009861156788454594
+      },
+      "maximumTransitionWorldDegrees": 1.7214900493434744,
+      "status": "requires-visual-review"
+    },
+    {
+      "id": "meshy:464",
+      "label": "Leap_and_Punch",
+      "clipSha256": "285482a059c7871a8b1129004b92a01d0ea4897162b8eb02a4c5723e76fd0350",
+      "largestIntroducedWorld": {
+        "bone": "body",
+        "from": 0.7,
+        "time": 0.7166666666666667,
+        "sourceTime": 0.01666666666666672,
+        "targetLocalDegrees": 0,
+        "targetWorldDegrees": 0,
+        "sourceLocalDegrees": 0,
+        "sourceWorldDegrees": 0,
+        "jointDistance": 0
+      },
+      "largestIntroducedLocal": {
+        "bone": "body",
+        "from": 0.7,
+        "time": 0.7166666666666667,
+        "sourceTime": 0.01666666666666672,
+        "targetLocalDegrees": 0,
+        "targetWorldDegrees": 0,
+        "sourceLocalDegrees": 0,
+        "sourceWorldDegrees": 0,
+        "jointDistance": 0
+      },
+      "maximumTransitionWorldDegrees": 0,
+      "status": "investigate-zero-motion"
+    },
+    {
+      "id": "meshy:474",
+      "label": "Quad_Jump_Up",
+      "clipSha256": "3ddae44d2fc8fb39c6a1220ca5c4b8eba124bb230d0c35b87566e1cd6d4196f8",
+      "largestIntroducedWorld": {
+        "bone": "wristL",
+        "from": 2.283333333333333,
+        "time": 2.3,
+        "sourceTime": 1.4,
+        "targetLocalDegrees": 0.4437084057247953,
+        "targetWorldDegrees": 0.2003238455529297,
+        "sourceLocalDegrees": 0.4182356766006973,
+        "sourceWorldDegrees": 0.011890221707500625,
+        "jointDistance": 0.004789858352249025
+      },
+      "largestIntroducedLocal": {
+        "bone": "head",
+        "from": 1.35,
+        "time": 1.3666666666666667,
+        "sourceTime": 0.4666666666666667,
+        "targetLocalDegrees": 6.075467334617076,
+        "targetWorldDegrees": 4.017879204391648,
+        "sourceLocalDegrees": 2.7153736879347385,
+        "sourceWorldDegrees": 4.068617166975609,
+        "jointDistance": 0.03573667355728671
+      },
+      "maximumTransitionWorldDegrees": 3.4876557063780926,
+      "status": "requires-visual-review"
+    },
+    {
+      "id": "meshy:490",
+      "label": "Fall_Down",
+      "clipSha256": "14ee083468b02d4f55fd6c865c5f98be8725feac12e06298824f4f6c4b5d5ffc",
+      "largestIntroducedWorld": {
+        "bone": "wristR",
+        "from": 0.7,
+        "time": 0.7166666666666667,
+        "sourceTime": 0.01666666666666672,
+        "targetLocalDegrees": 0.1781766546876092,
+        "targetWorldDegrees": 0.7467919595125136,
+        "sourceLocalDegrees": 0.26017187044960494,
+        "sourceWorldDegrees": 0.5247900723688006,
+        "jointDistance": 0.0012552475007175585
+      },
+      "largestIntroducedLocal": {
+        "bone": "torso",
+        "from": 4.233333333333333,
+        "time": 4.25,
+        "sourceTime": 3.55,
+        "targetLocalDegrees": 1.814762995446982,
+        "targetWorldDegrees": 5.3269499378779255,
+        "sourceLocalDegrees": 0.17496352346002692,
+        "sourceWorldDegrees": 5.327745217979442,
+        "jointDistance": 0.007046422329658749
+      },
+      "maximumTransitionWorldDegrees": 4.207685835009246,
+      "status": "requires-visual-review"
+    },
+    {
+      "id": "meshy:502",
+      "label": "Fall1",
+      "clipSha256": "0ac5d4a674c56cd77fbfecbf31ed1e9024387d0cd6511958d97ed75e411b64a2",
+      "largestIntroducedWorld": {
+        "bone": "kneeR",
+        "from": 4.45,
+        "time": 4.466666666666667,
+        "sourceTime": 3.7666666666666666,
+        "targetLocalDegrees": 2.3679883658542558,
+        "targetWorldDegrees": 2.1135960333460253,
+        "sourceLocalDegrees": 2.255558154533522,
+        "sourceWorldDegrees": 1.8926118312039373,
+        "jointDistance": 0.002639968984602016
+      },
+      "largestIntroducedLocal": {
+        "bone": "torso",
+        "from": 5.066666666666666,
+        "time": 5.083333333333333,
+        "sourceTime": 4.383333333333333,
+        "targetLocalDegrees": 0.41805687672561453,
+        "targetWorldDegrees": 0.47581925380634926,
+        "sourceLocalDegrees": 0.04319760513229751,
+        "sourceWorldDegrees": 0.4431288107153571,
+        "jointDistance": 0.0016873214394217137
+      },
+      "maximumTransitionWorldDegrees": 5.12294936045992,
+      "status": "requires-visual-review"
+    },
+    {
+      "id": "meshy:503",
+      "label": "Fall2",
+      "clipSha256": "de140e46f1b56de0068b9f345fe3d42392c508d4637cde67c75cdeec74e8e6f2",
+      "largestIntroducedWorld": {
+        "bone": "wristR",
+        "from": 1.5,
+        "time": 1.5166666666666666,
+        "sourceTime": 0.6833333333333332,
+        "targetLocalDegrees": 0.05172243226919182,
+        "targetWorldDegrees": 0.12281971402251321,
+        "sourceLocalDegrees": 0,
+        "sourceWorldDegrees": 0,
+        "jointDistance": 0.000334449205377424
+      },
+      "largestIntroducedLocal": {
+        "bone": "torso",
+        "from": 1.35,
+        "time": 1.3666666666666667,
+        "sourceTime": 0.5333333333333333,
+        "targetLocalDegrees": 0.11801078383739311,
+        "targetWorldDegrees": 0.08810516103191146,
+        "sourceLocalDegrees": 2.4148365394514667e-06,
+        "sourceWorldDegrees": 0.08115235903388478,
+        "jointDistance": 0.0006426962513314762
+      },
+      "maximumTransitionWorldDegrees": 3.4966743680131325,
+      "status": "requires-visual-review"
+    },
+    {
+      "id": "meshy:601",
+      "label": "Backflip_inplace",
+      "clipSha256": "b2954026c33be3cfc4ea98dfd43b6cab5fa47aa6304665f3d86aff8671e4045f",
+      "largestIntroducedWorld": {
+        "bone": "footR",
+        "from": 2.65,
+        "time": 2.6666666666666665,
+        "sourceTime": 1.9666666666666666,
+        "targetLocalDegrees": 0.951355403108466,
+        "targetWorldDegrees": 0.1705280172874502,
+        "sourceLocalDegrees": 0.9275315482988887,
+        "sourceWorldDegrees": 0.008530218409527716,
+        "jointDistance": 0.005763467966492622
+      },
+      "largestIntroducedLocal": {
+        "bone": "torso",
+        "from": 1.7,
+        "time": 1.7166666666666666,
+        "sourceTime": 1.0166666666666666,
+        "targetLocalDegrees": 3.0517299723642832,
+        "targetWorldDegrees": 7.191492224499967,
+        "sourceLocalDegrees": 0.022978143873602187,
+        "sourceWorldDegrees": 7.191639376454784,
+        "jointDistance": 0.07059975845020147
+      },
+      "maximumTransitionWorldDegrees": 2.5327658316115067,
+      "status": "requires-visual-review"
+    },
+    {
+      "id": "meshy:639",
+      "label": "Jazz_Hands_inplace",
+      "clipSha256": "42beed94ff90692c0190c35b35a7a2d64f6a7793f74b8773878e265c24673af8",
+      "largestIntroducedWorld": {
+        "bone": "wristR",
+        "from": 3.683333333333333,
+        "time": 3.7,
+        "sourceTime": 2.7666666666666666,
+        "targetLocalDegrees": 2.2659815240427,
+        "targetWorldDegrees": 5.619241280470107,
+        "sourceLocalDegrees": 2.2656981489819175,
+        "sourceWorldDegrees": 5.365048540813256,
+        "jointDistance": 0.027263376086759498
+      },
+      "largestIntroducedLocal": {
+        "bone": "torso",
+        "from": 3.55,
+        "time": 3.566666666666667,
+        "sourceTime": 2.6333333333333337,
+        "targetLocalDegrees": 1.0283979081307568,
+        "targetWorldDegrees": 0.13946451852109312,
+        "sourceLocalDegrees": 0.034609349166826675,
+        "sourceWorldDegrees": 0.14048515431901257,
+        "jointDistance": 0.008778993057880392
+      },
+      "maximumTransitionWorldDegrees": 4.071347857002738,
+      "status": "requires-visual-review"
+    }
+  ]
+}

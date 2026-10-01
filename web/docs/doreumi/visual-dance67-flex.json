@@ -1,0 +1,77 @@
+{
+  "checkedAt": "2026-09-24T04:26:09.417906+00:00",
+  "id": "meshy:67",
+  "clipSha256": "4cd82441b1a79129067a1ea304dd77e7910d11d528ff0f8cfd95b82edf2a389e",
+  "scope": "Frozen flex-landing candidate. Normal 128px and quarter-speed five-view nine-pose sheets and actual playback sampled at 4fps/1fps individually inspected; three 13-frame 60Hz peak windows and adjacent full-resolution side frames inspected. Identical shipping bytes reproduced from the source/master-bound contact plan and reaudited; all267 source-planted pairs retain contact.",
+  "review": "passed",
+  "observation": "Rear support foot remains visibly extended until release, then folds upward coherently. Alternating support and torso turn retain the dance rhythm. The abrupt tucked-under-belly pop in the earlier preferred candidate is resolved at the reviewed peak windows.",
+  "evidence": [
+    {
+      "file": "/tmp/doreumi-67-flex-1/motion-meshy-67.jpg",
+      "sha256": "2d1abf7a98826c1109038489f2bc4ffe42b5acc355578b898bba107a9ba5b850"
+    },
+    {
+      "file": "/tmp/doreumi-67-flex-1/temporal-meshy-67.jpg",
+      "sha256": "bb0b4e70477118813451bf9db0f0ee475fe7281fe3552d5ce317d067bfe2dfc1"
+    },
+    {
+      "file": "/tmp/doreumi-67-flex-0.25/motion-meshy-67.jpg",
+      "sha256": "4934b11b2016f6d03966b305d42a692210e3853ccc5638924d20220edc8006bf"
+    },
+    {
+      "file": "/tmp/doreumi-67-flex-0.25/temporal-meshy-67.jpg",
+      "sha256": "98381493e87b65cff97b93346154ccde391762dc5e3cf633cbf94fe240bd5305"
+    },
+    {
+      "file": "/tmp/doreumi-67-flex-focus-0/motion-meshy-67.jpg",
+      "sha256": "f5893abd19a61657555f98726c3fa9a143fbb4fa620887ecb473a399eab1af90"
+    },
+    {
+      "file": "/tmp/doreumi-67-flex-focus-1/motion-meshy-67.jpg",
+      "sha256": "08213e41202a0dcaf9776ee72259fd334045c03580981db870652f39d47dd8ff"
+    },
+    {
+      "file": "/tmp/doreumi-67-flex-focus-2/motion-meshy-67.jpg",
+      "sha256": "a98fc385ba812be36a1ff98ac0c02ca2b2427a4dd80f860c0f66b45a7a9c690e"
+    },
+    {
+      "file": "/tmp/doreumi-67-flex-focus-1/action-meshy-67-90-0.6712802812469396.png",
+      "sha256": "39fd2147fbe4216b3f4481b97659685e04074b08554fca77407537f1c564b6fd"
+    },
+    {
+      "file": "/tmp/doreumi-67-flex-focus-1/action-meshy-67-90-0.6730103850645863.png",
+      "sha256": "dfcd055d70357982ebc6d28b88b07ed8ebf4cbfa8a155b31d55aa9b7d466ca5e"
+    },
+    {
+      "file": "/tmp/doreumi-67-flex-focus-1/action-meshy-67-90-0.674740488882233.png",
+      "sha256": "4778f3f18f36d9ce29408e2d41da56adac9d6ea0d234221d9e61c321600cc88d"
+    },
+    {
+      "file": "/tmp/doreumi-67-flex-focus-1/action-meshy-67-90-0.6764705926998799.png",
+      "sha256": "96d24e99c3fc6ca294d48654aecdd561d87c950424c675bef0c76be5fb218adf"
+    },
+    {
+      "file": "/tmp/doreumi-67-flex-focus-1/action-meshy-67-90-0.6782006965175266.png",
+      "sha256": "6774d0727196351389178431e1f884e394b96f2806117db23172800ccce76140"
+    },
+    {
+      "file": "/tmp/doreumi-67-flex-focus-1/action-meshy-67-90-0.6799308003351733.png",
+      "sha256": "53ab8a6e037a367b509e4bbe301120b6ee7cdc559cdfd9a2700c3c0b4ffe39a1"
+    }
+  ],
+  "ambient": true,
+  "masterSha256": "9783e748eca804feb71bf36e469981545ae3a524828d500ef934a7922b9cbf1c",
+  "metadataSha256": "98fda61b1a8aed32cfc01888256bc14dd7fd928de7a929de2fccb20bef37b5c8",
+  "sourcePlantedPairs": 267,
+  "maximumSourceConfirmedSlipFractionHeight": 0.0008285197867779536,
+  "shippingEvidence": [
+    {
+      "file": ".artifacts/doreumi-contact-audit/promotion-67/contact.json",
+      "sha256": "2e1e2b063c6840dba41afef026136aaa69633a0ade81b96182bb51e4b6811a32"
+    },
+    {
+      "file": ".artifacts/doreumi-contact-audit/promotion-67/joints.json",
+      "sha256": "101b8bb3803d60a231d4d49044d126f08550f1dd7ad6d5a9689905c48c9f77ca"
+    }
+  ]
+}
