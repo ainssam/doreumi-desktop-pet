@@ -2,7 +2,7 @@
   "name": "doreumi-desktop-pet",
   "version": "0.1.0",
   "private": true,
-  "description": "Private handoff repository for finishing the Doreumi Windows desktop pet",
+  "description": "Doreumi mascot: Windows desktop pet handoff and the DoRms web build (web/). Code MIT, character assets CC BY-NC 4.0",
   "type": "module",
   "main": "deliverable/dorms-v98-badge-integration/desktop.cjs",
   "engines": {
