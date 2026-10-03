@@ -15,8 +15,10 @@ import { advanceMotionCamera, blendMotionFrames } from '@/lib/doreumi/motion-cam
 import { applyDoreumiAtlasSampling } from '@/lib/doreumi/motion-material';
 import { applyDressColors, createDressUniforms, DRESS_FRAGMENT, DRESS_FRAGMENT_UNIFORMS, takeOffDressItem, wearDressItem } from '@/lib/doreumi/motion-dress';
 import type { DoreumiDress } from '@/lib/doreumi/items';
+import { createTeacherKit, type TeacherKit, type TeacherSide } from '@/lib/doreumi/motion-teacher';
 
-export type DoreumiFacing = 'left' | 'right' | 'front';
+/** front-left·front-right: 진행 방향으로 반쯤(45도) 돈 모습. 턱 점프처럼 팔 동작도 보이고 방향도 읽혀야 할 때. */
+export type DoreumiFacing = 'left' | 'right' | 'front' | 'front-left' | 'front-right';
 
 type Attachment = { triangle: number[]; barycentric: number[]; rotation: [number, number, number]; scale: number; propContact: number[] };
 type Manifest = { props: { id: string; attachment: Attachment }[] };
@@ -45,6 +47,12 @@ export type DoreumiRenderer = {
   setDress: (dress: DoreumiDress) => Promise<void>;
   setLocomotionRate: (rate: number) => void;
   capture: () => string;
+  /** 선생님 차림(안경·콧수염)과 가리키기를 켠다. 도름이 안내 수첩 칠판 수업 전용. */
+  setTeacher: (on: boolean) => void;
+  /** 이 캔버스 기준 화면 좌표(NDC, 캔버스 밖이면 1보다 클 수 있다)를 그 쪽 팔로 가리킨다. null 이면 그만 가리킨다. */
+  pointAt: (ndc: { x: number; y: number } | null, side?: TeacherSide) => void;
+  /** 가리키는 손의 위치(캔버스 왼쪽 위 기준, 캔버스 크기에 대한 0~1 비율). 가리키지 않으면 null. */
+  handScreen: () => { x: number; y: number } | null;
 };
 const BASE = '/doreumi';
 function visibleBounds(root: THREE.Object3D) {
@@ -225,6 +233,10 @@ export async function createDoreumiRenderer(canvas: HTMLCanvasElement, signal: A
     const skinned: THREE.SkinnedMesh[] = [];
     model!.traverse(object => { if (object instanceof THREE.SkinnedMesh && object.name !== 'DoreumiGarment') skinned.push(object); });
     const anchor = new THREE.Vector3(), vertex = new THREE.Vector3(), scale = new THREE.Vector3(), orientation = new THREE.Quaternion(), local = new THREE.Matrix4();
+    // 선생님 차림은 처음 켤 때 만든다(돌아다니는 도름이는 만들지 않는다).
+    let teacher: TeacherKit | null = null, teacherOn = false, aimSide: TeacherSide = 'L', aimReady = false;
+    let aimTarget: THREE.Vector3 | null = null;
+    const aimCurrent = new THREE.Vector3(), handPoint = new THREE.Vector3();
     function updateProp() {
       if (!prop || !skinned[0]) return;
       model!.updateMatrixWorld(true); skinned[0].skeleton.update(); anchor.set(0, 0, 0);
@@ -314,6 +326,11 @@ export async function createDoreumiRenderer(canvas: HTMLCanvasElement, signal: A
       camera.top = cameraHalfHeight; camera.bottom = -cameraHalfHeight;
       camera.position.set(Math.sin(viewAngle) * 6, cameraCenterY, cameraCenterZ + Math.cos(viewAngle) * 6); camera.lookAt(0, cameraCenterY, cameraCenterZ); camera.updateProjectionMatrix();
       contextProps.update({ time: state.time, duration: state.duration });
+      if (teacher && teacherOn && aimTarget) {
+        if (!aimReady || immediate || reduceMotion) { aimCurrent.copy(aimTarget); aimReady = true; }
+        else aimCurrent.lerp(aimTarget, 1 - Math.exp(-delta / .09));
+        teacher.aim(aimCurrent, aimSide);
+      }
       updateProp(); renderer.render(scene, camera); renderedFrames++;
     }
     function resize() {
@@ -393,7 +410,7 @@ export async function createDoreumiRenderer(canvas: HTMLCanvasElement, signal: A
         expression = id; blinkUntil = 0; nextBlink = elapsed + 3.4; showTexture(map, isPaused()); evictTextures(); render();
       },
       setActive(value) { active = value; schedule(); }, setVisible(value) { visible = value; schedule(); },
-      setFacing(value) { facing = value; targetYaw = value === 'left' ? -Math.PI / 2 : value === 'right' ? Math.PI / 2 : 0; render(0, isPaused()); schedule(); },
+      setFacing(value) { facing = value; targetYaw = value === 'left' ? -Math.PI / 2 : value === 'right' ? Math.PI / 2 : value === 'front-left' ? -Math.PI / 4 : value === 'front-right' ? Math.PI / 4 : 0; render(0, isPaused()); schedule(); },
       setSkeletonVisible(value) {
         if (value && !skeletonHelper) {
           skeletonHelper = new THREE.SkeletonHelper(model!); skeletonHelper.renderOrder = 10;
@@ -423,6 +440,29 @@ export async function createDoreumiRenderer(canvas: HTMLCanvasElement, signal: A
         if (request !== dressRequest || disposed) { kept.forEach(takeOffDressItem); return; }
         dressItems.forEach(takeOffDressItem); dressItems = kept;
         render(0, true);
+      },
+      setTeacher(on) {
+        if (on && !teacher && skinned[0]) teacher = createTeacherKit(model!, skinned[0]);
+        teacherOn = on && !!teacher; teacher?.setVisible(teacherOn);
+        if (!teacherOn) { aimTarget = null; aimReady = false; }
+        render(0, isPaused());
+      },
+      pointAt(ndc, side = 'L') {
+        if (!ndc || !Number.isFinite(ndc.x) || !Number.isFinite(ndc.y)) { aimTarget = null; aimReady = false; render(0, isPaused()); return; }
+        aimSide = side;
+        // 직교 카메라라 NDC 의 x·y 가 곧 그 자리다. 깊이는 몸 앞쪽으로 둔다.
+        const point = new THREE.Vector3(ndc.x, ndc.y, 0).unproject(camera);
+        point.z = .35;
+        aimTarget = point;
+        render(0, isPaused());
+      },
+      handScreen() {
+        if (!teacher || !teacherOn || !aimTarget) return null;
+        const world = teacher.hand(aimSide, handPoint);
+        if (!world) return null;
+        const p = world.clone().project(camera);
+        // 0~1 비율로 돌려준다. 무대 배율이 바뀌어도 호출하는 쪽이 지금 캔버스 크기를 곱해 쓴다.
+        return { x: (p.x + 1) / 2, y: (1 - p.y) / 2 };
       },
       setViewAngle(degrees) { viewAngle = Number.isFinite(degrees) ? degrees * Math.PI / 180 : 0; render(0, true); },
       setPlaybackRate(rate) { playbackRate = Math.max(.1, Math.min(3, rate)); },
@@ -468,6 +508,7 @@ export async function createDoreumiRenderer(canvas: HTMLCanvasElement, signal: A
         if (disposed) return; disposed = true; cancelAnimationFrame(frame); resizeObserver.disconnect();
         document.removeEventListener('visibilitychange', visibilityChanged); reduced.removeEventListener('change', reducedChanged);
         dressRequest++; dressItems.forEach(takeOffDressItem); dressItems = [];
+        teacher?.dispose(); teacher = null;
         motion!.dispose(); contextProps.dispose(); skeletonHelper?.dispose(); removeDoreumiWardrobe(wardrobe); skinned.forEach(mesh => mesh.skeleton.dispose()); disposeObject(scene); pendingProps.forEach(disposeObject); textures.forEach(t => t.dispose()); textures.clear(); renderer.dispose();
       },
     };
