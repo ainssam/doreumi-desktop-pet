@@ -23,6 +23,10 @@ export type DoreumiAvatarHandle = {
   setSeason: (season: DoreumiLook | 'auto') => void;
   setLocomotionRate: (rate: number) => void;
   capture: () => string | undefined;
+  /** 도름이 안내 수첩의 선생님 차림(안경·콧수염)과 가리키기. */
+  setTeacher: (on: boolean) => void;
+  pointAt: (ndc: { x: number; y: number } | null, side?: 'L' | 'R') => void;
+  handScreen: () => { x: number; y: number } | null;
 };
 export type DoreumiAvatarProps = {
   action?: string; expression?: string; active?: boolean; className?: string; onReady?: () => void;
@@ -57,6 +61,9 @@ export const DoreumiAvatar = forwardRef<DoreumiAvatarHandle, DoreumiAvatarProps>
     setSeason: value => runtime.current?.setSeason(value),
     setLocomotionRate: value => runtime.current?.setLocomotionRate(value),
     capture: () => runtime.current?.capture(),
+    setTeacher: value => runtime.current?.setTeacher(value),
+    pointAt: (ndc, side) => runtime.current?.pointAt(ndc, side),
+    handScreen: () => runtime.current?.handScreen() ?? null,
   }), []);
   useEffect(() => {
     const element = canvas.current; if (!element) return;

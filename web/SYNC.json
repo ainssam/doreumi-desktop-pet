@@ -3661,24 +3661,24 @@
       "sha256": "377c94558221a6e2d1ee593b7c4f9f27ca57b8ca171226b24a6bbe6559879217"
     },
     "src/components/doreumi/DoreumiAvatar.tsx": {
-      "blob": "1575be8c84511137d4a65ad7182cce6e351f392a",
-      "bytes": 7365,
-      "sha256": "cd05d760d9be5d173e2a6facc8631c090336ec8ed544872326c225dae9fe0741"
+      "blob": "b379338155d682771601737c5f9e26db4aa8e2cd",
+      "bytes": 7808,
+      "sha256": "0338c63d2349d66e151a3774ce73e23c0f1df7f54b36fa77b8dca67596b8a3d7"
     },
     "src/components/doreumi/locomotion.ts": {
-      "blob": "04f1c7bd3fadb3122779954cf00e46c97b60a98f",
-      "bytes": 7185,
-      "sha256": "1927f9a306746edde23a1bc3cbde2d60ea4185079f26f1155b6da3a7d34f40ab"
+      "blob": "3622e5c075ed20de9f4cdb09235471ad7c18ab11",
+      "bytes": 21898,
+      "sha256": "4b765ee3d2c126aa9adc8f353b439caea1d02850bb16cd626a10b8f39ef641c3"
     },
     "src/components/doreumi/useDoreumiLocomotion.ts": {
-      "blob": "af5d758223116cb8c3ece3e5a8b847cf185db9db",
-      "bytes": 12703,
-      "sha256": "b7c6ac554f7df384e8eb8dd4b3e13384a4aad23fd05e9de8bd64a90ab391216e"
+      "blob": "6775a845e9bdbaee570aaf7261311b9a79110767",
+      "bytes": 27208,
+      "sha256": "053e72b73d0f11335645ee0b57fc49d44f3b25a441ae0cf7a5bb2757dfdbf098"
     },
     "src/components/doreumi/useDoreumiPersonality.ts": {
-      "blob": "1bd11ef80bc34c25aa67930e647057339c05c829",
-      "bytes": 6200,
-      "sha256": "5e9ba7d5ddac15e4fec6977568226e593a9b4803e10d35f303c3aff26d8f786e"
+      "blob": "04aca1c567217a0f84573aa2252f110358e4627a",
+      "bytes": 6709,
+      "sha256": "d81d55b21e2ad428f9758a28a97299f278fa144707ede864b836bfaa2c249399"
     },
     "src/lib/doreumi/avatarScale.ts": {
       "blob": "2e622e6ee5a9ef0385c818ddc7d7e93a45ac8b66",
@@ -3760,6 +3760,11 @@
       "bytes": 990,
       "sha256": "e5379e5efd751b98c6f508e4ce35b06ea2d6fae5dfe6c55b84ea48e52c4aab13"
     },
+    "src/lib/doreumi/motion-ledge.ts": {
+      "blob": "033afc4276fac7139a132745edd09bcb9e51a243",
+      "bytes": 14719,
+      "sha256": "25b6bcca8784f4dc95cc1cab73b7fe24fdb2647e3c428993101c2e2ba2c5a721"
+    },
     "src/lib/doreumi/motion-library.ts": {
       "blob": "74f86fb36053b171df05a08c8f516e28d27749ac",
       "bytes": 5718,
@@ -3796,9 +3801,9 @@
       "sha256": "5d99480b283510da14704a0c1bdddaa2d7df55ff6268b6be4958265b572c3f8f"
     },
     "src/lib/doreumi/motion-runtime.ts": {
-      "blob": "47126b1cd1eb03a2af292bbf598cc42b57d9ae89",
-      "bytes": 34463,
-      "sha256": "54107083e5dc12b4cad0458c993d0a4b5e044005d84d14ec6efe44bce8802c17"
+      "blob": "c897b9cc3de705cdf4173fa4e1d0d2677ea1e1bf",
+      "bytes": 37219,
+      "sha256": "2f72c07b9e4e9732a20bc303d478fe72acc4dceeedae9f3d6859415470afc414"
     },
     "src/lib/doreumi/motion-skin-probes.ts": {
       "blob": "7a6a2378e3b9e2220271d20ef2ed53975e26015a",
@@ -3809,6 +3814,11 @@
       "blob": "00e7603b0d7421b4407bc7760d593833e14f4bc4",
       "bytes": 1959,
       "sha256": "d60ababa830738d7f77e57fe61fb32a9f5286f2bcc8e44ae6d23800d964f993c"
+    },
+    "src/lib/doreumi/motion-teacher.ts": {
+      "blob": "d93e0a5e0eef9c06a4f53b29a0219acd0f5215a4",
+      "bytes": 7762,
+      "sha256": "1e7c239e3059e9a255232182c3f8cf865ebdb03a6021af65eb757ec2b0c74eba"
     },
     "src/lib/doreumi/motion-travel.ts": {
       "blob": "ba4e95054dab03e1a12caa8aa73a85d4545039e8",
@@ -3899,6 +3909,11 @@
       "blob": "8dd3d75e041ed6dc94f501dc4fe6f2663379f54b",
       "bytes": 4442,
       "sha256": "c4c91889cc2fdc5a31e3515f2a14977cfd357c859d88c1f9ec4716bae27d128b"
+    },
+    "tests/doreumi-ledge-step.test.mjs": {
+      "blob": "b51d6c5f1bcc83c4679207fe0e394e8f9d009846",
+      "bytes": 20113,
+      "sha256": "b6cd5e31bf129587b6d521aa57b97a6fe983010cdb70ee75a9eeb020493ee552"
     },
     "tests/doreumi-locomotion.test.mjs": {
       "blob": "520549785513bcf55a9a07ee7525db92e36af528",
@@ -4056,7 +4071,7 @@
   "originalAssetsPin": "b2cb2a6f7646a298c577a2dbe510a2a75cb9161b",
   "source": {
     "branch": "codex/react-local-20260915",
-    "commit": "34f47490d2180b962340de73d8c23a0e59ed02a9",
+    "commit": "fa95cbb3c34086644484a0cd23f29dc9318de7e1",
     "dirty": false,
     "project": "DoRms"
   }
