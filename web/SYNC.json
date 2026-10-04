@@ -3671,14 +3671,19 @@
       "sha256": "4b765ee3d2c126aa9adc8f353b439caea1d02850bb16cd626a10b8f39ef641c3"
     },
     "src/components/doreumi/useDoreumiLocomotion.ts": {
-      "blob": "6775a845e9bdbaee570aaf7261311b9a79110767",
-      "bytes": 27208,
-      "sha256": "053e72b73d0f11335645ee0b57fc49d44f3b25a441ae0cf7a5bb2757dfdbf098"
+      "blob": "99fa2d4e5626ad807f24a494bab515141ebe8e6a",
+      "bytes": 27452,
+      "sha256": "caf4c17a398f25e5fbb2ee97cc1d306bd32266cc12a692dc8551bc370add3d3f"
     },
     "src/components/doreumi/useDoreumiPersonality.ts": {
-      "blob": "04aca1c567217a0f84573aa2252f110358e4627a",
-      "bytes": 6709,
-      "sha256": "d81d55b21e2ad428f9758a28a97299f278fa144707ede864b836bfaa2c249399"
+      "blob": "8fcb8e5b488b9ecd738b174365abd9b92e82ae91",
+      "bytes": 5365,
+      "sha256": "58a0d72111281dd534a814a7e2959fb691f1a2c9e6e86c04585fb0f3bd1d75d5"
+    },
+    "src/lib/doreumi/ambient-actions.ts": {
+      "blob": "e82ab5a78bc8b4a31425a354d49aa597393e4811",
+      "bytes": 1671,
+      "sha256": "1b481e782341cbc0b3d056cc986fa609343bf7e1f69ed67504ed33b07be8b6ce"
     },
     "src/lib/doreumi/avatarScale.ts": {
       "blob": "2e622e6ee5a9ef0385c818ddc7d7e93a45ac8b66",
@@ -3766,9 +3771,9 @@
       "sha256": "25b6bcca8784f4dc95cc1cab73b7fe24fdb2647e3c428993101c2e2ba2c5a721"
     },
     "src/lib/doreumi/motion-library.ts": {
-      "blob": "74f86fb36053b171df05a08c8f516e28d27749ac",
-      "bytes": 5718,
-      "sha256": "9b90a354d1e7cb848d0ae88ddfdacc41591fb77a15d6911dada088dc61080985"
+      "blob": "2407e8a538219ef64c3c9aff031a35c80b7fe88b",
+      "bytes": 5946,
+      "sha256": "67562b9eaa56ddd27aa3fd1811eef89cc928a036a44dc27f1a84db8848f7d6fa"
     },
     "src/lib/doreumi/motion-material.ts": {
       "blob": "9398ea2dfdbf03879ab6e9982bfe545904db07f2",
@@ -3916,9 +3921,9 @@
       "sha256": "b6cd5e31bf129587b6d521aa57b97a6fe983010cdb70ee75a9eeb020493ee552"
     },
     "tests/doreumi-locomotion.test.mjs": {
-      "blob": "520549785513bcf55a9a07ee7525db92e36af528",
-      "bytes": 11615,
-      "sha256": "e459207a73273e73cba22107fa82a5e4ac0c8c127b62eb5dcdd511849bedbacf"
+      "blob": "404a5c5bf0beb34f7b11134f87d93272ba257a06",
+      "bytes": 15031,
+      "sha256": "c370d12fa83b10720514a0008f26c9443226d64f10ecf168a7740f409030e570"
     },
     "tests/doreumi-material.test.mjs": {
       "blob": "48409f2beed4734caf7939fa0b3fadd5a4a89f0a",
@@ -3976,9 +3981,9 @@
       "sha256": "6fdc9efd29125be9f2920e5cf354dbaed0664e8375d673b669836574d9af01c7"
     },
     "tests/doreumi-personality.test.mjs": {
-      "blob": "5eacd21b9ad9d87ac9c6ea51c76355311d2272a0",
-      "bytes": 6777,
-      "sha256": "532b682b3f5d42a8a7d3adb512794c57401f03c06e5e5081c02d89bf09aa0d76"
+      "blob": "59bd5c354691318795e549ccf8d077629f2b1bd3",
+      "bytes": 6925,
+      "sha256": "bf476f5f3de4a046223964a1500532f8753d3353e165174fe5f0d199f2f8112f"
     },
     "tests/doreumi-phase-travel.test.mjs": {
       "blob": "975267e2df3ca55c39e1e5bdaf574a9e9f93e37c",
@@ -4071,7 +4076,7 @@
   "originalAssetsPin": "b2cb2a6f7646a298c577a2dbe510a2a75cb9161b",
   "source": {
     "branch": "codex/react-local-20260915",
-    "commit": "fa95cbb3c34086644484a0cd23f29dc9318de7e1",
+    "commit": "ee5713ed27642f149ed0d0c3db2b9adda567a11d",
     "dirty": false,
     "project": "DoRms"
   }

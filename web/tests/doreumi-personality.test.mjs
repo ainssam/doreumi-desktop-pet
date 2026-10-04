@@ -4,6 +4,7 @@ import fs from 'node:fs';
 import vm from 'node:vm';
 import ts from 'typescript';
 import { chooseAmbientMotion, expressionForMotion } from '../src/lib/doreumi/motion-library.ts';
+import { HOME_AMBIENT_ACTIONS as QUIET, SEASONAL_AMBIENT_ACTIONS as SEASONAL } from '../src/lib/doreumi/ambient-actions.ts';
 
 const source = fs.readFileSync(new URL('../src/components/doreumi/useDoreumiPersonality.ts', import.meta.url), 'utf8').replace(/^import .*;$/gm, '').replace('export function useDoreumiPersonality', 'function useDoreumiPersonality');
 function harness(imported = true, options = {}) {
@@ -15,6 +16,7 @@ function harness(imported = true, options = {}) {
     setTimeout: (fn, ms) => { const timer = { fn, at: now + ms }; timers.push(timer); return timer; }, clearTimeout: timer => { if (timer) timer.cancelled = true; },
     window: { matchMedia: () => media }, document, fetchMotionLibrary: async () => ({ motions: options.entries ?? [] }),
     canPlayMotion: options.canPlay, doreumiSeason: () => 'everyday',
+    QUIET, SEASONAL,
     expressionForMotion,
     chooseAmbientMotion: options.entries ? (entries, recent) => chooseAmbientMotion(entries, recent, () => 0) : () => imported ? { id: 'meshy:27', duration: 1.5, expression: 'smile' } : null,
   });
@@ -92,7 +94,7 @@ test('resuming while hidden or reduced motion stays idle until that constraint c
 
 test('every authored action the director picks exists and is approved in the manifest', () => {
   const manifest = JSON.parse(fs.readFileSync(new URL('../public/doreumi/manifest.json', import.meta.url), 'utf8'));
-  const picked = [...source.matchAll(/action: '([A-Za-z]+)'/g)].map(m => m[1]);
+  const picked = [...QUIET, ...Object.values(SEASONAL)].map(item => item.action);
   assert.ok(picked.length >= 16);
   for (const action of picked) assert.equal(manifest.actions.find(a => a.id === action)?.approval, 'approved', action);
 });

@@ -80,10 +80,15 @@ export function expressionForMotion(motion: LibraryMotion): DoreumiExpression {
   return 'smile';
 }
 
+/** Every imported performance the home director can pick, also available in the shop. */
+export function ambientMotionCatalog(motions: LibraryMotion[]): LibraryMotion[] {
+  return motions.filter(item => item.review === 'passed' && item.ambient && item.url
+    && !item.exclusionReason && contextPropsSupport(item.props, item.sourceActionId, item.environmentSupport).supported);
+}
+
 /** Family-first sampling keeps 176 walks from crowding out playful gestures. */
 export function chooseAmbientMotion(motions: LibraryMotion[], recent: readonly string[], random = Math.random): LibraryMotion | null {
-  const eligible = motions.filter(item => item.review === 'passed' && item.ambient && item.url
-    && !item.exclusionReason && contextPropsSupport(item.props, item.sourceActionId, item.environmentSupport).supported && !recent.includes(item.id));
+  const eligible = ambientMotionCatalog(motions).filter(item => !recent.includes(item.id));
   if (!eligible.length) return null;
   const families = [...new Set(eligible.map(item => item.family))];
   const family = families[Math.min(families.length - 1, Math.floor(random() * families.length))];
