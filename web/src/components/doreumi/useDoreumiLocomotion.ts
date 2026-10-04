@@ -65,7 +65,7 @@ export function useDoreumiLocomotion(options: Options) {
     // 매 프레임 레이아웃을 읽지 않게, 자리를 잡고 멈춰 선 경우에만 잰다.
     let lift = 0;
     if (state.current.phase === "idle" && positioned.current && latest.current.ledges?.length) {
-      const b = bounds(), restBottom = latest.current.restBottoms?.[state.current.side];
+      const b = bounds(true), restBottom = latest.current.restBottoms?.[state.current.side];
       const rest = restBottom !== null && restBottom !== undefined ? b.viewportHeight - restBottom : surfaceAt(-1e6, { ...b, ledges: [] });
       lift = rest - surfaceAt(state.current.x + b.width / 2, b);
     }
@@ -125,13 +125,16 @@ export function useDoreumiLocomotion(options: Options) {
     environmentAnchor.current = null;
     if (!latest.current.enabled || latest.current.stageEnabled === false || reduced || pointer.current || state.current.phase !== "idle") { const activeStage = stage.current; stopStage(); return activeStage ? { yaw: activeStage.yaw, stop: true } : undefined; }
     if (!sample.travel || !sample.action.startsWith("meshy:")) { stage.current = null; node.removeAttribute("data-stage-moving"); return; }
-    const result = stepImportedStage(stage.current, sample, bounds(), positioned.current ? state.current.x : node.getBoundingClientRect().left);
+    // Refresh at motion entry; its subsequent frames keep the same body box.
+    // Re-reading after a position write forces the entire mobile page to lay out.
+    const stageBounds = bounds(stage.current?.action === sample.action);
+    const result = stepImportedStage(stage.current, sample, stageBounds, positioned.current ? state.current.x : node.getBoundingClientRect().left);
     stage.current = result.state;
     if (result.state && !sample.paused) {
       state.current.x = result.state.x; positioned.current = true;
       node.style.setProperty("--doreumi-rest-x", `${result.state.x}px`);
       if (result.state.blocked) node.removeAttribute("data-stage-moving"); else node.dataset.stageMoving = sample.action;
-      const nextSide = homeWall(result.state.x, bounds(), latest.current.phone); state.current.side = nextSide;
+      const nextSide = homeWall(result.state.x, stageBounds, latest.current.phone); state.current.side = nextSide;
       if (published.current.side !== nextSide) { published.current.side = nextSide; setSide(nextSide); }
     }
     return result.decision;

@@ -5,30 +5,8 @@ import { chooseAmbientMotion, expressionForMotion, fetchMotionLibrary, type Libr
 import type { DoreumiExpression } from '@/lib/doreumi/motion-catalog';
 import type { DoreumiStageFrame } from '@/lib/doreumi/motion-travel';
 import { doreumiSeason } from '@/lib/doreumi/seasons';
+import { HOME_AMBIENT_ACTIONS as QUIET, SEASONAL_AMBIENT_ACTIONS as SEASONAL } from '@/lib/doreumi/ambient-actions';
 
-/** Every approved authored action takes part. Holds (Code/Read/Sit/Lie) vary their length. */
-const QUIET: { action: string; expression: DoreumiExpression; seconds: number | [number, number] }[] = [
-  { action: 'Code', expression: 'focused', seconds: [10, 18] },
-  { action: 'Read', expression: 'curious', seconds: [9, 16] },
-  { action: 'Sit', expression: 'smile', seconds: [7, 12] },
-  { action: 'Lie', expression: 'sleepy', seconds: [8, 14] },
-  { action: 'HeadTilt', expression: 'confused', seconds: 4 },
-  { action: 'Stretch', expression: 'yawning', seconds: 5 },
-  { action: 'Joy', expression: 'sparkly', seconds: 4 },
-  { action: 'Wave', expression: 'greeting_smile', seconds: 3.6 },
-  { action: 'Think', expression: 'skeptical', seconds: 6 },
-  { action: 'Cheer', expression: 'sparkly', seconds: 4 },
-  { action: 'Jump', expression: 'laugh', seconds: 2.8 },
-  { action: 'Showcase', expression: 'proud', seconds: 7.8 },
-  { action: 'Bow', expression: 'greeting_smile', seconds: 4 },
-  { action: 'Roll', expression: 'laugh', seconds: 4 },
-  { action: 'PeekLeft', expression: 'curious', seconds: 5 },
-  { action: 'PeekRight', expression: 'curious', seconds: 5 },
-];
-const SEASONAL: Partial<Record<ReturnType<typeof doreumiSeason>, { action: string; expression: DoreumiExpression; seconds: number }>> = {
-  seollal: { action: 'NewYearBow', expression: 'greeting_smile', seconds: 7 },
-  christmas: { action: 'Snowman', expression: 'laugh', seconds: 7 },
-};
 const between = (range: number | [number, number]) => Array.isArray(range) ? range[0] + Math.random() * (range[1] - range[0]) : range;
 /** Mostly short, irregular breaths between performances; now and then a longer pause. */
 function ambientGapMs(roll = Math.random(), jitter = Math.random()): number {

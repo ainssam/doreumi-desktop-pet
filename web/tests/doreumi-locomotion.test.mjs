@@ -94,18 +94,22 @@ test('pause, resize, clipping and action changes never replay travel or send the
 const vm = await import('node:vm');
 const hookBundle=await build({entryPoints:['src/components/doreumi/useDoreumiLocomotion.ts'],bundle:true,format:'cjs',write:false,plugins:[{name:'hooks',setup(builder){builder.onResolve({filter:/^react$/},()=>({path:'react',namespace:'fake'}));builder.onLoad({filter:/.*/,namespace:'fake'},()=>({contents:'export const useRef=(current)=>({current});export const useCallback=(fn)=>fn;export const useState=(value)=>[value,()=>{}];export const useEffect=(fn)=>globalThis.effects.push(fn);'}));}}]});
 function hookHarness(){
- const effects=[],frames=new Map(),listeners=new Map();let sequence=0,clock=0,starts=0,captured=null;
+ const effects=[],frames=new Map(),listeners=new Map();let sequence=0,clock=0,starts=0,captured=null,rectReads=0;
  const styles=new Map();
- const element={getBoundingClientRect:()=>({left:parseFloat(styles.get('--doreumi-rest-x')??'250'),top:600,width:116,height:98}),style:{setProperty:(key,value)=>styles.set(key,value),getPropertyValue:key=>styles.get(key)??'',removeProperty:key=>styles.delete(key)},dataset:{},removeAttribute:name=>{if(name==='data-stage-moving')delete element.dataset.stageMoving;}};
+ const geometry={left:250,top:600,width:116,height:98};
+ const element={getBoundingClientRect:()=>{rectReads++;return {...geometry,left:parseFloat(styles.get('--doreumi-rest-x')??String(geometry.left))};},style:{setProperty:(key,value)=>styles.set(key,value),getPropertyValue:key=>styles.get(key)??'',removeProperty:key=>styles.delete(key)},dataset:{},removeAttribute:name=>{if(name==='data-stage-moving')delete element.dataset.stageMoving;}};
  const target={setPointerCapture:id=>{captured=id;},hasPointerCapture:id=>captured===id,releasePointerCapture:()=>{captured=null;}};
- const events={addEventListener:(name,fn)=>listeners.set(name,fn),removeEventListener:(name)=>listeners.delete(name)};
- const module={exports:{}};
- vm.runInNewContext(hookBundle.outputFiles[0].text,{module,exports:module.exports,effects,window:{...events,innerWidth:390,innerHeight:844,matchMedia:()=>({matches:false})},document:{...events,hidden:false},performance:{now:()=>clock},requestAnimationFrame:fn=>{frames.set(++sequence,fn);return sequence;},cancelAnimationFrame:id=>frames.delete(id)});
+ // The cache invalidation and clamp effects both listen to resize. Keep both,
+ // as the real event target does, rather than overwriting the first listener.
+ const events={addEventListener:(name,fn)=>{if(!listeners.has(name))listeners.set(name,new Set());listeners.get(name).add(fn);},removeEventListener:(name,fn)=>listeners.get(name)?.delete(fn)};
+ const viewport={...events,innerWidth:390,innerHeight:844,matchMedia:()=>({matches:false})};
+ const fixtureModule={exports:{}};
+ vm.runInNewContext(hookBundle.outputFiles[0].text,{module:fixtureModule,exports:fixtureModule.exports,effects,window:viewport,document:{...events,hidden:false},performance:{now:()=>clock},requestAnimationFrame:fn=>{frames.set(++sequence,fn);return sequence;},cancelAnimationFrame:id=>frames.delete(id)});
  const options={elementRef:{current:element},enabled:true,stageEnabled:true,occupiedBottom:82,resetKey:'/',onDragStart:()=>starts++};
- const api=module.exports.useDoreumiLocomotion(options);
+ const api=fixtureModule.exports.useDoreumiLocomotion(options);
  const cleanups=effects.map(fn=>fn());
  const event=(x,y,other={})=>({isPrimary:true,button:0,buttons:1,pointerId:1,clientX:x,clientY:y,currentTarget:target,preventDefault(){},...other});
- return {api,event,frames,element,styles,options,starts:()=>starts,captured:()=>captured,dispose:()=>cleanups.forEach(fn=>fn?.())};
+ return {api,event,frames,element,styles,options,geometry,viewport,rectReads:()=>rectReads,clearReads:()=>{rectReads=0;},emit:name=>{for(const fn of [...(listeners.get(name)??[])])fn();},starts:()=>starts,captured:()=>captured,dispose:()=>cleanups.forEach(fn=>fn?.())};
 }
 test('actual pointer handlers distinguish taps and drag, suppress release click, release capture and clean RAF',()=>{
  const h=hookHarness(),p=h.api.pointerHandlers;
@@ -131,4 +135,54 @@ test('actual imported-frame hook paints the same frame, stays idle to avoid canc
  h.options.stageEnabled=false;assert.equal(h.api.onMotionFrame(stageFrame(1.3)).stop,true);assert.equal(parseFloat(h.styles.get('--doreumi-rest-x')),x);assert.equal(h.element.dataset.stageMoving,undefined);
  h.options.stageEnabled=true;h.api.onMotionFrame(stageFrame(0,{action:'Idle',travel:null}));h.api.onMotionFrame(stageFrame(0));
  h.api.pointerHandlers.onPointerDown(h.event(260,620));assert.equal(h.api.onMotionFrame(stageFrame(.9)).stop,true);h.api.pointerHandlers.onPointerUp(h.event(260,620));assert.equal(h.api.consumeClick(),false);h.dispose();
+});
+
+test('actual stage entry refreshes body dimensions and following travel frames perform no DOM reads',()=>{
+ const h=hookHarness();
+ // Initial mount measured116px. The first motion must replace that stale box.
+ h.geometry.width=260;h.geometry.height=180;h.clearReads();
+ h.api.onMotionFrame(stageFrame(0));
+ assert.equal(h.rectReads(),2,'fresh size and initial page origin, without another read after the position write');
+ const right=wallX('right',{...b,width:260,height:180});
+ assert.ok(Math.abs(parseFloat(h.styles.get('--doreumi-rest-x'))-right)<1e-8);
+ h.clearReads();
+ for(const time of [.6,.7,1.2,1.7,2.3])h.api.onMotionFrame(stageFrame(time));
+ assert.equal(h.rectReads(),0,'subsequent frames reuse dimensions through side selection');
+ assert.ok(parseFloat(h.styles.get('--doreumi-rest-x'))<right);
+ h.dispose();
+});
+
+test('actual resize invalidates stage dimensions and clamps with the fresh viewport before cached frames resume',()=>{
+ const h=hookHarness();h.api.onMotionFrame(stageFrame(0));
+ h.geometry.width=180;h.geometry.height=140;h.viewport.innerWidth=320;h.viewport.innerHeight=640;h.clearReads();
+ h.emit('resize');
+ assert.equal(h.rectReads(),1,'resize cache-drop and clamp listeners both run');
+ const right=wallX('right',{...b,width:180,height:140,viewportWidth:320,viewportHeight:640});
+ assert.ok(Math.abs(parseFloat(h.styles.get('--doreumi-rest-x'))-right)<1e-8);
+ h.clearReads();h.api.onMotionFrame(stageFrame(1.2));h.api.onMotionFrame(stageFrame(1.7));
+ assert.equal(h.rectReads(),0);
+ assert.ok(parseFloat(h.styles.get('--doreumi-rest-x'))<=right);
+ h.dispose();
+});
+
+test('actual action changes refresh dimensions even when the viewport did not resize',()=>{
+ const h=hookHarness();h.api.onMotionFrame(stageFrame(0));
+ h.geometry.width=240;h.clearReads();h.api.onMotionFrame(stageFrame(0,{action:'meshy:15'}));
+ assert.equal(h.rectReads(),1,'new action measures once and retains its established origin');
+ const right=wallX('right',{...b,width:240});
+ assert.ok(Math.abs(parseFloat(h.styles.get('--doreumi-rest-x'))-right)<1e-8);
+ h.clearReads();h.api.onMotionFrame(stageFrame(1.2,{action:'meshy:15'}));
+ assert.equal(h.rectReads(),0);
+ h.dispose();
+});
+
+test('actual reset refreshes dimensions once for idle ledge paint and a restarted action gets another fresh box',()=>{
+ const h=hookHarness();h.api.onMotionFrame(stageFrame(0));
+ h.options.ledges=[{left:0,right:390,top:700}];h.geometry.width=210;h.clearReads();
+ h.api.reset();assert.equal(h.rectReads(),1,'reset reads fresh dimensions and idle paint reuses them');
+ h.api.onMotionFrame(stageFrame(0,{action:'Idle',travel:null}));
+ h.geometry.width=280;h.clearReads();h.api.onMotionFrame(stageFrame(0));
+ assert.equal(h.rectReads(),1,'after reset the new motion cannot reuse its prior cached box');
+ assert.ok(parseFloat(h.styles.get('--doreumi-rest-x'))<=wallX('right',{...b,width:280}));
+ h.dispose();
 });
