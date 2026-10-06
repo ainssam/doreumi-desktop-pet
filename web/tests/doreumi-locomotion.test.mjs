@@ -92,9 +92,9 @@ test('pause, resize, clipping and action changes never replay travel or send the
 
 // Exercise actual hook handlers with a minimal deterministic hook/RAF host.
 const vm = await import('node:vm');
-const hookBundle=await build({entryPoints:['src/components/doreumi/useDoreumiLocomotion.ts'],bundle:true,format:'cjs',write:false,plugins:[{name:'hooks',setup(builder){builder.onResolve({filter:/^react$/},()=>({path:'react',namespace:'fake'}));builder.onLoad({filter:/.*/,namespace:'fake'},()=>({contents:'export const useRef=(current)=>({current});export const useCallback=(fn)=>fn;export const useState=(value)=>[value,()=>{}];export const useEffect=(fn)=>globalThis.effects.push(fn);'}));}}]});
-function hookHarness(){
- const effects=[],frames=new Map(),listeners=new Map();let sequence=0,clock=0,starts=0,captured=null,rectReads=0;
+const hookBundle=await build({entryPoints:['src/components/doreumi/useDoreumiLocomotion.ts'],bundle:true,format:'cjs',write:false,plugins:[{name:'hooks',setup(builder){builder.onResolve({filter:/^react$/},()=>({path:'react',namespace:'fake'}));builder.onLoad({filter:/.*/,namespace:'fake'},()=>({contents:'export const useRef=(current)=>({current});export const useCallback=(fn)=>fn;export const useState=(value)=>[value,(next)=>globalThis.sets?.push(next)];export const useEffect=(fn)=>globalThis.effects.push(fn);'}));}}]});
+function hookHarness(extra={}){
+ const effects=[],sets=[],frames=new Map(),listeners=new Map();let sequence=0,clock=0,starts=0,captured=null,rectReads=0;
  const styles=new Map();
  const geometry={left:250,top:600,width:116,height:98};
  const element={getBoundingClientRect:()=>{rectReads++;return {...geometry,left:parseFloat(styles.get('--doreumi-rest-x')??String(geometry.left))};},style:{setProperty:(key,value)=>styles.set(key,value),getPropertyValue:key=>styles.get(key)??'',removeProperty:key=>styles.delete(key)},dataset:{},removeAttribute:name=>{if(name==='data-stage-moving')delete element.dataset.stageMoving;}};
@@ -104,12 +104,12 @@ function hookHarness(){
  const events={addEventListener:(name,fn)=>{if(!listeners.has(name))listeners.set(name,new Set());listeners.get(name).add(fn);},removeEventListener:(name,fn)=>listeners.get(name)?.delete(fn)};
  const viewport={...events,innerWidth:390,innerHeight:844,matchMedia:()=>({matches:false})};
  const fixtureModule={exports:{}};
- vm.runInNewContext(hookBundle.outputFiles[0].text,{module:fixtureModule,exports:fixtureModule.exports,effects,window:viewport,document:{...events,hidden:false},performance:{now:()=>clock},requestAnimationFrame:fn=>{frames.set(++sequence,fn);return sequence;},cancelAnimationFrame:id=>frames.delete(id)});
- const options={elementRef:{current:element},enabled:true,stageEnabled:true,occupiedBottom:82,resetKey:'/',onDragStart:()=>starts++};
+ vm.runInNewContext(hookBundle.outputFiles[0].text,{module:fixtureModule,exports:fixtureModule.exports,effects,sets,window:viewport,document:{...events,hidden:false},performance:{now:()=>clock},requestAnimationFrame:fn=>{frames.set(++sequence,fn);return sequence;},cancelAnimationFrame:id=>frames.delete(id)});
+ const options={elementRef:{current:element},enabled:true,stageEnabled:true,occupiedBottom:82,resetKey:'/',onDragStart:()=>starts++,...extra};
  const api=fixtureModule.exports.useDoreumiLocomotion(options);
  const cleanups=effects.map(fn=>fn());
  const event=(x,y,other={})=>({isPrimary:true,button:0,buttons:1,pointerId:1,clientX:x,clientY:y,currentTarget:target,preventDefault(){},...other});
- return {api,event,frames,element,styles,options,geometry,viewport,rectReads:()=>rectReads,clearReads:()=>{rectReads=0;},emit:name=>{for(const fn of [...(listeners.get(name)??[])])fn();},starts:()=>starts,captured:()=>captured,dispose:()=>cleanups.forEach(fn=>fn?.())};
+ return {api,event,frames,element,styles,sets,options,geometry,viewport,rectReads:()=>rectReads,clearReads:()=>{rectReads=0;},emit:name=>{for(const fn of [...(listeners.get(name)??[])])fn();},starts:()=>starts,captured:()=>captured,dispose:()=>cleanups.forEach(fn=>fn?.())};
 }
 test('actual pointer handlers distinguish taps and drag, suppress release click, release capture and clean RAF',()=>{
  const h=hookHarness(),p=h.api.pointerHandlers;
@@ -184,5 +184,40 @@ test('actual reset refreshes dimensions once for idle ledge paint and a restarte
  h.geometry.width=280;h.clearReads();h.api.onMotionFrame(stageFrame(0));
  assert.equal(h.rectReads(),1,'after reset the new motion cannot reuse its prior cached box');
  assert.ok(parseFloat(h.styles.get('--doreumi-rest-x'))<=wallX('right',{...b,width:280}));
+ h.dispose();
+});
+
+// 화면이 자기 자리 벽을 정한다(제작실 작업판 = 왼쪽, 2026-10-06): 오른쪽 아래 단추를 가리지 않게 왼쪽으로 달려가 그 자리를 지킨다.
+const pump=h=>{let t=0;for(let i=0;i<4000&&h.frames.size;i++){const [id,fn]=h.frames.entries().next().value;h.frames.delete(id);fn(t+=16);}assert.equal(h.frames.size,0,'달리기가 끝난다');};
+test('homeSide left runs from the right wall to the left wall, and a drop on the right still returns left',()=>{
+ const h=hookHarness({homeSide:'left'});
+ assert.equal(h.element.dataset.locomotion,'running','순간 이동하지 않고 달려간다');
+ pump(h);
+ assert.equal(h.element.dataset.locomotion,'idle');
+ assert.equal(parseFloat(h.styles.get('--doreumi-drag-x')),wallX('left',b));
+ assert.equal(h.styles.get('--doreumi-rest-x'),undefined,'CSS 쉬는 자리(왼쪽 벽)가 그린다');
+ const p=h.api.pointerHandlers;p.onPointerDown(h.event(280,630));p.onPointerMove(h.event(360,400));p.onPointerUp(h.event(360,400));
+ pump(h);
+ assert.equal(parseFloat(h.styles.get('--doreumi-drag-x')),wallX('left',b),'가까운 벽이 오른쪽이어도 왼쪽으로 돌아간다');
+ h.dispose();
+});
+test('homeSide left keeps imported travel in the left half of the screen',()=>{
+ const far=extra=>stageFrame(2.4,{pixelsPerUnit:400,...extra});
+ const free=hookHarness();free.geometry.left=0;free.api.onMotionFrame(stageFrame(0,{pixelsPerUnit:400}));free.api.onMotionFrame(far());
+ assert.ok(parseFloat(free.styles.get('--doreumi-rest-x'))>b.viewportWidth/2-b.width,'벽을 정하지 않으면 화면 끝까지 간다');free.dispose();
+ const h=hookHarness({homeSide:'left'});pump(h);h.geometry.left=0;
+ h.api.onMotionFrame(stageFrame(0,{pixelsPerUnit:400}));const decision=h.api.onMotionFrame(far());
+ const x=parseFloat(h.styles.get('--doreumi-rest-x'));
+ assert.ok(x+b.width-wallInset(b.width)<=b.viewportWidth/2+1e-6,`왼쪽 절반 안에 머문다: ${x}`);
+ assert.equal(decision.stop,true,'막히면 동작을 멈춘다');
+ h.dispose();
+});
+// 제작실은 늘 글쓰기 중(markComposing)이라 enabled=false 다. 달릴 수 없을 때 벽만 내부로 바꾸면 화면에는 오른쪽에 남았다(2026-10-06 실측).
+test('homeSide left with locomotion disabled stands on the left wall at once',()=>{
+ const h=hookHarness({homeSide:'left',enabled:false,stageEnabled:false});
+ assert.equal(h.frames.size,0,'달리지 않는다');
+ assert.equal(h.element.dataset.locomotion,'idle');
+ assert.equal(h.styles.get('--doreumi-rest-x'),undefined,'CSS 쉬는 자리(왼쪽 벽)가 그린다');
+ assert.ok(h.sets.includes('left'),'화면에 그리는 벽(side 상태)도 왼쪽으로 바뀐다');
  h.dispose();
 });

@@ -39,10 +39,12 @@ export type DoreumiAvatarProps = {
   onMotionFrame?: DoreumiStageHandler;
   /** Keep the standing size and foot line through every motion; the canvas overflows the box instead. */
   stableFraming?: boolean;
+  /** Preview only: leave room for wide accessories while turning the outfit. */
+  fitDress?: boolean;
 };
 
 export const DoreumiAvatar = forwardRef<DoreumiAvatarHandle, DoreumiAvatarProps>(function DoreumiAvatar(
-  { action = 'idle', expression = 'neutral', active = true, facing, locomotionRate = 1, outfit, dress, className, onReady, onMotionFrame, stableFraming = false }, ref,
+  { action = 'idle', expression = 'neutral', active = true, facing, locomotionRate = 1, outfit, dress, className, onReady, onMotionFrame, stableFraming = false, fitDress = false }, ref,
 ) {
   const canvas = useRef<HTMLCanvasElement>(null);
   const runtime = useRef<DoreumiRenderer | null>(null);
@@ -74,7 +76,7 @@ export const DoreumiAvatar = forwardRef<DoreumiAvatarHandle, DoreumiAvatarProps>
     const restored = () => { if (generation < 1) setGeneration(value => value + 1); };
     element.addEventListener('webglcontextlost', lost); element.addEventListener('webglcontextrestored', restored);
     setStatus('loading');
-    void import('@/lib/doreumi/motion-runtime').then(module => module.createDoreumiRenderer(element, controller.signal, frame => latest.current.onMotionFrame?.(frame), stableFraming ? module.DOREUMI_STABLE_FRAMING : undefined)).then(async instance => {
+    void import('@/lib/doreumi/motion-runtime').then(module => module.createDoreumiRenderer(element, controller.signal, frame => latest.current.onMotionFrame?.(frame), stableFraming ? module.DOREUMI_STABLE_FRAMING : undefined, fitDress)).then(async instance => {
       renderer = instance;
       if (controller.signal.aborted) { instance.dispose(); return; }
       runtime.current = instance;
@@ -92,7 +94,7 @@ export const DoreumiAvatar = forwardRef<DoreumiAvatarHandle, DoreumiAvatarProps>
       controller.abort(); observer.disconnect(); element.removeEventListener('webglcontextlost', lost); element.removeEventListener('webglcontextrestored', restored);
       renderer?.dispose(); if (runtime.current === renderer) runtime.current = null;
     };
-  }, [generation, stableFraming]);
+  }, [generation, stableFraming, fitDress]);
   useEffect(() => { runtime.current?.setAction(action); if (facing) runtime.current?.setFacing(facing); }, [action, facing]);
   useEffect(() => { void runtime.current?.setExpression(expression).catch(() => undefined); }, [expression]);
   useEffect(() => { runtime.current?.setActive(active); }, [active]);

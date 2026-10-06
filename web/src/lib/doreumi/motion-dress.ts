@@ -90,6 +90,40 @@ vec3 dressRecolor(vec3 c, vec3 rest) {
 export const DRESS_FRAGMENT = `diffuseColor.rgb = dressRecolor(diffuseColor.rgb, vFaceRest);`;
 
 type LoadedItem = { id: string; objects: THREE.Object3D[] };
+const HAND_MIRROR = new THREE.Matrix4().makeScale(-1, 1, 1);
+const handLetter = (hand: NonNullable<DoreumiDressItem['hand']>) => hand === 'leftHand' ? 'L' : 'R';
+const HAND_JOINT = /^(shoulder|arm|elbow|wrist|palm)([LR])$/;
+const oppositeJoint = (name: string) => name.replace(/([LR])$/, side => side === 'L' ? 'R' : 'L');
+
+function weightedHand(garments: readonly THREE.SkinnedMesh[]): 'L' | 'R' {
+  let left = 0, right = 0;
+  for (const garment of garments) {
+    const indices = garment.geometry.getAttribute('skinIndex'), weights = garment.geometry.getAttribute('skinWeight');
+    if (indices && weights) for (let vertex = 0; vertex < weights.count; vertex++) for (let component = 0; component < weights.itemSize; component++) {
+      const name = garment.skeleton.bones[indices.getComponent(vertex, component)]?.name ?? '';
+      if (!HAND_JOINT.test(name)) continue;
+      if (name.endsWith('L')) left += weights.getComponent(vertex, component); else right += weights.getComponent(vertex, component);
+    }
+  }
+  return left > right ? 'L' : 'R';
+}
+
+/** Reflected skinning needs reflected vertices, inverse binds, winding and tangent handedness together. */
+function mirrorGarment(garment: THREE.SkinnedMesh) {
+  garment.geometry = garment.geometry.clone();
+  const geometry = garment.geometry;
+  geometry.applyMatrix4(HAND_MIRROR);
+  const index = geometry.index;
+  if (index) for (let offset = 0; offset < index.count; offset += 3) {
+    const value = index.getX(offset + 1); index.setX(offset + 1, index.getX(offset + 2)); index.setX(offset + 2, value);
+  }
+  else for (const attribute of Object.values(geometry.attributes)) for (let offset = 0; offset < attribute.count; offset += 3) for (let component = 0; component < attribute.itemSize; component++) {
+    const value = attribute.getComponent(offset + 1, component);
+    attribute.setComponent(offset + 1, component, attribute.getComponent(offset + 2, component)); attribute.setComponent(offset + 2, component, value);
+  }
+  const tangent = geometry.getAttribute('tangent');
+  if (tangent) for (let vertex = 0; vertex < tangent.count; vertex++) tangent.setW(vertex, -tangent.getW(vertex));
+}
 const cache = new Map<string, Promise<ArrayBuffer>>();
 async function fetchItem(url: string, signal?: AbortSignal) {
   let request = cache.get(url);
@@ -131,19 +165,37 @@ export async function wearDressItem(loader: GLTFLoader, model: THREE.Object3D, i
     const bones = new Map(body.skeleton.bones.map(bone => [bone.name, bone]));
     const garments: THREE.SkinnedMesh[] = [];
     gltf.scene.traverse(object => { if (object instanceof THREE.SkinnedMesh) garments.push(object); });
-    for (const garment of garments) {
-      const joints = garment.skeleton.bones.map(bone => bones.get(bone.name));
+    const mirrored = !!item.hand && handLetter(item.hand) !== weightedHand(garments);
+    // Validate every mesh before attaching any: a malformed later mesh cannot leave a partial item on the body.
+    const bindings = garments.map(garment => {
+      const joints = garment.skeleton.bones.map(bone => bones.get(mirrored && HAND_JOINT.test(bone.name) ? oppositeJoint(bone.name) : bone.name));
       if (joints.some(bone => !bone)) throw new Error('Doreumi item joint mismatch');
+      const inverses = garment.skeleton.boneInverses.map(inverse => mirrored ? HAND_MIRROR.clone().multiply(inverse).multiply(HAND_MIRROR) : inverse.clone());
+      return { garment, mirrored, joints: joints as THREE.Bone[], inverses };
+    });
+    for (const { garment, mirrored, joints, inverses } of bindings) {
+      if (mirrored) mirrorGarment(garment);
       garment.removeFromParent();
       garment.position.copy(body.position); garment.quaternion.copy(body.quaternion); garment.scale.copy(body.scale);
-      garment.bind(new THREE.Skeleton(joints as THREE.Bone[], garment.skeleton.boneInverses), body.bindMatrix);
+      garment.bind(new THREE.Skeleton(joints, inverses), body.bindMatrix);
       garment.bindMode = body.bindMode; garment.frustumCulled = false; garment.name = `DoreumiItem_${item.id}`;
       body.parent?.add(garment); objects.push(garment);
     }
   } else {
-    const anchor = item.bone ? findAnchor(model, item.bone) : undefined;
+    const selected = item.hand ? handLetter(item.hand) : null;
+    const original = item.bone ?? '';
+    const handAnchor = HAND_JOINT.exec(original);
+    const target = selected ? handAnchor ? `${handAnchor[1]}${selected}` : `palm${selected}` : original;
+    const anchor = target ? findAnchor(model, target) : undefined;
     if (!anchor) throw new Error('Doreumi item anchor missing');
     const root = gltf.scene; root.name = `DoreumiItem_${item.id}`;
+    if (selected && !handAnchor) {
+      // Older hand items could be authored around a torso socket. Put their central grip at the palm,
+      // removing that authored torso offset instead of carrying the offset over to the new hand.
+      root.updateMatrixWorld(true);
+      root.position.sub(new THREE.Box3().setFromObject(root).getCenter(new THREE.Vector3()));
+    }
+    if (selected && selected !== (handAnchor?.[2] ?? 'R')) root.applyMatrix4(HAND_MIRROR);
     root.traverse(object => { if (object instanceof THREE.Mesh) object.frustumCulled = false; });
     anchor.add(root); objects.push(root);
   }
@@ -151,17 +203,18 @@ export async function wearDressItem(loader: GLTFLoader, model: THREE.Object3D, i
 }
 
 export function takeOffDressItem(loaded: LoadedItem) {
-  const materials = new Set<THREE.Material>(), textures = new Set<THREE.Texture>();
+  const materials = new Set<THREE.Material>(), textures = new Set<THREE.Texture>(), skeletons = new Set<THREE.Skeleton>();
   for (const root of loaded.objects) {
     root.removeFromParent();
     root.traverse(object => {
       if (!(object instanceof THREE.Mesh)) return;
       object.geometry.dispose();
+      if (object instanceof THREE.SkinnedMesh) skeletons.add(object.skeleton);
       for (const material of Array.isArray(object.material) ? object.material : [object.material]) {
         materials.add(material);
         for (const value of Object.values(material)) if (value instanceof THREE.Texture) textures.add(value);
       }
     });
   }
-  materials.forEach(m => m.dispose()); textures.forEach(t => t.dispose());
+  materials.forEach(m => m.dispose()); textures.forEach(t => t.dispose()); skeletons.forEach(s => s.dispose());
 }

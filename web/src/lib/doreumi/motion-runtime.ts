@@ -83,7 +83,7 @@ function disposeObject(root: THREE.Object3D) {
 export type DoreumiStableFraming = { top: number; bottom: number; side: number };
 export const DOREUMI_STABLE_FRAMING: DoreumiStableFraming = { top: .32, bottom: .25, side: .25 };
 
-export async function createDoreumiRenderer(canvas: HTMLCanvasElement, signal: AbortSignal, onMotionFrame?: DoreumiStageHandler, stable?: DoreumiStableFraming): Promise<DoreumiRenderer> {
+export async function createDoreumiRenderer(canvas: HTMLCanvasElement, signal: AbortSignal, onMotionFrame?: DoreumiStageHandler, stable?: DoreumiStableFraming, fitDress = false): Promise<DoreumiRenderer> {
   const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: true, powerPreference: 'low-power' });
   renderer.outputColorSpace = THREE.SRGBColorSpace; renderer.toneMapping = THREE.AgXToneMapping; renderer.toneMappingExposure = 1.03;
   const maxDpr = window.matchMedia('(pointer: coarse)').matches ? 1.5 : 2;
@@ -190,6 +190,8 @@ export async function createDoreumiRenderer(canvas: HTMLCanvasElement, signal: A
     let season: DoreumiLook = 'everyday', automaticSeason = false;
     let wardrobe = createDoreumiWardrobe(model!, season); model!.add(wardrobe);
     let dressItems: Awaited<ReturnType<typeof wearDressItem>>[] = [], dressRequest = 0;
+    let dressFitHalfHeight = 0;
+    const dressFitBounds = new THREE.Box3(), dressRigidMeshes: THREE.Mesh[] = [];
     let library: MotionLibrary | undefined, libraryRequest: Promise<MotionLibrary> | undefined;
     let actionRequest = 0, motionError: string | null = null, playbackRate = 1, viewAngle = 0;
     const clipRequests = new Map<string, Promise<void>>();
@@ -306,6 +308,22 @@ export async function createDoreumiRenderer(canvas: HTMLCanvasElement, signal: A
         // Fixed standing frame mapped onto the avatar box inside the larger canvas: no zoom, no drift.
         const scaleY = 1 + stable.top + stable.bottom, boxAspect = (width / (1 + 2 * stable.side)) / (height / scaleY);
         const standing = doreumiFrame('Idle', boxAspect);
+        if (fitDress && dressItems.length) {
+          model!.updateMatrixWorld(true);
+          const bounds = dressFitBounds.clone();
+          for (const mesh of dressRigidMeshes) bounds.union(mesh.geometry.boundingBox!.clone().applyMatrix4(mesh.matrixWorld));
+          if (!bounds.isEmpty() && boxAspect > 0 && Number.isFinite(boxAspect)
+            && [...bounds.min.toArray(), ...bounds.max.toArray()].every(Number.isFinite)) {
+            // The radial extent holds every viewing angle. Keep the largest frame until the outfit changes,
+            // so moving a hand never repeatedly zooms the preview in and out. Rigid geometry bounds are cached.
+            const radius = Math.hypot(Math.max(Math.abs(bounds.min.x), Math.abs(bounds.max.x)), Math.max(Math.abs(bounds.min.z), Math.abs(bounds.max.z)));
+            const nextHalfHeight = Math.max(dressFitHalfHeight, radius / (boxAspect * .9), (bounds.max.y - standing.centerY) / .9, (standing.centerY - bounds.min.y) / .9);
+            if (Number.isFinite(nextHalfHeight)) {
+              dressFitHalfHeight = nextHalfHeight;
+              standing.halfHeight = Math.max(standing.halfHeight, dressFitHalfHeight);
+            }
+          }
+        }
         cameraHalfHeight = standing.halfHeight * scaleY;
         cameraCenterY = standing.centerY + (stable.top - stable.bottom) * standing.halfHeight;
         cameraTracking = false; cameraCenterZ = 0;
@@ -439,6 +457,18 @@ export async function createDoreumiRenderer(canvas: HTMLCanvasElement, signal: A
         const kept = loaded.filter((item): item is NonNullable<typeof item> => !!item);
         if (request !== dressRequest || disposed) { kept.forEach(takeOffDressItem); return; }
         dressItems.forEach(takeOffDressItem); dressItems = kept;
+        dressFitHalfHeight = 0; dressFitBounds.makeEmpty(); dressRigidMeshes.length = 0;
+        if (fitDress) {
+          model!.updateMatrixWorld(true);
+          for (const item of kept) for (const object of item.objects) {
+            dressFitBounds.union(visibleBounds(object));
+            object.traverseVisible(child => {
+              if (child instanceof THREE.Mesh && !(child instanceof THREE.SkinnedMesh)) {
+                child.geometry.computeBoundingBox(); dressRigidMeshes.push(child);
+              }
+            });
+          }
+        }
         render(0, true);
       },
       setTeacher(on) {

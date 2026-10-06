@@ -3651,9 +3651,9 @@
       "sha256": "0647a78a37ac9b19bdd7df1bb286a59bbb1677c09a9bc65073098377b44a9c21"
     },
     "src/app/dev/doreumi-motion/review.module.css": {
-      "blob": "849e3a7927b554ee2dc4c90af9b2d3ba01e263f9",
-      "bytes": 3031,
-      "sha256": "bd6f6bd8ef8f8600d5fd2d1d94f0f4c12c9e3be66bf18e5e876246bd01a11682"
+      "blob": "432800eaebee724a01a236887cf066af6cc30992",
+      "bytes": 3033,
+      "sha256": "9ffa90a3899c5263537e9cc3f1279d42531241a43b6ecbaf58e1fd84ca586579"
     },
     "src/app/dev/doreumi-motion/review.tsx": {
       "blob": "b6b89bf5212d8cb7c85e38749f3b91566b56ce18",
@@ -3661,9 +3661,9 @@
       "sha256": "377c94558221a6e2d1ee593b7c4f9f27ca57b8ca171226b24a6bbe6559879217"
     },
     "src/components/doreumi/DoreumiAvatar.tsx": {
-      "blob": "b379338155d682771601737c5f9e26db4aa8e2cd",
-      "bytes": 7808,
-      "sha256": "0338c63d2349d66e151a3774ce73e23c0f1df7f54b36fa77b8dca67596b8a3d7"
+      "blob": "18e4331c3e82bbd947d8ea0c0c3587a3ca532290",
+      "bytes": 7949,
+      "sha256": "cd60347efc94d85fdfb17619d6528c96e97d9eb412140eaaf710cd5d98f2214f"
     },
     "src/components/doreumi/locomotion.ts": {
       "blob": "3622e5c075ed20de9f4cdb09235471ad7c18ab11",
@@ -3671,9 +3671,9 @@
       "sha256": "4b765ee3d2c126aa9adc8f353b439caea1d02850bb16cd626a10b8f39ef641c3"
     },
     "src/components/doreumi/useDoreumiLocomotion.ts": {
-      "blob": "99fa2d4e5626ad807f24a494bab515141ebe8e6a",
-      "bytes": 27452,
-      "sha256": "caf4c17a398f25e5fbb2ee97cc1d306bd32266cc12a692dc8551bc370add3d3f"
+      "blob": "6bbca67814cc691b0a7127ee09ed090e63b4e3f1",
+      "bytes": 30399,
+      "sha256": "0502c2f174be03eab715ff5e9d221611e513d828f42dd116e60472c87bd6f065"
     },
     "src/components/doreumi/useDoreumiPersonality.ts": {
       "blob": "8fcb8e5b488b9ecd738b174365abd9b92e82ae91",
@@ -3696,9 +3696,9 @@
       "sha256": "acc8d971fb7140fe634843194a696486944bab0b1bc5f86260640741c1a0aec4"
     },
     "src/lib/doreumi/items.ts": {
-      "blob": "da86cf7524ff6d96540686befae9f21c7e8e812e",
-      "bytes": 5228,
-      "sha256": "40a8ceabcf52f659393e66a3de7360e49acc05dd71d5b49d14f3b578289f345c"
+      "blob": "4c8c5282292177c13db388ab1c6a40a1358e2a24",
+      "bytes": 8554,
+      "sha256": "b17c0d0197a1f298264474dc3e27c54bde91164cd1fa0d0f8bc00600d817c17e"
     },
     "src/lib/doreumi/motion-articulation.ts": {
       "blob": "80d80fd9fda02ca58f4b2d54ad98f69cf1ac39ef",
@@ -3731,9 +3731,9 @@
       "sha256": "bd91afd20e1a87ae99694cb74e3f9f0b2d598a453cd18e74d9a066d962251dbd"
     },
     "src/lib/doreumi/motion-dress.ts": {
-      "blob": "db462b81c8790e562776c0f86ef7545c6f158e1e",
-      "bytes": 10200,
-      "sha256": "e218e6851e9eb10ac2041c2273ed406c65a8099e4c018e25bc184e35e7999f81"
+      "blob": "17c20fa868fc56824729385fd61613a24e2288b4",
+      "bytes": 13820,
+      "sha256": "87dba2d26f4e9c118aee155a354094d640f889446100a7fb3c64815c4faa5ba1"
     },
     "src/lib/doreumi/motion-environment-anchor.ts": {
       "blob": "43ec8cb889df3b097010981e99c3544881336d66",
@@ -3806,9 +3806,9 @@
       "sha256": "5d99480b283510da14704a0c1bdddaa2d7df55ff6268b6be4958265b572c3f8f"
     },
     "src/lib/doreumi/motion-runtime.ts": {
-      "blob": "c897b9cc3de705cdf4173fa4e1d0d2677ea1e1bf",
-      "bytes": 37219,
-      "sha256": "2f72c07b9e4e9732a20bc303d478fe72acc4dceeedae9f3d6859415470afc414"
+      "blob": "61222c19229092a2703c5d0ef99d140d400ec0a8",
+      "bytes": 39117,
+      "sha256": "e279cb4613434a3ea31c05562f6dd0b1eaea6e6be8548bf1a94a4d71a3979063"
     },
     "src/lib/doreumi/motion-skin-probes.ts": {
       "blob": "7a6a2378e3b9e2220271d20ef2ed53975e26015a",
@@ -3846,9 +3846,9 @@
       "sha256": "f0af3be3d61d37eff0a52ad1db8c69cfcea9d2d05787300bfe92de7eb01969d8"
     },
     "tests/alias-hooks.mjs": {
-      "blob": "c87e42eebaa5e792864a2fc408bc57435088fbd2",
-      "bytes": 843,
-      "sha256": "8ce47c603026bceda5d8a99158193217422732e045a8dce4e990de0c13702322"
+      "blob": "381fcea51a577ee7b316b2b8c8a8bc0ba235abb3",
+      "bytes": 1267,
+      "sha256": "3263e0b47433c8266cdc7a61c362dce8ba4e2fc78370c47d195836eb0902e65d"
     },
     "tests/doreumi-acrobatics-contract.test.mjs": {
       "blob": "9b40d1e0c1f376228b52748fefc20d76677fb278",
@@ -3885,6 +3885,16 @@
       "bytes": 22804,
       "sha256": "f297661f7d3e16c8c586ed5646a5b5a229715ef4f7b831b0d6f5acd65980b4d1"
     },
+    "tests/doreumi-dress-framing.test.mjs": {
+      "blob": "992f21db597dbd398b46c3da5160d828dfebe6dd",
+      "bytes": 7000,
+      "sha256": "68a5d675e496c010db385f3333dacf6897829e2216fef43052e1aff32de1e408"
+    },
+    "tests/doreumi-dress-resources.test.mjs": {
+      "blob": "96803a73fa605f12920df1f4472c2f276b829f0c",
+      "bytes": 2476,
+      "sha256": "cbb64eb00f4b313617ab837926f134efbe4e318861a92ec56265da12e9936b20"
+    },
     "tests/doreumi-environment-anchor.test.mjs": {
       "blob": "8686a0a6b6f653ef6232af22b0c840e433876427",
       "bytes": 1203,
@@ -3905,6 +3915,11 @@
       "bytes": 6385,
       "sha256": "a455fea3acb95dad5b067ea6793d2e2a618b8cbf72eb085cd7095e0dcc1bc4a7"
     },
+    "tests/doreumi-hands.test.mjs": {
+      "blob": "48a5378af488c823868b51dc35a07eff3e45c189",
+      "bytes": 12944,
+      "sha256": "48a5a84fa16a876acad321ca6e56e66353470679d76cf42ed54fe63bbf92e57a"
+    },
     "tests/doreumi-inplace-ground.test.mjs": {
       "blob": "c9064c4981ee19dc7feee66950d17af310147120",
       "bytes": 3088,
@@ -3921,9 +3936,9 @@
       "sha256": "b6cd5e31bf129587b6d521aa57b97a6fe983010cdb70ee75a9eeb020493ee552"
     },
     "tests/doreumi-locomotion.test.mjs": {
-      "blob": "404a5c5bf0beb34f7b11134f87d93272ba257a06",
-      "bytes": 15031,
-      "sha256": "c370d12fa83b10720514a0008f26c9443226d64f10ecf168a7740f409030e570"
+      "blob": "d7e8dba99e65a144767dbdc6fccf6492ae61e8f1",
+      "bytes": 17780,
+      "sha256": "849dbdfb9ee26b13f8744e6ae9ab51794226e153b06ab9d9b92c6b1f4a5ae131"
     },
     "tests/doreumi-material.test.mjs": {
       "blob": "48409f2beed4734caf7939fa0b3fadd5a4a89f0a",
@@ -4075,8 +4090,8 @@
   "note": "도름스(DoRms) 개편 브랜치에서 scripts/doreumi/upstream-sync.mjs 로 맞춘 상태. 다음 동기화의 비교 기준이라 손으로 고치지 않는다.",
   "originalAssetsPin": "b2cb2a6f7646a298c577a2dbe510a2a75cb9161b",
   "source": {
-    "branch": "codex/react-local-20260915",
-    "commit": "ee5713ed27642f149ed0d0c3db2b9adda567a11d",
+    "branch": "codex/main-polish-20261006",
+    "commit": "60734c2dceff7ff181fdc768a304bce2f2fd18de",
     "dirty": false,
     "project": "DoRms"
   }
