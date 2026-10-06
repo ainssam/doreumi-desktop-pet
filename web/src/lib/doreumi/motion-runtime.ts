@@ -42,6 +42,8 @@ export type DoreumiRenderer = {
   setFacing: (facing: DoreumiFacing) => void; setSkeletonVisible: (visible: boolean) => void;
   loadAction: (action: string) => Promise<void>;
   setViewAngle: (degrees: number) => void; setPlaybackRate: (rate: number) => void;
+  /** Vertical orbit (degrees, any value; 90 looks down on the crown, -90 up at the soles). Only the dress preview uses it. */
+  setViewTilt: (degrees: number, render?: boolean) => void;
   setSeason: (season: DoreumiLook | 'auto') => void;
   /** Items worn together (one per slot) and chosen colors. Doreumi's own body never changes. */
   setDress: (dress: DoreumiDress) => Promise<void>;
@@ -63,6 +65,19 @@ function visibleBounds(root: THREE.Object3D) {
     else { object.geometry.computeBoundingBox(); bounds.union(object.geometry.boundingBox!.clone().applyMatrix4(object.matrixWorld)); }
   });
   return bounds;
+}
+
+/**
+ * Half height of the standing preview frame that keeps `bounds` inside 90% of the avatar box when the camera is tilted
+ * `tilt` radians over the top or under the feet (2026-10-06: "360도 돌려서 발바닥 정수리"). Screen up mixes the body's
+ * height and its horizontal reach by the tilt; screen right is always horizontal. The horizontal reach is the radius around
+ * the vertical axis, so turning left and right while tilted never pumps the zoom.
+ */
+export function tiltedFrameHalfHeight(bounds: THREE.Box3, centerY: number, tilt: number, boxAspect: number): number {
+  const horizontal = Math.hypot(Math.max(Math.abs(bounds.min.x), Math.abs(bounds.max.x)), Math.max(Math.abs(bounds.min.z), Math.abs(bounds.max.z)));
+  const vertical = Math.max(bounds.max.y - centerY, centerY - bounds.min.y);
+  const up = Math.abs(Math.cos(tilt)) * vertical + Math.abs(Math.sin(tilt)) * horizontal;
+  return Math.max(up / .9, horizontal / (boxAspect * .9));
 }
 function disposeObject(root: THREE.Object3D) {
   const textures = new Set<THREE.Texture>(), materials = new Set<THREE.Material>(), geometries = new Set<THREE.BufferGeometry>();
@@ -199,7 +214,14 @@ export async function createDoreumiRenderer(canvas: HTMLCanvasElement, signal: A
     let dressFitHalfHeight = 0;
     const dressFitBounds = new THREE.Box3(), dressRigidMeshes: THREE.Mesh[] = [];
     let library: MotionLibrary | undefined, libraryRequest: Promise<MotionLibrary> | undefined;
-    let actionRequest = 0, motionError: string | null = null, playbackRate = 1, viewAngle = 0;
+    let actionRequest = 0, motionError: string | null = null, playbackRate = 1, viewAngle = 0, viewTilt = 0;
+    // Body + outfit box for the tilted preview frame. Measured once per outfit (skinned bounds are costly), lazily on the first tilt.
+    let tiltFitBounds: THREE.Box3 | null = null, tiltFitAction = '';
+    const orbitUp = new THREE.Vector3(), orbitTarget = new THREE.Vector3();
+    /** Screen up for a camera at yaw `az` and tilt `el` (radians); it turns with the tilt so the poles never flip. */
+    function orbitBasis(az: number, el: number) {
+      orbitUp.set(-Math.sin(az) * Math.sin(el), Math.cos(el), -Math.cos(az) * Math.sin(el));
+    }
     const clipRequests = new Map<string, Promise<void>>();
     async function loadAction(action: string) {
       if (!action.startsWith('meshy:') || motion!.hasClip(action)) return;
@@ -232,7 +254,7 @@ export async function createDoreumiRenderer(canvas: HTMLCanvasElement, signal: A
     let lastRenderedAction = 'Idle';
     let environmentYaw: { action: string; yaw: number } | null = null;
     let width = 1, height = 1;
-    let cameraHalfHeight = 1.34, cameraCenterY = 1.14, cameraCenterZ = 0;
+    let cameraHalfHeight = 1.34, cameraCenterY = 1.14, cameraCenterZ = 0, cameraOffset = 0;
     let cameraTracking = false;
     const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
     let reduceMotion = reduced.matches;
@@ -314,10 +336,12 @@ export async function createDoreumiRenderer(canvas: HTMLCanvasElement, signal: A
         // Fixed standing frame mapped onto the avatar box inside the larger canvas: no zoom, no drift.
         const scaleY = 1 + stable.top + stable.bottom, boxAspect = (width / (1 + 2 * stable.side)) / (height / scaleY);
         const standing = doreumiFrame('Idle', boxAspect);
+        let dressBox: THREE.Box3 | null = null;
         if (fitDress && dressItems.length) {
           model!.updateMatrixWorld(true);
           const bounds = dressFitBounds.clone();
           for (const mesh of dressRigidMeshes) bounds.union(mesh.geometry.boundingBox!.clone().applyMatrix4(mesh.matrixWorld));
+          dressBox = bounds;
           if (!bounds.isEmpty() && boxAspect > 0 && Number.isFinite(boxAspect)
             && [...bounds.min.toArray(), ...bounds.max.toArray()].every(Number.isFinite)) {
             // The radial extent holds every viewing angle. Keep the largest frame until the outfit changes,
@@ -330,12 +354,24 @@ export async function createDoreumiRenderer(canvas: HTMLCanvasElement, signal: A
             }
           }
         }
-        cameraHalfHeight = standing.halfHeight * scaleY;
-        cameraCenterY = standing.centerY + (stable.top - stable.bottom) * standing.halfHeight;
+        // Tilted views (2026-10-06: "360도 돌려서 발바닥 정수리 요런곳도 볼수 있게"): the camera orbits a sphere around the
+        // standing frame's center. Seen from above, below or at a slant the body box projects taller or wider than when
+        // standing, so widen the frame just enough for that projection. At zero tilt this is exactly the standing frame.
+        let halfHeight = standing.halfHeight;
+        if (viewTilt !== 0 && boxAspect > 0 && Number.isFinite(boxAspect)) {
+          // Body box measured once per outfit and motion (skinned bounds are costly), joined with this frame's held items.
+          if (!tiltFitBounds || tiltFitAction !== state.action) { model!.updateMatrixWorld(true); tiltFitBounds = visibleBounds(model!); tiltFitAction = state.action; }
+          const fit = dressBox ? tiltFitBounds.clone().union(dressBox) : tiltFitBounds;
+          const needed = fit.isEmpty() ? NaN : tiltedFrameHalfHeight(fit, standing.centerY, viewTilt, boxAspect);
+          if (Number.isFinite(needed)) halfHeight = Math.max(halfHeight, needed);
+        }
+        cameraHalfHeight = halfHeight * scaleY;
+        cameraCenterY = standing.centerY;
+        cameraOffset = (stable.top - stable.bottom) * halfHeight;
         cameraTracking = false; cameraCenterZ = 0;
       } else {
         const nextCamera = advanceMotionCamera({ halfHeight: cameraHalfHeight, centerY: cameraCenterY, tracking: cameraTracking }, framing, delta, immediate || reduceMotion);
-        cameraHalfHeight = nextCamera.halfHeight; cameraCenterY = nextCamera.centerY; cameraTracking = nextCamera.tracking;
+        cameraHalfHeight = nextCamera.halfHeight; cameraCenterY = nextCamera.centerY; cameraTracking = nextCamera.tracking; cameraOffset = 0;
         cameraCenterZ += ((['Lie', 'Roll'].includes(state.action) ? -.65 : 0) - cameraCenterZ) * blend;
       }
       const decision = onMotionFrame?.({ action: state.action, time: state.time, duration: state.duration, paused: isPaused(), pixelsPerUnit: height / (2 * cameraHalfHeight), travel: importedMotion?.travel, fixedEnvironment: !!importedMotion?.environmentSupport });
@@ -348,7 +384,13 @@ export async function createDoreumiRenderer(canvas: HTMLCanvasElement, signal: A
       else holder.rotation.y += yawDifference * (immediate || reduceMotion ? 1 : 1 - Math.exp(-delta / .14));
       camera.left = -cameraHalfHeight * width / height; camera.right = -camera.left;
       camera.top = cameraHalfHeight; camera.bottom = -cameraHalfHeight;
-      camera.position.set(Math.sin(viewAngle) * 6, cameraCenterY, cameraCenterZ + Math.cos(viewAngle) * 6); camera.lookAt(0, cameraCenterY, cameraCenterZ); camera.updateProjectionMatrix();
+      // Orbit: yaw around the vertical axis, then tilt over the top or under the feet. The camera's up turns with the tilt,
+      // so a full vertical turn never flips at the poles. A stable frame shifts its target along that up (the box offset).
+      orbitBasis(viewAngle, viewTilt);
+      orbitTarget.set(0, cameraCenterY, cameraCenterZ).addScaledVector(orbitUp, cameraOffset);
+      camera.up.copy(orbitUp);
+      camera.position.set(Math.sin(viewAngle) * Math.cos(viewTilt), Math.sin(viewTilt), Math.cos(viewAngle) * Math.cos(viewTilt)).multiplyScalar(6).add(orbitTarget);
+      camera.lookAt(orbitTarget); camera.updateProjectionMatrix();
       contextProps.update({ time: state.time, duration: state.duration });
       if (teacher && teacherOn && aimTarget) {
         if (!aimReady || immediate || reduceMotion) { aimCurrent.copy(aimTarget); aimReady = true; }
@@ -464,7 +506,7 @@ export async function createDoreumiRenderer(canvas: HTMLCanvasElement, signal: A
         const kept = loaded.filter((item): item is NonNullable<typeof item> => !!item);
         if (request !== dressRequest || disposed) { kept.forEach(takeOffDressItem); return; }
         dressItems.forEach(takeOffDressItem); dressItems = kept;
-        dressFitHalfHeight = 0; dressFitBounds.makeEmpty(); dressRigidMeshes.length = 0;
+        dressFitHalfHeight = 0; dressFitBounds.makeEmpty(); dressRigidMeshes.length = 0; tiltFitBounds = null;
         if (fitDress) {
           model!.updateMatrixWorld(true);
           for (const item of kept) for (const object of item.objects) {
@@ -502,6 +544,8 @@ export async function createDoreumiRenderer(canvas: HTMLCanvasElement, signal: A
         return { x: (p.x + 1) / 2, y: (1 - p.y) / 2 };
       },
       setViewAngle(degrees) { viewAngle = Number.isFinite(degrees) ? degrees * Math.PI / 180 : 0; render(0, true); },
+      // render=false when setViewAngle follows right away, so a drag frame draws once, not twice.
+      setViewTilt(degrees, draw = true) { viewTilt = Number.isFinite(degrees) ? degrees * Math.PI / 180 : 0; if (draw) render(0, true); },
       setPlaybackRate(rate) { playbackRate = Math.max(.1, Math.min(3, rate)); },
       seek(action, seconds) { ++actionRequest; inspectionPaused = true; cancelAnimationFrame(frame); frame = 0; lastTime = 0; motion!.seek(action, seconds); render(0, true); },
       play() { motion!.resume(); inspectionPaused = false; schedule(); },

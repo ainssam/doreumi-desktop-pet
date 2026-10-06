@@ -3661,9 +3661,9 @@
       "sha256": "377c94558221a6e2d1ee593b7c4f9f27ca57b8ca171226b24a6bbe6559879217"
     },
     "src/components/doreumi/DoreumiAvatar.tsx": {
-      "blob": "18e4331c3e82bbd947d8ea0c0c3587a3ca532290",
-      "bytes": 7949,
-      "sha256": "cd60347efc94d85fdfb17619d6528c96e97d9eb412140eaaf710cd5d98f2214f"
+      "blob": "b38b7a38726577cfad00b1435e039d703cd47c79",
+      "bytes": 8188,
+      "sha256": "10340dab75ae523c79307526bb8fe06a9f0715f68a2bc1a3c76cc4fac96f3cb8"
     },
     "src/components/doreumi/locomotion.ts": {
       "blob": "3622e5c075ed20de9f4cdb09235471ad7c18ab11",
@@ -3806,9 +3806,9 @@
       "sha256": "5d99480b283510da14704a0c1bdddaa2d7df55ff6268b6be4958265b572c3f8f"
     },
     "src/lib/doreumi/motion-runtime.ts": {
-      "blob": "c79df39b7fae327c2e4d47bec120098d48675a98",
-      "bytes": 40674,
-      "sha256": "bd5f13fd6097661c2cb41dc08aa99391c308662f3c966e9b625f42f87e0c0006"
+      "blob": "3be6d3bef87e5de97b771aac04d4939d6bec3b93",
+      "bytes": 44316,
+      "sha256": "1c8bbba984664ecad14b8e499bc0e9eb768d297bb2639e709ceb9cd3c391adc3"
     },
     "src/lib/doreumi/motion-skin-probes.ts": {
       "blob": "7a6a2378e3b9e2220271d20ef2ed53975e26015a",
@@ -3886,9 +3886,9 @@
       "sha256": "f297661f7d3e16c8c586ed5646a5b5a229715ef4f7b831b0d6f5acd65980b4d1"
     },
     "tests/doreumi-dress-framing.test.mjs": {
-      "blob": "992f21db597dbd398b46c3da5160d828dfebe6dd",
-      "bytes": 7000,
-      "sha256": "68a5d675e496c010db385f3333dacf6897829e2216fef43052e1aff32de1e408"
+      "blob": "617b804f0e60ab90e2137ed54b9443dafb523a83",
+      "bytes": 9030,
+      "sha256": "56dd669d297a06167c4b5036aca21b27e8167112122cf9fc49b815b1b786e9f0"
     },
     "tests/doreumi-dress-resources.test.mjs": {
       "blob": "96803a73fa605f12920df1f4472c2f276b829f0c",
@@ -4091,7 +4091,7 @@
   "originalAssetsPin": "b2cb2a6f7646a298c577a2dbe510a2a75cb9161b",
   "source": {
     "branch": "codex/main-polish-20261006",
-    "commit": "aad7f6e5454f5dfbbb8750369cf1f9cf95a71bd6",
+    "commit": "2bee5752304de00cd1f9aebdbf0fcae0264d3263",
     "dirty": false,
     "project": "DoRms"
   }

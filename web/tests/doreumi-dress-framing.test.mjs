@@ -15,20 +15,26 @@ const { doreumiFrame } = catalog.exports;
 const runtime = read("src/lib/doreumi/motion-runtime.ts");
 const ast = ts.createSourceFile("motion-runtime.ts", runtime, ts.ScriptTarget.Latest, true);
 let stableBranch, defaultFit, stableMargins;
+const helpers = [];
 function visit(node) {
+  if (ts.isFunctionDeclaration(node) && ["visibleBounds", "tiltedFrameHalfHeight"].includes(node.name?.text)) helpers.push(node.getText(ast).replace(/^export\s+/, ""));
   if (ts.isIfStatement(node) && node.expression.getText(ast) === "stable") stableBranch = node;
   if (ts.isFunctionDeclaration(node) && node.name?.text === "createDoreumiRenderer") defaultFit = node.parameters.find(param => param.name.getText(ast) === "fitDress");
   if (ts.isVariableDeclaration(node) && node.name.getText(ast) === "DOREUMI_STABLE_FRAMING") stableMargins = node.initializer;
   ts.forEachChild(node, visit);
 }
-visit(ast); assert.ok(stableBranch && defaultFit && stableMargins);
+visit(ast); assert.ok(stableBranch && defaultFit && stableMargins && helpers.length === 2);
+// The production helpers the stable branch calls when the preview is tilted (visibleBounds, tiltedFrameHalfHeight).
+const helperScope = { THREE };
+vm.runInNewContext(`${transpile(helpers.join("\n"))}\nthis.visibleBounds = visibleBounds; this.tiltedFrameHalfHeight = tiltedFrameHalfHeight;`, helperScope);
 const stable = vm.runInNewContext(`(${stableMargins.getText(ast)})`);
 const source = transpile(stableBranch.getText(ast));
 const box = (min = [-1.928, 0.05, -0.8], max = [1.928, 2.5, 0.8]) => new THREE.Box3(new THREE.Vector3(...min), new THREE.Vector3(...max));
 
-function fixture({ width = 300, height = 320, fitDress = true, bounds = box(), meshes = [] } = {}) {
+function fixture({ width = 300, height = 320, fitDress = true, bounds = box(), meshes = [], viewTilt = 0 } = {}) {
   const model = new THREE.Group(); for (const mesh of meshes) model.add(mesh);
-  const context = { stable, width, height, fitDress, model, dressItems: [{}], dressFitBounds: bounds, dressRigidMeshes: meshes, dressFitHalfHeight: 0, cameraHalfHeight: 0, cameraCenterY: 0, cameraCenterZ: 0, cameraTracking: true, doreumiFrame };
+  const context = { stable, width, height, fitDress, model, dressItems: [{}], dressFitBounds: bounds, dressRigidMeshes: meshes, dressFitHalfHeight: 0, cameraHalfHeight: 0, cameraCenterY: 0, cameraCenterZ: 0, cameraOffset: 0, cameraTracking: true, doreumiFrame,
+    viewTilt, tiltFitBounds: null, tiltFitAction: "", state: { action: "Idle" }, THREE, visibleBounds: helperScope.visibleBounds, tiltedFrameHalfHeight: helperScope.tiltedFrameHalfHeight };
   vm.createContext(context);
   return { context, run() { vm.runInContext(source, context); return context; } };
 }
@@ -41,11 +47,15 @@ const expectedBase = context => {
 function assertProjectedInside(context, bounds) {
   const camera = new THREE.OrthographicCamera(0, 0, context.cameraHalfHeight, -context.cameraHalfHeight, 0.01, 30);
   camera.left = -context.cameraHalfHeight * context.width / context.height; camera.right = -camera.left;
-  const scaleY = 1 + stable.top + stable.bottom;
+  const scaleY = 1 + stable.top + stable.bottom, el = context.viewTilt;
   for (let angle = 0; angle < 360; angle += 15) {
     const radians = angle * Math.PI / 180;
-    camera.position.set(Math.sin(radians) * 6, context.cameraCenterY, Math.cos(radians) * 6);
-    camera.lookAt(0, context.cameraCenterY, 0); camera.updateProjectionMatrix(); camera.updateMatrixWorld(true);
+    // The runtime's orbit: target is the frame center shifted along the screen up by the box offset; up turns with the tilt.
+    const up = new THREE.Vector3(-Math.sin(radians) * Math.sin(el), Math.cos(el), -Math.cos(radians) * Math.sin(el));
+    const target = new THREE.Vector3(0, context.cameraCenterY, 0).addScaledVector(up, context.cameraOffset);
+    camera.up.copy(up);
+    camera.position.set(Math.sin(radians) * Math.cos(el), Math.sin(el), Math.cos(radians) * Math.cos(el)).multiplyScalar(6).add(target);
+    camera.lookAt(target); camera.updateProjectionMatrix(); camera.updateMatrixWorld(true);
     for (const x of [bounds.min.x, bounds.max.x]) for (const y of [bounds.min.y, bounds.max.y]) for (const z of [bounds.min.z, bounds.max.z]) {
       const point = new THREE.Vector3(x, y, z).project(camera);
       // Map the overflowing canvas back into the visible avatar box's coordinates.
@@ -60,7 +70,7 @@ test("renderer fitDress defaults off and the host's stable standing size and foo
   assert.equal(defaultFit.initializer.kind, ts.SyntaxKind.FalseKeyword);
   const h = fixture({ fitDress: false, bounds: box([-100, -100, -100], [100, 100, 100]) });
   const expected = expectedBase(h.context), actual = h.run();
-  assert.equal(actual.cameraHalfHeight, expected.height); assert.equal(actual.cameraCenterY, expected.centerY); assert.equal(actual.cameraTracking, false); assert.equal(actual.cameraCenterZ, 0); assert.equal(actual.dressFitHalfHeight, 0);
+  assert.equal(actual.cameraHalfHeight, expected.height); assert.equal(actual.cameraCenterY + actual.cameraOffset, expected.centerY); assert.equal(actual.cameraTracking, false); assert.equal(actual.cameraCenterZ, 0); assert.equal(actual.dressFitHalfHeight, 0);
 });
 
 test("preview camera holds every corner of wide accessories at all 24 viewing angles across narrow and wide aspects", () => {
@@ -89,13 +99,25 @@ test("portrait and landscape resizes keep rotated accessories contained and fini
 test("NaN, infinity and overflowing finite bounds preserve the default finite standing camera", () => {
   for (const bounds of [box([NaN, 0, 0], [1, 1, 1]), box([-1, 0, 0], [Infinity, 1, 1]), box([-1e308, 0, -1e308], [1e308, 1, 1e308])]) {
     const h = fixture({ width: 150, height: 320, bounds }); const expected = expectedBase(h.context), actual = h.run();
-    assert.equal(actual.cameraHalfHeight, expected.height); assert.equal(actual.cameraCenterY, expected.centerY); assert.equal(actual.dressFitHalfHeight, 0);
+    assert.equal(actual.cameraHalfHeight, expected.height); assert.equal(actual.cameraCenterY + actual.cameraOffset, expected.centerY); assert.equal(actual.dressFitHalfHeight, 0);
   }
 });
 
 test("invalid zero and negative box aspects never admit an accessory fit into the camera", () => {
   for (const width of [0, -1]) {
     const h = fixture({ width }); const expected = expectedBase(h.context), actual = h.run();
-    assert.equal(actual.cameraHalfHeight, expected.height); assert.equal(actual.cameraCenterY, expected.centerY); assert.equal(actual.dressFitHalfHeight, 0);
+    assert.equal(actual.cameraHalfHeight, expected.height); assert.equal(actual.cameraCenterY + actual.cameraOffset, expected.centerY); assert.equal(actual.dressFitHalfHeight, 0);
+  }
+});
+
+// 2026-10-06 "360도 돌려서 발바닥 정수리": tilted over the crown or under the soles, every accessory corner stays inside at every turn.
+test("tilted preview keeps wide accessories inside at every tilt and turn, and a level view is the standing frame", () => {
+  for (const [width, height] of [[150, 320], [300, 320], [900, 450], [1500, 400]]) {
+    const level = fixture({ width, height }).run();
+    for (let tilt = 15; tilt < 360; tilt += 15) {
+      const h = fixture({ width, height, viewTilt: tilt * Math.PI / 180 }); const actual = h.run();
+      assert.ok(Number.isFinite(actual.cameraHalfHeight) && actual.cameraHalfHeight >= level.cameraHalfHeight - 1e-9, `tilt ${tilt}: frame never shrinks below standing`);
+      assertProjectedInside(actual, actual.dressFitBounds);
+    }
   }
 });
