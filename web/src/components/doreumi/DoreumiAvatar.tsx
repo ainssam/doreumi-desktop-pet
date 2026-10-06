@@ -19,6 +19,8 @@ export type DoreumiAvatarHandle = {
   setSkeletonVisible: (visible: boolean) => void;
   loadAction: (action: string) => Promise<void>;
   setViewAngle: (degrees: number) => void;
+  /** 위아래로 돌려 보기(도). 90 이면 정수리, -90 이면 발바닥 쪽에서 본다. */
+  setViewTilt: (degrees: number, render?: boolean) => void;
   setPlaybackRate: (rate: number) => void;
   setSeason: (season: DoreumiLook | 'auto') => void;
   setLocomotionRate: (rate: number) => void;
@@ -59,7 +61,7 @@ export const DoreumiAvatar = forwardRef<DoreumiAvatarHandle, DoreumiAvatarProps>
     setExpression: async value => { await runtime.current?.setExpression(value); },
     setFacing: value => runtime.current?.setFacing(value), setSkeletonVisible: value => runtime.current?.setSkeletonVisible(value),
     loadAction: async value => { await runtime.current?.loadAction(value); },
-    setViewAngle: value => runtime.current?.setViewAngle(value), setPlaybackRate: value => runtime.current?.setPlaybackRate(value),
+    setViewAngle: value => runtime.current?.setViewAngle(value), setViewTilt: (value, render) => runtime.current?.setViewTilt(value, render), setPlaybackRate: value => runtime.current?.setPlaybackRate(value),
     setSeason: value => runtime.current?.setSeason(value),
     setLocomotionRate: value => runtime.current?.setLocomotionRate(value),
     capture: () => runtime.current?.capture(),
