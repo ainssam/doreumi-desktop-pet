@@ -55,31 +55,66 @@ export const DOREUMI_COMMISSION_PERCENT = 10;
 /** 아이템 만들기 자격: 교사 인증 + 받은 도름 이 이상(DB doreumi_item_maker_eligible 과 같다). */
 export const DOREUMI_MAKER_MIN_DORMS = 10;
 
-export type DoreumiWorn = Partial<Record<DoreumiSlot, string>>;
+/** Catalog items still use 'hand'; only equipped instances choose a particular hand. */
+export const DOREUMI_HANDS = [{ id: "leftHand", label: "왼손" }, { id: "rightHand", label: "오른손" }] as const;
+export type DoreumiHand = (typeof DOREUMI_HANDS)[number]["id"];
+export type DoreumiWearSlot = Exclude<DoreumiSlot, "hand"> | DoreumiHand | "hand";
+export const isDoreumiHand = (slot: unknown): slot is DoreumiHand => slot === "leftHand" || slot === "rightHand";
+export const isDoreumiWearSlot = (slot: unknown): slot is DoreumiWearSlot => isDoreumiSlot(slot) || isDoreumiHand(slot);
+export const naturalHand = (bone?: string | null): DoreumiHand => bone?.endsWith("L") ? "leftHand" : "rightHand";
+export const slotFitsItem = (slot: DoreumiWearSlot, slots: readonly DoreumiSlot[]) => isDoreumiHand(slot) ? slots.includes("hand") : slots.includes(slot);
+export type DoreumiWorn = Partial<Record<DoreumiWearSlot, string>>;
 export type DoreumiColors = Partial<Record<DoreumiColorPart, string>>;
 
+/** Old wardrobes preserve their authored hand when read and use the new keys on their next save. */
+export function canonicalWorn(worn: DoreumiWorn, handOf: (id: string) => DoreumiHand = () => "rightHand"): DoreumiWorn {
+  const { hand, ...next } = worn;
+  if (hand) { const target = handOf(hand); if (!next[target]) next[target] = hand; }
+  return next;
+}
+
 /** 새 아이템을 입으면 그 아이템이 차지할 자리에 있던 것은 모두 벗긴다(한 벌 옷이 상의·하의를 같이 벗김, 그 반대도). */
-export function wearItem(worn: DoreumiWorn, itemId: string, slots: readonly DoreumiSlot[], slotsOf: (id: string) => readonly DoreumiSlot[] | undefined): DoreumiWorn {
+export function wearItem(worn: DoreumiWorn, itemId: string, slots: readonly DoreumiSlot[], slotsOf: (id: string) => readonly DoreumiSlot[] | undefined, hand: DoreumiHand = "rightHand"): DoreumiWorn {
+  if (slots.includes("hand")) return { ...canonicalWorn(worn), [hand]: itemId };
   const next: DoreumiWorn = {};
   const taken = new Set<string>(slots);
   const displaced = new Set<string>();
-  for (const [slot, id] of Object.entries(worn) as [DoreumiSlot, string][]) {
+  for (const [slot, id] of Object.entries(worn) as [DoreumiWearSlot, string][]) {
+    if (isDoreumiHand(slot) || slot === "hand") { next[slot] = id; continue; }
     if (taken.has(slot) || displaced.has(id)) { displaced.add(id); continue; }
     if ((slotsOf(id) ?? [slot]).some((s) => taken.has(s))) { displaced.add(id); continue; }
     next[slot] = id;
   }
-  for (const [slot, id] of Object.entries(next) as [DoreumiSlot, string][]) if (displaced.has(id)) delete next[slot];
+  for (const [slot, id] of Object.entries(next) as [DoreumiWearSlot, string][]) if (displaced.has(id)) delete next[slot];
   for (const slot of slots) next[slot] = itemId;
   return next;
 }
-export function takeOffItem(worn: DoreumiWorn, itemId: string): DoreumiWorn {
+export function takeOffItem(worn: DoreumiWorn, itemId: string, hand?: DoreumiHand): DoreumiWorn {
+  if (hand) { const next = { ...worn }; if (next[hand] === itemId) delete next[hand]; return next; }
   return Object.fromEntries(Object.entries(worn).filter(([, id]) => id !== itemId)) as DoreumiWorn;
+}
+/** Fitting-room drafts stay separate from purchased, saved wardrobe entries. */
+export type DoreumiTryOn = { id: string; hand?: DoreumiHand };
+const tryOnSlots = (trial: DoreumiTryOn, slots: readonly DoreumiSlot[]): readonly DoreumiWearSlot[] => slots.includes("hand") ? [trial.hand ?? "rightHand"] : slots;
+export function tryOnItem(trials: readonly DoreumiTryOn[], trial: DoreumiTryOn, slotsOf: (id: string) => readonly DoreumiSlot[] | undefined): DoreumiTryOn[] {
+  const slots = slotsOf(trial.id);
+  if (!slots?.length) return [...trials];
+  const taken = new Set(tryOnSlots(trial, slots));
+  return [...trials.filter(previous => !tryOnSlots(previous, slotsOf(previous.id) ?? []).some(slot => taken.has(slot))), trial];
+}
+export const removeTryOn = (trials: readonly DoreumiTryOn[], id: string, hand?: DoreumiHand) => trials.filter(trial => trial.id !== id || trial.hand !== hand);
+export function tryOnWorn(worn: DoreumiWorn, trials: readonly DoreumiTryOn[], slotsOf: (id: string) => readonly DoreumiSlot[] | undefined): DoreumiWorn {
+  return trials.reduce((next, trial) => { const slots = slotsOf(trial.id); return slots?.length ? wearItem(next, trial.id, slots, slotsOf, trial.hand) : next; }, worn);
+}
+/** Successful writes use the fresh wardrobe as the base; drafts still being tried remain. */
+export function remainingTryOns(trials: readonly DoreumiTryOn[], worn: DoreumiWorn, slotsOf: (id: string) => readonly DoreumiSlot[] | undefined): DoreumiTryOn[] {
+  return trials.filter(trial => { const slots = slotsOf(trial.id); return !!slots?.length && !tryOnSlots(trial, slots).every(slot => worn[slot] === trial.id); });
 }
 /** 입은 목록의 서로 다른 아이템 id(한 벌 옷은 두 자리에 같은 id). */
 export const wornItemIds = (worn: DoreumiWorn) => [...new Set(Object.values(worn).filter((id): id is string => !!id))];
 
 /** 렌더러에 넘기는 모습. 공식 아이템(꽃 머리핀)은 코드로, 회원 아이템은 .glb 로 그린다. */
-export type DoreumiDressItem = { id: string; slots: DoreumiSlot[]; asset?: string; bone?: string | null; rigged?: boolean };
+export type DoreumiDressItem = { id: string; slots: DoreumiSlot[]; asset?: string; bone?: string | null; rigged?: boolean; hand?: DoreumiHand };
 export type DoreumiDress = { items: DoreumiDressItem[]; colors: DoreumiColors };
 export const EMPTY_DRESS: DoreumiDress = { items: [], colors: {} };
-export const dressKey = (dress: DoreumiDress) => JSON.stringify([dress.items.map((item) => item.id).sort(), dress.colors]);
+export const dressKey = (dress: DoreumiDress) => JSON.stringify([dress.items.map((item) => [item.id, item.hand ?? "", item.asset ?? "", item.bone ?? "", !!item.rigged]).sort((a, b) => JSON.stringify(a).localeCompare(JSON.stringify(b))), dress.colors]);
