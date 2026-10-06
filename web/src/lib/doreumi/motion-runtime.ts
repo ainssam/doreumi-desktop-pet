@@ -84,9 +84,15 @@ export type DoreumiStableFraming = { top: number; bottom: number; side: number }
 export const DOREUMI_STABLE_FRAMING: DoreumiStableFraming = { top: .32, bottom: .25, side: .25 };
 
 export async function createDoreumiRenderer(canvas: HTMLCanvasElement, signal: AbortSignal, onMotionFrame?: DoreumiStageHandler, stable?: DoreumiStableFraming, fitDress = false): Promise<DoreumiRenderer> {
-  const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: true, powerPreference: 'low-power' });
+  // 가속이 없는 기기인지는 렌더러를 만들기 전에 따로 재 본다. 그런 기기에서는 가장자리 다듬기(4배 표본)가 장면마다 가장 비싸서 끈다.
+  const softwareRendering = probeSoftwareWebGL();
+  const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: !softwareRendering, powerPreference: 'low-power' });
   renderer.outputColorSpace = THREE.SRGBColorSpace; renderer.toneMapping = THREE.AgXToneMapping; renderer.toneMappingExposure = 1.03;
-  const maxDpr = window.matchMedia('(pointer: coarse)').matches ? 1.5 : 2;
+  // 그래픽 가속이 없는 컴퓨터(학교 PC 등)는 WebGL 을 CPU 로 그린 뒤 매 장면을 다시 읽어 와 화면 전체가 멈췄다
+  // (2026-10-06 측정: 8초 중 13초 분량의 GLES2::ReadPixels). 그런 기기에서는 작게·드물게 그린다. 모습은 같다.
+  const maxDpr = softwareRendering ? 1 : window.matchMedia('(pointer: coarse)').matches ? 1.5 : 2;
+  // 화면이 120Hz 여도 도름이는 초당 60장이면 충분하다. 가속이 없으면 초당 8장.
+  const minFrameMs = softwareRendering ? 125 : 12;
   let dpr = Math.min(window.devicePixelRatio || 1, maxDpr);
   renderer.setPixelRatio(dpr); renderer.setClearColor(0, 0);
   const scene = new THREE.Scene();
@@ -374,6 +380,7 @@ export async function createDoreumiRenderer(canvas: HTMLCanvasElement, signal: A
     }
     function tick(now: number) {
       frame = 0; if (disposed || isPaused()) { lastTime = 0; return; }
+      if (lastTime && now - lastTime < minFrameMs) { frame = requestAnimationFrame(tick); return; }
       const dt = lastTime ? Math.min((now - lastTime) / 1000, .25) : 0; lastTime = now; elapsed += dt;
       motion!.update(dt * playbackRate);
       uniforms.faceBlend.value = Math.min(1, uniforms.faceBlend.value + dt / .12);
@@ -544,5 +551,20 @@ export async function createDoreumiRenderer(canvas: HTMLCanvasElement, signal: A
     };
   } catch (error) {
     disposed = true; motion?.dispose(); if (model) disposeObject(model); textures.forEach(t => t.dispose()); renderer.dispose(); throw error;
+  }
+}
+
+/** WebGL 이 그래픽 카드 없이 CPU 로 돌고 있는지(SwiftShader·llvmpipe·Microsoft Basic Render Driver 등). 잠깐 쓴 맥락은 바로 돌려준다. */
+function probeSoftwareWebGL(): boolean {
+  try {
+    const probe = document.createElement('canvas');
+    const gl = (probe.getContext('webgl2') || probe.getContext('webgl')) as WebGLRenderingContext | null;
+    if (!gl) return false;
+    const info = gl.getExtension('WEBGL_debug_renderer_info');
+    const name = String(gl.getParameter(info ? info.UNMASKED_RENDERER_WEBGL : gl.RENDERER) || '');
+    gl.getExtension('WEBGL_lose_context')?.loseContext();
+    return /swiftshader|llvmpipe|softpipe|software|basic render/i.test(name);
+  } catch {
+    return false;
   }
 }

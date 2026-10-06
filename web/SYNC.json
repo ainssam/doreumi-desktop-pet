@@ -3806,9 +3806,9 @@
       "sha256": "5d99480b283510da14704a0c1bdddaa2d7df55ff6268b6be4958265b572c3f8f"
     },
     "src/lib/doreumi/motion-runtime.ts": {
-      "blob": "61222c19229092a2703c5d0ef99d140d400ec0a8",
-      "bytes": 39117,
-      "sha256": "e279cb4613434a3ea31c05562f6dd0b1eaea6e6be8548bf1a94a4d71a3979063"
+      "blob": "c79df39b7fae327c2e4d47bec120098d48675a98",
+      "bytes": 40674,
+      "sha256": "bd5f13fd6097661c2cb41dc08aa99391c308662f3c966e9b625f42f87e0c0006"
     },
     "src/lib/doreumi/motion-skin-probes.ts": {
       "blob": "7a6a2378e3b9e2220271d20ef2ed53975e26015a",
@@ -4091,7 +4091,7 @@
   "originalAssetsPin": "b2cb2a6f7646a298c577a2dbe510a2a75cb9161b",
   "source": {
     "branch": "codex/main-polish-20261006",
-    "commit": "60734c2dceff7ff181fdc768a304bce2f2fd18de",
+    "commit": "aad7f6e5454f5dfbbb8750369cf1f9cf95a71bd6",
     "dirty": false,
     "project": "DoRms"
   }
