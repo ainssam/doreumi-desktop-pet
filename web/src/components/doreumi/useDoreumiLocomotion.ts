@@ -1,5 +1,6 @@
 "use client";
 
+import { doreumiMotionRest } from "@/lib/doreumi/motionRest";
 import { useCallback, useEffect, useRef, useState, type PointerEvent as ReactPointerEvent, type RefObject } from "react";
 import { applyStepFrame, clampPosition, finishStep, homeWall, importedStageFits, restYAt, startExcursion, stepImportedStage, stepLocomotion, surfaceAt, wallX, type ImportedStageState, type Ledge, type MotionBounds, type MotionState, type LocomotionPhase, type WallSide } from "./locomotion";
 import type { LedgeStyle } from "@/lib/doreumi/motion-ledge";
@@ -25,15 +26,33 @@ type Options = {
 export type LocomotionMotion = { heading: WallSide; stepAction: string | null; stepFacing: WallSide | "front-left" | "front-right" | null; pauseAction: string | null };
 const sameMotion = (a: LocomotionMotion, b: LocomotionMotion) => a.heading === b.heading && a.stepAction === b.stepAction && a.stepFacing === b.stepFacing && a.pauseAction === b.pauseAction;
 type Pointer = { id: number; target: HTMLElement; startX: number; startY: number; offsetX: number; offsetY: number; dragged: boolean };
+/**
+ * 휴대폰에서 사용자가 도름이를 끌어 놓은 벽(왼쪽·오른쪽)을 이 기기에 기억한다. 다음 방문·새로 고침에도 가장 최근에 놓은 쪽에 선다
+ * (사용자 지시 2026-10-08 "사용자가 오른쪽으로 예컨대 옮겨놓으면 기록해뒀다가 계쏙 오른쪽에 뜨게해 가장 최근 설정에맞게").
+ * 화면이 정한 벽(homeSide, 제작실 작업판)으로 간 것은 사용자의 선택이 아니라 기억하지 않는다. 저장이 막힌 브라우저는 이번 방문 동안만 따른다.
+ */
+const PHONE_SIDE_KEY = "dorms:doreumi-phone-side";
+function storedPhoneSide(): WallSide | null {
+  try { const value = window.localStorage.getItem(PHONE_SIDE_KEY); return value === "left" || value === "right" ? value : null; } catch { return null; }
+}
+function rememberPhoneSide(side: WallSide) {
+  try { window.localStorage.setItem(PHONE_SIDE_KEY, side); } catch { /* 저장이 막힌 브라우저는 이번 방문 동안만 기억한다 */ }
+}
 export function useDoreumiLocomotion(options: Options) {
   const latest = useRef(options); latest.current = options;
-  const [phase, setPhase] = useState<LocomotionPhase>("idle"), [side, setSide] = useState<WallSide>("right");
+  // 처음 그릴 벽: 휴대폰은 사용자가 마지막으로 놓은 벽(없으면 왼쪽), 넓은 화면은 오른쪽(휴대폰 첫 화면에서 오른쪽에 섰다가 왼쪽으로 달려가지 않게).
+  // 화면이 정한 벽(homeSide, 제작실)은 아래 효과가 지금 벽에서 그 벽으로 달려가게 맡는다.
+  const [firstSide] = useState<WallSide>(() => options.phone ? (typeof window !== "undefined" ? storedPhoneSide() : null) ?? "left" : "right");
+  const [phase, setPhase] = useState<LocomotionPhase>("idle"), [side, setSide] = useState<WallSide>(firstSide);
+  // 쉬는 벽: 가만히 선 순간과 무대 걷기가 끝난 순간에만 바뀐다. 걷는 동안 매 순간의 쪽(side)을 따르는 화면 장치
+  // (맨 위로 단추 자리)가 화면 가운데를 지날 때마다 좌우로 튀지 않게 한다(2026-10-07 검토 F6·N1).
+  const [restSide, setRestSide] = useState<WallSide>(firstSide);
   const [motion, setMotion] = useState<LocomotionMotion>({ heading: "right", stepAction: null, stepFacing: null, pauseAction: null });
   const publishedMotion = useRef<LocomotionMotion>({ heading: "right", stepAction: null, stepFacing: null, pauseAction: null });
   /** 끼어들기(대화·창·버거 메뉴)로 나들이·넘기가 멈췄다: 다시 움직일 수 있게 되면 자기 자리로 돌아간다. */
   const returnPending = useRef(false), lastResetKey = useRef(options.resetKey);
-  const state = useRef<MotionState>({ x: 0, y: 0, vy: 0, elapsed: 0, phase: "idle", side: "right" });
-  const published = useRef({ phase: "idle" as LocomotionPhase, side: "right" as WallSide });
+  const state = useRef<MotionState>({ x: 0, y: 0, vy: 0, elapsed: 0, phase: "idle", side: firstSide });
+  const published = useRef({ phase: "idle" as LocomotionPhase, side: firstSide });
   /** homeSide 로 벽을 옮기기 전에 쉬던 벽. homeSide 가 사라지면 이리로 돌아간다. */
   const sideBeforeHome = useRef<WallSide | null>(null);
   const pointer = useRef<Pointer | null>(null), frame = useRef<number | null>(null), last = useRef(0), suppress = useRef(false);
@@ -56,7 +75,7 @@ export function useDoreumiLocomotion(options: Options) {
     const view = window.visualViewport;
     return { width: size.width, height: size.height, viewportWidth: window.innerWidth, viewportHeight: view ? view.height + view.offsetTop : window.innerHeight, occupiedBottom: latest.current.occupiedBottom, ledges: latest.current.ledges };
   }, []);
-  /** 놓았을 때·공연 뒤 돌아갈 벽: 화면이 정한 벽(homeSide)이 먼저, 없으면 휴대폰 오른쪽·넓은 화면 가까운 벽. */
+  /** 놓았을 때·공연 뒤 돌아갈 벽: 화면이 정한 벽(homeSide)이 먼저, 없으면 가까운 벽(휴대폰도 같다, 2026-10-07). */
   const homeOf = useCallback((x: number, b: MotionBounds): WallSide => latest.current.homeSide ?? homeWall(x, b, latest.current.phone), []);
   /** 공연 이동이 쓰는 바닥 범위. 왼쪽이 자기 자리인 화면은 왼쪽 절반으로 좁힌다. 지금 서 있는 자리(x)는 늘 범위 안이다(순간 이동 없음). */
   const stageBoundsOf = useCallback((b: MotionBounds, x: number): MotionBounds => latest.current.homeSide === "left" ? { ...b, viewportWidth: Math.min(b.viewportWidth, Math.max(b.viewportWidth / 2, x + b.width)) } : b, []);
@@ -113,6 +132,7 @@ export function useDoreumiLocomotion(options: Options) {
     if (stage.current) cancelledStage.current = { action: stage.current.action, yaw: stage.current.yaw };
     stage.current = null;
     latest.current.elementRef.current?.removeAttribute("data-stage-moving");
+    setRestSide(state.current.side);
   }, []);
   const onMotionFrame = useCallback<DoreumiStageHandler>((sample: DoreumiStageFrame) => {
     const node = latest.current.elementRef.current;
@@ -124,17 +144,20 @@ export function useDoreumiLocomotion(options: Options) {
     }
     if (cancelledStage.current && cancelledStage.current.action !== sample.action) cancelledStage.current = null;
     if (cancelledStage.current?.action === sample.action) return { yaw: cancelledStage.current.yaw, stop: true };
-    const reduced = latest.current.reducedMotion ?? window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    // Runs on every drawn frame: read the cached query (no matchMedia per frame).
+    // 시스템 '움직임 줄이기'로는 멈추지 않는다(2026-10-07). 부르는 쪽이 명시로 줄일 때만 줄인다.
+    const reduced = latest.current.reducedMotion ?? doreumiMotionRest();
     if (sample.fixedEnvironment) {
       const rect = node.getBoundingClientRect();
       environmentAnchor.current = stepEnvironmentAnchor(environmentAnchor.current, sample.action, rect.left, rect.top,
         latest.current.enabled && latest.current.stageEnabled !== false && !reduced && !pointer.current && state.current.phase === "idle");
+      if (stage.current) setRestSide(state.current.side);
       stage.current = null; node.removeAttribute("data-stage-moving");
       return environmentAnchor.current?.cancelled ? { yaw: 0, stop: true } : undefined;
     }
     environmentAnchor.current = null;
     if (!latest.current.enabled || latest.current.stageEnabled === false || reduced || pointer.current || state.current.phase !== "idle") { const activeStage = stage.current; stopStage(); return activeStage ? { yaw: activeStage.yaw, stop: true } : undefined; }
-    if (!sample.travel || !sample.action.startsWith("meshy:")) { stage.current = null; node.removeAttribute("data-stage-moving"); return; }
+    if (!sample.travel || !sample.action.startsWith("meshy:")) { if (stage.current) setRestSide(state.current.side); stage.current = null; node.removeAttribute("data-stage-moving"); return; }
     // Refresh at motion entry; its subsequent frames keep the same body box.
     // Re-reading after a position write forces the entire mobile page to lay out.
     const from = positioned.current ? state.current.x : node.getBoundingClientRect().left;
@@ -167,10 +190,10 @@ export function useDoreumiLocomotion(options: Options) {
     if (frame.current !== null) cancelAnimationFrame(frame.current);
     last.current = performance.now();
     bounds(); // 움직임을 시작할 때 몸 상자를 한 번 잰다(프레임 안에서는 다시 재지 않는다).
-    const reducedQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
     const tick = (time: number) => {
       frame.current = null;
-      const reduced = latest.current.reducedMotion ?? reducedQuery.matches;
+      // 시스템 '움직임 줄이기'여도 달리기·턱 넘기·나들이를 그대로 한다(2026-10-07 "뛰는거나 그런거가 안되는 경우").
+      const reduced = latest.current.reducedMotion ?? doreumiMotionRest();
       if (!(held.current && state.current.phase === "running")) state.current = stepLocomotion(state.current, time - last.current, bounds(true), reduced, { forcedStyle: latest.current.forcedStyle });
       if (state.current.phase === "idle") { positioned.current = false; latest.current.elementRef.current?.style.removeProperty("--doreumi-rest-x"); }
       last.current = time; paint();
@@ -187,7 +210,10 @@ export function useDoreumiLocomotion(options: Options) {
     // Let go near the floor and Doreumi still hops up a little and lands, so every drop reads as
     // fall → landing → run instead of sliding off in whatever pose it was held (user direction 2026-09-26).
     const b = bounds(), gap = restYAt(state.current.x, b) - state.current.y;
-    state.current = { ...state.current, phase: "falling", vy: gap < 56 ? -520 : 0, elapsed: 0, side: homeOf(state.current.x, b), targetX: null, heading: undefined, excursion: null, step: null, pendingStep: null };
+    const landing = homeOf(state.current.x, b);
+    // 휴대폰에서 사용자가 직접 놓은 쪽은 기억해 다음에도 그쪽에 선다(화면이 벽을 정한 곳은 제외).
+    if (latest.current.phone && !latest.current.homeSide) rememberPhoneSide(landing);
+    state.current = { ...state.current, phase: "falling", vy: gap < 56 ? -520 : 0, elapsed: 0, side: landing, targetX: null, heading: undefined, excursion: null, step: null, pendingStep: null };
     returnPending.current = false;
     paint(); animate();
   }, [animate, bounds, homeOf, paint, releaseCapture, reset]);
@@ -245,7 +271,7 @@ export function useDoreumiLocomotion(options: Options) {
   const resumeHome = useCallback(() => {
     if (!returnPending.current || !latest.current.enabled || latest.current.stageEnabled === false || pointer.current || frame.current !== null) return false;
     returnPending.current = false;
-    const b = bounds(), side: WallSide = latest.current.homeSide ?? (latest.current.phone ? "right" : state.current.side);
+    const b = bounds(), side: WallSide = latest.current.homeSide ?? state.current.side;
     positioned.current = false; latest.current.elementRef.current?.style.removeProperty("--doreumi-rest-x");
     const onLedge = b.ledges?.some(ledge => state.current.x + b.width / 2 >= ledge.left && state.current.x + b.width / 2 <= ledge.right);
     if (!onLedge && Math.abs(state.current.x - wallX(side, b)) <= 1) { state.current = { ...state.current, side }; paint(); return false; }
@@ -261,18 +287,18 @@ export function useDoreumiLocomotion(options: Options) {
   const excursion = useCallback(() => {
     if (returnPending.current) return resumeHome();
     if (!latest.current.enabled || pointer.current || frame.current !== null) return false;
-    const reduced = latest.current.reducedMotion ?? window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const reduced = latest.current.reducedMotion ?? doreumiMotionRest();
     if (reduced) return false;
     const node = latest.current.elementRef.current, b = bounds();
     if (!node || !b.ledges?.length) return false;
     const rect = node.getBoundingClientRect();
     const from = positioned.current ? state.current.x : rect.left;
-    const next = startExcursion({ ...state.current, x: from, y: restYAt(from, b), side: "right" }, b);
+    const next = startExcursion({ ...state.current, x: from, y: restYAt(from, b), side: homeOf(from, b) }, b);
     if (!next) return false;
     stopStage(); positioned.current = false; node.style.removeProperty("--doreumi-rest-x");
     state.current = next; paint(); animate();
     return true;
-  }, [animate, bounds, paint, resumeHome, stopStage]);
+  }, [animate, bounds, homeOf, paint, resumeHome, stopStage]);
   useEffect(() => {
     const keyChanged = lastResetKey.current !== options.resetKey;
     lastResetKey.current = options.resetKey;
@@ -304,7 +330,7 @@ export function useDoreumiLocomotion(options: Options) {
       positioned.current = false;
       node?.style.removeProperty("--doreumi-rest-x");
       reset(false);
-      const reduced = latest.current.reducedMotion ?? window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      const reduced = latest.current.reducedMotion ?? doreumiMotionRest();
       if (from && away && !reduced && latest.current.enabled) {
         // 새 화면의 턱(바닥 줄 링크 묶음)은 다시 재기 전에는 넘겨받지 않는다(DoreumiHost 가 화면별로 거른다). 첫 자리도 턱 없이 잡는다(검증 F4).
         const side: WallSide = homeOf(from.left, b);
@@ -377,5 +403,7 @@ export function useDoreumiLocomotion(options: Options) {
       releaseCapture();
     };
   }, [bounds, paint, releaseCapture, reset, resumeHome]);
-  return { phase, side, motion, excursion, interrupt, reset, hold, settleHere, consumeClick, forgetRest, onMotionFrame, canPlayMotion, pointerHandlers: { onPointerDown, onPointerMove, onPointerUp: onPointerEnd, onPointerCancel: onPointerEnd, onLostPointerCapture: onPointerEnd } };
+  // 무대 걷기 밖에서 가만히 서면(달리기·끌기·떨어짐이 끝나면) 그 벽이 쉬는 벽이다.
+  useEffect(() => { if (phase === "idle" && !stage.current) setRestSide(side); }, [phase, side]);
+  return { phase, side, restSide, motion, excursion, interrupt, reset, hold, settleHere, consumeClick, forgetRest, onMotionFrame, canPlayMotion, pointerHandlers: { onPointerDown, onPointerMove, onPointerUp: onPointerEnd, onPointerCancel: onPointerEnd, onLostPointerCapture: onPointerEnd } };
 }

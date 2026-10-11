@@ -3,6 +3,7 @@ import { parseDoreumiTravel, type DoreumiTravel } from '@/lib/doreumi/motion-tra
 import { contextPropsSupport } from '@/lib/doreumi/motion-context-capabilities';
 import { validMotionFrame, type MotionFrame } from '@/lib/doreumi/motion-camera';
 import { parseDoreumiEnvironment, type DoreumiLowLedge } from '@/lib/doreumi/motion-environment-contract';
+import { DOREUMI_RUNTIME_INDEX_URL } from '@/lib/doreumi/motion-asset-urls';
 
 export type LibraryMotion = {
   id: `meshy:${number}`; label: string; family: string; duration: number;
@@ -54,10 +55,34 @@ export async function boundedMotionText(response: Response, maxBytes: number): P
   return text;
 }
 
+/** The full review registry (about 2.4MB). Review and dev tools read it; the page reads the runtime index below. */
 export async function fetchMotionLibrary(signal?: AbortSignal): Promise<MotionLibrary> {
   const response = await fetch('/doreumi/motions/registry.json', { signal });
   if (!response.ok) throw new Error(`Motion registry ${response.status}`);
   return parseMotionLibrary(JSON.parse(await boundedMotionText(response, MOTION_REGISTRY_MAX_BYTES)));
+}
+
+/** Built by scripts/doreumi/build-motion-runtime.mjs: only the entries the page can play, only the fields it reads. */
+export const MOTION_RUNTIME_INDEX_URL = DOREUMI_RUNTIME_INDEX_URL;
+let runtimeIndex: Promise<MotionLibrary> | null = null;
+/** One request per page load, shared by the director and the renderer. A caller's abort never cancels the shared read. */
+export function fetchRuntimeMotionLibrary(signal?: AbortSignal): Promise<MotionLibrary> {
+  if (!runtimeIndex) {
+    const request = fetch(MOTION_RUNTIME_INDEX_URL).then(async response => {
+      if (!response.ok) throw new Error(`Motion index ${response.status}`);
+      return parseMotionLibrary(JSON.parse(await boundedMotionText(response, MOTION_REGISTRY_MAX_BYTES)));
+    });
+    runtimeIndex = request;
+    request.catch(() => { if (runtimeIndex === request) runtimeIndex = null; });
+  }
+  const shared = runtimeIndex;
+  if (!signal) return shared;
+  if (signal.aborted) return Promise.reject(new DOMException('Aborted', 'AbortError'));
+  return new Promise((resolve, reject) => {
+    const abort = () => reject(new DOMException('Aborted', 'AbortError'));
+    signal.addEventListener('abort', abort, { once: true });
+    shared.then(resolve, reject).finally(() => signal.removeEventListener('abort', abort));
+  });
 }
 
 /** Match the reviewed performance's mood while retaining explicit art direction. */

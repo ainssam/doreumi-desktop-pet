@@ -118,3 +118,17 @@ export type DoreumiDressItem = { id: string; slots: DoreumiSlot[]; asset?: strin
 export type DoreumiDress = { items: DoreumiDressItem[]; colors: DoreumiColors };
 export const EMPTY_DRESS: DoreumiDress = { items: [], colors: {} };
 export const dressKey = (dress: DoreumiDress) => JSON.stringify([dress.items.map((item) => [item.id, item.hand ?? "", item.asset ?? "", item.bone ?? "", !!item.rigged]).sort((a, b) => JSON.stringify(a).localeCompare(JSON.stringify(b))), dress.colors]);
+
+/** 착용 표(worn)와 아이템 목록으로 도름이 옷차림을 만든다. 상점 화면과 도름스쿨(여러 명)이 같은 규칙을 쓴다. */
+export type DressSourceItem = { id: string; slots: DoreumiSlot[]; asset?: string | null; bone?: string | null; rigged?: boolean };
+export function dressFromItems(items: readonly DressSourceItem[], worn: DoreumiWorn, colors: DoreumiColors): DoreumiDress {
+  const byId = new Map(items.map(item => [item.id, item]));
+  const instances: DoreumiDress["items"] = [], seen = new Set<string>();
+  for (const [slot, id] of Object.entries(canonicalWorn(worn, itemId => naturalHand(byId.get(itemId)?.bone)))) {
+    const item = byId.get(id);
+    if (!item || (!isDoreumiHand(slot) && seen.has(id))) continue;
+    if (!isDoreumiHand(slot)) seen.add(id);
+    instances.push({ id: item.id, slots: item.slots, asset: item.asset ?? undefined, bone: item.bone, rigged: item.rigged, ...(isDoreumiHand(slot) ? { hand: slot } : {}) });
+  }
+  return { items: instances, colors };
+}

@@ -46,8 +46,9 @@ test('턱 위와 줄 바닥은 몸 중심 x 로 갈린다', () => {
   assert.equal(L.clampPosition(300, 800, b).y, base - 98);
 });
 
-test('휴대폰은 어디에 놓아도 오른쪽, 넓은 화면은 가까운 쪽', () => {
-  assert.equal(L.homeWall(0, b, true), 'right');
+test('휴대폰도 넓은 화면처럼 가까운 벽(2026-10-07)', () => {
+  assert.equal(L.homeWall(0, b, true), 'left');
+  assert.equal(L.homeWall(300, b, true), 'right');
   assert.equal(L.homeWall(0, b, false), 'left');
   assert.equal(L.homeWall(300, b, false), 'right');
 });
@@ -140,6 +141,31 @@ test('나들이: 올라가 놀다 내려와 자기 자리로 돌아온다', () =
   assert.equal(state.phase, 'idle');
   assert.equal(state.excursion, null);
   assert.equal(state.x, L.wallX('right', b));
+  assert.equal(state.y, base - 98);
+});
+
+test('나들이(휴대폰 왼쪽 벽): 오른쪽에 붙은 바닥 줄 턱으로 올라가 놀다 내려와 왼쪽 벽으로 돌아온다', () => {
+  // 2026-10-07: 휴대폰 홈 바닥 줄 글자 묶음을 오른쪽에 붙였다(도름이는 왼쪽 벽).
+  const right = { left: 120, right: 372, top: 788 };
+  const bb = { ...b, ledges: [right] };
+  const home = { x: L.wallX('left', bb), y: L.restYAt(L.wallX('left', bb), bb), vy: 0, elapsed: 0, phase: 'idle', side: 'left' };
+  let state = L.startExcursion(home, bb, () => .5);
+  assert.ok(state, '나들이 시작');
+  assert.equal(state.heading, 'right');
+  assert.ok(state.targetX + 58 >= right.left && state.targetX + 58 <= right.right, '턱 위가 목적지');
+  const directions = [];
+  let paused = null;
+  for (let elapsed = 0; elapsed < 90_000 && state.phase !== 'idle'; elapsed += 16) {
+    const before = state.phase;
+    state = L.stepLocomotion(state, 16, bb);
+    if (state.phase === 'stepping' && before !== 'stepping') directions.push(state.step.plan.motion.direction);
+    if (state.phase === 'pausing') paused ??= { x: state.x, y: state.y };
+    if (state.phase === 'stepping') { state.__t = (state.__t ?? -.016) + .016; state = L.applyStepFrame(state, state.step.plan.motion.action, state.__t, PPU, bb); }
+  }
+  assert.deepEqual(directions, ['up', 'down']);
+  near(paused.y, 788 - 98, .5, '턱 위에서 논다');
+  assert.equal(state.phase, 'idle');
+  assert.equal(state.x, L.wallX('left', bb));
   assert.equal(state.y, base - 98);
 });
 
