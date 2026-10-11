@@ -14,8 +14,8 @@ function harness(imported = true, options = {}) {
   const context = vm.createContext({ AbortController, Math: Object.assign(Object.create(Math), { random: () => 0 }),
     useCallback: fn => fn, useRef: value => ({ current: value }), useState: value => [value, pose => poses.push({ at: now, ...pose })], useEffect: fn => effects.push(fn),
     setTimeout: (fn, ms) => { const timer = { fn, at: now + ms }; timers.push(timer); return timer; }, clearTimeout: timer => { if (timer) timer.cancelled = true; },
-    window: { matchMedia: () => media }, document, fetchMotionLibrary: async () => ({ motions: options.entries ?? [] }),
-    canPlayMotion: options.canPlay, doreumiSeason: () => 'everyday',
+    window: { matchMedia: () => media, addEventListener() {}, removeEventListener() {} }, document, doreumiMotionRest: () => false, DOREUMI_MOTION_REST_EVENT: 'dorms:doreumi-motion-rest', fetchRuntimeMotionLibrary: async () => ({ motions: options.entries ?? [] }),
+    canPlayMotion: options.canPlay, doreumiSeason: () => 'everyday', doreumiLowPower: () => options.lowPower ?? false, doreumiCalmAmbient: () => (options.lowPower ?? false) || media.matches, LOW_POWER_AMBIENT_GAP_SCALE: 2.5,
     QUIET, SEASONAL,
     expressionForMotion,
     chooseAmbientMotion: options.entries ? (entries, recent) => chooseAmbientMotion(entries, recent, () => 0) : () => imported ? { id: 'meshy:27', duration: 1.5, expression: 'smile' } : null,
@@ -55,11 +55,10 @@ test('a load that never starts expires after 30 seconds and schedules another at
   const h = harness(); h.advance(31199); assert.equal(h.poses.at(-1).action, 'meshy:27');
   h.advance(31200); assert.equal(h.poses.at(-1).action, 'Idle'); h.advance(32400); assert.equal(h.poses.at(-1).action, 'meshy:27');
 });
-test('hidden, reduced motion, and unmount cancel pending performances', () => {
-  for (const kind of ['hidden', 'reduced', 'unmount']) {
+test('hidden and unmount cancel pending performances', () => {
+  for (const kind of ['hidden', 'unmount']) {
     const h = harness(); h.advance(1200);
     if (kind === 'hidden') { h.document.hidden = true; h.listeners.get('visibilitychange')(); }
-    if (kind === 'reduced') { h.media.matches = true; h.listeners.get('media:change')(); }
     if (kind === 'paused') h.frame('meshy:27', 0, true);
     if (kind === 'unmount') h.cleanup.forEach(fn => fn());
     const count = h.poses.length; h.frame('meshy:27'); h.advance(100000); assert.equal(h.poses.length, count, kind);
@@ -80,8 +79,8 @@ test('paused frames cancel idle and active timers and the first resumed frame sc
   }
 });
 
-test('resuming while hidden or reduced motion stays idle until that constraint clears', () => {
-  for (const kind of ['hidden', 'reduced']) {
+test('resuming while hidden stays idle until the page is visible again', () => {
+  for (const kind of ['hidden']) {
     const h = harness(); h.advance(1200); h.frame('meshy:27', 0, true);
     if (kind === 'hidden') h.document.hidden = true; else h.media.matches = true;
     h.frame('Idle'); h.advance(100000); assert.equal(h.poses.at(-1).action, 'Idle');
@@ -92,9 +91,25 @@ test('resuming while hidden or reduced motion stays idle until that constraint c
   }
 });
 
+// 2026-10-07 운영자 지시: 시스템 '움직임 줄이기'(학교·회사 컴퓨터에 흔하다)여도 도름이는 멈추지 않는다.
+// 가벼운 쪽(doreumiLowPower 가 참)이라 공연 사이를 2.5배 길게 쉴 뿐, 공연은 한다.
+test('reduced motion keeps performing, only with the longer low-power gap', () => {
+  const h = harness(true); h.media.matches = true; h.listeners.get('media:change')?.();
+  h.advance(2999); assert.notEqual(h.poses.at(-1)?.action, 'meshy:27');
+  h.advance(3000); assert.equal(h.poses.at(-1).action, 'meshy:27');
+  h.frame('meshy:27'); h.advance(10000); assert.ok(h.poses.some(pose => pose.action === 'meshy:27'));
+  h.cleanup.forEach(fn => fn());
+});
+
 test('every authored action the director picks exists and is approved in the manifest', () => {
   const manifest = JSON.parse(fs.readFileSync(new URL('../public/doreumi/manifest.json', import.meta.url), 'utf8'));
   const picked = [...QUIET, ...Object.values(SEASONAL)].map(item => item.action);
   assert.ok(picked.length >= 16);
   for (const action of picked) assert.equal(manifest.actions.find(a => a.id === action)?.approval, 'approved', action);
+});
+
+test('low-power devices wait 2.5 times longer between performances', () => {
+  const h = harness(true, { lowPower: true });
+  h.advance(2999); assert.notEqual(h.poses.at(-1)?.action, 'meshy:27');
+  h.advance(3000); assert.equal(h.poses.at(-1).action, 'meshy:27');
 });

@@ -8,7 +8,7 @@ import { createLapProp, createSnowmanProp } from '@/lib/doreumi/motion-props';
 import { sampleSnowmanMotion } from '@/lib/doreumi/motion-snowman';
 import { createDoreumiContextProps, type DoreumiContextInspection } from '@/lib/doreumi/motion-context-props';
 import type { DoreumiStageHandler } from '@/lib/doreumi/motion-travel';
-import { boundedMotionText, fetchMotionLibrary, MOTION_CLIP_MAX_BYTES, type MotionLibrary } from '@/lib/doreumi/motion-library';
+import { boundedMotionText, fetchMotionLibrary, fetchRuntimeMotionLibrary, MOTION_CLIP_MAX_BYTES, type MotionLibrary } from '@/lib/doreumi/motion-library';
 import { doreumiSeason, type DoreumiLook } from '@/lib/doreumi/seasons';
 import { createDoreumiWardrobe, removeDoreumiWardrobe } from '@/lib/doreumi/motion-wardrobe';
 import { advanceMotionCamera, blendMotionFrames } from '@/lib/doreumi/motion-camera';
@@ -16,6 +16,9 @@ import { applyDoreumiAtlasSampling } from '@/lib/doreumi/motion-material';
 import { applyDressColors, createDressUniforms, DRESS_FRAGMENT, DRESS_FRAGMENT_UNIFORMS, takeOffDressItem, wearDressItem } from '@/lib/doreumi/motion-dress';
 import type { DoreumiDress } from '@/lib/doreumi/items';
 import { createTeacherKit, type TeacherKit, type TeacherSide } from '@/lib/doreumi/motion-teacher';
+import { createPace, doreumiFrameBudget, doreumiLowPower, reducedMotionQuery, stepPace, TOUCH_RESUME_MS } from '@/lib/doreumi/motion-budget';
+import { doreumiMotionRest, subscribeDoreumiMotionRest } from '@/lib/doreumi/motionRest';
+import { DOREUMI_MODEL_URL } from '@/lib/doreumi/motion-asset-urls';
 
 /** front-left·front-right: 진행 방향으로 반쯤(45도) 돈 모습. 턱 점프처럼 팔 동작도 보이고 방향도 읽혀야 할 때. */
 export type DoreumiFacing = 'left' | 'right' | 'front' | 'front-left' | 'front-right';
@@ -32,7 +35,7 @@ export type DoreumiInspection = {
   prop: string | null; propError: string | null; motionError: string | null; season: DoreumiLook;
   contextProps: DoreumiContextInspection;
   bodyTextures: { width: number; height: number; minFilter: number; mipmaps: boolean }[];
-  rig: DoreumiRigInspection; facing: DoreumiFacing; yaw: number;
+  rig: DoreumiRigInspection; facing: DoreumiFacing; yaw: number; zoom: number;
 };
 export type DoreumiRenderer = {
   setAction: (action: string) => void; setExpression: (expression: string) => Promise<void>;
@@ -44,6 +47,8 @@ export type DoreumiRenderer = {
   setViewAngle: (degrees: number) => void; setPlaybackRate: (rate: number) => void;
   /** Vertical orbit (degrees, any value; 90 looks down on the crown, -90 up at the soles). Only the dress preview uses it. */
   setViewTilt: (degrees: number, render?: boolean) => void;
+  /** Preview magnification; the host keeps the default camera zoom of 1. */
+  setViewZoom: (factor: number) => void;
   setSeason: (season: DoreumiLook | 'auto') => void;
   /** Items worn together (one per slot) and chosen colors. Doreumi's own body never changes. */
   setDress: (dress: DoreumiDress) => Promise<void>;
@@ -98,7 +103,7 @@ function disposeObject(root: THREE.Object3D) {
 export type DoreumiStableFraming = { top: number; bottom: number; side: number };
 export const DOREUMI_STABLE_FRAMING: DoreumiStableFraming = { top: .32, bottom: .25, side: .25 };
 
-export async function createDoreumiRenderer(canvas: HTMLCanvasElement, signal: AbortSignal, onMotionFrame?: DoreumiStageHandler, stable?: DoreumiStableFraming, fitDress = false): Promise<DoreumiRenderer> {
+export async function createDoreumiRenderer(canvas: HTMLCanvasElement, signal: AbortSignal, onMotionFrame?: DoreumiStageHandler, stable?: DoreumiStableFraming, fitDress: boolean | "height" = false): Promise<DoreumiRenderer> {
   // 가속이 없는 기기인지는 렌더러를 만들기 전에 따로 재 본다. 그런 기기에서는 가장자리 다듬기(4배 표본)가 장면마다 가장 비싸서 끈다.
   const softwareRendering = probeSoftwareWebGL();
   const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: !softwareRendering, powerPreference: 'low-power' });
@@ -106,8 +111,9 @@ export async function createDoreumiRenderer(canvas: HTMLCanvasElement, signal: A
   // 그래픽 가속이 없는 컴퓨터(학교 PC 등)는 WebGL 을 CPU 로 그린 뒤 매 장면을 다시 읽어 와 화면 전체가 멈췄다
   // (2026-10-06 측정: 8초 중 13초 분량의 GLES2::ReadPixels). 그런 기기에서는 작게·드물게 그린다. 모습은 같다.
   const maxDpr = softwareRendering ? 1 : window.matchMedia('(pointer: coarse)').matches ? 1.5 : 2;
-  // 화면이 120Hz 여도 도름이는 초당 60장이면 충분하다. 가속이 없으면 초당 8장.
-  const minFrameMs = softwareRendering ? 125 : 12;
+  // 그리는 빠르기는 motion-budget 이 정한다(데스크톱 제자리 숨쉬기 초당 30장·공연과 걷기 60장, 휴대폰·작은 기기·움직임 줄이기 24장).
+  // 가속이 없으면 초당 20장에서 시작해, 페이지가 버거워하면 12장·8장으로 내려간다(동작은 그대로, 장 수만, 2026-10-07).
+  let lowPower = doreumiLowPower();
   let dpr = Math.min(window.devicePixelRatio || 1, maxDpr);
   renderer.setPixelRatio(dpr); renderer.setClearColor(0, 0);
   const scene = new THREE.Scene();
@@ -162,7 +168,7 @@ export async function createDoreumiRenderer(canvas: HTMLCanvasElement, signal: A
   let motion: DoreumiMotion | undefined;
   let manifest: Manifest;
   try {
-    const result = await Promise.all([loadModel(`${BASE}/doreumi-master.glb`).then(gltf => { model = gltf.scene; return gltf; }), texture('skin'), texture('neutral'), fetch(`${BASE}/manifest.json`, { signal }).then(async r => { if (!r.ok) throw new Error('Doreumi manifest unavailable'); return await r.json() as Manifest; })]);
+    const result = await Promise.all([loadModel(DOREUMI_MODEL_URL).then(gltf => { model = gltf.scene; return gltf; }), texture('skin'), texture('neutral'), fetch(`${BASE}/manifest.json`, { signal }).then(async r => { if (!r.ok) throw new Error('Doreumi manifest unavailable'); return await r.json() as Manifest; })]);
     if (signal.aborted) throw new DOMException('Disposed', 'AbortError');
     const [gltf, skin, neutral, assetManifest] = result; manifest = assetManifest;
     motion = new DoreumiMotion(model!, gltf.animations);
@@ -213,7 +219,7 @@ export async function createDoreumiRenderer(canvas: HTMLCanvasElement, signal: A
     let dressItems: Awaited<ReturnType<typeof wearDressItem>>[] = [], dressRequest = 0;
     let dressFitHalfHeight = 0;
     const dressFitBounds = new THREE.Box3(), dressRigidMeshes: THREE.Mesh[] = [];
-    let library: MotionLibrary | undefined, libraryRequest: Promise<MotionLibrary> | undefined;
+    let library: MotionLibrary | undefined, libraryRequest: Promise<MotionLibrary> | undefined, fullLibraryRequest: Promise<MotionLibrary> | undefined;
     let actionRequest = 0, motionError: string | null = null, playbackRate = 1, viewAngle = 0, viewTilt = 0;
     // Body + outfit box for the tilted preview frame. Measured once per outfit (skinned bounds are costly), lazily on the first tilt.
     let tiltFitBounds: THREE.Box3 | null = null, tiltFitAction = '';
@@ -227,8 +233,13 @@ export async function createDoreumiRenderer(canvas: HTMLCanvasElement, signal: A
       if (!action.startsWith('meshy:') || motion!.hasClip(action)) return;
       const pending = clipRequests.get(action); if (pending) return pending;
       const request = (async () => {
-        library ??= await (libraryRequest ??= fetchMotionLibrary(signal).finally(() => { libraryRequest = undefined; }));
-        const entry = library.motions.find(item => item.id === action);
+        library ??= await (libraryRequest ??= fetchRuntimeMotionLibrary(signal).finally(() => { libraryRequest = undefined; }));
+        let entry = library.motions.find(item => item.id === action);
+        // The page index holds every clip the site plays. Review tools may ask for any other clip: read the full registry once for those.
+        if (!entry) {
+          library = await (fullLibraryRequest ??= fetchMotionLibrary(signal).catch(error => { fullLibraryRequest = undefined; throw error; }));
+          entry = library.motions.find(item => item.id === action);
+        }
         if (!entry?.url) throw new Error('Motion is not acquired yet');
         const response = await fetch(entry.url, { signal });
         if (!response.ok) throw new Error(`Motion asset ${response.status}`);
@@ -256,9 +267,19 @@ export async function createDoreumiRenderer(canvas: HTMLCanvasElement, signal: A
     let width = 1, height = 1;
     let cameraHalfHeight = 1.34, cameraCenterY = 1.14, cameraCenterZ = 0, cameraOffset = 0;
     let cameraTracking = false;
-    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
-    let reduceMotion = reduced.matches;
-    const isPaused = () => !active || !visible || document.hidden || inspectionPaused || reduceMotion;
+    // 시스템 '움직임 줄이기'는 도름이를 멈추지 않는다(2026-10-07). 바뀌면 가벼운 쪽 여부(lowPower)만 다시 읽는다.
+    const reduced = reducedMotionQuery() ?? window.matchMedia('(prefers-reduced-motion: reduce)');
+    const pace = createPace(softwareRendering);
+    // A performance, a walk or a blend is playing (not the breathing idle loop). Set by render().
+    let playing = false;
+    // Low-power devices stop drawing while a finger is on the screen or the page scrolls, and pick up 300ms later.
+    let touchingUntil = 0, touchDown = false, touchResume: ReturnType<typeof setTimeout> | undefined;
+    // Doreumi's own movement keeps drawing: runs, walks and being carried by the finger.
+    const MOVING_ACTIONS = new Set(['Run', 'Walk', 'Dragged', 'Falling', 'Landing']);
+    let requestedAction = 'Idle';
+    const locomoting = () => MOVING_ACTIONS.has(lastRenderedAction) || MOVING_ACTIONS.has(requestedAction);
+    // 도름이 설정의 '쉬게 하기'를 켜면 그리기를 멈추고 제자리에 서 있는다(정지 기능, 2026-10-07).
+    const isPaused = () => !active || !visible || document.hidden || inspectionPaused || doreumiMotionRest();
     const pendingProps = new Set<THREE.Group>();
     const skinned: THREE.SkinnedMesh[] = [];
     model!.traverse(object => { if (object instanceof THREE.SkinnedMesh && object.name !== 'DoreumiGarment') skinned.push(object); });
@@ -287,6 +308,8 @@ export async function createDoreumiRenderer(canvas: HTMLCanvasElement, signal: A
       const state = motion!.inspect();
       if (lastRenderedAction.startsWith('meshy:') && state.action === 'Idle') { targetYaw = 0; facing = 'front'; }
       lastRenderedAction = state.action;
+      requestedAction = state.requested;
+      playing = state.action !== 'Idle' || state.requested !== 'Idle' || state.recovering || state.pending !== null || state.activeActions > 1;
       const importedMotion = library?.motions.find(item => item.id === state.action);
       // A fixed surface shares the holder origin. Keep its initial orientation
       // until the whole action ends, including entry and recovery.
@@ -331,7 +354,7 @@ export async function createDoreumiRenderer(canvas: HTMLCanvasElement, signal: A
         selectedPropAction = state.action;
         void selectProp(state.action).catch(error => { propError = String(error); });
       }
-      const blend = immediate || reduceMotion ? 1 : 1 - Math.exp(-delta / .1);
+      const blend = immediate ? 1 : 1 - Math.exp(-delta / .1);
       if (stable) {
         // Fixed standing frame mapped onto the avatar box inside the larger canvas: no zoom, no drift.
         const scaleY = 1 + stable.top + stable.bottom, boxAspect = (width / (1 + 2 * stable.side)) / (height / scaleY);
@@ -347,7 +370,10 @@ export async function createDoreumiRenderer(canvas: HTMLCanvasElement, signal: A
             // The radial extent holds every viewing angle. Keep the largest frame until the outfit changes,
             // so moving a hand never repeatedly zooms the preview in and out. Rigid geometry bounds are cached.
             const radius = Math.hypot(Math.max(Math.abs(bounds.min.x), Math.abs(bounds.max.x)), Math.max(Math.abs(bounds.min.z), Math.abs(bounds.max.z)));
-            const nextHalfHeight = Math.max(dressFitHalfHeight, radius / (boxAspect * .9), (bounds.max.y - standing.centerY) / .9, (standing.centerY - bounds.min.y) / .9);
+            // "height": 머리 위(후광 등)만 담는다. 옆으로 넓은 장식·발밑 장식은 캔버스 양옆·아래 여백에 그려 도름이가 지나치게 작아지지 않게 한다.
+            const nextHalfHeight = fitDress === "height"
+              ? Math.max(dressFitHalfHeight, (bounds.max.y - standing.centerY) / .9)
+              : Math.max(dressFitHalfHeight, radius / (boxAspect * .9), (bounds.max.y - standing.centerY) / .9, (standing.centerY - bounds.min.y) / .9);
             if (Number.isFinite(nextHalfHeight)) {
               dressFitHalfHeight = nextHalfHeight;
               standing.halfHeight = Math.max(standing.halfHeight, dressFitHalfHeight);
@@ -370,7 +396,7 @@ export async function createDoreumiRenderer(canvas: HTMLCanvasElement, signal: A
         cameraOffset = (stable.top - stable.bottom) * halfHeight;
         cameraTracking = false; cameraCenterZ = 0;
       } else {
-        const nextCamera = advanceMotionCamera({ halfHeight: cameraHalfHeight, centerY: cameraCenterY, tracking: cameraTracking }, framing, delta, immediate || reduceMotion);
+        const nextCamera = advanceMotionCamera({ halfHeight: cameraHalfHeight, centerY: cameraCenterY, tracking: cameraTracking }, framing, delta, immediate);
         cameraHalfHeight = nextCamera.halfHeight; cameraCenterY = nextCamera.centerY; cameraTracking = nextCamera.tracking; cameraOffset = 0;
         cameraCenterZ += ((['Lie', 'Roll'].includes(state.action) ? -.65 : 0) - cameraCenterZ) * blend;
       }
@@ -381,7 +407,7 @@ export async function createDoreumiRenderer(canvas: HTMLCanvasElement, signal: A
       }
       const yawDifference = Math.atan2(Math.sin(targetYaw - holder.rotation.y), Math.cos(targetYaw - holder.rotation.y));
       if (environmentYaw && !decision?.stop) holder.rotation.y = environmentYaw.yaw;
-      else holder.rotation.y += yawDifference * (immediate || reduceMotion ? 1 : 1 - Math.exp(-delta / .14));
+      else holder.rotation.y += yawDifference * (immediate ? 1 : 1 - Math.exp(-delta / .14));
       camera.left = -cameraHalfHeight * width / height; camera.right = -camera.left;
       camera.top = cameraHalfHeight; camera.bottom = -cameraHalfHeight;
       // Orbit: yaw around the vertical axis, then tilt over the top or under the feet. The camera's up turns with the tilt,
@@ -393,7 +419,7 @@ export async function createDoreumiRenderer(canvas: HTMLCanvasElement, signal: A
       camera.lookAt(orbitTarget); camera.updateProjectionMatrix();
       contextProps.update({ time: state.time, duration: state.duration });
       if (teacher && teacherOn && aimTarget) {
-        if (!aimReady || immediate || reduceMotion) { aimCurrent.copy(aimTarget); aimReady = true; }
+        if (!aimReady || immediate) { aimCurrent.copy(aimTarget); aimReady = true; }
         else aimCurrent.lerp(aimTarget, 1 - Math.exp(-delta / .09));
         teacher.aim(aimCurrent, aimSide);
       }
@@ -403,6 +429,7 @@ export async function createDoreumiRenderer(canvas: HTMLCanvasElement, signal: A
       const rect = canvas.getBoundingClientRect(); width = Math.max(1, rect.width); height = Math.max(1, rect.height);
       const nextDpr = Math.min(maxDpr, Math.max(window.devicePixelRatio || 1, Math.max(width, height) <= (stable ? 180 * (1 + stable.top + stable.bottom) : 180) ? 2 : 1));
       if (nextDpr !== dpr) { dpr = nextDpr; renderer.setPixelRatio(dpr); }
+      lowPower = doreumiLowPower();
       renderer.setSize(width, height, false);
       render(0, true);
     }
@@ -422,7 +449,13 @@ export async function createDoreumiRenderer(canvas: HTMLCanvasElement, signal: A
     }
     function tick(now: number) {
       frame = 0; if (disposed || isPaused()) { lastTime = 0; return; }
-      if (lastTime && now - lastTime < minFrameMs) { frame = requestAnimationFrame(tick); return; }
+      // Touch pause: time stands still (lastTime resets) and the resume timer schedules the next frame.
+      if (lowPower && !softwareRendering && (touchDown || touchingUntil > now) && !locomoting()) { lastTime = 0; pace.last = 0; return; }
+      // 모든 프레임 호출에서 간격을 재(stepPace) 페이지가 버거우면 더 드물게 그린다.
+      const minFrameMs = Math.max(doreumiFrameBudget(playing, lowPower), stepPace(pace, now));
+      // 2ms slack keeps a 30fps budget on every second frame of a 60Hz screen.
+      if (pace.forceSkip || (lastTime && now - lastTime < minFrameMs - 2)) { pace.lastDrew = false; frame = requestAnimationFrame(tick); return; }
+      pace.lastDrew = true;
       const dt = lastTime ? Math.min((now - lastTime) / 1000, .25) : 0; lastTime = now; elapsed += dt;
       motion!.update(dt * playbackRate);
       uniforms.faceBlend.value = Math.min(1, uniforms.faceBlend.value + dt / .12);
@@ -433,9 +466,21 @@ export async function createDoreumiRenderer(canvas: HTMLCanvasElement, signal: A
       }
       render(dt); frame = requestAnimationFrame(tick);
     }
-    function schedule() { if (disposed) return; if (isPaused()) { cancelAnimationFrame(frame); frame = 0; lastTime = 0; render(); } else if (!frame) { lastTime = 0; frame = requestAnimationFrame(tick); } }
+    function schedule() { if (disposed) return; if (isPaused()) { cancelAnimationFrame(frame); frame = 0; lastTime = 0; pace.last = 0; render(); } else if (!frame) { lastTime = 0; pace.last = 0; frame = requestAnimationFrame(tick); } }
     const visibilityChanged = () => schedule(); document.addEventListener('visibilitychange', visibilityChanged);
-    const reducedChanged = () => { reduceMotion = reduced.matches; schedule(); }; reduced.addEventListener('change', reducedChanged);
+    const reducedChanged = () => { lowPower = doreumiLowPower(); schedule(); }; reduced.addEventListener('change', reducedChanged);
+    const stopRest = subscribeDoreumiMotionRest(() => schedule());
+    const touched = (event: Event) => {
+      if (event.type !== 'touchmove') touchDown = event.type === 'touchstart' || ((event as TouchEvent).touches?.length ?? 0) > 0;
+      if (!lowPower || softwareRendering) return;
+      touchingUntil = performance.now() + TOUCH_RESUME_MS;
+      clearTimeout(touchResume);
+      if (!touchDown) touchResume = setTimeout(() => { touchResume = undefined; if (!frame) schedule(); }, TOUCH_RESUME_MS + 16);
+    };
+    const touchOptions = { passive: true, capture: true } as const;
+    const touchEvents = ['touchstart', 'touchmove', 'touchend', 'touchcancel'] as const;
+    touchEvents.forEach(name => window.addEventListener(name, touched, touchOptions));
+    document.addEventListener('scroll', touched, touchOptions);
     async function selectProp(action: string) {
       const id = action === 'MegaphoneSpeak' ? 'megaphone' : action === 'CarryBag' ? 'christmas-gift-sack' : '';
       if (id === prop?.id) return;
@@ -457,7 +502,7 @@ export async function createDoreumiRenderer(canvas: HTMLCanvasElement, signal: A
         if (action.startsWith('meshy:')) {
           void loadAction(action).then(() => {
             if (disposed || request !== actionRequest) return;
-            motion!.setAction(action); if (reduceMotion) motion!.seek(action, 0); render(); schedule();
+            motion!.setAction(action); render(); schedule();
           }).catch(error => { if (request === actionRequest) { motionError = String(error); motion!.setAction('Idle'); render(); } });
           return;
         }
@@ -467,7 +512,6 @@ export async function createDoreumiRenderer(canvas: HTMLCanvasElement, signal: A
           facing = 'front'; targetYaw = 0;
         }
         motion!.setAction(action);
-        if (reduceMotion) motion!.seek(action, 0);
         render(); schedule();
       },
       async setExpression(value) {
@@ -546,6 +590,7 @@ export async function createDoreumiRenderer(canvas: HTMLCanvasElement, signal: A
       setViewAngle(degrees) { viewAngle = Number.isFinite(degrees) ? degrees * Math.PI / 180 : 0; render(0, true); },
       // render=false when setViewAngle follows right away, so a drag frame draws once, not twice.
       setViewTilt(degrees, draw = true) { viewTilt = Number.isFinite(degrees) ? degrees * Math.PI / 180 : 0; if (draw) render(0, true); },
+      setViewZoom(factor) { const next = Number.isFinite(factor) ? Math.max(.1, Math.min(10, factor)) : 1; if (camera.zoom === next) return; camera.zoom = next; render(0, true); },
       setPlaybackRate(rate) { playbackRate = Math.max(.1, Math.min(3, rate)); },
       seek(action, seconds) { ++actionRequest; inspectionPaused = true; cancelAnimationFrame(frame); frame = 0; lastTime = 0; motion!.seek(action, seconds); render(0, true); },
       play() { motion!.resume(); inspectionPaused = false; schedule(); },
@@ -583,11 +628,12 @@ export async function createDoreumiRenderer(canvas: HTMLCanvasElement, signal: A
           const map = material instanceof THREE.MeshStandardMaterial ? material.map : null;
           return map ? [{ width: map.image?.width ?? 0, height: map.image?.height ?? 0, minFilter: map.minFilter, mipmaps: map.generateMipmaps }] : [];
         }));
-        return { ...motion!.inspect(), expression, facing, yaw: holder.rotation.y, paused: isPaused(), renderedFrames, dpr, drawCalls: renderer.info.render.calls, triangles: renderer.info.render.triangles, bounds, boundsBasis: 'visible-deformed-vertices', conservativeBounds, bodyWorldBounds, joints, viewport: { width, height }, finite: [...bounds.min, ...bounds.max].every(Number.isFinite), prop: laptop.visible ? 'laptop' : book.visible ? 'book' : prop?.id ?? null, propError, motionError, season, bodyTextures, contextProps: contextProps.inspect() };
+        return { ...motion!.inspect(), expression, facing, yaw: holder.rotation.y, zoom: camera.zoom, paused: isPaused(), renderedFrames, dpr, drawCalls: renderer.info.render.calls, triangles: renderer.info.render.triangles, bounds, boundsBasis: 'visible-deformed-vertices', conservativeBounds, bodyWorldBounds, joints, viewport: { width, height }, finite: [...bounds.min, ...bounds.max].every(Number.isFinite), prop: laptop.visible ? 'laptop' : book.visible ? 'book' : prop?.id ?? null, propError, motionError, season, bodyTextures, contextProps: contextProps.inspect() };
       },
       dispose() {
         if (disposed) return; disposed = true; cancelAnimationFrame(frame); resizeObserver.disconnect();
-        document.removeEventListener('visibilitychange', visibilityChanged); reduced.removeEventListener('change', reducedChanged);
+        document.removeEventListener('visibilitychange', visibilityChanged); reduced.removeEventListener('change', reducedChanged); stopRest();
+        touchEvents.forEach(name => window.removeEventListener(name, touched, true)); document.removeEventListener('scroll', touched, true); clearTimeout(touchResume);
         dressRequest++; dressItems.forEach(takeOffDressItem); dressItems = [];
         teacher?.dispose(); teacher = null;
         motion!.dispose(); contextProps.dispose(); skeletonHelper?.dispose(); removeDoreumiWardrobe(wardrobe); skinned.forEach(mesh => mesh.skeleton.dispose()); disposeObject(scene); pendingProps.forEach(disposeObject); textures.forEach(t => t.dispose()); textures.clear(); renderer.dispose();

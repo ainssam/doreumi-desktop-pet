@@ -38,8 +38,12 @@ export const WALL_INSET_RATIO = .11;
 export const wallInset = (width: number) => Math.round(width * WALL_INSET_RATIO);
 export const wallX = (side: WallSide, b: MotionBounds) => side === "left" ? -wallInset(b.width) : Math.max(-wallInset(b.width), b.viewportWidth - b.width + wallInset(b.width));
 export const nearestWall = (x: number, b: MotionBounds): WallSide => x + b.width / 2 < b.viewportWidth / 2 ? "left" : "right";
-/** 놓았을 때 돌아갈 벽: 휴대폰은 어디서든 오른쪽, 넓은 화면은 가까운 쪽(사용자 지시 2026-10-01). */
-export const homeWall = (x: number, b: MotionBounds, phone = false): WallSide => phone ? "right" : nearestWall(x, b);
+/**
+ * 자기 자리 벽: 휴대폰도 넓은 화면처럼 가까운 벽(2026-10-07 운영자 지시 "도름이가 pc에서처럼 왼쪽에 조금이라도 가까우면 왼쪽으로 가서 붙고,
+ * 오른쪽에 조금이라도 가까우면 오른쪽에 붙게해"). 휴대폰의 첫 자리만 왼쪽이다(useDoreumiLocomotion firstSide, 같은 날 앞선 지시).
+ */
+// eslint-disable-next-line @typescript-eslint/no-unused-vars -- 휴대폰 여부를 넘기는 호출부·시험 호환(이제 둘 다 가까운 벽)
+export const homeWall = (x: number, b: MotionBounds, _phone = false): WallSide => nearestWall(x, b);
 const ledgeUnder = (center: number, b: MotionBounds) => b.ledges?.find(ledge => center >= ledge.left && center <= ledge.right) ?? null;
 /** 몸 중심 x 에서 발이 닿는 화면 y: 턱 위면 턱 윗면, 아니면 바닥. */
 export const surfaceAt = (center: number, b: MotionBounds) => ledgeUnder(center, b)?.top ?? b.viewportHeight - Math.max(0, b.occupiedBottom);
@@ -237,13 +241,16 @@ export function startExcursion(state: MotionState, b: MotionBounds, random: () =
   if (state.phase !== "idle" || !b.ledges?.length) return null;
   const width = b.width, center = state.x + width / 2;
   if (ledgeUnder(center, b)) return null;
-  const ledge = b.ledges.reduce((best, item) => item.right > best.right ? item : best);
-  const low = Math.max(ledge.left + width * .35, wallX("left", b) + width / 2 + 1), high = ledge.right - width * .55;
+  // 자기 자리 벽에서 가장 가까운 턱으로 나간다(오른쪽 벽이면 가장 오른쪽 턱, 왼쪽 벽이면 가장 왼쪽 턱).
+  const fromLeft = state.side === "left";
+  const ledge = b.ledges.reduce((best, item) => fromLeft ? (item.left < best.left ? item : best) : (item.right > best.right ? item : best));
+  const low = fromLeft ? ledge.left + width * .55 : Math.max(ledge.left + width * .35, wallX("left", b) + width / 2 + 1);
+  const high = fromLeft ? Math.min(ledge.right - width * .35, wallX("right", b) + width / 2 - 1) : ledge.right - width * .55;
   if (high <= low) return null;
   const targetCenter = low + (high - low) * random();
   const [action, seconds] = pauseActions[Math.min(pauseActions.length - 1, Math.floor(random() * pauseActions.length))].split(":");
   return {
-    ...state, phase: "running", elapsed: 0, targetX: targetCenter - width / 2, heading: "left", pendingStep: null, step: null,
+    ...state, phase: "running", elapsed: 0, targetX: targetCenter - width / 2, heading: fromLeft ? "right" : "left", pendingStep: null, step: null,
     excursion: { stage: "out", target: targetCenter - width / 2, pauseAction: action, pauseMs: Math.round(Number(seconds) * 1000) },
   };
 }
