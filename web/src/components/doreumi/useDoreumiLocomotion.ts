@@ -134,9 +134,10 @@ export function useDoreumiLocomotion(options: Options) {
     latest.current.elementRef.current?.removeAttribute("data-stage-moving");
     setRestSide(state.current.side);
   }, []);
+  const suspended = useRef(false);
   const onMotionFrame = useCallback<DoreumiStageHandler>((sample: DoreumiStageFrame) => {
     const node = latest.current.elementRef.current;
-    if (!node) return;
+    if (!node || suspended.current) return;
     if (state.current.phase === "stepping") {
       // 턱 넘기: 그 동작의 재생 시계로 자리를 정한다(프레임이 밀리거나 동작을 늦게 불러와도 어긋나지 않는다).
       if (!sample.paused) { state.current = applyStepFrame(state.current, sample.action, sample.time, sample.pixelsPerUnit, bounds(true)); paint(); }
@@ -194,7 +195,7 @@ export function useDoreumiLocomotion(options: Options) {
       frame.current = null;
       // 시스템 '움직임 줄이기'여도 달리기·턱 넘기·나들이를 그대로 한다(2026-10-07 "뛰는거나 그런거가 안되는 경우").
       const reduced = latest.current.reducedMotion ?? doreumiMotionRest();
-      if (!(held.current && state.current.phase === "running")) state.current = stepLocomotion(state.current, time - last.current, bounds(true), reduced, { forcedStyle: latest.current.forcedStyle });
+      if (!suspended.current && !(held.current && state.current.phase === "running")) state.current = stepLocomotion(state.current, time - last.current, bounds(true), reduced, { forcedStyle: latest.current.forcedStyle });
       if (state.current.phase === "idle") { positioned.current = false; latest.current.elementRef.current?.style.removeProperty("--doreumi-rest-x"); }
       last.current = time; paint();
       if (state.current.phase !== "idle") frame.current = requestAnimationFrame(tick);
@@ -243,6 +244,7 @@ export function useDoreumiLocomotion(options: Options) {
     paint();
   }, [bounds, finish, paint]);
   const onPointerEnd = useCallback((event: ReactPointerEvent<HTMLElement>) => { if (event.pointerId === pointer.current?.id) finish(); }, [finish]);
+  const suspend = useCallback((value: boolean) => { suspended.current = value; }, []);
   const hold = useCallback((value: boolean) => { held.current = value; }, []);
   /** Stop wherever Doreumi is now and treat that spot as its resting place (the chat then runs it on from here). */
   const settleHere = useCallback(() => {
@@ -405,5 +407,5 @@ export function useDoreumiLocomotion(options: Options) {
   }, [bounds, paint, releaseCapture, reset, resumeHome]);
   // 무대 걷기 밖에서 가만히 서면(달리기·끌기·떨어짐이 끝나면) 그 벽이 쉬는 벽이다.
   useEffect(() => { if (phase === "idle" && !stage.current) setRestSide(side); }, [phase, side]);
-  return { phase, side, restSide, motion, excursion, interrupt, reset, hold, settleHere, consumeClick, forgetRest, onMotionFrame, canPlayMotion, pointerHandlers: { onPointerDown, onPointerMove, onPointerUp: onPointerEnd, onPointerCancel: onPointerEnd, onLostPointerCapture: onPointerEnd } };
+  return { phase, side, restSide, motion, excursion, interrupt, reset, hold, suspend, settleHere, consumeClick, forgetRest, onMotionFrame, canPlayMotion, pointerHandlers: { onPointerDown, onPointerMove, onPointerUp: onPointerEnd, onPointerCancel: onPointerEnd, onLostPointerCapture: onPointerEnd } };
 }
