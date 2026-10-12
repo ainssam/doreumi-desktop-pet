@@ -38,6 +38,8 @@ export type DoreumiInspection = {
   rig: DoreumiRigInspection; facing: DoreumiFacing; yaw: number; zoom: number;
 };
 export type DoreumiRenderer = {
+  /** Draw the configured model before the host reveals it; loading assets alone is not readiness. */
+  renderFirstFrame: () => void;
   setAction: (action: string) => void; setExpression: (expression: string) => Promise<void>;
   setActive: (active: boolean) => void; setVisible: (visible: boolean) => void;
   seek: (action: string, seconds: number) => void; play: () => void;
@@ -594,6 +596,13 @@ export async function createDoreumiRenderer(canvas: HTMLCanvasElement, signal: A
       setPlaybackRate(rate) { playbackRate = Math.max(.1, Math.min(3, rate)); },
       seek(action, seconds) { ++actionRequest; inspectionPaused = true; cancelAnimationFrame(frame); frame = 0; lastTime = 0; motion!.seek(action, seconds); render(0, true); },
       play() { motion!.resume(); inspectionPaused = false; schedule(); },
+      renderFirstFrame() {
+        if (disposed || renderer.getContext().isContextLost()) throw new Error('Doreumi renderer unavailable');
+        resize();
+        if (renderer.getContext().isContextLost() || renderer.info.render.calls === 0 || renderer.info.render.triangles === 0) {
+          throw new Error('Doreumi first frame unavailable');
+        }
+      },
       inspect() {
         model!.updateMatrixWorld(true);
         const box = visibleBounds(holder);

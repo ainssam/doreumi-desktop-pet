@@ -8,6 +8,7 @@ import type { DoreumiStageHandler } from '@/lib/doreumi/motion-travel';
 
 // Same numbers as DOREUMI_STABLE_FRAMING in motion-runtime (kept here so the heavy runtime stays lazily loaded).
 const STABLE = { top: .32, bottom: .25, side: .25 };
+export type DoreumiAvatarStatus = 'loading' | 'ready' | 'fallback';
 
 export type DoreumiAvatarHandle = {
   setAction: (action: string) => void;
@@ -32,6 +33,7 @@ export type DoreumiAvatarHandle = {
 };
 export type DoreumiAvatarProps = {
   action?: string; expression?: string; active?: boolean; className?: string; onReady?: () => void;
+  onStatusChange?: (status: DoreumiAvatarStatus) => void;
   facing?: DoreumiFacing;
   locomotionRate?: number;
   /** Chosen outfit; omitted means the base look. */
@@ -44,21 +46,22 @@ export type DoreumiAvatarProps = {
   /** Preview only: leave room for wide accessories while turning the outfit. */
   /** 입은 아이템까지 틀에 담는다. "height" 는 위아래만 담고 양옆은 캔버스 여백에 그린다(사이트 도우미: 너무 작아지지 않게). */
   fitDress?: boolean | "height";
-  /** Keep the still picture and do not start the 3D runtime yet (the page-wide mascot waits for the page to settle). */
+  /** Stay hidden and do not start the 3D runtime yet (the page-wide mascot waits for the page to settle). */
   hold?: boolean;
   /** Camera magnification in fitting-room previews; does not change the host size. */
   zoom?: number;
 };
 
 export const DoreumiAvatar = forwardRef<DoreumiAvatarHandle, DoreumiAvatarProps>(function DoreumiAvatar(
-  { action = 'idle', expression = 'neutral', active = true, facing, locomotionRate = 1, outfit, dress, className, onReady, onMotionFrame, stableFraming = false, fitDress = false, hold = false, zoom = 1 }, ref,
+  { action = 'idle', expression = 'neutral', active = true, facing, locomotionRate = 1, outfit, dress, className, onReady, onStatusChange, onMotionFrame, stableFraming = false, fitDress = false, hold = false, zoom = 1 }, ref,
 ) {
   const canvas = useRef<HTMLCanvasElement>(null);
   const runtime = useRef<DoreumiRenderer | null>(null);
-  const latest = useRef({ action, expression, active, facing, locomotionRate, outfit, dress, onReady, onMotionFrame, zoom });
-  latest.current = { action, expression, active, facing, locomotionRate, outfit, dress, onReady, onMotionFrame, zoom };
-  const [status, setStatus] = useState<'loading' | 'ready' | 'fallback'>('loading');
+  const latest = useRef({ action, expression, active, facing, locomotionRate, outfit, dress, onReady, onStatusChange, onMotionFrame, zoom });
+  latest.current = { action, expression, active, facing, locomotionRate, outfit, dress, onReady, onStatusChange, onMotionFrame, zoom };
+  const [status, setStatus] = useState<DoreumiAvatarStatus>('loading');
   const [generation, setGeneration] = useState(0);
+  useEffect(() => { latest.current.onStatusChange?.(status); }, [status]);
   useImperativeHandle(ref, () => ({
     setAction: name => runtime.current?.setAction(name),
     seek: (name, time) => runtime.current?.seek(name, time), play: () => runtime.current?.play(),
@@ -79,7 +82,7 @@ export const DoreumiAvatar = forwardRef<DoreumiAvatarHandle, DoreumiAvatarProps>
     const controller = new AbortController(); let renderer: DoreumiRenderer | undefined, intersecting = true;
     const observer = new IntersectionObserver(entries => { intersecting = entries[0]?.isIntersecting ?? true; renderer?.setVisible(intersecting); }, { rootMargin: '48px' });
     observer.observe(element);
-    const lost = (event: Event) => { event.preventDefault(); renderer?.setActive(false); setStatus('fallback'); };
+    const lost = (event: Event) => { event.preventDefault(); controller.abort(); renderer?.setActive(false); setStatus('fallback'); };
     const restored = () => { if (generation < 1) setGeneration(value => value + 1); };
     element.addEventListener('webglcontextlost', lost); element.addEventListener('webglcontextrestored', restored);
     setStatus('loading');
@@ -90,10 +93,12 @@ export const DoreumiAvatar = forwardRef<DoreumiAvatarHandle, DoreumiAvatarProps>
       instance.setViewZoom(latest.current.zoom);
       instance.setAction(latest.current.action); if (latest.current.facing) instance.setFacing(latest.current.facing); instance.setActive(latest.current.active); instance.setVisible(intersecting);
       instance.setLocomotionRate(latest.current.locomotionRate);
-      if (latest.current.dress) void instance.setDress(latest.current.dress);
+      if (latest.current.dress) await instance.setDress(latest.current.dress);
       else if (latest.current.outfit) instance.setSeason(latest.current.outfit);
       await instance.setExpression(latest.current.expression);
-      if (!controller.signal.aborted) { setStatus('ready'); latest.current.onReady?.(); }
+      if (controller.signal.aborted) return;
+      instance.renderFirstFrame();
+      setStatus('ready'); latest.current.onReady?.();
     }).catch(error => {
       renderer?.dispose(); if (runtime.current === renderer) runtime.current = null;
       if (!controller.signal.aborted) { setStatus('fallback'); console.warn('Doreumi uses the approved static fallback.', error); }
@@ -114,9 +119,9 @@ export const DoreumiAvatar = forwardRef<DoreumiAvatarHandle, DoreumiAvatarProps>
   useEffect(() => { if (latest.current.dress) void runtime.current?.setDress(latest.current.dress); }, [dressId]);
   return (
     <div className={className} data-doreumi-avatar={status} aria-hidden="true" style={{ position: 'relative', width: '100%', height: '100%', minWidth: 0, pointerEvents: 'none' }}>
-      {/* The fallback is derived from the same approved triangles and neutral texture. */}
+      {/* A real renderer/asset failure keeps the existing accessible host button usable. */}
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src="/doreumi/fallback.webp" alt="" width={512} height={506} draggable={false} style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'contain', transform: `scale(${zoom})`, opacity: status === 'ready' ? 0 : 1 }} />
+      {status === 'fallback' && <img src="/doreumi/fallback.webp" alt="" width={512} height={506} draggable={false} style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'contain', transform: `scale(${zoom})` }} />}
       <canvas ref={canvas} style={stableFraming ? { position: 'absolute', display: 'block', top: `${-STABLE.top * 100}%`, left: `${-STABLE.side * 100}%`, width: `${(1 + 2 * STABLE.side) * 100}%`, height: `${(1 + STABLE.top + STABLE.bottom) * 100}%`, maxWidth: 'none', opacity: status === 'ready' ? 1 : 0 } : { display: 'block', width: '100%', height: '100%', opacity: status === 'ready' ? 1 : 0 }} />
     </div>
   );

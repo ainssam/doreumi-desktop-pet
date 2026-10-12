@@ -650,6 +650,11 @@
       "bytes": 6133316,
       "sha256": "ff950b38e254c5a92c4d198bc333cf9b5763883f5f824de06b8c688019f0afa1"
     },
+    "public/doreumi/immutable/registry.runtime.44da92d6906fe6ab227f8e72b6003158a2107a6adfe456802f6e8c548804fe38.json": {
+      "blob": "08fd7abc0ab5a5f891ba8534d78b5e4a0e295de2",
+      "bytes": 51781,
+      "sha256": "44da92d6906fe6ab227f8e72b6003158a2107a6adfe456802f6e8c548804fe38"
+    },
     "public/doreumi/immutable/registry.runtime.5024260d9c0040883b8eb3594945065edd9d4a6fd96f73230b5b948379e257b8.json": {
       "blob": "d204a29bd0c300247421830fce86f5712427059e",
       "bytes": 50521,
@@ -3296,9 +3301,9 @@
       "sha256": "b67ecc48dc8c55284bf6a22acd0b9dc90aca82e40bf051f2aae15d70ec1c5d24"
     },
     "public/doreumi/motions/registry.runtime.json": {
-      "blob": "d204a29bd0c300247421830fce86f5712427059e",
-      "bytes": 50521,
-      "sha256": "5024260d9c0040883b8eb3594945065edd9d4a6fd96f73230b5b948379e257b8"
+      "blob": "08fd7abc0ab5a5f891ba8534d78b5e4a0e295de2",
+      "bytes": 51781,
+      "sha256": "44da92d6906fe6ab227f8e72b6003158a2107a6adfe456802f6e8c548804fe38"
     },
     "public/doreumi/props/christmas-gift-sack.glb": {
       "blob": "a975ddc041f43941afd2d193c1ea8dacb8378c4f",
@@ -3691,9 +3696,9 @@
       "sha256": "377c94558221a6e2d1ee593b7c4f9f27ca57b8ca171226b24a6bbe6559879217"
     },
     "src/components/doreumi/DoreumiAvatar.tsx": {
-      "blob": "9e9f40dd5bb87447df91b5785562e14fa8aab8e1",
-      "bytes": 8811,
-      "sha256": "2d48454220373dc8d99e223a31c2878799fc6f3284fd549e5d61ccaed0c75d44"
+      "blob": "53ab4fe89711d8978b2647cd7b2ff721953ee69d",
+      "bytes": 9093,
+      "sha256": "b6a9d2ab699d4956e73f93b9f86de19cb4ed6c367e9c4973ef4381a5c5544758"
     },
     "src/components/doreumi/locomotion.ts": {
       "blob": "0075cf6c6b2ae7a58f153cd21829108534d71bd1",
@@ -3736,9 +3741,9 @@
       "sha256": "fc1920bd33e5c50426142820c0d9fad4cbb382170dcdc2c2d39fcee4a9d334cb"
     },
     "src/lib/doreumi/motion-asset-urls.ts": {
-      "blob": "06b02d8c1460f01d47eb2e1774497cdcb5fb767f",
+      "blob": "ac74af57a757ff362e6d757818f5dcb8c1b25332",
       "bytes": 385,
-      "sha256": "108164bfb06c4a1239d67a5725d1224534b551e154e5ac0575faba462f16a582"
+      "sha256": "0514bb0616c4af8c816930d4ffe0f363976b8451ed8a53a03f74f1a9e6e6dedc"
     },
     "src/lib/doreumi/motion-budget.ts": {
       "blob": "c05ba98b36d4eb92b134f742527d7e1d1b889645",
@@ -3846,9 +3851,9 @@
       "sha256": "5d99480b283510da14704a0c1bdddaa2d7df55ff6268b6be4958265b572c3f8f"
     },
     "src/lib/doreumi/motion-runtime.ts": {
-      "blob": "166ec859aea0ffaa9f76431cc4c7a25a0cefad0a",
-      "bytes": 48655,
-      "sha256": "be3f2123b3bee52f4b092805b3ebc80fb355b2c8fe912a8cdf2ee199102bec00"
+      "blob": "737e0a8a3c33c93f529777ae5186966c28e5b7ad",
+      "bytes": 49156,
+      "sha256": "1e4a52fec8d40821a665fc81578c81326646a3b116753540f18d0fb9ba35dc3c"
     },
     "src/lib/doreumi/motion-skin-probes.ts": {
       "blob": "7a6a2378e3b9e2220271d20ef2ed53975e26015a",
@@ -4041,9 +4046,9 @@
       "sha256": "0b40ae81b7c0aeb5649a0714a094fdb3482c237b0eb611731f20b99f1041d3b3"
     },
     "tests/doreumi-motion-loading.test.mts": {
-      "blob": "c0c962f5df0b66ccc92bf31722a8cc57e06be067",
-      "bytes": 4676,
-      "sha256": "bf85b503bff6c26d96e2dee54491d8c6766b90cad712f997b790b017d7fbda91"
+      "blob": "06ed1257d54fb314d8387789141b7c66bfc5d0b3",
+      "bytes": 13975,
+      "sha256": "ec1936cb05eaeeaa9eb886ff0e8ba788275221c2c0acd01ac7d65a5ecbe5e2da"
     },
     "tests/doreumi-personality.test.mjs": {
       "blob": "3855a6404ddecd514a58669108036fd03c3f8d15",
@@ -4140,8 +4145,8 @@
   "note": "도름스(DoRms) 개편 브랜치에서 scripts/doreumi/upstream-sync.mjs 로 맞춘 상태. 다음 동기화의 비교 기준이라 손으로 고치지 않는다.",
   "originalAssetsPin": "b2cb2a6f7646a298c577a2dbe510a2a75cb9161b",
   "source": {
-    "branch": "codex/vercel-efficiency-20261012",
-    "commit": "a67ad3cc037a795583d8d37641198f5f83b806b5",
+    "branch": "codex/share-library-audio4-20261012",
+    "commit": "8b46fb3bc5b9bcbd2785b99546b26eb6b8b47829",
     "dirty": false,
     "project": "DoRms"
   }
