@@ -3701,14 +3701,14 @@
       "sha256": "b6a9d2ab699d4956e73f93b9f86de19cb4ed6c367e9c4973ef4381a5c5544758"
     },
     "src/components/doreumi/locomotion.ts": {
-      "blob": "0075cf6c6b2ae7a58f153cd21829108534d71bd1",
-      "bytes": 22659,
-      "sha256": "d82ce7514b4cefe609b3cc7411ab035054de51d28b6949d8bc14a63885bd6ba1"
+      "blob": "66fa66178553f77386893e1f44d1bfd561b8d4c3",
+      "bytes": 22844,
+      "sha256": "da5e65b1a6ad71ec78cbf34202613c09f249bff88d998c6e85c1650f8e0961f2"
     },
     "src/components/doreumi/useDoreumiLocomotion.ts": {
-      "blob": "f91f09c0d71e3bfa5c9e721f67c6211e5d9ea027",
-      "bytes": 33227,
-      "sha256": "98f35b7b8df437469bc6f64b75417bb666d4cf4e16c6be015b3bb825f8f3228e"
+      "blob": "b2146dde8ccdde7e35fe2a1a6a5e33eeeb57ea2b",
+      "bytes": 34212,
+      "sha256": "497af2bcff33ebd1ba0be066dbe47d61e606fa964b4ba374bbe142e42949c8bf"
     },
     "src/components/doreumi/useDoreumiPersonality.ts": {
       "blob": "169abd55c6810eaaabcc14979b89898d72d6624c",
@@ -3991,9 +3991,9 @@
       "sha256": "28a53f9a1faa5264c2aaf69bb825db595a8be474f851bff39f0d420caf24df00"
     },
     "tests/doreumi-locomotion.test.mjs": {
-      "blob": "d7e8dba99e65a144767dbdc6fccf6492ae61e8f1",
-      "bytes": 17780,
-      "sha256": "849dbdfb9ee26b13f8744e6ae9ab51794226e153b06ab9d9b92c6b1f4a5ae131"
+      "blob": "03b1ae9835192a899f1f13bea501259ce7c3ad2a",
+      "bytes": 20264,
+      "sha256": "030a3d49d86292cb50fdf89d11d290e342b8a7e5c46287966809b1dab773bab1"
     },
     "tests/doreumi-material.test.mjs": {
       "blob": "48409f2beed4734caf7939fa0b3fadd5a4a89f0a",
@@ -4145,8 +4145,8 @@
   "note": "도름스(DoRms) 개편 브랜치에서 scripts/doreumi/upstream-sync.mjs 로 맞춘 상태. 다음 동기화의 비교 기준이라 손으로 고치지 않는다.",
   "originalAssetsPin": "b2cb2a6f7646a298c577a2dbe510a2a75cb9161b",
   "source": {
-    "branch": "codex/react-local-20260915",
-    "commit": "f9ba5a22300ba384fdd6ac29fa7abe62e020c2df",
+    "branch": "codex/ui-bugs-20261012",
+    "commit": "3fbd3fe4c2b3888067d006651027a8cdb6665f86",
     "dirty": false,
     "project": "DoRms"
   }
