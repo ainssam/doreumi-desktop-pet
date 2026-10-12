@@ -92,7 +92,7 @@ test('pause, resize, clipping and action changes never replay travel or send the
 
 // Exercise actual hook handlers with a minimal deterministic hook/RAF host.
 const vm = await import('node:vm');
-const hookBundle=await build({entryPoints:['src/components/doreumi/useDoreumiLocomotion.ts'],bundle:true,format:'cjs',write:false,plugins:[{name:'hooks',setup(builder){builder.onResolve({filter:/^react$/},()=>({path:'react',namespace:'fake'}));builder.onLoad({filter:/.*/,namespace:'fake'},()=>({contents:'export const useRef=(current)=>({current});export const useCallback=(fn)=>fn;export const useState=(value)=>[value,(next)=>globalThis.sets?.push(next)];export const useEffect=(fn)=>globalThis.effects.push(fn);'}));}}]});
+const hookBundle=await build({entryPoints:['src/components/doreumi/useDoreumiLocomotion.ts'],bundle:true,format:'cjs',write:false,plugins:[{name:'hooks',setup(builder){builder.onResolve({filter:/^react$/},()=>({path:'react',namespace:'fake'}));builder.onLoad({filter:/.*/,namespace:'fake'},()=>({contents:'export const useRef=(current)=>({current});export const useCallback=(fn)=>fn;export const useState=(value)=>[typeof value==="function"?value():value,(next)=>globalThis.sets?.push(next)];export const useEffect=(fn)=>globalThis.effects.push(fn);'}));}}]});
 function hookHarness(extra={}){
  const effects=[],sets=[],frames=new Map(),listeners=new Map();let sequence=0,clock=0,starts=0,captured=null,rectReads=0;
  const styles=new Map();
@@ -220,4 +220,45 @@ test('homeSide left with locomotion disabled stands on the left wall at once',()
  assert.equal(h.styles.get('--doreumi-rest-x'),undefined,'CSS 쉬는 자리(왼쪽 벽)가 그린다');
  assert.ok(h.sets.includes('left'),'화면에 그리는 벽(side 상태)도 왼쪽으로 바뀐다');
  h.dispose();
+});
+
+test('wall peek uses the same 52px visible box at each width while the shared default stays unchanged',()=>{
+ for(const width of [116,140,280])for(const viewportWidth of [320,390,1440]){
+  const bounds={...b,width,viewportWidth,wallVisibleWidth:52};
+  assert.equal(wallX('left',bounds)+width,52);
+  assert.equal(viewportWidth-wallX('right',bounds),52);
+  assert.equal(wallX('right',{...bounds,wallVisibleWidth:undefined}),viewportWidth-width+wallInset(width));
+ }
+});
+
+test('entering a quiet surface cancels imported travel at the previously resting wall',()=>{
+ for(const phone of [false,true]){
+  const h=hookHarness({phone,wallVisibleWidth:52});
+  h.api.onMotionFrame(stageFrame(0));h.api.onMotionFrame(stageFrame(1.2));
+  assert.ok(h.styles.has('--doreumi-rest-x'),'an imported clip established an interior position');
+  h.options.stageEnabled=false;h.api.dockAtRestSide();
+  assert.equal(h.frames.size,0);assert.equal(h.element.dataset.locomotion,'idle');
+  assert.equal(h.element.dataset.stageMoving,undefined);assert.equal(h.styles.get('--doreumi-rest-x'),undefined);
+  assert.equal(parseFloat(h.styles.get('--doreumi-drag-x')),wallX(phone?'left':'right',{...b,wallVisibleWidth:52}));
+  assert.equal(h.sets.filter(value=>typeof value==='boolean').at(-1),true,'the published state uses the wall peek');
+  assert.equal(h.api.excursion(),false,'personality cannot start the other travel mechanism');
+  h.api.onMotionFrame(stageFrame(1.4));assert.equal(h.styles.get('--doreumi-rest-x'),undefined);
+  h.dispose();
+ }
+});
+
+test('quiet-surface docking releases a drag and cancels an excursion already in flight',()=>{
+ for(const phase of ['drag','excursion']){
+  const h=hookHarness({wallVisibleWidth:52,ledges:[{left:120,right:260,top:690}]});
+  if(phase==='drag'){
+   h.api.pointerHandlers.onPointerDown(h.event(280,630));h.api.pointerHandlers.onPointerMove(h.event(120,350));
+   assert.equal(h.captured(),1);
+  }else assert.equal(h.api.excursion(),true);
+  h.options.stageEnabled=false;h.api.dockAtRestSide();
+  assert.equal(h.frames.size,0);assert.equal(h.captured(),null);assert.equal(h.element.dataset.locomotion,'idle');
+  assert.equal(parseFloat(h.styles.get('--doreumi-drag-x')),338);
+  assert.equal(h.api.excursion(),false);h.dispose();
+ }
+ const normal=hookHarness({wallVisibleWidth:52,ledges:[{left:120,right:260,top:690}]});
+ assert.equal(normal.api.excursion(),true,'ordinary pages retain autonomous excursions');normal.dispose();
 });

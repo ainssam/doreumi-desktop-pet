@@ -6,7 +6,7 @@ export type LocomotionPhase = "idle" | "dragged" | "falling" | "landing" | "runn
 export type WallSide = "left" | "right";
 /** 턱: 그 위에 서는 화면 구간. top 은 턱 윗면의 화면 y(발이 닿는 선). 휴대폰 홈 바닥 줄의 링크 묶음이 이것이다. */
 export type Ledge = { left: number; right: number; top: number };
-export type MotionBounds = { width: number; height: number; viewportWidth: number; viewportHeight: number; occupiedBottom: number; ledges?: readonly Ledge[] };
+export type MotionBounds = { width: number; height: number; viewportWidth: number; viewportHeight: number; occupiedBottom: number; ledges?: readonly Ledge[]; wallVisibleWidth?: number };
 /**
  * 턱 넘기 중인 상태. plan 은 경로, time 은 마지막으로 받은 동작 시각, waited 는 넘기를 시작한 뒤 흐른 시간(ms),
  * quiet 는 그 동작의 프레임이 마지막으로 온 뒤 흐른 시간(ms). 렌더러가 멈추면(그래픽 끊김 등) quiet 로 끝낸다.
@@ -36,7 +36,11 @@ export const floorY = (b: MotionBounds) => Math.max(0, b.viewportHeight - Math.m
  * (user direction 2026-09-26: 기본 위치를 더 측면에 붙게). CSS uses the same 11%. */
 export const WALL_INSET_RATIO = .11;
 export const wallInset = (width: number) => Math.round(width * WALL_INSET_RATIO);
-export const wallX = (side: WallSide, b: MotionBounds) => side === "left" ? -wallInset(b.width) : Math.max(-wallInset(b.width), b.viewportWidth - b.width + wallInset(b.width));
+export const wallX = (side: WallSide, b: MotionBounds) => {
+  const inset = typeof b.wallVisibleWidth === "number" && Number.isFinite(b.wallVisibleWidth)
+    ? b.width - Math.max(1, Math.min(b.width, b.wallVisibleWidth)) : wallInset(b.width);
+  return side === "left" ? -inset : Math.max(-inset, b.viewportWidth - b.width + inset);
+};
 export const nearestWall = (x: number, b: MotionBounds): WallSide => x + b.width / 2 < b.viewportWidth / 2 ? "left" : "right";
 /**
  * 자기 자리 벽: 휴대폰도 넓은 화면처럼 가까운 벽(2026-10-07 운영자 지시 "도름이가 pc에서처럼 왼쪽에 조금이라도 가까우면 왼쪽으로 가서 붙고,
