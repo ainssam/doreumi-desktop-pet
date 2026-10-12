@@ -3,7 +3,7 @@ import test from 'node:test';
 import { readFile } from 'node:fs/promises';
 import { build } from 'esbuild';
 const bundled = await build({entryPoints:['src/components/doreumi/locomotion.ts'], bundle:true, format:'esm', write:false});
-const {stepLocomotion, stepImportedStage, importedStageFits, floorY, wallX, wallInset, nearestWall, clampPosition} = await import('data:text/javascript;base64,'+Buffer.from(bundled.outputFiles[0].text).toString('base64'));
+const {stepLocomotion, stepImportedStage, importedStageFits, floorY, homeX, isWallDrop, wallX, wallInset, nearestWall, clampPosition} = await import('data:text/javascript;base64,'+Buffer.from(bundled.outputFiles[0].text).toString('base64'));
 const b={width:116,height:98,viewportWidth:390,viewportHeight:844,occupiedBottom:82};
 const initial={x:110,y:20,vy:0,elapsed:0,phase:'falling',side:'left'};
 test('ambient travel fits before takeoff, including a character resting exactly at the wall', async () => {
@@ -93,7 +93,7 @@ test('pause, resize, clipping and action changes never replay travel or send the
 // Exercise actual hook handlers with a minimal deterministic hook/RAF host.
 const vm = await import('node:vm');
 const hookBundle=await build({entryPoints:['src/components/doreumi/useDoreumiLocomotion.ts'],bundle:true,format:'cjs',write:false,plugins:[{name:'hooks',setup(builder){builder.onResolve({filter:/^react$/},()=>({path:'react',namespace:'fake'}));builder.onLoad({filter:/.*/,namespace:'fake'},()=>({contents:'export const useRef=(current)=>({current});export const useCallback=(fn)=>fn;export const useState=(value)=>[typeof value==="function"?value():value,(next)=>globalThis.sets?.push(next)];export const useEffect=(fn)=>globalThis.effects.push(fn);'}));}}]});
-function hookHarness(extra={}){
+function hookHarness(extra={},storage=new Map()){
  const effects=[],sets=[],frames=new Map(),listeners=new Map();let sequence=0,clock=0,starts=0,captured=null,rectReads=0;
  const styles=new Map();
  const geometry={left:250,top:600,width:116,height:98};
@@ -102,14 +102,14 @@ function hookHarness(extra={}){
  // The cache invalidation and clamp effects both listen to resize. Keep both,
  // as the real event target does, rather than overwriting the first listener.
  const events={addEventListener:(name,fn)=>{if(!listeners.has(name))listeners.set(name,new Set());listeners.get(name).add(fn);},removeEventListener:(name,fn)=>listeners.get(name)?.delete(fn)};
- const viewport={...events,innerWidth:390,innerHeight:844,matchMedia:()=>({matches:false})};
+ const viewport={...events,innerWidth:390,innerHeight:844,matchMedia:()=>({matches:false}),localStorage:{getItem:key=>storage.get(key)??null,setItem:(key,value)=>storage.set(key,String(value))}};
  const fixtureModule={exports:{}};
  vm.runInNewContext(hookBundle.outputFiles[0].text,{module:fixtureModule,exports:fixtureModule.exports,effects,sets,window:viewport,document:{...events,hidden:false},performance:{now:()=>clock},requestAnimationFrame:fn=>{frames.set(++sequence,fn);return sequence;},cancelAnimationFrame:id=>frames.delete(id)});
  const options={elementRef:{current:element},enabled:true,stageEnabled:true,occupiedBottom:82,resetKey:'/',onDragStart:()=>starts++,...extra};
  const api=fixtureModule.exports.useDoreumiLocomotion(options);
  const cleanups=effects.map(fn=>fn());
  const event=(x,y,other={})=>({isPrimary:true,button:0,buttons:1,pointerId:1,clientX:x,clientY:y,currentTarget:target,preventDefault(){},...other});
- return {api,event,frames,element,styles,sets,options,geometry,viewport,rectReads:()=>rectReads,clearReads:()=>{rectReads=0;},emit:name=>{for(const fn of [...(listeners.get(name)??[])])fn();},starts:()=>starts,captured:()=>captured,dispose:()=>cleanups.forEach(fn=>fn?.())};
+ return {api,event,frames,element,styles,sets,options,geometry,viewport,storage,rectReads:()=>rectReads,clearReads:()=>{rectReads=0;},emit:name=>{for(const fn of [...(listeners.get(name)??[])])fn();},starts:()=>starts,captured:()=>captured,dispose:()=>cleanups.forEach(fn=>fn?.())};
 }
 test('actual pointer handlers distinguish taps and drag, suppress release click, release capture and clean RAF',()=>{
  const h=hookHarness(),p=h.api.pointerHandlers;
@@ -261,4 +261,71 @@ test('quiet-surface docking releases a drag and cancels an excursion already in 
  }
  const normal=hookHarness({wallVisibleWidth:52,ledges:[{left:120,right:260,top:690}]});
  assert.equal(normal.api.excursion(),true,'ordinary pages retain autonomous excursions');normal.dispose();
+});
+
+const mobile={phone:true,mobileWallDocking:true,wallVisibleWidth:68};
+const dockKey='dorms:doreumi-phone-wall-docked';
+test('mobile floor home and wall boundary stay distinct on either side and at each supported body scale',()=>{
+ for(const scale of [.7,1,1.6])for(const viewportWidth of [320,390,600]){
+  const width=116*scale,bounds={...b,width,viewportWidth,wallVisibleWidth:68,homeVisibleWidth:width-wallInset(width)};
+  for(const side of ['left','right']){
+   const normal=homeX(side,bounds),edge=wallX(side,bounds);
+   assert.notEqual(normal,edge);
+   assert.equal(isWallDrop(normal,bounds),false,'a vertical lift from the ordinary home is not a shove to the wall');
+   assert.equal(isWallDrop(edge,bounds),true);
+   assert.equal(homeX(side,{...bounds,homeVisibleWidth:undefined}),edge,'wall mode uses the same boundary');
+   const state=stepLocomotion({...initial,side},16,bounds,true);
+   assert.equal(state.x,normal,'motion rest still uses the full visible home');
+  }
+ }
+});
+
+test('mobile default and legacy saved-side preferences return to the original floor home',()=>{
+ for(const side of ['left','right']){
+  const storage=new Map([['dorms:doreumi-phone-side',side]]),h=hookHarness(mobile,storage),p=h.api.pointerHandlers;
+  assert.equal(h.api.wallDocked,false,'the old side setting never implies a hidden wall choice');
+  h.geometry.left=side==='left'?-13:287;
+  const grab=h.geometry.left+58,target=side==='left'?130:260;
+  p.onPointerDown(h.event(grab,630));p.onPointerMove(h.event(target,400));p.onPointerUp(h.event(target,400));
+  assert.equal(h.element.dataset.locomotion,'falling');
+  pump(h);
+  assert.equal(parseFloat(h.styles.get('--doreumi-drag-x')),side==='left'?-13:287);
+  assert.equal(storage.get(dockKey),'false');h.dispose();
+ }
+});
+
+test('a deliberate mobile wall shove persists, blocks roaming, and an inside drop walks back home',()=>{
+ const storage=new Map(),h=hookHarness(mobile,storage),p=h.api.pointerHandlers;
+ h.geometry.left=-13;
+ p.onPointerDown(h.event(45,630));p.onPointerMove(h.event(0,450));p.onPointerUp(h.event(0,450));
+ assert.equal(storage.get(dockKey),'true');pump(h);
+ assert.equal(parseFloat(h.styles.get('--doreumi-drag-x')),-48);
+ h.api.onMotionFrame(stageFrame(0));h.api.onMotionFrame(stageFrame(1.2));
+ assert.equal(h.styles.get('--doreumi-rest-x'),undefined,'an imported travel clip cannot leave the chosen wall');
+ assert.equal(h.api.excursion(),false);
+ const reload=hookHarness(mobile,storage);assert.equal(reload.api.wallDocked,true);reload.dispose();
+ h.geometry.left=-48;
+ p.onPointerDown(h.event(22,630));p.onPointerMove(h.event(180,410));p.onPointerUp(h.event(180,410));
+ assert.equal(storage.get(dockKey),'false');
+ assert.equal(h.element.dataset.locomotion,'falling');assert.equal(parseFloat(h.styles.get('--doreumi-drag-x')),110,'release does not teleport to home');
+ const phases=new Set();let t=0;
+ for(let i=0;i<4000&&h.frames.size;i++){const[id,fn]=h.frames.entries().next().value;h.frames.delete(id);fn(t+=16);phases.add(h.element.dataset.locomotion);}
+ assert.ok(phases.has('landing')&&phases.has('running')&&phases.has('idle'));
+ assert.equal(parseFloat(h.styles.get('--doreumi-drag-x')),-13);
+ h.options.ledges=[{left:120,right:260,top:690}];h.geometry.left=-13;
+ assert.equal(h.api.excursion(),true,'ordinary roaming resumes after the explicit inside drop');h.dispose();
+});
+
+test('cancellation and forced message surfaces never persist an accidental wall preference',()=>{
+ for(const forceWallDock of [false,true]){
+  const storage=new Map(),h=hookHarness({...mobile,forceWallDock,stageEnabled:!forceWallDock},storage),p=h.api.pointerHandlers;
+  h.geometry.left=-13;
+  p.onPointerDown(h.event(45,630));p.onPointerMove(h.event(0,450));
+  if(forceWallDock)p.onPointerUp(h.event(0,450));else p.onPointerCancel(h.event(0,450));
+  pump(h);assert.equal(storage.has(dockKey),false);
+  assert.equal(parseFloat(h.styles.get('--doreumi-drag-x')),forceWallDock?-48:-13);
+  h.dispose();
+ }
+ const desktop=hookHarness({phone:false,mobileWallDocking:true,wallVisibleWidth:52},new Map([[dockKey,'true']]));
+ assert.equal(desktop.api.wallDocked,false,'desktop behavior does not inherit the mobile mode');desktop.dispose();
 });

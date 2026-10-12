@@ -89,7 +89,7 @@ vec3 dressRecolor(vec3 c, vec3 rest) {
 /** `#include <map_fragment>` 바로 뒤, 얼굴을 칠하기 전에 넣는다. vFaceRest(기준 자세 좌표)를 쓴다. 얼굴판의 맨살 층(cleanSkin)은 칠하지 않는다. */
 export const DRESS_FRAGMENT = `diffuseColor.rgb = dressRecolor(diffuseColor.rgb, vFaceRest);`;
 
-type LoadedItem = { id: string; objects: THREE.Object3D[] };
+type LoadedItem = { id: string; objects: THREE.Object3D[]; mirrored?: boolean };
 const HAND_MIRROR = new THREE.Matrix4().makeScale(-1, 1, 1);
 const handLetter = (hand: NonNullable<DoreumiDressItem['hand']>) => hand === 'leftHand' ? 'L' : 'R';
 const HAND_JOINT = /^(shoulder|arm|elbow|wrist|palm)([LR])$/;
@@ -157,6 +157,7 @@ export async function wearDressItem(loader: GLTFLoader, model: THREE.Object3D, i
   if (!item.asset) return { id: item.id, objects: [] };
   const gltf = await loader.parseAsync(await fetchItem(item.asset, signal), '');
   const objects: THREE.Object3D[] = [];
+  let mirrored = false;
   if (item.rigged) {
     let body: THREE.SkinnedMesh | undefined;
     model.traverse(object => { if (!body && object instanceof THREE.SkinnedMesh && object.name === 'Doreumi') body = object; });
@@ -165,7 +166,7 @@ export async function wearDressItem(loader: GLTFLoader, model: THREE.Object3D, i
     const bones = new Map(body.skeleton.bones.map(bone => [bone.name, bone]));
     const garments: THREE.SkinnedMesh[] = [];
     gltf.scene.traverse(object => { if (object instanceof THREE.SkinnedMesh) garments.push(object); });
-    const mirrored = !!item.hand && handLetter(item.hand) !== weightedHand(garments);
+    mirrored = !!item.hand && handLetter(item.hand) !== weightedHand(garments);
     // Validate every mesh before attaching any: a malformed later mesh cannot leave a partial item on the body.
     const bindings = garments.map(garment => {
       const joints = garment.skeleton.bones.map(bone => bones.get(mirrored && HAND_JOINT.test(bone.name) ? oppositeJoint(bone.name) : bone.name));
@@ -199,7 +200,7 @@ export async function wearDressItem(loader: GLTFLoader, model: THREE.Object3D, i
     root.traverse(object => { if (object instanceof THREE.Mesh) object.frustumCulled = false; });
     anchor.add(root); objects.push(root);
   }
-  return { id: item.id, objects };
+  return { id: item.id, objects, mirrored };
 }
 
 export function takeOffDressItem(loaded: LoadedItem) {

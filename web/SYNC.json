@@ -3701,14 +3701,14 @@
       "sha256": "b6a9d2ab699d4956e73f93b9f86de19cb4ed6c367e9c4973ef4381a5c5544758"
     },
     "src/components/doreumi/locomotion.ts": {
-      "blob": "66fa66178553f77386893e1f44d1bfd561b8d4c3",
-      "bytes": 22844,
-      "sha256": "da5e65b1a6ad71ec78cbf34202613c09f249bff88d998c6e85c1650f8e0961f2"
+      "blob": "e40c03cafcd72ada146df77812530d10015389bf",
+      "bytes": 23460,
+      "sha256": "18ab989319a745206d88e24032546cff1c5c1cb764b63e3b2230f6cd23b08496"
     },
     "src/components/doreumi/useDoreumiLocomotion.ts": {
-      "blob": "b2146dde8ccdde7e35fe2a1a6a5e33eeeb57ea2b",
-      "bytes": 34212,
-      "sha256": "497af2bcff33ebd1ba0be066dbe47d61e606fa964b4ba374bbe142e42949c8bf"
+      "blob": "109208683ca37843d70f2a175947882b75d62f83",
+      "bytes": 36085,
+      "sha256": "e6413e1d7b631ed85cc0790b27efc28c3daae951cd012d68d2554260b30f93d2"
     },
     "src/components/doreumi/useDoreumiPersonality.ts": {
       "blob": "169abd55c6810eaaabcc14979b89898d72d6624c",
@@ -3726,9 +3726,14 @@
       "sha256": "79a88b23fcef78cc416fc4897b47bc9ba6b7ec075fcf91b7b4e9fc99318db3db"
     },
     "src/lib/doreumi/itemFile.ts": {
-      "blob": "d5afd531475677192b59f6adae0afa09fc8ffa84",
-      "bytes": 12294,
-      "sha256": "acc8d971fb7140fe634843194a696486944bab0b1bc5f86260640741c1a0aec4"
+      "blob": "d478e7801db66e7b3ae6c6c0b38c47e0c7e76791",
+      "bytes": 13367,
+      "sha256": "793b24c1f4a87a8ee6820e34f7b49fab39b3d5ce1a2b0410ed85dff9c870f49d"
+    },
+    "src/lib/doreumi/itemLight.ts": {
+      "blob": "03886a66128cec30232d278d758217616b58c2da",
+      "bytes": 2964,
+      "sha256": "c0c1299057352d51b10f0a487ec4e1d482ea580e1addfb29380cfac7b6e4401d"
     },
     "src/lib/doreumi/items.ts": {
       "blob": "3e1f3eab36a3eef3d792f7345503580772bc39db",
@@ -3776,9 +3781,9 @@
       "sha256": "bd91afd20e1a87ae99694cb74e3f9f0b2d598a453cd18e74d9a066d962251dbd"
     },
     "src/lib/doreumi/motion-dress.ts": {
-      "blob": "17c20fa868fc56824729385fd61613a24e2288b4",
-      "bytes": 13820,
-      "sha256": "87dba2d26f4e9c118aee155a354094d640f889446100a7fb3c64815c4faa5ba1"
+      "blob": "119420f26d4c3c30ff9c6f32b734e3c09acc8458",
+      "bytes": 13868,
+      "sha256": "a1d1e71ebfaead9b47214f96d17dd6f59f00eea9f4f64a677ea824bce2970bbf"
     },
     "src/lib/doreumi/motion-environment-anchor.ts": {
       "blob": "43ec8cb889df3b097010981e99c3544881336d66",
@@ -3981,9 +3986,14 @@
       "sha256": "e734d1afcc4d6cff25a1f209390209a03d745fda0b3d7698531a4ee3b8a50ead"
     },
     "tests/doreumi-item-file.test.mts": {
-      "blob": "8dd3d75e041ed6dc94f501dc4fe6f2663379f54b",
-      "bytes": 4442,
-      "sha256": "c4c91889cc2fdc5a31e3515f2a14977cfd357c859d88c1f9ec4716bae27d128b"
+      "blob": "80ff1376c955ed0bdd862e428552f976b7bd2885",
+      "bytes": 6225,
+      "sha256": "9f5cc937cd176687f91d4434853442d29bda638ff996d3289bddf70d8d580c47"
+    },
+    "tests/doreumi-item-light.test.mjs": {
+      "blob": "519a0910bddbad2dcfdeda0a59c7b0077adf62b8",
+      "bytes": 2977,
+      "sha256": "ffe2db45e75b7b757e6c6a6b32cdc9f5084b1228fbb2c5a00f83df22978f2345"
     },
     "tests/doreumi-ledge-step.test.mjs": {
       "blob": "f0773a67742a094e8678f38b5939129b1894cd7f",
@@ -3991,9 +4001,9 @@
       "sha256": "28a53f9a1faa5264c2aaf69bb825db595a8be474f851bff39f0d420caf24df00"
     },
     "tests/doreumi-locomotion.test.mjs": {
-      "blob": "03b1ae9835192a899f1f13bea501259ce7c3ad2a",
-      "bytes": 20264,
-      "sha256": "030a3d49d86292cb50fdf89d11d290e342b8a7e5c46287966809b1dab773bab1"
+      "blob": "37c4bd615a289d281582df42d742db0aedd964e2",
+      "bytes": 24603,
+      "sha256": "b039bcd58ad8d5665f6aec6e8344892190185dba3b8252aff8968547ef5633ff"
     },
     "tests/doreumi-material.test.mjs": {
       "blob": "48409f2beed4734caf7939fa0b3fadd5a4a89f0a",
@@ -4145,8 +4155,8 @@
   "note": "도름스(DoRms) 개편 브랜치에서 scripts/doreumi/upstream-sync.mjs 로 맞춘 상태. 다음 동기화의 비교 기준이라 손으로 고치지 않는다.",
   "originalAssetsPin": "b2cb2a6f7646a298c577a2dbe510a2a75cb9161b",
   "source": {
-    "branch": "codex/ui-bugs-20261012",
-    "commit": "3fbd3fe4c2b3888067d006651027a8cdb6665f86",
+    "branch": "codex/shop-item-lighting-20261013",
+    "commit": "9942a523bf52c65ef47e4926b00b63cf14d13e55",
     "dirty": false,
     "project": "DoRms"
   }
