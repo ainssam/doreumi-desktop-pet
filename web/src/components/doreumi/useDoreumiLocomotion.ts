@@ -2,7 +2,7 @@
 
 import { doreumiMotionRest } from "@/lib/doreumi/motionRest";
 import { useCallback, useEffect, useRef, useState, type PointerEvent as ReactPointerEvent, type RefObject } from "react";
-import { applyStepFrame, clampPosition, finishStep, homeWall, importedStageFits, restYAt, startExcursion, stepImportedStage, stepLocomotion, surfaceAt, wallX, type ImportedStageState, type Ledge, type MotionBounds, type MotionState, type LocomotionPhase, type WallSide } from "./locomotion";
+import { applyStepFrame, clampPosition, finishStep, homeWall, homeX, importedStageFits, isWallDrop, restYAt, startExcursion, stepImportedStage, stepLocomotion, surfaceAt, wallInset, wallX, type ImportedStageState, type Ledge, type MotionBounds, type MotionState, type LocomotionPhase, type WallSide } from "./locomotion";
 import type { LedgeStyle } from "@/lib/doreumi/motion-ledge";
 import type { DoreumiStageFrame, DoreumiStageHandler } from "@/lib/doreumi/motion-travel";
 import type { LibraryMotion } from "@/lib/doreumi/motion-library";
@@ -19,6 +19,10 @@ type Options = {
   homeSide?: WallSide | null;
   /** Visible avatar-box width at either wall; omitted keeps the original host geometry. */
   wallVisibleWidth?: number;
+  /** Phones keep the original floor position until a member deliberately pushes the body against a wall. */
+  mobileWallDocking?: boolean;
+  /** A surface such as messages temporarily requires the wall without overwriting the member's choice. */
+  forceWallDock?: boolean;
   /** CSS 가 쉬는 자리를 그리는 바닥(화면 아래에서 상자 바닥까지의 거리), 벽마다. 턱 위에서 쉬면 턱 높이, 아니면 null(줄 바닥). */
   restBottoms?: { left: number | null; right: number | null };
   /** 개발용 확인: 턱 넘기 방식을 고정한다(운영에서는 쓰지 않는다). */
@@ -34,14 +38,24 @@ type Pointer = { id: number; target: HTMLElement; startX: number; startY: number
  * 화면이 정한 벽(homeSide, 제작실 작업판)으로 간 것은 사용자의 선택이 아니라 기억하지 않는다. 저장이 막힌 브라우저는 이번 방문 동안만 따른다.
  */
 const PHONE_SIDE_KEY = "dorms:doreumi-phone-side";
+const PHONE_DOCK_KEY = "dorms:doreumi-phone-wall-docked";
 function storedPhoneSide(): WallSide | null {
   try { const value = window.localStorage.getItem(PHONE_SIDE_KEY); return value === "left" || value === "right" ? value : null; } catch { return null; }
 }
 function rememberPhoneSide(side: WallSide) {
   try { window.localStorage.setItem(PHONE_SIDE_KEY, side); } catch { /* 저장이 막힌 브라우저는 이번 방문 동안만 기억한다 */ }
 }
+function storedWallDock(): boolean {
+  try { return window.localStorage.getItem(PHONE_DOCK_KEY) === "true"; } catch { return false; }
+}
+function rememberWallDock(docked: boolean) {
+  try { window.localStorage.setItem(PHONE_DOCK_KEY, String(docked)); } catch { /* Keep this visit's choice when storage is unavailable. */ }
+}
 export function useDoreumiLocomotion(options: Options) {
   const latest = useRef(options); latest.current = options;
+  const [wallDocked, setWallDocked] = useState(() => typeof window !== "undefined" && storedWallDock());
+  const wallDockedRef = useRef(wallDocked);
+  const manualWallDock = useCallback(() => !!latest.current.phone && !!latest.current.mobileWallDocking && wallDockedRef.current, []);
   // 처음 그릴 벽: 휴대폰은 사용자가 마지막으로 놓은 벽(없으면 왼쪽), 넓은 화면은 오른쪽(휴대폰 첫 화면에서 오른쪽에 섰다가 왼쪽으로 달려가지 않게).
   // 화면이 정한 벽(homeSide, 제작실)은 아래 효과가 지금 벽에서 그 벽으로 달려가게 맡는다.
   const [firstSide] = useState<WallSide>(() => options.phone ? (typeof window !== "undefined" ? storedPhoneSide() : null) ?? "left" : "right");
@@ -76,7 +90,8 @@ export function useDoreumiLocomotion(options: Options) {
       boxSize.current = size;
     }
     const view = window.visualViewport;
-    return { width: size.width, height: size.height, viewportWidth: window.innerWidth, viewportHeight: view ? view.height + view.offsetTop : window.innerHeight, occupiedBottom: latest.current.occupiedBottom, ledges: latest.current.ledges, wallVisibleWidth: latest.current.wallVisibleWidth };
+    const floorHome = latest.current.phone && latest.current.mobileWallDocking && !wallDockedRef.current && !latest.current.forceWallDock;
+    return { width: size.width, height: size.height, viewportWidth: window.innerWidth, viewportHeight: view ? view.height + view.offsetTop : window.innerHeight, occupiedBottom: latest.current.occupiedBottom, ledges: latest.current.ledges, wallVisibleWidth: latest.current.wallVisibleWidth, homeVisibleWidth: floorHome ? size.width - wallInset(size.width) : undefined };
   }, []);
   /** 놓았을 때·공연 뒤 돌아갈 벽: 화면이 정한 벽(homeSide)이 먼저, 없으면 가까운 벽(휴대폰도 같다, 2026-10-07). */
   const homeOf = useCallback((x: number, b: MotionBounds): WallSide => latest.current.homeSide ?? homeWall(x, b, latest.current.phone), []);
@@ -117,6 +132,7 @@ export function useDoreumiLocomotion(options: Options) {
   }, [bounds]);
   const canPlayMotion = useCallback((motion: LibraryMotion) => {
     if (!motion.travel) return true;
+    if (manualWallDock()) return false;
     const node = latest.current.elementRef.current, canvas = node?.querySelector('canvas');
     if (!node || !canvas) return false;
     // Measure the avatar box, not the canvas: with stable framing the canvas overflows the box, and the
@@ -127,7 +143,7 @@ export function useDoreumiLocomotion(options: Options) {
     const pixelsPerUnit = rect.height / (2 * Math.min(1.34, halfHeight));
     const left = node.getBoundingClientRect().left;
     return importedStageFits(motion.travel, left, stageBoundsOf(bounds(), left), pixelsPerUnit);
-  }, [bounds, stageBoundsOf]);
+  }, [bounds, manualWallDock, stageBoundsOf]);
   const releaseCapture = useCallback(() => {
     const held = pointer.current; pointer.current = null;
     if (held?.target.hasPointerCapture(held.id)) held.target.releasePointerCapture(held.id);
@@ -155,13 +171,13 @@ export function useDoreumiLocomotion(options: Options) {
     if (sample.fixedEnvironment) {
       const rect = node.getBoundingClientRect();
       environmentAnchor.current = stepEnvironmentAnchor(environmentAnchor.current, sample.action, rect.left, rect.top,
-        latest.current.enabled && latest.current.stageEnabled !== false && !reduced && !pointer.current && state.current.phase === "idle");
+        latest.current.enabled && latest.current.stageEnabled !== false && !manualWallDock() && !reduced && !pointer.current && state.current.phase === "idle");
       if (stage.current) setRestSide(state.current.side);
       stage.current = null; node.removeAttribute("data-stage-moving");
       return environmentAnchor.current?.cancelled ? { yaw: 0, stop: true } : undefined;
     }
     environmentAnchor.current = null;
-    if (!latest.current.enabled || latest.current.stageEnabled === false || reduced || pointer.current || state.current.phase !== "idle") { const activeStage = stage.current; stopStage(); return activeStage ? { yaw: activeStage.yaw, stop: true } : undefined; }
+    if (!latest.current.enabled || latest.current.stageEnabled === false || manualWallDock() || reduced || pointer.current || state.current.phase !== "idle") { const activeStage = stage.current; stopStage(); return activeStage ? { yaw: activeStage.yaw, stop: true } : undefined; }
     if (!sample.travel || !sample.action.startsWith("meshy:")) { if (stage.current) setRestSide(state.current.side); stage.current = null; node.removeAttribute("data-stage-moving"); return; }
     // Refresh at motion entry; its subsequent frames keep the same body box.
     // Re-reading after a position write forces the entire mobile page to lay out.
@@ -178,7 +194,7 @@ export function useDoreumiLocomotion(options: Options) {
       if (published.current.side !== nextSide) { published.current.side = nextSide; setSide(nextSide); }
     }
     return result.decision;
-  }, [bounds, homeOf, paint, stageBoundsOf, stopStage]);
+  }, [bounds, homeOf, manualWallDock, paint, stageBoundsOf, stopStage]);
   const reset = useCallback((markReturn = true) => {
     if (frame.current !== null) cancelAnimationFrame(frame.current);
     frame.current = null; held.current = false; releaseCapture(); stopStage();
@@ -207,7 +223,7 @@ export function useDoreumiLocomotion(options: Options) {
     };
     frame.current = requestAnimationFrame(tick);
   }, [bounds, paint]);
-  const finish = useCallback(() => {
+  const finish = useCallback((rememberPlacement = false) => {
     const held = pointer.current;
     if (!held) return;
     releaseCapture();
@@ -215,10 +231,18 @@ export function useDoreumiLocomotion(options: Options) {
     suppress.current = true;
     // Let go near the floor and Doreumi still hops up a little and lands, so every drop reads as
     // fall → landing → run instead of sliding off in whatever pose it was held (user direction 2026-09-26).
-    const b = bounds(), gap = restYAt(state.current.x, b) - state.current.y;
+    let b = bounds();
     const landing = homeOf(state.current.x, b);
     // 휴대폰에서 사용자가 직접 놓은 쪽은 기억해 다음에도 그쪽에 선다(화면이 벽을 정한 곳은 제외).
-    if (latest.current.phone && !latest.current.homeSide) rememberPhoneSide(landing);
+    if (rememberPlacement && latest.current.phone && !latest.current.homeSide) {
+      rememberPhoneSide(landing);
+      if (latest.current.mobileWallDocking && !latest.current.forceWallDock) {
+        const docked = isWallDrop(state.current.x, b);
+        wallDockedRef.current = docked; setWallDocked(docked); rememberWallDock(docked);
+        b = bounds(true);
+      }
+    }
+    const gap = restYAt(state.current.x, b) - state.current.y;
     state.current = { ...state.current, phase: "falling", vy: gap < 56 ? -520 : 0, elapsed: 0, side: landing, targetX: null, heading: undefined, excursion: null, step: null, pendingStep: null };
     returnPending.current = false;
     paint(); animate();
@@ -248,6 +272,7 @@ export function useDoreumiLocomotion(options: Options) {
     state.current = { ...state.current, ...clampPosition(event.clientX - held.offsetX, event.clientY - held.offsetY, bounds()), phase: "dragged" };
     paint();
   }, [bounds, finish, paint]);
+  const onPointerUp = useCallback((event: ReactPointerEvent<HTMLElement>) => { if (event.pointerId === pointer.current?.id) finish(true); }, [finish]);
   const onPointerEnd = useCallback((event: ReactPointerEvent<HTMLElement>) => { if (event.pointerId === pointer.current?.id) finish(); }, [finish]);
   const suspend = useCallback((value: boolean) => { suspended.current = value; }, []);
   const hold = useCallback((value: boolean) => { held.current = value; }, []);
@@ -292,7 +317,7 @@ export function useDoreumiLocomotion(options: Options) {
     const b = bounds(), side: WallSide = latest.current.homeSide ?? state.current.side;
     positioned.current = false; latest.current.elementRef.current?.style.removeProperty("--doreumi-rest-x");
     const onLedge = b.ledges?.some(ledge => state.current.x + b.width / 2 >= ledge.left && state.current.x + b.width / 2 <= ledge.right);
-    if (!onLedge && Math.abs(state.current.x - wallX(side, b)) <= 1) { state.current = { ...state.current, side }; paint(); return false; }
+    if (!onLedge && Math.abs(state.current.x - homeX(side, b)) <= 1) { state.current = { ...state.current, side }; paint(); return false; }
     state.current = { ...state.current, y: restYAt(state.current.x, b), side, phase: "running", elapsed: 0 };
     paint(); animate();
     return true;
@@ -304,7 +329,7 @@ export function useDoreumiLocomotion(options: Options) {
   }, [reset]);
   const excursion = useCallback(() => {
     if (returnPending.current) return resumeHome();
-    if (!latest.current.enabled || latest.current.stageEnabled === false || pointer.current || frame.current !== null) return false;
+    if (!latest.current.enabled || latest.current.stageEnabled === false || manualWallDock() || pointer.current || frame.current !== null) return false;
     const reduced = latest.current.reducedMotion ?? doreumiMotionRest();
     if (reduced) return false;
     const node = latest.current.elementRef.current, b = bounds();
@@ -316,7 +341,7 @@ export function useDoreumiLocomotion(options: Options) {
     stopStage(); positioned.current = false; node.style.removeProperty("--doreumi-rest-x");
     state.current = next; paint(); animate();
     return true;
-  }, [animate, bounds, homeOf, paint, resumeHome, stopStage]);
+  }, [animate, bounds, homeOf, manualWallDock, paint, resumeHome, stopStage]);
   useEffect(() => {
     const keyChanged = lastResetKey.current !== options.resetKey;
     lastResetKey.current = options.resetKey;
@@ -356,7 +381,7 @@ export function useDoreumiLocomotion(options: Options) {
           // 공중에 있던 도름이는 바닥으로 순간 이동하지 않고 그 높이에서 떨어진 뒤 달려간다(검증 F3).
           state.current = { ...state.current, ...clampPosition(from.left, from.top, b), vy: 0, side, phase: "falling", elapsed: 0, targetX: null, heading: undefined };
           paint(); animate();
-        } else if (Math.abs(x - wallX(side, b)) > 1) {
+        } else if (Math.abs(x - homeX(side, b)) > 1) {
           state.current = { ...state.current, x, y: restYAt(x, { ...b, ledges: [] }), vy: 0, side, phase: "running", elapsed: 0, targetX: null, heading: undefined };
           paint(); animate();
         }
@@ -423,5 +448,5 @@ export function useDoreumiLocomotion(options: Options) {
   }, [bounds, paint, releaseCapture, reset, resumeHome]);
   // 무대 걷기 밖에서 가만히 서면(달리기·끌기·떨어짐이 끝나면) 그 벽이 쉬는 벽이다.
   useEffect(() => { if (phase === "idle" && !stage.current) setRestSide(side); }, [phase, side]);
-  return { phase, side, restSide, atRestSide, motion, excursion, interrupt, reset, hold, suspend, settleHere, consumeClick, forgetRest, dockAtRestSide, onMotionFrame, canPlayMotion, pointerHandlers: { onPointerDown, onPointerMove, onPointerUp: onPointerEnd, onPointerCancel: onPointerEnd, onLostPointerCapture: onPointerEnd } };
+  return { phase, side, restSide, atRestSide, wallDocked: !!options.phone && !!options.mobileWallDocking && wallDocked, motion, excursion, interrupt, reset, hold, suspend, settleHere, consumeClick, forgetRest, dockAtRestSide, onMotionFrame, canPlayMotion, pointerHandlers: { onPointerDown, onPointerMove, onPointerUp, onPointerCancel: onPointerEnd, onLostPointerCapture: onPointerEnd } };
 }

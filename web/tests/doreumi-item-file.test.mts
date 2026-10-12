@@ -65,3 +65,27 @@ test('rigged garments cannot carry non-joint parts named like Doreumi bones', ()
   const ok = checkItemGlb(glb({ nodes: nodes.slice(0, 2), skins: [{ joints: [1] }] }), { rigged: true, bone: null });
   assert.equal(ok.ok, true, JSON.stringify(ok));
 });
+
+test('optional item lights pass only on valid meshes with bounded settings', () => {
+  const light = { kind: 'spot', color: '#ffd080' };
+  const node = { name: 'bulb', mesh: 0, extras: { doreumiLight: light } };
+  assert.equal(checkItemGlb(glb({ nodes: [node] }), rigid).ok, true);
+  for (const bad of [null, [], {}, { ...light, kind: 'directional' }, { ...light, intensity: 19 }, { ...light, distance: 0 }, { ...light, angle: 61 }, { ...light, position: [4, 0, 0] }, { ...light, direction: [0, 0, 0] }, { ...light, bone: 'head' }, { ...light, castShadow: true }]) {
+    assert.equal(checkItemGlb(glb({ nodes: [{ ...node, extras: { doreumiLight: bad } }] }), rigid).ok, false, JSON.stringify(bad));
+  }
+  assert.equal(checkItemGlb(glb({ nodes: [node, { ...node, name: 'second' }] }), rigid).ok, false);
+  assert.equal(checkItemGlb(glb({ nodes: [{ name: 'empty', extras: node.extras }] }), rigid).ok, false);
+  assert.equal(checkItemGlb(glb({ nodes: [{ ...node, mesh: 9 }] }), rigid).ok, false);
+});
+
+test('rigged light needs a skinned carrier and explicit known bone', () => {
+  const meta = { rigged: true, bone: null };
+  const garment = { name: 'shirt', mesh: 0, skin: 0, extras: { doreumiLight: { kind: 'point', color: '#abcdef', bone: 'torso' } } };
+  const fixture = { nodes: [{ name: 'torso' }, garment], skins: [{ joints: [0] }] };
+  assert.equal(checkItemGlb(glb(fixture), meta).ok, true);
+  for (const bone of [undefined, '', 'tail']) {
+    const nodes = [{ name: 'torso' }, { ...garment, extras: { doreumiLight: { ...garment.extras.doreumiLight, bone } } }];
+    assert.equal(checkItemGlb(glb({ ...fixture, nodes }), meta).ok, false);
+  }
+  assert.equal(checkItemGlb(glb({ ...fixture, nodes: [{ name: 'torso' }, { ...garment, skin: undefined }] }), meta).ok, false);
+});

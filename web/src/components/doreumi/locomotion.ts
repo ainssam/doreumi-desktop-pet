@@ -6,7 +6,7 @@ export type LocomotionPhase = "idle" | "dragged" | "falling" | "landing" | "runn
 export type WallSide = "left" | "right";
 /** 턱: 그 위에 서는 화면 구간. top 은 턱 윗면의 화면 y(발이 닿는 선). 휴대폰 홈 바닥 줄의 링크 묶음이 이것이다. */
 export type Ledge = { left: number; right: number; top: number };
-export type MotionBounds = { width: number; height: number; viewportWidth: number; viewportHeight: number; occupiedBottom: number; ledges?: readonly Ledge[]; wallVisibleWidth?: number };
+export type MotionBounds = { width: number; height: number; viewportWidth: number; viewportHeight: number; occupiedBottom: number; ledges?: readonly Ledge[]; wallVisibleWidth?: number; homeVisibleWidth?: number };
 /**
  * 턱 넘기 중인 상태. plan 은 경로, time 은 마지막으로 받은 동작 시각, waited 는 넘기를 시작한 뒤 흐른 시간(ms),
  * quiet 는 그 동작의 프레임이 마지막으로 온 뒤 흐른 시간(ms). 렌더러가 멈추면(그래픽 끊김 등) quiet 로 끝낸다.
@@ -40,6 +40,13 @@ export const wallX = (side: WallSide, b: MotionBounds) => {
   const inset = typeof b.wallVisibleWidth === "number" && Number.isFinite(b.wallVisibleWidth)
     ? b.width - Math.max(1, Math.min(b.width, b.wallVisibleWidth)) : wallInset(b.width);
   return side === "left" ? -inset : Math.max(-inset, b.viewportWidth - b.width + inset);
+};
+/** The movement boundary and the everyday resting place can differ on phones. */
+export const homeX = (side: WallSide, b: MotionBounds) => b.homeVisibleWidth === undefined ? wallX(side, b) : wallX(side, { ...b, wallVisibleWidth: b.homeVisibleWidth });
+/** A deliberate push past halfway between the ordinary body position and the wall peek. */
+export const isWallDrop = (x: number, b: MotionBounds) => {
+  const ordinary = { ...b, wallVisibleWidth: undefined };
+  return x <= (wallX("left", b) + wallX("left", ordinary)) / 2 || x >= (wallX("right", b) + wallX("right", ordinary)) / 2;
 };
 export const nearestWall = (x: number, b: MotionBounds): WallSide => x + b.width / 2 < b.viewportWidth / 2 ? "left" : "right";
 /**
@@ -114,10 +121,10 @@ export function stepLocomotion(state: MotionState, milliseconds: number, b: Moti
   const next: MotionState = { ...state, ...clampPosition(state.x, state.y, b) };
   if (state.phase === "idle" || state.phase === "dragged") return next;
   // 목적지는 늘 갈 수 있는 자리로 맞춘다(벽 너머 목적지에서 영원히 제자리 달리기 방지).
-  const home = () => clampPosition(state.targetX ?? wallX(state.side, b), 0, b).x;
+  const home = () => clampPosition(state.targetX ?? homeX(state.side, b), 0, b).x;
   if (reducedMotion) {
     // 움직임 줄이기: 넘기·나들이 없이 곧바로 자기 자리로.
-    const x = wallX(state.side, b);
+    const x = homeX(state.side, b);
     return { ...next, x, y: restYAt(x, b), vy: 0, elapsed: 0, phase: "idle", step: null, pendingStep: null, excursion: null, targetX: null, heading: undefined };
   }
   if (state.phase === "falling") {

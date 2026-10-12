@@ -1,5 +1,6 @@
 import "server-only";
 import { createHash } from "node:crypto";
+import { parseItemLight, ITEM_LIGHT_MAX_PER_ITEM } from "./itemLight";
 
 /**
  * 회원이 AI 와 만든 도름이 아이템 파일(.glb) 검사. 파일은 남이 보낸 입력이라 여기서 형식 경계를 전부 닫는다.
@@ -30,7 +31,7 @@ type Gltf = {
   bufferViews?: { byteLength?: number; byteOffset?: number; buffer?: number }[];
   accessors?: { count?: number }[];
   meshes?: { primitives?: { indices?: number; attributes?: Record<string, number>; mode?: number; targets?: unknown[] }[] }[];
-  nodes?: { name?: string; skin?: number; mesh?: number }[];
+  nodes?: { name?: string; skin?: number; mesh?: number; extras?: { doreumiLight?: unknown } }[];
   skins?: { joints?: number[] }[];
   extensionsUsed?: string[];
   extensionsRequired?: string[];
@@ -71,6 +72,16 @@ export function checkItemGlb(bytes: Uint8Array, meta: { rigged: boolean; bone: s
     if (!size || size.width > MAX_IMAGE_SIDE || size.height > MAX_IMAGE_SIDE) return { ok: false, reason: `그림 크기는 가로세로 ${MAX_IMAGE_SIDE}픽셀 이하여야 해요.` };
   }
   if ((gltf.nodes ?? []).length > MAX_NODES) return { ok: false, reason: "부품이 너무 많아요." };
+  let lights = 0;
+  for (const node of gltf.nodes ?? []) {
+    if (!node?.extras || !Object.hasOwn(node.extras, "doreumiLight")) continue;
+    if (++lights > ITEM_LIGHT_MAX_PER_ITEM) return { ok: false, reason: "불빛은 아이템 하나에 한 개만 넣을 수 있어요." };
+    if (!Number.isInteger(node.mesh) || !gltf.meshes?.[node.mesh!] || (meta.rigged && (!Number.isInteger(node.skin) || !gltf.skins?.[node.skin!]))) {
+      return { ok: false, reason: "불빛은 아이템의 모양에 붙여 주세요. 옷의 불빛은 뼈대에 묶인 부분에 붙여요." };
+    }
+    if (gltf.meshes[node.mesh!].primitives?.length !== 1) return { ok: false, reason: "불빛을 붙인 부품에는 재질을 하나만 써 주세요." };
+    if (!parseItemLight(node.extras.doreumiLight, meta.rigged)) return { ok: false, reason: "불빛 설정을 확인해 주세요. 제작 도구의 helpers.addLight로 색·밝기·거리·방향을 정할 수 있어요." };
+  }
   if ((gltf.animations ?? []).length) return { ok: false, reason: "아이템에는 동작을 넣지 않아요. 도름이 몸을 따라 움직여요." };
 
   // 같은 모양을 여러 번 쓰면 그만큼 그려지므로, 모양이 아니라 모양을 쓰는 부품마다 센다.
