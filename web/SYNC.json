@@ -3706,9 +3706,9 @@
       "sha256": "d82ce7514b4cefe609b3cc7411ab035054de51d28b6949d8bc14a63885bd6ba1"
     },
     "src/components/doreumi/useDoreumiLocomotion.ts": {
-      "blob": "ef0ccebdd7486961e44fbe01991c64186a08fcf3",
-      "bytes": 33053,
-      "sha256": "5972cab725e3d6f2197c346aba1297d0be548c3dd76b89cabd2f5c5c0cc86231"
+      "blob": "f91f09c0d71e3bfa5c9e721f67c6211e5d9ea027",
+      "bytes": 33227,
+      "sha256": "98f35b7b8df437469bc6f64b75417bb666d4cf4e16c6be015b3bb825f8f3228e"
     },
     "src/components/doreumi/useDoreumiPersonality.ts": {
       "blob": "169abd55c6810eaaabcc14979b89898d72d6624c",
@@ -4145,8 +4145,8 @@
   "note": "도름스(DoRms) 개편 브랜치에서 scripts/doreumi/upstream-sync.mjs 로 맞춘 상태. 다음 동기화의 비교 기준이라 손으로 고치지 않는다.",
   "originalAssetsPin": "b2cb2a6f7646a298c577a2dbe510a2a75cb9161b",
   "source": {
-    "branch": "codex/share-library-audio4-20261012",
-    "commit": "8b46fb3bc5b9bcbd2785b99546b26eb6b8b47829",
+    "branch": "codex/react-local-20260915",
+    "commit": "f9ba5a22300ba384fdd6ac29fa7abe62e020c2df",
     "dirty": false,
     "project": "DoRms"
   }
