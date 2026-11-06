@@ -8,6 +8,8 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..')
 const sources = [
   ['DOREUMI_MODEL_URL', 'public/doreumi/doreumi-master.glb'],
   ['DOREUMI_RUNTIME_INDEX_URL', 'public/doreumi/motions/registry.runtime.json'],
+  ['DOREUMI_SCHOOL_MODEL_URL', 'public/doreumi/props/school.glb'],
+  ['DOREUMI_POSTBOX_MODEL_URL', 'public/doreumi/props/postbox.glb'],
 ];
 
 export function immutableName(file, bytes) {

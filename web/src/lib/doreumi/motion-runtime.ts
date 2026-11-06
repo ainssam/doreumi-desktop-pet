@@ -16,7 +16,7 @@ import { applyDoreumiAtlasSampling } from '@/lib/doreumi/motion-material';
 import { applyDressColors, createDressUniforms, DRESS_FRAGMENT, DRESS_FRAGMENT_UNIFORMS, takeOffDressItem, wearDressItem } from '@/lib/doreumi/motion-dress';
 import type { DoreumiDress } from '@/lib/doreumi/items';
 import { createTeacherKit, type TeacherKit, type TeacherSide } from '@/lib/doreumi/motion-teacher';
-import { createPace, doreumiFrameBudget, doreumiLowPower, reducedMotionQuery, stepPace, TOUCH_RESUME_MS } from '@/lib/doreumi/motion-budget';
+import { createPace, DOREUMI_FRAME_WAIT_MARGIN_MS, DOREUMI_MEASURE_EVERY_DRAWS, doreumiFrameBudget, doreumiLowPower, LOW_POWER_TOUCH_FRAME_MS, reducedMotionQuery, stepPace, TOUCH_RESUME_MS } from '@/lib/doreumi/motion-budget';
 import { doreumiMotionRest, subscribeDoreumiMotionRest } from '@/lib/doreumi/motionRest';
 import { DOREUMI_MODEL_URL } from '@/lib/doreumi/motion-asset-urls';
 
@@ -62,6 +62,8 @@ export type DoreumiRenderer = {
   pointAt: (ndc: { x: number; y: number } | null, side?: TeacherSide) => void;
   /** 가리키는 손의 위치(캔버스 왼쪽 위 기준, 캔버스 크기에 대한 0~1 비율). 가리키지 않으면 null. */
   handScreen: () => { x: number; y: number } | null;
+  /** 지금 보이는 몸과 입은 아이템 전체가 차지하는 가로 범위(캔버스 왼쪽 기준 0~1 비율). 도름이 옆 우체통이 모습과 겹치지 않게 선다(2026-10-30). */
+  screenExtent: () => { left: number; right: number } | null;
 };
 const BASE = '/doreumi';
 function visibleBounds(root: THREE.Object3D) {
@@ -260,7 +262,7 @@ export async function createDoreumiRenderer(canvas: HTMLCanvasElement, signal: A
     holder.position.y = -initialBounds.min.y;
     const shadow = new THREE.Mesh(new THREE.CircleGeometry(.44, 32), new THREE.MeshBasicMaterial({ color: 0x6d5f50, transparent: true, opacity: .09, depthWrite: false }));
     shadow.rotation.x = -Math.PI / 2; shadow.scale.y = .52; shadow.position.y = .003; scene.add(shadow);
-    let active = true, visible = true, inspectionPaused = false, frame = 0, lastTime = 0, elapsed = 0, renderedFrames = 0;
+    let active = true, visible = true, inspectionPaused = false, frame = 0, waitTimer: ReturnType<typeof setTimeout> | undefined, drawsSinceMeasure = 0, lastTime = 0, elapsed = 0, renderedFrames = 0;
     let expression: DoreumiExpression = 'neutral', expressionRequest = 0, blinkUntil = 0, nextBlink = 3.6;
     let prop: { id: string; root: THREE.Group; config: Attachment } | null = null, propRequest = 0, propError: string | null = null;
     let selectedPropAction = '';
@@ -274,7 +276,7 @@ export async function createDoreumiRenderer(canvas: HTMLCanvasElement, signal: A
     const pace = createPace(softwareRendering);
     // A performance, a walk or a blend is playing (not the breathing idle loop). Set by render().
     let playing = false;
-    // Low-power devices stop drawing while a finger is on the screen or the page scrolls, and pick up 300ms later.
+    // Low-power devices draw at 12fps while a finger is on the screen or the page scrolls, and return to full pace 300ms later.
     let touchingUntil = 0, touchDown = false, touchResume: ReturnType<typeof setTimeout> | undefined;
     // Doreumi's own movement keeps drawing: runs, walks and being carried by the finger.
     const MOVING_ACTIONS = new Set(['Run', 'Walk', 'Dragged', 'Falling', 'Landing']);
@@ -451,10 +453,12 @@ export async function createDoreumiRenderer(canvas: HTMLCanvasElement, signal: A
     }
     function tick(now: number) {
       frame = 0; if (disposed || isPaused()) { lastTime = 0; return; }
-      // Touch pause: time stands still (lastTime resets) and the resume timer schedules the next frame.
-      if (lowPower && !softwareRendering && (touchDown || touchingUntil > now) && !locomoting()) { lastTime = 0; pace.last = 0; return; }
+      // 손가락·스크롤 중(휴대폰): 멈추지 않고 드물게(초당 12장) 그린다. 멈췄다가 다시 움직이면 튀어 보였다(2026-10-24).
+      const touching = lowPower && !softwareRendering && (touchDown || touchingUntil > now) && !locomoting();
       // 모든 프레임 호출에서 간격을 재(stepPace) 페이지가 버거우면 더 드물게 그린다.
-      const minFrameMs = Math.max(doreumiFrameBudget(playing, lowPower), stepPace(pace, now));
+      // 손가락·스크롤 동안의 버벅임은 브라우저 스크롤 몫이라 조절기에 배우게 하지 않는다(검증 M1): 재기를 쉬고, 끝나면 새로 잰다.
+      if (touching) { pace.last = 0; pace.drawn.length = 0; }
+      const minFrameMs = touching ? Math.max(doreumiFrameBudget(playing, lowPower), LOW_POWER_TOUCH_FRAME_MS) : Math.max(doreumiFrameBudget(playing, lowPower), stepPace(pace, now));
       // 2ms slack keeps a 30fps budget on every second frame of a 60Hz screen.
       if (pace.forceSkip || (lastTime && now - lastTime < minFrameMs - 2)) { pace.lastDrew = false; frame = requestAnimationFrame(tick); return; }
       pace.lastDrew = true;
@@ -466,9 +470,22 @@ export async function createDoreumiRenderer(canvas: HTMLCanvasElement, signal: A
       if (elapsed >= nextBlink && !blinkUntil && blink && !['blink_closed', 'sleepy', 'yawning', 'wink', 'half_sleepy'].includes(expression)) {
         showTexture(blink); blinkUntil = elapsed + .14; nextBlink = elapsed + 3.4 + Math.random() * 3.1;
       }
-      render(dt); frame = requestAnimationFrame(tick);
+      render(dt); scheduleAfterDraw(now, minFrameMs);
     }
-    function schedule() { if (disposed) return; if (isPaused()) { cancelAnimationFrame(frame); frame = 0; lastTime = 0; pace.last = 0; render(); } else if (!frame) { lastTime = 0; pace.last = 0; frame = requestAnimationFrame(tick); } }
+    // An animation frame the mascot does not draw in still makes the whole page recalculate style and commit, so between
+    // draws it waits on a timer instead (idle: 30 main frames a second, not 60). Every fourth draw keeps the next frames
+    // so the pace governor can still measure misses and the screen interval. Fast draws (a walk, a performance) stay on frames.
+    function scheduleAfterDraw(now: number, minFrameMs: number) {
+      // From the frame's own time, so a slow draw shortens the sleep instead of missing the screen frame it was aiming for.
+      const wait = now + minFrameMs - DOREUMI_FRAME_WAIT_MARGIN_MS - performance.now();
+      if (++drawsSinceMeasure >= DOREUMI_MEASURE_EVERY_DRAWS || minFrameMs < 2 * DOREUMI_FRAME_WAIT_MARGIN_MS || wait <= 0) {
+        drawsSinceMeasure = 0; frame = requestAnimationFrame(tick); return;
+      }
+      pace.last = 0;
+      waitTimer = setTimeout(() => { waitTimer = undefined; if (!disposed && !isPaused()) frame = requestAnimationFrame(tick); else lastTime = 0; }, wait);
+    }
+    function cancelLoop() { cancelAnimationFrame(frame); frame = 0; clearTimeout(waitTimer); waitTimer = undefined; }
+    function schedule() { if (disposed) return; if (isPaused()) { cancelLoop(); lastTime = 0; pace.last = 0; render(); } else if (!frame && !waitTimer) { lastTime = 0; pace.last = 0; frame = requestAnimationFrame(tick); } }
     const visibilityChanged = () => schedule(); document.addEventListener('visibilitychange', visibilityChanged);
     const reducedChanged = () => { lowPower = doreumiLowPower(); schedule(); }; reduced.addEventListener('change', reducedChanged);
     const stopRest = subscribeDoreumiMotionRest(() => schedule());
@@ -477,7 +494,7 @@ export async function createDoreumiRenderer(canvas: HTMLCanvasElement, signal: A
       if (!lowPower || softwareRendering) return;
       touchingUntil = performance.now() + TOUCH_RESUME_MS;
       clearTimeout(touchResume);
-      if (!touchDown) touchResume = setTimeout(() => { touchResume = undefined; if (!frame) schedule(); }, TOUCH_RESUME_MS + 16);
+      if (!touchDown) touchResume = setTimeout(() => { touchResume = undefined; if (!frame && !waitTimer) schedule(); }, TOUCH_RESUME_MS + 16);
     };
     const touchOptions = { passive: true, capture: true } as const;
     const touchEvents = ['touchstart', 'touchmove', 'touchend', 'touchcancel'] as const;
@@ -581,6 +598,38 @@ export async function createDoreumiRenderer(canvas: HTMLCanvasElement, signal: A
         aimTarget = point;
         render(0, isPaused());
       },
+      screenExtent() {
+        if (!model) return null;
+        // 우체통 자리를 정할 '서 있는 모습'만 잰다(2026-10-30, 자리가 몇 초 뒤 13px 움직인 실측):
+        //  - 걷다 돌아선 방향은 빼고 늘 정면 자세로 잰다(감싸는 holder 의 회전을 잠깐 0 으로 두고 재고 되돌린다. 그리기 전이라 화면에는 안 보인다).
+        //  - 가만히 있을 때 잠깐 꺼내는 노트북 · 책은 빼고, 입은 아이템(옷장)과 몸만 센다.
+        //  - 뼈대에 붙은 몸은 기본 자세의 상자라 움직여도 값이 흔들리지 않는다.
+        const turned = holder.quaternion.clone();
+        holder.quaternion.identity();
+        holder.updateMatrixWorld(true);
+        const box = new THREE.Box3(), point = new THREE.Vector3();
+        let left = Infinity, right = -Infinity;
+        const walk = (object: THREE.Object3D) => {
+          if (!object.visible || object === laptop || object === book) return;
+          const mesh = object as THREE.Mesh;
+          if (mesh.isMesh && mesh.geometry) {
+            if (!mesh.geometry.boundingBox) mesh.geometry.computeBoundingBox();
+            box.copy(mesh.geometry.boundingBox!).applyMatrix4(mesh.matrixWorld);
+            // 빈 상자나 깨진 값(NaN · 무한)인 조각 하나 때문에 전체를 잃지 않게 그 조각만 건너뛴다.
+            if (!box.isEmpty() && [box.min.x, box.max.x, box.min.y, box.max.y, box.min.z, box.max.z].every(Number.isFinite)) {
+              for (const x of [box.min.x, box.max.x]) for (const y of [box.min.y, box.max.y]) for (const z of [box.min.z, box.max.z]) {
+                point.set(x, y, z).project(camera);
+                if (!Number.isFinite(point.x)) continue;
+                left = Math.min(left, point.x); right = Math.max(right, point.x);
+              }
+            }
+          }
+          for (const child of object.children) walk(child);
+        };
+        try { walk(model); }
+        finally { holder.quaternion.copy(turned); holder.updateMatrixWorld(true); }
+        return Number.isFinite(left) && Number.isFinite(right) ? { left: (left + 1) / 2, right: (right + 1) / 2 } : null;
+      },
       handScreen() {
         if (!teacher || !teacherOn || !aimTarget) return null;
         const world = teacher.hand(aimSide, handPoint);
@@ -594,7 +643,7 @@ export async function createDoreumiRenderer(canvas: HTMLCanvasElement, signal: A
       setViewTilt(degrees, draw = true) { viewTilt = Number.isFinite(degrees) ? degrees * Math.PI / 180 : 0; if (draw) render(0, true); },
       setViewZoom(factor) { const next = Number.isFinite(factor) ? Math.max(.1, Math.min(10, factor)) : 1; if (camera.zoom === next) return; camera.zoom = next; render(0, true); },
       setPlaybackRate(rate) { playbackRate = Math.max(.1, Math.min(3, rate)); },
-      seek(action, seconds) { ++actionRequest; inspectionPaused = true; cancelAnimationFrame(frame); frame = 0; lastTime = 0; motion!.seek(action, seconds); render(0, true); },
+      seek(action, seconds) { ++actionRequest; inspectionPaused = true; cancelLoop(); lastTime = 0; motion!.seek(action, seconds); render(0, true); },
       play() { motion!.resume(); inspectionPaused = false; schedule(); },
       renderFirstFrame() {
         if (disposed || renderer.getContext().isContextLost()) throw new Error('Doreumi renderer unavailable');
@@ -640,7 +689,7 @@ export async function createDoreumiRenderer(canvas: HTMLCanvasElement, signal: A
         return { ...motion!.inspect(), expression, facing, yaw: holder.rotation.y, zoom: camera.zoom, paused: isPaused(), renderedFrames, dpr, drawCalls: renderer.info.render.calls, triangles: renderer.info.render.triangles, bounds, boundsBasis: 'visible-deformed-vertices', conservativeBounds, bodyWorldBounds, joints, viewport: { width, height }, finite: [...bounds.min, ...bounds.max].every(Number.isFinite), prop: laptop.visible ? 'laptop' : book.visible ? 'book' : prop?.id ?? null, propError, motionError, season, bodyTextures, contextProps: contextProps.inspect() };
       },
       dispose() {
-        if (disposed) return; disposed = true; cancelAnimationFrame(frame); resizeObserver.disconnect();
+        if (disposed) return; disposed = true; cancelLoop(); resizeObserver.disconnect();
         document.removeEventListener('visibilitychange', visibilityChanged); reduced.removeEventListener('change', reducedChanged); stopRest();
         touchEvents.forEach(name => window.removeEventListener(name, touched, true)); document.removeEventListener('scroll', touched, true); clearTimeout(touchResume);
         dressRequest++; dressItems.forEach(takeOffDressItem); dressItems = [];

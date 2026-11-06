@@ -650,6 +650,11 @@
       "bytes": 6133316,
       "sha256": "ff950b38e254c5a92c4d198bc333cf9b5763883f5f824de06b8c688019f0afa1"
     },
+    "public/doreumi/immutable/postbox.96079f466f6b82cf19e4adc8e9c50bacc03b603c461489e24fbe1f99e3c4d9c1.glb": {
+      "blob": "fa477f65c97295a627821d3186ec48b2ae9f5abc",
+      "bytes": 246704,
+      "sha256": "96079f466f6b82cf19e4adc8e9c50bacc03b603c461489e24fbe1f99e3c4d9c1"
+    },
     "public/doreumi/immutable/registry.runtime.44da92d6906fe6ab227f8e72b6003158a2107a6adfe456802f6e8c548804fe38.json": {
       "blob": "08fd7abc0ab5a5f891ba8534d78b5e4a0e295de2",
       "bytes": 51781,
@@ -659,6 +664,11 @@
       "blob": "d204a29bd0c300247421830fce86f5712427059e",
       "bytes": 50521,
       "sha256": "5024260d9c0040883b8eb3594945065edd9d4a6fd96f73230b5b948379e257b8"
+    },
+    "public/doreumi/immutable/school.88b281909c68a4ad2f0c8a5bff66bf91b81b12f3ee0993c01e43d04912415180.glb": {
+      "blob": "3152722c5ab736f397080565f623271c6a9cfb25",
+      "bytes": 353744,
+      "sha256": "88b281909c68a4ad2f0c8a5bff66bf91b81b12f3ee0993c01e43d04912415180"
     },
     "public/doreumi/invite-doreumi.png": {
       "blob": "404cd62749f5e12a7783f77b1f4d771d8e650a83",
@@ -3315,6 +3325,16 @@
       "bytes": 2128792,
       "sha256": "ca58e9b6b918b289e5b60d16a337582ce2a5e567238cb0ff14d4e762990a66cc"
     },
+    "public/doreumi/props/postbox.glb": {
+      "blob": "fa477f65c97295a627821d3186ec48b2ae9f5abc",
+      "bytes": 246704,
+      "sha256": "96079f466f6b82cf19e4adc8e9c50bacc03b603c461489e24fbe1f99e3c4d9c1"
+    },
+    "public/doreumi/props/school.glb": {
+      "blob": "3152722c5ab736f397080565f623271c6a9cfb25",
+      "bytes": 353744,
+      "sha256": "88b281909c68a4ad2f0c8a5bff66bf91b81b12f3ee0993c01e43d04912415180"
+    },
     "public/doreumi/rig-contract.json": {
       "blob": "a100ac8027391078ae755245b2d3143a4d6c4fb5",
       "bytes": 12177,
@@ -3341,9 +3361,9 @@
       "sha256": "22c7497ab90c30c41db6033204989d6435d8047cd7f2cf5234a6617a98a9facd"
     },
     "scripts/doreumi/build-cache-assets.mjs": {
-      "blob": "ec82565704bb25928fd799bfb60d2b371b05c877",
-      "bytes": 3041,
-      "sha256": "698c07bc79ecb45a8aeec888ab8274530d114d7753720290a6e6ae87e99b1857"
+      "blob": "e77994f6fdc3051df50df4d52b9aac302f5d1ed5",
+      "bytes": 3177,
+      "sha256": "10c1e17b8259c0f1810b13cd8d23f4255a71c5c3d4ae5360030e889fa481e404"
     },
     "scripts/doreumi/build-master-rig.mjs": {
       "blob": "e672906b32851a6b690dce278013a016a61d1164",
@@ -3686,9 +3706,9 @@
       "sha256": "0647a78a37ac9b19bdd7df1bb286a59bbb1677c09a9bc65073098377b44a9c21"
     },
     "src/app/dev/doreumi-motion/review.module.css": {
-      "blob": "432800eaebee724a01a236887cf066af6cc30992",
-      "bytes": 3033,
-      "sha256": "9ffa90a3899c5263537e9cc3f1279d42531241a43b6ecbaf58e1fd84ca586579"
+      "blob": "f0be22b7ce3798984542abdb7a7df14865b4c277",
+      "bytes": 3069,
+      "sha256": "74204e90ce7878799217f73d9bcdb38f7ea3ca80c18f585f3a8b31501697ec56"
     },
     "src/app/dev/doreumi-motion/review.tsx": {
       "blob": "b6b89bf5212d8cb7c85e38749f3b91566b56ce18",
@@ -3696,24 +3716,24 @@
       "sha256": "377c94558221a6e2d1ee593b7c4f9f27ca57b8ca171226b24a6bbe6559879217"
     },
     "src/components/doreumi/DoreumiAvatar.tsx": {
-      "blob": "53ab4fe89711d8978b2647cd7b2ff721953ee69d",
-      "bytes": 9093,
-      "sha256": "b6a9d2ab699d4956e73f93b9f86de19cb4ed6c367e9c4973ef4381a5c5544758"
+      "blob": "65e8f3cf300b5d2e4ebf47898d0ed39e92b85b0e",
+      "bytes": 10830,
+      "sha256": "91eb157bf4fc9a37b0c307327a737813aa4d8c178d80dfc263b8734fa82f9590"
     },
     "src/components/doreumi/locomotion.ts": {
-      "blob": "e40c03cafcd72ada146df77812530d10015389bf",
-      "bytes": 23460,
-      "sha256": "18ab989319a745206d88e24032546cff1c5c1cb764b63e3b2230f6cd23b08496"
+      "blob": "366dfaf2556a9d9406683a215043bb8f443538cb",
+      "bytes": 24215,
+      "sha256": "307b560f0a0b15e08f8c06983674d8b7fac0b6d11ec1aabb12f0a5f35f3692dd"
     },
     "src/components/doreumi/useDoreumiLocomotion.ts": {
-      "blob": "109208683ca37843d70f2a175947882b75d62f83",
-      "bytes": 36085,
-      "sha256": "e6413e1d7b631ed85cc0790b27efc28c3daae951cd012d68d2554260b30f93d2"
+      "blob": "0a4c2791eec4eb6a988d80486f3c4d9a981143ea",
+      "bytes": 40627,
+      "sha256": "5d2f4bad4deedfdb9cb271c5fd18261a40f0cd90076b8c1c4a0d70208292378d"
     },
     "src/components/doreumi/useDoreumiPersonality.ts": {
-      "blob": "169abd55c6810eaaabcc14979b89898d72d6624c",
-      "bytes": 5958,
-      "sha256": "758f5cdcbca0ec41c2af34e3214b04d49d6d4e0bf606995331eb4cc49237ea5b"
+      "blob": "69721767855ea91896c21335aa64ade342826cdf",
+      "bytes": 5950,
+      "sha256": "73a90f864012d5b0b659a9421253d267f5de4f00ea1a9473747dee4395db5023"
     },
     "src/lib/doreumi/ambient-actions.ts": {
       "blob": "e82ab5a78bc8b4a31425a354d49aa597393e4811",
@@ -3726,9 +3746,9 @@
       "sha256": "79a88b23fcef78cc416fc4897b47bc9ba6b7ec075fcf91b7b4e9fc99318db3db"
     },
     "src/lib/doreumi/itemFile.ts": {
-      "blob": "d478e7801db66e7b3ae6c6c0b38c47e0c7e76791",
-      "bytes": 13367,
-      "sha256": "793b24c1f4a87a8ee6820e34f7b49fab39b3d5ce1a2b0410ed85dff9c870f49d"
+      "blob": "a483fcb50e5c5c0488851ef51c202c5039ed4a59",
+      "bytes": 19993,
+      "sha256": "f654b76a6fa90e22059fb98788cbb10001e02a7634f170c0a2943196bbed2a03"
     },
     "src/lib/doreumi/itemLight.ts": {
       "blob": "03886a66128cec30232d278d758217616b58c2da",
@@ -3746,14 +3766,14 @@
       "sha256": "fc1920bd33e5c50426142820c0d9fad4cbb382170dcdc2c2d39fcee4a9d334cb"
     },
     "src/lib/doreumi/motion-asset-urls.ts": {
-      "blob": "ac74af57a757ff362e6d757818f5dcb8c1b25332",
-      "bytes": 385,
-      "sha256": "0514bb0616c4af8c816930d4ffe0f363976b8451ed8a53a03f74f1a9e6e6dedc"
+      "blob": "091b602aad05f5f1182499817a95ec685f2e8c94",
+      "bytes": 663,
+      "sha256": "f9d0be135c53e05ecda2a6ba99a9332ddfdf119a0a179fa6dcbb43a73c5f73bb"
     },
     "src/lib/doreumi/motion-budget.ts": {
-      "blob": "c05ba98b36d4eb92b134f742527d7e1d1b889645",
-      "bytes": 7736,
-      "sha256": "d15444871ec4a2f2889699709458a3894177cb9dac92557c5c29b59353466dc5"
+      "blob": "e2a74bfe336bbda8659f205f9fe01a60a42a4fd2",
+      "bytes": 8715,
+      "sha256": "6d296615b3f1509faa14c8785b85daf21f5a7021a9dda3b551b370ce76d50793"
     },
     "src/lib/doreumi/motion-camera.ts": {
       "blob": "504fc02f128336ec9729ccebbdaddfec473d89a1",
@@ -3856,9 +3876,9 @@
       "sha256": "5d99480b283510da14704a0c1bdddaa2d7df55ff6268b6be4958265b572c3f8f"
     },
     "src/lib/doreumi/motion-runtime.ts": {
-      "blob": "737e0a8a3c33c93f529777ae5186966c28e5b7ad",
-      "bytes": 49156,
-      "sha256": "1e4a52fec8d40821a665fc81578c81326646a3b116753540f18d0fb9ba35dc3c"
+      "blob": "bb54cb1fcc4e5152708db25e1ab81e10946ed24e",
+      "bytes": 53256,
+      "sha256": "7b23d51fbd86be3c5749d600a0c7ad61673bb216b400279a9ce1f44b0cfe6831"
     },
     "src/lib/doreumi/motion-skin-probes.ts": {
       "blob": "7a6a2378e3b9e2220271d20ef2ed53975e26015a",
@@ -3916,9 +3936,9 @@
       "sha256": "b9d060d7d0246cbbcc0052d962451f0b838fc79ad284994c082dd1fb9b929e34"
     },
     "tests/doreumi-cache-assets.test.mjs": {
-      "blob": "6d65e57ccc73d7509033a7176965ae1e7975ed10",
-      "bytes": 2381,
-      "sha256": "007e79317acca4419b78063dac18e6a6c2f4937f714b32886b20f1b6ddd2f7d7"
+      "blob": "7e18099e72da6790eb90deb0d0bd6f9d1d941694",
+      "bytes": 2649,
+      "sha256": "023c555eb701d8390683be207f19dd2b463cf19e0cf6e377180ab54b19f9fd66"
     },
     "tests/doreumi-camera.test.mjs": {
       "blob": "cd33d617cefe9f7ad96b47609904a744939b8666",
@@ -3986,9 +4006,9 @@
       "sha256": "e734d1afcc4d6cff25a1f209390209a03d745fda0b3d7698531a4ee3b8a50ead"
     },
     "tests/doreumi-item-file.test.mts": {
-      "blob": "80ff1376c955ed0bdd862e428552f976b7bd2885",
-      "bytes": 6225,
-      "sha256": "9f5cc937cd176687f91d4434853442d29bda638ff996d3289bddf70d8d580c47"
+      "blob": "015d9cbd0474185dcc22d2ed112646e65d8efbd4",
+      "bytes": 8575,
+      "sha256": "221db0372b12983f6585268a0c132e33889bedc7dd66016b1cdfbf26b5deb2d6"
     },
     "tests/doreumi-item-light.test.mjs": {
       "blob": "519a0910bddbad2dcfdeda0a59c7b0077adf62b8",
@@ -4001,9 +4021,9 @@
       "sha256": "28a53f9a1faa5264c2aaf69bb825db595a8be474f851bff39f0d420caf24df00"
     },
     "tests/doreumi-locomotion.test.mjs": {
-      "blob": "37c4bd615a289d281582df42d742db0aedd964e2",
-      "bytes": 24603,
-      "sha256": "b039bcd58ad8d5665f6aec6e8344892190185dba3b8252aff8968547ef5633ff"
+      "blob": "5fa16529c13f0f5655c798618a889e19e1ba810f",
+      "bytes": 25554,
+      "sha256": "9646a8f9d0210f3cf7797bea2f9956f66d10ab405352f1247471d78b93ee6143"
     },
     "tests/doreumi-material.test.mjs": {
       "blob": "48409f2beed4734caf7939fa0b3fadd5a4a89f0a",
@@ -4056,14 +4076,14 @@
       "sha256": "0b40ae81b7c0aeb5649a0714a094fdb3482c237b0eb611731f20b99f1041d3b3"
     },
     "tests/doreumi-motion-loading.test.mts": {
-      "blob": "06ed1257d54fb314d8387789141b7c66bfc5d0b3",
-      "bytes": 13975,
-      "sha256": "ec1936cb05eaeeaa9eb886ff0e8ba788275221c2c0acd01ac7d65a5ecbe5e2da"
+      "blob": "6344f3e6b830775897e3f5ad1547c7f70a2f332a",
+      "bytes": 16025,
+      "sha256": "4f70620a42ca41a4ad84641058610bcc031b1586d2824b7dee63ee115a3a6c26"
     },
     "tests/doreumi-personality.test.mjs": {
-      "blob": "3855a6404ddecd514a58669108036fd03c3f8d15",
-      "bytes": 8050,
-      "sha256": "53250ea8596b7d67d87bb20db20ae8c84870e0b4a96d52e0b9de93333b767faf"
+      "blob": "bbf6a129f912d610cd15522cf3ba83396e9ddc74",
+      "bytes": 8076,
+      "sha256": "e76caa56aa360809331fca9b960711aeab442ebe171e1cae051292897dbcda01"
     },
     "tests/doreumi-phase-travel.test.mjs": {
       "blob": "975267e2df3ca55c39e1e5bdaf574a9e9f93e37c",
@@ -4155,8 +4175,8 @@
   "note": "도름스(DoRms) 개편 브랜치에서 scripts/doreumi/upstream-sync.mjs 로 맞춘 상태. 다음 동기화의 비교 기준이라 손으로 고치지 않는다.",
   "originalAssetsPin": "b2cb2a6f7646a298c577a2dbe510a2a75cb9161b",
   "source": {
-    "branch": "codex/shop-item-lighting-20261013",
-    "commit": "9942a523bf52c65ef47e4926b00b63cf14d13e55",
+    "branch": "claude/button-preview-1106",
+    "commit": "0ea459413777cef9fde3119358646fa4735a3493",
     "dirty": false,
     "project": "DoRms"
   }

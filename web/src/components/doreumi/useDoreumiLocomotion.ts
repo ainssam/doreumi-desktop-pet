@@ -1,7 +1,7 @@
 "use client";
 
 import { doreumiMotionRest } from "@/lib/doreumi/motionRest";
-import { useCallback, useEffect, useRef, useState, type PointerEvent as ReactPointerEvent, type RefObject } from "react";
+import { useCallback, useEffect, useLayoutEffect, useRef, useState, type PointerEvent as ReactPointerEvent, type RefObject } from "react";
 import { applyStepFrame, clampPosition, finishStep, homeWall, homeX, importedStageFits, isWallDrop, restYAt, startExcursion, stepImportedStage, stepLocomotion, surfaceAt, wallInset, wallX, type ImportedStageState, type Ledge, type MotionBounds, type MotionState, type LocomotionPhase, type WallSide } from "./locomotion";
 import type { LedgeStyle } from "@/lib/doreumi/motion-ledge";
 import type { DoreumiStageFrame, DoreumiStageHandler } from "@/lib/doreumi/motion-travel";
@@ -19,10 +19,16 @@ type Options = {
   homeSide?: WallSide | null;
   /** Visible avatar-box width at either wall; omitted keeps the original host geometry. */
   wallVisibleWidth?: number;
+  /** 벽 끝에 비워 둘 폭(px). 데스크톱에서 우체통이 벽 끝에 서고 도름이는 그 안쪽에 쉰다(2026-10-30). */
+  wallReserve?: number;
   /** Phones keep the original floor position until a member deliberately pushes the body against a wall. */
   mobileWallDocking?: boolean;
   /** A surface such as messages temporarily requires the wall without overwriting the member's choice. */
   forceWallDock?: boolean;
+  /** 벽 대신 쉬는 자리(상자 x, 쪽마다). 데스크톱 홈 바닥 줄 글자 사이. 다른 화면은 없어서 예전처럼 벽 끝까지 걸어간다(2026-10-28). */
+  homeAnchors?: { left: number | null; right: number | null } | null;
+  /** 넓은 화면에서 처음 설 벽. 없으면 왼쪽. */
+  firstWideSide?: WallSide;
   /** CSS 가 쉬는 자리를 그리는 바닥(화면 아래에서 상자 바닥까지의 거리), 벽마다. 턱 위에서 쉬면 턱 높이, 아니면 null(줄 바닥). */
   restBottoms?: { left: number | null; right: number | null };
   /** 개발용 확인: 턱 넘기 방식을 고정한다(운영에서는 쓰지 않는다). */
@@ -56,9 +62,9 @@ export function useDoreumiLocomotion(options: Options) {
   const [wallDocked, setWallDocked] = useState(() => typeof window !== "undefined" && storedWallDock());
   const wallDockedRef = useRef(wallDocked);
   const manualWallDock = useCallback(() => !!latest.current.phone && !!latest.current.mobileWallDocking && wallDockedRef.current, []);
-  // 처음 그릴 벽: 휴대폰은 사용자가 마지막으로 놓은 벽(없으면 왼쪽), 넓은 화면은 오른쪽(휴대폰 첫 화면에서 오른쪽에 섰다가 왼쪽으로 달려가지 않게).
-  // 화면이 정한 벽(homeSide, 제작실)은 아래 효과가 지금 벽에서 그 벽으로 달려가게 맡는다.
-  const [firstSide] = useState<WallSide>(() => options.phone ? (typeof window !== "undefined" ? storedPhoneSide() : null) ?? "left" : "right");
+  // 처음 그릴 벽: 휴대폰은 사용자가 마지막으로 놓은 벽(없으면 왼쪽), 넓은 화면도 왼쪽(2026-10-28 형 지시 "도름이는 기본 왼쪽에 있게하자 데스크톱에서",
+  // 홈 오른쪽 아래 숙제 칸의 예습 화살표를 가리지 않게). 화면이 정한 벽(homeSide, 제작실)은 아래 효과가 지금 벽에서 그 벽으로 달려가게 맡는다.
+  const [firstSide] = useState<WallSide>(() => options.phone ? (typeof window !== "undefined" ? storedPhoneSide() : null) ?? "left" : options.firstWideSide ?? "left");
   const [phase, setPhase] = useState<LocomotionPhase>("idle"), [side, setSide] = useState<WallSide>(firstSide);
   // 쉬는 벽: 가만히 선 순간과 무대 걷기가 끝난 순간에만 바뀐다. 걷는 동안 매 순간의 쪽(side)을 따르는 화면 장치
   // (맨 위로 단추 자리)가 화면 가운데를 지날 때마다 좌우로 튀지 않게 한다(2026-10-07 검토 F6·N1).
@@ -91,7 +97,7 @@ export function useDoreumiLocomotion(options: Options) {
     }
     const view = window.visualViewport;
     const floorHome = latest.current.phone && latest.current.mobileWallDocking && !wallDockedRef.current && !latest.current.forceWallDock;
-    return { width: size.width, height: size.height, viewportWidth: window.innerWidth, viewportHeight: view ? view.height + view.offsetTop : window.innerHeight, occupiedBottom: latest.current.occupiedBottom, ledges: latest.current.ledges, wallVisibleWidth: latest.current.wallVisibleWidth, homeVisibleWidth: floorHome ? size.width - wallInset(size.width) : undefined };
+    return { width: size.width, height: size.height, viewportWidth: window.innerWidth, viewportHeight: view ? view.height + view.offsetTop : window.innerHeight, occupiedBottom: latest.current.occupiedBottom, ledges: latest.current.ledges, wallVisibleWidth: latest.current.wallVisibleWidth, wallReserve: latest.current.wallReserve, homeVisibleWidth: floorHome ? size.width - wallInset(size.width) : undefined, homeAnchors: latest.current.homeAnchors ?? undefined };
   }, []);
   /** 놓았을 때·공연 뒤 돌아갈 벽: 화면이 정한 벽(homeSide)이 먼저, 없으면 가까운 벽(휴대폰도 같다, 2026-10-07). */
   const homeOf = useCallback((x: number, b: MotionBounds): WallSide => latest.current.homeSide ?? homeWall(x, b, latest.current.phone), []);
@@ -301,7 +307,8 @@ export function useDoreumiLocomotion(options: Options) {
     reset(false);
     returnPending.current = false; positioned.current = false;
     latest.current.elementRef.current?.style.removeProperty("--doreumi-rest-x");
-    const b = bounds(), x = wallX(side, b);
+    // 데스크톱 홈 바닥 줄 자리가 있으면 거기, 없으면 예전처럼 벽.
+    const b = bounds(), anchor = b.homeAnchors?.[side], x = typeof anchor === "number" ? homeX(side, b) : wallX(side, b);
     state.current = { ...state.current, side, x, y: restYAt(x, b) };
     setRestSide(side);
     paint();
@@ -408,6 +415,47 @@ export function useDoreumiLocomotion(options: Options) {
     returnPending.current = true;
     resumeHome();
   }, [options.homeSide, options.enabled, paint, resumeHome]);
+  // 홈 바닥 줄 쉬는 자리(homeAnchors)가 생기거나 사라지면(홈 ↔ 다른 화면) 서 있던 자리에서 새 자리로 걸어간다. 순간 이동하지 않는다(2026-10-28).
+  // CSS 가 새 자리를 그리기 전에(레이아웃 효과) 지금 자리를 rest-x 로 붙잡아 두고, 그다음 resumeHome 이 달리게 한다.
+  const anchorKey = options.homeAnchors ? `${options.homeAnchors.left},${options.homeAnchors.right}` : "";
+  const prevAnchors = useRef(options.homeAnchors ?? null);
+  // 처음 열 때(홈으로 바로 들어온 경우)는 걸어오지 않고 처음부터 그 자리에 서 있다(2026-10-28 형 지시 "처음에 홈화면 들어오면 우측끝에서 걸어가지말고
+  // 그냥 처음부터 도름스 약속 옆에 서있어"). 첫 측정은 화면이 자리 잡은 뒤라 몇 초 걸리므로 시작 뒤 6초 안에 처음 생긴 자리는 바로 세운다.
+  const mountedAt = useRef(typeof performance !== "undefined" ? performance.now() : 0);
+  const firstAnchors = useRef(true);
+  useLayoutEffect(() => {
+    const before = prevAnchors.current; prevAnchors.current = latest.current.homeAnchors ?? null;
+    const opening = firstAnchors.current && !before && !!latest.current.homeAnchors && performance.now() - mountedAt.current < 6000;
+    if (latest.current.homeAnchors) firstAnchors.current = false;
+    if (opening) return; // CSS 가 새 자리(--doreumi-anchor-*)에 바로 그린다.
+    const node = latest.current.elementRef.current;
+    if (!node) return;
+    // 다른 화면에서 홈으로 오면(쉬는 자리가 새로 생김) 어디서 왔든 끝에서 걸어오지 않고 곧바로 홈 가운데 자리에 선다(2026-10-31 형 지시
+    // "도름이 다른 페이지에 있따가 홈에서 오거나 어디서 오던지 끝에서 걸어오지 말고 그냥 가운데로 자동으로 가게해 홈에서는").
+    // 달리던 중이면 멈추고, 붙들어 둔 자리(--doreumi-rest-x)를 지우면 CSS 가 새 자리(--doreumi-anchor-*)에 바로 그린다.
+    // 끌고 있는 중(pointer)은 손에 맡긴다. 홈 안에서 자리가 바뀌는 것(창 크기)과 홈을 떠나 벽으로 가는 것은 예전처럼 걸어간다.
+    if (!before && latest.current.homeAnchors && !pointer.current) {
+      if (state.current.phase !== "idle" || frame.current !== null) reset(false);
+      node.style.removeProperty("--doreumi-rest-x");
+      positioned.current = false; returnPending.current = false;
+      const b = bounds(), x = homeX(state.current.side, b);
+      state.current = { ...state.current, x, y: restYAt(x, b) };
+      paint();
+      return;
+    }
+    if (pointer.current || state.current.phase !== "idle" || positioned.current) return;
+    const b = bounds(), side = state.current.side;
+    // 대화창을 닫으며 화면을 옮길 때 붙들어 둔 자리(DoreumiHost closeForNavigation)가 있으면 거기서 출발한다.
+    const pinned = Number.parseFloat(node.style.getPropertyValue("--doreumi-rest-x"));
+    const fromX = Number.isFinite(pinned) ? pinned : homeX(side, { ...b, homeAnchors: before ?? undefined }), toX = homeX(side, b);
+    if (Math.abs(fromX - toX) <= 1) return;
+    if (!latest.current.enabled) return; // 움직일 수 없는 화면은 CSS 가 새 자리에 바로 그린다.
+    state.current = { ...state.current, x: fromX, y: restYAt(fromX, b) };
+    positioned.current = true; node.style.setProperty("--doreumi-rest-x", `${fromX}px`);
+    returnPending.current = true;
+    resumeHome();
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- 앵커 값이 바뀔 때만 돈다(나머지는 ref 로 읽는다)
+  }, [anchorKey]);
   // 대화창을 닫고 제자리로 돌아오면(stageEnabled 가 다시 켜짐) 멈춰 있던 귀가를 잇는다.
   useEffect(() => { if (options.stageEnabled !== false) resumeHome(); }, [options.stageEnabled, resumeHome]);
   // 넓은 창에서 왼쪽에 쉬던 도름이가 창이 좁아져 턱(링크 묶음) 위에 놓이면 자기 자리로 간다.

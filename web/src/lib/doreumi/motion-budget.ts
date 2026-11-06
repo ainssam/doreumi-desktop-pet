@@ -2,8 +2,8 @@
  * How often Doreumi draws (2026-10-06 사용자: "모바일에서는 움직임을 줄인다거나. 그리고 가볍게 하는 작업도 당연히 하고").
  *
  * - Desktop: 30 frames a second while only breathing in place, 60 during a performance, a walk or a run.
- * - Phones and small or low-memory machines: 24 frames a second at most, performances come 2.5 times less often,
- *   and drawing pauses while a finger is on the screen or the page is scrolling (it picks up again 300ms later).
+ * - Phones and small or low-memory machines: 30 frames a second at most, performances come 1.3 times less often,
+ *   and drawing slows to 12 frames a second while a finger is on the screen or the page is scrolling (back 300ms later).
  * On top of these, the pace governor below slows Doreumi down further when the page itself starts to stutter
  * (no graphics card, a busy school PC), and speeds back up once frames come smoothly again.
  *
@@ -11,13 +11,24 @@
  * "사양에 따라 동작이 단순화되게 … 움직임을 아예 없애는건 아니고 … 가볍게", "동작은 다 하는데 기기사양에따라 프레임 … 단순화 … 렉을 해소해".
  * 그래서 도름이는 어떤 기기에서도 멈추지 않는다. 그래픽 가속이 없거나 버거운 컴퓨터는 동작을 모두 하되 덜 자주 그린다(아래 조절기).
  * 시스템의 '움직임 줄이기'(Windows 애니메이션 효과 끄기 등, 학교·회사 컴퓨터에 흔하다)는 사양 신호가 아니므로
- * 저절로 하는 공연 사이를 길게 쉬는 데만 쓴다(doreumiCalmAmbient).
+ * 저절로 하는 공연 사이를 길게 쉬는 데만 쓴다(doreumiAmbientGapScale).
  */
 export const DESKTOP_IDLE_FRAME_MS = 1000 / 30;
 export const DESKTOP_ACTIVE_FRAME_MS = 12;
-export const LOW_POWER_FRAME_MS = 1000 / 24;
-export const LOW_POWER_AMBIENT_GAP_SCALE = 2.5;
+/**
+ * 2026-10-24 형 지시 "도름이 모바일에서 왤케 끊기고 느리냐 … 다양한 동작들 원래 랜덤하게 했었는데 왜 안하냐":
+ * 휴대폰은 초당 24장에서 30장으로, 손가락·스크롤 중에는 멈추던 것을 초당 12장으로만 낮춘다(멈췄다 튀는 것이 '끊김'이었다),
+ * 공연 사이 쉬는 시간은 2.5배에서 1.3배로. 시스템 '움직임 줄이기'를 켠 사람만 예전처럼 길게 쉰다.
+ */
+export const LOW_POWER_FRAME_MS = 1000 / 30;
+export const LOW_POWER_TOUCH_FRAME_MS = 1000 / 12;
+export const LOW_POWER_AMBIENT_GAP_SCALE = 1.3;
+export const REDUCED_MOTION_AMBIENT_GAP_SCALE = 2.5;
 export const TOUCH_RESUME_MS = 300;
+/** Between draws the renderer sleeps until this long before the next draw is due, so it lands on the right screen frame. */
+export const DOREUMI_FRAME_WAIT_MARGIN_MS = 10;
+/** One draw in this many keeps the following frames, which is what the pace governor measures with. */
+export const DOREUMI_MEASURE_EVERY_DRAWS = 4;
 
 let coarse: MediaQueryList | null | undefined;
 let narrow: MediaQueryList | null | undefined;
@@ -41,9 +52,10 @@ export function doreumiLowPower(): boolean {
   return false;
 }
 
-/** 저절로 하는 공연 사이를 길게 쉴지: 휴대폰·작은 기기, 또는 시스템 '움직임 줄이기'. */
-export function doreumiCalmAmbient(): boolean {
-  return doreumiLowPower() || !!reducedMotionQuery()?.matches;
+/** 공연 사이 쉬는 시간 배율: '움직임 줄이기' 2.5 · 휴대폰·작은 기기 1.3 · 그 밖 1. */
+export function doreumiAmbientGapScale(): number {
+  if (reducedMotionQuery()?.matches) return REDUCED_MOTION_AMBIENT_GAP_SCALE;
+  return doreumiLowPower() ? LOW_POWER_AMBIENT_GAP_SCALE : 1;
 }
 
 /** Minimum time between drawn frames. `active`: a performance, a walk or a blend is playing (not the breathing idle loop). */
