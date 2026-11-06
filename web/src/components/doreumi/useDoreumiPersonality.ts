@@ -6,7 +6,7 @@ import type { DoreumiExpression } from '@/lib/doreumi/motion-catalog';
 import type { DoreumiStageFrame } from '@/lib/doreumi/motion-travel';
 import { doreumiSeason } from '@/lib/doreumi/seasons';
 import { HOME_AMBIENT_ACTIONS as QUIET, SEASONAL_AMBIENT_ACTIONS as SEASONAL } from '@/lib/doreumi/ambient-actions';
-import { doreumiCalmAmbient, LOW_POWER_AMBIENT_GAP_SCALE } from '@/lib/doreumi/motion-budget';
+import { doreumiAmbientGapScale } from '@/lib/doreumi/motion-budget';
 import { DOREUMI_MOTION_REST_EVENT, doreumiMotionRest } from '@/lib/doreumi/motionRest';
 
 const between = (range: number | [number, number]) => Array.isArray(range) ? range[0] + Math.random() * (range[1] - range[0]) : range;
@@ -60,7 +60,7 @@ export function useDoreumiPersonality(enabled: boolean, canPlayMotion?: (motion:
     };
     function schedule() {
       cancel();
-      // 시스템 '움직임 줄이기'여도 공연은 한다. 다만 사이를 길게 쉰다(doreumiCalmAmbient, 2026-10-07).
+      // 시스템 '움직임 줄이기'여도 공연은 한다. 다만 사이를 길게 쉰다(doreumiAmbientGapScale, 2026-10-07·10-24).
       if (!enabled || paused || document.hidden || doreumiMotionRest()) return;
       next = setTimeout(() => {
         // 나들이를 떠나면 걷기 쪽이 움직이는 동안 공연을 쉰다(enabled 가 꺼진다).
@@ -78,8 +78,8 @@ export function useDoreumiPersonality(enabled: boolean, canPlayMotion?: (motion:
         setPose({ action: item.action, expression: item.expression });
         // A failed or stalled load must not leave the director stuck forever.
         end = setTimeout(schedule, 30_000);
-      // 휴대폰·작은 기기는 공연 사이를 2.5배 길게 쉰다(motion-budget).
-      }, ambientGapMs() * (doreumiCalmAmbient() ? LOW_POWER_AMBIENT_GAP_SCALE : 1));
+      // 휴대폰·작은 기기는 1.3배, 시스템 '움직임 줄이기'는 2.5배 길게 쉰다(motion-budget, 2026-10-24).
+      }, ambientGapMs() * doreumiAmbientGapScale());
     }
     schedule();
     media.addEventListener('change', schedule); document.addEventListener('visibilitychange', schedule); window.addEventListener(DOREUMI_MOTION_REST_EVENT, schedule);

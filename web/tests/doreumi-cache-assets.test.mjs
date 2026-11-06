@@ -13,6 +13,9 @@ test('immutable assets retain exact bytes, stable names and previous versions ac
   const registry = Buffer.from('{"version":1,"motions":[]}\n');
   await writeFile(path.join(root, 'public/doreumi/doreumi-master.glb'), model);
   await writeFile(path.join(root, 'public/doreumi/motions/registry.runtime.json'), registry);
+  await mkdir(path.join(root, 'public/doreumi/props'), { recursive: true });
+  await writeFile(path.join(root, 'public/doreumi/props/school.glb'), Buffer.from([1, 2, 3]));
+  await writeFile(path.join(root, 'public/doreumi/props/postbox.glb'), Buffer.from([4, 5, 6]));
   await assert.rejects(buildCacheAssets(root, true), /stale/);
   await buildCacheAssets(root);
   await buildCacheAssets(root, true);
@@ -22,13 +25,13 @@ test('immutable assets retain exact bytes, stable names and previous versions ac
   assert.deepEqual(await readFile(path.join(directory, immutableName('registry.runtime.json', registry))), registry);
   assert.match(await readFile(path.join(root, 'src/lib/doreumi/motion-asset-urls.ts'), 'utf8'), /DOREUMI_MODEL_URL = '\/doreumi\/immutable\//);
   await buildCacheAssets(root);
-  assert.equal((await readdir(directory)).length, 2);
+  assert.equal((await readdir(directory)).length, 4);
   const updated = Buffer.from([0, 10, 255, 124]);
   await writeFile(path.join(root, 'public/doreumi/doreumi-master.glb'), updated);
   await assert.rejects(buildCacheAssets(root, true), /stale/);
   await buildCacheAssets(root);
   await buildCacheAssets(root, true);
-  assert.equal((await readdir(directory)).length, 3);
+  assert.equal((await readdir(directory)).length, 5);
   assert.deepEqual(await readFile(path.join(directory, original)), model);
   assert.deepEqual(await readFile(path.join(directory, immutableName('doreumi-master.glb', updated))), updated);
   await writeFile(path.join(directory, original), 'tampered');

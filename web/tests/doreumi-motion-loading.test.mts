@@ -128,7 +128,12 @@ function avatarHarness({ hold = false, frameFails = false } = {}) {
       }
     },
   };
+  // 끊긴 그래픽 연결을 기다리는 시계는 시험이 직접 돌린다(advance).
+  let clock = 0, timerId = 0;
+  const timers = new Map<number, { at: number; run: () => void }>();
   const context = { exports: {} as { DoreumiAvatar: (props: unknown) => RenderNode }, AbortController,
+    setTimeout: (run: () => void, ms = 0) => { timers.set(++timerId, { at: clock + ms, run }); return timerId; },
+    clearTimeout: (id?: number) => { if (id !== undefined) timers.delete(id); },
     console: { warn() {} }, IntersectionObserver: class { observe() {} disconnect() {} },
     require(name: string) {
       if (name === 'react') return react;
@@ -163,6 +168,7 @@ function avatarHarness({ hold = false, frameFails = false } = {}) {
     release() { props = { ...props, hold: false }; dirty = true; flush(); },
     loseContext() { const event = new Event('webglcontextlost', { cancelable: true }); canvas.dispatchEvent(event); assert.ok(event.defaultPrevented); flush(); },
     restoreContext() { canvas.dispatchEvent(new Event('webglcontextrestored')); flush(); },
+    advance(ms: number) { clock += ms; for (const [id, t] of [...timers]) if (t.at <= clock) { timers.delete(id); t.run(); } dirty = true; flush(); },
     unmount() { for (const slot of slots) if (typeof slot?.cleanup === 'function') slot.cleanup(); mounted = false; },
   };
 }
@@ -188,13 +194,28 @@ test('only an actual model or first-frame failure enables the approved fallback'
   }
 });
 
-test('context loss aborts a pending appearance load and restoration can recover once', async () => {
+test('context loss stays hidden (never the static picture first) and restoration recovers the 3D mascot', async () => {
+  // 안드로이드에서 그림 도름이가 먼저 보였다가 3D 로 바뀌던 것(2026-11-07): 끊긴 동안은 숨긴 채(loading) 기다린다.
   const h = avatarHarness(); await h.settle(); h.model.resolve(h.renderer); h.clothing.resolve(); await h.settle();
-  h.loseContext(); assert.equal(h.signal?.aborted, true); assert.equal(h.status, 'fallback');
+  h.loseContext(); assert.equal(h.signal?.aborted, true); assert.equal(h.status, 'loading'); assert.equal(h.fallback, false);
   h.texture.resolve(); await h.settle(); assert.equal(h.ready, 0); assert.equal(h.calls.includes('frame'), false);
+  h.advance(3000); assert.equal(h.status, 'loading'); assert.equal(h.fallback, false);
   h.restoreContext(); assert.equal(h.status, 'loading'); assert.equal(h.fallback, false); await h.settle();
   assert.equal(h.creates, 2); assert.equal(h.status, 'ready'); assert.equal(h.ready, 1);
-  h.loseContext(); h.restoreContext(); await h.settle(); assert.equal(h.creates, 2); assert.equal(h.status, 'fallback'); h.unmount();
+  // 돌아온 뒤 기다리던 시계는 지워져 그림으로 바뀌지 않는다.
+  h.advance(10_000); assert.equal(h.status, 'ready'); assert.equal(h.fallback, false);
+  // 다시 끊겨도 숨긴 채 기다렸다가 되살린다.
+  h.loseContext(); assert.equal(h.status, 'loading'); h.restoreContext(); await h.settle(); assert.equal(h.creates, 3); assert.equal(h.status, 'ready');
+  h.unmount();
+});
+
+test('the static picture appears only when the context never comes back or keeps failing', async () => {
+  const waited = avatarHarness(); await waited.settle(); waited.model.resolve(waited.renderer); waited.clothing.resolve(); await waited.settle();
+  waited.loseContext(); assert.equal(waited.status, 'loading'); waited.advance(7999); assert.equal(waited.status, 'loading');
+  waited.advance(1); assert.equal(waited.status, 'fallback'); assert.equal(waited.fallback, true); waited.unmount();
+  const flaky = avatarHarness(); await flaky.settle(); flaky.model.resolve(flaky.renderer); flaky.clothing.resolve(); flaky.texture.resolve(); await flaky.settle();
+  for (let i = 0; i < 3; i++) { flaky.loseContext(); assert.equal(flaky.status, 'loading'); flaky.restoreContext(); await flaky.settle(); assert.equal(flaky.status, 'ready'); }
+  flaky.loseContext(); assert.equal(flaky.status, 'fallback'); assert.equal(flaky.creates, 4); flaky.unmount();
 });
 
 test('unmount while the model or appearance is pending never announces readiness', async () => {

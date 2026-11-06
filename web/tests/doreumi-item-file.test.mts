@@ -89,3 +89,35 @@ test('rigged light needs a skinned carrier and explicit known bone', () => {
   }
   assert.equal(checkItemGlb(glb({ ...fixture, nodes: [{ name: 'torso' }, { ...garment, skin: undefined }] }), meta).ok, false);
 });
+test('one shape reused by many parts cannot make hundreds of thousands of drawn pieces', () => {
+  // 모양 하나(조각 40개)를 부품 10개가 쓰면 그릴 물체 400개: 상한 256 을 넘는다.
+  const meshes = [{ primitives: Array.from({ length: 40 }, () => ({ attributes: { POSITION: 0 } })) }];
+  const nodes = Array.from({ length: 10 }, (_, i) => ({ name: `n${i}`, mesh: 0 }));
+  const r = checkItemGlb(glb({ meshes, nodes, scenes: [{ nodes: nodes.map((_, i) => i) }] }), rigid);
+  assert.equal(r.ok, false);
+  if (!r.ok) assert.match(r.reason, /그려야 할 조각/);
+  // 조금 되풀이하는 정도(그릴 물체 80개)는 그대로 통과한다.
+  const fine = Array.from({ length: 2 }, (_, i) => ({ name: `n${i}`, mesh: 0 }));
+  assert.equal(checkItemGlb(glb({ meshes, nodes: fine, scenes: [{ nodes: [0, 1] }] }), rigid).ok, true);
+});
+test('a piece that draws nothing is refused', () => {
+  const r = checkItemGlb(glb({ accessors: [{ bufferView: 0, componentType: 5126, count: 2, type: 'VEC3' }] }), rigid);
+  assert.equal(r.ok, false);
+  if (!r.ok) assert.match(r.reason, /아무것도 그리지/);
+});
+test('parts must point to shapes by plain numbers (three.js also reads "1" and [1])', () => {
+  // 실제 우회 모양: 정상 부품 하나 옆에 번호를 글자·묶음으로 쓴 부품을 둔다(모양은 있으니 '빈 모양'으로 걸리지 않는다).
+  // 그래서 거절 이유가 '부품 연결'이어야 이 검사가 지켜진다(코드 검증 0181c84e Medium).
+  for (const mesh of ['0', [0], 0.5, -1, 9]) {
+    const r = checkItemGlb(glb({ nodes: [{ name: 'hat', mesh: 0 }, { name: 'b', mesh }], scenes: [{ nodes: [0, 1] }] }), rigid);
+    assert.equal(r.ok, false, JSON.stringify(mesh));
+    if (!r.ok) assert.match(r.reason, /부품 연결/, JSON.stringify(mesh));
+  }
+  for (const skin of ['0', [0]]) {
+    const r = checkItemGlb(glb({ nodes: [{ name: 'hat', mesh: 0 }, { name: 'b', mesh: 0, skin }], scenes: [{ nodes: [0, 1] }] }), rigid);
+    assert.equal(r.ok, false, JSON.stringify(skin));
+    if (!r.ok) assert.match(r.reason, /부품 연결/, JSON.stringify(skin));
+  }
+  assert.equal(checkItemGlb(glb({ nodes: [{ name: 'hat', mesh: 0, children: ['0'] }] }), rigid).ok, false, 'string child');
+  assert.equal(checkItemGlb(glb({ scenes: [{ nodes: [[0]] }] }), rigid).ok, false, 'array root');
+});

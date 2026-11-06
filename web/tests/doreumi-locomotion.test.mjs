@@ -92,7 +92,7 @@ test('pause, resize, clipping and action changes never replay travel or send the
 
 // Exercise actual hook handlers with a minimal deterministic hook/RAF host.
 const vm = await import('node:vm');
-const hookBundle=await build({entryPoints:['src/components/doreumi/useDoreumiLocomotion.ts'],bundle:true,format:'cjs',write:false,plugins:[{name:'hooks',setup(builder){builder.onResolve({filter:/^react$/},()=>({path:'react',namespace:'fake'}));builder.onLoad({filter:/.*/,namespace:'fake'},()=>({contents:'export const useRef=(current)=>({current});export const useCallback=(fn)=>fn;export const useState=(value)=>[typeof value==="function"?value():value,(next)=>globalThis.sets?.push(next)];export const useEffect=(fn)=>globalThis.effects.push(fn);'}));}}]});
+const hookBundle=await build({entryPoints:['src/components/doreumi/useDoreumiLocomotion.ts'],bundle:true,format:'cjs',write:false,plugins:[{name:'hooks',setup(builder){builder.onResolve({filter:/^react$/},()=>({path:'react',namespace:'fake'}));builder.onLoad({filter:/.*/,namespace:'fake'},()=>({contents:'export const useRef=(current)=>({current});export const useCallback=(fn)=>fn;export const useState=(value)=>[typeof value==="function"?value():value,(next)=>globalThis.sets?.push(next)];export const useEffect=(fn)=>globalThis.effects.push(fn);export const useLayoutEffect=(fn)=>globalThis.effects.push(fn);'}));}}]});
 function hookHarness(extra={},storage=new Map()){
  const effects=[],sets=[],frames=new Map(),listeners=new Map();let sequence=0,clock=0,starts=0,captured=null,rectReads=0;
  const styles=new Map();
@@ -105,7 +105,8 @@ function hookHarness(extra={},storage=new Map()){
  const viewport={...events,innerWidth:390,innerHeight:844,matchMedia:()=>({matches:false}),localStorage:{getItem:key=>storage.get(key)??null,setItem:(key,value)=>storage.set(key,String(value))}};
  const fixtureModule={exports:{}};
  vm.runInNewContext(hookBundle.outputFiles[0].text,{module:fixtureModule,exports:fixtureModule.exports,effects,sets,window:viewport,document:{...events,hidden:false},performance:{now:()=>clock},requestAnimationFrame:fn=>{frames.set(++sequence,fn);return sequence;},cancelAnimationFrame:id=>frames.delete(id)});
- const options={elementRef:{current:element},enabled:true,stageEnabled:true,occupiedBottom:82,resetKey:'/',onDragStart:()=>starts++,...extra};
+ // 넓은 화면의 첫 벽은 2026-10-28 부터 왼쪽이 기본이다(형 지시). 아래 옛 시나리오들은 오른쪽 벽에서 출발하는 경우를 그대로 시험한다.
+ const options={elementRef:{current:element},enabled:true,stageEnabled:true,occupiedBottom:82,resetKey:'/',firstWideSide:'right',onDragStart:()=>starts++,...extra};
  const api=fixtureModule.exports.useDoreumiLocomotion(options);
  const cleanups=effects.map(fn=>fn());
  const event=(x,y,other={})=>({isPrimary:true,button:0,buttons:1,pointerId:1,clientX:x,clientY:y,currentTarget:target,preventDefault(){},...other});
@@ -328,4 +329,13 @@ test('cancellation and forced message surfaces never persist an accidental wall 
  }
  const desktop=hookHarness({phone:false,mobileWallDocking:true,wallVisibleWidth:52},new Map([[dockKey,'true']]));
  assert.equal(desktop.api.wallDocked,false,'desktop behavior does not inherit the mobile mode');desktop.dispose();
+});
+
+test('wide screens start on the left wall unless the screen asks otherwise, and home anchors replace the walls',()=>{
+ const h=hookHarness({firstWideSide:undefined});
+ assert.equal(h.api.side,'left','넓은 화면 기본은 왼쪽(2026-10-28)');
+ const bounds={width:140,height:130,viewportWidth:1440,viewportHeight:900,occupiedBottom:40,homeAnchors:{left:520,right:930}};
+ assert.equal(homeX('left',bounds),520,'홈 바닥 줄 링크트리 오른쪽');
+ assert.equal(homeX('right',bounds),930,'홈 바닥 줄 도름스 약속 왼쪽');
+ assert.equal(homeX('right',{...bounds,homeAnchors:undefined}),wallX('right',{...bounds,homeAnchors:undefined}),'다른 화면은 벽 끝');
 });

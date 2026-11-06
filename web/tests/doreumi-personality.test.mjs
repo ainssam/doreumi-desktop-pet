@@ -15,7 +15,7 @@ function harness(imported = true, options = {}) {
     useCallback: fn => fn, useRef: value => ({ current: value }), useState: value => [value, pose => poses.push({ at: now, ...pose })], useEffect: fn => effects.push(fn),
     setTimeout: (fn, ms) => { const timer = { fn, at: now + ms }; timers.push(timer); return timer; }, clearTimeout: timer => { if (timer) timer.cancelled = true; },
     window: { matchMedia: () => media, addEventListener() {}, removeEventListener() {} }, document, doreumiMotionRest: () => false, DOREUMI_MOTION_REST_EVENT: 'dorms:doreumi-motion-rest', fetchRuntimeMotionLibrary: async () => ({ motions: options.entries ?? [] }),
-    canPlayMotion: options.canPlay, doreumiSeason: () => 'everyday', doreumiLowPower: () => options.lowPower ?? false, doreumiCalmAmbient: () => (options.lowPower ?? false) || media.matches, LOW_POWER_AMBIENT_GAP_SCALE: 2.5,
+    canPlayMotion: options.canPlay, doreumiSeason: () => 'everyday', doreumiLowPower: () => options.lowPower ?? false, doreumiAmbientGapScale: () => media.matches ? 2.5 : (options.lowPower ?? false) ? 1.3 : 1,
     QUIET, SEASONAL,
     expressionForMotion,
     chooseAmbientMotion: options.entries ? (entries, recent) => chooseAmbientMotion(entries, recent, () => 0) : () => imported ? { id: 'meshy:27', duration: 1.5, expression: 'smile' } : null,
@@ -108,8 +108,8 @@ test('every authored action the director picks exists and is approved in the man
   for (const action of picked) assert.equal(manifest.actions.find(a => a.id === action)?.approval, 'approved', action);
 });
 
-test('low-power devices wait 2.5 times longer between performances', () => {
+test('low-power devices wait 1.3 times longer between performances (2026-10-24: 2.5 made phones look still)', () => {
   const h = harness(true, { lowPower: true });
-  h.advance(2999); assert.notEqual(h.poses.at(-1)?.action, 'meshy:27');
-  h.advance(3000); assert.equal(h.poses.at(-1).action, 'meshy:27');
+  h.advance(1559); assert.notEqual(h.poses.at(-1)?.action, 'meshy:27');
+  h.advance(1560); assert.equal(h.poses.at(-1).action, 'meshy:27');
 });

@@ -9,6 +9,9 @@ import type { DoreumiStageHandler } from '@/lib/doreumi/motion-travel';
 // Same numbers as DOREUMI_STABLE_FRAMING in motion-runtime (kept here so the heavy runtime stays lazily loaded).
 const STABLE = { top: .32, bottom: .25, side: .25 };
 export type DoreumiAvatarStatus = 'loading' | 'ready' | 'fallback';
+/** 그래픽 연결이 끊긴 뒤 돌아오기를 숨긴 채 기다리는 시간, 다시 붙여 3D 로 되살리는 최대 횟수. */
+const CONTEXT_RESTORE_WAIT_MS = 8000;
+const CONTEXT_RESTORES_MAX = 3;
 
 export type DoreumiAvatarHandle = {
   setAction: (action: string) => void;
@@ -30,6 +33,8 @@ export type DoreumiAvatarHandle = {
   setTeacher: (on: boolean) => void;
   pointAt: (ndc: { x: number; y: number } | null, side?: 'L' | 'R') => void;
   handScreen: () => { x: number; y: number } | null;
+  /** 몸과 아이템이 차지하는 가로 범위. 아바타 상자(이 컴포넌트) 왼쪽 기준 비율이다(넓힌 캔버스 여백을 뺀 값, 0 보다 작거나 1 보다 클 수 있다). */
+  screenExtent: () => { left: number; right: number } | null;
 };
 export type DoreumiAvatarProps = {
   action?: string; expression?: string; active?: boolean; className?: string; onReady?: () => void;
@@ -57,8 +62,8 @@ export const DoreumiAvatar = forwardRef<DoreumiAvatarHandle, DoreumiAvatarProps>
 ) {
   const canvas = useRef<HTMLCanvasElement>(null);
   const runtime = useRef<DoreumiRenderer | null>(null);
-  const latest = useRef({ action, expression, active, facing, locomotionRate, outfit, dress, onReady, onStatusChange, onMotionFrame, zoom });
-  latest.current = { action, expression, active, facing, locomotionRate, outfit, dress, onReady, onStatusChange, onMotionFrame, zoom };
+  const latest = useRef({ action, expression, active, facing, locomotionRate, outfit, dress, onReady, onStatusChange, onMotionFrame, zoom, stableFraming });
+  latest.current = { action, expression, active, facing, locomotionRate, outfit, dress, onReady, onStatusChange, onMotionFrame, zoom, stableFraming };
   const [status, setStatus] = useState<DoreumiAvatarStatus>('loading');
   const [generation, setGeneration] = useState(0);
   useEffect(() => { latest.current.onStatusChange?.(status); }, [status]);
@@ -76,14 +81,31 @@ export const DoreumiAvatar = forwardRef<DoreumiAvatarHandle, DoreumiAvatarProps>
     setTeacher: value => runtime.current?.setTeacher(value),
     pointAt: (ndc, side) => runtime.current?.pointAt(ndc, side),
     handScreen: () => runtime.current?.handScreen() ?? null,
+    screenExtent: () => {
+      const extent = runtime.current?.screenExtent() ?? null;
+      if (!extent) return null;
+      // 넓힌 캔버스(stableFraming)는 아바타 상자보다 양옆으로 STABLE.side 만큼 크다. 상자 기준 비율로 바꿔 돌려준다.
+      const wide = latest.current.stableFraming ? STABLE.side : 0, scale = 1 + 2 * wide;
+      return { left: extent.left * scale - wide, right: extent.right * scale - wide };
+    },
   }), []);
   useEffect(() => {
     const element = canvas.current; if (!element || hold) return;
     const controller = new AbortController(); let renderer: DoreumiRenderer | undefined, intersecting = true;
     const observer = new IntersectionObserver(entries => { intersecting = entries[0]?.isIntersecting ?? true; renderer?.setVisible(intersecting); }, { rootMargin: '48px' });
     observer.observe(element);
-    const lost = (event: Event) => { event.preventDefault(); controller.abort(); renderer?.setActive(false); setStatus('fallback'); };
-    const restored = () => { if (generation < 1) setGeneration(value => value + 1); };
+    // 그래픽 연결(WebGL)이 끊겨도 바로 그림 도름이로 바꾸지 않는다. 안드로이드는 화면을 띄우는 사이 연결이 잠깐 끊겼다 돌아오는 일이 잦아
+    // '얼굴에 도름이라고 적힌 그림'이 먼저 보였다가 3D 로 바뀌었다(2026-11-07 운영자 지시). 숨긴 채(loading) 기다리고, 돌아오지 않거나
+    // 너무 자주 끊기면 그때 그림으로 바꾼다.
+    let restoreWait: ReturnType<typeof setTimeout> | undefined;
+    const lost = (event: Event) => {
+      event.preventDefault(); controller.abort(); renderer?.setActive(false);
+      clearTimeout(restoreWait);
+      if (generation >= CONTEXT_RESTORES_MAX) { setStatus('fallback'); return; }
+      setStatus('loading');
+      restoreWait = setTimeout(() => setStatus('fallback'), CONTEXT_RESTORE_WAIT_MS);
+    };
+    const restored = () => { clearTimeout(restoreWait); if (generation < CONTEXT_RESTORES_MAX) setGeneration(value => value + 1); };
     element.addEventListener('webglcontextlost', lost); element.addEventListener('webglcontextrestored', restored);
     setStatus('loading');
     void import('@/lib/doreumi/motion-runtime').then(module => module.createDoreumiRenderer(element, controller.signal, frame => latest.current.onMotionFrame?.(frame), stableFraming ? module.DOREUMI_STABLE_FRAMING : undefined, fitDress)).then(async instance => {
@@ -104,7 +126,7 @@ export const DoreumiAvatar = forwardRef<DoreumiAvatarHandle, DoreumiAvatarProps>
       if (!controller.signal.aborted) { setStatus('fallback'); console.warn('Doreumi uses the approved static fallback.', error); }
     });
     return () => {
-      controller.abort(); observer.disconnect(); element.removeEventListener('webglcontextlost', lost); element.removeEventListener('webglcontextrestored', restored);
+      controller.abort(); clearTimeout(restoreWait); observer.disconnect(); element.removeEventListener('webglcontextlost', lost); element.removeEventListener('webglcontextrestored', restored);
       renderer?.dispose(); if (runtime.current === renderer) runtime.current = null;
     };
   }, [generation, stableFraming, fitDress, hold]);

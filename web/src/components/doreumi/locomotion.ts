@@ -6,7 +6,9 @@ export type LocomotionPhase = "idle" | "dragged" | "falling" | "landing" | "runn
 export type WallSide = "left" | "right";
 /** 턱: 그 위에 서는 화면 구간. top 은 턱 윗면의 화면 y(발이 닿는 선). 휴대폰 홈 바닥 줄의 링크 묶음이 이것이다. */
 export type Ledge = { left: number; right: number; top: number };
-export type MotionBounds = { width: number; height: number; viewportWidth: number; viewportHeight: number; occupiedBottom: number; ledges?: readonly Ledge[]; wallVisibleWidth?: number; homeVisibleWidth?: number };
+export type MotionBounds = { width: number; height: number; viewportWidth: number; viewportHeight: number; occupiedBottom: number; ledges?: readonly Ledge[]; wallVisibleWidth?: number; homeVisibleWidth?: number; wallReserve?: number;
+  /** 벽 대신 쉬는 자리(상자 x). 데스크톱 홈은 바닥 줄 글자 사이(왼쪽은 '링크트리' 바로 오른쪽, 오른쪽은 '도름스 약속' 바로 왼쪽, 2026-10-28). 없으면 벽. */
+  homeAnchors?: { left: number | null; right: number | null } };
 /**
  * 턱 넘기 중인 상태. plan 은 경로, time 은 마지막으로 받은 동작 시각, waited 는 넘기를 시작한 뒤 흐른 시간(ms),
  * quiet 는 그 동작의 프레임이 마지막으로 온 뒤 흐른 시간(ms). 렌더러가 멈추면(그래픽 끊김 등) quiet 로 끝낸다.
@@ -39,10 +41,16 @@ export const wallInset = (width: number) => Math.round(width * WALL_INSET_RATIO)
 export const wallX = (side: WallSide, b: MotionBounds) => {
   const inset = typeof b.wallVisibleWidth === "number" && Number.isFinite(b.wallVisibleWidth)
     ? b.width - Math.max(1, Math.min(b.width, b.wallVisibleWidth)) : wallInset(b.width);
-  return side === "left" ? -inset : Math.max(-inset, b.viewportWidth - b.width + inset);
+  // wallReserve: 벽 끝에 무언가(데스크톱 우체통)가 서 있으면 그만큼 안쪽에 쉰다. 걸어 다니는 범위도 함께 줄어 그 자리로 걸어 들어가지 않는다.
+  const reserve = Math.max(0, b.wallReserve ?? 0);
+  return side === "left" ? -inset + reserve : Math.max(-inset + reserve, b.viewportWidth - b.width + inset - reserve);
 };
 /** The movement boundary and the everyday resting place can differ on phones. */
-export const homeX = (side: WallSide, b: MotionBounds) => b.homeVisibleWidth === undefined ? wallX(side, b) : wallX(side, { ...b, wallVisibleWidth: b.homeVisibleWidth });
+export const homeX = (side: WallSide, b: MotionBounds) => {
+  const anchor = b.homeAnchors?.[side];
+  if (typeof anchor === "number" && Number.isFinite(anchor)) return Math.max(wallX("left", b), Math.min(wallX("right", b), anchor));
+  return b.homeVisibleWidth === undefined ? wallX(side, b) : wallX(side, { ...b, wallVisibleWidth: b.homeVisibleWidth });
+};
 /** A deliberate push past halfway between the ordinary body position and the wall peek. */
 export const isWallDrop = (x: number, b: MotionBounds) => {
   const ordinary = { ...b, wallVisibleWidth: undefined };
