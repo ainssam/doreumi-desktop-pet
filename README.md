@@ -30,6 +30,7 @@ npm run preview
 2. [`docs/ASSET-STATUS.md`](docs/ASSET-STATUS.md): 승인·후보·재검수 자산 구분
 3. [`docs/NEXT-STEPS.md`](docs/NEXT-STEPS.md): 데스크톱 펫 마무리 순서와 완료 조건
 4. [`docs/RELEASE-BACKLOG.md`](docs/RELEASE-BACKLOG.md): 상세 기능별 출시 체크리스트
+5. [`docs/CHARACTER-LOOK.md`](docs/CHARACTER-LOOK.md): 그림·홍보물에 넣을 때 지킬 도름이 모습
 
 ## 현재 상태
 
